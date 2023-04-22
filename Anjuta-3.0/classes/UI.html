@@ -1,0 +1,757 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    Anjuta.UI -
+    
+      Classes -
+    
+    Anjuta 3.0
+  </title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/css/pgi.css" type="text/css" />
+  
+
+  
+  <script type="text/javascript">
+
+    function openSidebar(element) {
+        window.location.href = element.href + location.hash;
+        return false;
+    }
+
+    function inIframe() {
+        try {
+            return window.self !== window.top;
+        } catch (e) {
+            return true;
+        }
+    }
+
+    function onLoaded() {
+        if(!inIframe()) {
+            var icons = document.getElementsByClassName('open-sidebar');
+
+            for (var i = 0; i < icons.length; i ++) {
+                icons[i].style.display = 'table-cell';
+            }
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', onLoaded, false);
+
+  </script>
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="Anjuta 3.0 Python API Docs" href="../index.html"/>
+        <link rel="up" title="Classes" href="../classes.html"/>
+        <link rel="next" title="Anjuta.VcsStatusTreeView" href="VcsStatusTreeView.html"/>
+        <link rel="prev" title="Anjuta.TreeComboBox" href="TreeComboBox.html"/> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+<div class="non-fixed-bar">
+<table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#Anjuta-3.0/classes/UI.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Anjuta 3.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>Anjuta.UI</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="TreeComboBox.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="VcsStatusTreeView.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">Anjuta.UI</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+<div class="fixed-bar">
+  <table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#Anjuta-3.0/classes/UI.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Anjuta 3.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>Anjuta.UI</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="TreeComboBox.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="VcsStatusTreeView.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">Anjuta.UI</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+  <div class="wy-grid-for-nav">
+
+    
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="main">
+            
+  <div class="section" id="anjuta-ui">
+<h1>Anjuta.UI<a class="headerlink" href="#anjuta-ui" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<svg width="192pt" height="188pt"
+ viewBox="0.00 0.00 192.00 188.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 184)">
+<title>g</title>
+<!-- Anjuta.UI -->
+<g id="node1" class="node">
+<title>Anjuta.UI</title>
+<g id="a_node1"><a xlink:href="#Anjuta.UI" xlink:title="Anjuta.UI">
+<path fill="none" stroke="#75507b" d="M108.5,-18C108.5,-18 65.5,-18 65.5,-18 62.5,-18 59.5,-15 59.5,-12 59.5,-12 59.5,-6 59.5,-6 59.5,-3 62.5,0 65.5,0 65.5,0 108.5,0 108.5,0 111.5,0 114.5,-3 114.5,-6 114.5,-6 114.5,-12 114.5,-12 114.5,-15 111.5,-18 108.5,-18"/>
+<text text-anchor="middle" x="87" y="-6.7" font-family="inherit" font-size="8.50">Anjuta.UI</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface -->
+<g id="node2" class="node">
+<title>GObject.GInterface</title>
+<g id="a_node2"><a xlink:href="../../GObject-2.0/classes/GInterface.html#GObject.GInterface" xlink:title="GObject.GInterface">
+<path fill="none" stroke="#3091d1" d="M178,-180C178,-180 92,-180 92,-180 89,-180 86,-177 86,-174 86,-174 86,-168 86,-168 86,-165 89,-162 92,-162 92,-162 178,-162 178,-162 181,-162 184,-165 184,-168 184,-168 184,-174 184,-174 184,-177 181,-180 178,-180"/>
+<text text-anchor="middle" x="135" y="-168.7" font-family="inherit" font-size="8.50">GObject.GInterface</text>
+</a>
+</g>
+</g>
+<!-- Gtk.Buildable -->
+<g id="node4" class="node">
+<title>Gtk.Buildable</title>
+<g id="a_node4"><a xlink:href="../../Gtk-3.0/classes/Buildable.html#Gtk.Buildable" xlink:title="Gtk.Buildable">
+<path fill="none" stroke="#3091d1" d="M166,-126C166,-126 104,-126 104,-126 101,-126 98,-123 98,-120 98,-120 98,-114 98,-114 98,-111 101,-108 104,-108 104,-108 166,-108 166,-108 169,-108 172,-111 172,-114 172,-114 172,-120 172,-120 172,-123 169,-126 166,-126"/>
+<text text-anchor="middle" x="135" y="-114.7" font-family="inherit" font-size="8.50">Gtk.Buildable</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Gtk.Buildable -->
+<g id="edge1" class="edge">
+<title>GObject.GInterface&#45;&gt;Gtk.Buildable</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M135,-161.88C135,-153.76 135,-141.13 135,-131.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="136.75,-131.24 135,-126.24 133.25,-131.24 136.75,-131.24"/>
+</g>
+<!-- GObject.Object -->
+<g id="node3" class="node">
+<title>GObject.Object</title>
+<g id="a_node3"><a xlink:href="../../GObject-2.0/classes/Object.html#GObject.Object" xlink:title="GObject.Object">
+<path fill="none" stroke="#75507b" d="M74,-126C74,-126 6,-126 6,-126 3,-126 0,-123 0,-120 0,-120 0,-114 0,-114 0,-111 3,-108 6,-108 6,-108 74,-108 74,-108 77,-108 80,-111 80,-114 80,-114 80,-120 80,-120 80,-123 77,-126 74,-126"/>
+<text text-anchor="middle" x="40" y="-114.7" font-family="inherit" font-size="8.50">GObject.Object</text>
+</a>
+</g>
+</g>
+<!-- Gtk.UIManager -->
+<g id="node5" class="node">
+<title>Gtk.UIManager</title>
+<g id="a_node5"><a xlink:href="../../Gtk-3.0/classes/UIManager.html#Gtk.UIManager" xlink:title="Gtk.UIManager">
+<path fill="none" stroke="#75507b" d="M121,-72C121,-72 53,-72 53,-72 50,-72 47,-69 47,-66 47,-66 47,-60 47,-60 47,-57 50,-54 53,-54 53,-54 121,-54 121,-54 124,-54 127,-57 127,-60 127,-60 127,-66 127,-66 127,-69 124,-72 121,-72"/>
+<text text-anchor="middle" x="87" y="-60.7" font-family="inherit" font-size="8.50">Gtk.UIManager</text>
+</a>
+</g>
+</g>
+<!-- GObject.Object&#45;&gt;Gtk.UIManager -->
+<g id="edge2" class="edge">
+<title>GObject.Object&#45;&gt;Gtk.UIManager</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M47.34,-107.88C55.02,-99.38 67.17,-85.94 76,-76.18"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="77.5,-77.12 79.55,-72.24 74.9,-74.78 77.5,-77.12"/>
+</g>
+<!-- Gtk.Buildable&#45;&gt;Gtk.UIManager -->
+<g id="edge3" class="edge">
+<title>Gtk.Buildable&#45;&gt;Gtk.UIManager</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M127.5,-107.88C119.59,-99.3 107.03,-85.7 98,-75.91"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="99.28,-74.73 94.61,-72.24 96.71,-77.1 99.28,-74.73"/>
+</g>
+<!-- Gtk.UIManager&#45;&gt;Anjuta.UI -->
+<g id="edge4" class="edge">
+<title>Gtk.UIManager&#45;&gt;Anjuta.UI</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M87,-53.88C87,-45.76 87,-33.13 87,-23.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="88.75,-23.24 87,-18.24 85.25,-23.24 88.75,-23.24"/>
+</g>
+</g>
+</svg>
+</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Subclasses:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="methods">
+<span id="anjuta-ui-methods"></span><h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../Gtk-3.0/classes/UIManager.html#gtk-uimanager-methods" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.UIManager (18)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (37)</span></a>,     <a class="reference external" href="../../Gtk-3.0/classes/Buildable.html#gtk-buildable-methods" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.Buildable (10)</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Structs:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/ObjectClass.html#gobject-objectclass-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.ObjectClass (5)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="99%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><em>class</em></td>
+<td><a class="reference internal" href="#Anjuta.UI.load_accels" title="Anjuta.UI.load_accels"><code class="xref py py-func docutils literal notranslate"><span class="pre">load_accels</span></code></a> (filename)</td>
+</tr>
+<tr class="row-even"><td><em>class</em></td>
+<td><a class="reference internal" href="#Anjuta.UI.new" title="Anjuta.UI.new"><code class="xref py py-func docutils literal notranslate"><span class="pre">new</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td><em>class</em></td>
+<td><a class="reference internal" href="#Anjuta.UI.save_accels" title="Anjuta.UI.save_accels"><code class="xref py py-func docutils literal notranslate"><span class="pre">save_accels</span></code></a> (filename)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Anjuta.UI.activate_action_by_group" title="Anjuta.UI.activate_action_by_group"><code class="xref py py-func docutils literal notranslate"><span class="pre">activate_action_by_group</span></code></a> (action_group, action_name)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Anjuta.UI.activate_action_by_path" title="Anjuta.UI.activate_action_by_path"><code class="xref py py-func docutils literal notranslate"><span class="pre">activate_action_by_path</span></code></a> (action_path)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Anjuta.UI.add_action_group" title="Anjuta.UI.add_action_group"><code class="xref py py-func docutils literal notranslate"><span class="pre">add_action_group</span></code></a> (action_group_name, action_group_label, action_group, can_customize)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Anjuta.UI.add_action_group_entries" title="Anjuta.UI.add_action_group_entries"><code class="xref py py-func docutils literal notranslate"><span class="pre">add_action_group_entries</span></code></a> (action_group_name, action_group_label, entries, translation_domain, can_customize, user_data)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Anjuta.UI.add_toggle_action_group_entries" title="Anjuta.UI.add_toggle_action_group_entries"><code class="xref py py-func docutils literal notranslate"><span class="pre">add_toggle_action_group_entries</span></code></a> (action_group_name, action_group_label, entries, translation_domain, can_customize, user_data)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Anjuta.UI.dump_tree" title="Anjuta.UI.dump_tree"><code class="xref py py-func docutils literal notranslate"><span class="pre">dump_tree</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Anjuta.UI.get_accel_editor" title="Anjuta.UI.get_accel_editor"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_accel_editor</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Anjuta.UI.get_accel_group" title="Anjuta.UI.get_accel_group"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_accel_group</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Anjuta.UI.get_action" title="Anjuta.UI.get_action"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_action</span></code></a> (action_group_name, action_name)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Anjuta.UI.get_icon_factory" title="Anjuta.UI.get_icon_factory"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_icon_factory</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Anjuta.UI.merge" title="Anjuta.UI.merge"><code class="xref py py-func docutils literal notranslate"><span class="pre">merge</span></code></a> (ui_filename)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Anjuta.UI.remove_action_group" title="Anjuta.UI.remove_action_group"><code class="xref py py-func docutils literal notranslate"><span class="pre">remove_action_group</span></code></a> (action_group)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Anjuta.UI.unload_accels" title="Anjuta.UI.unload_accels"><code class="xref py py-func docutils literal notranslate"><span class="pre">unload_accels</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Anjuta.UI.unmerge" title="Anjuta.UI.unmerge"><code class="xref py py-func docutils literal notranslate"><span class="pre">unmerge</span></code></a> (id)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="virtual-methods">
+<span id="anjuta-ui-vfuncs"></span><h2>Virtual Methods<a class="headerlink" href="#virtual-methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../Gtk-3.0/classes/UIManager.html#gtk-uimanager-vfuncs" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.UIManager (8)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-vfuncs" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (7)</span></a>,     <a class="reference external" href="../../Gtk-3.0/classes/Buildable.html#gtk-buildable-vfuncs" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.Buildable (10)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="anjuta-ui-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../Gtk-3.0/classes/UIManager.html#gtk-uimanager-props" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.UIManager (2)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="signals">
+<span id="anjuta-ui-signals"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../Gtk-3.0/classes/UIManager.html#gtk-uimanager-signals" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.UIManager (6)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-signals" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fields">
+<span id="anjuta-ui-fields"></span><h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../Gtk-3.0/classes/UIManager.html#gtk-uimanager-fields" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.UIManager (6)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-fields" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="16%" />
+<col width="1%" />
+<col width="1%" />
+<col width="82%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Access</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>parent</td>
+<td><a class="reference external" href="../../Gtk-3.0/classes/UIManager.html#Gtk.UIManager" title="(in Gtk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.UIManager</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="class-details">
+<h2>Class Details<a class="headerlink" href="#class-details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Anjuta.UI">
+<em class="property">class </em><code class="descclassname">Anjuta.</code><code class="descname">UI</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#Anjuta.UI" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Bases:</th><td class="field-body"><a class="reference external" href="../../Gtk-3.0/classes/UIManager.html#Gtk.UIManager" title="(in Gtk 3.0 v3.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Gtk.UIManager</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Abstract:</th><td class="field-body">No</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Structure:</th><td class="field-body"><a class="reference internal" href="UIClass.html#Anjuta.UIClass" title="Anjuta.UIClass"><code class="xref py py-class docutils literal notranslate"><span class="pre">Anjuta.UIClass</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<dl class="classmethod">
+<dt id="Anjuta.UI.load_accels">
+<em class="property">classmethod </em><code class="descname">load_accels</code><span class="sig-paren">(</span><em>filename</em><span class="sig-paren">)</span><a class="headerlink" href="#Anjuta.UI.load_accels" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>filename</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – </td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="Anjuta.UI.new">
+<em class="property">classmethod </em><code class="descname">new</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Anjuta.UI.new" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A <a class="reference internal" href="#Anjuta.UI" title="Anjuta.UI"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Anjuta.UI</span></code></a> object</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#Anjuta.UI" title="Anjuta.UI"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Anjuta.UI</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Creates a new instance of <a class="reference internal" href="#Anjuta.UI" title="Anjuta.UI"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Anjuta.UI</span></code></a>.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="Anjuta.UI.save_accels">
+<em class="property">classmethod </em><code class="descname">save_accels</code><span class="sig-paren">(</span><em>filename</em><span class="sig-paren">)</span><a class="headerlink" href="#Anjuta.UI.save_accels" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>filename</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – </td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Anjuta.UI.activate_action_by_group">
+<code class="descname">activate_action_by_group</code><span class="sig-paren">(</span><em>action_group</em>, <em>action_name</em><span class="sig-paren">)</span><a class="headerlink" href="#Anjuta.UI.activate_action_by_group" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>action_group</strong> (<a class="reference external" href="../../Gtk-3.0/classes/ActionGroup.html#Gtk.ActionGroup" title="(in Gtk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ActionGroup</span></code></a>) – Action group.</li>
+<li><strong>action_name</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – Action name.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Activates the action <cite>action_name</cite> in the <a class="reference external" href="../../Gtk-3.0/classes/ActionGroup.html#Gtk.ActionGroup" title="(in Gtk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ActionGroup</span></code></a> <cite>action_group</cite>.
+“ActionGroupName/ActionName”. Note that it will only work if the group has
+been added using methods in <a class="reference internal" href="#Anjuta.UI" title="Anjuta.UI"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Anjuta.UI</span></code></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Anjuta.UI.activate_action_by_path">
+<code class="descname">activate_action_by_path</code><span class="sig-paren">(</span><em>action_path</em><span class="sig-paren">)</span><a class="headerlink" href="#Anjuta.UI.activate_action_by_path" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>action_path</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – Path of the action in the form “GroupName/ActionName”</td>
+</tr>
+</tbody>
+</table>
+<p>Activates the action represented by <cite>action_path</cite>. The path is in the form
+“ActionGroupName/ActionName”. Note that it will only work if the group has
+been added using methods in <a class="reference internal" href="#Anjuta.UI" title="Anjuta.UI"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Anjuta.UI</span></code></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Anjuta.UI.add_action_group">
+<code class="descname">add_action_group</code><span class="sig-paren">(</span><em>action_group_name</em>, <em>action_group_label</em>, <em>action_group</em>, <em>can_customize</em><span class="sig-paren">)</span><a class="headerlink" href="#Anjuta.UI.add_action_group" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>action_group_name</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – Untranslated name of the action group.</li>
+<li><strong>action_group_label</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – Translated label of the action group.</li>
+<li><strong>action_group</strong> (<a class="reference external" href="../../Gtk-3.0/classes/ActionGroup.html#Gtk.ActionGroup" title="(in Gtk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ActionGroup</span></code></a>) – <a class="reference external" href="../../Gtk-3.0/classes/ActionGroup.html#Gtk.ActionGroup" title="(in Gtk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ActionGroup</span></code></a> object to add.</li>
+<li><strong>can_customize</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a>) – </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>This is similar to <a class="reference internal" href="#Anjuta.UI.add_action_group_entries" title="Anjuta.UI.add_action_group_entries"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Anjuta.UI.add_action_group_entries</span></code></a>(), except that
+it adds <a class="reference external" href="../../Gtk-3.0/classes/ActionGroup.html#Gtk.ActionGroup" title="(in Gtk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ActionGroup</span></code></a> object <cite>action_group</cite> directly. All actions in this
+group are automatically registered in <a class="reference internal" href="#Anjuta.UI" title="Anjuta.UI"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Anjuta.UI</span></code></a> and can be retrieved
+normally with <a class="reference internal" href="#Anjuta.UI.get_action" title="Anjuta.UI.get_action"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Anjuta.UI.get_action</span></code></a>().</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Anjuta.UI.add_action_group_entries">
+<code class="descname">add_action_group_entries</code><span class="sig-paren">(</span><em>action_group_name</em>, <em>action_group_label</em>, <em>entries</em>, <em>translation_domain</em>, <em>can_customize</em>, <em>user_data</em><span class="sig-paren">)</span><a class="headerlink" href="#Anjuta.UI.add_action_group_entries" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>action_group_name</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – Untranslated name of the action group.</li>
+<li><strong>action_group_label</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – Translated label of the action group.</li>
+<li><strong>entries</strong> ([<a class="reference external" href="../../Gtk-3.0/classes/ActionEntry.html#Gtk.ActionEntry" title="(in Gtk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ActionEntry</span></code></a>]) – An array of action entries.</li>
+<li><strong>translation_domain</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – The translation domain used to translated the entries.
+It is usually the GETTEXT_PACKAGE macro in a project.</li>
+<li><strong>can_customize</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a>) – If true the actions are customizable by user.</li>
+<li><strong>user_data</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">object</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – User data to pass to action objects. This is the data that
+will come as user_data in “activate” signal of the actions.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">A <a class="reference external" href="../../Gtk-3.0/classes/ActionGroup.html#Gtk.ActionGroup" title="(in Gtk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ActionGroup</span></code></a> object holding all the
+action objects.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="../../Gtk-3.0/classes/ActionGroup.html#Gtk.ActionGroup" title="(in Gtk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ActionGroup</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><a class="reference external" href="../../Gtk-3.0/classes/Action.html#Gtk.Action" title="(in Gtk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Action</span></code></a> objects are created from the <a class="reference external" href="../../Gtk-3.0/classes/ActionEntry.html#Gtk.ActionEntry" title="(in Gtk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ActionEntry</span></code></a> structures and
+added to the UI Manager. “activate” signal of <a class="reference external" href="../../Gtk-3.0/classes/Action.html#Gtk.Action" title="(in Gtk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Action</span></code></a> is connected for
+all the action objects using the callback in the entry structure and the
+<cite>user_data</cite> passed here.</p>
+<p>This group of actions are registered with the name <cite>action_group_name</cite>
+in <a class="reference internal" href="#Anjuta.UI" title="Anjuta.UI"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Anjuta.UI</span></code></a>. A <a class="reference external" href="../../Gtk-3.0/classes/Action.html#Gtk.Action" title="(in Gtk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Action</span></code></a> object from this action group can be later
+retrieved by <a class="reference internal" href="#Anjuta.UI.get_action" title="Anjuta.UI.get_action"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Anjuta.UI.get_action</span></code></a>() using <cite>action_group_name</cite> and action name.
+<cite>action_group_label</cite> is used as the display name for the action group in
+UI manager dialog where action shortcuts are configured.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Anjuta.UI.add_toggle_action_group_entries">
+<code class="descname">add_toggle_action_group_entries</code><span class="sig-paren">(</span><em>action_group_name</em>, <em>action_group_label</em>, <em>entries</em>, <em>translation_domain</em>, <em>can_customize</em>, <em>user_data</em><span class="sig-paren">)</span><a class="headerlink" href="#Anjuta.UI.add_toggle_action_group_entries" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>action_group_name</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – Untranslated name of the action group.</li>
+<li><strong>action_group_label</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – Translated label of the action group.</li>
+<li><strong>entries</strong> ([<a class="reference external" href="../../Gtk-3.0/classes/ToggleActionEntry.html#Gtk.ToggleActionEntry" title="(in Gtk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ToggleActionEntry</span></code></a>]) – An array of action entries.</li>
+<li><strong>translation_domain</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – The translation domain used to translated the entries.
+It is usually the GETTEXT_PACKAGE macro in a project.</li>
+<li><strong>can_customize</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a>) – </li>
+<li><strong>user_data</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">object</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – User data to pass to action objects. This is the data that
+will come as user_data in “activate” signal of the actions.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">A <a class="reference external" href="../../Gtk-3.0/classes/ActionGroup.html#Gtk.ActionGroup" title="(in Gtk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ActionGroup</span></code></a> object holding all the
+action objects.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="../../Gtk-3.0/classes/ActionGroup.html#Gtk.ActionGroup" title="(in Gtk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ActionGroup</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>This is similar to <a class="reference internal" href="#Anjuta.UI.add_action_group_entries" title="Anjuta.UI.add_action_group_entries"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Anjuta.UI.add_action_group_entries</span></code></a>(), except that
+it adds <a class="reference external" href="../../Gtk-3.0/classes/ToggleAction.html#Gtk.ToggleAction" title="(in Gtk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ToggleAction</span></code></a> objects after creating them from the <cite>entries</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Anjuta.UI.dump_tree">
+<code class="descname">dump_tree</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Anjuta.UI.dump_tree" title="Permalink to this definition">¶</a></dt>
+<dd><p>Dumps the current UI XML tree in STDOUT. Useful for debugging.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Anjuta.UI.get_accel_editor">
+<code class="descname">get_accel_editor</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Anjuta.UI.get_accel_editor" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a <a class="reference external" href="../../Gtk-3.0/classes/Widget.html#Gtk.Widget" title="(in Gtk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Widget</span></code></a> containing the editor.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="../../Gtk-3.0/classes/Widget.html#Gtk.Widget" title="(in Gtk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Widget</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Creates an accel editor widget and returns it. It should be added to
+container and displayed to users.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Anjuta.UI.get_accel_group">
+<code class="descname">get_accel_group</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Anjuta.UI.get_accel_group" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A <a class="reference external" href="../../Gtk-3.0/classes/AccelGroup.html#Gtk.AccelGroup" title="(in Gtk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.AccelGroup</span></code></a> object.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="../../Gtk-3.0/classes/AccelGroup.html#Gtk.AccelGroup" title="(in Gtk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.AccelGroup</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns the <a class="reference external" href="../../Gtk-3.0/classes/AccelGroup.html#Gtk.AccelGroup" title="(in Gtk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.AccelGroup</span></code></a> object associated with this UI manager.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Anjuta.UI.get_action">
+<code class="descname">get_action</code><span class="sig-paren">(</span><em>action_group_name</em>, <em>action_name</em><span class="sig-paren">)</span><a class="headerlink" href="#Anjuta.UI.get_action" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>action_group_name</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – Group name.</li>
+<li><strong>action_name</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – Action name.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">A <a class="reference external" href="../../Gtk-3.0/classes/Action.html#Gtk.Action" title="(in Gtk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Action</span></code></a> object</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="../../Gtk-3.0/classes/Action.html#Gtk.Action" title="(in Gtk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Action</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Returns the action object with the name <cite>action_name</cite> in <cite>action_group_name</cite>.
+Note that it will be only sucessully returned if the group has been added
+using methods in <a class="reference internal" href="#Anjuta.UI" title="Anjuta.UI"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Anjuta.UI</span></code></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Anjuta.UI.get_icon_factory">
+<code class="descname">get_icon_factory</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Anjuta.UI.get_icon_factory" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The <a class="reference external" href="../../Gtk-3.0/classes/IconFactory.html#Gtk.IconFactory" title="(in Gtk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.IconFactory</span></code></a> object used by it</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="../../Gtk-3.0/classes/IconFactory.html#Gtk.IconFactory" title="(in Gtk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.IconFactory</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>This returns the IconFactory object. All icons should be registered using
+this icon factory. Read the documentation for <a class="reference external" href="../../Gtk-3.0/classes/IconFactory.html#Gtk.IconFactory" title="(in Gtk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.IconFactory</span></code></a> on how to
+use it.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Anjuta.UI.merge">
+<code class="descname">merge</code><span class="sig-paren">(</span><em>ui_filename</em><span class="sig-paren">)</span><a class="headerlink" href="#Anjuta.UI.merge" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>ui_filename</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – UI file to merge into UI manager.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Integer merge ID</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Merges XML UI definition in <cite>ui_filename</cite>. UI elements defined in the xml
+are merged with existing UI elements in UI manager. The format of the
+file content is the standard XML UI definition tree. For more detail,
+read the documentation for <a class="reference external" href="../../Gtk-3.0/classes/UIManager.html#Gtk.UIManager" title="(in Gtk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.UIManager</span></code></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Anjuta.UI.remove_action_group">
+<code class="descname">remove_action_group</code><span class="sig-paren">(</span><em>action_group</em><span class="sig-paren">)</span><a class="headerlink" href="#Anjuta.UI.remove_action_group" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>action_group</strong> (<a class="reference external" href="../../Gtk-3.0/classes/ActionGroup.html#Gtk.ActionGroup" title="(in Gtk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ActionGroup</span></code></a>) – <a class="reference external" href="../../Gtk-3.0/classes/ActionGroup.html#Gtk.ActionGroup" title="(in Gtk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ActionGroup</span></code></a> object to remove.</td>
+</tr>
+</tbody>
+</table>
+<p>Removes a previous added action group. All actions in this group are
+also unregistered from UI manager.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Anjuta.UI.unload_accels">
+<code class="descname">unload_accels</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Anjuta.UI.unload_accels" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Anjuta.UI.unmerge">
+<code class="descname">unmerge</code><span class="sig-paren">(</span><em>id</em><span class="sig-paren">)</span><a class="headerlink" href="#Anjuta.UI.unmerge" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>id</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – Merge ID returned by <a class="reference internal" href="#Anjuta.UI.merge" title="Anjuta.UI.merge"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Anjuta.UI.merge</span></code></a>().</td>
+</tr>
+</tbody>
+</table>
+<p>Unmerges UI with the ID value <cite>id</cite> (returned by <a class="reference internal" href="#Anjuta.UI.merge" title="Anjuta.UI.merge"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Anjuta.UI.merge</span></code></a>() when
+it was merged. For more detail, read the documentation for <a class="reference external" href="../../Gtk-3.0/classes/UIManager.html#Gtk.UIManager" title="(in Gtk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.UIManager</span></code></a>.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div> 
+
+</body>
+</html>

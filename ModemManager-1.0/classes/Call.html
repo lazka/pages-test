@@ -1,0 +1,1360 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    ModemManager.Call -
+    
+      Classes -
+    
+    ModemManager 1.0
+  </title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/css/pgi.css" type="text/css" />
+  
+
+  
+  <script type="text/javascript">
+
+    function openSidebar(element) {
+        window.location.href = element.href + location.hash;
+        return false;
+    }
+
+    function inIframe() {
+        try {
+            return window.self !== window.top;
+        } catch (e) {
+            return true;
+        }
+    }
+
+    function onLoaded() {
+        if(!inIframe()) {
+            var icons = document.getElementsByClassName('open-sidebar');
+
+            for (var i = 0; i < icons.length; i ++) {
+                icons[i].style.display = 'table-cell';
+            }
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', onLoaded, false);
+
+  </script>
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="ModemManager 1.0 Python API Docs" href="../index.html"/>
+        <link rel="up" title="Classes" href="../classes.html"/>
+        <link rel="next" title="ModemManager.CallAudioFormat" href="CallAudioFormat.html"/>
+        <link rel="prev" title="ModemManager.BearerStats" href="BearerStats.html"/> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+<div class="non-fixed-bar">
+<table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#ModemManager-1.0/classes/Call.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">ModemManager 1.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>ModemManager.Call</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="BearerStats.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="CallAudioFormat.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">ModemManager.Call</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+<div class="fixed-bar">
+  <table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#ModemManager-1.0/classes/Call.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">ModemManager 1.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>ModemManager.Call</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="BearerStats.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="CallAudioFormat.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">ModemManager.Call</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+  <div class="wy-grid-for-nav">
+
+    
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="main">
+            
+  <div class="section" id="modemmanager-call">
+<h1>ModemManager.Call<a class="headerlink" href="#modemmanager-call" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<svg width="392pt" height="188pt"
+ viewBox="0.00 0.00 392.00 188.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 184)">
+<title>g</title>
+<!-- GObject.GInterface -->
+<g id="node1" class="node">
+<title>GObject.GInterface</title>
+<g id="a_node1"><a xlink:href="../../GObject-2.0/classes/GInterface.html#GObject.GInterface" xlink:title="GObject.GInterface">
+<path fill="none" stroke="#3091d1" d="M198,-180C198,-180 112,-180 112,-180 109,-180 106,-177 106,-174 106,-174 106,-168 106,-168 106,-165 109,-162 112,-162 112,-162 198,-162 198,-162 201,-162 204,-165 204,-168 204,-168 204,-174 204,-174 204,-177 201,-180 198,-180"/>
+<text text-anchor="middle" x="155" y="-168.7" font-family="inherit" font-size="8.50">GObject.GInterface</text>
+</a>
+</g>
+</g>
+<!-- Gio.AsyncInitable -->
+<g id="node3" class="node">
+<title>Gio.AsyncInitable</title>
+<g id="a_node3"><a xlink:href="../../Gio-2.0/classes/AsyncInitable.html#Gio.AsyncInitable" xlink:title="Gio.AsyncInitable">
+<path fill="none" stroke="#3091d1" d="M84,-126C84,-126 6,-126 6,-126 3,-126 0,-123 0,-120 0,-120 0,-114 0,-114 0,-111 3,-108 6,-108 6,-108 84,-108 84,-108 87,-108 90,-111 90,-114 90,-114 90,-120 90,-120 90,-123 87,-126 84,-126"/>
+<text text-anchor="middle" x="45" y="-114.7" font-family="inherit" font-size="8.50">Gio.AsyncInitable</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Gio.AsyncInitable -->
+<g id="edge1" class="edge">
+<title>GObject.GInterface&#45;&gt;Gio.AsyncInitable</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M137.81,-161.88C118.6,-152.79 87.46,-138.07 66.61,-128.22"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="67.34,-126.62 62.07,-126.07 65.84,-129.79 67.34,-126.62"/>
+</g>
+<!-- Gio.DBusInterface -->
+<g id="node4" class="node">
+<title>Gio.DBusInterface</title>
+<g id="a_node4"><a xlink:href="../../Gio-2.0/classes/DBusInterface.html#Gio.DBusInterface" xlink:title="Gio.DBusInterface">
+<path fill="none" stroke="#3091d1" d="M196,-126C196,-126 114,-126 114,-126 111,-126 108,-123 108,-120 108,-120 108,-114 108,-114 108,-111 111,-108 114,-108 114,-108 196,-108 196,-108 199,-108 202,-111 202,-114 202,-114 202,-120 202,-120 202,-123 199,-126 196,-126"/>
+<text text-anchor="middle" x="155" y="-114.7" font-family="inherit" font-size="8.50">Gio.DBusInterface</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Gio.DBusInterface -->
+<g id="edge2" class="edge">
+<title>GObject.GInterface&#45;&gt;Gio.DBusInterface</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M155,-161.88C155,-153.76 155,-141.13 155,-131.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="156.75,-131.24 155,-126.24 153.25,-131.24 156.75,-131.24"/>
+</g>
+<!-- Gio.Initable -->
+<g id="node6" class="node">
+<title>Gio.Initable</title>
+<g id="a_node6"><a xlink:href="../../Gio-2.0/classes/Initable.html#Gio.Initable" xlink:title="Gio.Initable">
+<path fill="none" stroke="#3091d1" d="M279.5,-126C279.5,-126 226.5,-126 226.5,-126 223.5,-126 220.5,-123 220.5,-120 220.5,-120 220.5,-114 220.5,-114 220.5,-111 223.5,-108 226.5,-108 226.5,-108 279.5,-108 279.5,-108 282.5,-108 285.5,-111 285.5,-114 285.5,-114 285.5,-120 285.5,-120 285.5,-123 282.5,-126 279.5,-126"/>
+<text text-anchor="middle" x="253" y="-114.7" font-family="inherit" font-size="8.50">Gio.Initable</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Gio.Initable -->
+<g id="edge3" class="edge">
+<title>GObject.GInterface&#45;&gt;Gio.Initable</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M170.31,-161.88C187.29,-152.87 214.71,-138.32 233.28,-128.47"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="234.2,-129.96 237.8,-126.07 232.56,-126.87 234.2,-129.96"/>
+</g>
+<!-- GObject.Object -->
+<g id="node2" class="node">
+<title>GObject.Object</title>
+<g id="a_node2"><a xlink:href="../../GObject-2.0/classes/Object.html#GObject.Object" xlink:title="GObject.Object">
+<path fill="none" stroke="#75507b" d="M378,-126C378,-126 310,-126 310,-126 307,-126 304,-123 304,-120 304,-120 304,-114 304,-114 304,-111 307,-108 310,-108 310,-108 378,-108 378,-108 381,-108 384,-111 384,-114 384,-114 384,-120 384,-120 384,-123 381,-126 378,-126"/>
+<text text-anchor="middle" x="344" y="-114.7" font-family="inherit" font-size="8.50">GObject.Object</text>
+</a>
+</g>
+</g>
+<!-- Gio.DBusProxy -->
+<g id="node5" class="node">
+<title>Gio.DBusProxy</title>
+<g id="a_node5"><a xlink:href="../../Gio-2.0/classes/DBusProxy.html#Gio.DBusProxy" xlink:title="Gio.DBusProxy">
+<path fill="none" stroke="#75507b" d="M238,-72C238,-72 170,-72 170,-72 167,-72 164,-69 164,-66 164,-66 164,-60 164,-60 164,-57 167,-54 170,-54 170,-54 238,-54 238,-54 241,-54 244,-57 244,-60 244,-60 244,-66 244,-66 244,-69 241,-72 238,-72"/>
+<text text-anchor="middle" x="204" y="-60.7" font-family="inherit" font-size="8.50">Gio.DBusProxy</text>
+</a>
+</g>
+</g>
+<!-- GObject.Object&#45;&gt;Gio.DBusProxy -->
+<g id="edge4" class="edge">
+<title>GObject.Object&#45;&gt;Gio.DBusProxy</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M322.43,-107.99C297.74,-98.82 257.27,-83.79 230.63,-73.89"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="231.12,-72.21 225.82,-72.11 229.9,-75.49 231.12,-72.21"/>
+</g>
+<!-- Gio.AsyncInitable&#45;&gt;Gio.DBusProxy -->
+<g id="edge5" class="edge">
+<title>Gio.AsyncInitable&#45;&gt;Gio.DBusProxy</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M69.5,-107.99C97.74,-98.75 144.15,-83.57 174.4,-73.68"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="175.27,-75.24 179.48,-72.02 174.18,-71.91 175.27,-75.24"/>
+</g>
+<!-- Gio.DBusInterface&#45;&gt;Gio.DBusProxy -->
+<g id="edge6" class="edge">
+<title>Gio.DBusInterface&#45;&gt;Gio.DBusProxy</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M162.66,-107.88C170.74,-99.3 183.55,-85.7 192.77,-75.91"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="194.08,-77.08 196.24,-72.24 191.53,-74.68 194.08,-77.08"/>
+</g>
+<!-- ModemManager.Call -->
+<g id="node7" class="node">
+<title>ModemManager.Call</title>
+<g id="a_node7"><a xlink:href="#ModemManager.Call" xlink:title="ModemManager.Call">
+<path fill="none" stroke="#75507b" d="M250,-18C250,-18 158,-18 158,-18 155,-18 152,-15 152,-12 152,-12 152,-6 152,-6 152,-3 155,0 158,0 158,0 250,0 250,0 253,0 256,-3 256,-6 256,-6 256,-12 256,-12 256,-15 253,-18 250,-18"/>
+<text text-anchor="middle" x="204" y="-6.7" font-family="inherit" font-size="8.50">ModemManager.Call</text>
+</a>
+</g>
+</g>
+<!-- Gio.DBusProxy&#45;&gt;ModemManager.Call -->
+<g id="edge7" class="edge">
+<title>Gio.DBusProxy&#45;&gt;ModemManager.Call</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M204,-53.88C204,-45.76 204,-33.13 204,-23.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="205.75,-23.24 204,-18.24 202.25,-23.24 205.75,-23.24"/>
+</g>
+<!-- Gio.Initable&#45;&gt;Gio.DBusProxy -->
+<g id="edge8" class="edge">
+<title>Gio.Initable&#45;&gt;Gio.DBusProxy</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M245.34,-107.88C237.26,-99.3 224.45,-85.7 215.23,-75.91"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="216.47,-74.68 211.76,-72.24 213.92,-77.08 216.47,-74.68"/>
+</g>
+</g>
+</svg>
+</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Subclasses:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="methods">
+<span id="modemmanager-call-methods"></span><h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../Gio-2.0/classes/DBusProxy.html#gio-dbusproxy-methods" title="(in Gio 2.0 v2.0)"><span class="xref std std-ref">Gio.DBusProxy (25)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (37)</span></a>,     <a class="reference external" href="../../Gio-2.0/classes/AsyncInitable.html#gio-asyncinitable-methods" title="(in Gio 2.0 v2.0)"><span class="xref std std-ref">Gio.AsyncInitable (4)</span></a>,     <a class="reference external" href="../../Gio-2.0/classes/DBusInterface.html#gio-dbusinterface-methods" title="(in Gio 2.0 v2.0)"><span class="xref std std-ref">Gio.DBusInterface (3)</span></a>,     <a class="reference external" href="../../Gio-2.0/classes/Initable.html#gio-initable-methods" title="(in Gio 2.0 v2.0)"><span class="xref std std-ref">Gio.Initable (2)</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Structs:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/ObjectClass.html#gobject-objectclass-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.ObjectClass (5)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="99%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#ModemManager.Call.accept" title="ModemManager.Call.accept"><code class="xref py py-func docutils literal notranslate"><span class="pre">accept</span></code></a> (cancellable, callback, *user_data)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#ModemManager.Call.accept_finish" title="ModemManager.Call.accept_finish"><code class="xref py py-func docutils literal notranslate"><span class="pre">accept_finish</span></code></a> (res)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#ModemManager.Call.accept_sync" title="ModemManager.Call.accept_sync"><code class="xref py py-func docutils literal notranslate"><span class="pre">accept_sync</span></code></a> (cancellable)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#ModemManager.Call.deflect" title="ModemManager.Call.deflect"><code class="xref py py-func docutils literal notranslate"><span class="pre">deflect</span></code></a> (number, cancellable, callback, *user_data)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#ModemManager.Call.deflect_finish" title="ModemManager.Call.deflect_finish"><code class="xref py py-func docutils literal notranslate"><span class="pre">deflect_finish</span></code></a> (res)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#ModemManager.Call.deflect_sync" title="ModemManager.Call.deflect_sync"><code class="xref py py-func docutils literal notranslate"><span class="pre">deflect_sync</span></code></a> (number, cancellable)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#ModemManager.Call.dup_audio_port" title="ModemManager.Call.dup_audio_port"><code class="xref py py-func docutils literal notranslate"><span class="pre">dup_audio_port</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#ModemManager.Call.dup_number" title="ModemManager.Call.dup_number"><code class="xref py py-func docutils literal notranslate"><span class="pre">dup_number</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#ModemManager.Call.dup_path" title="ModemManager.Call.dup_path"><code class="xref py py-func docutils literal notranslate"><span class="pre">dup_path</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#ModemManager.Call.get_audio_format" title="ModemManager.Call.get_audio_format"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_audio_format</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#ModemManager.Call.get_audio_port" title="ModemManager.Call.get_audio_port"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_audio_port</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#ModemManager.Call.get_direction" title="ModemManager.Call.get_direction"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_direction</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#ModemManager.Call.get_multiparty" title="ModemManager.Call.get_multiparty"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_multiparty</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#ModemManager.Call.get_number" title="ModemManager.Call.get_number"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_number</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#ModemManager.Call.get_path" title="ModemManager.Call.get_path"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_path</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#ModemManager.Call.get_state" title="ModemManager.Call.get_state"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_state</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#ModemManager.Call.get_state_reason" title="ModemManager.Call.get_state_reason"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_state_reason</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#ModemManager.Call.hangup" title="ModemManager.Call.hangup"><code class="xref py py-func docutils literal notranslate"><span class="pre">hangup</span></code></a> (cancellable, callback, *user_data)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#ModemManager.Call.hangup_finish" title="ModemManager.Call.hangup_finish"><code class="xref py py-func docutils literal notranslate"><span class="pre">hangup_finish</span></code></a> (res)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#ModemManager.Call.hangup_sync" title="ModemManager.Call.hangup_sync"><code class="xref py py-func docutils literal notranslate"><span class="pre">hangup_sync</span></code></a> (cancellable)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#ModemManager.Call.join_multiparty" title="ModemManager.Call.join_multiparty"><code class="xref py py-func docutils literal notranslate"><span class="pre">join_multiparty</span></code></a> (cancellable, callback, *user_data)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#ModemManager.Call.join_multiparty_finish" title="ModemManager.Call.join_multiparty_finish"><code class="xref py py-func docutils literal notranslate"><span class="pre">join_multiparty_finish</span></code></a> (res)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#ModemManager.Call.join_multiparty_sync" title="ModemManager.Call.join_multiparty_sync"><code class="xref py py-func docutils literal notranslate"><span class="pre">join_multiparty_sync</span></code></a> (cancellable)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#ModemManager.Call.leave_multiparty" title="ModemManager.Call.leave_multiparty"><code class="xref py py-func docutils literal notranslate"><span class="pre">leave_multiparty</span></code></a> (cancellable, callback, *user_data)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#ModemManager.Call.leave_multiparty_finish" title="ModemManager.Call.leave_multiparty_finish"><code class="xref py py-func docutils literal notranslate"><span class="pre">leave_multiparty_finish</span></code></a> (res)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#ModemManager.Call.leave_multiparty_sync" title="ModemManager.Call.leave_multiparty_sync"><code class="xref py py-func docutils literal notranslate"><span class="pre">leave_multiparty_sync</span></code></a> (cancellable)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#ModemManager.Call.peek_audio_format" title="ModemManager.Call.peek_audio_format"><code class="xref py py-func docutils literal notranslate"><span class="pre">peek_audio_format</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#ModemManager.Call.send_dtmf" title="ModemManager.Call.send_dtmf"><code class="xref py py-func docutils literal notranslate"><span class="pre">send_dtmf</span></code></a> (dtmf, cancellable, callback, *user_data)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#ModemManager.Call.send_dtmf_finish" title="ModemManager.Call.send_dtmf_finish"><code class="xref py py-func docutils literal notranslate"><span class="pre">send_dtmf_finish</span></code></a> (res)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#ModemManager.Call.send_dtmf_sync" title="ModemManager.Call.send_dtmf_sync"><code class="xref py py-func docutils literal notranslate"><span class="pre">send_dtmf_sync</span></code></a> (dtmf, cancellable)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#ModemManager.Call.start" title="ModemManager.Call.start"><code class="xref py py-func docutils literal notranslate"><span class="pre">start</span></code></a> (cancellable, callback, *user_data)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#ModemManager.Call.start_finish" title="ModemManager.Call.start_finish"><code class="xref py py-func docutils literal notranslate"><span class="pre">start_finish</span></code></a> (res)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#ModemManager.Call.start_sync" title="ModemManager.Call.start_sync"><code class="xref py py-func docutils literal notranslate"><span class="pre">start_sync</span></code></a> (cancellable)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="virtual-methods">
+<span id="modemmanager-call-vfuncs"></span><h2>Virtual Methods<a class="headerlink" href="#virtual-methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../Gio-2.0/classes/DBusProxy.html#gio-dbusproxy-vfuncs" title="(in Gio 2.0 v2.0)"><span class="xref std std-ref">Gio.DBusProxy (2)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-vfuncs" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (7)</span></a>,     <a class="reference external" href="../../Gio-2.0/classes/AsyncInitable.html#gio-asyncinitable-vfuncs" title="(in Gio 2.0 v2.0)"><span class="xref std std-ref">Gio.AsyncInitable (2)</span></a>,     <a class="reference external" href="../../Gio-2.0/classes/DBusInterface.html#gio-dbusinterface-vfuncs" title="(in Gio 2.0 v2.0)"><span class="xref std std-ref">Gio.DBusInterface (3)</span></a>,     <a class="reference external" href="../../Gio-2.0/classes/Initable.html#gio-initable-vfuncs" title="(in Gio 2.0 v2.0)"><span class="xref std std-ref">Gio.Initable (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="modemmanager-call-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../Gio-2.0/classes/DBusProxy.html#gio-dbusproxy-props" title="(in Gio 2.0 v2.0)"><span class="xref std std-ref">Gio.DBusProxy (9)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="signals">
+<span id="modemmanager-call-signals"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../Gio-2.0/classes/DBusProxy.html#gio-dbusproxy-signals" title="(in Gio 2.0 v2.0)"><span class="xref std std-ref">Gio.DBusProxy (2)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-signals" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fields">
+<span id="modemmanager-call-fields"></span><h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../Gio-2.0/classes/DBusProxy.html#gio-dbusproxy-fields" title="(in Gio 2.0 v2.0)"><span class="xref std std-ref">Gio.DBusProxy (2)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-fields" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="16%" />
+<col width="1%" />
+<col width="1%" />
+<col width="82%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Access</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>parent</td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">object</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="class-details">
+<h2>Class Details<a class="headerlink" href="#class-details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="ModemManager.Call">
+<em class="property">class </em><code class="descclassname">ModemManager.</code><code class="descname">Call</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#ModemManager.Call" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Bases:</th><td class="field-body"><a class="reference external" href="../../Gio-2.0/classes/DBusProxy.html#Gio.DBusProxy" title="(in Gio 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Gio.DBusProxy</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Abstract:</th><td class="field-body">No</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Structure:</th><td class="field-body"><a class="reference internal" href="CallClass.html#ModemManager.CallClass" title="ModemManager.CallClass"><code class="xref py py-class docutils literal notranslate"><span class="pre">ModemManager.CallClass</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The <a class="reference internal" href="#ModemManager.Call" title="ModemManager.Call"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.Call</span></code></a> structure contains private data and should only be accessed
+using the provided API.</p>
+<dl class="method">
+<dt id="ModemManager.Call.accept">
+<code class="descname">accept</code><span class="sig-paren">(</span><em>cancellable</em>, <em>callback</em>, <em>*user_data</em><span class="sig-paren">)</span><a class="headerlink" href="#ModemManager.Call.accept" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>cancellable</strong> (<a class="reference external" href="../../Gio-2.0/classes/Cancellable.html#Gio.Cancellable" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Cancellable</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – A <a class="reference external" href="../../Gio-2.0/classes/Cancellable.html#Gio.Cancellable" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Cancellable</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>.</li>
+<li><strong>callback</strong> (<a class="reference external" href="../../Gio-2.0/callbacks.html#Gio.AsyncReadyCallback" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AsyncReadyCallback</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – A <a class="reference external" href="../../Gio-2.0/callbacks.html#Gio.AsyncReadyCallback" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AsyncReadyCallback</span></code></a> to call when the request is satisfied or
+<a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>.</li>
+<li><strong>user_data</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">object</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – User data to pass to <cite>callback</cite>.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Asynchronously requests to accept the incoming call.</p>
+<p>Call objects can only be executed once.</p>
+<p>When the operation is finished, <cite>callback</cite> will be invoked in the</p>
+<p><a class="reference external" href="../../GLib-2.0/classes/MainContext.html#GLib.MainContext.push_thread_default" title="(in GLib 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">thread-default</span> <span class="pre">main</span> <span class="pre">loop</span></code></a>
+of the thread you are calling this method from. You can then call
+<a class="reference internal" href="#ModemManager.Call.accept_finish" title="ModemManager.Call.accept_finish"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.Call.accept_finish</span></code></a>() to get the result of the operation.</p>
+<p>See <a class="reference internal" href="#ModemManager.Call.accept_sync" title="ModemManager.Call.accept_sync"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.Call.accept_sync</span></code></a>() for the synchronous, blocking version of this method.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.6.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ModemManager.Call.accept_finish">
+<code class="descname">accept_finish</code><span class="sig-paren">(</span><em>res</em><span class="sig-paren">)</span><a class="headerlink" href="#ModemManager.Call.accept_finish" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>res</strong> (<a class="reference external" href="../../Gio-2.0/classes/AsyncResult.html#Gio.AsyncResult" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AsyncResult</span></code></a>) – The <a class="reference external" href="../../Gio-2.0/classes/AsyncResult.html#Gio.AsyncResult" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AsyncResult</span></code></a> obtained from the <a class="reference external" href="../../Gio-2.0/callbacks.html#Gio.AsyncReadyCallback" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AsyncReadyCallback</span></code></a> passed to
+<a class="reference internal" href="#ModemManager.Call.accept" title="ModemManager.Call.accept"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.Call.accept</span></code></a>().</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference external" href="../../GLib-2.0/classes/Error.html#GLib.Error" title="(in GLib 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLib.Error</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if the operation succeeded, <a class="reference external" href="http://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a> if <cite>error</cite> is set.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Finishes an operation started with <a class="reference internal" href="#ModemManager.Call.accept" title="ModemManager.Call.accept"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.Call.accept</span></code></a>().</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.6.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ModemManager.Call.accept_sync">
+<code class="descname">accept_sync</code><span class="sig-paren">(</span><em>cancellable</em><span class="sig-paren">)</span><a class="headerlink" href="#ModemManager.Call.accept_sync" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>cancellable</strong> (<a class="reference external" href="../../Gio-2.0/classes/Cancellable.html#Gio.Cancellable" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Cancellable</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – A <a class="reference external" href="../../Gio-2.0/classes/Cancellable.html#Gio.Cancellable" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Cancellable</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference external" href="../../GLib-2.0/classes/Error.html#GLib.Error" title="(in GLib 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLib.Error</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if the operation succeeded, <a class="reference external" href="http://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a> if <cite>error</cite> is set.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Synchronously requests to accept the incoming call.</p>
+<p>Call objects can only be sent once.</p>
+<p>The calling thread is blocked until an incoming call is ready.
+See <a class="reference internal" href="#ModemManager.Call.accept" title="ModemManager.Call.accept"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.Call.accept</span></code></a>() for the asynchronous version of this method.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.6.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ModemManager.Call.deflect">
+<code class="descname">deflect</code><span class="sig-paren">(</span><em>number</em>, <em>cancellable</em>, <em>callback</em>, <em>*user_data</em><span class="sig-paren">)</span><a class="headerlink" href="#ModemManager.Call.deflect" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>number</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – new number where the call will be deflected.</li>
+<li><strong>cancellable</strong> (<a class="reference external" href="../../Gio-2.0/classes/Cancellable.html#Gio.Cancellable" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Cancellable</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – A <a class="reference external" href="../../Gio-2.0/classes/Cancellable.html#Gio.Cancellable" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Cancellable</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>.</li>
+<li><strong>callback</strong> (<a class="reference external" href="../../Gio-2.0/callbacks.html#Gio.AsyncReadyCallback" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AsyncReadyCallback</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – A <a class="reference external" href="../../Gio-2.0/callbacks.html#Gio.AsyncReadyCallback" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AsyncReadyCallback</span></code></a> to call when the request is satisfied or
+<a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>.</li>
+<li><strong>user_data</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">object</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – User data to pass to <cite>callback</cite>.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Asynchronously requests to deflect the incoming call.</p>
+<p>This call will be considered terminated once the deflection is performed.</p>
+<p>When the operation is finished, <cite>callback</cite> will be invoked in the</p>
+<p><a class="reference external" href="../../GLib-2.0/classes/MainContext.html#GLib.MainContext.push_thread_default" title="(in GLib 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">thread-default</span> <span class="pre">main</span> <span class="pre">loop</span></code></a>
+of the thread you are calling this method from. You can then call
+<a class="reference internal" href="#ModemManager.Call.deflect_finish" title="ModemManager.Call.deflect_finish"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.Call.deflect_finish</span></code></a>() to get the result of the operation.</p>
+<p>See <a class="reference internal" href="#ModemManager.Call.deflect_sync" title="ModemManager.Call.deflect_sync"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.Call.deflect_sync</span></code></a>() for the synchronous, blocking version of this
+method.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.12.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ModemManager.Call.deflect_finish">
+<code class="descname">deflect_finish</code><span class="sig-paren">(</span><em>res</em><span class="sig-paren">)</span><a class="headerlink" href="#ModemManager.Call.deflect_finish" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>res</strong> (<a class="reference external" href="../../Gio-2.0/classes/AsyncResult.html#Gio.AsyncResult" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AsyncResult</span></code></a>) – The <a class="reference external" href="../../Gio-2.0/classes/AsyncResult.html#Gio.AsyncResult" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AsyncResult</span></code></a> obtained from the <a class="reference external" href="../../Gio-2.0/callbacks.html#Gio.AsyncReadyCallback" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AsyncReadyCallback</span></code></a> passed to
+<a class="reference internal" href="#ModemManager.Call.deflect" title="ModemManager.Call.deflect"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.Call.deflect</span></code></a>().</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference external" href="../../GLib-2.0/classes/Error.html#GLib.Error" title="(in GLib 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLib.Error</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if the operation succeeded, <a class="reference external" href="http://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a> if <cite>error</cite> is set.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Finishes an operation started with <a class="reference internal" href="#ModemManager.Call.deflect" title="ModemManager.Call.deflect"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.Call.deflect</span></code></a>().</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.12.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ModemManager.Call.deflect_sync">
+<code class="descname">deflect_sync</code><span class="sig-paren">(</span><em>number</em>, <em>cancellable</em><span class="sig-paren">)</span><a class="headerlink" href="#ModemManager.Call.deflect_sync" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>number</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – new number where the call will be deflected.</li>
+<li><strong>cancellable</strong> (<a class="reference external" href="../../Gio-2.0/classes/Cancellable.html#Gio.Cancellable" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Cancellable</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – A <a class="reference external" href="../../Gio-2.0/classes/Cancellable.html#Gio.Cancellable" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Cancellable</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first"><a class="reference external" href="../../GLib-2.0/classes/Error.html#GLib.Error" title="(in GLib 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLib.Error</span></code></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if the operation succeeded, <a class="reference external" href="http://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a> if <cite>error</cite> is set.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Synchronously requests to deflect the incoming call.</p>
+<p>This call will be considered terminated once the deflection is performed.</p>
+<p>The calling thread is blocked until an incoming call is ready.
+See <a class="reference internal" href="#ModemManager.Call.deflect" title="ModemManager.Call.deflect"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.Call.deflect</span></code></a>() for the asynchronous version of this method.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.12.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ModemManager.Call.dup_audio_port">
+<code class="descname">dup_audio_port</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ModemManager.Call.dup_audio_port" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The audio port, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> if call audio is not
+routed via the host or couldn’t be retrieved.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the kernel device used for audio (if any).</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.10.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ModemManager.Call.dup_number">
+<code class="descname">dup_number</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ModemManager.Call.dup_number" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The number, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> if it couldn’t be retrieved.
+The returned value should be freed with <a class="reference external" href="../../GLib-2.0/functions.html#GLib.free" title="(in GLib 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GLib.free</span></code></a>().</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the call number. In outgoing calls contains the dialing number or
+the remote number in incoming calls</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.6.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ModemManager.Call.dup_path">
+<code class="descname">dup_path</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ModemManager.Call.dup_path" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The DBus path of the <a class="reference internal" href="#ModemManager.Call" title="ModemManager.Call"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.Call</span></code></a> object.
+The returned value should be freed with <a class="reference external" href="../../GLib-2.0/functions.html#GLib.free" title="(in GLib 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GLib.free</span></code></a>().</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets a copy of the DBus path of the <a class="reference internal" href="#ModemManager.Call" title="ModemManager.Call"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.Call</span></code></a> object.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.6.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ModemManager.Call.get_audio_format">
+<code class="descname">get_audio_format</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ModemManager.Call.get_audio_format" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A <a class="reference internal" href="CallAudioFormat.html#ModemManager.CallAudioFormat" title="ModemManager.CallAudioFormat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.CallAudioFormat</span></code></a> that must be freed with
+<a class="reference external" href="../../GObject-2.0/classes/Object.html#GObject.Object.unref" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GObject.Object.unref</span></code></a>() or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> if unknown.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="CallAudioFormat.html#ModemManager.CallAudioFormat" title="ModemManager.CallAudioFormat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.CallAudioFormat</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets a <a class="reference internal" href="CallAudioFormat.html#ModemManager.CallAudioFormat" title="ModemManager.CallAudioFormat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.CallAudioFormat</span></code></a> object specifying the audio format used by the
+audio port if call audio is routed via the host.</p>
+<p>The values reported by <cite>self</cite> are not updated when the values in the
+interface change. Instead, the client is expected to call
+<a class="reference internal" href="#ModemManager.Call.get_audio_format" title="ModemManager.Call.get_audio_format"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.Call.get_audio_format</span></code></a>() again to get a new <a class="reference internal" href="CallAudioFormat.html#ModemManager.CallAudioFormat" title="ModemManager.CallAudioFormat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.CallAudioFormat</span></code></a> with the
+new values.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.10.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ModemManager.Call.get_audio_port">
+<code class="descname">get_audio_port</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ModemManager.Call.get_audio_port" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The audio port, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> if call audio is not
+routed via the host or couldn’t be retrieved.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the kernel device used for audio (if any).</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.10.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ModemManager.Call.get_direction">
+<code class="descname">get_direction</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ModemManager.Call.get_direction" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a <a class="reference internal" href="../enums.html#ModemManager.CallDirection" title="ModemManager.CallDirection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.CallDirection</span></code></a>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#ModemManager.CallDirection" title="ModemManager.CallDirection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.CallDirection</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the call direction.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.6.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ModemManager.Call.get_multiparty">
+<code class="descname">get_multiparty</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ModemManager.Call.get_multiparty" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if the call is part of a multiparty call, <a class="reference external" href="http://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a> otherwise.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets whether the call is part of a multiparty call.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.12.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ModemManager.Call.get_number">
+<code class="descname">get_number</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ModemManager.Call.get_number" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The number, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> if it couldn’t be retrieved.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the call number. In outgoing calls contains the dialing number or
+the remote number in incoming calls</p>
+<p>The returned value is only valid until the property changes so
+it is only safe to use this function on the thread where
+<cite>self</cite> was constructed. Use <a class="reference internal" href="#ModemManager.Call.dup_number" title="ModemManager.Call.dup_number"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.Call.dup_number</span></code></a>() if on another
+thread.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.6.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ModemManager.Call.get_path">
+<code class="descname">get_path</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ModemManager.Call.get_path" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The DBus path of the <a class="reference internal" href="#ModemManager.Call" title="ModemManager.Call"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.Call</span></code></a> object.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the DBus path of the <a class="reference internal" href="#ModemManager.Call" title="ModemManager.Call"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.Call</span></code></a> object.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.6.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ModemManager.Call.get_state">
+<code class="descname">get_state</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ModemManager.Call.get_state" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a <a class="reference internal" href="../enums.html#ModemManager.CallState" title="ModemManager.CallState"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.CallState</span></code></a>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#ModemManager.CallState" title="ModemManager.CallState"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.CallState</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the current state of call.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.6.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ModemManager.Call.get_state_reason">
+<code class="descname">get_state_reason</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ModemManager.Call.get_state_reason" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a <a class="reference internal" href="../enums.html#ModemManager.CallStateReason" title="ModemManager.CallStateReason"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.CallStateReason</span></code></a>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#ModemManager.CallStateReason" title="ModemManager.CallStateReason"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.CallStateReason</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the reason of why the call changes its state.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.6.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ModemManager.Call.hangup">
+<code class="descname">hangup</code><span class="sig-paren">(</span><em>cancellable</em>, <em>callback</em>, <em>*user_data</em><span class="sig-paren">)</span><a class="headerlink" href="#ModemManager.Call.hangup" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>cancellable</strong> (<a class="reference external" href="../../Gio-2.0/classes/Cancellable.html#Gio.Cancellable" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Cancellable</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – A <a class="reference external" href="../../Gio-2.0/classes/Cancellable.html#Gio.Cancellable" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Cancellable</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>.</li>
+<li><strong>callback</strong> (<a class="reference external" href="../../Gio-2.0/callbacks.html#Gio.AsyncReadyCallback" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AsyncReadyCallback</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – A <a class="reference external" href="../../Gio-2.0/callbacks.html#Gio.AsyncReadyCallback" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AsyncReadyCallback</span></code></a> to call when the request is satisfied or
+<a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>.</li>
+<li><strong>user_data</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">object</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – User data to pass to <cite>callback</cite>.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Asynchronously requests to hangup the call.</p>
+<p>Call objects can only be executed once.</p>
+<p>When the operation is finished, <cite>callback</cite> will be invoked in the</p>
+<p><a class="reference external" href="../../GLib-2.0/classes/MainContext.html#GLib.MainContext.push_thread_default" title="(in GLib 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">thread-default</span> <span class="pre">main</span> <span class="pre">loop</span></code></a>
+of the thread you are calling this method from. You can then call
+<a class="reference internal" href="#ModemManager.Call.hangup_finish" title="ModemManager.Call.hangup_finish"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.Call.hangup_finish</span></code></a>() to get the result of the operation.</p>
+<p>See <a class="reference internal" href="#ModemManager.Call.hangup_sync" title="ModemManager.Call.hangup_sync"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.Call.hangup_sync</span></code></a>() for the synchronous, blocking version of this
+method.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.6.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ModemManager.Call.hangup_finish">
+<code class="descname">hangup_finish</code><span class="sig-paren">(</span><em>res</em><span class="sig-paren">)</span><a class="headerlink" href="#ModemManager.Call.hangup_finish" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>res</strong> (<a class="reference external" href="../../Gio-2.0/classes/AsyncResult.html#Gio.AsyncResult" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AsyncResult</span></code></a>) – The <a class="reference external" href="../../Gio-2.0/classes/AsyncResult.html#Gio.AsyncResult" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AsyncResult</span></code></a> obtained from the <a class="reference external" href="../../Gio-2.0/callbacks.html#Gio.AsyncReadyCallback" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AsyncReadyCallback</span></code></a> passed to
+<a class="reference internal" href="#ModemManager.Call.hangup" title="ModemManager.Call.hangup"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.Call.hangup</span></code></a>().</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference external" href="../../GLib-2.0/classes/Error.html#GLib.Error" title="(in GLib 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLib.Error</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if the operation succeeded, <a class="reference external" href="http://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a> if <cite>error</cite> is set.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Finishes an operation started with <a class="reference internal" href="#ModemManager.Call.hangup" title="ModemManager.Call.hangup"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.Call.hangup</span></code></a>().</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.6.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ModemManager.Call.hangup_sync">
+<code class="descname">hangup_sync</code><span class="sig-paren">(</span><em>cancellable</em><span class="sig-paren">)</span><a class="headerlink" href="#ModemManager.Call.hangup_sync" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>cancellable</strong> (<a class="reference external" href="../../Gio-2.0/classes/Cancellable.html#Gio.Cancellable" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Cancellable</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – A <a class="reference external" href="../../Gio-2.0/classes/Cancellable.html#Gio.Cancellable" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Cancellable</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference external" href="../../GLib-2.0/classes/Error.html#GLib.Error" title="(in GLib 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLib.Error</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if the operation succeeded, <a class="reference external" href="http://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a> if <cite>error</cite> is set.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Synchronously requests to hangup the call.</p>
+<p>Call objects can only be sent once.</p>
+<p>The calling thread is blocked until an incoming call is ready.
+See <a class="reference internal" href="#ModemManager.Call.hangup" title="ModemManager.Call.hangup"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.Call.hangup</span></code></a>() for the asynchronous version of this method.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.6.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ModemManager.Call.join_multiparty">
+<code class="descname">join_multiparty</code><span class="sig-paren">(</span><em>cancellable</em>, <em>callback</em>, <em>*user_data</em><span class="sig-paren">)</span><a class="headerlink" href="#ModemManager.Call.join_multiparty" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>cancellable</strong> (<a class="reference external" href="../../Gio-2.0/classes/Cancellable.html#Gio.Cancellable" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Cancellable</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – A <a class="reference external" href="../../Gio-2.0/classes/Cancellable.html#Gio.Cancellable" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Cancellable</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>.</li>
+<li><strong>callback</strong> (<a class="reference external" href="../../Gio-2.0/callbacks.html#Gio.AsyncReadyCallback" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AsyncReadyCallback</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – A <a class="reference external" href="../../Gio-2.0/callbacks.html#Gio.AsyncReadyCallback" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AsyncReadyCallback</span></code></a> to call when the request is satisfied or
+<a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>.</li>
+<li><strong>user_data</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">object</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – User data to pass to <cite>callback</cite>.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Synchronously requests to join this call into a multiparty call.</p>
+<p>When the operation is finished, <cite>callback</cite> will be invoked in the</p>
+<p><a class="reference external" href="../../GLib-2.0/classes/MainContext.html#GLib.MainContext.push_thread_default" title="(in GLib 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">thread-default</span> <span class="pre">main</span> <span class="pre">loop</span></code></a>
+of the thread you are calling this method from. You can then call
+<a class="reference internal" href="#ModemManager.Call.join_multiparty_finish" title="ModemManager.Call.join_multiparty_finish"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.Call.join_multiparty_finish</span></code></a>() to get the result of the operation.</p>
+<p>See <a class="reference internal" href="#ModemManager.Call.join_multiparty_sync" title="ModemManager.Call.join_multiparty_sync"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.Call.join_multiparty_sync</span></code></a>() for the synchronous, blocking version of
+this method.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.12.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ModemManager.Call.join_multiparty_finish">
+<code class="descname">join_multiparty_finish</code><span class="sig-paren">(</span><em>res</em><span class="sig-paren">)</span><a class="headerlink" href="#ModemManager.Call.join_multiparty_finish" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>res</strong> (<a class="reference external" href="../../Gio-2.0/classes/AsyncResult.html#Gio.AsyncResult" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AsyncResult</span></code></a>) – The <a class="reference external" href="../../Gio-2.0/classes/AsyncResult.html#Gio.AsyncResult" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AsyncResult</span></code></a> obtained from the <a class="reference external" href="../../Gio-2.0/callbacks.html#Gio.AsyncReadyCallback" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AsyncReadyCallback</span></code></a> passed to
+<a class="reference internal" href="#ModemManager.Call.join_multiparty" title="ModemManager.Call.join_multiparty"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.Call.join_multiparty</span></code></a>().</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference external" href="../../GLib-2.0/classes/Error.html#GLib.Error" title="(in GLib 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLib.Error</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if the operation succeeded, <a class="reference external" href="http://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a> if <cite>error</cite> is set.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Finishes an operation started with <a class="reference internal" href="#ModemManager.Call.join_multiparty" title="ModemManager.Call.join_multiparty"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.Call.join_multiparty</span></code></a>().</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.12.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ModemManager.Call.join_multiparty_sync">
+<code class="descname">join_multiparty_sync</code><span class="sig-paren">(</span><em>cancellable</em><span class="sig-paren">)</span><a class="headerlink" href="#ModemManager.Call.join_multiparty_sync" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>cancellable</strong> (<a class="reference external" href="../../Gio-2.0/classes/Cancellable.html#Gio.Cancellable" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Cancellable</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – A <a class="reference external" href="../../Gio-2.0/classes/Cancellable.html#Gio.Cancellable" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Cancellable</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference external" href="../../GLib-2.0/classes/Error.html#GLib.Error" title="(in GLib 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLib.Error</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if the operation succeeded, <a class="reference external" href="http://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a> if <cite>error</cite> is set.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Synchronously requests to join this call into a multiparty call.</p>
+<p>The calling thread is blocked until an incoming call is ready.
+See <a class="reference internal" href="#ModemManager.Call.join_multiparty" title="ModemManager.Call.join_multiparty"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.Call.join_multiparty</span></code></a>() for the asynchronous version of this method.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.12.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ModemManager.Call.leave_multiparty">
+<code class="descname">leave_multiparty</code><span class="sig-paren">(</span><em>cancellable</em>, <em>callback</em>, <em>*user_data</em><span class="sig-paren">)</span><a class="headerlink" href="#ModemManager.Call.leave_multiparty" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>cancellable</strong> (<a class="reference external" href="../../Gio-2.0/classes/Cancellable.html#Gio.Cancellable" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Cancellable</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – A <a class="reference external" href="../../Gio-2.0/classes/Cancellable.html#Gio.Cancellable" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Cancellable</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>.</li>
+<li><strong>callback</strong> (<a class="reference external" href="../../Gio-2.0/callbacks.html#Gio.AsyncReadyCallback" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AsyncReadyCallback</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – A <a class="reference external" href="../../Gio-2.0/callbacks.html#Gio.AsyncReadyCallback" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AsyncReadyCallback</span></code></a> to call when the request is satisfied or
+<a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>.</li>
+<li><strong>user_data</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">object</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – User data to pass to <cite>callback</cite>.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Synchronously requests to make this call private again by leaving the
+multiparty call.</p>
+<p>When the operation is finished, <cite>callback</cite> will be invoked in the</p>
+<p><a class="reference external" href="../../GLib-2.0/classes/MainContext.html#GLib.MainContext.push_thread_default" title="(in GLib 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">thread-default</span> <span class="pre">main</span> <span class="pre">loop</span></code></a>
+of the thread you are calling this method from. You can then call
+<a class="reference internal" href="#ModemManager.Call.leave_multiparty_finish" title="ModemManager.Call.leave_multiparty_finish"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.Call.leave_multiparty_finish</span></code></a>() to get the result of the operation.</p>
+<p>See <a class="reference internal" href="#ModemManager.Call.leave_multiparty_sync" title="ModemManager.Call.leave_multiparty_sync"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.Call.leave_multiparty_sync</span></code></a>() for the synchronous, blocking version
+of this method.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.12.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ModemManager.Call.leave_multiparty_finish">
+<code class="descname">leave_multiparty_finish</code><span class="sig-paren">(</span><em>res</em><span class="sig-paren">)</span><a class="headerlink" href="#ModemManager.Call.leave_multiparty_finish" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>res</strong> (<a class="reference external" href="../../Gio-2.0/classes/AsyncResult.html#Gio.AsyncResult" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AsyncResult</span></code></a>) – The <a class="reference external" href="../../Gio-2.0/classes/AsyncResult.html#Gio.AsyncResult" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AsyncResult</span></code></a> obtained from the <a class="reference external" href="../../Gio-2.0/callbacks.html#Gio.AsyncReadyCallback" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AsyncReadyCallback</span></code></a> passed to
+<a class="reference internal" href="#ModemManager.Call.leave_multiparty" title="ModemManager.Call.leave_multiparty"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.Call.leave_multiparty</span></code></a>().</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference external" href="../../GLib-2.0/classes/Error.html#GLib.Error" title="(in GLib 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLib.Error</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if the operation succeeded, <a class="reference external" href="http://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a> if <cite>error</cite> is set.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Finishes an operation started with <a class="reference internal" href="#ModemManager.Call.leave_multiparty" title="ModemManager.Call.leave_multiparty"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.Call.leave_multiparty</span></code></a>().</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.12.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ModemManager.Call.leave_multiparty_sync">
+<code class="descname">leave_multiparty_sync</code><span class="sig-paren">(</span><em>cancellable</em><span class="sig-paren">)</span><a class="headerlink" href="#ModemManager.Call.leave_multiparty_sync" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>cancellable</strong> (<a class="reference external" href="../../Gio-2.0/classes/Cancellable.html#Gio.Cancellable" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Cancellable</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – A <a class="reference external" href="../../Gio-2.0/classes/Cancellable.html#Gio.Cancellable" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Cancellable</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference external" href="../../GLib-2.0/classes/Error.html#GLib.Error" title="(in GLib 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLib.Error</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if the operation succeeded, <a class="reference external" href="http://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a> if <cite>error</cite> is set.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Synchronously requests to make this call private again by leaving the
+multiparty call.</p>
+<p>The calling thread is blocked until an incoming call is ready.
+See <a class="reference internal" href="#ModemManager.Call.leave_multiparty" title="ModemManager.Call.leave_multiparty"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.Call.leave_multiparty</span></code></a>() for the asynchronous version of this method.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.12.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ModemManager.Call.peek_audio_format">
+<code class="descname">peek_audio_format</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ModemManager.Call.peek_audio_format" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A <a class="reference internal" href="CallAudioFormat.html#ModemManager.CallAudioFormat" title="ModemManager.CallAudioFormat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.CallAudioFormat</span></code></a>. Do not free the returned
+value, it belongs to <cite>self</cite>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="CallAudioFormat.html#ModemManager.CallAudioFormat" title="ModemManager.CallAudioFormat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.CallAudioFormat</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets a <a class="reference internal" href="CallAudioFormat.html#ModemManager.CallAudioFormat" title="ModemManager.CallAudioFormat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.CallAudioFormat</span></code></a> object specifying the audio format used by the
+audio port if call audio is routed via the host.</p>
+<p>The returned value is only valid until the property changes so
+it is only safe to use this function on the thread where
+<cite>self</cite> was constructed. Use <a class="reference internal" href="#ModemManager.Call.get_audio_format" title="ModemManager.Call.get_audio_format"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.Call.get_audio_format</span></code></a>() if on another
+thread.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.10.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ModemManager.Call.send_dtmf">
+<code class="descname">send_dtmf</code><span class="sig-paren">(</span><em>dtmf</em>, <em>cancellable</em>, <em>callback</em>, <em>*user_data</em><span class="sig-paren">)</span><a class="headerlink" href="#ModemManager.Call.send_dtmf" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>dtmf</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – the DMTF tone.</li>
+<li><strong>cancellable</strong> (<a class="reference external" href="../../Gio-2.0/classes/Cancellable.html#Gio.Cancellable" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Cancellable</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – A <a class="reference external" href="../../Gio-2.0/classes/Cancellable.html#Gio.Cancellable" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Cancellable</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>.</li>
+<li><strong>callback</strong> (<a class="reference external" href="../../Gio-2.0/callbacks.html#Gio.AsyncReadyCallback" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AsyncReadyCallback</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – A <a class="reference external" href="../../Gio-2.0/callbacks.html#Gio.AsyncReadyCallback" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AsyncReadyCallback</span></code></a> to call when the request is satisfied or
+<a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>.</li>
+<li><strong>user_data</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">object</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – User data to pass to <cite>callback</cite>.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Asynchronously requests to send a DTMF tone the call.</p>
+<p>Call objects can only be executed once.</p>
+<p>When the operation is finished, <cite>callback</cite> will be invoked in the</p>
+<p><a class="reference external" href="../../GLib-2.0/classes/MainContext.html#GLib.MainContext.push_thread_default" title="(in GLib 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">thread-default</span> <span class="pre">main</span> <span class="pre">loop</span></code></a>
+of the thread you are calling this method from. You can then call
+<a class="reference internal" href="#ModemManager.Call.send_dtmf_finish" title="ModemManager.Call.send_dtmf_finish"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.Call.send_dtmf_finish</span></code></a>() to get the result of the operation.</p>
+<p>See <a class="reference internal" href="#ModemManager.Call.send_dtmf_sync" title="ModemManager.Call.send_dtmf_sync"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.Call.send_dtmf_sync</span></code></a>() for the synchronous, blocking version of this
+method.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.6.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ModemManager.Call.send_dtmf_finish">
+<code class="descname">send_dtmf_finish</code><span class="sig-paren">(</span><em>res</em><span class="sig-paren">)</span><a class="headerlink" href="#ModemManager.Call.send_dtmf_finish" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>res</strong> (<a class="reference external" href="../../Gio-2.0/classes/AsyncResult.html#Gio.AsyncResult" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AsyncResult</span></code></a>) – The <a class="reference external" href="../../Gio-2.0/classes/AsyncResult.html#Gio.AsyncResult" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AsyncResult</span></code></a> obtained from the <a class="reference external" href="../../Gio-2.0/callbacks.html#Gio.AsyncReadyCallback" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AsyncReadyCallback</span></code></a> passed to
+<a class="reference internal" href="#ModemManager.Call.send_dtmf" title="ModemManager.Call.send_dtmf"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.Call.send_dtmf</span></code></a>().</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference external" href="../../GLib-2.0/classes/Error.html#GLib.Error" title="(in GLib 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLib.Error</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if the operation succeeded, <a class="reference external" href="http://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a> if <cite>error</cite> is set.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Finishes an operation started with <a class="reference internal" href="#ModemManager.Call.send_dtmf" title="ModemManager.Call.send_dtmf"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.Call.send_dtmf</span></code></a>().</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.6.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ModemManager.Call.send_dtmf_sync">
+<code class="descname">send_dtmf_sync</code><span class="sig-paren">(</span><em>dtmf</em>, <em>cancellable</em><span class="sig-paren">)</span><a class="headerlink" href="#ModemManager.Call.send_dtmf_sync" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>dtmf</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – the DMTF tone.</li>
+<li><strong>cancellable</strong> (<a class="reference external" href="../../Gio-2.0/classes/Cancellable.html#Gio.Cancellable" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Cancellable</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – A <a class="reference external" href="../../Gio-2.0/classes/Cancellable.html#Gio.Cancellable" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Cancellable</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first"><a class="reference external" href="../../GLib-2.0/classes/Error.html#GLib.Error" title="(in GLib 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLib.Error</span></code></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if the operation succeeded, <a class="reference external" href="http://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a> if <cite>error</cite> is set.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Synchronously requests to send a DTMF tone the call.</p>
+<p>Call objects can only be sent once.</p>
+<p>The calling thread is blocked until an incoming call is ready.
+See <a class="reference internal" href="#ModemManager.Call.send_dtmf" title="ModemManager.Call.send_dtmf"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.Call.send_dtmf</span></code></a>() for the asynchronous version of this method.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.6.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ModemManager.Call.start">
+<code class="descname">start</code><span class="sig-paren">(</span><em>cancellable</em>, <em>callback</em>, <em>*user_data</em><span class="sig-paren">)</span><a class="headerlink" href="#ModemManager.Call.start" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>cancellable</strong> (<a class="reference external" href="../../Gio-2.0/classes/Cancellable.html#Gio.Cancellable" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Cancellable</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – A <a class="reference external" href="../../Gio-2.0/classes/Cancellable.html#Gio.Cancellable" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Cancellable</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>.</li>
+<li><strong>callback</strong> (<a class="reference external" href="../../Gio-2.0/callbacks.html#Gio.AsyncReadyCallback" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AsyncReadyCallback</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – A <a class="reference external" href="../../Gio-2.0/callbacks.html#Gio.AsyncReadyCallback" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AsyncReadyCallback</span></code></a> to call when the request is satisfied or
+<a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>.</li>
+<li><strong>user_data</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">object</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – User data to pass to <cite>callback</cite>.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Asynchronously requests to queue the call.</p>
+<p>Call objects can only be executed once.</p>
+<p>When the operation is finished, <cite>callback</cite> will be invoked in the</p>
+<p><a class="reference external" href="../../GLib-2.0/classes/MainContext.html#GLib.MainContext.push_thread_default" title="(in GLib 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">thread-default</span> <span class="pre">main</span> <span class="pre">loop</span></code></a>
+of the thread you are calling this method from. You can then call
+<a class="reference internal" href="#ModemManager.Call.start_finish" title="ModemManager.Call.start_finish"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.Call.start_finish</span></code></a>() to get the result of the operation.</p>
+<p>See <a class="reference internal" href="#ModemManager.Call.start_sync" title="ModemManager.Call.start_sync"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.Call.start_sync</span></code></a>() for the synchronous, blocking version of this method.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.6.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ModemManager.Call.start_finish">
+<code class="descname">start_finish</code><span class="sig-paren">(</span><em>res</em><span class="sig-paren">)</span><a class="headerlink" href="#ModemManager.Call.start_finish" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>res</strong> (<a class="reference external" href="../../Gio-2.0/classes/AsyncResult.html#Gio.AsyncResult" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AsyncResult</span></code></a>) – The <a class="reference external" href="../../Gio-2.0/classes/AsyncResult.html#Gio.AsyncResult" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AsyncResult</span></code></a> obtained from the <a class="reference external" href="../../Gio-2.0/callbacks.html#Gio.AsyncReadyCallback" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AsyncReadyCallback</span></code></a> passed to
+<a class="reference internal" href="#ModemManager.Call.start" title="ModemManager.Call.start"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.Call.start</span></code></a>().</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference external" href="../../GLib-2.0/classes/Error.html#GLib.Error" title="(in GLib 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLib.Error</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if the operation succeeded, <a class="reference external" href="http://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a> if <cite>error</cite> is set.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Finishes an operation started with <a class="reference internal" href="#ModemManager.Call.start" title="ModemManager.Call.start"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.Call.start</span></code></a>().</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.6.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ModemManager.Call.start_sync">
+<code class="descname">start_sync</code><span class="sig-paren">(</span><em>cancellable</em><span class="sig-paren">)</span><a class="headerlink" href="#ModemManager.Call.start_sync" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>cancellable</strong> (<a class="reference external" href="../../Gio-2.0/classes/Cancellable.html#Gio.Cancellable" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Cancellable</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – A <a class="reference external" href="../../Gio-2.0/classes/Cancellable.html#Gio.Cancellable" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Cancellable</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference external" href="../../GLib-2.0/classes/Error.html#GLib.Error" title="(in GLib 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLib.Error</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if the operation succeeded, <a class="reference external" href="http://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a> if <cite>error</cite> is set.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Synchronously requests to queue the call for delivery.</p>
+<p>Call objects can only be sent once.</p>
+<p>The calling thread is blocked until a reply is received.
+See <a class="reference internal" href="#ModemManager.Call.start" title="ModemManager.Call.start"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.Call.start</span></code></a>() for the asynchronous version of this method.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.6.</span></p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div> 
+
+</body>
+</html>

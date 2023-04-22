@@ -1,0 +1,2082 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    RB.Source -
+    
+      Classes -
+    
+    RB 3.0
+  </title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/css/pgi.css" type="text/css" />
+  
+
+  
+  <script type="text/javascript">
+
+    function openSidebar(element) {
+        window.location.href = element.href + location.hash;
+        return false;
+    }
+
+    function inIframe() {
+        try {
+            return window.self !== window.top;
+        } catch (e) {
+            return true;
+        }
+    }
+
+    function onLoaded() {
+        if(!inIframe()) {
+            var icons = document.getElementsByClassName('open-sidebar');
+
+            for (var i = 0; i < icons.length; i ++) {
+                icons[i].style.display = 'table-cell';
+            }
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', onLoaded, false);
+
+  </script>
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="RB 3.0 Python API Docs" href="../index.html"/>
+        <link rel="up" title="Classes" href="../classes.html"/>
+        <link rel="next" title="RB.SourceSearch" href="SourceSearch.html"/>
+        <link rel="prev" title="RB.SongInfo" href="SongInfo.html"/> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+<div class="non-fixed-bar">
+<table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#RB-3.0/classes/Source.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">RB 3.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>RB.Source</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="SongInfo.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="SourceSearch.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">RB.Source</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#child-properties">Child Properties</a></li>
+<li><a class="reference internal" href="#style-properties">Style Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#signal-details">Signal Details</a></li>
+<li><a class="reference internal" href="#property-details">Property Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+<div class="fixed-bar">
+  <table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#RB-3.0/classes/Source.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">RB 3.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>RB.Source</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="SongInfo.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="SourceSearch.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">RB.Source</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#child-properties">Child Properties</a></li>
+<li><a class="reference internal" href="#style-properties">Style Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#signal-details">Signal Details</a></li>
+<li><a class="reference internal" href="#property-details">Property Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+  <div class="wy-grid-for-nav">
+
+    
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="main">
+            
+  <div class="section" id="rb-source">
+<h1>RB.Source<a class="headerlink" href="#rb-source" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<svg width="374pt" height="350pt"
+ viewBox="0.00 0.00 373.50 350.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 346)">
+<title>g</title>
+<!-- Atk.ImplementorIface -->
+<g id="node1" class="node">
+<title>Atk.ImplementorIface</title>
+<g id="a_node1"><a xlink:href="../../Atk-1.0/classes/ImplementorIface.html#Atk.ImplementorIface" xlink:title="Atk.ImplementorIface">
+<path fill="none" stroke="#3091d1" d="M219.5,-288C219.5,-288 123.5,-288 123.5,-288 120.5,-288 117.5,-285 117.5,-282 117.5,-282 117.5,-276 117.5,-276 117.5,-273 120.5,-270 123.5,-270 123.5,-270 219.5,-270 219.5,-270 222.5,-270 225.5,-273 225.5,-276 225.5,-276 225.5,-282 225.5,-282 225.5,-285 222.5,-288 219.5,-288"/>
+<text text-anchor="middle" x="171.5" y="-276.7" font-family="inherit" font-size="8.50">Atk.ImplementorIface</text>
+</a>
+</g>
+</g>
+<!-- Gtk.Widget -->
+<g id="node9" class="node">
+<title>Gtk.Widget</title>
+<g id="a_node9"><a xlink:href="../../Gtk-3.0/classes/Widget.html#Gtk.Widget" xlink:title="Gtk.Widget">
+<path fill="none" stroke="#aaaaaa" d="M176.5,-234C176.5,-234 124.5,-234 124.5,-234 121.5,-234 118.5,-231 118.5,-228 118.5,-228 118.5,-222 118.5,-222 118.5,-219 121.5,-216 124.5,-216 124.5,-216 176.5,-216 176.5,-216 179.5,-216 182.5,-219 182.5,-222 182.5,-222 182.5,-228 182.5,-228 182.5,-231 179.5,-234 176.5,-234"/>
+<text text-anchor="middle" x="150.5" y="-222.7" font-family="inherit" font-size="8.50">Gtk.Widget</text>
+</a>
+</g>
+</g>
+<!-- Atk.ImplementorIface&#45;&gt;Gtk.Widget -->
+<g id="edge1" class="edge">
+<title>Atk.ImplementorIface&#45;&gt;Gtk.Widget</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M168.22,-269.88C164.88,-261.6 159.65,-248.66 155.74,-238.97"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="157.32,-238.22 153.83,-234.24 154.08,-239.53 157.32,-238.22"/>
+</g>
+<!-- GObject.GInterface -->
+<g id="node2" class="node">
+<title>GObject.GInterface</title>
+<g id="a_node2"><a xlink:href="../../GObject-2.0/classes/GInterface.html#GObject.GInterface" xlink:title="GObject.GInterface">
+<path fill="none" stroke="#3091d1" d="M105.5,-342C105.5,-342 19.5,-342 19.5,-342 16.5,-342 13.5,-339 13.5,-336 13.5,-336 13.5,-330 13.5,-330 13.5,-327 16.5,-324 19.5,-324 19.5,-324 105.5,-324 105.5,-324 108.5,-324 111.5,-327 111.5,-330 111.5,-330 111.5,-336 111.5,-336 111.5,-339 108.5,-342 105.5,-342"/>
+<text text-anchor="middle" x="62.5" y="-330.7" font-family="inherit" font-size="8.50">GObject.GInterface</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Atk.ImplementorIface -->
+<g id="edge2" class="edge">
+<title>GObject.GInterface&#45;&gt;Atk.ImplementorIface</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M79.53,-323.88C98.49,-314.83 129.17,-300.19 149.83,-290.34"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="150.83,-291.8 154.59,-288.07 149.32,-288.64 150.83,-291.8"/>
+</g>
+<!-- Gtk.Buildable -->
+<g id="node6" class="node">
+<title>Gtk.Buildable</title>
+<g id="a_node6"><a xlink:href="../../Gtk-3.0/classes/Buildable.html#Gtk.Buildable" xlink:title="Gtk.Buildable">
+<path fill="none" stroke="#3091d1" d="M93.5,-288C93.5,-288 31.5,-288 31.5,-288 28.5,-288 25.5,-285 25.5,-282 25.5,-282 25.5,-276 25.5,-276 25.5,-273 28.5,-270 31.5,-270 31.5,-270 93.5,-270 93.5,-270 96.5,-270 99.5,-273 99.5,-276 99.5,-276 99.5,-282 99.5,-282 99.5,-285 96.5,-288 93.5,-288"/>
+<text text-anchor="middle" x="62.5" y="-276.7" font-family="inherit" font-size="8.50">Gtk.Buildable</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Gtk.Buildable -->
+<g id="edge3" class="edge">
+<title>GObject.GInterface&#45;&gt;Gtk.Buildable</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M62.5,-323.88C62.5,-315.76 62.5,-303.13 62.5,-293.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="64.25,-293.24 62.5,-288.24 60.75,-293.24 64.25,-293.24"/>
+</g>
+<!-- Gtk.Orientable -->
+<g id="node8" class="node">
+<title>Gtk.Orientable</title>
+<g id="a_node8"><a xlink:href="../../Gtk-3.0/classes/Orientable.html#Gtk.Orientable" xlink:title="Gtk.Orientable">
+<path fill="none" stroke="#3091d1" d="M73,-234C73,-234 6,-234 6,-234 3,-234 0,-231 0,-228 0,-228 0,-222 0,-222 0,-219 3,-216 6,-216 6,-216 73,-216 73,-216 76,-216 79,-219 79,-222 79,-222 79,-228 79,-228 79,-231 76,-234 73,-234"/>
+<text text-anchor="middle" x="39.5" y="-222.7" font-family="inherit" font-size="8.50">Gtk.Orientable</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Gtk.Orientable -->
+<g id="edge4" class="edge">
+<title>GObject.GInterface&#45;&gt;Gtk.Orientable</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M49.16,-323.76C38.08,-316.06 23.1,-303.45 16.5,-288 9.27,-271.08 20.11,-251.03 29.23,-238.42"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="30.86,-239.17 32.48,-234.12 28.06,-237.06 30.86,-239.17"/>
+</g>
+<!-- GObject.InitiallyUnowned -->
+<g id="node3" class="node">
+<title>GObject.InitiallyUnowned</title>
+<g id="a_node3"><a xlink:href="../../GObject-2.0/classes/InitiallyUnowned.html#GObject.InitiallyUnowned" xlink:title="GObject.InitiallyUnowned">
+<path fill="none" stroke="#75507b" d="M359.5,-288C359.5,-288 249.5,-288 249.5,-288 246.5,-288 243.5,-285 243.5,-282 243.5,-282 243.5,-276 243.5,-276 243.5,-273 246.5,-270 249.5,-270 249.5,-270 359.5,-270 359.5,-270 362.5,-270 365.5,-273 365.5,-276 365.5,-276 365.5,-282 365.5,-282 365.5,-285 362.5,-288 359.5,-288"/>
+<text text-anchor="middle" x="304.5" y="-276.7" font-family="inherit" font-size="8.50">GObject.InitiallyUnowned</text>
+</a>
+</g>
+</g>
+<!-- GObject.InitiallyUnowned&#45;&gt;Gtk.Widget -->
+<g id="edge5" class="edge">
+<title>GObject.InitiallyUnowned&#45;&gt;Gtk.Widget</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M280.77,-269.99C253.42,-260.75 208.46,-245.57 179.17,-235.68"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="179.55,-233.96 174.25,-234.02 178.43,-237.28 179.55,-233.96"/>
+</g>
+<!-- GObject.Object -->
+<g id="node4" class="node">
+<title>GObject.Object</title>
+<g id="a_node4"><a xlink:href="../../GObject-2.0/classes/Object.html#GObject.Object" xlink:title="GObject.Object">
+<path fill="none" stroke="#75507b" d="M338.5,-342C338.5,-342 270.5,-342 270.5,-342 267.5,-342 264.5,-339 264.5,-336 264.5,-336 264.5,-330 264.5,-330 264.5,-327 267.5,-324 270.5,-324 270.5,-324 338.5,-324 338.5,-324 341.5,-324 344.5,-327 344.5,-330 344.5,-330 344.5,-336 344.5,-336 344.5,-339 341.5,-342 338.5,-342"/>
+<text text-anchor="middle" x="304.5" y="-330.7" font-family="inherit" font-size="8.50">GObject.Object</text>
+</a>
+</g>
+</g>
+<!-- GObject.Object&#45;&gt;GObject.InitiallyUnowned -->
+<g id="edge6" class="edge">
+<title>GObject.Object&#45;&gt;GObject.InitiallyUnowned</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M304.5,-323.88C304.5,-315.76 304.5,-303.13 304.5,-293.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="306.25,-293.24 304.5,-288.24 302.75,-293.24 306.25,-293.24"/>
+</g>
+<!-- Gtk.Box -->
+<g id="node5" class="node">
+<title>Gtk.Box</title>
+<g id="a_node5"><a xlink:href="../../Gtk-3.0/classes/Box.html#Gtk.Box" xlink:title="Gtk.Box">
+<path fill="none" stroke="#75507b" d="M105.5,-126C105.5,-126 63.5,-126 63.5,-126 60.5,-126 57.5,-123 57.5,-120 57.5,-120 57.5,-114 57.5,-114 57.5,-111 60.5,-108 63.5,-108 63.5,-108 105.5,-108 105.5,-108 108.5,-108 111.5,-111 111.5,-114 111.5,-114 111.5,-120 111.5,-120 111.5,-123 108.5,-126 105.5,-126"/>
+<text text-anchor="middle" x="84.5" y="-114.7" font-family="inherit" font-size="8.50">Gtk.Box</text>
+</a>
+</g>
+</g>
+<!-- RB.DisplayPage -->
+<g id="node10" class="node">
+<title>RB.DisplayPage</title>
+<g id="a_node10"><a xlink:href="DisplayPage.html#RB.DisplayPage" xlink:title="RB.DisplayPage">
+<path fill="none" stroke="#aaaaaa" d="M120,-72C120,-72 49,-72 49,-72 46,-72 43,-69 43,-66 43,-66 43,-60 43,-60 43,-57 46,-54 49,-54 49,-54 120,-54 120,-54 123,-54 126,-57 126,-60 126,-60 126,-66 126,-66 126,-69 123,-72 120,-72"/>
+<text text-anchor="middle" x="84.5" y="-60.7" font-family="inherit" font-size="8.50">RB.DisplayPage</text>
+</a>
+</g>
+</g>
+<!-- Gtk.Box&#45;&gt;RB.DisplayPage -->
+<g id="edge7" class="edge">
+<title>Gtk.Box&#45;&gt;RB.DisplayPage</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M84.5,-107.88C84.5,-99.76 84.5,-87.13 84.5,-77.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="86.25,-77.24 84.5,-72.24 82.75,-77.24 86.25,-77.24"/>
+</g>
+<!-- Gtk.Buildable&#45;&gt;Gtk.Widget -->
+<g id="edge8" class="edge">
+<title>Gtk.Buildable&#45;&gt;Gtk.Widget</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M76.25,-269.88C91.36,-260.95 115.7,-246.56 132.36,-236.72"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="133.43,-238.12 136.85,-234.07 131.65,-235.11 133.43,-238.12"/>
+</g>
+<!-- Gtk.Container -->
+<g id="node7" class="node">
+<title>Gtk.Container</title>
+<g id="a_node7"><a xlink:href="../../Gtk-3.0/classes/Container.html#Gtk.Container" xlink:title="Gtk.Container">
+<path fill="none" stroke="#aaaaaa" d="M155.5,-180C155.5,-180 91.5,-180 91.5,-180 88.5,-180 85.5,-177 85.5,-174 85.5,-174 85.5,-168 85.5,-168 85.5,-165 88.5,-162 91.5,-162 91.5,-162 155.5,-162 155.5,-162 158.5,-162 161.5,-165 161.5,-168 161.5,-168 161.5,-174 161.5,-174 161.5,-177 158.5,-180 155.5,-180"/>
+<text text-anchor="middle" x="123.5" y="-168.7" font-family="inherit" font-size="8.50">Gtk.Container</text>
+</a>
+</g>
+</g>
+<!-- Gtk.Container&#45;&gt;Gtk.Box -->
+<g id="edge9" class="edge">
+<title>Gtk.Container&#45;&gt;Gtk.Box</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M117.41,-161.88C111.09,-153.45 101.14,-140.18 93.83,-130.44"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="95.08,-129.19 90.68,-126.24 92.28,-131.29 95.08,-129.19"/>
+</g>
+<!-- Gtk.Orientable&#45;&gt;Gtk.Box -->
+<g id="edge10" class="edge">
+<title>Gtk.Orientable&#45;&gt;Gtk.Box</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M43.03,-215.68C50.82,-197.34 69.52,-153.28 78.92,-131.15"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="80.64,-131.57 80.99,-126.28 77.42,-130.2 80.64,-131.57"/>
+</g>
+<!-- Gtk.Widget&#45;&gt;Gtk.Container -->
+<g id="edge11" class="edge">
+<title>Gtk.Widget&#45;&gt;Gtk.Container</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M146.28,-215.88C141.95,-207.53 135.14,-194.42 130.1,-184.7"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="131.64,-183.87 127.78,-180.24 128.53,-185.48 131.64,-183.87"/>
+</g>
+<!-- RB.Source -->
+<g id="node11" class="node">
+<title>RB.Source</title>
+<g id="a_node11"><a xlink:href="#RB.Source" xlink:title="RB.Source">
+<path fill="none" stroke="#aaaaaa" d="M108.5,-18C108.5,-18 60.5,-18 60.5,-18 57.5,-18 54.5,-15 54.5,-12 54.5,-12 54.5,-6 54.5,-6 54.5,-3 57.5,0 60.5,0 60.5,0 108.5,0 108.5,0 111.5,0 114.5,-3 114.5,-6 114.5,-6 114.5,-12 114.5,-12 114.5,-15 111.5,-18 108.5,-18"/>
+<text text-anchor="middle" x="84.5" y="-6.7" font-family="inherit" font-size="8.50">RB.Source</text>
+</a>
+</g>
+</g>
+<!-- RB.DisplayPage&#45;&gt;RB.Source -->
+<g id="edge12" class="edge">
+<title>RB.DisplayPage&#45;&gt;RB.Source</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M84.5,-53.88C84.5,-45.76 84.5,-33.13 84.5,-23.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="86.25,-23.24 84.5,-18.24 82.75,-23.24 86.25,-23.24"/>
+</g>
+</g>
+</svg>
+</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Subclasses:</th><td class="field-body"><a class="reference internal" href="BrowserSource.html#RB.BrowserSource" title="RB.BrowserSource"><code class="xref py py-class docutils literal notranslate"><span class="pre">RB.BrowserSource</span></code></a>, <a class="reference internal" href="PlaylistSource.html#RB.PlaylistSource" title="RB.PlaylistSource"><code class="xref py py-class docutils literal notranslate"><span class="pre">RB.PlaylistSource</span></code></a>, <a class="reference internal" href="StreamingSource.html#RB.StreamingSource" title="RB.StreamingSource"><code class="xref py py-class docutils literal notranslate"><span class="pre">RB.StreamingSource</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="methods">
+<span id="rb-source-methods"></span><h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="DisplayPage.html#rb-displaypage-methods"><span class="std std-ref">RB.DisplayPage (12)</span></a>,     <a class="reference external" href="../../Gtk-3.0/classes/Box.html#gtk-box-methods" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.Box (14)</span></a>,     <a class="reference external" href="../../Gtk-3.0/classes/Container.html#gtk-container-methods" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.Container (35)</span></a>,     <a class="reference external" href="../../Gtk-3.0/classes/Widget.html#gtk-widget-methods" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.Widget (278)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (37)</span></a>,     <a class="reference external" href="../../Gtk-3.0/classes/Buildable.html#gtk-buildable-methods" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.Buildable (10)</span></a>,     <a class="reference external" href="../../Gtk-3.0/classes/Orientable.html#gtk-orientable-methods" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.Orientable (2)</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Structs:</th><td class="field-body"><a class="reference external" href="../../Gtk-3.0/classes/ContainerClass.html#gtk-containerclass-methods" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.ContainerClass (5)</span></a>,     <a class="reference external" href="../../Gtk-3.0/classes/WidgetClass.html#gtk-widgetclass-methods" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.WidgetClass (12)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/ObjectClass.html#gobject-objectclass-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.ObjectClass (5)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="99%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#RB.Source.add_to_queue" title="RB.Source.add_to_queue"><code class="xref py py-func docutils literal notranslate"><span class="pre">add_to_queue</span></code></a> (queue)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#RB.Source.add_uri" title="RB.Source.add_uri"><code class="xref py py-func docutils literal notranslate"><span class="pre">add_uri</span></code></a> (uri, title, genre, callback, *data)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#RB.Source.bind_settings" title="RB.Source.bind_settings"><code class="xref py py-func docutils literal notranslate"><span class="pre">bind_settings</span></code></a> (entry_view, paned, browser, sort_order)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#RB.Source.can_add_to_queue" title="RB.Source.can_add_to_queue"><code class="xref py py-func docutils literal notranslate"><span class="pre">can_add_to_queue</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#RB.Source.can_copy" title="RB.Source.can_copy"><code class="xref py py-func docutils literal notranslate"><span class="pre">can_copy</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#RB.Source.can_cut" title="RB.Source.can_cut"><code class="xref py py-func docutils literal notranslate"><span class="pre">can_cut</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#RB.Source.can_delete" title="RB.Source.can_delete"><code class="xref py py-func docutils literal notranslate"><span class="pre">can_delete</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#RB.Source.can_move_to_trash" title="RB.Source.can_move_to_trash"><code class="xref py py-func docutils literal notranslate"><span class="pre">can_move_to_trash</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#RB.Source.can_paste" title="RB.Source.can_paste"><code class="xref py py-func docutils literal notranslate"><span class="pre">can_paste</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#RB.Source.can_pause" title="RB.Source.can_pause"><code class="xref py py-func docutils literal notranslate"><span class="pre">can_pause</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#RB.Source.can_rename" title="RB.Source.can_rename"><code class="xref py py-func docutils literal notranslate"><span class="pre">can_rename</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#RB.Source.can_show_properties" title="RB.Source.can_show_properties"><code class="xref py py-func docutils literal notranslate"><span class="pre">can_show_properties</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#RB.Source.copy" title="RB.Source.copy"><code class="xref py py-func docutils literal notranslate"><span class="pre">copy</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#RB.Source.create_search_action" title="RB.Source.create_search_action"><code class="xref py py-func docutils literal notranslate"><span class="pre">create_search_action</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#RB.Source.cut" title="RB.Source.cut"><code class="xref py py-func docutils literal notranslate"><span class="pre">cut</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#RB.Source.delete_selected" title="RB.Source.delete_selected"><code class="xref py py-func docutils literal notranslate"><span class="pre">delete_selected</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#RB.Source.gather_selected_properties" title="RB.Source.gather_selected_properties"><code class="xref py py-func docutils literal notranslate"><span class="pre">gather_selected_properties</span></code></a> (prop)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#RB.Source.get_delete_label" title="RB.Source.get_delete_label"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_delete_label</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#RB.Source.get_entry_view" title="RB.Source.get_entry_view"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_entry_view</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#RB.Source.get_playback_status" title="RB.Source.get_playback_status"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_playback_status</span></code></a> (text, progress)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#RB.Source.get_property_views" title="RB.Source.get_property_views"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_property_views</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#RB.Source.handle_eos" title="RB.Source.handle_eos"><code class="xref py py-func docutils literal notranslate"><span class="pre">handle_eos</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#RB.Source.move_to_trash" title="RB.Source.move_to_trash"><code class="xref py py-func docutils literal notranslate"><span class="pre">move_to_trash</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#RB.Source.notify_filter_changed" title="RB.Source.notify_filter_changed"><code class="xref py py-func docutils literal notranslate"><span class="pre">notify_filter_changed</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#RB.Source.notify_playback_status_changed" title="RB.Source.notify_playback_status_changed"><code class="xref py py-func docutils literal notranslate"><span class="pre">notify_playback_status_changed</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#RB.Source.paste" title="RB.Source.paste"><code class="xref py py-func docutils literal notranslate"><span class="pre">paste</span></code></a> (entries)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#RB.Source.search" title="RB.Source.search"><code class="xref py py-func docutils literal notranslate"><span class="pre">search</span></code></a> (search, cur_text, new_text)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#RB.Source.set_hidden_when_empty" title="RB.Source.set_hidden_when_empty"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_hidden_when_empty</span></code></a> (hidden)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#RB.Source.song_properties" title="RB.Source.song_properties"><code class="xref py py-func docutils literal notranslate"><span class="pre">song_properties</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#RB.Source.try_playlist" title="RB.Source.try_playlist"><code class="xref py py-func docutils literal notranslate"><span class="pre">try_playlist</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#RB.Source.update_play_statistics" title="RB.Source.update_play_statistics"><code class="xref py py-func docutils literal notranslate"><span class="pre">update_play_statistics</span></code></a> (db, entry)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#RB.Source.uri_is_source" title="RB.Source.uri_is_source"><code class="xref py py-func docutils literal notranslate"><span class="pre">uri_is_source</span></code></a> (uri)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#RB.Source.want_uri" title="RB.Source.want_uri"><code class="xref py py-func docutils literal notranslate"><span class="pre">want_uri</span></code></a> (uri)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="virtual-methods">
+<span id="rb-source-vfuncs"></span><h2>Virtual Methods<a class="headerlink" href="#virtual-methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="DisplayPage.html#rb-displaypage-vfuncs"><span class="std std-ref">RB.DisplayPage (12)</span></a>,     <a class="reference external" href="../../Gtk-3.0/classes/Container.html#gtk-container-vfuncs" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.Container (10)</span></a>,     <a class="reference external" href="../../Gtk-3.0/classes/Widget.html#gtk-widget-vfuncs" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.Widget (82)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-vfuncs" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (7)</span></a>,     <a class="reference external" href="../../Gtk-3.0/classes/Buildable.html#gtk-buildable-vfuncs" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.Buildable (10)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="99%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#RB.Source.do_add_to_queue" title="RB.Source.do_add_to_queue"><code class="xref py py-func docutils literal notranslate"><span class="pre">do_add_to_queue</span></code></a> (queue)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#RB.Source.do_add_uri" title="RB.Source.do_add_uri"><code class="xref py py-func docutils literal notranslate"><span class="pre">do_add_uri</span></code></a> (uri, title, genre, callback, data)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#RB.Source.do_can_add_to_queue" title="RB.Source.do_can_add_to_queue"><code class="xref py py-func docutils literal notranslate"><span class="pre">do_can_add_to_queue</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#RB.Source.do_can_copy" title="RB.Source.do_can_copy"><code class="xref py py-func docutils literal notranslate"><span class="pre">do_can_copy</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#RB.Source.do_can_cut" title="RB.Source.do_can_cut"><code class="xref py py-func docutils literal notranslate"><span class="pre">do_can_cut</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#RB.Source.do_can_delete" title="RB.Source.do_can_delete"><code class="xref py py-func docutils literal notranslate"><span class="pre">do_can_delete</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#RB.Source.do_can_move_to_trash" title="RB.Source.do_can_move_to_trash"><code class="xref py py-func docutils literal notranslate"><span class="pre">do_can_move_to_trash</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#RB.Source.do_can_paste" title="RB.Source.do_can_paste"><code class="xref py py-func docutils literal notranslate"><span class="pre">do_can_paste</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#RB.Source.do_can_pause" title="RB.Source.do_can_pause"><code class="xref py py-func docutils literal notranslate"><span class="pre">do_can_pause</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#RB.Source.do_can_rename" title="RB.Source.do_can_rename"><code class="xref py py-func docutils literal notranslate"><span class="pre">do_can_rename</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#RB.Source.do_copy" title="RB.Source.do_copy"><code class="xref py py-func docutils literal notranslate"><span class="pre">do_copy</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#RB.Source.do_cut" title="RB.Source.do_cut"><code class="xref py py-func docutils literal notranslate"><span class="pre">do_cut</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#RB.Source.do_delete_selected" title="RB.Source.do_delete_selected"><code class="xref py py-func docutils literal notranslate"><span class="pre">do_delete_selected</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#RB.Source.do_filter_changed" title="RB.Source.do_filter_changed"><code class="xref py py-func docutils literal notranslate"><span class="pre">do_filter_changed</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#RB.Source.do_get_delete_label" title="RB.Source.do_get_delete_label"><code class="xref py py-func docutils literal notranslate"><span class="pre">do_get_delete_label</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#RB.Source.do_get_entry_view" title="RB.Source.do_get_entry_view"><code class="xref py py-func docutils literal notranslate"><span class="pre">do_get_entry_view</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#RB.Source.do_get_playback_status" title="RB.Source.do_get_playback_status"><code class="xref py py-func docutils literal notranslate"><span class="pre">do_get_playback_status</span></code></a> (text, progress)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#RB.Source.do_get_property_views" title="RB.Source.do_get_property_views"><code class="xref py py-func docutils literal notranslate"><span class="pre">do_get_property_views</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#RB.Source.do_handle_eos" title="RB.Source.do_handle_eos"><code class="xref py py-func docutils literal notranslate"><span class="pre">do_handle_eos</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#RB.Source.do_move_to_trash" title="RB.Source.do_move_to_trash"><code class="xref py py-func docutils literal notranslate"><span class="pre">do_move_to_trash</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#RB.Source.do_paste" title="RB.Source.do_paste"><code class="xref py py-func docutils literal notranslate"><span class="pre">do_paste</span></code></a> (entries)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#RB.Source.do_reset_filters" title="RB.Source.do_reset_filters"><code class="xref py py-func docutils literal notranslate"><span class="pre">do_reset_filters</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#RB.Source.do_search" title="RB.Source.do_search"><code class="xref py py-func docutils literal notranslate"><span class="pre">do_search</span></code></a> (search, cur_text, new_text)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#RB.Source.do_song_properties" title="RB.Source.do_song_properties"><code class="xref py py-func docutils literal notranslate"><span class="pre">do_song_properties</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#RB.Source.do_try_playlist" title="RB.Source.do_try_playlist"><code class="xref py py-func docutils literal notranslate"><span class="pre">do_try_playlist</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#RB.Source.do_uri_is_source" title="RB.Source.do_uri_is_source"><code class="xref py py-func docutils literal notranslate"><span class="pre">do_uri_is_source</span></code></a> (uri)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#RB.Source.do_want_uri" title="RB.Source.do_want_uri"><code class="xref py py-func docutils literal notranslate"><span class="pre">do_want_uri</span></code></a> (uri)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="rb-source-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="DisplayPage.html#rb-displaypage-props"><span class="std std-ref">RB.DisplayPage (5)</span></a>,     <a class="reference external" href="../../Gtk-3.0/classes/Box.html#gtk-box-props" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.Box (3)</span></a>,     <a class="reference external" href="../../Gtk-3.0/classes/Container.html#gtk-container-props" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.Container (3)</span></a>,     <a class="reference external" href="../../Gtk-3.0/classes/Widget.html#gtk-widget-props" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.Widget (39)</span></a>,     <a class="reference external" href="../../Gtk-3.0/classes/Orientable.html#gtk-orientable-props" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.Orientable (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="1%" />
+<col width="1%" />
+<col width="97%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Flags</th>
+<th class="head">Short Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="#RB.Source.props.base_query_model" title="RB.Source.props.base_query_model"><code class="xref py py-data docutils literal notranslate"><span class="pre">base-query-model</span></code></a></td>
+<td><a class="reference internal" href="RhythmDBQueryModel.html#RB.RhythmDBQueryModel" title="RB.RhythmDBQueryModel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.RhythmDBQueryModel</span></code></a></td>
+<td>r</td>
+<td><a class="reference internal" href="RhythmDBQueryModel.html#RB.RhythmDBQueryModel" title="RB.RhythmDBQueryModel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.RhythmDBQueryModel</span></code></a> object (unfiltered)</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#RB.Source.props.entry_type" title="RB.Source.props.entry_type"><code class="xref py py-data docutils literal notranslate"><span class="pre">entry-type</span></code></a></td>
+<td><a class="reference internal" href="RhythmDBEntryType.html#RB.RhythmDBEntryType" title="RB.RhythmDBEntryType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.RhythmDBEntryType</span></code></a></td>
+<td>r/w/co</td>
+<td>Type of the entries which should be displayed by this source</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#RB.Source.props.hidden_when_empty" title="RB.Source.props.hidden_when_empty"><code class="xref py py-data docutils literal notranslate"><span class="pre">hidden-when-empty</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+<td>r/w</td>
+<td>Whether the source should be displayed in the source list when it is empty</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#RB.Source.props.load_status" title="RB.Source.props.load_status"><code class="xref py py-data docutils literal notranslate"><span class="pre">load-status</span></code></a></td>
+<td><a class="reference internal" href="../enums.html#RB.SourceLoadStatus" title="RB.SourceLoadStatus"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.SourceLoadStatus</span></code></a></td>
+<td>r/w/c</td>
+<td>load status</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#RB.Source.props.play_order" title="RB.Source.props.play_order"><code class="xref py py-data docutils literal notranslate"><span class="pre">play-order</span></code></a></td>
+<td><a class="reference internal" href="PlayOrder.html#RB.PlayOrder" title="RB.PlayOrder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.PlayOrder</span></code></a></td>
+<td>r</td>
+<td>optional play order specific to the source</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#RB.Source.props.playlist_menu" title="RB.Source.props.playlist_menu"><code class="xref py py-data docutils literal notranslate"><span class="pre">playlist-menu</span></code></a></td>
+<td><a class="reference external" href="../../Gio-2.0/classes/MenuModel.html#Gio.MenuModel" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.MenuModel</span></code></a></td>
+<td>r/w</td>
+<td>playlist menu</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#RB.Source.props.query_model" title="RB.Source.props.query_model"><code class="xref py py-data docutils literal notranslate"><span class="pre">query-model</span></code></a></td>
+<td><a class="reference internal" href="RhythmDBQueryModel.html#RB.RhythmDBQueryModel" title="RB.RhythmDBQueryModel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.RhythmDBQueryModel</span></code></a></td>
+<td>r/w</td>
+<td><a class="reference internal" href="RhythmDBQueryModel.html#RB.RhythmDBQueryModel" title="RB.RhythmDBQueryModel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.RhythmDBQueryModel</span></code></a> object</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#RB.Source.props.settings" title="RB.Source.props.settings"><code class="xref py py-data docutils literal notranslate"><span class="pre">settings</span></code></a></td>
+<td><a class="reference external" href="../../Gio-2.0/classes/Settings.html#Gio.Settings" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Settings</span></code></a></td>
+<td>r/w/c</td>
+<td><a class="reference external" href="../../Gio-2.0/classes/Settings.html#Gio.Settings" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Settings</span></code></a> instance</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#RB.Source.props.show_browser" title="RB.Source.props.show_browser"><code class="xref py py-data docutils literal notranslate"><span class="pre">show-browser</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+<td>r/w</td>
+<td>whether the browser widget should be shown</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#RB.Source.props.toolbar_menu" title="RB.Source.props.toolbar_menu"><code class="xref py py-data docutils literal notranslate"><span class="pre">toolbar-menu</span></code></a></td>
+<td><a class="reference external" href="../../Gio-2.0/classes/MenuModel.html#Gio.MenuModel" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.MenuModel</span></code></a></td>
+<td>r/w/co</td>
+<td>toolbar menu</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="child-properties">
+<span id="rb-source-child-props"></span><h2>Child Properties<a class="headerlink" href="#child-properties" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../Gtk-3.0/classes/Box.html#gtk-box-child-props" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.Box (5)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="style-properties">
+<span id="rb-source-style-props"></span><h2>Style Properties<a class="headerlink" href="#style-properties" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../Gtk-3.0/classes/Widget.html#gtk-widget-style-props" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.Widget (17)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="signals">
+<span id="rb-source-signals"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="DisplayPage.html#rb-displaypage-signals"><span class="std std-ref">RB.DisplayPage (2)</span></a>,     <a class="reference external" href="../../Gtk-3.0/classes/Container.html#gtk-container-signals" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.Container (4)</span></a>,     <a class="reference external" href="../../Gtk-3.0/classes/Widget.html#gtk-widget-signals" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.Widget (69)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-signals" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="30%" />
+<col width="70%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Short Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="#RB.Source.signals.filter_changed" title="RB.Source.signals.filter_changed"><code class="xref py py-func docutils literal notranslate"><span class="pre">filter-changed</span></code></a></td>
+<td>Fires when the user changes the filter, either by changing the contents of the search box or by selecting a different browser entry.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#RB.Source.signals.playback_status_changed" title="RB.Source.signals.playback_status_changed"><code class="xref py py-func docutils literal notranslate"><span class="pre">playback-status-changed</span></code></a></td>
+<td>Emitted to indicate playback status (buffering etc.) has changed</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#RB.Source.signals.reset_filters" title="RB.Source.signals.reset_filters"><code class="xref py py-func docutils literal notranslate"><span class="pre">reset-filters</span></code></a></td>
+<td>Action signal used to reset the source’s filters.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fields">
+<span id="rb-source-fields"></span><h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="DisplayPage.html#rb-displaypage-fields"><span class="std std-ref">RB.DisplayPage (2)</span></a>,     <a class="reference external" href="../../Gtk-3.0/classes/Container.html#gtk-container-fields" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.Container (4)</span></a>,     <a class="reference external" href="../../Gtk-3.0/classes/Widget.html#gtk-widget-fields" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.Widget (69)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-fields" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="16%" />
+<col width="1%" />
+<col width="1%" />
+<col width="82%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Access</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>parent</td>
+<td><a class="reference internal" href="DisplayPage.html#RB.DisplayPage" title="RB.DisplayPage"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.DisplayPage</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="class-details">
+<h2>Class Details<a class="headerlink" href="#class-details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="RB.Source">
+<em class="property">class </em><code class="descclassname">RB.</code><code class="descname">Source</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#RB.Source" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Bases:</th><td class="field-body"><a class="reference internal" href="DisplayPage.html#RB.DisplayPage" title="RB.DisplayPage"><code class="xref py py-class docutils literal notranslate"><span class="pre">RB.DisplayPage</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Abstract:</th><td class="field-body">Yes</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Structure:</th><td class="field-body"><a class="reference internal" href="SourceClass.html#RB.SourceClass" title="RB.SourceClass"><code class="xref py py-class docutils literal notranslate"><span class="pre">RB.SourceClass</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="RB.Source.add_to_queue">
+<code class="descname">add_to_queue</code><span class="sig-paren">(</span><em>queue</em><span class="sig-paren">)</span><a class="headerlink" href="#RB.Source.add_to_queue" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>queue</strong> (<a class="reference internal" href="#RB.Source" title="RB.Source"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.Source</span></code></a>) – the <a class="reference internal" href="#RB.Source" title="RB.Source"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.Source</span></code></a> for the play queue</td>
+</tr>
+</tbody>
+</table>
+<p>Adds the currently selected entries to the end of the
+play queue.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RB.Source.add_uri">
+<code class="descname">add_uri</code><span class="sig-paren">(</span><em>uri</em>, <em>title</em>, <em>genre</em>, <em>callback</em>, <em>*data</em><span class="sig-paren">)</span><a class="headerlink" href="#RB.Source.add_uri" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>uri</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – a URI to add</li>
+<li><strong>title</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – theoretically, the title of the entity the URI points to</li>
+<li><strong>genre</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – theoretically, the genre of the entity the URI points to</li>
+<li><strong>callback</strong> (<a class="reference internal" href="../callbacks.html#RB.SourceAddCallback" title="RB.SourceAddCallback"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.SourceAddCallback</span></code></a>) – a callback function to call when complete</li>
+<li><strong>data</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">object</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – data to pass to the callback</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Adds an entry corresponding to the URI to the source.  The
+<cite>title</cite> and <cite>genre</cite> parameters are not really used.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RB.Source.bind_settings">
+<code class="descname">bind_settings</code><span class="sig-paren">(</span><em>entry_view</em>, <em>paned</em>, <em>browser</em>, <em>sort_order</em><span class="sig-paren">)</span><a class="headerlink" href="#RB.Source.bind_settings" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>entry_view</strong> (<a class="reference external" href="../../Gtk-3.0/classes/Widget.html#Gtk.Widget" title="(in Gtk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Widget</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – the <a class="reference internal" href="EntryView.html#RB.EntryView" title="RB.EntryView"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.EntryView</span></code></a> for the source</li>
+<li><strong>paned</strong> (<a class="reference external" href="../../Gtk-3.0/classes/Widget.html#Gtk.Widget" title="(in Gtk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Widget</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – the <a class="reference external" href="../../Gtk-3.0/classes/Paned.html#Gtk.Paned" title="(in Gtk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Paned</span></code></a> containing the entry view and the browser</li>
+<li><strong>browser</strong> (<a class="reference external" href="../../Gtk-3.0/classes/Widget.html#Gtk.Widget" title="(in Gtk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Widget</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – the browser (typically a <a class="reference internal" href="LibraryBrowser.html#RB.LibraryBrowser" title="RB.LibraryBrowser"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.LibraryBrowser</span></code></a>) for the source</li>
+<li><strong>sort_order</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a>) – whether to bind the entry view sort order</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Binds the source’s <a class="reference external" href="../../Gio-2.0/classes/Settings.html#Gio.Settings" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Settings</span></code></a> instance to the given widgets.  Should be called
+from the source’s constructed method.</p>
+<p>If the browser widget has a browser-views property, it will be bound to the
+browser-views settings key.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RB.Source.can_add_to_queue">
+<code class="descname">can_add_to_queue</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#RB.Source.can_add_to_queue" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if adding to the play queue is supported</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Determines whether the source can add the selected entries to
+the play queue.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RB.Source.can_copy">
+<code class="descname">can_copy</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#RB.Source.can_copy" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if copying is supported</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Determines whether the source supports the copy part
+of a copy-and-paste operation.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RB.Source.can_cut">
+<code class="descname">can_cut</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#RB.Source.can_cut" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if cutting is supported</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Determines whether the source supporst the typical cut
+(as in cut-and-paste) operation.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RB.Source.can_delete">
+<code class="descname">can_delete</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#RB.Source.can_delete" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if deletion is supported</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Determines whether the source allows the user to delete
+a selected set of entries.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RB.Source.can_move_to_trash">
+<code class="descname">can_move_to_trash</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#RB.Source.can_move_to_trash" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if trashing is supported</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Determines whether the source allows the user to trash
+the files backing a selected set of entries.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RB.Source.can_paste">
+<code class="descname">can_paste</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#RB.Source.can_paste" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if the pasting is supported</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Determines whether the source supports paste operations.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RB.Source.can_pause">
+<code class="descname">can_pause</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#RB.Source.can_pause" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if pausing is supported</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Determines whether playback of entries from the source can
+be paused.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RB.Source.can_rename">
+<code class="descname">can_rename</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#RB.Source.can_rename" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if this source can be renamed</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Determines whether the source can be renamed.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RB.Source.can_show_properties">
+<code class="descname">can_show_properties</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#RB.Source.can_show_properties" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if showing properties is supported</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Determines whether the source can display a properties
+window for the currently selected entry (or set of entries)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RB.Source.copy">
+<code class="descname">copy</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#RB.Source.copy" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a list containing
+the currently selected entries from the source.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">[<a class="reference internal" href="RhythmDBEntry.html#RB.RhythmDBEntry" title="RB.RhythmDBEntry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.RhythmDBEntry</span></code></a>]</td>
+</tr>
+</tbody>
+</table>
+<p>Copies the selected entries to the clipboard.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RB.Source.create_search_action">
+<code class="descname">create_search_action</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#RB.Source.create_search_action" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="../../Gio-2.0/classes/Action.html#Gio.Action" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Action</span></code></a> instance</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="../../Gio-2.0/classes/Action.html#Gio.Action" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Action</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Creates a <a class="reference external" href="../../Gio-2.0/classes/Action.html#Gio.Action" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Action</span></code></a> representing the selected search type for <cite>self</cite>.
+The action is stateful. Its state is a string containing the name of
+a registered search instance.  If the source has a settings instance,
+it will be updated when the state changes.  Changes coming from the
+settings instance are ignored.  If the source doesn’t have a settings
+instance, it should set a default state on the action at some point.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RB.Source.cut">
+<code class="descname">cut</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#RB.Source.cut" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">entries cut
+from the source.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">[<a class="reference internal" href="RhythmDBEntry.html#RB.RhythmDBEntry" title="RB.RhythmDBEntry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.RhythmDBEntry</span></code></a>]</td>
+</tr>
+</tbody>
+</table>
+<p>Removes the currently selected entries from the source and
+returns them so they can be pasted into another source.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RB.Source.delete_selected">
+<code class="descname">delete_selected</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#RB.Source.delete_selected" title="Permalink to this definition">¶</a></dt>
+<dd><p>Deletes the currently selected entries from the source.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RB.Source.gather_selected_properties">
+<code class="descname">gather_selected_properties</code><span class="sig-paren">(</span><em>prop</em><span class="sig-paren">)</span><a class="headerlink" href="#RB.Source.gather_selected_properties" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>prop</strong> (<a class="reference internal" href="../enums.html#RB.RhythmDBPropType" title="RB.RhythmDBPropType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.RhythmDBPropType</span></code></a>) – property for which to gather selection</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">list of property values</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">[<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>]</td>
+</tr>
+</tbody>
+</table>
+<p>Returns a list containing the values of the specified
+property from the selected entries in the source.
+This is used to implement the ‘browse this artist’ (etc.)
+actions.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RB.Source.get_delete_label">
+<code class="descname">get_delete_label</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#RB.Source.get_delete_label" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">allocated string holding the label string</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns a translated label for the ‘delete’ menu item, allowing
+sources to better describe what happens to deleted entries.
+Playlists, for example, return “Remove from Playlist” here.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RB.Source.get_entry_view">
+<code class="descname">get_entry_view</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#RB.Source.get_entry_view" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the <a class="reference internal" href="EntryView.html#RB.EntryView" title="RB.EntryView"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.EntryView</span></code></a> instance for the source</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="EntryView.html#RB.EntryView" title="RB.EntryView"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.EntryView</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns the entry view widget for the source.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RB.Source.get_playback_status">
+<code class="descname">get_playback_status</code><span class="sig-paren">(</span><em>text</em>, <em>progress</em><span class="sig-paren">)</span><a class="headerlink" href="#RB.Source.get_playback_status" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>text</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – holds returned playback status text</li>
+<li><strong>progress</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">float</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – holds returned playback status progress value</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">text:</th><td class="field-body">holds returned playback status text</td>
+</tr>
+<tr class="field-even field"><th class="field-name">progress:</th><td class="field-body">holds returned playback status progress value</td>
+</tr>
+</tbody>
+</table>
+</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">(<strong>text</strong>: <a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>, <strong>progress</strong>: <a class="reference external" href="http://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">float</span></code></a>)</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Retrieves playback status details, such as buffering progress.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RB.Source.get_property_views">
+<code class="descname">get_property_views</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#RB.Source.get_property_views" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">list of property views</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">[<a class="reference internal" href="PropertyView.html#RB.PropertyView" title="RB.PropertyView"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.PropertyView</span></code></a>]</td>
+</tr>
+</tbody>
+</table>
+<p>Returns a list containing the <a class="reference internal" href="PropertyView.html#RB.PropertyView" title="RB.PropertyView"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.PropertyView</span></code></a> instances for the
+source, if any.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RB.Source.handle_eos">
+<code class="descname">handle_eos</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#RB.Source.handle_eos" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">EOS event handling type</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#RB.SourceEOFType" title="RB.SourceEOFType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.SourceEOFType</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Determines how EOS events should be handled when playing entries
+from the source.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RB.Source.move_to_trash">
+<code class="descname">move_to_trash</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#RB.Source.move_to_trash" title="Permalink to this definition">¶</a></dt>
+<dd><p>Trashes the files backing the currently selected set of entries.
+In general, this should use <a class="reference internal" href="RhythmDB.html#RB.RhythmDB.entry_move_to_trash" title="RB.RhythmDB.entry_move_to_trash"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.RhythmDB.entry_move_to_trash</span></code></a> to
+perform the actual trash operation.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RB.Source.notify_filter_changed">
+<code class="descname">notify_filter_changed</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#RB.Source.notify_filter_changed" title="Permalink to this definition">¶</a></dt>
+<dd><p>Source implementations call this when their filter state changes</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RB.Source.notify_playback_status_changed">
+<code class="descname">notify_playback_status_changed</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#RB.Source.notify_playback_status_changed" title="Permalink to this definition">¶</a></dt>
+<dd><p>Source implementations call this when their playback status
+changes.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RB.Source.paste">
+<code class="descname">paste</code><span class="sig-paren">(</span><em>entries</em><span class="sig-paren">)</span><a class="headerlink" href="#RB.Source.paste" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>entries</strong> ([<a class="reference internal" href="RhythmDBEntry.html#RB.RhythmDBEntry" title="RB.RhythmDBEntry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.RhythmDBEntry</span></code></a>]) – a list of <a class="reference internal" href="RhythmDBEntry.html#RB.RhythmDBEntry" title="RB.RhythmDBEntry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.RhythmDBEntry</span></code></a> objects to paste in</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the <a class="reference internal" href="TrackTransferBatch.html#RB.TrackTransferBatch" title="RB.TrackTransferBatch"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.TrackTransferBatch</span></code></a> used to perform the transfer (if any)</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="TrackTransferBatch.html#RB.TrackTransferBatch" title="RB.TrackTransferBatch"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.TrackTransferBatch</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Adds a list of entries previously cut or copied from another
+source.  If the entries are not of the type used by the source,
+the entries will be copied and possibly converted into an acceptable format.
+This can be used for transfers to and from devices and network shares.</p>
+<p>If the transfer is performed using an <a class="reference internal" href="TrackTransferBatch.html#RB.TrackTransferBatch" title="RB.TrackTransferBatch"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.TrackTransferBatch</span></code></a>, the batch object
+is returned so the caller can monitor the transfer progress.  The caller does not
+own a reference on the batch object.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RB.Source.search">
+<code class="descname">search</code><span class="sig-paren">(</span><em>search</em>, <em>cur_text</em>, <em>new_text</em><span class="sig-paren">)</span><a class="headerlink" href="#RB.Source.search" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>search</strong> (<a class="reference internal" href="SourceSearch.html#RB.SourceSearch" title="RB.SourceSearch"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.SourceSearch</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – the active <a class="reference internal" href="SourceSearch.html#RB.SourceSearch" title="RB.SourceSearch"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.SourceSearch</span></code></a> instance</li>
+<li><strong>cur_text</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – the current search text</li>
+<li><strong>new_text</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – the new search text</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Updates the source with new search text.  The source
+should recreate the database query that feeds into the
+browser (if any).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RB.Source.set_hidden_when_empty">
+<code class="descname">set_hidden_when_empty</code><span class="sig-paren">(</span><em>hidden</em><span class="sig-paren">)</span><a class="headerlink" href="#RB.Source.set_hidden_when_empty" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>hidden</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a>) – if <a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a>, automatically hide the source</td>
+</tr>
+</tbody>
+</table>
+<p>Enables or disables automatic hiding of the source when
+there are no entries in it.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RB.Source.song_properties">
+<code class="descname">song_properties</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#RB.Source.song_properties" title="Permalink to this definition">¶</a></dt>
+<dd><p>Displays a properties window for the currently selected entries.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RB.Source.try_playlist">
+<code class="descname">try_playlist</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#RB.Source.try_playlist" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> to attempt playlist parsing</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Determines whether playback URIs for entries in the source should
+be parsed as playlists rather than just played.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RB.Source.update_play_statistics">
+<code class="descname">update_play_statistics</code><span class="sig-paren">(</span><em>db</em>, <em>entry</em><span class="sig-paren">)</span><a class="headerlink" href="#RB.Source.update_play_statistics" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>db</strong> (<a class="reference internal" href="RhythmDB.html#RB.RhythmDB" title="RB.RhythmDB"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.RhythmDB</span></code></a>) – the <a class="reference internal" href="RhythmDB.html#RB.RhythmDB" title="RB.RhythmDB"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.RhythmDB</span></code></a> instance</li>
+<li><strong>entry</strong> (<a class="reference internal" href="RhythmDBEntry.html#RB.RhythmDBEntry" title="RB.RhythmDBEntry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.RhythmDBEntry</span></code></a>) – the <a class="reference internal" href="RhythmDBEntry.html#RB.RhythmDBEntry" title="RB.RhythmDBEntry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.RhythmDBEntry</span></code></a> to update</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Updates play count and play time statistics for a database entry.
+Sources containing entries that do not normally reach EOS should
+call this for an entry when it is no longer being played.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RB.Source.uri_is_source">
+<code class="descname">uri_is_source</code><span class="sig-paren">(</span><em>uri</em><span class="sig-paren">)</span><a class="headerlink" href="#RB.Source.uri_is_source" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>uri</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – a URI for the source to consider</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if the URI identifies the source itself.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Checks if the URI matches the source itself.  A source
+should return <a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> here if the URI points to the device that
+the source represents, for example.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RB.Source.want_uri">
+<code class="descname">want_uri</code><span class="sig-paren">(</span><em>uri</em><span class="sig-paren">)</span><a class="headerlink" href="#RB.Source.want_uri" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>uri</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – a URI for the source to consider</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">value from 0 to 100 indicating how much the
+source wants this URI.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns an indication of how much the source wants to handle
+the specified URI.  100 is the highest usual value, and should
+only be used when the URI can only be associated with this source.
+0 should be used when the URI does not match the source at all.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RB.Source.do_add_to_queue">
+<code class="descname">do_add_to_queue</code><span class="sig-paren">(</span><em>queue</em><span class="sig-paren">)</span><em class="property"> virtual</em><a class="headerlink" href="#RB.Source.do_add_to_queue" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>queue</strong> (<a class="reference internal" href="#RB.Source" title="RB.Source"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.Source</span></code></a>) – the <a class="reference internal" href="#RB.Source" title="RB.Source"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.Source</span></code></a> for the play queue</td>
+</tr>
+</tbody>
+</table>
+<p>Adds the currently selected entries to the end of the
+play queue.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RB.Source.do_add_uri">
+<code class="descname">do_add_uri</code><span class="sig-paren">(</span><em>uri</em>, <em>title</em>, <em>genre</em>, <em>callback</em>, <em>data</em><span class="sig-paren">)</span><em class="property"> virtual</em><a class="headerlink" href="#RB.Source.do_add_uri" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>uri</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – a URI to add</li>
+<li><strong>title</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – theoretically, the title of the entity the URI points to</li>
+<li><strong>genre</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – theoretically, the genre of the entity the URI points to</li>
+<li><strong>callback</strong> (<a class="reference internal" href="../callbacks.html#RB.SourceAddCallback" title="RB.SourceAddCallback"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.SourceAddCallback</span></code></a>) – a callback function to call when complete</li>
+<li><strong>data</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">object</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – data to pass to the callback</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Adds an entry corresponding to the URI to the source.  The
+<cite>title</cite> and <cite>genre</cite> parameters are not really used.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RB.Source.do_can_add_to_queue">
+<code class="descname">do_can_add_to_queue</code><span class="sig-paren">(</span><span class="sig-paren">)</span><em class="property"> virtual</em><a class="headerlink" href="#RB.Source.do_can_add_to_queue" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if adding to the play queue is supported</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Determines whether the source can add the selected entries to
+the play queue.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RB.Source.do_can_copy">
+<code class="descname">do_can_copy</code><span class="sig-paren">(</span><span class="sig-paren">)</span><em class="property"> virtual</em><a class="headerlink" href="#RB.Source.do_can_copy" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if copying is supported</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Determines whether the source supports the copy part
+of a copy-and-paste operation.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RB.Source.do_can_cut">
+<code class="descname">do_can_cut</code><span class="sig-paren">(</span><span class="sig-paren">)</span><em class="property"> virtual</em><a class="headerlink" href="#RB.Source.do_can_cut" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if cutting is supported</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Determines whether the source supporst the typical cut
+(as in cut-and-paste) operation.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RB.Source.do_can_delete">
+<code class="descname">do_can_delete</code><span class="sig-paren">(</span><span class="sig-paren">)</span><em class="property"> virtual</em><a class="headerlink" href="#RB.Source.do_can_delete" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if deletion is supported</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Determines whether the source allows the user to delete
+a selected set of entries.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RB.Source.do_can_move_to_trash">
+<code class="descname">do_can_move_to_trash</code><span class="sig-paren">(</span><span class="sig-paren">)</span><em class="property"> virtual</em><a class="headerlink" href="#RB.Source.do_can_move_to_trash" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if trashing is supported</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Determines whether the source allows the user to trash
+the files backing a selected set of entries.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RB.Source.do_can_paste">
+<code class="descname">do_can_paste</code><span class="sig-paren">(</span><span class="sig-paren">)</span><em class="property"> virtual</em><a class="headerlink" href="#RB.Source.do_can_paste" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if the pasting is supported</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Determines whether the source supports paste operations.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RB.Source.do_can_pause">
+<code class="descname">do_can_pause</code><span class="sig-paren">(</span><span class="sig-paren">)</span><em class="property"> virtual</em><a class="headerlink" href="#RB.Source.do_can_pause" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if pausing is supported</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Determines whether playback of entries from the source can
+be paused.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RB.Source.do_can_rename">
+<code class="descname">do_can_rename</code><span class="sig-paren">(</span><span class="sig-paren">)</span><em class="property"> virtual</em><a class="headerlink" href="#RB.Source.do_can_rename" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if this source can be renamed</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Determines whether the source can be renamed.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RB.Source.do_copy">
+<code class="descname">do_copy</code><span class="sig-paren">(</span><span class="sig-paren">)</span><em class="property"> virtual</em><a class="headerlink" href="#RB.Source.do_copy" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a list containing
+the currently selected entries from the source.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">[<a class="reference internal" href="RhythmDBEntry.html#RB.RhythmDBEntry" title="RB.RhythmDBEntry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.RhythmDBEntry</span></code></a>]</td>
+</tr>
+</tbody>
+</table>
+<p>Copies the selected entries to the clipboard.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RB.Source.do_cut">
+<code class="descname">do_cut</code><span class="sig-paren">(</span><span class="sig-paren">)</span><em class="property"> virtual</em><a class="headerlink" href="#RB.Source.do_cut" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">entries cut
+from the source.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">[<a class="reference internal" href="RhythmDBEntry.html#RB.RhythmDBEntry" title="RB.RhythmDBEntry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.RhythmDBEntry</span></code></a>]</td>
+</tr>
+</tbody>
+</table>
+<p>Removes the currently selected entries from the source and
+returns them so they can be pasted into another source.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RB.Source.do_delete_selected">
+<code class="descname">do_delete_selected</code><span class="sig-paren">(</span><span class="sig-paren">)</span><em class="property"> virtual</em><a class="headerlink" href="#RB.Source.do_delete_selected" title="Permalink to this definition">¶</a></dt>
+<dd><p>Deletes the currently selected entries from the source.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RB.Source.do_filter_changed">
+<code class="descname">do_filter_changed</code><span class="sig-paren">(</span><span class="sig-paren">)</span><em class="property"> virtual</em><a class="headerlink" href="#RB.Source.do_filter_changed" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="RB.Source.do_get_delete_label">
+<code class="descname">do_get_delete_label</code><span class="sig-paren">(</span><span class="sig-paren">)</span><em class="property"> virtual</em><a class="headerlink" href="#RB.Source.do_get_delete_label" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">allocated string holding the label string</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns a translated label for the ‘delete’ menu item, allowing
+sources to better describe what happens to deleted entries.
+Playlists, for example, return “Remove from Playlist” here.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RB.Source.do_get_entry_view">
+<code class="descname">do_get_entry_view</code><span class="sig-paren">(</span><span class="sig-paren">)</span><em class="property"> virtual</em><a class="headerlink" href="#RB.Source.do_get_entry_view" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the <a class="reference internal" href="EntryView.html#RB.EntryView" title="RB.EntryView"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.EntryView</span></code></a> instance for the source</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="EntryView.html#RB.EntryView" title="RB.EntryView"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.EntryView</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns the entry view widget for the source.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RB.Source.do_get_playback_status">
+<code class="descname">do_get_playback_status</code><span class="sig-paren">(</span><em>text</em>, <em>progress</em><span class="sig-paren">)</span><em class="property"> virtual</em><a class="headerlink" href="#RB.Source.do_get_playback_status" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>text</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – holds returned playback status text</li>
+<li><strong>progress</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">float</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – holds returned playback status progress value</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">text:</th><td class="field-body">holds returned playback status text</td>
+</tr>
+<tr class="field-even field"><th class="field-name">progress:</th><td class="field-body">holds returned playback status progress value</td>
+</tr>
+</tbody>
+</table>
+</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">(<strong>text</strong>: <a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>, <strong>progress</strong>: <a class="reference external" href="http://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">float</span></code></a>)</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Retrieves playback status details, such as buffering progress.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RB.Source.do_get_property_views">
+<code class="descname">do_get_property_views</code><span class="sig-paren">(</span><span class="sig-paren">)</span><em class="property"> virtual</em><a class="headerlink" href="#RB.Source.do_get_property_views" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">list of property views</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">[<a class="reference internal" href="PropertyView.html#RB.PropertyView" title="RB.PropertyView"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.PropertyView</span></code></a>]</td>
+</tr>
+</tbody>
+</table>
+<p>Returns a list containing the <a class="reference internal" href="PropertyView.html#RB.PropertyView" title="RB.PropertyView"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.PropertyView</span></code></a> instances for the
+source, if any.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RB.Source.do_handle_eos">
+<code class="descname">do_handle_eos</code><span class="sig-paren">(</span><span class="sig-paren">)</span><em class="property"> virtual</em><a class="headerlink" href="#RB.Source.do_handle_eos" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">EOS event handling type</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#RB.SourceEOFType" title="RB.SourceEOFType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.SourceEOFType</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Determines how EOS events should be handled when playing entries
+from the source.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RB.Source.do_move_to_trash">
+<code class="descname">do_move_to_trash</code><span class="sig-paren">(</span><span class="sig-paren">)</span><em class="property"> virtual</em><a class="headerlink" href="#RB.Source.do_move_to_trash" title="Permalink to this definition">¶</a></dt>
+<dd><p>Trashes the files backing the currently selected set of entries.
+In general, this should use <a class="reference internal" href="RhythmDB.html#RB.RhythmDB.entry_move_to_trash" title="RB.RhythmDB.entry_move_to_trash"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.RhythmDB.entry_move_to_trash</span></code></a> to
+perform the actual trash operation.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RB.Source.do_paste">
+<code class="descname">do_paste</code><span class="sig-paren">(</span><em>entries</em><span class="sig-paren">)</span><em class="property"> virtual</em><a class="headerlink" href="#RB.Source.do_paste" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>entries</strong> ([<a class="reference internal" href="RhythmDBEntry.html#RB.RhythmDBEntry" title="RB.RhythmDBEntry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.RhythmDBEntry</span></code></a>]) – a list of <a class="reference internal" href="RhythmDBEntry.html#RB.RhythmDBEntry" title="RB.RhythmDBEntry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.RhythmDBEntry</span></code></a> objects to paste in</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the <a class="reference internal" href="TrackTransferBatch.html#RB.TrackTransferBatch" title="RB.TrackTransferBatch"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.TrackTransferBatch</span></code></a> used to perform the transfer (if any)</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="TrackTransferBatch.html#RB.TrackTransferBatch" title="RB.TrackTransferBatch"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.TrackTransferBatch</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Adds a list of entries previously cut or copied from another
+source.  If the entries are not of the type used by the source,
+the entries will be copied and possibly converted into an acceptable format.
+This can be used for transfers to and from devices and network shares.</p>
+<p>If the transfer is performed using an <a class="reference internal" href="TrackTransferBatch.html#RB.TrackTransferBatch" title="RB.TrackTransferBatch"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.TrackTransferBatch</span></code></a>, the batch object
+is returned so the caller can monitor the transfer progress.  The caller does not
+own a reference on the batch object.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RB.Source.do_reset_filters">
+<code class="descname">do_reset_filters</code><span class="sig-paren">(</span><span class="sig-paren">)</span><em class="property"> virtual</em><a class="headerlink" href="#RB.Source.do_reset_filters" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="RB.Source.do_search">
+<code class="descname">do_search</code><span class="sig-paren">(</span><em>search</em>, <em>cur_text</em>, <em>new_text</em><span class="sig-paren">)</span><em class="property"> virtual</em><a class="headerlink" href="#RB.Source.do_search" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>search</strong> (<a class="reference internal" href="SourceSearch.html#RB.SourceSearch" title="RB.SourceSearch"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.SourceSearch</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – the active <a class="reference internal" href="SourceSearch.html#RB.SourceSearch" title="RB.SourceSearch"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.SourceSearch</span></code></a> instance</li>
+<li><strong>cur_text</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – the current search text</li>
+<li><strong>new_text</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – the new search text</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Updates the source with new search text.  The source
+should recreate the database query that feeds into the
+browser (if any).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RB.Source.do_song_properties">
+<code class="descname">do_song_properties</code><span class="sig-paren">(</span><span class="sig-paren">)</span><em class="property"> virtual</em><a class="headerlink" href="#RB.Source.do_song_properties" title="Permalink to this definition">¶</a></dt>
+<dd><p>Displays a properties window for the currently selected entries.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RB.Source.do_try_playlist">
+<code class="descname">do_try_playlist</code><span class="sig-paren">(</span><span class="sig-paren">)</span><em class="property"> virtual</em><a class="headerlink" href="#RB.Source.do_try_playlist" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> to attempt playlist parsing</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Determines whether playback URIs for entries in the source should
+be parsed as playlists rather than just played.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RB.Source.do_uri_is_source">
+<code class="descname">do_uri_is_source</code><span class="sig-paren">(</span><em>uri</em><span class="sig-paren">)</span><em class="property"> virtual</em><a class="headerlink" href="#RB.Source.do_uri_is_source" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>uri</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – a URI for the source to consider</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if the URI identifies the source itself.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Checks if the URI matches the source itself.  A source
+should return <a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> here if the URI points to the device that
+the source represents, for example.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RB.Source.do_want_uri">
+<code class="descname">do_want_uri</code><span class="sig-paren">(</span><em>uri</em><span class="sig-paren">)</span><em class="property"> virtual</em><a class="headerlink" href="#RB.Source.do_want_uri" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>uri</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – a URI for the source to consider</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">value from 0 to 100 indicating how much the
+source wants this URI.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns an indication of how much the source wants to handle
+the specified URI.  100 is the highest usual value, and should
+only be used when the URI can only be associated with this source.
+0 should be used when the URI does not match the source at all.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="signal-details">
+<h2>Signal Details<a class="headerlink" href="#signal-details" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="RB.Source.signals.filter_changed">
+<code class="descclassname">RB.Source.signals.</code><code class="descname">filter_changed</code><span class="sig-paren">(</span><em>source</em><span class="sig-paren">)</span><a class="headerlink" href="#RB.Source.signals.filter_changed" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Signal Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">filter-changed</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.SignalFlags.RUN_LAST" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RUN_LAST</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>source</strong> (<a class="reference internal" href="#RB.Source" title="RB.Source"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.Source</span></code></a>) – The object which received the signal</td>
+</tr>
+</tbody>
+</table>
+<p>Fires when the user changes the filter, either by changing the
+contents of the search box or by selecting a different browser
+entry.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="RB.Source.signals.playback_status_changed">
+<code class="descclassname">RB.Source.signals.</code><code class="descname">playback_status_changed</code><span class="sig-paren">(</span><em>source</em><span class="sig-paren">)</span><a class="headerlink" href="#RB.Source.signals.playback_status_changed" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Signal Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">playback-status-changed</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.SignalFlags.RUN_LAST" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RUN_LAST</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>source</strong> (<a class="reference internal" href="#RB.Source" title="RB.Source"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.Source</span></code></a>) – The object which received the signal</td>
+</tr>
+</tbody>
+</table>
+<p>Emitted to indicate playback status (buffering etc.) has changed</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="RB.Source.signals.reset_filters">
+<code class="descclassname">RB.Source.signals.</code><code class="descname">reset_filters</code><span class="sig-paren">(</span><em>source</em><span class="sig-paren">)</span><a class="headerlink" href="#RB.Source.signals.reset_filters" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Signal Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">reset-filters</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.SignalFlags.RUN_LAST" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RUN_LAST</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.SignalFlags.ACTION" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ACTION</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>source</strong> (<a class="reference internal" href="#RB.Source" title="RB.Source"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.Source</span></code></a>) – The object which received the signal</td>
+</tr>
+</tbody>
+</table>
+<p>Action signal used to reset the source’s filters.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="property-details">
+<h2>Property Details<a class="headerlink" href="#property-details" title="Permalink to this headline">¶</a></h2>
+<dl class="data">
+<dt id="RB.Source.props.base_query_model">
+<code class="descclassname">RB.Source.props.</code><code class="descname">base_query_model</code><a class="headerlink" href="#RB.Source.props.base_query_model" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">base-query-model</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="RhythmDBQueryModel.html#RB.RhythmDBQueryModel" title="RB.RhythmDBQueryModel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.RhythmDBQueryModel</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The unfiltered query model for the source, containing all entries in the source.
+Source classes should override this if they perform filtering based on the search
+box or a browser.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="RB.Source.props.entry_type">
+<code class="descclassname">RB.Source.props.</code><code class="descname">entry_type</code><a class="headerlink" href="#RB.Source.props.entry_type" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">entry-type</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="RhythmDBEntryType.html#RB.RhythmDBEntryType" title="RB.RhythmDBEntryType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.RhythmDBEntryType</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.CONSTRUCT_ONLY" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CONSTRUCT_ONLY</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Entry type for entries in this source.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="RB.Source.props.hidden_when_empty">
+<code class="descclassname">RB.Source.props.</code><code class="descname">hidden_when_empty</code><a class="headerlink" href="#RB.Source.props.hidden_when_empty" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">hidden-when-empty</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>If <a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a>, the source will not be displayed in the source list
+when it contains no entries.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="RB.Source.props.load_status">
+<code class="descclassname">RB.Source.props.</code><code class="descname">load_status</code><a class="headerlink" href="#RB.Source.props.load_status" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">load-status</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../enums.html#RB.SourceLoadStatus" title="RB.SourceLoadStatus"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.SourceLoadStatus</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference internal" href="../enums.html#RB.SourceLoadStatus.LOADED" title="RB.SourceLoadStatus.LOADED"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.SourceLoadStatus.LOADED</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.CONSTRUCT" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CONSTRUCT</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Indicates whether the source is not loaded, is currently loading data, or is
+fully loaded.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="RB.Source.props.play_order">
+<code class="descclassname">RB.Source.props.</code><code class="descname">play_order</code><a class="headerlink" href="#RB.Source.props.play_order" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">play-order</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="PlayOrder.html#RB.PlayOrder" title="RB.PlayOrder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.PlayOrder</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>If the source provides its own play order, it can override this property.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="RB.Source.props.playlist_menu">
+<code class="descclassname">RB.Source.props.</code><code class="descname">playlist_menu</code><a class="headerlink" href="#RB.Source.props.playlist_menu" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">playlist-menu</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="../../Gio-2.0/classes/MenuModel.html#Gio.MenuModel" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.MenuModel</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>A <a class="reference external" href="../../Gio-2.0/classes/Menu.html#Gio.Menu" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Menu</span></code></a> instance to attach to the ‘add to playlist’ item in the edit menu.
+If <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>, the item will be disabled.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="RB.Source.props.query_model">
+<code class="descclassname">RB.Source.props.</code><code class="descname">query_model</code><a class="headerlink" href="#RB.Source.props.query_model" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">query-model</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="RhythmDBQueryModel.html#RB.RhythmDBQueryModel" title="RB.RhythmDBQueryModel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.RhythmDBQueryModel</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The current query model for the source.  This is used in
+various places, including the play order, to find the
+set of entries within the source.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="RB.Source.props.settings">
+<code class="descclassname">RB.Source.props.</code><code class="descname">settings</code><a class="headerlink" href="#RB.Source.props.settings" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">settings</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="../../Gio-2.0/classes/Settings.html#Gio.Settings" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Settings</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.CONSTRUCT" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CONSTRUCT</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The <a class="reference external" href="../../Gio-2.0/classes/Settings.html#Gio.Settings" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Settings</span></code></a> instance storing settings for the source.  The instance must
+have a schema of org.gnome.Rhythmbox.Source.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="RB.Source.props.show_browser">
+<code class="descclassname">RB.Source.props.</code><code class="descname">show_browser</code><a class="headerlink" href="#RB.Source.props.show_browser" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">show-browser</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Whether the browser widget for the source (if any) should be displayed.
+This should be overridden in sources that include a browser widget.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="RB.Source.props.toolbar_menu">
+<code class="descclassname">RB.Source.props.</code><code class="descname">toolbar_menu</code><a class="headerlink" href="#RB.Source.props.toolbar_menu" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">toolbar-menu</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="../../Gio-2.0/classes/MenuModel.html#Gio.MenuModel" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.MenuModel</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.CONSTRUCT_ONLY" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CONSTRUCT_ONLY</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>A <a class="reference external" href="../../Gio-2.0/classes/Menu.html#Gio.Menu" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Menu</span></code></a> instance describing the contents of a toolbar to display at
+the top of the source.  The <a class="reference internal" href="#RB.Source" title="RB.Source"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.Source</span></code></a> class doesn’t actually display
+the toolbar anywhere.  Adding the toolbar to a container is the
+responsibility of a subclass such as <a class="reference internal" href="BrowserSource.html#RB.BrowserSource" title="RB.BrowserSource"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.BrowserSource</span></code></a>.</p>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div> 
+
+</body>
+</html>

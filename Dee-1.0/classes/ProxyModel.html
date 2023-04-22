@@ -1,0 +1,510 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    Dee.ProxyModel -
+    
+      Classes -
+    
+    Dee 1.0
+  </title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/css/pgi.css" type="text/css" />
+  
+
+  
+  <script type="text/javascript">
+
+    function openSidebar(element) {
+        window.location.href = element.href + location.hash;
+        return false;
+    }
+
+    function inIframe() {
+        try {
+            return window.self !== window.top;
+        } catch (e) {
+            return true;
+        }
+    }
+
+    function onLoaded() {
+        if(!inIframe()) {
+            var icons = document.getElementsByClassName('open-sidebar');
+
+            for (var i = 0; i < icons.length; i ++) {
+                icons[i].style.display = 'table-cell';
+            }
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', onLoaded, false);
+
+  </script>
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="Dee 1.0 Python API Docs" href="../index.html"/>
+        <link rel="up" title="Classes" href="../classes.html"/>
+        <link rel="next" title="Dee.SequenceModel" href="SequenceModel.html"/>
+        <link rel="prev" title="Dee.Peer" href="Peer.html"/> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+<div class="non-fixed-bar">
+<table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#Dee-1.0/classes/ProxyModel.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Dee 1.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>Dee.ProxyModel</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="Peer.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="SequenceModel.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">Dee.ProxyModel</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#property-details">Property Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+<div class="fixed-bar">
+  <table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#Dee-1.0/classes/ProxyModel.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Dee 1.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>Dee.ProxyModel</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="Peer.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="SequenceModel.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">Dee.ProxyModel</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#property-details">Property Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+  <div class="wy-grid-for-nav">
+
+    
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="main">
+            
+  <div class="section" id="dee-proxymodel">
+<h1>Dee.ProxyModel<a class="headerlink" href="#dee-proxymodel" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<svg width="272pt" height="188pt"
+ viewBox="0.00 0.00 272.00 188.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 184)">
+<title>g</title>
+<!-- Dee.Model -->
+<g id="node1" class="node">
+<title>Dee.Model</title>
+<g id="a_node1"><a xlink:href="Model.html#Dee.Model" xlink:title="Dee.Model">
+<path fill="none" stroke="#3091d1" d="M56,-126C56,-126 6,-126 6,-126 3,-126 0,-123 0,-120 0,-120 0,-114 0,-114 0,-111 3,-108 6,-108 6,-108 56,-108 56,-108 59,-108 62,-111 62,-114 62,-114 62,-120 62,-120 62,-123 59,-126 56,-126"/>
+<text text-anchor="middle" x="31" y="-114.7" font-family="inherit" font-size="8.50">Dee.Model</text>
+</a>
+</g>
+</g>
+<!-- Dee.SerializableModel -->
+<g id="node4" class="node">
+<title>Dee.SerializableModel</title>
+<g id="a_node4"><a xlink:href="SerializableModel.html#Dee.SerializableModel" xlink:title="Dee.SerializableModel">
+<path fill="none" stroke="#aaaaaa" d="M172.5,-72C172.5,-72 73.5,-72 73.5,-72 70.5,-72 67.5,-69 67.5,-66 67.5,-66 67.5,-60 67.5,-60 67.5,-57 70.5,-54 73.5,-54 73.5,-54 172.5,-54 172.5,-54 175.5,-54 178.5,-57 178.5,-60 178.5,-60 178.5,-66 178.5,-66 178.5,-69 175.5,-72 172.5,-72"/>
+<text text-anchor="middle" x="123" y="-60.7" font-family="inherit" font-size="8.50">Dee.SerializableModel</text>
+</a>
+</g>
+</g>
+<!-- Dee.Model&#45;&gt;Dee.SerializableModel -->
+<g id="edge1" class="edge">
+<title>Dee.Model&#45;&gt;Dee.SerializableModel</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M45.38,-107.88C61.17,-98.95 86.62,-84.56 104.04,-74.72"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="105.23,-76.05 108.73,-72.07 103.51,-73 105.23,-76.05"/>
+</g>
+<!-- Dee.ProxyModel -->
+<g id="node2" class="node">
+<title>Dee.ProxyModel</title>
+<g id="a_node2"><a xlink:href="#Dee.ProxyModel" xlink:title="Dee.ProxyModel">
+<path fill="none" stroke="#75507b" d="M160,-18C160,-18 86,-18 86,-18 83,-18 80,-15 80,-12 80,-12 80,-6 80,-6 80,-3 83,0 86,0 86,0 160,0 160,0 163,0 166,-3 166,-6 166,-6 166,-12 166,-12 166,-15 163,-18 160,-18"/>
+<text text-anchor="middle" x="123" y="-6.7" font-family="inherit" font-size="8.50">Dee.ProxyModel</text>
+</a>
+</g>
+</g>
+<!-- Dee.Serializable -->
+<g id="node3" class="node">
+<title>Dee.Serializable</title>
+<g id="a_node3"><a xlink:href="Serializable.html#Dee.Serializable" xlink:title="Dee.Serializable">
+<path fill="none" stroke="#3091d1" d="M160,-126C160,-126 86,-126 86,-126 83,-126 80,-123 80,-120 80,-120 80,-114 80,-114 80,-111 83,-108 86,-108 86,-108 160,-108 160,-108 163,-108 166,-111 166,-114 166,-114 166,-120 166,-120 166,-123 163,-126 160,-126"/>
+<text text-anchor="middle" x="123" y="-114.7" font-family="inherit" font-size="8.50">Dee.Serializable</text>
+</a>
+</g>
+</g>
+<!-- Dee.Serializable&#45;&gt;Dee.SerializableModel -->
+<g id="edge2" class="edge">
+<title>Dee.Serializable&#45;&gt;Dee.SerializableModel</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M123,-107.88C123,-99.76 123,-87.13 123,-77.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="124.75,-77.24 123,-72.24 121.25,-77.24 124.75,-77.24"/>
+</g>
+<!-- Dee.SerializableModel&#45;&gt;Dee.ProxyModel -->
+<g id="edge3" class="edge">
+<title>Dee.SerializableModel&#45;&gt;Dee.ProxyModel</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M123,-53.88C123,-45.76 123,-33.13 123,-23.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="124.75,-23.24 123,-18.24 121.25,-23.24 124.75,-23.24"/>
+</g>
+<!-- GObject.GInterface -->
+<g id="node5" class="node">
+<title>GObject.GInterface</title>
+<g id="a_node5"><a xlink:href="../../GObject-2.0/classes/GInterface.html#GObject.GInterface" xlink:title="GObject.GInterface">
+<path fill="none" stroke="#3091d1" d="M120,-180C120,-180 34,-180 34,-180 31,-180 28,-177 28,-174 28,-174 28,-168 28,-168 28,-165 31,-162 34,-162 34,-162 120,-162 120,-162 123,-162 126,-165 126,-168 126,-168 126,-174 126,-174 126,-177 123,-180 120,-180"/>
+<text text-anchor="middle" x="77" y="-168.7" font-family="inherit" font-size="8.50">GObject.GInterface</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Dee.Model -->
+<g id="edge4" class="edge">
+<title>GObject.GInterface&#45;&gt;Dee.Model</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M69.81,-161.88C62.3,-153.38 50.41,-139.94 41.77,-130.18"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="42.91,-128.83 38.29,-126.24 40.29,-131.14 42.91,-128.83"/>
+</g>
+<!-- GObject.GInterface&#45;&gt;Dee.Serializable -->
+<g id="edge5" class="edge">
+<title>GObject.GInterface&#45;&gt;Dee.Serializable</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M84.19,-161.88C91.7,-153.38 103.59,-139.94 112.23,-130.18"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="113.71,-131.14 115.71,-126.24 111.09,-128.83 113.71,-131.14"/>
+</g>
+<!-- GObject.Object -->
+<g id="node6" class="node">
+<title>GObject.Object</title>
+<g id="a_node6"><a xlink:href="../../GObject-2.0/classes/Object.html#GObject.Object" xlink:title="GObject.Object">
+<path fill="none" stroke="#75507b" d="M258,-126C258,-126 190,-126 190,-126 187,-126 184,-123 184,-120 184,-120 184,-114 184,-114 184,-111 187,-108 190,-108 190,-108 258,-108 258,-108 261,-108 264,-111 264,-114 264,-114 264,-120 264,-120 264,-123 261,-126 258,-126"/>
+<text text-anchor="middle" x="224" y="-114.7" font-family="inherit" font-size="8.50">GObject.Object</text>
+</a>
+</g>
+</g>
+<!-- GObject.Object&#45;&gt;Dee.SerializableModel -->
+<g id="edge6" class="edge">
+<title>GObject.Object&#45;&gt;Dee.SerializableModel</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M208.22,-107.88C190.73,-98.87 162.46,-84.32 143.33,-74.47"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="143.92,-72.8 138.67,-72.07 142.31,-75.91 143.92,-72.8"/>
+</g>
+</g>
+</svg>
+</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Subclasses:</th><td class="field-body"><a class="reference internal" href="FilterModel.html#Dee.FilterModel" title="Dee.FilterModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">Dee.FilterModel</span></code></a>, <a class="reference internal" href="SharedModel.html#Dee.SharedModel" title="Dee.SharedModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">Dee.SharedModel</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="methods">
+<span id="dee-proxymodel-methods"></span><h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="SerializableModel.html#dee-serializablemodel-methods"><span class="std std-ref">Dee.SerializableModel (3)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (37)</span></a>,     <a class="reference internal" href="Model.html#dee-model-methods"><span class="std std-ref">Dee.Model (48)</span></a>,     <a class="reference internal" href="Serializable.html#dee-serializable-methods"><span class="std std-ref">Dee.Serializable (4)</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Structs:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/ObjectClass.html#gobject-objectclass-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.ObjectClass (5)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="virtual-methods">
+<span id="dee-proxymodel-vfuncs"></span><h2>Virtual Methods<a class="headerlink" href="#virtual-methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-vfuncs" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (7)</span></a>,     <a class="reference internal" href="Model.html#dee-model-vfuncs"><span class="std std-ref">Dee.Model (50)</span></a>,     <a class="reference internal" href="Serializable.html#dee-serializable-vfuncs"><span class="std std-ref">Dee.Serializable (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="dee-proxymodel-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="1%" />
+<col width="1%" />
+<col width="97%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Flags</th>
+<th class="head">Short Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="#Dee.ProxyModel.props.back_end" title="Dee.ProxyModel.props.back_end"><code class="xref py py-data docutils literal notranslate"><span class="pre">back-end</span></code></a></td>
+<td><a class="reference internal" href="Model.html#Dee.Model" title="Dee.Model"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Dee.Model</span></code></a></td>
+<td>r/w/co</td>
+<td>Back end model</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#Dee.ProxyModel.props.inherit_seqnums" title="Dee.ProxyModel.props.inherit_seqnums"><code class="xref py py-data docutils literal notranslate"><span class="pre">inherit-seqnums</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+<td>r/w/co</td>
+<td>Whether or not to inherit seqnums</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#Dee.ProxyModel.props.proxy_signals" title="Dee.ProxyModel.props.proxy_signals"><code class="xref py py-data docutils literal notranslate"><span class="pre">proxy-signals</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+<td>r/w/co</td>
+<td>Whether or not to automatically forward signals from the back end</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="signals">
+<span id="dee-proxymodel-signals"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-signals" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a>,     <a class="reference internal" href="Model.html#dee-model-signals"><span class="std std-ref">Dee.Model (5)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fields">
+<span id="dee-proxymodel-fields"></span><h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-fields" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a>,     <a class="reference internal" href="Model.html#dee-model-fields"><span class="std std-ref">Dee.Model (5)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="16%" />
+<col width="1%" />
+<col width="1%" />
+<col width="82%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Access</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>parent</td>
+<td><a class="reference internal" href="SerializableModel.html#Dee.SerializableModel" title="Dee.SerializableModel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Dee.SerializableModel</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>priv</td>
+<td><a class="reference internal" href="ProxyModelPrivate.html#Dee.ProxyModelPrivate" title="Dee.ProxyModelPrivate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Dee.ProxyModelPrivate</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="class-details">
+<h2>Class Details<a class="headerlink" href="#class-details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Dee.ProxyModel">
+<em class="property">class </em><code class="descclassname">Dee.</code><code class="descname">ProxyModel</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#Dee.ProxyModel" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Bases:</th><td class="field-body"><a class="reference internal" href="SerializableModel.html#Dee.SerializableModel" title="Dee.SerializableModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">Dee.SerializableModel</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Abstract:</th><td class="field-body">No</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Structure:</th><td class="field-body"><a class="reference internal" href="ProxyModelClass.html#Dee.ProxyModelClass" title="Dee.ProxyModelClass"><code class="xref py py-class docutils literal notranslate"><span class="pre">Dee.ProxyModelClass</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>All fields in the <a class="reference internal" href="#Dee.ProxyModel" title="Dee.ProxyModel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Dee.ProxyModel</span></code></a> structure are private and should never be
+accessed directly</p>
+</dd></dl>
+
+</div>
+<div class="section" id="property-details">
+<h2>Property Details<a class="headerlink" href="#property-details" title="Permalink to this headline">¶</a></h2>
+<dl class="data">
+<dt id="Dee.ProxyModel.props.back_end">
+<code class="descclassname">Dee.ProxyModel.props.</code><code class="descname">back_end</code><a class="headerlink" href="#Dee.ProxyModel.props.back_end" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">back-end</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="Model.html#Dee.Model" title="Dee.Model"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Dee.Model</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.CONSTRUCT_ONLY" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CONSTRUCT_ONLY</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The backend model used by this proxy model.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="Dee.ProxyModel.props.inherit_seqnums">
+<code class="descclassname">Dee.ProxyModel.props.</code><code class="descname">inherit_seqnums</code><a class="headerlink" href="#Dee.ProxyModel.props.inherit_seqnums" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">inherit-seqnums</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.CONSTRUCT_ONLY" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CONSTRUCT_ONLY</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Boolean property defining whether sequence numbers will be inherited
+from the back end model.
+You will most likely want to set this property to false
+if the implementation manipulates with the rows in the model and keep
+track of seqnums yourself.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="Dee.ProxyModel.props.proxy_signals">
+<code class="descclassname">Dee.ProxyModel.props.</code><code class="descname">proxy_signals</code><a class="headerlink" href="#Dee.ProxyModel.props.proxy_signals" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">proxy-signals</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.CONSTRUCT_ONLY" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CONSTRUCT_ONLY</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Boolean property defining whether or not to automatically forward signals
+from the back end model. This is especially useful for sub classes wishing
+to do their own more advanced signal forwarding.</p>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div> 
+
+</body>
+</html>

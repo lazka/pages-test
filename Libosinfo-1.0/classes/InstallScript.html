@@ -1,0 +1,1927 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    Libosinfo.InstallScript -
+    
+      Classes -
+    
+    Libosinfo 1.0
+  </title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/css/pgi.css" type="text/css" />
+  
+
+  
+  <script type="text/javascript">
+
+    function openSidebar(element) {
+        window.location.href = element.href + location.hash;
+        return false;
+    }
+
+    function inIframe() {
+        try {
+            return window.self !== window.top;
+        } catch (e) {
+            return true;
+        }
+    }
+
+    function onLoaded() {
+        if(!inIframe()) {
+            var icons = document.getElementsByClassName('open-sidebar');
+
+            for (var i = 0; i < icons.length; i ++) {
+                icons[i].style.display = 'table-cell';
+            }
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', onLoaded, false);
+
+  </script>
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="Libosinfo 1.0 Python API Docs" href="../index.html"/>
+        <link rel="up" title="Classes" href="../classes.html"/>
+        <link rel="next" title="Libosinfo.InstallScriptList" href="InstallScriptList.html"/>
+        <link rel="prev" title="Libosinfo.InstallConfigParamList" href="InstallConfigParamList.html"/> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+<div class="non-fixed-bar">
+<table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#Libosinfo-1.0/classes/InstallScript.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Libosinfo 1.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>Libosinfo.InstallScript</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="InstallConfigParamList.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="InstallScriptList.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">Libosinfo.InstallScript</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#property-details">Property Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+<div class="fixed-bar">
+  <table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#Libosinfo-1.0/classes/InstallScript.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Libosinfo 1.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>Libosinfo.InstallScript</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="InstallConfigParamList.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="InstallScriptList.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">Libosinfo.InstallScript</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#property-details">Property Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+  <div class="wy-grid-for-nav">
+
+    
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="main">
+            
+  <div class="section" id="libosinfo-installscript">
+<h1>Libosinfo.InstallScript<a class="headerlink" href="#libosinfo-installscript" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<svg width="114pt" height="134pt"
+ viewBox="0.00 0.00 114.00 134.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 130)">
+<title>g</title>
+<!-- GObject.Object -->
+<g id="node1" class="node">
+<title>GObject.Object</title>
+<g id="a_node1"><a xlink:href="../../GObject-2.0/classes/Object.html#GObject.Object" xlink:title="GObject.Object">
+<path fill="none" stroke="#75507b" d="M87,-126C87,-126 19,-126 19,-126 16,-126 13,-123 13,-120 13,-120 13,-114 13,-114 13,-111 16,-108 19,-108 19,-108 87,-108 87,-108 90,-108 93,-111 93,-114 93,-114 93,-120 93,-120 93,-123 90,-126 87,-126"/>
+<text text-anchor="middle" x="53" y="-114.7" font-family="inherit" font-size="8.50">GObject.Object</text>
+</a>
+</g>
+</g>
+<!-- Libosinfo.Entity -->
+<g id="node2" class="node">
+<title>Libosinfo.Entity</title>
+<g id="a_node2"><a xlink:href="Entity.html#Libosinfo.Entity" xlink:title="Libosinfo.Entity">
+<path fill="none" stroke="#aaaaaa" d="M87.5,-72C87.5,-72 18.5,-72 18.5,-72 15.5,-72 12.5,-69 12.5,-66 12.5,-66 12.5,-60 12.5,-60 12.5,-57 15.5,-54 18.5,-54 18.5,-54 87.5,-54 87.5,-54 90.5,-54 93.5,-57 93.5,-60 93.5,-60 93.5,-66 93.5,-66 93.5,-69 90.5,-72 87.5,-72"/>
+<text text-anchor="middle" x="53" y="-60.7" font-family="inherit" font-size="8.50">Libosinfo.Entity</text>
+</a>
+</g>
+</g>
+<!-- GObject.Object&#45;&gt;Libosinfo.Entity -->
+<g id="edge1" class="edge">
+<title>GObject.Object&#45;&gt;Libosinfo.Entity</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M53,-107.88C53,-99.76 53,-87.13 53,-77.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="54.75,-77.24 53,-72.24 51.25,-77.24 54.75,-77.24"/>
+</g>
+<!-- Libosinfo.InstallScript -->
+<g id="node3" class="node">
+<title>Libosinfo.InstallScript</title>
+<g id="a_node3"><a xlink:href="#Libosinfo.InstallScript" xlink:title="Libosinfo.InstallScript">
+<path fill="none" stroke="#75507b" d="M100,-18C100,-18 6,-18 6,-18 3,-18 0,-15 0,-12 0,-12 0,-6 0,-6 0,-3 3,0 6,0 6,0 100,0 100,0 103,0 106,-3 106,-6 106,-6 106,-12 106,-12 106,-15 103,-18 100,-18"/>
+<text text-anchor="middle" x="53" y="-6.7" font-family="inherit" font-size="8.50">Libosinfo.InstallScript</text>
+</a>
+</g>
+</g>
+<!-- Libosinfo.Entity&#45;&gt;Libosinfo.InstallScript -->
+<g id="edge2" class="edge">
+<title>Libosinfo.Entity&#45;&gt;Libosinfo.InstallScript</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M53,-53.88C53,-45.76 53,-33.13 53,-23.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="54.75,-23.24 53,-18.24 51.25,-23.24 54.75,-23.24"/>
+</g>
+</g>
+</svg>
+</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Subclasses:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="methods">
+<span id="libosinfo-installscript-methods"></span><h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Entity.html#libosinfo-entity-methods"><span class="std std-ref">Libosinfo.Entity (15)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (37)</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Structs:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/ObjectClass.html#gobject-objectclass-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.ObjectClass (5)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="99%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><em>class</em></td>
+<td><a class="reference internal" href="#Libosinfo.InstallScript.new" title="Libosinfo.InstallScript.new"><code class="xref py py-func docutils literal notranslate"><span class="pre">new</span></code></a> (id)</td>
+</tr>
+<tr class="row-even"><td><em>class</em></td>
+<td><a class="reference internal" href="#Libosinfo.InstallScript.new_data" title="Libosinfo.InstallScript.new_data"><code class="xref py py-func docutils literal notranslate"><span class="pre">new_data</span></code></a> (id, profile, templateData)</td>
+</tr>
+<tr class="row-odd"><td><em>class</em></td>
+<td><a class="reference internal" href="#Libosinfo.InstallScript.new_uri" title="Libosinfo.InstallScript.new_uri"><code class="xref py py-func docutils literal notranslate"><span class="pre">new_uri</span></code></a> (id, profile, templateUri)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Libosinfo.InstallScript.generate" title="Libosinfo.InstallScript.generate"><code class="xref py py-func docutils literal notranslate"><span class="pre">generate</span></code></a> (os, config, cancellable)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Libosinfo.InstallScript.generate_async" title="Libosinfo.InstallScript.generate_async"><code class="xref py py-func docutils literal notranslate"><span class="pre">generate_async</span></code></a> (os, config, cancellable, callback, *user_data)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Libosinfo.InstallScript.generate_command_line" title="Libosinfo.InstallScript.generate_command_line"><code class="xref py py-func docutils literal notranslate"><span class="pre">generate_command_line</span></code></a> (os, config)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Libosinfo.InstallScript.generate_command_line_for_media" title="Libosinfo.InstallScript.generate_command_line_for_media"><code class="xref py py-func docutils literal notranslate"><span class="pre">generate_command_line_for_media</span></code></a> (media, config)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Libosinfo.InstallScript.generate_command_line_for_tree" title="Libosinfo.InstallScript.generate_command_line_for_tree"><code class="xref py py-func docutils literal notranslate"><span class="pre">generate_command_line_for_tree</span></code></a> (tree, config)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Libosinfo.InstallScript.generate_finish" title="Libosinfo.InstallScript.generate_finish"><code class="xref py py-func docutils literal notranslate"><span class="pre">generate_finish</span></code></a> (res)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Libosinfo.InstallScript.generate_for_media" title="Libosinfo.InstallScript.generate_for_media"><code class="xref py py-func docutils literal notranslate"><span class="pre">generate_for_media</span></code></a> (media, config, cancellable)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Libosinfo.InstallScript.generate_for_media_async" title="Libosinfo.InstallScript.generate_for_media_async"><code class="xref py py-func docutils literal notranslate"><span class="pre">generate_for_media_async</span></code></a> (media, config, cancellable, callback, *user_data)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Libosinfo.InstallScript.generate_for_media_finish" title="Libosinfo.InstallScript.generate_for_media_finish"><code class="xref py py-func docutils literal notranslate"><span class="pre">generate_for_media_finish</span></code></a> (res)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Libosinfo.InstallScript.generate_for_tree" title="Libosinfo.InstallScript.generate_for_tree"><code class="xref py py-func docutils literal notranslate"><span class="pre">generate_for_tree</span></code></a> (tree, config, cancellable)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Libosinfo.InstallScript.generate_for_tree_async" title="Libosinfo.InstallScript.generate_for_tree_async"><code class="xref py py-func docutils literal notranslate"><span class="pre">generate_for_tree_async</span></code></a> (tree, config, cancellable, callback, *user_data)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Libosinfo.InstallScript.generate_for_tree_finish" title="Libosinfo.InstallScript.generate_for_tree_finish"><code class="xref py py-func docutils literal notranslate"><span class="pre">generate_for_tree_finish</span></code></a> (res)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Libosinfo.InstallScript.generate_output" title="Libosinfo.InstallScript.generate_output"><code class="xref py py-func docutils literal notranslate"><span class="pre">generate_output</span></code></a> (os, config, output_dir, cancellable)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Libosinfo.InstallScript.generate_output_async" title="Libosinfo.InstallScript.generate_output_async"><code class="xref py py-func docutils literal notranslate"><span class="pre">generate_output_async</span></code></a> (os, config, output_dir, cancellable, callback, *user_data)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Libosinfo.InstallScript.generate_output_finish" title="Libosinfo.InstallScript.generate_output_finish"><code class="xref py py-func docutils literal notranslate"><span class="pre">generate_output_finish</span></code></a> (res)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Libosinfo.InstallScript.generate_output_for_media" title="Libosinfo.InstallScript.generate_output_for_media"><code class="xref py py-func docutils literal notranslate"><span class="pre">generate_output_for_media</span></code></a> (media, config, output_dir, cancellable)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Libosinfo.InstallScript.generate_output_for_media_async" title="Libosinfo.InstallScript.generate_output_for_media_async"><code class="xref py py-func docutils literal notranslate"><span class="pre">generate_output_for_media_async</span></code></a> (media, config, output_dir, cancellable, callback, *user_data)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Libosinfo.InstallScript.generate_output_for_media_finish" title="Libosinfo.InstallScript.generate_output_for_media_finish"><code class="xref py py-func docutils literal notranslate"><span class="pre">generate_output_for_media_finish</span></code></a> (res)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Libosinfo.InstallScript.generate_output_for_tree" title="Libosinfo.InstallScript.generate_output_for_tree"><code class="xref py py-func docutils literal notranslate"><span class="pre">generate_output_for_tree</span></code></a> (tree, config, output_dir, cancellable)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Libosinfo.InstallScript.generate_output_for_tree_async" title="Libosinfo.InstallScript.generate_output_for_tree_async"><code class="xref py py-func docutils literal notranslate"><span class="pre">generate_output_for_tree_async</span></code></a> (tree, config, output_dir, cancellable, callback, *user_data)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Libosinfo.InstallScript.generate_output_for_tree_finish" title="Libosinfo.InstallScript.generate_output_for_tree_finish"><code class="xref py py-func docutils literal notranslate"><span class="pre">generate_output_for_tree_finish</span></code></a> (res)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Libosinfo.InstallScript.get_avatar_format" title="Libosinfo.InstallScript.get_avatar_format"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_avatar_format</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Libosinfo.InstallScript.get_can_post_install_drivers" title="Libosinfo.InstallScript.get_can_post_install_drivers"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_can_post_install_drivers</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Libosinfo.InstallScript.get_can_pre_install_drivers" title="Libosinfo.InstallScript.get_can_pre_install_drivers"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_can_pre_install_drivers</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Libosinfo.InstallScript.get_config_param" title="Libosinfo.InstallScript.get_config_param"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_config_param</span></code></a> (name)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Libosinfo.InstallScript.get_config_param_list" title="Libosinfo.InstallScript.get_config_param_list"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_config_param_list</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Libosinfo.InstallScript.get_config_params" title="Libosinfo.InstallScript.get_config_params"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_config_params</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Libosinfo.InstallScript.get_expected_filename" title="Libosinfo.InstallScript.get_expected_filename"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_expected_filename</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Libosinfo.InstallScript.get_injection_methods" title="Libosinfo.InstallScript.get_injection_methods"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_injection_methods</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Libosinfo.InstallScript.get_installation_source" title="Libosinfo.InstallScript.get_installation_source"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_installation_source</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Libosinfo.InstallScript.get_needs_internet" title="Libosinfo.InstallScript.get_needs_internet"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_needs_internet</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Libosinfo.InstallScript.get_output_filename" title="Libosinfo.InstallScript.get_output_filename"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_output_filename</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Libosinfo.InstallScript.get_output_prefix" title="Libosinfo.InstallScript.get_output_prefix"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_output_prefix</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Libosinfo.InstallScript.get_path_format" title="Libosinfo.InstallScript.get_path_format"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_path_format</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Libosinfo.InstallScript.get_post_install_drivers_signing_req" title="Libosinfo.InstallScript.get_post_install_drivers_signing_req"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_post_install_drivers_signing_req</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Libosinfo.InstallScript.get_pre_install_drivers_signing_req" title="Libosinfo.InstallScript.get_pre_install_drivers_signing_req"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_pre_install_drivers_signing_req</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Libosinfo.InstallScript.get_preferred_injection_method" title="Libosinfo.InstallScript.get_preferred_injection_method"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_preferred_injection_method</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Libosinfo.InstallScript.get_product_key_format" title="Libosinfo.InstallScript.get_product_key_format"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_product_key_format</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Libosinfo.InstallScript.get_profile" title="Libosinfo.InstallScript.get_profile"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_profile</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Libosinfo.InstallScript.get_template_data" title="Libosinfo.InstallScript.get_template_data"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_template_data</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Libosinfo.InstallScript.get_template_uri" title="Libosinfo.InstallScript.get_template_uri"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_template_uri</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Libosinfo.InstallScript.has_config_param" title="Libosinfo.InstallScript.has_config_param"><code class="xref py py-func docutils literal notranslate"><span class="pre">has_config_param</span></code></a> (config_param)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Libosinfo.InstallScript.has_config_param_name" title="Libosinfo.InstallScript.has_config_param_name"><code class="xref py py-func docutils literal notranslate"><span class="pre">has_config_param_name</span></code></a> (name)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Libosinfo.InstallScript.set_installation_source" title="Libosinfo.InstallScript.set_installation_source"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_installation_source</span></code></a> (source)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Libosinfo.InstallScript.set_output_prefix" title="Libosinfo.InstallScript.set_output_prefix"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_output_prefix</span></code></a> (prefix)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Libosinfo.InstallScript.set_preferred_injection_method" title="Libosinfo.InstallScript.set_preferred_injection_method"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_preferred_injection_method</span></code></a> (method)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="virtual-methods">
+<span id="libosinfo-installscript-vfuncs"></span><h2>Virtual Methods<a class="headerlink" href="#virtual-methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-vfuncs" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (7)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="libosinfo-installscript-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Entity.html#libosinfo-entity-props"><span class="std std-ref">Libosinfo.Entity (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="1%" />
+<col width="1%" />
+<col width="97%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Flags</th>
+<th class="head">Short Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="#Libosinfo.InstallScript.props.avatar_format" title="Libosinfo.InstallScript.props.avatar_format"><code class="xref py py-data docutils literal notranslate"><span class="pre">avatar-format</span></code></a></td>
+<td><a class="reference internal" href="AvatarFormat.html#Libosinfo.AvatarFormat" title="Libosinfo.AvatarFormat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.AvatarFormat</span></code></a></td>
+<td>r</td>
+<td>Expected avatar format</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#Libosinfo.InstallScript.props.installation_source" title="Libosinfo.InstallScript.props.installation_source"><code class="xref py py-data docutils literal notranslate"><span class="pre">installation-source</span></code></a></td>
+<td><a class="reference internal" href="../enums.html#Libosinfo.InstallScriptInstallationSource" title="Libosinfo.InstallScriptInstallationSource"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.InstallScriptInstallationSource</span></code></a></td>
+<td>r</td>
+<td>The installation source to be used</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#Libosinfo.InstallScript.props.path_format" title="Libosinfo.InstallScript.props.path_format"><code class="xref py py-data docutils literal notranslate"><span class="pre">path-format</span></code></a></td>
+<td><a class="reference internal" href="../enums.html#Libosinfo.PathFormat" title="Libosinfo.PathFormat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.PathFormat</span></code></a></td>
+<td>r</td>
+<td>Expected path format</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#Libosinfo.InstallScript.props.preferred_injection_method" title="Libosinfo.InstallScript.props.preferred_injection_method"><code class="xref py py-data docutils literal notranslate"><span class="pre">preferred-injection-method</span></code></a></td>
+<td><a class="reference internal" href="../flags.html#Libosinfo.InstallScriptInjectionMethod" title="Libosinfo.InstallScriptInjectionMethod"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.InstallScriptInjectionMethod</span></code></a></td>
+<td>r/w</td>
+<td>The preferred injection method</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#Libosinfo.InstallScript.props.product_key_format" title="Libosinfo.InstallScript.props.product_key_format"><code class="xref py py-data docutils literal notranslate"><span class="pre">product-key-format</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+<td>r</td>
+<td>Product key format mask</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#Libosinfo.InstallScript.props.profile" title="Libosinfo.InstallScript.props.profile"><code class="xref py py-data docutils literal notranslate"><span class="pre">profile</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+<td>r/w/co</td>
+<td>Install script profile name</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#Libosinfo.InstallScript.props.template_data" title="Libosinfo.InstallScript.props.template_data"><code class="xref py py-data docutils literal notranslate"><span class="pre">template-data</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+<td>r/w/co</td>
+<td>Data for install script template</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#Libosinfo.InstallScript.props.template_uri" title="Libosinfo.InstallScript.props.template_uri"><code class="xref py py-data docutils literal notranslate"><span class="pre">template-uri</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+<td>r/w/co</td>
+<td>URI for install script template</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="signals">
+<span id="libosinfo-installscript-signals"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-signals" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fields">
+<span id="libosinfo-installscript-fields"></span><h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-fields" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="16%" />
+<col width="1%" />
+<col width="1%" />
+<col width="82%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Access</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>parent_instance</td>
+<td><a class="reference internal" href="Entity.html#Libosinfo.Entity" title="Libosinfo.Entity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.Entity</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="class-details">
+<h2>Class Details<a class="headerlink" href="#class-details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Libosinfo.InstallScript">
+<em class="property">class </em><code class="descclassname">Libosinfo.</code><code class="descname">InstallScript</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#Libosinfo.InstallScript" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Bases:</th><td class="field-body"><a class="reference internal" href="Entity.html#Libosinfo.Entity" title="Libosinfo.Entity"><code class="xref py py-class docutils literal notranslate"><span class="pre">Libosinfo.Entity</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Abstract:</th><td class="field-body">No</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Structure:</th><td class="field-body"><a class="reference internal" href="InstallScriptClass.html#Libosinfo.InstallScriptClass" title="Libosinfo.InstallScriptClass"><code class="xref py py-class docutils literal notranslate"><span class="pre">Libosinfo.InstallScriptClass</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<dl class="classmethod">
+<dt id="Libosinfo.InstallScript.new">
+<em class="property">classmethod </em><code class="descname">new</code><span class="sig-paren">(</span><em>id</em><span class="sig-paren">)</span><a class="headerlink" href="#Libosinfo.InstallScript.new" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>id</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#Libosinfo.InstallScript" title="Libosinfo.InstallScript"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.InstallScript</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="Libosinfo.InstallScript.new_data">
+<em class="property">classmethod </em><code class="descname">new_data</code><span class="sig-paren">(</span><em>id</em>, <em>profile</em>, <em>templateData</em><span class="sig-paren">)</span><a class="headerlink" href="#Libosinfo.InstallScript.new_data" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>id</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – a unique identifier</li>
+<li><strong>profile</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – the profile of script</li>
+<li><strong>templateData</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – style sheet data</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">an new install script</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="#Libosinfo.InstallScript" title="Libosinfo.InstallScript"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.InstallScript</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Construct a new install script from stylesheet data</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.2.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="Libosinfo.InstallScript.new_uri">
+<em class="property">classmethod </em><code class="descname">new_uri</code><span class="sig-paren">(</span><em>id</em>, <em>profile</em>, <em>templateUri</em><span class="sig-paren">)</span><a class="headerlink" href="#Libosinfo.InstallScript.new_uri" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>id</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – a unique identifier</li>
+<li><strong>profile</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – the profile of script</li>
+<li><strong>templateUri</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – style sheet URI</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">an new install script</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="#Libosinfo.InstallScript" title="Libosinfo.InstallScript"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.InstallScript</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Construct a new install script from a stylesheet URI</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.2.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Libosinfo.InstallScript.generate">
+<code class="descname">generate</code><span class="sig-paren">(</span><em>os</em>, <em>config</em>, <em>cancellable</em><span class="sig-paren">)</span><a class="headerlink" href="#Libosinfo.InstallScript.generate" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>os</strong> (<a class="reference internal" href="Os.html#Libosinfo.Os" title="Libosinfo.Os"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.Os</span></code></a>) – the os</li>
+<li><strong>config</strong> (<a class="reference internal" href="InstallConfig.html#Libosinfo.InstallConfig" title="Libosinfo.InstallConfig"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.InstallConfig</span></code></a>) – the install script config</li>
+<li><strong>cancellable</strong> (<a class="reference external" href="../../Gio-2.0/classes/Cancellable.html#Gio.Cancellable" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Cancellable</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – a <a class="reference external" href="../../Gio-2.0/classes/Cancellable.html#Gio.Cancellable" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Cancellable</span></code></a>, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first"><a class="reference external" href="../../GLib-2.0/classes/Error.html#GLib.Error" title="(in GLib 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLib.Error</span></code></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><p>the script as string.</p>
+<p>If you are generating the script for a specific media, it is recommended
+that you use <a class="reference internal" href="#Libosinfo.InstallScript.generate_for_media" title="Libosinfo.InstallScript.generate_for_media"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.InstallScript.generate_for_media</span></code></a>() instead.</p>
+<p>If you are generating the script for a specific tree, it is recommended
+that you use <a class="reference internal" href="#Libosinfo.InstallScript.generate_for_tree" title="Libosinfo.InstallScript.generate_for_tree"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.InstallScript.generate_for_tree</span></code></a>() in instead.</p>
+</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Creates an install script.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.2.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Libosinfo.InstallScript.generate_async">
+<code class="descname">generate_async</code><span class="sig-paren">(</span><em>os</em>, <em>config</em>, <em>cancellable</em>, <em>callback</em>, <em>*user_data</em><span class="sig-paren">)</span><a class="headerlink" href="#Libosinfo.InstallScript.generate_async" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>os</strong> (<a class="reference internal" href="Os.html#Libosinfo.Os" title="Libosinfo.Os"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.Os</span></code></a>) – the os</li>
+<li><strong>config</strong> (<a class="reference internal" href="InstallConfig.html#Libosinfo.InstallConfig" title="Libosinfo.InstallConfig"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.InstallConfig</span></code></a>) – the install script config</li>
+<li><strong>cancellable</strong> (<a class="reference external" href="../../Gio-2.0/classes/Cancellable.html#Gio.Cancellable" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Cancellable</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – a <a class="reference external" href="../../Gio-2.0/classes/Cancellable.html#Gio.Cancellable" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Cancellable</span></code></a>, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></li>
+<li><strong>callback</strong> (<a class="reference external" href="../../Gio-2.0/callbacks.html#Gio.AsyncReadyCallback" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AsyncReadyCallback</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – Function to call when result of this call is ready</li>
+<li><strong>user_data</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">object</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – The user data to pass to <cite>callback</cite>, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Asynchronous variant of <a class="reference internal" href="#Libosinfo.InstallScript.generate" title="Libosinfo.InstallScript.generate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.InstallScript.generate</span></code></a>(). From the callback,
+call <a class="reference internal" href="#Libosinfo.InstallScript.generate_finish" title="Libosinfo.InstallScript.generate_finish"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.InstallScript.generate_finish</span></code></a>() to conclude this call and get
+the generated script.</p>
+<p>If you are generating the script for a specific media, it is recommended that
+you use <a class="reference internal" href="#Libosinfo.InstallScript.generate_for_media_async" title="Libosinfo.InstallScript.generate_for_media_async"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.InstallScript.generate_for_media_async</span></code></a>() instead.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.2.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Libosinfo.InstallScript.generate_command_line">
+<code class="descname">generate_command_line</code><span class="sig-paren">(</span><em>os</em>, <em>config</em><span class="sig-paren">)</span><a class="headerlink" href="#Libosinfo.InstallScript.generate_command_line" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>os</strong> (<a class="reference internal" href="Os.html#Libosinfo.Os" title="Libosinfo.Os"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.Os</span></code></a>) – the os entity</li>
+<li><strong>config</strong> (<a class="reference internal" href="InstallConfig.html#Libosinfo.InstallConfig" title="Libosinfo.InstallConfig"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.InstallConfig</span></code></a>) – the install script config</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">The generated command line string, <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> otherwise.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Some install scripts need to pass a command line to the kernel, Such install
+scripts belong to OSs that provide paths to the kernel and initrd files that
+can be used to directly boot
+(http://wiki.qemu.org/download/qemu-doc.html#direct_005flinux_005fboot)
+the OS in order to pass the needed commandline to it.</p>
+<p>If you are generating the command line for a specific media, it is
+recommended that you use
+<a class="reference internal" href="#Libosinfo.InstallScript.generate_command_line_for_media" title="Libosinfo.InstallScript.generate_command_line_for_media"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.InstallScript.generate_command_line_for_media</span></code></a>() instead.</p>
+<p>If you are generating the command line for a specific tree, it is
+recommended that you use
+<a class="reference internal" href="#Libosinfo.InstallScript.generate_command_line_for_tree" title="Libosinfo.InstallScript.generate_command_line_for_tree"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.InstallScript.generate_command_line_for_tree</span></code></a>() instead.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.2.7.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Libosinfo.InstallScript.generate_command_line_for_media">
+<code class="descname">generate_command_line_for_media</code><span class="sig-paren">(</span><em>media</em>, <em>config</em><span class="sig-paren">)</span><a class="headerlink" href="#Libosinfo.InstallScript.generate_command_line_for_media" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>media</strong> (<a class="reference internal" href="Media.html#Libosinfo.Media" title="Libosinfo.Media"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.Media</span></code></a>) – the media</li>
+<li><strong>config</strong> (<a class="reference internal" href="InstallConfig.html#Libosinfo.InstallConfig" title="Libosinfo.InstallConfig"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.InstallConfig</span></code></a>) – the install script config</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">The generated command line string, <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> otherwise.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Some install scripts need to pass a command line to the kernel, Such install
+scripts belong to OSs that provide paths to the kernel and initrd files that
+can be used to directly boot
+(http://wiki.qemu.org/download/qemu-doc.html#direct_005flinux_005fboot)
+the OS in order to pass the needed commandline to it.</p>
+<p>The media <cite>media</cite> must have been identified successfully using
+<a class="reference internal" href="Db.html#Libosinfo.Db.identify_media" title="Libosinfo.Db.identify_media"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.Db.identify_media</span></code></a>() before calling this function.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.2.12.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Libosinfo.InstallScript.generate_command_line_for_tree">
+<code class="descname">generate_command_line_for_tree</code><span class="sig-paren">(</span><em>tree</em>, <em>config</em><span class="sig-paren">)</span><a class="headerlink" href="#Libosinfo.InstallScript.generate_command_line_for_tree" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>tree</strong> (<a class="reference internal" href="Tree.html#Libosinfo.Tree" title="Libosinfo.Tree"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.Tree</span></code></a>) – the tree</li>
+<li><strong>config</strong> (<a class="reference internal" href="InstallConfig.html#Libosinfo.InstallConfig" title="Libosinfo.InstallConfig"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.InstallConfig</span></code></a>) – the install script config</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">The generated command line string, <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> otherwise.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Some install scripts need to pass a command line to the kernel, Such install
+scripts belong to OSs that provide paths to the kernel and initrd files that
+can be used to directly boot
+(http://wiki.qemu.org/download/qemu-doc.html#direct_005flinux_005fboot)
+the OS in order to pass the needed commandline to it.</p>
+<p>The tree <cite>tree</cite> must have been identified successfully using
+<a class="reference internal" href="Db.html#Libosinfo.Db.identify_tree" title="Libosinfo.Db.identify_tree"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.Db.identify_tree</span></code></a>() before calling this function.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.6.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Libosinfo.InstallScript.generate_finish">
+<code class="descname">generate_finish</code><span class="sig-paren">(</span><em>res</em><span class="sig-paren">)</span><a class="headerlink" href="#Libosinfo.InstallScript.generate_finish" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>res</strong> (<a class="reference external" href="../../Gio-2.0/classes/AsyncResult.html#Gio.AsyncResult" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AsyncResult</span></code></a>) – a <a class="reference external" href="../../Gio-2.0/classes/AsyncResult.html#Gio.AsyncResult" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AsyncResult</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference external" href="../../GLib-2.0/classes/Error.html#GLib.Error" title="(in GLib 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLib.Error</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the generated script, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> on error</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.2.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Libosinfo.InstallScript.generate_for_media">
+<code class="descname">generate_for_media</code><span class="sig-paren">(</span><em>media</em>, <em>config</em>, <em>cancellable</em><span class="sig-paren">)</span><a class="headerlink" href="#Libosinfo.InstallScript.generate_for_media" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>media</strong> (<a class="reference internal" href="Media.html#Libosinfo.Media" title="Libosinfo.Media"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.Media</span></code></a>) – the media</li>
+<li><strong>config</strong> (<a class="reference internal" href="InstallConfig.html#Libosinfo.InstallConfig" title="Libosinfo.InstallConfig"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.InstallConfig</span></code></a>) – the install script config</li>
+<li><strong>cancellable</strong> (<a class="reference external" href="../../Gio-2.0/classes/Cancellable.html#Gio.Cancellable" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Cancellable</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – a <a class="reference external" href="../../Gio-2.0/classes/Cancellable.html#Gio.Cancellable" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Cancellable</span></code></a>, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first"><a class="reference external" href="../../GLib-2.0/classes/Error.html#GLib.Error" title="(in GLib 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLib.Error</span></code></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">the script as string.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Creates an install script. The media <cite>media</cite> must have been identified
+successfully using <a class="reference internal" href="Db.html#Libosinfo.Db.identify_media" title="Libosinfo.Db.identify_media"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.Db.identify_media</span></code></a>() before calling this function.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.2.12.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Libosinfo.InstallScript.generate_for_media_async">
+<code class="descname">generate_for_media_async</code><span class="sig-paren">(</span><em>media</em>, <em>config</em>, <em>cancellable</em>, <em>callback</em>, <em>*user_data</em><span class="sig-paren">)</span><a class="headerlink" href="#Libosinfo.InstallScript.generate_for_media_async" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>media</strong> (<a class="reference internal" href="Media.html#Libosinfo.Media" title="Libosinfo.Media"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.Media</span></code></a>) – the media</li>
+<li><strong>config</strong> (<a class="reference internal" href="InstallConfig.html#Libosinfo.InstallConfig" title="Libosinfo.InstallConfig"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.InstallConfig</span></code></a>) – the install script config</li>
+<li><strong>cancellable</strong> (<a class="reference external" href="../../Gio-2.0/classes/Cancellable.html#Gio.Cancellable" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Cancellable</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – a <a class="reference external" href="../../Gio-2.0/classes/Cancellable.html#Gio.Cancellable" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Cancellable</span></code></a>, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></li>
+<li><strong>callback</strong> (<a class="reference external" href="../../Gio-2.0/callbacks.html#Gio.AsyncReadyCallback" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AsyncReadyCallback</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – Function to call when result of this call is ready</li>
+<li><strong>user_data</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">object</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – The user data to pass to <cite>callback</cite>, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Asynchronous variant of <a class="reference internal" href="#Libosinfo.InstallScript.generate_for_media" title="Libosinfo.InstallScript.generate_for_media"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.InstallScript.generate_for_media</span></code></a>(). From the
+callback, call <a class="reference internal" href="#Libosinfo.InstallScript.generate_for_media_finish" title="Libosinfo.InstallScript.generate_for_media_finish"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.InstallScript.generate_for_media_finish</span></code></a>() to
+conclude this call and get the generated script.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.2.12.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Libosinfo.InstallScript.generate_for_media_finish">
+<code class="descname">generate_for_media_finish</code><span class="sig-paren">(</span><em>res</em><span class="sig-paren">)</span><a class="headerlink" href="#Libosinfo.InstallScript.generate_for_media_finish" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>res</strong> (<a class="reference external" href="../../Gio-2.0/classes/AsyncResult.html#Gio.AsyncResult" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AsyncResult</span></code></a>) – a <a class="reference external" href="../../Gio-2.0/classes/AsyncResult.html#Gio.AsyncResult" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AsyncResult</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference external" href="../../GLib-2.0/classes/Error.html#GLib.Error" title="(in GLib 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLib.Error</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the generated script, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> on error</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.2.12.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Libosinfo.InstallScript.generate_for_tree">
+<code class="descname">generate_for_tree</code><span class="sig-paren">(</span><em>tree</em>, <em>config</em>, <em>cancellable</em><span class="sig-paren">)</span><a class="headerlink" href="#Libosinfo.InstallScript.generate_for_tree" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>tree</strong> (<a class="reference internal" href="Tree.html#Libosinfo.Tree" title="Libosinfo.Tree"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.Tree</span></code></a>) – the tree</li>
+<li><strong>config</strong> (<a class="reference internal" href="InstallConfig.html#Libosinfo.InstallConfig" title="Libosinfo.InstallConfig"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.InstallConfig</span></code></a>) – the install script config</li>
+<li><strong>cancellable</strong> (<a class="reference external" href="../../Gio-2.0/classes/Cancellable.html#Gio.Cancellable" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Cancellable</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – a <a class="reference external" href="../../Gio-2.0/classes/Cancellable.html#Gio.Cancellable" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Cancellable</span></code></a>, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first"><a class="reference external" href="../../GLib-2.0/classes/Error.html#GLib.Error" title="(in GLib 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLib.Error</span></code></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">the script as string.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Creates an install script. The tree <cite>tree</cite> must have been identified
+successfully using <a class="reference internal" href="Db.html#Libosinfo.Db.identify_tree" title="Libosinfo.Db.identify_tree"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.Db.identify_tree</span></code></a>() before calling this function.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.6.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Libosinfo.InstallScript.generate_for_tree_async">
+<code class="descname">generate_for_tree_async</code><span class="sig-paren">(</span><em>tree</em>, <em>config</em>, <em>cancellable</em>, <em>callback</em>, <em>*user_data</em><span class="sig-paren">)</span><a class="headerlink" href="#Libosinfo.InstallScript.generate_for_tree_async" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>tree</strong> (<a class="reference internal" href="Tree.html#Libosinfo.Tree" title="Libosinfo.Tree"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.Tree</span></code></a>) – the tree</li>
+<li><strong>config</strong> (<a class="reference internal" href="InstallConfig.html#Libosinfo.InstallConfig" title="Libosinfo.InstallConfig"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.InstallConfig</span></code></a>) – the install script config</li>
+<li><strong>cancellable</strong> (<a class="reference external" href="../../Gio-2.0/classes/Cancellable.html#Gio.Cancellable" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Cancellable</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – a <a class="reference external" href="../../Gio-2.0/classes/Cancellable.html#Gio.Cancellable" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Cancellable</span></code></a>, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></li>
+<li><strong>callback</strong> (<a class="reference external" href="../../Gio-2.0/callbacks.html#Gio.AsyncReadyCallback" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AsyncReadyCallback</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – Function to call when result of this call is ready</li>
+<li><strong>user_data</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">object</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – The user data to pass to <cite>callback</cite>, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Asynchronous variant of <a class="reference internal" href="#Libosinfo.InstallScript.generate_for_tree" title="Libosinfo.InstallScript.generate_for_tree"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.InstallScript.generate_for_tree</span></code></a>(). From the
+callback, call <a class="reference internal" href="#Libosinfo.InstallScript.generate_for_tree_finish" title="Libosinfo.InstallScript.generate_for_tree_finish"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.InstallScript.generate_for_tree_finish</span></code></a>() to
+conclude this call and get the generated script.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.6.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Libosinfo.InstallScript.generate_for_tree_finish">
+<code class="descname">generate_for_tree_finish</code><span class="sig-paren">(</span><em>res</em><span class="sig-paren">)</span><a class="headerlink" href="#Libosinfo.InstallScript.generate_for_tree_finish" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>res</strong> (<a class="reference external" href="../../Gio-2.0/classes/AsyncResult.html#Gio.AsyncResult" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AsyncResult</span></code></a>) – a <a class="reference external" href="../../Gio-2.0/classes/AsyncResult.html#Gio.AsyncResult" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AsyncResult</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference external" href="../../GLib-2.0/classes/Error.html#GLib.Error" title="(in GLib 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLib.Error</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the generated script, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> or error</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.6.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Libosinfo.InstallScript.generate_output">
+<code class="descname">generate_output</code><span class="sig-paren">(</span><em>os</em>, <em>config</em>, <em>output_dir</em>, <em>cancellable</em><span class="sig-paren">)</span><a class="headerlink" href="#Libosinfo.InstallScript.generate_output" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>os</strong> (<a class="reference internal" href="Os.html#Libosinfo.Os" title="Libosinfo.Os"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.Os</span></code></a>) – the os entity</li>
+<li><strong>config</strong> (<a class="reference internal" href="InstallConfig.html#Libosinfo.InstallConfig" title="Libosinfo.InstallConfig"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.InstallConfig</span></code></a>) – the install script config</li>
+<li><strong>output_dir</strong> (<a class="reference external" href="../../Gio-2.0/classes/File.html#Gio.File" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.File</span></code></a>) – the directory where the file containing the output script
+will be written</li>
+<li><strong>cancellable</strong> (<a class="reference external" href="../../Gio-2.0/classes/Cancellable.html#Gio.Cancellable" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Cancellable</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – a <a class="reference external" href="../../Gio-2.0/classes/Cancellable.html#Gio.Cancellable" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Cancellable</span></code></a>, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first"><a class="reference external" href="../../GLib-2.0/classes/Error.html#GLib.Error" title="(in GLib 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLib.Error</span></code></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><p>a file containing the script</p>
+<p>If you are generating the script for a specific media, it is recommended
+that you use <a class="reference internal" href="#Libosinfo.InstallScript.generate_output_for_media" title="Libosinfo.InstallScript.generate_output_for_media"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.InstallScript.generate_output_for_media</span></code></a>() instead.</p>
+<p>If you are generating the script for a specific tree, it is recommended
+that you use <a class="reference internal" href="#Libosinfo.InstallScript.generate_output_for_tree" title="Libosinfo.InstallScript.generate_output_for_tree"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.InstallScript.generate_output_for_tree</span></code></a>() instead.</p>
+</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="../../Gio-2.0/classes/File.html#Gio.File" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.File</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Creates an install script that is written to the returned file.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.2.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Libosinfo.InstallScript.generate_output_async">
+<code class="descname">generate_output_async</code><span class="sig-paren">(</span><em>os</em>, <em>config</em>, <em>output_dir</em>, <em>cancellable</em>, <em>callback</em>, <em>*user_data</em><span class="sig-paren">)</span><a class="headerlink" href="#Libosinfo.InstallScript.generate_output_async" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>os</strong> (<a class="reference internal" href="Os.html#Libosinfo.Os" title="Libosinfo.Os"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.Os</span></code></a>) – the os</li>
+<li><strong>config</strong> (<a class="reference internal" href="InstallConfig.html#Libosinfo.InstallConfig" title="Libosinfo.InstallConfig"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.InstallConfig</span></code></a>) – the install script config</li>
+<li><strong>output_dir</strong> (<a class="reference external" href="../../Gio-2.0/classes/File.html#Gio.File" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.File</span></code></a>) – the directory where the file containing the output script
+will be written</li>
+<li><strong>cancellable</strong> (<a class="reference external" href="../../Gio-2.0/classes/Cancellable.html#Gio.Cancellable" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Cancellable</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – a <a class="reference external" href="../../Gio-2.0/classes/Cancellable.html#Gio.Cancellable" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Cancellable</span></code></a>, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></li>
+<li><strong>callback</strong> (<a class="reference external" href="../../Gio-2.0/callbacks.html#Gio.AsyncReadyCallback" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AsyncReadyCallback</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – Function to call when result of this call is ready</li>
+<li><strong>user_data</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">object</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – The user data to pass to <cite>callback</cite>, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Asynchronous variant of <a class="reference internal" href="#Libosinfo.InstallScript.generate_output" title="Libosinfo.InstallScript.generate_output"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.InstallScript.generate_output</span></code></a>(). From the
+callback, call <a class="reference internal" href="#Libosinfo.InstallScript.generate_output_finish" title="Libosinfo.InstallScript.generate_output_finish"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.InstallScript.generate_output_finish</span></code></a>() to conclude
+this call and get the generated script.</p>
+<p>If you are generating the script for a specific media, it is recommended that
+you use <a class="reference internal" href="#Libosinfo.InstallScript.generate_output_for_media_async" title="Libosinfo.InstallScript.generate_output_for_media_async"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.InstallScript.generate_output_for_media_async</span></code></a>() instead.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.2.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Libosinfo.InstallScript.generate_output_finish">
+<code class="descname">generate_output_finish</code><span class="sig-paren">(</span><em>res</em><span class="sig-paren">)</span><a class="headerlink" href="#Libosinfo.InstallScript.generate_output_finish" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>res</strong> (<a class="reference external" href="../../Gio-2.0/classes/AsyncResult.html#Gio.AsyncResult" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AsyncResult</span></code></a>) – a <a class="reference external" href="../../Gio-2.0/classes/AsyncResult.html#Gio.AsyncResult" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AsyncResult</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference external" href="../../GLib-2.0/classes/Error.html#GLib.Error" title="(in GLib 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLib.Error</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a file containing the script, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> on error</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="../../Gio-2.0/classes/File.html#Gio.File" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.File</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.2.3.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Libosinfo.InstallScript.generate_output_for_media">
+<code class="descname">generate_output_for_media</code><span class="sig-paren">(</span><em>media</em>, <em>config</em>, <em>output_dir</em>, <em>cancellable</em><span class="sig-paren">)</span><a class="headerlink" href="#Libosinfo.InstallScript.generate_output_for_media" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>media</strong> (<a class="reference internal" href="Media.html#Libosinfo.Media" title="Libosinfo.Media"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.Media</span></code></a>) – the media</li>
+<li><strong>config</strong> (<a class="reference internal" href="InstallConfig.html#Libosinfo.InstallConfig" title="Libosinfo.InstallConfig"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.InstallConfig</span></code></a>) – the install script config</li>
+<li><strong>output_dir</strong> (<a class="reference external" href="../../Gio-2.0/classes/File.html#Gio.File" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.File</span></code></a>) – the directory where the file containing the output script
+will be written</li>
+<li><strong>cancellable</strong> (<a class="reference external" href="../../Gio-2.0/classes/Cancellable.html#Gio.Cancellable" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Cancellable</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – a <a class="reference external" href="../../Gio-2.0/classes/Cancellable.html#Gio.Cancellable" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Cancellable</span></code></a>, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first"><a class="reference external" href="../../GLib-2.0/classes/Error.html#GLib.Error" title="(in GLib 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLib.Error</span></code></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">a file containing the script.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="../../Gio-2.0/classes/File.html#Gio.File" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.File</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Creates an install script that is written to the returned file.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.2.12.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Libosinfo.InstallScript.generate_output_for_media_async">
+<code class="descname">generate_output_for_media_async</code><span class="sig-paren">(</span><em>media</em>, <em>config</em>, <em>output_dir</em>, <em>cancellable</em>, <em>callback</em>, <em>*user_data</em><span class="sig-paren">)</span><a class="headerlink" href="#Libosinfo.InstallScript.generate_output_for_media_async" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>media</strong> (<a class="reference internal" href="Media.html#Libosinfo.Media" title="Libosinfo.Media"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.Media</span></code></a>) – the media</li>
+<li><strong>config</strong> (<a class="reference internal" href="InstallConfig.html#Libosinfo.InstallConfig" title="Libosinfo.InstallConfig"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.InstallConfig</span></code></a>) – the install script config</li>
+<li><strong>output_dir</strong> (<a class="reference external" href="../../Gio-2.0/classes/File.html#Gio.File" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.File</span></code></a>) – the directory where the file containing the output script
+will be written</li>
+<li><strong>cancellable</strong> (<a class="reference external" href="../../Gio-2.0/classes/Cancellable.html#Gio.Cancellable" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Cancellable</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – a <a class="reference external" href="../../Gio-2.0/classes/Cancellable.html#Gio.Cancellable" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Cancellable</span></code></a>, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></li>
+<li><strong>callback</strong> (<a class="reference external" href="../../Gio-2.0/callbacks.html#Gio.AsyncReadyCallback" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AsyncReadyCallback</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – Function to call when result of this call is ready</li>
+<li><strong>user_data</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">object</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – The user data to pass to <cite>callback</cite>, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Asynchronous variant of <a class="reference internal" href="#Libosinfo.InstallScript.generate_output_for_media" title="Libosinfo.InstallScript.generate_output_for_media"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.InstallScript.generate_output_for_media</span></code></a>().
+From the callback, call
+<a class="reference internal" href="#Libosinfo.InstallScript.generate_output_for_media_finish" title="Libosinfo.InstallScript.generate_output_for_media_finish"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.InstallScript.generate_output_for_media_finish</span></code></a>() to conclude this
+call and get the generated file.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.2.12.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Libosinfo.InstallScript.generate_output_for_media_finish">
+<code class="descname">generate_output_for_media_finish</code><span class="sig-paren">(</span><em>res</em><span class="sig-paren">)</span><a class="headerlink" href="#Libosinfo.InstallScript.generate_output_for_media_finish" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>res</strong> (<a class="reference external" href="../../Gio-2.0/classes/AsyncResult.html#Gio.AsyncResult" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AsyncResult</span></code></a>) – a <a class="reference external" href="../../Gio-2.0/classes/AsyncResult.html#Gio.AsyncResult" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AsyncResult</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference external" href="../../GLib-2.0/classes/Error.html#GLib.Error" title="(in GLib 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLib.Error</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a file containing the script, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> on error.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="../../Gio-2.0/classes/File.html#Gio.File" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.File</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.2.12.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Libosinfo.InstallScript.generate_output_for_tree">
+<code class="descname">generate_output_for_tree</code><span class="sig-paren">(</span><em>tree</em>, <em>config</em>, <em>output_dir</em>, <em>cancellable</em><span class="sig-paren">)</span><a class="headerlink" href="#Libosinfo.InstallScript.generate_output_for_tree" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>tree</strong> (<a class="reference internal" href="Tree.html#Libosinfo.Tree" title="Libosinfo.Tree"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.Tree</span></code></a>) – the tree</li>
+<li><strong>config</strong> (<a class="reference internal" href="InstallConfig.html#Libosinfo.InstallConfig" title="Libosinfo.InstallConfig"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.InstallConfig</span></code></a>) – the install script config</li>
+<li><strong>output_dir</strong> (<a class="reference external" href="../../Gio-2.0/classes/File.html#Gio.File" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.File</span></code></a>) – the directory where the file containing the output script
+will be written</li>
+<li><strong>cancellable</strong> (<a class="reference external" href="../../Gio-2.0/classes/Cancellable.html#Gio.Cancellable" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Cancellable</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – a <a class="reference external" href="../../Gio-2.0/classes/Cancellable.html#Gio.Cancellable" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Cancellable</span></code></a>, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first"><a class="reference external" href="../../GLib-2.0/classes/Error.html#GLib.Error" title="(in GLib 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLib.Error</span></code></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">a file containing the script.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="../../Gio-2.0/classes/File.html#Gio.File" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.File</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Creates an install script that is written to the returned file.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.6.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Libosinfo.InstallScript.generate_output_for_tree_async">
+<code class="descname">generate_output_for_tree_async</code><span class="sig-paren">(</span><em>tree</em>, <em>config</em>, <em>output_dir</em>, <em>cancellable</em>, <em>callback</em>, <em>*user_data</em><span class="sig-paren">)</span><a class="headerlink" href="#Libosinfo.InstallScript.generate_output_for_tree_async" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>tree</strong> (<a class="reference internal" href="Tree.html#Libosinfo.Tree" title="Libosinfo.Tree"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.Tree</span></code></a>) – the tree</li>
+<li><strong>config</strong> (<a class="reference internal" href="InstallConfig.html#Libosinfo.InstallConfig" title="Libosinfo.InstallConfig"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.InstallConfig</span></code></a>) – the install script config</li>
+<li><strong>output_dir</strong> (<a class="reference external" href="../../Gio-2.0/classes/File.html#Gio.File" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.File</span></code></a>) – the directory where the file containing the output script
+will be written</li>
+<li><strong>cancellable</strong> (<a class="reference external" href="../../Gio-2.0/classes/Cancellable.html#Gio.Cancellable" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Cancellable</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – a <a class="reference external" href="../../Gio-2.0/classes/Cancellable.html#Gio.Cancellable" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Cancellable</span></code></a>, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></li>
+<li><strong>callback</strong> (<a class="reference external" href="../../Gio-2.0/callbacks.html#Gio.AsyncReadyCallback" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AsyncReadyCallback</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – Function to call when result of this call is ready</li>
+<li><strong>user_data</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">object</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – The user data to pass to <cite>callback</cite>, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Asynchronous variant of <a class="reference internal" href="#Libosinfo.InstallScript.generate_output_for_tree" title="Libosinfo.InstallScript.generate_output_for_tree"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.InstallScript.generate_output_for_tree</span></code></a>().
+From the callback, call
+<a class="reference internal" href="#Libosinfo.InstallScript.generate_output_for_tree_finish" title="Libosinfo.InstallScript.generate_output_for_tree_finish"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.InstallScript.generate_output_for_tree_finish</span></code></a>() to conclude this
+call and get the generated file.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.6.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Libosinfo.InstallScript.generate_output_for_tree_finish">
+<code class="descname">generate_output_for_tree_finish</code><span class="sig-paren">(</span><em>res</em><span class="sig-paren">)</span><a class="headerlink" href="#Libosinfo.InstallScript.generate_output_for_tree_finish" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>res</strong> (<a class="reference external" href="../../Gio-2.0/classes/AsyncResult.html#Gio.AsyncResult" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AsyncResult</span></code></a>) – a <a class="reference external" href="../../Gio-2.0/classes/AsyncResult.html#Gio.AsyncResult" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AsyncResult</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference external" href="../../GLib-2.0/classes/Error.html#GLib.Error" title="(in GLib 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLib.Error</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a file containing the script, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> on error.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="../../Gio-2.0/classes/File.html#Gio.File" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.File</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.6.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Libosinfo.InstallScript.get_avatar_format">
+<code class="descname">get_avatar_format</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Libosinfo.InstallScript.get_avatar_format" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The avatar format, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> if there is no restrictions on the
+format of avatar</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="AvatarFormat.html#Libosinfo.AvatarFormat" title="Libosinfo.AvatarFormat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.AvatarFormat</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Some install scripts have restrictions on the format of the user avatar. Use
+this method to retrieve those restrictions in the form of an
+<a class="reference internal" href="AvatarFormat.html#Libosinfo.AvatarFormat" title="Libosinfo.AvatarFormat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.AvatarFormat</span></code></a> instance.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.2.2.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Libosinfo.InstallScript.get_can_post_install_drivers">
+<code class="descname">get_can_post_install_drivers</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Libosinfo.InstallScript.get_can_post_install_drivers" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if install script supports post-installable drivers, <a class="reference external" href="http://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a> otherwise.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Whether install script can install drivers at the very end of installation
+This can be used for installing devices which the OS in question does not
+have out of the box support.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.2.2.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Libosinfo.InstallScript.get_can_pre_install_drivers">
+<code class="descname">get_can_pre_install_drivers</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Libosinfo.InstallScript.get_can_pre_install_drivers" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if install script supports pre-installable drivers, <a class="reference external" href="http://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a> otherwise.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Whether install script can install drivers at the very beginning of
+installation. This is needed for devices for which the OS in question does
+not have out of the box support for and devices are required/prefered to be
+available during actual installation.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.2.2.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Libosinfo.InstallScript.get_config_param">
+<code class="descname">get_config_param</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="headerlink" href="#Libosinfo.InstallScript.get_config_param" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>name</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – name of the parameter</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the sought config param, if exists.
+<a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> otherwise.<p>This code assumes that the ‘id’ and ‘name’ entity properties are
+the same.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="InstallConfigParam.html#Libosinfo.InstallConfigParam" title="Libosinfo.InstallConfigParam"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.InstallConfigParam</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get a config param from the config param’s list</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.2.1.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Libosinfo.InstallScript.get_config_param_list">
+<code class="descname">get_config_param_list</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Libosinfo.InstallScript.get_config_param_list" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the
+list of valid <a class="reference internal" href="InstallConfigParam.html#Libosinfo.InstallConfigParam" title="Libosinfo.InstallConfigParam"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.InstallConfigParam</span></code></a> parameters. Free with
+g_list_free() when done. The elements are owned by libosinfo.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">[<a class="reference internal" href="#Libosinfo.InstallScript" title="Libosinfo.InstallScript"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.InstallScript</span></code></a>]</td>
+</tr>
+</tbody>
+</table>
+<p>Get the list of valid config parameters for <cite>self</cite>.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.2.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Libosinfo.InstallScript.get_config_params">
+<code class="descname">get_config_params</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Libosinfo.InstallScript.get_config_params" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the list of valid <a class="reference internal" href="InstallConfigParam.html#Libosinfo.InstallConfigParam" title="Libosinfo.InstallConfigParam"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.InstallConfigParam</span></code></a>
+parameters.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="InstallConfigParamList.html#Libosinfo.InstallConfigParamList" title="Libosinfo.InstallConfigParamList"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.InstallConfigParamList</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get the list of valid config parameters for <cite>self</cite>.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.2.3.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Libosinfo.InstallScript.get_expected_filename">
+<code class="descname">get_expected_filename</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Libosinfo.InstallScript.get_expected_filename" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the expected script filename</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Some operating systems (as Windows) expect that script filename has
+particular name to work.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.2.1.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Libosinfo.InstallScript.get_injection_methods">
+<code class="descname">get_injection_methods</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Libosinfo.InstallScript.get_injection_methods" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">bitwise-or of
+supported methods for install script injection.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../flags.html#Libosinfo.InstallScriptInjectionMethod" title="Libosinfo.InstallScriptInjectionMethod"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.InstallScriptInjectionMethod</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Retrieve the supported method to inject the script in to the installation process.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.2.10.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Libosinfo.InstallScript.get_installation_source">
+<code class="descname">get_installation_source</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Libosinfo.InstallScript.get_installation_source" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the installation source to be used with the script. If none is set, it defaults to
+<a class="reference internal" href="../enums.html#Libosinfo.InstallScriptInstallationSource.MEDIA" title="Libosinfo.InstallScriptInstallationSource.MEDIA"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.InstallScriptInstallationSource.MEDIA</span></code></a>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#Libosinfo.InstallScriptInstallationSource" title="Libosinfo.InstallScriptInstallationSource"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.InstallScriptInstallationSource</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.3.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Libosinfo.InstallScript.get_needs_internet">
+<code class="descname">get_needs_internet</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Libosinfo.InstallScript.get_needs_internet" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if script needs an internet connection, <a class="reference external" href="http://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a> otherwise
+internet connection.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Some install scripts cannot ensure that they work without an internet connection.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.2.11.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Libosinfo.InstallScript.get_output_filename">
+<code class="descname">get_output_filename</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Libosinfo.InstallScript.get_output_filename" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the output script filename</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Some operating systems are able to use any script filename, allowing the
+application to set the filename as desired. libosinfo provides this
+functionality by set the expected filename’s prefix using
+<a class="reference internal" href="#Libosinfo.InstallScript.set_output_prefix" title="Libosinfo.InstallScript.set_output_prefix"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.InstallScript.set_output_prefix</span></code></a>() function.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.2.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Libosinfo.InstallScript.get_output_prefix">
+<code class="descname">get_output_prefix</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Libosinfo.InstallScript.get_output_prefix" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the prefix of the file generated</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.2.8.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Libosinfo.InstallScript.get_path_format">
+<code class="descname">get_path_format</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Libosinfo.InstallScript.get_path_format" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the path format to be used. <a class="reference internal" href="../enums.html#Libosinfo.PathFormat.UNIX" title="Libosinfo.PathFormat.UNIX"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.PathFormat.UNIX</span></code></a> is the
+default option.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#Libosinfo.PathFormat" title="Libosinfo.PathFormat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.PathFormat</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns the path format to be used for the files and disks which will
+be used during the installation.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.2.2.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Libosinfo.InstallScript.get_post_install_drivers_signing_req">
+<code class="descname">get_post_install_drivers_signing_req</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Libosinfo.InstallScript.get_post_install_drivers_signing_req" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#Libosinfo.DeviceDriverSigningReq" title="Libosinfo.DeviceDriverSigningReq"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.DeviceDriverSigningReq</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>If install script can install drivers at the end of installation, this
+function retrieves the requirement about signed status of drivers.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.2.6.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Libosinfo.InstallScript.get_pre_install_drivers_signing_req">
+<code class="descname">get_pre_install_drivers_signing_req</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Libosinfo.InstallScript.get_pre_install_drivers_signing_req" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#Libosinfo.DeviceDriverSigningReq" title="Libosinfo.DeviceDriverSigningReq"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.DeviceDriverSigningReq</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>If install script can install drivers at the very beginning of installation,
+this function retrieves the requirement about signed status of drivers.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.2.6.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Libosinfo.InstallScript.get_preferred_injection_method">
+<code class="descname">get_preferred_injection_method</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Libosinfo.InstallScript.get_preferred_injection_method" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the preferred injection method for the script. If none is set and
+<a class="reference internal" href="../flags.html#Libosinfo.InstallScriptInjectionMethod.DISK" title="Libosinfo.InstallScriptInjectionMethod.DISK"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.InstallScriptInjectionMethod.DISK</span></code></a> is supported,
+<a class="reference internal" href="../flags.html#Libosinfo.InstallScriptInjectionMethod.DISK" title="Libosinfo.InstallScriptInjectionMethod.DISK"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.InstallScriptInjectionMethod.DISK</span></code></a> is returned, otherwise
+<a class="reference internal" href="../flags.html#Libosinfo.InstallScriptInjectionMethod.INITRD" title="Libosinfo.InstallScriptInjectionMethod.INITRD"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.InstallScriptInjectionMethod.INITRD</span></code></a> is returned.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../flags.html#Libosinfo.InstallScriptInjectionMethod" title="Libosinfo.InstallScriptInjectionMethod"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.InstallScriptInjectionMethod</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.3.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Libosinfo.InstallScript.get_product_key_format">
+<code class="descname">get_product_key_format</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Libosinfo.InstallScript.get_product_key_format" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Product key format mask, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>If this function returns a non-<a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> string, it means that the <cite>self</cite>
+requires you to specify product registration key through <a class="reference internal" href="InstallConfig.html#Libosinfo.InstallConfig" title="Libosinfo.InstallConfig"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.InstallConfig</span></code></a>
+instance passed to script generation methods.</p>
+<p>The returned string specifies the expected format of the product key like this:</p>
+<p>&#64; - any character
+% - alphabet</p>
+<ul class="simple">
+<li><dl class="first docutils">
+<dt>numeric character</dt>
+<dd></dd>
+</dl>
+</li>
+</ul>
+<p>$ - alphanumeric character</p>
+<p>All other characters represent themselves.</p>
+<p>For example in case of installer for Microsoft Windows XP, you’ll get
+“$$$$$-$$$$$-$$$$$-$$$$$-$$$$$”. That means a product key consists of 24
+alphanumeric characters and 4 ‘-’ characters at (0-based) indices 5, 11, 17
+and 23.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.2.2.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Libosinfo.InstallScript.get_profile">
+<code class="descname">get_profile</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Libosinfo.InstallScript.get_profile" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns a string representing the install script profile that’s going to be
+used.</p>
+<p>The values supported are “jeos” for minimal installations and “desktop” for
+workstation/desktop installations.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.2.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Libosinfo.InstallScript.get_template_data">
+<code class="descname">get_template_data</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Libosinfo.InstallScript.get_template_data" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns the stylesheet data used to construct the install script.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.2.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Libosinfo.InstallScript.get_template_uri">
+<code class="descname">get_template_uri</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Libosinfo.InstallScript.get_template_uri" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns the stylesheet URI used to construct the install script.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.2.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Libosinfo.InstallScript.has_config_param">
+<code class="descname">has_config_param</code><span class="sig-paren">(</span><em>config_param</em><span class="sig-paren">)</span><a class="headerlink" href="#Libosinfo.InstallScript.has_config_param" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>config_param</strong> (<a class="reference internal" href="InstallConfigParam.html#Libosinfo.InstallConfigParam" title="Libosinfo.InstallConfigParam"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.InstallConfigParam</span></code></a>) – an <a class="reference internal" href="InstallConfigParam.html#Libosinfo.InstallConfigParam" title="Libosinfo.InstallConfigParam"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.InstallConfigParam</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns whether the <cite>self</cite> has the <cite>config_param</cite> searched or not.</p>
+<p>This code assumes that the ‘id’ and ‘name’ entity properties are the same.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.2.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Libosinfo.InstallScript.has_config_param_name">
+<code class="descname">has_config_param_name</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="headerlink" href="#Libosinfo.InstallScript.has_config_param_name" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>name</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – the configuration parameter name</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns whether the <cite>self</cite> has a configuration parameter matching <cite>name</cite> or not.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.2.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Libosinfo.InstallScript.set_installation_source">
+<code class="descname">set_installation_source</code><span class="sig-paren">(</span><em>source</em><span class="sig-paren">)</span><a class="headerlink" href="#Libosinfo.InstallScript.set_installation_source" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>source</strong> (<a class="reference internal" href="../enums.html#Libosinfo.InstallScriptInstallationSource" title="Libosinfo.InstallScriptInstallationSource"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.InstallScriptInstallationSource</span></code></a>) – one of the installation sources:
+<a class="reference internal" href="../enums.html#Libosinfo.InstallScriptInstallationSource.MEDIA" title="Libosinfo.InstallScriptInstallationSource.MEDIA"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.InstallScriptInstallationSource.MEDIA</span></code></a>,
+<a class="reference internal" href="../enums.html#Libosinfo.InstallScriptInstallationSource.NETWORK" title="Libosinfo.InstallScriptInstallationSource.NETWORK"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.InstallScriptInstallationSource.NETWORK</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Set the installation source to be used with the <cite>self</cite>.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.3.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Libosinfo.InstallScript.set_output_prefix">
+<code class="descname">set_output_prefix</code><span class="sig-paren">(</span><em>prefix</em><span class="sig-paren">)</span><a class="headerlink" href="#Libosinfo.InstallScript.set_output_prefix" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>prefix</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – a prefix to be added to the file generated</td>
+</tr>
+</tbody>
+</table>
+<p>Mind that not all installers support any name for the installer scripts.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.2.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Libosinfo.InstallScript.set_preferred_injection_method">
+<code class="descname">set_preferred_injection_method</code><span class="sig-paren">(</span><em>method</em><span class="sig-paren">)</span><a class="headerlink" href="#Libosinfo.InstallScript.set_preferred_injection_method" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>method</strong> (<a class="reference internal" href="../flags.html#Libosinfo.InstallScriptInjectionMethod" title="Libosinfo.InstallScriptInjectionMethod"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.InstallScriptInjectionMethod</span></code></a>) – one of the injection methods:
+<a class="reference internal" href="../flags.html#Libosinfo.InstallScriptInjectionMethod.CDROM" title="Libosinfo.InstallScriptInjectionMethod.CDROM"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.InstallScriptInjectionMethod.CDROM</span></code></a>,
+<a class="reference internal" href="../flags.html#Libosinfo.InstallScriptInjectionMethod.DISK" title="Libosinfo.InstallScriptInjectionMethod.DISK"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.InstallScriptInjectionMethod.DISK</span></code></a>,
+<a class="reference internal" href="../flags.html#Libosinfo.InstallScriptInjectionMethod.FLOPPY" title="Libosinfo.InstallScriptInjectionMethod.FLOPPY"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.InstallScriptInjectionMethod.FLOPPY</span></code></a>,
+<a class="reference internal" href="../flags.html#Libosinfo.InstallScriptInjectionMethod.INITRD" title="Libosinfo.InstallScriptInjectionMethod.INITRD"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.InstallScriptInjectionMethod.INITRD</span></code></a>,
+<a class="reference internal" href="../flags.html#Libosinfo.InstallScriptInjectionMethod.WEB" title="Libosinfo.InstallScriptInjectionMethod.WEB"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.InstallScriptInjectionMethod.WEB</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Set the preferred injection method to be used with the <cite>self</cite></p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.3.0.</span></p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="property-details">
+<h2>Property Details<a class="headerlink" href="#property-details" title="Permalink to this headline">¶</a></h2>
+<dl class="data">
+<dt id="Libosinfo.InstallScript.props.avatar_format">
+<code class="descclassname">Libosinfo.InstallScript.props.</code><code class="descname">avatar_format</code><a class="headerlink" href="#Libosinfo.InstallScript.props.avatar_format" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">avatar-format</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="AvatarFormat.html#Libosinfo.AvatarFormat" title="Libosinfo.AvatarFormat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.AvatarFormat</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Expected avatar format</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.InstallScript.props.installation_source">
+<code class="descclassname">Libosinfo.InstallScript.props.</code><code class="descname">installation_source</code><a class="headerlink" href="#Libosinfo.InstallScript.props.installation_source" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">installation-source</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../enums.html#Libosinfo.InstallScriptInstallationSource" title="Libosinfo.InstallScriptInstallationSource"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.InstallScriptInstallationSource</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference internal" href="../enums.html#Libosinfo.InstallScriptInstallationSource.MEDIA" title="Libosinfo.InstallScriptInstallationSource.MEDIA"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.InstallScriptInstallationSource.MEDIA</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The installation source to be used</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.InstallScript.props.path_format">
+<code class="descclassname">Libosinfo.InstallScript.props.</code><code class="descname">path_format</code><a class="headerlink" href="#Libosinfo.InstallScript.props.path_format" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">path-format</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../enums.html#Libosinfo.PathFormat" title="Libosinfo.PathFormat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.PathFormat</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference internal" href="../enums.html#Libosinfo.PathFormat.UNIX" title="Libosinfo.PathFormat.UNIX"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.PathFormat.UNIX</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Expected path format</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.InstallScript.props.preferred_injection_method">
+<code class="descclassname">Libosinfo.InstallScript.props.</code><code class="descname">preferred_injection_method</code><a class="headerlink" href="#Libosinfo.InstallScript.props.preferred_injection_method" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">preferred-injection-method</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../flags.html#Libosinfo.InstallScriptInjectionMethod" title="Libosinfo.InstallScriptInjectionMethod"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.InstallScriptInjectionMethod</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference internal" href="../flags.html#Libosinfo.InstallScriptInjectionMethod.DISK" title="Libosinfo.InstallScriptInjectionMethod.DISK"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.InstallScriptInjectionMethod.DISK</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The preferred injection method</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.InstallScript.props.product_key_format">
+<code class="descclassname">Libosinfo.InstallScript.props.</code><code class="descname">product_key_format</code><a class="headerlink" href="#Libosinfo.InstallScript.props.product_key_format" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">product-key-format</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Product key format mask</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.InstallScript.props.profile">
+<code class="descclassname">Libosinfo.InstallScript.props.</code><code class="descname">profile</code><a class="headerlink" href="#Libosinfo.InstallScript.props.profile" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.CONSTRUCT_ONLY" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CONSTRUCT_ONLY</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Install script profile name</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.InstallScript.props.template_data">
+<code class="descclassname">Libosinfo.InstallScript.props.</code><code class="descname">template_data</code><a class="headerlink" href="#Libosinfo.InstallScript.props.template_data" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">template-data</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.CONSTRUCT_ONLY" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CONSTRUCT_ONLY</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Data for install script template</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.InstallScript.props.template_uri">
+<code class="descclassname">Libosinfo.InstallScript.props.</code><code class="descname">template_uri</code><a class="headerlink" href="#Libosinfo.InstallScript.props.template_uri" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">template-uri</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.CONSTRUCT_ONLY" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CONSTRUCT_ONLY</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>URI for install script template</p>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div> 
+
+</body>
+</html>

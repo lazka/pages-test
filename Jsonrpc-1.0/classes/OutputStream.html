@@ -1,0 +1,616 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    Jsonrpc.OutputStream -
+    
+      Classes -
+    
+    Jsonrpc 1.0
+  </title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/css/pgi.css" type="text/css" />
+  
+
+  
+  <script type="text/javascript">
+
+    function openSidebar(element) {
+        window.location.href = element.href + location.hash;
+        return false;
+    }
+
+    function inIframe() {
+        try {
+            return window.self !== window.top;
+        } catch (e) {
+            return true;
+        }
+    }
+
+    function onLoaded() {
+        if(!inIframe()) {
+            var icons = document.getElementsByClassName('open-sidebar');
+
+            for (var i = 0; i < icons.length; i ++) {
+                icons[i].style.display = 'table-cell';
+            }
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', onLoaded, false);
+
+  </script>
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="Jsonrpc 1.0 Python API Docs" href="../index.html"/>
+        <link rel="up" title="Classes" href="../classes.html"/>
+        <link rel="next" title="Jsonrpc.Server" href="Server.html"/>
+        <link rel="prev" title="Jsonrpc.InputStream" href="InputStream.html"/> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+<div class="non-fixed-bar">
+<table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#Jsonrpc-1.0/classes/OutputStream.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Jsonrpc 1.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>Jsonrpc.OutputStream</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="InputStream.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="Server.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">Jsonrpc.OutputStream</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#property-details">Property Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+<div class="fixed-bar">
+  <table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#Jsonrpc-1.0/classes/OutputStream.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Jsonrpc 1.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>Jsonrpc.OutputStream</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="InputStream.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="Server.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">Jsonrpc.OutputStream</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#property-details">Property Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+  <div class="wy-grid-for-nav">
+
+    
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="main">
+            
+  <div class="section" id="jsonrpc-outputstream">
+<h1>Jsonrpc.OutputStream<a class="headerlink" href="#jsonrpc-outputstream" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<svg width="226pt" height="242pt"
+ viewBox="0.00 0.00 225.50 242.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 238)">
+<title>g</title>
+<!-- GObject.GInterface -->
+<g id="node1" class="node">
+<title>GObject.GInterface</title>
+<g id="a_node1"><a xlink:href="../../GObject-2.0/classes/GInterface.html#GObject.GInterface" xlink:title="GObject.GInterface">
+<path fill="none" stroke="#3091d1" d="M92,-180C92,-180 6,-180 6,-180 3,-180 0,-177 0,-174 0,-174 0,-168 0,-168 0,-165 3,-162 6,-162 6,-162 92,-162 92,-162 95,-162 98,-165 98,-168 98,-168 98,-174 98,-174 98,-177 95,-180 92,-180"/>
+<text text-anchor="middle" x="49" y="-168.7" font-family="inherit" font-size="8.50">GObject.GInterface</text>
+</a>
+</g>
+</g>
+<!-- Gio.Seekable -->
+<g id="node6" class="node">
+<title>Gio.Seekable</title>
+<g id="a_node6"><a xlink:href="../../Gio-2.0/classes/Seekable.html#Gio.Seekable" xlink:title="Gio.Seekable">
+<path fill="none" stroke="#3091d1" d="M80,-126C80,-126 20,-126 20,-126 17,-126 14,-123 14,-120 14,-120 14,-114 14,-114 14,-111 17,-108 20,-108 20,-108 80,-108 80,-108 83,-108 86,-111 86,-114 86,-114 86,-120 86,-120 86,-123 83,-126 80,-126"/>
+<text text-anchor="middle" x="50" y="-114.7" font-family="inherit" font-size="8.50">Gio.Seekable</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Gio.Seekable -->
+<g id="edge1" class="edge">
+<title>GObject.GInterface&#45;&gt;Gio.Seekable</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M49.16,-161.88C49.31,-153.76 49.56,-141.13 49.74,-131.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="51.49,-131.27 49.84,-126.24 48,-131.2 51.49,-131.27"/>
+</g>
+<!-- GObject.Object -->
+<g id="node2" class="node">
+<title>GObject.Object</title>
+<g id="a_node2"><a xlink:href="../../GObject-2.0/classes/Object.html#GObject.Object" xlink:title="GObject.Object">
+<path fill="none" stroke="#75507b" d="M196,-234C196,-234 128,-234 128,-234 125,-234 122,-231 122,-228 122,-228 122,-222 122,-222 122,-219 125,-216 128,-216 128,-216 196,-216 196,-216 199,-216 202,-219 202,-222 202,-222 202,-228 202,-228 202,-231 199,-234 196,-234"/>
+<text text-anchor="middle" x="162" y="-222.7" font-family="inherit" font-size="8.50">GObject.Object</text>
+</a>
+</g>
+</g>
+<!-- Gio.OutputStream -->
+<g id="node5" class="node">
+<title>Gio.OutputStream</title>
+<g id="a_node5"><a xlink:href="../../Gio-2.0/classes/OutputStream.html#Gio.OutputStream" xlink:title="Gio.OutputStream">
+<path fill="none" stroke="#aaaaaa" d="M202,-180C202,-180 122,-180 122,-180 119,-180 116,-177 116,-174 116,-174 116,-168 116,-168 116,-165 119,-162 122,-162 122,-162 202,-162 202,-162 205,-162 208,-165 208,-168 208,-168 208,-174 208,-174 208,-177 205,-180 202,-180"/>
+<text text-anchor="middle" x="162" y="-168.7" font-family="inherit" font-size="8.50">Gio.OutputStream</text>
+</a>
+</g>
+</g>
+<!-- GObject.Object&#45;&gt;Gio.OutputStream -->
+<g id="edge2" class="edge">
+<title>GObject.Object&#45;&gt;Gio.OutputStream</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M162,-215.88C162,-207.76 162,-195.13 162,-185.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="163.75,-185.24 162,-180.24 160.25,-185.24 163.75,-185.24"/>
+</g>
+<!-- Gio.DataOutputStream -->
+<g id="node3" class="node">
+<title>Gio.DataOutputStream</title>
+<g id="a_node3"><a xlink:href="../../Gio-2.0/classes/DataOutputStream.html#Gio.DataOutputStream" xlink:title="Gio.DataOutputStream">
+<path fill="none" stroke="#75507b" d="M155.5,-72C155.5,-72 54.5,-72 54.5,-72 51.5,-72 48.5,-69 48.5,-66 48.5,-66 48.5,-60 48.5,-60 48.5,-57 51.5,-54 54.5,-54 54.5,-54 155.5,-54 155.5,-54 158.5,-54 161.5,-57 161.5,-60 161.5,-60 161.5,-66 161.5,-66 161.5,-69 158.5,-72 155.5,-72"/>
+<text text-anchor="middle" x="105" y="-60.7" font-family="inherit" font-size="8.50">Gio.DataOutputStream</text>
+</a>
+</g>
+</g>
+<!-- Jsonrpc.OutputStream -->
+<g id="node7" class="node">
+<title>Jsonrpc.OutputStream</title>
+<g id="a_node7"><a xlink:href="#Jsonrpc.OutputStream" xlink:title="Jsonrpc.OutputStream">
+<path fill="none" stroke="#75507b" d="M153.5,-18C153.5,-18 56.5,-18 56.5,-18 53.5,-18 50.5,-15 50.5,-12 50.5,-12 50.5,-6 50.5,-6 50.5,-3 53.5,0 56.5,0 56.5,0 153.5,0 153.5,0 156.5,0 159.5,-3 159.5,-6 159.5,-6 159.5,-12 159.5,-12 159.5,-15 156.5,-18 153.5,-18"/>
+<text text-anchor="middle" x="105" y="-6.7" font-family="inherit" font-size="8.50">Jsonrpc.OutputStream</text>
+</a>
+</g>
+</g>
+<!-- Gio.DataOutputStream&#45;&gt;Jsonrpc.OutputStream -->
+<g id="edge3" class="edge">
+<title>Gio.DataOutputStream&#45;&gt;Jsonrpc.OutputStream</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M105,-53.88C105,-45.76 105,-33.13 105,-23.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="106.75,-23.24 105,-18.24 103.25,-23.24 106.75,-23.24"/>
+</g>
+<!-- Gio.FilterOutputStream -->
+<g id="node4" class="node">
+<title>Gio.FilterOutputStream</title>
+<g id="a_node4"><a xlink:href="../../Gio-2.0/classes/FilterOutputStream.html#Gio.FilterOutputStream" xlink:title="Gio.FilterOutputStream">
+<path fill="none" stroke="#aaaaaa" d="M211.5,-126C211.5,-126 110.5,-126 110.5,-126 107.5,-126 104.5,-123 104.5,-120 104.5,-120 104.5,-114 104.5,-114 104.5,-111 107.5,-108 110.5,-108 110.5,-108 211.5,-108 211.5,-108 214.5,-108 217.5,-111 217.5,-114 217.5,-114 217.5,-120 217.5,-120 217.5,-123 214.5,-126 211.5,-126"/>
+<text text-anchor="middle" x="161" y="-114.7" font-family="inherit" font-size="8.50">Gio.FilterOutputStream</text>
+</a>
+</g>
+</g>
+<!-- Gio.FilterOutputStream&#45;&gt;Gio.DataOutputStream -->
+<g id="edge4" class="edge">
+<title>Gio.FilterOutputStream&#45;&gt;Gio.DataOutputStream</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M152.25,-107.88C142.93,-99.23 128.11,-85.46 117.55,-75.66"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="118.73,-74.36 113.87,-72.24 116.35,-76.92 118.73,-74.36"/>
+</g>
+<!-- Gio.OutputStream&#45;&gt;Gio.FilterOutputStream -->
+<g id="edge5" class="edge">
+<title>Gio.OutputStream&#45;&gt;Gio.FilterOutputStream</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M161.84,-161.88C161.69,-153.76 161.44,-141.13 161.26,-131.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="163,-131.2 161.16,-126.24 159.51,-131.27 163,-131.2"/>
+</g>
+<!-- Gio.Seekable&#45;&gt;Gio.DataOutputStream -->
+<g id="edge6" class="edge">
+<title>Gio.Seekable&#45;&gt;Gio.DataOutputStream</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M58.59,-107.88C67.66,-99.3 82.05,-85.7 92.4,-75.91"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="93.85,-76.95 96.29,-72.24 91.45,-74.4 93.85,-76.95"/>
+</g>
+</g>
+</svg>
+</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Subclasses:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="methods">
+<span id="jsonrpc-outputstream-methods"></span><h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../Gio-2.0/classes/DataOutputStream.html#gio-dataoutputstream-methods" title="(in Gio 2.0 v2.0)"><span class="xref std std-ref">Gio.DataOutputStream (11)</span></a>,     <a class="reference external" href="../../Gio-2.0/classes/FilterOutputStream.html#gio-filteroutputstream-methods" title="(in Gio 2.0 v2.0)"><span class="xref std std-ref">Gio.FilterOutputStream (3)</span></a>,     <a class="reference external" href="../../Gio-2.0/classes/OutputStream.html#gio-outputstream-methods" title="(in Gio 2.0 v2.0)"><span class="xref std std-ref">Gio.OutputStream (29)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (37)</span></a>,     <a class="reference external" href="../../Gio-2.0/classes/Seekable.html#gio-seekable-methods" title="(in Gio 2.0 v2.0)"><span class="xref std std-ref">Gio.Seekable (5)</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Structs:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/ObjectClass.html#gobject-objectclass-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.ObjectClass (5)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="99%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><em>class</em></td>
+<td><a class="reference internal" href="#Jsonrpc.OutputStream.new" title="Jsonrpc.OutputStream.new"><code class="xref py py-func docutils literal notranslate"><span class="pre">new</span></code></a> (base_stream)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Jsonrpc.OutputStream.get_use_gvariant" title="Jsonrpc.OutputStream.get_use_gvariant"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_use_gvariant</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Jsonrpc.OutputStream.set_use_gvariant" title="Jsonrpc.OutputStream.set_use_gvariant"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_use_gvariant</span></code></a> (use_gvariant)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Jsonrpc.OutputStream.write_message" title="Jsonrpc.OutputStream.write_message"><code class="xref py py-func docutils literal notranslate"><span class="pre">write_message</span></code></a> (message, cancellable)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Jsonrpc.OutputStream.write_message_async" title="Jsonrpc.OutputStream.write_message_async"><code class="xref py py-func docutils literal notranslate"><span class="pre">write_message_async</span></code></a> (message, cancellable, callback, *user_data)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Jsonrpc.OutputStream.write_message_finish" title="Jsonrpc.OutputStream.write_message_finish"><code class="xref py py-func docutils literal notranslate"><span class="pre">write_message_finish</span></code></a> (result)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="virtual-methods">
+<span id="jsonrpc-outputstream-vfuncs"></span><h2>Virtual Methods<a class="headerlink" href="#virtual-methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../Gio-2.0/classes/OutputStream.html#gio-outputstream-vfuncs" title="(in Gio 2.0 v2.0)"><span class="xref std std-ref">Gio.OutputStream (15)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-vfuncs" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (7)</span></a>,     <a class="reference external" href="../../Gio-2.0/classes/Seekable.html#gio-seekable-vfuncs" title="(in Gio 2.0 v2.0)"><span class="xref std std-ref">Gio.Seekable (5)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="jsonrpc-outputstream-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../Gio-2.0/classes/DataOutputStream.html#gio-dataoutputstream-props" title="(in Gio 2.0 v2.0)"><span class="xref std std-ref">Gio.DataOutputStream (1)</span></a>,     <a class="reference external" href="../../Gio-2.0/classes/FilterOutputStream.html#gio-filteroutputstream-props" title="(in Gio 2.0 v2.0)"><span class="xref std std-ref">Gio.FilterOutputStream (2)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="1%" />
+<col width="1%" />
+<col width="97%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Flags</th>
+<th class="head">Short Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="#Jsonrpc.OutputStream.props.use_gvariant" title="Jsonrpc.OutputStream.props.use_gvariant"><code class="xref py py-data docutils literal notranslate"><span class="pre">use-gvariant</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+<td>r/w/en</td>
+<td>If <a class="reference external" href="../../GLib-2.0/classes/Variant.html#GLib.Variant" title="(in GLib 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GLib.Variant</span></code></a> encoding should be used</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="signals">
+<span id="jsonrpc-outputstream-signals"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-signals" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fields">
+<span id="jsonrpc-outputstream-fields"></span><h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-fields" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="16%" />
+<col width="1%" />
+<col width="1%" />
+<col width="82%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Access</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>parent_instance</td>
+<td><a class="reference external" href="../../Gio-2.0/classes/DataOutputStream.html#Gio.DataOutputStream" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.DataOutputStream</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="class-details">
+<h2>Class Details<a class="headerlink" href="#class-details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Jsonrpc.OutputStream">
+<em class="property">class </em><code class="descclassname">Jsonrpc.</code><code class="descname">OutputStream</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#Jsonrpc.OutputStream" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Bases:</th><td class="field-body"><a class="reference external" href="../../Gio-2.0/classes/DataOutputStream.html#Gio.DataOutputStream" title="(in Gio 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Gio.DataOutputStream</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Abstract:</th><td class="field-body">No</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Structure:</th><td class="field-body"><a class="reference internal" href="OutputStreamClass.html#Jsonrpc.OutputStreamClass" title="Jsonrpc.OutputStreamClass"><code class="xref py py-class docutils literal notranslate"><span class="pre">Jsonrpc.OutputStreamClass</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The <a class="reference internal" href="#Jsonrpc.OutputStream" title="Jsonrpc.OutputStream"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Jsonrpc.OutputStream</span></code></a> is resonsible for serializing messages onto
+the underlying stream.</p>
+<p>Optionally, if <a class="reference internal" href="#Jsonrpc.OutputStream.set_use_gvariant" title="Jsonrpc.OutputStream.set_use_gvariant"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Jsonrpc.OutputStream.set_use_gvariant</span></code></a>() has been called,
+the messages will be encoded directly in the <a class="reference external" href="../../GLib-2.0/classes/Variant.html#GLib.Variant" title="(in GLib 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GLib.Variant</span></code></a> format instead of
+JSON along with setting a “Content-Type” header to “application/gvariant”.
+This is useful for situations where you control both sides of the RPC server
+using jsonrpc-glib as you can reduce the overhead of parsing JSON nodes due
+to <a class="reference external" href="../../GLib-2.0/classes/Variant.html#GLib.Variant" title="(in GLib 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GLib.Variant</span></code></a> not requiring parsing or allocation overhead to the same degree
+as JSON.</p>
+<p>For example, if you need a large message, which is encoded in JSON, you need
+to decode the entire message up front which avoids performing lazy operations.
+When using <a class="reference external" href="../../GLib-2.0/classes/Variant.html#GLib.Variant" title="(in GLib 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GLib.Variant</span></code></a> encoding, you have a single allocation created for the
+<a class="reference external" href="../../GLib-2.0/classes/Variant.html#GLib.Variant" title="(in GLib 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GLib.Variant</span></code></a> which means you reduce the memory pressure caused by lots of small
+allocations.</p>
+<dl class="classmethod">
+<dt id="Jsonrpc.OutputStream.new">
+<em class="property">classmethod </em><code class="descname">new</code><span class="sig-paren">(</span><em>base_stream</em><span class="sig-paren">)</span><a class="headerlink" href="#Jsonrpc.OutputStream.new" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>base_stream</strong> (<a class="reference external" href="../../Gio-2.0/classes/OutputStream.html#Gio.OutputStream" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.OutputStream</span></code></a>) – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#Jsonrpc.OutputStream" title="Jsonrpc.OutputStream"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Jsonrpc.OutputStream</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Jsonrpc.OutputStream.get_use_gvariant">
+<code class="descname">get_use_gvariant</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Jsonrpc.OutputStream.get_use_gvariant" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Jsonrpc.OutputStream.set_use_gvariant">
+<code class="descname">set_use_gvariant</code><span class="sig-paren">(</span><em>use_gvariant</em><span class="sig-paren">)</span><a class="headerlink" href="#Jsonrpc.OutputStream.set_use_gvariant" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>use_gvariant</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a>) – </td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Jsonrpc.OutputStream.write_message">
+<code class="descname">write_message</code><span class="sig-paren">(</span><em>message</em>, <em>cancellable</em><span class="sig-paren">)</span><a class="headerlink" href="#Jsonrpc.OutputStream.write_message" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>message</strong> (<a class="reference external" href="../../GLib-2.0/classes/Variant.html#GLib.Variant" title="(in GLib 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GLib.Variant</span></code></a>) – a <a class="reference external" href="../../GLib-2.0/classes/Variant.html#GLib.Variant" title="(in GLib 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GLib.Variant</span></code></a></li>
+<li><strong>cancellable</strong> (<a class="reference external" href="../../Gio-2.0/classes/Cancellable.html#Gio.Cancellable" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Cancellable</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – a <a class="reference external" href="../../Gio-2.0/classes/Cancellable.html#Gio.Cancellable" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Cancellable</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first"><a class="reference external" href="../../GLib-2.0/classes/Error.html#GLib.Error" title="(in GLib 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLib.Error</span></code></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Synchronously sends a message to the peer.</p>
+<p>This operation will complete once the message has been buffered. There
+is no guarantee the peer received it.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.26.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Jsonrpc.OutputStream.write_message_async">
+<code class="descname">write_message_async</code><span class="sig-paren">(</span><em>message</em>, <em>cancellable</em>, <em>callback</em>, <em>*user_data</em><span class="sig-paren">)</span><a class="headerlink" href="#Jsonrpc.OutputStream.write_message_async" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>message</strong> (<a class="reference external" href="../../GLib-2.0/classes/Variant.html#GLib.Variant" title="(in GLib 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GLib.Variant</span></code></a>) – a <a class="reference external" href="../../GLib-2.0/classes/Variant.html#GLib.Variant" title="(in GLib 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GLib.Variant</span></code></a></li>
+<li><strong>cancellable</strong> (<a class="reference external" href="../../Gio-2.0/classes/Cancellable.html#Gio.Cancellable" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Cancellable</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – a <a class="reference external" href="../../Gio-2.0/classes/Cancellable.html#Gio.Cancellable" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Cancellable</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></li>
+<li><strong>callback</strong> (<a class="reference external" href="../../Gio-2.0/callbacks.html#Gio.AsyncReadyCallback" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AsyncReadyCallback</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – a <a class="reference external" href="../../Gio-2.0/callbacks.html#Gio.AsyncReadyCallback" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AsyncReadyCallback</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></li>
+<li><strong>user_data</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">object</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – closure data for <cite>callback</cite></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Asynchronously sends a message to the peer.</p>
+<p>This asynchronous operation will complete once the message has
+been buffered, and there is no guarantee the peer received it.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.26.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Jsonrpc.OutputStream.write_message_finish">
+<code class="descname">write_message_finish</code><span class="sig-paren">(</span><em>result</em><span class="sig-paren">)</span><a class="headerlink" href="#Jsonrpc.OutputStream.write_message_finish" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>result</strong> (<a class="reference external" href="../../Gio-2.0/classes/AsyncResult.html#Gio.AsyncResult" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AsyncResult</span></code></a>) – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference external" href="../../GLib-2.0/classes/Error.html#GLib.Error" title="(in GLib 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLib.Error</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="property-details">
+<h2>Property Details<a class="headerlink" href="#property-details" title="Permalink to this headline">¶</a></h2>
+<dl class="data">
+<dt id="Jsonrpc.OutputStream.props.use_gvariant">
+<code class="descclassname">Jsonrpc.OutputStream.props.</code><code class="descname">use_gvariant</code><a class="headerlink" href="#Jsonrpc.OutputStream.props.use_gvariant" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">use-gvariant</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.EXPLICIT_NOTIFY" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EXPLICIT_NOTIFY</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>If <a class="reference external" href="../../GLib-2.0/classes/Variant.html#GLib.Variant" title="(in GLib 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GLib.Variant</span></code></a> encoding should be used</p>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div> 
+
+</body>
+</html>

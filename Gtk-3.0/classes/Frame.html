@@ -1,0 +1,894 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    Gtk.Frame -
+    
+      Classes -
+    
+    Gtk 3.0
+  </title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/css/pgi.css" type="text/css" />
+  
+
+  
+  <script type="text/javascript">
+
+    function openSidebar(element) {
+        window.location.href = element.href + location.hash;
+        return false;
+    }
+
+    function inIframe() {
+        try {
+            return window.self !== window.top;
+        } catch (e) {
+            return true;
+        }
+    }
+
+    function onLoaded() {
+        if(!inIframe()) {
+            var icons = document.getElementsByClassName('open-sidebar');
+
+            for (var i = 0; i < icons.length; i ++) {
+                icons[i].style.display = 'table-cell';
+            }
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', onLoaded, false);
+
+  </script>
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="Gtk 3.0 Python API Docs" href="../index.html"/>
+        <link rel="up" title="Classes" href="../classes.html"/>
+        <link rel="next" title="Gtk.FrameAccessible" href="FrameAccessible.html"/>
+        <link rel="prev" title="Gtk.FontSelectionDialog" href="FontSelectionDialog.html"/> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+<div class="non-fixed-bar">
+<table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#Gtk-3.0/classes/Frame.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Gtk 3.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>Gtk.Frame</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="FontSelectionDialog.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="FrameAccessible.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">Gtk.Frame</a><ul>
+<li><a class="reference internal" href="#example">Example</a></li>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#style-properties">Style Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#property-details">Property Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+<div class="fixed-bar">
+  <table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#Gtk-3.0/classes/Frame.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Gtk 3.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>Gtk.Frame</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="FontSelectionDialog.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="FrameAccessible.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">Gtk.Frame</a><ul>
+<li><a class="reference internal" href="#example">Example</a></li>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#style-properties">Style Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#property-details">Property Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+  <div class="wy-grid-for-nav">
+
+    
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="main">
+            
+  <div class="section" id="gtk-frame">
+<h1>Gtk.Frame<a class="headerlink" href="#gtk-frame" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<svg width="348pt" height="296pt"
+ viewBox="0.00 0.00 348.00 296.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 292)">
+<title>g</title>
+<!-- Atk.ImplementorIface -->
+<g id="node1" class="node">
+<title>Atk.ImplementorIface</title>
+<g id="a_node1"><a xlink:href="../../Atk-1.0/classes/ImplementorIface.html#Atk.ImplementorIface" xlink:title="Atk.ImplementorIface">
+<path fill="none" stroke="#3091d1" d="M242,-234C242,-234 146,-234 146,-234 143,-234 140,-231 140,-228 140,-228 140,-222 140,-222 140,-219 143,-216 146,-216 146,-216 242,-216 242,-216 245,-216 248,-219 248,-222 248,-222 248,-228 248,-228 248,-231 245,-234 242,-234"/>
+<text text-anchor="middle" x="194" y="-222.7" font-family="inherit" font-size="8.50">Atk.ImplementorIface</text>
+</a>
+</g>
+</g>
+<!-- Gtk.Widget -->
+<g id="node9" class="node">
+<title>Gtk.Widget</title>
+<g id="a_node9"><a xlink:href="Widget.html#Gtk.Widget" xlink:title="Gtk.Widget">
+<path fill="none" stroke="#aaaaaa" d="M220,-180C220,-180 168,-180 168,-180 165,-180 162,-177 162,-174 162,-174 162,-168 162,-168 162,-165 165,-162 168,-162 168,-162 220,-162 220,-162 223,-162 226,-165 226,-168 226,-168 226,-174 226,-174 226,-177 223,-180 220,-180"/>
+<text text-anchor="middle" x="194" y="-168.7" font-family="inherit" font-size="8.50">Gtk.Widget</text>
+</a>
+</g>
+</g>
+<!-- Atk.ImplementorIface&#45;&gt;Gtk.Widget -->
+<g id="edge1" class="edge">
+<title>Atk.ImplementorIface&#45;&gt;Gtk.Widget</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M194,-215.88C194,-207.76 194,-195.13 194,-185.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="195.75,-185.24 194,-180.24 192.25,-185.24 195.75,-185.24"/>
+</g>
+<!-- GObject.GInterface -->
+<g id="node2" class="node">
+<title>GObject.GInterface</title>
+<g id="a_node2"><a xlink:href="../../GObject-2.0/classes/GInterface.html#GObject.GInterface" xlink:title="GObject.GInterface">
+<path fill="none" stroke="#3091d1" d="M291,-288C291,-288 205,-288 205,-288 202,-288 199,-285 199,-282 199,-282 199,-276 199,-276 199,-273 202,-270 205,-270 205,-270 291,-270 291,-270 294,-270 297,-273 297,-276 297,-276 297,-282 297,-282 297,-285 294,-288 291,-288"/>
+<text text-anchor="middle" x="248" y="-276.7" font-family="inherit" font-size="8.50">GObject.GInterface</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Atk.ImplementorIface -->
+<g id="edge2" class="edge">
+<title>GObject.GInterface&#45;&gt;Atk.ImplementorIface</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M239.56,-269.88C230.66,-261.3 216.54,-247.7 206.37,-237.91"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="207.37,-236.45 202.56,-234.24 204.94,-238.97 207.37,-236.45"/>
+</g>
+<!-- Gtk.Buildable -->
+<g id="node6" class="node">
+<title>Gtk.Buildable</title>
+<g id="a_node6"><a xlink:href="Buildable.html#Gtk.Buildable" xlink:title="Gtk.Buildable">
+<path fill="none" stroke="#3091d1" d="M334,-234C334,-234 272,-234 272,-234 269,-234 266,-231 266,-228 266,-228 266,-222 266,-222 266,-219 269,-216 272,-216 272,-216 334,-216 334,-216 337,-216 340,-219 340,-222 340,-222 340,-228 340,-228 340,-231 337,-234 334,-234"/>
+<text text-anchor="middle" x="303" y="-222.7" font-family="inherit" font-size="8.50">Gtk.Buildable</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Gtk.Buildable -->
+<g id="edge3" class="edge">
+<title>GObject.GInterface&#45;&gt;Gtk.Buildable</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M256.59,-269.88C265.66,-261.3 280.05,-247.7 290.4,-237.91"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="291.85,-238.95 294.29,-234.24 289.45,-236.4 291.85,-238.95"/>
+</g>
+<!-- GObject.InitiallyUnowned -->
+<g id="node3" class="node">
+<title>GObject.InitiallyUnowned</title>
+<g id="a_node3"><a xlink:href="../../GObject-2.0/classes/InitiallyUnowned.html#GObject.InitiallyUnowned" xlink:title="GObject.InitiallyUnowned">
+<path fill="none" stroke="#75507b" d="M116,-234C116,-234 6,-234 6,-234 3,-234 0,-231 0,-228 0,-228 0,-222 0,-222 0,-219 3,-216 6,-216 6,-216 116,-216 116,-216 119,-216 122,-219 122,-222 122,-222 122,-228 122,-228 122,-231 119,-234 116,-234"/>
+<text text-anchor="middle" x="61" y="-222.7" font-family="inherit" font-size="8.50">GObject.InitiallyUnowned</text>
+</a>
+</g>
+</g>
+<!-- GObject.InitiallyUnowned&#45;&gt;Gtk.Widget -->
+<g id="edge4" class="edge">
+<title>GObject.InitiallyUnowned&#45;&gt;Gtk.Widget</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M81.49,-215.99C104.85,-206.85 143.08,-191.91 168.39,-182.01"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="169.25,-183.56 173.27,-180.11 167.97,-180.3 169.25,-183.56"/>
+</g>
+<!-- GObject.Object -->
+<g id="node4" class="node">
+<title>GObject.Object</title>
+<g id="a_node4"><a xlink:href="../../GObject-2.0/classes/Object.html#GObject.Object" xlink:title="GObject.Object">
+<path fill="none" stroke="#75507b" d="M95,-288C95,-288 27,-288 27,-288 24,-288 21,-285 21,-282 21,-282 21,-276 21,-276 21,-273 24,-270 27,-270 27,-270 95,-270 95,-270 98,-270 101,-273 101,-276 101,-276 101,-282 101,-282 101,-285 98,-288 95,-288"/>
+<text text-anchor="middle" x="61" y="-276.7" font-family="inherit" font-size="8.50">GObject.Object</text>
+</a>
+</g>
+</g>
+<!-- GObject.Object&#45;&gt;GObject.InitiallyUnowned -->
+<g id="edge5" class="edge">
+<title>GObject.Object&#45;&gt;GObject.InitiallyUnowned</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M61,-269.88C61,-261.76 61,-249.13 61,-239.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="62.75,-239.24 61,-234.24 59.25,-239.24 62.75,-239.24"/>
+</g>
+<!-- Gtk.Bin -->
+<g id="node5" class="node">
+<title>Gtk.Bin</title>
+<g id="a_node5"><a xlink:href="Bin.html#Gtk.Bin" xlink:title="Gtk.Bin">
+<path fill="none" stroke="#aaaaaa" d="M215,-72C215,-72 173,-72 173,-72 170,-72 167,-69 167,-66 167,-66 167,-60 167,-60 167,-57 170,-54 173,-54 173,-54 215,-54 215,-54 218,-54 221,-57 221,-60 221,-60 221,-66 221,-66 221,-69 218,-72 215,-72"/>
+<text text-anchor="middle" x="194" y="-60.7" font-family="inherit" font-size="8.50">Gtk.Bin</text>
+</a>
+</g>
+</g>
+<!-- Gtk.Frame -->
+<g id="node8" class="node">
+<title>Gtk.Frame</title>
+<g id="a_node8"><a xlink:href="#Gtk.Frame" xlink:title="Gtk.Frame">
+<path fill="none" stroke="#75507b" d="M219,-18C219,-18 169,-18 169,-18 166,-18 163,-15 163,-12 163,-12 163,-6 163,-6 163,-3 166,0 169,0 169,0 219,0 219,0 222,0 225,-3 225,-6 225,-6 225,-12 225,-12 225,-15 222,-18 219,-18"/>
+<text text-anchor="middle" x="194" y="-6.7" font-family="inherit" font-size="8.50">Gtk.Frame</text>
+</a>
+</g>
+</g>
+<!-- Gtk.Bin&#45;&gt;Gtk.Frame -->
+<g id="edge6" class="edge">
+<title>Gtk.Bin&#45;&gt;Gtk.Frame</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M194,-53.88C194,-45.76 194,-33.13 194,-23.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="195.75,-23.24 194,-18.24 192.25,-23.24 195.75,-23.24"/>
+</g>
+<!-- Gtk.Buildable&#45;&gt;Gtk.Widget -->
+<g id="edge7" class="edge">
+<title>Gtk.Buildable&#45;&gt;Gtk.Widget</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M285.97,-215.88C267.01,-206.83 236.33,-192.19 215.67,-182.34"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="216.18,-180.64 210.91,-180.07 214.67,-183.8 216.18,-180.64"/>
+</g>
+<!-- Gtk.Container -->
+<g id="node7" class="node">
+<title>Gtk.Container</title>
+<g id="a_node7"><a xlink:href="Container.html#Gtk.Container" xlink:title="Gtk.Container">
+<path fill="none" stroke="#aaaaaa" d="M226,-126C226,-126 162,-126 162,-126 159,-126 156,-123 156,-120 156,-120 156,-114 156,-114 156,-111 159,-108 162,-108 162,-108 226,-108 226,-108 229,-108 232,-111 232,-114 232,-114 232,-120 232,-120 232,-123 229,-126 226,-126"/>
+<text text-anchor="middle" x="194" y="-114.7" font-family="inherit" font-size="8.50">Gtk.Container</text>
+</a>
+</g>
+</g>
+<!-- Gtk.Container&#45;&gt;Gtk.Bin -->
+<g id="edge8" class="edge">
+<title>Gtk.Container&#45;&gt;Gtk.Bin</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M194,-107.88C194,-99.76 194,-87.13 194,-77.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="195.75,-77.24 194,-72.24 192.25,-77.24 195.75,-77.24"/>
+</g>
+<!-- Gtk.Widget&#45;&gt;Gtk.Container -->
+<g id="edge9" class="edge">
+<title>Gtk.Widget&#45;&gt;Gtk.Container</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M194,-161.88C194,-153.76 194,-141.13 194,-131.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="195.75,-131.24 194,-126.24 192.25,-131.24 195.75,-131.24"/>
+</g>
+</g>
+</svg>
+</p>
+<div class="section" id="example">
+<h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
+<img alt="../_images/Frame.png" src="../_images/Frame.png" />
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Subclasses:</th><td class="field-body"><a class="reference internal" href="AspectFrame.html#Gtk.AspectFrame" title="Gtk.AspectFrame"><code class="xref py py-class docutils literal notranslate"><span class="pre">Gtk.AspectFrame</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="methods">
+<span id="gtk-frame-methods"></span><h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Bin.html#gtk-bin-methods"><span class="std std-ref">Gtk.Bin (1)</span></a>,     <a class="reference internal" href="Container.html#gtk-container-methods"><span class="std std-ref">Gtk.Container (35)</span></a>,     <a class="reference internal" href="Widget.html#gtk-widget-methods"><span class="std std-ref">Gtk.Widget (278)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (37)</span></a>,     <a class="reference internal" href="Buildable.html#gtk-buildable-methods"><span class="std std-ref">Gtk.Buildable (10)</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Structs:</th><td class="field-body"><a class="reference internal" href="ContainerClass.html#gtk-containerclass-methods"><span class="std std-ref">Gtk.ContainerClass (5)</span></a>,     <a class="reference internal" href="WidgetClass.html#gtk-widgetclass-methods"><span class="std std-ref">Gtk.WidgetClass (12)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/ObjectClass.html#gobject-objectclass-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.ObjectClass (5)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="99%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><em>class</em></td>
+<td><a class="reference internal" href="#Gtk.Frame.new" title="Gtk.Frame.new"><code class="xref py py-func docutils literal notranslate"><span class="pre">new</span></code></a> (label)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.Frame.get_label" title="Gtk.Frame.get_label"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_label</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.Frame.get_label_align" title="Gtk.Frame.get_label_align"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_label_align</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.Frame.get_label_widget" title="Gtk.Frame.get_label_widget"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_label_widget</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.Frame.get_shadow_type" title="Gtk.Frame.get_shadow_type"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_shadow_type</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.Frame.set_label" title="Gtk.Frame.set_label"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_label</span></code></a> (label)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.Frame.set_label_align" title="Gtk.Frame.set_label_align"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_label_align</span></code></a> (xalign, yalign)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.Frame.set_label_widget" title="Gtk.Frame.set_label_widget"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_label_widget</span></code></a> (label_widget)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.Frame.set_shadow_type" title="Gtk.Frame.set_shadow_type"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_shadow_type</span></code></a> (type)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="virtual-methods">
+<span id="gtk-frame-vfuncs"></span><h2>Virtual Methods<a class="headerlink" href="#virtual-methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Container.html#gtk-container-vfuncs"><span class="std std-ref">Gtk.Container (10)</span></a>,     <a class="reference internal" href="Widget.html#gtk-widget-vfuncs"><span class="std std-ref">Gtk.Widget (82)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-vfuncs" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (7)</span></a>,     <a class="reference internal" href="Buildable.html#gtk-buildable-vfuncs"><span class="std std-ref">Gtk.Buildable (10)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="99%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.Frame.do_compute_child_allocation" title="Gtk.Frame.do_compute_child_allocation"><code class="xref py py-func docutils literal notranslate"><span class="pre">do_compute_child_allocation</span></code></a> (allocation)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="gtk-frame-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Container.html#gtk-container-props"><span class="std std-ref">Gtk.Container (3)</span></a>,     <a class="reference internal" href="Widget.html#gtk-widget-props"><span class="std std-ref">Gtk.Widget (39)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="1%" />
+<col width="1%" />
+<col width="97%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Flags</th>
+<th class="head">Short Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="#Gtk.Frame.props.label" title="Gtk.Frame.props.label"><code class="xref py py-data docutils literal notranslate"><span class="pre">label</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+<td>r/w/en</td>
+<td>Text of the frame’s label</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#Gtk.Frame.props.label_widget" title="Gtk.Frame.props.label_widget"><code class="xref py py-data docutils literal notranslate"><span class="pre">label-widget</span></code></a></td>
+<td><a class="reference internal" href="Widget.html#Gtk.Widget" title="Gtk.Widget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Widget</span></code></a></td>
+<td>r/w</td>
+<td>A widget to display in place of the usual frame label</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#Gtk.Frame.props.label_xalign" title="Gtk.Frame.props.label_xalign"><code class="xref py py-data docutils literal notranslate"><span class="pre">label-xalign</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">float</span></code></a></td>
+<td>r/w/en</td>
+<td>The horizontal alignment of the label</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#Gtk.Frame.props.label_yalign" title="Gtk.Frame.props.label_yalign"><code class="xref py py-data docutils literal notranslate"><span class="pre">label-yalign</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">float</span></code></a></td>
+<td>r/w/en</td>
+<td>The vertical alignment of the label</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#Gtk.Frame.props.shadow_type" title="Gtk.Frame.props.shadow_type"><code class="xref py py-data docutils literal notranslate"><span class="pre">shadow-type</span></code></a></td>
+<td><a class="reference internal" href="../enums.html#Gtk.ShadowType" title="Gtk.ShadowType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ShadowType</span></code></a></td>
+<td>r/w/en</td>
+<td>Appearance of the frame border</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="style-properties">
+<span id="gtk-frame-style-props"></span><h2>Style Properties<a class="headerlink" href="#style-properties" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Widget.html#gtk-widget-style-props"><span class="std std-ref">Gtk.Widget (17)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="signals">
+<span id="gtk-frame-signals"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Container.html#gtk-container-signals"><span class="std std-ref">Gtk.Container (4)</span></a>,     <a class="reference internal" href="Widget.html#gtk-widget-signals"><span class="std std-ref">Gtk.Widget (69)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-signals" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fields">
+<span id="gtk-frame-fields"></span><h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Container.html#gtk-container-fields"><span class="std std-ref">Gtk.Container (4)</span></a>,     <a class="reference internal" href="Widget.html#gtk-widget-fields"><span class="std std-ref">Gtk.Widget (69)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-fields" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="16%" />
+<col width="1%" />
+<col width="1%" />
+<col width="82%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Access</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>bin</td>
+<td><a class="reference internal" href="Bin.html#Gtk.Bin" title="Gtk.Bin"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Bin</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="class-details">
+<h2>Class Details<a class="headerlink" href="#class-details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Gtk.Frame">
+<em class="property">class </em><code class="descclassname">Gtk.</code><code class="descname">Frame</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#Gtk.Frame" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Bases:</th><td class="field-body"><a class="reference internal" href="Bin.html#Gtk.Bin" title="Gtk.Bin"><code class="xref py py-class docutils literal notranslate"><span class="pre">Gtk.Bin</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Abstract:</th><td class="field-body">No</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Structure:</th><td class="field-body"><a class="reference internal" href="FrameClass.html#Gtk.FrameClass" title="Gtk.FrameClass"><code class="xref py py-class docutils literal notranslate"><span class="pre">Gtk.FrameClass</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The frame widget is a bin that surrounds its child with a decorative
+frame and an optional label. If present, the label is drawn in a gap
+in the top side of the frame. The position of the label can be
+controlled with <a class="reference internal" href="#Gtk.Frame.set_label_align" title="Gtk.Frame.set_label_align"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Frame.set_label_align</span></code></a>().</p>
+<dl class="docutils">
+<dt><a class="reference internal" href="#Gtk.Frame" title="Gtk.Frame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Frame</span></code></a> as <a class="reference internal" href="Buildable.html#Gtk.Buildable" title="Gtk.Buildable"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Buildable</span></code></a></dt>
+<dd></dd>
+</dl>
+<p>The <a class="reference internal" href="#Gtk.Frame" title="Gtk.Frame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Frame</span></code></a> implementation of the <a class="reference internal" href="Buildable.html#Gtk.Buildable" title="Gtk.Buildable"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Buildable</span></code></a> interface supports
+placing a child in the label position by specifying “label” as the
+“type” attribute of a &lt;child&gt; element. A normal content child can
+be specified without specifying a &lt;child&gt; type attribute.</p>
+<p>An example of a UI definition fragment with <a class="reference internal" href="#Gtk.Frame" title="Gtk.Frame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Frame</span></code></a>:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>&lt;object class=&quot;GtkFrame&quot;&gt;
+  &lt;child type=&quot;label&quot;&gt;
+    &lt;object class=&quot;GtkLabel&quot; id=&quot;frame-label&quot;/&gt;
+  &lt;/child&gt;
+  &lt;child&gt;
+    &lt;object class=&quot;GtkEntry&quot; id=&quot;frame-content&quot;/&gt;
+  &lt;/child&gt;
+&lt;/object&gt;
+</pre></div>
+</div>
+<dl class="docutils">
+<dt>CSS nodes</dt>
+<dd></dd>
+</dl>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>frame
+├── border[.flat]
+├── &lt;label widget&gt;
+╰── &lt;child&gt;
+</pre></div>
+</div>
+<p><a class="reference internal" href="#Gtk.Frame" title="Gtk.Frame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Frame</span></code></a> has a main CSS node named “frame” and a subnode named “border”. The
+“border” node is used to draw the visible border. You can set the appearance
+of the border using CSS properties like “border-style” on the “border” node.</p>
+<p>The border node can be given the style class “.flat”, which is used by themes
+to disable drawing of the border. To do this from code, call
+<a class="reference internal" href="#Gtk.Frame.set_shadow_type" title="Gtk.Frame.set_shadow_type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Frame.set_shadow_type</span></code></a>() with <a class="reference internal" href="../enums.html#Gtk.ShadowType.NONE" title="Gtk.ShadowType.NONE"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ShadowType.NONE</span></code></a> to add the “.flat” class or
+any other shadow type to remove it.</p>
+<dl class="classmethod">
+<dt id="Gtk.Frame.new">
+<em class="property">classmethod </em><code class="descname">new</code><span class="sig-paren">(</span><em>label</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkframe.c#L433"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.Frame.new" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>label</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – the text to use as the label of the frame</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a new <a class="reference internal" href="#Gtk.Frame" title="Gtk.Frame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Frame</span></code></a> widget</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="Widget.html#Gtk.Widget" title="Gtk.Widget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Widget</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Creates a new <a class="reference internal" href="#Gtk.Frame" title="Gtk.Frame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Frame</span></code></a>, with optional label <cite>label</cite>.
+If <cite>label</cite> is <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>, the label is omitted.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.Frame.get_label">
+<code class="descname">get_label</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkframe.c#L512"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.Frame.get_label" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the text in the label, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> if there
+was no label widget or the lable widget was not
+a <a class="reference internal" href="Label.html#Gtk.Label" title="Gtk.Label"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Label</span></code></a>. This string is owned by GTK+ and
+must not be modified or freed.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>If the frame’s label widget is a <a class="reference internal" href="Label.html#Gtk.Label" title="Gtk.Label"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Label</span></code></a>, returns the
+text in the label widget. (The frame will have a <a class="reference internal" href="Label.html#Gtk.Label" title="Gtk.Label"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Label</span></code></a>
+for the label widget if a non-<a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> argument was passed
+to <a class="reference internal" href="#Gtk.Frame.new" title="Gtk.Frame.new"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Frame.new</span></code></a>().)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.Frame.get_label_align">
+<code class="descname">get_label_align</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkframe.c#L651"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.Frame.get_label_align" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">xalign:</th><td class="field-body">location to store X alignment of
+frame’s label, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">yalign:</th><td class="field-body">location to store X alignment of
+frame’s label, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">(<strong>xalign</strong>: <a class="reference external" href="http://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">float</span></code></a>, <strong>yalign</strong>: <a class="reference external" href="http://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">float</span></code></a>)</td>
+</tr>
+</tbody>
+</table>
+<p>Retrieves the X and Y alignment of the frame’s label. See
+<a class="reference internal" href="#Gtk.Frame.set_label_align" title="Gtk.Frame.set_label_align"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Frame.set_label_align</span></code></a>().</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.Frame.get_label_widget">
+<code class="descname">get_label_widget</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkframe.c#L585"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.Frame.get_label_widget" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the label widget, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> if
+there is none.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="Widget.html#Gtk.Widget" title="Gtk.Widget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Widget</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Retrieves the label widget for the frame. See
+<a class="reference internal" href="#Gtk.Frame.set_label_widget" title="Gtk.Frame.set_label_widget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Frame.set_label_widget</span></code></a>().</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.Frame.get_shadow_type">
+<code class="descname">get_shadow_type</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkframe.c#L708"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.Frame.get_shadow_type" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the current shadow type of the frame.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#Gtk.ShadowType" title="Gtk.ShadowType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ShadowType</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Retrieves the shadow type of the frame. See
+<a class="reference internal" href="#Gtk.Frame.set_shadow_type" title="Gtk.Frame.set_shadow_type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Frame.set_shadow_type</span></code></a>().</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.Frame.set_label">
+<code class="descname">set_label</code><span class="sig-paren">(</span><em>label</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkframe.c#L480"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.Frame.set_label" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>label</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – the text to use as the label of the frame</td>
+</tr>
+</tbody>
+</table>
+<p>Removes the current <a class="reference internal" href="#Gtk.Frame" title="Gtk.Frame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Frame</span></code></a> <a class="reference internal" href="#Gtk.Frame.props.label_widget" title="Gtk.Frame.props.label_widget"><code class="xref py py-data docutils literal notranslate"><span class="pre">:label-widget</span></code></a>. If <cite>label</cite> is not <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>, creates a
+new <a class="reference internal" href="Label.html#Gtk.Label" title="Gtk.Label"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Label</span></code></a> with that text and adds it as the <a class="reference internal" href="#Gtk.Frame" title="Gtk.Frame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Frame</span></code></a> <a class="reference internal" href="#Gtk.Frame.props.label_widget" title="Gtk.Frame.props.label_widget"><code class="xref py py-data docutils literal notranslate"><span class="pre">:label-widget</span></code></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.Frame.set_label_align">
+<code class="descname">set_label_align</code><span class="sig-paren">(</span><em>xalign</em>, <em>yalign</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkframe.c#L609"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.Frame.set_label_align" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>xalign</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">float</span></code></a>) – The position of the label along the top edge
+of the widget. A value of 0.0 represents left alignment;
+1.0 represents right alignment.</li>
+<li><strong>yalign</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">float</span></code></a>) – The y alignment of the label. A value of 0.0 aligns under
+the frame; 1.0 aligns above the frame. If the values are exactly
+0.0 or 1.0 the gap in the frame won’t be painted because the label
+will be completely above or below the frame.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Sets the alignment of the frame widget’s label. The
+default values for a newly created frame are 0.0 and 0.5.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.Frame.set_label_widget">
+<code class="descname">set_label_widget</code><span class="sig-paren">(</span><em>label_widget</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkframe.c#L536"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.Frame.set_label_widget" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>label_widget</strong> (<a class="reference internal" href="Widget.html#Gtk.Widget" title="Gtk.Widget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Widget</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – the new label widget</td>
+</tr>
+</tbody>
+</table>
+<p>Sets the <a class="reference internal" href="#Gtk.Frame" title="Gtk.Frame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Frame</span></code></a> <a class="reference internal" href="#Gtk.Frame.props.label_widget" title="Gtk.Frame.props.label_widget"><code class="xref py py-data docutils literal notranslate"><span class="pre">:label-widget</span></code></a> for the frame. This is the widget that
+will appear embedded in the top edge of the frame as a title.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.Frame.set_shadow_type">
+<code class="descname">set_shadow_type</code><span class="sig-paren">(</span><em>type</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkframe.c#L677"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.Frame.set_shadow_type" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>type</strong> (<a class="reference internal" href="../enums.html#Gtk.ShadowType" title="Gtk.ShadowType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ShadowType</span></code></a>) – the new <a class="reference internal" href="../enums.html#Gtk.ShadowType" title="Gtk.ShadowType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ShadowType</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Sets the <a class="reference internal" href="#Gtk.Frame" title="Gtk.Frame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Frame</span></code></a> <a class="reference internal" href="#Gtk.Frame.props.shadow_type" title="Gtk.Frame.props.shadow_type"><code class="xref py py-data docutils literal notranslate"><span class="pre">:shadow-type</span></code></a> for <cite>self</cite>, i.e. whether it is drawn without
+(<a class="reference internal" href="../enums.html#Gtk.ShadowType.NONE" title="Gtk.ShadowType.NONE"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ShadowType.NONE</span></code></a>) or with (other values) a visible border. Values other than
+<a class="reference internal" href="../enums.html#Gtk.ShadowType.NONE" title="Gtk.ShadowType.NONE"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ShadowType.NONE</span></code></a> are treated identically by <a class="reference internal" href="#Gtk.Frame" title="Gtk.Frame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Frame</span></code></a>. The chosen type is
+applied by removing or adding the .flat class to the CSS node named border.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.Frame.do_compute_child_allocation">
+<code class="descname">do_compute_child_allocation</code><span class="sig-paren">(</span><em>allocation</em><span class="sig-paren">)</span><em class="property"> virtual</em><a class="headerlink" href="#Gtk.Frame.do_compute_child_allocation" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>allocation</strong> (<a class="reference external" href="../../Gdk-3.0/classes/Rectangle.html#Gdk.Rectangle" title="(in Gdk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gdk.Rectangle</span></code></a>) – </td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="property-details">
+<h2>Property Details<a class="headerlink" href="#property-details" title="Permalink to this headline">¶</a></h2>
+<dl class="data">
+<dt id="Gtk.Frame.props.label">
+<code class="descclassname">Gtk.Frame.props.</code><code class="descname">label</code><a class="headerlink" href="#Gtk.Frame.props.label" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">label</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.EXPLICIT_NOTIFY" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EXPLICIT_NOTIFY</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Text of the frame’s label</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="Gtk.Frame.props.label_widget">
+<code class="descclassname">Gtk.Frame.props.</code><code class="descname">label_widget</code><a class="headerlink" href="#Gtk.Frame.props.label_widget" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">label-widget</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="Widget.html#Gtk.Widget" title="Gtk.Widget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Widget</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>A widget to display in place of the usual frame label</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="Gtk.Frame.props.label_xalign">
+<code class="descclassname">Gtk.Frame.props.</code><code class="descname">label_xalign</code><a class="headerlink" href="#Gtk.Frame.props.label_xalign" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">label-xalign</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">float</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">0.0</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.EXPLICIT_NOTIFY" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EXPLICIT_NOTIFY</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The horizontal alignment of the label</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="Gtk.Frame.props.label_yalign">
+<code class="descclassname">Gtk.Frame.props.</code><code class="descname">label_yalign</code><a class="headerlink" href="#Gtk.Frame.props.label_yalign" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">label-yalign</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">float</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">0.5</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.EXPLICIT_NOTIFY" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EXPLICIT_NOTIFY</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The vertical alignment of the label</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="Gtk.Frame.props.shadow_type">
+<code class="descclassname">Gtk.Frame.props.</code><code class="descname">shadow_type</code><a class="headerlink" href="#Gtk.Frame.props.shadow_type" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">shadow-type</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../enums.html#Gtk.ShadowType" title="Gtk.ShadowType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ShadowType</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference internal" href="../enums.html#Gtk.ShadowType.ETCHED_IN" title="Gtk.ShadowType.ETCHED_IN"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ShadowType.ETCHED_IN</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.EXPLICIT_NOTIFY" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EXPLICIT_NOTIFY</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Appearance of the frame border</p>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div> 
+
+</body>
+</html>

@@ -1,0 +1,604 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    Gtk.StyleProperties -
+    
+      Classes -
+    
+    Gtk 3.0
+  </title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/css/pgi.css" type="text/css" />
+  
+
+  
+  <script type="text/javascript">
+
+    function openSidebar(element) {
+        window.location.href = element.href + location.hash;
+        return false;
+    }
+
+    function inIframe() {
+        try {
+            return window.self !== window.top;
+        } catch (e) {
+            return true;
+        }
+    }
+
+    function onLoaded() {
+        if(!inIframe()) {
+            var icons = document.getElementsByClassName('open-sidebar');
+
+            for (var i = 0; i < icons.length; i ++) {
+                icons[i].style.display = 'table-cell';
+            }
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', onLoaded, false);
+
+  </script>
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="Gtk 3.0 Python API Docs" href="../index.html"/>
+        <link rel="up" title="Classes" href="../classes.html"/>
+        <link rel="next" title="Gtk.Switch" href="Switch.html"/>
+        <link rel="prev" title="Gtk.StyleContext" href="StyleContext.html"/> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+<div class="non-fixed-bar">
+<table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#Gtk-3.0/classes/StyleProperties.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Gtk 3.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>Gtk.StyleProperties</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="StyleContext.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="Switch.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">Gtk.StyleProperties</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+<div class="fixed-bar">
+  <table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#Gtk-3.0/classes/StyleProperties.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Gtk 3.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>Gtk.StyleProperties</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="StyleContext.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="Switch.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">Gtk.StyleProperties</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+  <div class="wy-grid-for-nav">
+
+    
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="main">
+            
+  <div class="section" id="gtk-styleproperties">
+<h1>Gtk.StyleProperties<a class="headerlink" href="#gtk-styleproperties" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<svg width="201pt" height="134pt"
+ viewBox="0.00 0.00 201.00 134.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 130)">
+<title>g</title>
+<!-- GObject.GInterface -->
+<g id="node1" class="node">
+<title>GObject.GInterface</title>
+<g id="a_node1"><a xlink:href="../../GObject-2.0/classes/GInterface.html#GObject.GInterface" xlink:title="GObject.GInterface">
+<path fill="none" stroke="#3091d1" d="M92,-126C92,-126 6,-126 6,-126 3,-126 0,-123 0,-120 0,-120 0,-114 0,-114 0,-111 3,-108 6,-108 6,-108 92,-108 92,-108 95,-108 98,-111 98,-114 98,-114 98,-120 98,-120 98,-123 95,-126 92,-126"/>
+<text text-anchor="middle" x="49" y="-114.7" font-family="inherit" font-size="8.50">GObject.GInterface</text>
+</a>
+</g>
+</g>
+<!-- Gtk.StyleProvider -->
+<g id="node4" class="node">
+<title>Gtk.StyleProvider</title>
+<g id="a_node4"><a xlink:href="StyleProvider.html#Gtk.StyleProvider" xlink:title="Gtk.StyleProvider">
+<path fill="none" stroke="#3091d1" d="M88.5,-72C88.5,-72 9.5,-72 9.5,-72 6.5,-72 3.5,-69 3.5,-66 3.5,-66 3.5,-60 3.5,-60 3.5,-57 6.5,-54 9.5,-54 9.5,-54 88.5,-54 88.5,-54 91.5,-54 94.5,-57 94.5,-60 94.5,-60 94.5,-66 94.5,-66 94.5,-69 91.5,-72 88.5,-72"/>
+<text text-anchor="middle" x="49" y="-60.7" font-family="inherit" font-size="8.50">Gtk.StyleProvider</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Gtk.StyleProvider -->
+<g id="edge1" class="edge">
+<title>GObject.GInterface&#45;&gt;Gtk.StyleProvider</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M49,-107.88C49,-99.76 49,-87.13 49,-77.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="50.75,-77.24 49,-72.24 47.25,-77.24 50.75,-77.24"/>
+</g>
+<!-- GObject.Object -->
+<g id="node2" class="node">
+<title>GObject.Object</title>
+<g id="a_node2"><a xlink:href="../../GObject-2.0/classes/Object.html#GObject.Object" xlink:title="GObject.Object">
+<path fill="none" stroke="#75507b" d="M187,-72C187,-72 119,-72 119,-72 116,-72 113,-69 113,-66 113,-66 113,-60 113,-60 113,-57 116,-54 119,-54 119,-54 187,-54 187,-54 190,-54 193,-57 193,-60 193,-60 193,-66 193,-66 193,-69 190,-72 187,-72"/>
+<text text-anchor="middle" x="153" y="-60.7" font-family="inherit" font-size="8.50">GObject.Object</text>
+</a>
+</g>
+</g>
+<!-- Gtk.StyleProperties -->
+<g id="node3" class="node">
+<title>Gtk.StyleProperties</title>
+<g id="a_node3"><a xlink:href="#Gtk.StyleProperties" xlink:title="Gtk.StyleProperties">
+<path fill="none" stroke="#75507b" d="M144,-18C144,-18 58,-18 58,-18 55,-18 52,-15 52,-12 52,-12 52,-6 52,-6 52,-3 55,0 58,0 58,0 144,0 144,0 147,0 150,-3 150,-6 150,-6 150,-12 150,-12 150,-15 147,-18 144,-18"/>
+<text text-anchor="middle" x="101" y="-6.7" font-family="inherit" font-size="8.50">Gtk.StyleProperties</text>
+</a>
+</g>
+</g>
+<!-- GObject.Object&#45;&gt;Gtk.StyleProperties -->
+<g id="edge2" class="edge">
+<title>GObject.Object&#45;&gt;Gtk.StyleProperties</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M144.88,-53.88C136.3,-45.3 122.7,-31.7 112.91,-21.91"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="114.01,-20.54 109.24,-18.24 111.54,-23.01 114.01,-20.54"/>
+</g>
+<!-- Gtk.StyleProvider&#45;&gt;Gtk.StyleProperties -->
+<g id="edge3" class="edge">
+<title>Gtk.StyleProvider&#45;&gt;Gtk.StyleProperties</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M57.12,-53.88C65.7,-45.3 79.3,-31.7 89.09,-21.91"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="90.46,-23.01 92.76,-18.24 87.99,-20.54 90.46,-23.01"/>
+</g>
+</g>
+</svg>
+</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Subclasses:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="methods">
+<span id="gtk-styleproperties-methods"></span><h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (37)</span></a>,     <a class="reference internal" href="StyleProvider.html#gtk-styleprovider-methods"><span class="std std-ref">Gtk.StyleProvider (3)</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Structs:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/ObjectClass.html#gobject-objectclass-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.ObjectClass (5)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="99%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><em>class</em></td>
+<td><a class="reference internal" href="#Gtk.StyleProperties.new" title="Gtk.StyleProperties.new"><code class="xref py py-func docutils literal notranslate"><span class="pre">new</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.StyleProperties.clear" title="Gtk.StyleProperties.clear"><code class="xref py py-func docutils literal notranslate"><span class="pre">clear</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.StyleProperties.get_property" title="Gtk.StyleProperties.get_property"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_property</span></code></a> (property, state)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.StyleProperties.lookup_color" title="Gtk.StyleProperties.lookup_color"><code class="xref py py-func docutils literal notranslate"><span class="pre">lookup_color</span></code></a> (name)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.StyleProperties.map_color" title="Gtk.StyleProperties.map_color"><code class="xref py py-func docutils literal notranslate"><span class="pre">map_color</span></code></a> (name, color)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.StyleProperties.merge" title="Gtk.StyleProperties.merge"><code class="xref py py-func docutils literal notranslate"><span class="pre">merge</span></code></a> (props_to_merge, replace)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.StyleProperties.set_property" title="Gtk.StyleProperties.set_property"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_property</span></code></a> (property, state, value)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.StyleProperties.unset_property" title="Gtk.StyleProperties.unset_property"><code class="xref py py-func docutils literal notranslate"><span class="pre">unset_property</span></code></a> (property, state)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="virtual-methods">
+<span id="gtk-styleproperties-vfuncs"></span><h2>Virtual Methods<a class="headerlink" href="#virtual-methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-vfuncs" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (7)</span></a>,     <a class="reference internal" href="StyleProvider.html#gtk-styleprovider-vfuncs"><span class="std std-ref">Gtk.StyleProvider (3)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="gtk-styleproperties-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<p>None</p>
+</div>
+<div class="section" id="signals">
+<span id="gtk-styleproperties-signals"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-signals" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fields">
+<span id="gtk-styleproperties-fields"></span><h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-fields" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="16%" />
+<col width="1%" />
+<col width="1%" />
+<col width="82%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Access</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>parent_object</td>
+<td><a class="reference external" href="../../GObject-2.0/classes/Object.html#GObject.Object" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GObject.Object</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="class-details">
+<h2>Class Details<a class="headerlink" href="#class-details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Gtk.StyleProperties">
+<em class="property">class </em><code class="descclassname">Gtk.</code><code class="descname">StyleProperties</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#Gtk.StyleProperties" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Bases:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#GObject.Object" title="(in GObject 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GObject.Object</span></code></a>,         <a class="reference internal" href="StyleProvider.html#Gtk.StyleProvider" title="Gtk.StyleProvider"><code class="xref py py-class docutils literal notranslate"><span class="pre">Gtk.StyleProvider</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Abstract:</th><td class="field-body">No</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Structure:</th><td class="field-body"><a class="reference internal" href="StylePropertiesClass.html#Gtk.StylePropertiesClass" title="Gtk.StylePropertiesClass"><code class="xref py py-class docutils literal notranslate"><span class="pre">Gtk.StylePropertiesClass</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p><a class="reference internal" href="#Gtk.StyleProperties" title="Gtk.StyleProperties"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.StyleProperties</span></code></a> provides the storage for style information
+that is used by <a class="reference internal" href="StyleContext.html#Gtk.StyleContext" title="Gtk.StyleContext"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.StyleContext</span></code></a> and other <a class="reference internal" href="StyleProvider.html#Gtk.StyleProvider" title="Gtk.StyleProvider"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.StyleProvider</span></code></a>
+implementations.</p>
+<p>Before style properties can be stored in <a class="reference internal" href="#Gtk.StyleProperties" title="Gtk.StyleProperties"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.StyleProperties</span></code></a>, they
+must be registered with gtk_style_properties_register_property().</p>
+<p>Unless you are writing a <a class="reference internal" href="StyleProvider.html#Gtk.StyleProvider" title="Gtk.StyleProvider"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.StyleProvider</span></code></a> implementation, you
+are unlikely to use this API directly, as gtk_style_context_get()
+and its variants are the preferred way to access styling information
+from widget implementations and theming engine implementations
+should use the APIs provided by <a class="reference internal" href="ThemingEngine.html#Gtk.ThemingEngine" title="Gtk.ThemingEngine"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ThemingEngine</span></code></a> instead.</p>
+<p><a class="reference internal" href="#Gtk.StyleProperties" title="Gtk.StyleProperties"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.StyleProperties</span></code></a> has been deprecated in GTK 3.16. The CSS
+machinery does not use it anymore and all users of this object
+have been deprecated.</p>
+<dl class="classmethod">
+<dt id="Gtk.StyleProperties.new">
+<em class="property">classmethod </em><code class="descname">new</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/deprecated/gtkstyleproperties.c#L357"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.StyleProperties.new" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a new <a class="reference internal" href="#Gtk.StyleProperties" title="Gtk.StyleProperties"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.StyleProperties</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#Gtk.StyleProperties" title="Gtk.StyleProperties"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.StyleProperties</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns a newly created <a class="reference internal" href="#Gtk.StyleProperties" title="Gtk.StyleProperties"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.StyleProperties</span></code></a></p>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 3.16: </span><a class="reference internal" href="#Gtk.StyleProperties" title="Gtk.StyleProperties"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.StyleProperties</span></code></a> are deprecated.</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.StyleProperties.clear">
+<code class="descname">clear</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/deprecated/gtkstyleproperties.c#L814"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.StyleProperties.clear" title="Permalink to this definition">¶</a></dt>
+<dd><p>Clears all style information from <cite>self</cite>.</p>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 3.16: </span><a class="reference internal" href="#Gtk.StyleProperties" title="Gtk.StyleProperties"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.StyleProperties</span></code></a> are deprecated.</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.StyleProperties.get_property">
+<code class="descname">get_property</code><span class="sig-paren">(</span><em>property</em>, <em>state</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/deprecated/gtkstyleproperties.c#L628"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.StyleProperties.get_property" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>property</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – style property name</li>
+<li><strong>state</strong> (<a class="reference internal" href="../flags.html#Gtk.StateFlags" title="Gtk.StateFlags"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.StateFlags</span></code></a>) – state to retrieve the property value for</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><p><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if the property exists in <cite>self</cite>, <a class="reference external" href="http://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a> otherwise</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">value:</th><td class="field-body">return location for the style property value.</td>
+</tr>
+</tbody>
+</table>
+</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">(<a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a>, <strong>value</strong>: <a class="reference external" href="../../GObject-2.0/classes/Value.html#GObject.Value" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GObject.Value</span></code></a>)</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Gets a style property from <cite>self</cite> for the given state. When done with <cite>value</cite>,
+<a class="reference external" href="../../GObject-2.0/classes/Value.html#GObject.Value.unset" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GObject.Value.unset</span></code></a>() needs to be called to free any allocated memory.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.0.</span></p>
+</div>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 3.16: </span><a class="reference internal" href="#Gtk.StyleProperties" title="Gtk.StyleProperties"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.StyleProperties</span></code></a> are deprecated.</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.StyleProperties.lookup_color">
+<code class="descname">lookup_color</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/deprecated/gtkstyleproperties.c#L417"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.StyleProperties.lookup_color" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>name</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – color name to lookup</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The mapped color</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="SymbolicColor.html#Gtk.SymbolicColor" title="Gtk.SymbolicColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.SymbolicColor</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns the symbolic color that is mapped
+to <cite>name</cite>.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.0.</span></p>
+</div>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 3.8: </span><a class="reference internal" href="SymbolicColor.html#Gtk.SymbolicColor" title="Gtk.SymbolicColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.SymbolicColor</span></code></a> is deprecated.</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.StyleProperties.map_color">
+<code class="descname">map_color</code><span class="sig-paren">(</span><em>name</em>, <em>color</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/deprecated/gtkstyleproperties.c#L378"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.StyleProperties.map_color" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>name</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – color name</li>
+<li><strong>color</strong> (<a class="reference internal" href="SymbolicColor.html#Gtk.SymbolicColor" title="Gtk.SymbolicColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.SymbolicColor</span></code></a>) – <a class="reference internal" href="SymbolicColor.html#Gtk.SymbolicColor" title="Gtk.SymbolicColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.SymbolicColor</span></code></a> to map <cite>name</cite> to</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Maps <cite>color</cite> so it can be referenced by <cite>name</cite>. See
+<a class="reference internal" href="#Gtk.StyleProperties.lookup_color" title="Gtk.StyleProperties.lookup_color"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.StyleProperties.lookup_color</span></code></a>()</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.0.</span></p>
+</div>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 3.8: </span><a class="reference internal" href="SymbolicColor.html#Gtk.SymbolicColor" title="Gtk.SymbolicColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.SymbolicColor</span></code></a> is deprecated.</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.StyleProperties.merge">
+<code class="descname">merge</code><span class="sig-paren">(</span><em>props_to_merge</em>, <em>replace</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/deprecated/gtkstyleproperties.c#L844"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.StyleProperties.merge" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>props_to_merge</strong> (<a class="reference internal" href="#Gtk.StyleProperties" title="Gtk.StyleProperties"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.StyleProperties</span></code></a>) – a second <a class="reference internal" href="#Gtk.StyleProperties" title="Gtk.StyleProperties"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.StyleProperties</span></code></a></li>
+<li><strong>replace</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a>) – whether to replace values or not</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Merges into <cite>self</cite> all the style information contained
+in <cite>props_to_merge</cite>. If <cite>replace</cite> is <a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a>, the values
+will be overwritten, if it is <a class="reference external" href="http://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a>, the older values
+will prevail.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.0.</span></p>
+</div>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 3.16: </span><a class="reference internal" href="#Gtk.StyleProperties" title="Gtk.StyleProperties"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.StyleProperties</span></code></a> are deprecated.</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.StyleProperties.set_property">
+<code class="descname">set_property</code><span class="sig-paren">(</span><em>property</em>, <em>state</em>, <em>value</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/deprecated/gtkstyleproperties.c#L476"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.StyleProperties.set_property" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>property</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – styling property to set</li>
+<li><strong>state</strong> (<a class="reference internal" href="../flags.html#Gtk.StateFlags" title="Gtk.StateFlags"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.StateFlags</span></code></a>) – state to set the value for</li>
+<li><strong>value</strong> (<a class="reference external" href="../../GObject-2.0/classes/Value.html#GObject.Value" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GObject.Value</span></code></a>) – new value for the property</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Sets a styling property in <cite>self</cite>.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.0.</span></p>
+</div>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 3.16: </span><a class="reference internal" href="#Gtk.StyleProperties" title="Gtk.StyleProperties"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.StyleProperties</span></code></a> are deprecated.</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.StyleProperties.unset_property">
+<code class="descname">unset_property</code><span class="sig-paren">(</span><em>property</em>, <em>state</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/deprecated/gtkstyleproperties.c#L747"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.StyleProperties.unset_property" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>property</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – property to unset</li>
+<li><strong>state</strong> (<a class="reference internal" href="../flags.html#Gtk.StateFlags" title="Gtk.StateFlags"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.StateFlags</span></code></a>) – state to unset</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Unsets a style property in <cite>self</cite>.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.0.</span></p>
+</div>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 3.16: </span><a class="reference internal" href="#Gtk.StyleProperties" title="Gtk.StyleProperties"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.StyleProperties</span></code></a> are deprecated.</p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div> 
+
+</body>
+</html>

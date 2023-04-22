@@ -1,0 +1,1117 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    NM.VpnPluginInfo -
+    
+      Classes -
+    
+    NM 1.0
+  </title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/css/pgi.css" type="text/css" />
+  
+
+  
+  <script type="text/javascript">
+
+    function openSidebar(element) {
+        window.location.href = element.href + location.hash;
+        return false;
+    }
+
+    function inIframe() {
+        try {
+            return window.self !== window.top;
+        } catch (e) {
+            return true;
+        }
+    }
+
+    function onLoaded() {
+        if(!inIframe()) {
+            var icons = document.getElementsByClassName('open-sidebar');
+
+            for (var i = 0; i < icons.length; i ++) {
+                icons[i].style.display = 'table-cell';
+            }
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', onLoaded, false);
+
+  </script>
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="NM 1.0 Python API Docs" href="../index.html"/>
+        <link rel="up" title="Classes" href="../classes.html"/>
+        <link rel="next" title="NM.VpnPluginOld" href="VpnPluginOld.html"/>
+        <link rel="prev" title="NM.VpnConnection" href="VpnConnection.html"/> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+<div class="non-fixed-bar">
+<table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#NM-1.0/classes/VpnPluginInfo.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">NM 1.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>NM.VpnPluginInfo</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="VpnConnection.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="VpnPluginOld.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">NM.VpnPluginInfo</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#property-details">Property Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+<div class="fixed-bar">
+  <table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#NM-1.0/classes/VpnPluginInfo.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">NM 1.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>NM.VpnPluginInfo</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="VpnConnection.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="VpnPluginOld.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">NM.VpnPluginInfo</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#property-details">Property Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+  <div class="wy-grid-for-nav">
+
+    
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="main">
+            
+  <div class="section" id="nm-vpnplugininfo">
+<h1>NM.VpnPluginInfo<a class="headerlink" href="#nm-vpnplugininfo" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<svg width="188pt" height="134pt"
+ viewBox="0.00 0.00 188.00 134.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 130)">
+<title>g</title>
+<!-- GObject.GInterface -->
+<g id="node1" class="node">
+<title>GObject.GInterface</title>
+<g id="a_node1"><a xlink:href="../../GObject-2.0/classes/GInterface.html#GObject.GInterface" xlink:title="GObject.GInterface">
+<path fill="none" stroke="#3091d1" d="M92,-126C92,-126 6,-126 6,-126 3,-126 0,-123 0,-120 0,-120 0,-114 0,-114 0,-111 3,-108 6,-108 6,-108 92,-108 92,-108 95,-108 98,-111 98,-114 98,-114 98,-120 98,-120 98,-123 95,-126 92,-126"/>
+<text text-anchor="middle" x="49" y="-114.7" font-family="inherit" font-size="8.50">GObject.GInterface</text>
+</a>
+</g>
+</g>
+<!-- Gio.Initable -->
+<g id="node3" class="node">
+<title>Gio.Initable</title>
+<g id="a_node3"><a xlink:href="../../Gio-2.0/classes/Initable.html#Gio.Initable" xlink:title="Gio.Initable">
+<path fill="none" stroke="#3091d1" d="M75.5,-72C75.5,-72 22.5,-72 22.5,-72 19.5,-72 16.5,-69 16.5,-66 16.5,-66 16.5,-60 16.5,-60 16.5,-57 19.5,-54 22.5,-54 22.5,-54 75.5,-54 75.5,-54 78.5,-54 81.5,-57 81.5,-60 81.5,-60 81.5,-66 81.5,-66 81.5,-69 78.5,-72 75.5,-72"/>
+<text text-anchor="middle" x="49" y="-60.7" font-family="inherit" font-size="8.50">Gio.Initable</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Gio.Initable -->
+<g id="edge1" class="edge">
+<title>GObject.GInterface&#45;&gt;Gio.Initable</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M49,-107.88C49,-99.76 49,-87.13 49,-77.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="50.75,-77.24 49,-72.24 47.25,-77.24 50.75,-77.24"/>
+</g>
+<!-- GObject.Object -->
+<g id="node2" class="node">
+<title>GObject.Object</title>
+<g id="a_node2"><a xlink:href="../../GObject-2.0/classes/Object.html#GObject.Object" xlink:title="GObject.Object">
+<path fill="none" stroke="#75507b" d="M174,-72C174,-72 106,-72 106,-72 103,-72 100,-69 100,-66 100,-66 100,-60 100,-60 100,-57 103,-54 106,-54 106,-54 174,-54 174,-54 177,-54 180,-57 180,-60 180,-60 180,-66 180,-66 180,-69 177,-72 174,-72"/>
+<text text-anchor="middle" x="140" y="-60.7" font-family="inherit" font-size="8.50">GObject.Object</text>
+</a>
+</g>
+</g>
+<!-- NM.VpnPluginInfo -->
+<g id="node4" class="node">
+<title>NM.VpnPluginInfo</title>
+<g id="a_node4"><a xlink:href="#NM.VpnPluginInfo" xlink:title="NM.VpnPluginInfo">
+<path fill="none" stroke="#75507b" d="M133.5,-18C133.5,-18 54.5,-18 54.5,-18 51.5,-18 48.5,-15 48.5,-12 48.5,-12 48.5,-6 48.5,-6 48.5,-3 51.5,0 54.5,0 54.5,0 133.5,0 133.5,0 136.5,0 139.5,-3 139.5,-6 139.5,-6 139.5,-12 139.5,-12 139.5,-15 136.5,-18 133.5,-18"/>
+<text text-anchor="middle" x="94" y="-6.7" font-family="inherit" font-size="8.50">NM.VpnPluginInfo</text>
+</a>
+</g>
+</g>
+<!-- GObject.Object&#45;&gt;NM.VpnPluginInfo -->
+<g id="edge2" class="edge">
+<title>GObject.Object&#45;&gt;NM.VpnPluginInfo</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M132.81,-53.88C125.3,-45.38 113.41,-31.94 104.77,-22.18"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="105.91,-20.83 101.29,-18.24 103.29,-23.14 105.91,-20.83"/>
+</g>
+<!-- Gio.Initable&#45;&gt;NM.VpnPluginInfo -->
+<g id="edge3" class="edge">
+<title>Gio.Initable&#45;&gt;NM.VpnPluginInfo</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M56.03,-53.88C63.39,-45.38 75.01,-31.94 83.46,-22.18"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="84.92,-23.17 86.87,-18.24 82.27,-20.88 84.92,-23.17"/>
+</g>
+</g>
+</svg>
+</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Subclasses:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="methods">
+<span id="nm-vpnplugininfo-methods"></span><h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (37)</span></a>,     <a class="reference external" href="../../Gio-2.0/classes/Initable.html#gio-initable-methods" title="(in Gio 2.0 v2.0)"><span class="xref std std-ref">Gio.Initable (2)</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Structs:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/ObjectClass.html#gobject-objectclass-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.ObjectClass (5)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="99%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><em>class</em></td>
+<td><a class="reference internal" href="#NM.VpnPluginInfo.list_add" title="NM.VpnPluginInfo.list_add"><code class="xref py py-func docutils literal notranslate"><span class="pre">list_add</span></code></a> (list, plugin_info)</td>
+</tr>
+<tr class="row-even"><td><em>class</em></td>
+<td><a class="reference internal" href="#NM.VpnPluginInfo.list_find_by_filename" title="NM.VpnPluginInfo.list_find_by_filename"><code class="xref py py-func docutils literal notranslate"><span class="pre">list_find_by_filename</span></code></a> (list, filename)</td>
+</tr>
+<tr class="row-odd"><td><em>class</em></td>
+<td><a class="reference internal" href="#NM.VpnPluginInfo.list_find_by_name" title="NM.VpnPluginInfo.list_find_by_name"><code class="xref py py-func docutils literal notranslate"><span class="pre">list_find_by_name</span></code></a> (list, name)</td>
+</tr>
+<tr class="row-even"><td><em>class</em></td>
+<td><a class="reference internal" href="#NM.VpnPluginInfo.list_find_by_service" title="NM.VpnPluginInfo.list_find_by_service"><code class="xref py py-func docutils literal notranslate"><span class="pre">list_find_by_service</span></code></a> (list, service)</td>
+</tr>
+<tr class="row-odd"><td><em>class</em></td>
+<td><a class="reference internal" href="#NM.VpnPluginInfo.list_find_service_type" title="NM.VpnPluginInfo.list_find_service_type"><code class="xref py py-func docutils literal notranslate"><span class="pre">list_find_service_type</span></code></a> (list, name)</td>
+</tr>
+<tr class="row-even"><td><em>class</em></td>
+<td><a class="reference internal" href="#NM.VpnPluginInfo.list_get_service_types" title="NM.VpnPluginInfo.list_get_service_types"><code class="xref py py-func docutils literal notranslate"><span class="pre">list_get_service_types</span></code></a> (list, only_existing, with_abbreviations)</td>
+</tr>
+<tr class="row-odd"><td><em>class</em></td>
+<td><a class="reference internal" href="#NM.VpnPluginInfo.list_load" title="NM.VpnPluginInfo.list_load"><code class="xref py py-func docutils literal notranslate"><span class="pre">list_load</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td><em>class</em></td>
+<td><a class="reference internal" href="#NM.VpnPluginInfo.list_remove" title="NM.VpnPluginInfo.list_remove"><code class="xref py py-func docutils literal notranslate"><span class="pre">list_remove</span></code></a> (list, plugin_info)</td>
+</tr>
+<tr class="row-odd"><td><em>class</em></td>
+<td><a class="reference internal" href="#NM.VpnPluginInfo.new_from_file" title="NM.VpnPluginInfo.new_from_file"><code class="xref py py-func docutils literal notranslate"><span class="pre">new_from_file</span></code></a> (filename)</td>
+</tr>
+<tr class="row-even"><td><em>class</em></td>
+<td><a class="reference internal" href="#NM.VpnPluginInfo.new_search_file" title="NM.VpnPluginInfo.new_search_file"><code class="xref py py-func docutils literal notranslate"><span class="pre">new_search_file</span></code></a> (name, service)</td>
+</tr>
+<tr class="row-odd"><td><em>class</em></td>
+<td><a class="reference internal" href="#NM.VpnPluginInfo.new_with_data" title="NM.VpnPluginInfo.new_with_data"><code class="xref py py-func docutils literal notranslate"><span class="pre">new_with_data</span></code></a> (filename, keyfile)</td>
+</tr>
+<tr class="row-even"><td><em>class</em></td>
+<td><a class="reference internal" href="#NM.VpnPluginInfo.validate_filename" title="NM.VpnPluginInfo.validate_filename"><code class="xref py py-func docutils literal notranslate"><span class="pre">validate_filename</span></code></a> (filename)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.VpnPluginInfo.get_aliases" title="NM.VpnPluginInfo.get_aliases"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_aliases</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.VpnPluginInfo.get_auth_dialog" title="NM.VpnPluginInfo.get_auth_dialog"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_auth_dialog</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.VpnPluginInfo.get_editor_plugin" title="NM.VpnPluginInfo.get_editor_plugin"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_editor_plugin</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.VpnPluginInfo.get_filename" title="NM.VpnPluginInfo.get_filename"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_filename</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.VpnPluginInfo.get_name" title="NM.VpnPluginInfo.get_name"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_name</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.VpnPluginInfo.get_plugin" title="NM.VpnPluginInfo.get_plugin"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_plugin</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.VpnPluginInfo.get_program" title="NM.VpnPluginInfo.get_program"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_program</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.VpnPluginInfo.get_service" title="NM.VpnPluginInfo.get_service"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_service</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.VpnPluginInfo.load_editor_plugin" title="NM.VpnPluginInfo.load_editor_plugin"><code class="xref py py-func docutils literal notranslate"><span class="pre">load_editor_plugin</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.VpnPluginInfo.lookup_property" title="NM.VpnPluginInfo.lookup_property"><code class="xref py py-func docutils literal notranslate"><span class="pre">lookup_property</span></code></a> (group, key)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.VpnPluginInfo.set_editor_plugin" title="NM.VpnPluginInfo.set_editor_plugin"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_editor_plugin</span></code></a> (plugin)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.VpnPluginInfo.supports_hints" title="NM.VpnPluginInfo.supports_hints"><code class="xref py py-func docutils literal notranslate"><span class="pre">supports_hints</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.VpnPluginInfo.supports_multiple" title="NM.VpnPluginInfo.supports_multiple"><code class="xref py py-func docutils literal notranslate"><span class="pre">supports_multiple</span></code></a> ()</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="virtual-methods">
+<span id="nm-vpnplugininfo-vfuncs"></span><h2>Virtual Methods<a class="headerlink" href="#virtual-methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-vfuncs" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (7)</span></a>,     <a class="reference external" href="../../Gio-2.0/classes/Initable.html#gio-initable-vfuncs" title="(in Gio 2.0 v2.0)"><span class="xref std std-ref">Gio.Initable (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="nm-vpnplugininfo-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="1%" />
+<col width="1%" />
+<col width="97%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Flags</th>
+<th class="head">Short Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="#NM.VpnPluginInfo.props.filename" title="NM.VpnPluginInfo.props.filename"><code class="xref py py-data docutils literal notranslate"><span class="pre">filename</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+<td>r/w/co</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#NM.VpnPluginInfo.props.keyfile" title="NM.VpnPluginInfo.props.keyfile"><code class="xref py py-data docutils literal notranslate"><span class="pre">keyfile</span></code></a></td>
+<td><a class="reference external" href="../../GLib-2.0/classes/KeyFile.html#GLib.KeyFile" title="(in GLib 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GLib.KeyFile</span></code></a></td>
+<td>w/co</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#NM.VpnPluginInfo.props.name" title="NM.VpnPluginInfo.props.name"><code class="xref py py-data docutils literal notranslate"><span class="pre">name</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="signals">
+<span id="nm-vpnplugininfo-signals"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-signals" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fields">
+<span id="nm-vpnplugininfo-fields"></span><h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-fields" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="class-details">
+<h2>Class Details<a class="headerlink" href="#class-details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="NM.VpnPluginInfo">
+<em class="property">class </em><code class="descclassname">NM.</code><code class="descname">VpnPluginInfo</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#NM.VpnPluginInfo" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Bases:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#GObject.Object" title="(in GObject 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GObject.Object</span></code></a>,         <a class="reference external" href="../../Gio-2.0/classes/Initable.html#Gio.Initable" title="(in Gio 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Gio.Initable</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Abstract:</th><td class="field-body">No</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Structure:</th><td class="field-body"><a class="reference internal" href="VpnPluginInfoClass.html#NM.VpnPluginInfoClass" title="NM.VpnPluginInfoClass"><code class="xref py py-class docutils literal notranslate"><span class="pre">NM.VpnPluginInfoClass</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<dl class="classmethod">
+<dt id="NM.VpnPluginInfo.list_add">
+<em class="property">classmethod </em><code class="descname">list_add</code><span class="sig-paren">(</span><em>list</em>, <em>plugin_info</em><span class="sig-paren">)</span><a class="headerlink" href="#NM.VpnPluginInfo.list_add" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>list</strong> ([<a class="reference internal" href="#NM.VpnPluginInfo" title="NM.VpnPluginInfo"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.VpnPluginInfo</span></code></a>]) – list of plugins</li>
+<li><strong>plugin_info</strong> (<a class="reference internal" href="#NM.VpnPluginInfo" title="NM.VpnPluginInfo"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.VpnPluginInfo</span></code></a>) – instance to add</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first"><a class="reference external" href="../../GLib-2.0/classes/Error.html#GLib.Error" title="(in GLib 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLib.Error</span></code></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if the plugin was added to <cite>list</cite>. This will fail
+to add duplicate plugins.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.2.</span></p>
+</div>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="NM.VpnPluginInfo.list_find_by_filename">
+<em class="property">classmethod </em><code class="descname">list_find_by_filename</code><span class="sig-paren">(</span><em>list</em>, <em>filename</em><span class="sig-paren">)</span><a class="headerlink" href="#NM.VpnPluginInfo.list_find_by_filename" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>list</strong> ([<a class="reference internal" href="#NM.VpnPluginInfo" title="NM.VpnPluginInfo"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.VpnPluginInfo</span></code></a>]) – list of plugins</li>
+<li><strong>filename</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – filename to search</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">the first plugin with a matching <cite>filename</cite> (or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>).</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="#NM.VpnPluginInfo" title="NM.VpnPluginInfo"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.VpnPluginInfo</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.2.</span></p>
+</div>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="NM.VpnPluginInfo.list_find_by_name">
+<em class="property">classmethod </em><code class="descname">list_find_by_name</code><span class="sig-paren">(</span><em>list</em>, <em>name</em><span class="sig-paren">)</span><a class="headerlink" href="#NM.VpnPluginInfo.list_find_by_name" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>list</strong> ([<a class="reference internal" href="#NM.VpnPluginInfo" title="NM.VpnPluginInfo"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.VpnPluginInfo</span></code></a>]) – list of plugins</li>
+<li><strong>name</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – name to search</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">the first plugin with a matching <cite>name</cite> (or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>).</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="#NM.VpnPluginInfo" title="NM.VpnPluginInfo"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.VpnPluginInfo</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.2.</span></p>
+</div>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="NM.VpnPluginInfo.list_find_by_service">
+<em class="property">classmethod </em><code class="descname">list_find_by_service</code><span class="sig-paren">(</span><em>list</em>, <em>service</em><span class="sig-paren">)</span><a class="headerlink" href="#NM.VpnPluginInfo.list_find_by_service" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>list</strong> ([<a class="reference internal" href="#NM.VpnPluginInfo" title="NM.VpnPluginInfo"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.VpnPluginInfo</span></code></a>]) – list of plugins</li>
+<li><strong>service</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – service to search. This can be the main service-type
+or one of the provided aliases.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">the first plugin with a matching <cite>service</cite> (or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>).</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="#NM.VpnPluginInfo" title="NM.VpnPluginInfo"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.VpnPluginInfo</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.2.</span></p>
+</div>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="NM.VpnPluginInfo.list_find_service_type">
+<em class="property">classmethod </em><code class="descname">list_find_service_type</code><span class="sig-paren">(</span><em>list</em>, <em>name</em><span class="sig-paren">)</span><a class="headerlink" href="#NM.VpnPluginInfo.list_find_service_type" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>list</strong> ([<a class="reference internal" href="#NM.VpnPluginInfo" title="NM.VpnPluginInfo"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.VpnPluginInfo</span></code></a>]) – a possibly empty <a class="reference external" href="../../GLib-2.0/classes/SList.html#GLib.SList" title="(in GLib 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GLib.SList</span></code></a> of <a class="reference internal" href="#NM.VpnPluginInfo" title="NM.VpnPluginInfo"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.VpnPluginInfo</span></code></a> instances</li>
+<li><strong>name</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – a name to lookup the service-type.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">the resolved service-type or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> on failure.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>A VPN plugin provides one or several service-types, like org.freedesktop.NetworkManager.libreswan
+Certain plugins provide more then one service type, via aliases (org.freedesktop.NetworkManager.openswan).
+This function looks up a service-type (or an alias) based on a name.</p>
+<p>Preferably, the name can be a full service-type/alias of an installed
+plugin. Otherwise, it can be the name of a VPN plugin (in which case, the
+primary, non-aliased service-type is returned). Otherwise, it can be
+one of several well known short-names (which is a hard-coded list of
+types in libnm). On success, this returns a full qualified service-type
+(or an alias). It doesn’t say, that such an plugin is actually available,
+but it could be retrieved via <a class="reference internal" href="#NM.VpnPluginInfo.list_find_by_service" title="NM.VpnPluginInfo.list_find_by_service"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.VpnPluginInfo.list_find_by_service</span></code></a>().</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.4.</span></p>
+</div>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="NM.VpnPluginInfo.list_get_service_types">
+<em class="property">classmethod </em><code class="descname">list_get_service_types</code><span class="sig-paren">(</span><em>list</em>, <em>only_existing</em>, <em>with_abbreviations</em><span class="sig-paren">)</span><a class="headerlink" href="#NM.VpnPluginInfo.list_get_service_types" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>list</strong> ([<a class="reference internal" href="#NM.VpnPluginInfo" title="NM.VpnPluginInfo"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.VpnPluginInfo</span></code></a>]) – a possibly empty <a class="reference external" href="../../GLib-2.0/classes/SList.html#GLib.SList" title="(in GLib 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GLib.SList</span></code></a> of <a class="reference internal" href="#NM.VpnPluginInfo" title="NM.VpnPluginInfo"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.VpnPluginInfo</span></code></a></li>
+<li><strong>only_existing</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a>) – only include results that are actually in <cite>list</cite>.
+Otherwise, the result is extended with a hard-code list or
+well-known plugins</li>
+<li><strong>with_abbreviations</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a>) – if <a class="reference external" href="http://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a>, only full service types are returned.
+Otherwise, this also includes abbreviated names that can be used
+with <a class="reference internal" href="#NM.VpnPluginInfo.list_find_service_type" title="NM.VpnPluginInfo.list_find_service_type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.VpnPluginInfo.list_find_service_type</span></code></a>().</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">a <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> terminated strv list of strings.
+The list itself and the values must be freed with <a class="reference external" href="../../GLib-2.0/functions.html#GLib.strfreev" title="(in GLib 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GLib.strfreev</span></code></a>().</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">[<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>]</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.4.</span></p>
+</div>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="NM.VpnPluginInfo.list_load">
+<em class="property">classmethod </em><code class="descname">list_load</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NM.VpnPluginInfo.list_load" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">list of plugins
+loaded from the default directories rejecting duplicates.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">[<a class="reference internal" href="#NM.VpnPluginInfo" title="NM.VpnPluginInfo"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.VpnPluginInfo</span></code></a>]</td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.2.</span></p>
+</div>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="NM.VpnPluginInfo.list_remove">
+<em class="property">classmethod </em><code class="descname">list_remove</code><span class="sig-paren">(</span><em>list</em>, <em>plugin_info</em><span class="sig-paren">)</span><a class="headerlink" href="#NM.VpnPluginInfo.list_remove" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>list</strong> ([<a class="reference internal" href="#NM.VpnPluginInfo" title="NM.VpnPluginInfo"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.VpnPluginInfo</span></code></a>]) – list of plugins</li>
+<li><strong>plugin_info</strong> (<a class="reference internal" href="#NM.VpnPluginInfo" title="NM.VpnPluginInfo"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.VpnPluginInfo</span></code></a>) – instance</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if <cite>plugin_info</cite> was in <cite>list</cite> and successfully removed.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Remove <cite>plugin_info</cite> from <cite>list</cite>.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.2.</span></p>
+</div>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="NM.VpnPluginInfo.new_from_file">
+<em class="property">classmethod </em><code class="descname">new_from_file</code><span class="sig-paren">(</span><em>filename</em><span class="sig-paren">)</span><a class="headerlink" href="#NM.VpnPluginInfo.new_from_file" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>filename</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – filename to read.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference external" href="../../GLib-2.0/classes/Error.html#GLib.Error" title="(in GLib 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLib.Error</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> if there is any error or a newly created
+<a class="reference internal" href="#NM.VpnPluginInfo" title="NM.VpnPluginInfo"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.VpnPluginInfo</span></code></a> instance.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#NM.VpnPluginInfo" title="NM.VpnPluginInfo"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.VpnPluginInfo</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Read the plugin info from file <cite>filename</cite>. Does not do
+any further verification on the file. You might want to check
+file permissions and ownership of the file.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.2.</span></p>
+</div>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="NM.VpnPluginInfo.new_search_file">
+<em class="property">classmethod </em><code class="descname">new_search_file</code><span class="sig-paren">(</span><em>name</em>, <em>service</em><span class="sig-paren">)</span><a class="headerlink" href="#NM.VpnPluginInfo.new_search_file" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>name</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – the name to search for. Either <cite>name</cite> or <cite>service</cite>
+must be present.</li>
+<li><strong>service</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – the service to search for. Either <cite>name</cite>  or
+<cite>service</cite> must be present.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">a newly created instance of plugin info
+or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> if no matching value was found.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="#NM.VpnPluginInfo" title="NM.VpnPluginInfo"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.VpnPluginInfo</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>This has the same effect as doing a full <a class="reference internal" href="#NM.VpnPluginInfo.list_load" title="NM.VpnPluginInfo.list_load"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.VpnPluginInfo.list_load</span></code></a>()
+followed by a search for the first matching VPN plugin info that has the
+given <cite>name</cite> and/or <cite>service</cite>.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.4.</span></p>
+</div>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="NM.VpnPluginInfo.new_with_data">
+<em class="property">classmethod </em><code class="descname">new_with_data</code><span class="sig-paren">(</span><em>filename</em>, <em>keyfile</em><span class="sig-paren">)</span><a class="headerlink" href="#NM.VpnPluginInfo.new_with_data" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>filename</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – optional filename.</li>
+<li><strong>keyfile</strong> (<a class="reference external" href="../../GLib-2.0/classes/KeyFile.html#GLib.KeyFile" title="(in GLib 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GLib.KeyFile</span></code></a>) – inject data for the plugin info instance.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first"><a class="reference external" href="../../GLib-2.0/classes/Error.html#GLib.Error" title="(in GLib 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLib.Error</span></code></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">new plugin info instance.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="#NM.VpnPluginInfo" title="NM.VpnPluginInfo"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.VpnPluginInfo</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>This constructor does not read any data from file but
+takes instead a <cite>keyfile</cite> argument.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.2.</span></p>
+</div>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="NM.VpnPluginInfo.validate_filename">
+<em class="property">classmethod </em><code class="descname">validate_filename</code><span class="sig-paren">(</span><em>filename</em><span class="sig-paren">)</span><a class="headerlink" href="#NM.VpnPluginInfo.validate_filename" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>filename</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – the filename to check</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Regular name files have a certain pattern. That basically means
+they have the file extension “name”. Check if <cite>filename</cite>
+is valid according to that pattern.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.2.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.VpnPluginInfo.get_aliases">
+<code class="descname">get_aliases</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NM.VpnPluginInfo.get_aliases" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the aliases from the name-file.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">[<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>]</td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.4.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.VpnPluginInfo.get_auth_dialog">
+<code class="descname">get_auth_dialog</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NM.VpnPluginInfo.get_auth_dialog" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the absolute path to the auth-dialog helper or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.4.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.VpnPluginInfo.get_editor_plugin">
+<code class="descname">get_editor_plugin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NM.VpnPluginInfo.get_editor_plugin" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the cached <a class="reference internal" href="VpnEditorPlugin.html#NM.VpnEditorPlugin" title="NM.VpnEditorPlugin"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.VpnEditorPlugin</span></code></a> instance.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="VpnEditorPlugin.html#NM.VpnEditorPlugin" title="NM.VpnEditorPlugin"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.VpnEditorPlugin</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.2.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.VpnPluginInfo.get_filename">
+<code class="descname">get_filename</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NM.VpnPluginInfo.get_filename" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the filename. Can be <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.2.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.VpnPluginInfo.get_name">
+<code class="descname">get_name</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NM.VpnPluginInfo.get_name" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the name. Cannot be <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.2.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.VpnPluginInfo.get_plugin">
+<code class="descname">get_plugin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NM.VpnPluginInfo.get_plugin" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the plugin. Can be <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.2.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.VpnPluginInfo.get_program">
+<code class="descname">get_program</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NM.VpnPluginInfo.get_program" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the program. Can be <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.2.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.VpnPluginInfo.get_service">
+<code class="descname">get_service</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NM.VpnPluginInfo.get_service" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the service. Cannot be <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.4.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.VpnPluginInfo.load_editor_plugin">
+<code class="descname">load_editor_plugin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NM.VpnPluginInfo.load_editor_plugin" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference external" href="../../GLib-2.0/classes/Error.html#GLib.Error" title="(in GLib 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLib.Error</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">loads the plugin and returns the newly created
+instance. The plugin is owned by <cite>self</cite> and can be later retrieved again
+via <a class="reference internal" href="#NM.VpnPluginInfo.get_editor_plugin" title="NM.VpnPluginInfo.get_editor_plugin"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.VpnPluginInfo.get_editor_plugin</span></code></a>(). You can load the
+plugin only once, unless you reset the state via
+<a class="reference internal" href="#NM.VpnPluginInfo.set_editor_plugin" title="NM.VpnPluginInfo.set_editor_plugin"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.VpnPluginInfo.set_editor_plugin</span></code></a>().</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="VpnEditorPlugin.html#NM.VpnEditorPlugin" title="NM.VpnEditorPlugin"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.VpnEditorPlugin</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.2.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.VpnPluginInfo.lookup_property">
+<code class="descname">lookup_property</code><span class="sig-paren">(</span><em>group</em>, <em>key</em><span class="sig-paren">)</span><a class="headerlink" href="#NM.VpnPluginInfo.lookup_property" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>group</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – group name</li>
+<li><strong>key</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – name of the property</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference internal" href="#NM.VpnPluginInfo" title="NM.VpnPluginInfo"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.VpnPluginInfo</span></code></a> is internally a <a class="reference external" href="../../GLib-2.0/classes/KeyFile.html#GLib.KeyFile" title="(in GLib 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GLib.KeyFile</span></code></a>. Returns the matching
+property.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.2.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.VpnPluginInfo.set_editor_plugin">
+<code class="descname">set_editor_plugin</code><span class="sig-paren">(</span><em>plugin</em><span class="sig-paren">)</span><a class="headerlink" href="#NM.VpnPluginInfo.set_editor_plugin" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>plugin</strong> (<a class="reference internal" href="VpnEditorPlugin.html#NM.VpnEditorPlugin" title="NM.VpnEditorPlugin"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.VpnEditorPlugin</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – plugin instance</td>
+</tr>
+</tbody>
+</table>
+<p>Set the internal plugin instance. If <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>, only clear the previous instance.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.2.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.VpnPluginInfo.supports_hints">
+<code class="descname">supports_hints</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NM.VpnPluginInfo.supports_hints" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if the supports hints for secret requests, otherwise <a class="reference external" href="http://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.4.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.VpnPluginInfo.supports_multiple">
+<code class="descname">supports_multiple</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NM.VpnPluginInfo.supports_multiple" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if the service supports multiple instances with different bus names, otherwise <a class="reference external" href="http://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.2.</span></p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="property-details">
+<h2>Property Details<a class="headerlink" href="#property-details" title="Permalink to this headline">¶</a></h2>
+<dl class="data">
+<dt id="NM.VpnPluginInfo.props.filename">
+<code class="descclassname">NM.VpnPluginInfo.props.</code><code class="descname">filename</code><a class="headerlink" href="#NM.VpnPluginInfo.props.filename" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">filename</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.CONSTRUCT_ONLY" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CONSTRUCT_ONLY</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The filename from which the info was loaded.
+Can be <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> if the instance was not loaded from
+a file (i.e. the keyfile instance was passed to the
+constructor).</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.2.</span></p>
+</div>
+</dd></dl>
+
+<dl class="data">
+<dt id="NM.VpnPluginInfo.props.keyfile">
+<code class="descclassname">NM.VpnPluginInfo.props.</code><code class="descname">keyfile</code><a class="headerlink" href="#NM.VpnPluginInfo.props.keyfile" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">keyfile</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="../../GLib-2.0/classes/KeyFile.html#GLib.KeyFile" title="(in GLib 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GLib.KeyFile</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.CONSTRUCT_ONLY" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CONSTRUCT_ONLY</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Initialize the instance with a different keyfile instance.
+When passing a keyfile instance, the constructor will not
+try to read from filename.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.2.</span></p>
+</div>
+</dd></dl>
+
+<dl class="data">
+<dt id="NM.VpnPluginInfo.props.name">
+<code class="descclassname">NM.VpnPluginInfo.props.</code><code class="descname">name</code><a class="headerlink" href="#NM.VpnPluginInfo.props.name" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">name</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The name of the VPN plugin.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.2.</span></p>
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div> 
+
+</body>
+</html>

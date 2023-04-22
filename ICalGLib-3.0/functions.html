@@ -1,0 +1,965 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    Functions -
+    
+    ICalGLib 3.0
+  </title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../_static/graphviz.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../_static/css/pgi.css" type="text/css" />
+  
+
+  
+  <script type="text/javascript">
+
+    function openSidebar(element) {
+        window.location.href = element.href + location.hash;
+        return false;
+    }
+
+    function inIframe() {
+        try {
+            return window.self !== window.top;
+        } catch (e) {
+            return true;
+        }
+    }
+
+    function onLoaded() {
+        if(!inIframe()) {
+            var icons = document.getElementsByClassName('open-sidebar');
+
+            for (var i = 0; i < icons.length; i ++) {
+                icons[i].style.display = 'table-cell';
+            }
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', onLoaded, false);
+
+  </script>
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="ICalGLib 3.0 Python API Docs" href="index.html"/>
+        <link rel="next" title="Callbacks" href="callbacks.html"/>
+        <link rel="prev" title="ICalGLib 3.0 (3.0.9)" href="index.html"/> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+<div class="non-fixed-bar">
+<table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="./../index.html#ICalGLib-3.0/functions.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">ICalGLib 3.0</a> &raquo;</li>
+      
+    <li>Functions</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><i class="fa fa-chevron-up"></i></td>
+
+
+
+<td><a accesskey="p" href="index.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="callbacks.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">Functions</a><ul>
+<li><a class="reference internal" href="#details">Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+<div class="fixed-bar">
+  <table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="./../index.html#ICalGLib-3.0/functions.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">ICalGLib 3.0</a> &raquo;</li>
+      
+    <li>Functions</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><i class="fa fa-chevron-up"></i></td>
+
+
+
+<td><a accesskey="p" href="index.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="callbacks.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">Functions</a><ul>
+<li><a class="reference internal" href="#details">Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+  <div class="wy-grid-for-nav">
+
+    
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="main">
+            
+  <div class="section" id="functions">
+<h1>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h1>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="99%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#ICalGLib.bt" title="ICalGLib.bt"><code class="xref py py-func docutils literal notranslate"><span class="pre">bt</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#ICalGLib.errno_return" title="ICalGLib.errno_return"><code class="xref py py-func docutils literal notranslate"><span class="pre">errno_return</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#ICalGLib.error_clear_errno" title="ICalGLib.error_clear_errno"><code class="xref py py-func docutils literal notranslate"><span class="pre">error_clear_errno</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#ICalGLib.error_crash_here" title="ICalGLib.error_crash_here"><code class="xref py py-func docutils literal notranslate"><span class="pre">error_crash_here</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#ICalGLib.error_get_error_state" title="ICalGLib.error_get_error_state"><code class="xref py py-func docutils literal notranslate"><span class="pre">error_get_error_state</span></code></a> (error)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#ICalGLib.error_perror" title="ICalGLib.error_perror"><code class="xref py py-func docutils literal notranslate"><span class="pre">error_perror</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#ICalGLib.error_restore" title="ICalGLib.error_restore"><code class="xref py py-func docutils literal notranslate"><span class="pre">error_restore</span></code></a> (error, es)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#ICalGLib.error_set_errno" title="ICalGLib.error_set_errno"><code class="xref py py-func docutils literal notranslate"><span class="pre">error_set_errno</span></code></a> (x)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#ICalGLib.error_set_error_state" title="ICalGLib.error_set_error_state"><code class="xref py py-func docutils literal notranslate"><span class="pre">error_set_error_state</span></code></a> (error, state)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#ICalGLib.error_stop_here" title="ICalGLib.error_stop_here"><code class="xref py py-func docutils literal notranslate"><span class="pre">error_stop_here</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#ICalGLib.error_strerror" title="ICalGLib.error_strerror"><code class="xref py py-func docutils literal notranslate"><span class="pre">error_strerror</span></code></a> (e)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#ICalGLib.error_supress" title="ICalGLib.error_supress"><code class="xref py py-func docutils literal notranslate"><span class="pre">error_supress</span></code></a> (error)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#ICalGLib.get_unknown_token_handling_setting" title="ICalGLib.get_unknown_token_handling_setting"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_unknown_token_handling_setting</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#ICalGLib.memory_add_tmp_buffer" title="ICalGLib.memory_add_tmp_buffer"><code class="xref py py-func docutils literal notranslate"><span class="pre">memory_add_tmp_buffer</span></code></a> (buf)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#ICalGLib.memory_append_char" title="ICalGLib.memory_append_char"><code class="xref py py-func docutils literal notranslate"><span class="pre">memory_append_char</span></code></a> (buf, pos, ch)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#ICalGLib.memory_append_string" title="ICalGLib.memory_append_string"><code class="xref py py-func docutils literal notranslate"><span class="pre">memory_append_string</span></code></a> (buf, pos, str)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#ICalGLib.memory_free_buffer" title="ICalGLib.memory_free_buffer"><code class="xref py py-func docutils literal notranslate"><span class="pre">memory_free_buffer</span></code></a> (buf)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#ICalGLib.memory_new_buffer" title="ICalGLib.memory_new_buffer"><code class="xref py py-func docutils literal notranslate"><span class="pre">memory_new_buffer</span></code></a> (size)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#ICalGLib.memory_resize_buffer" title="ICalGLib.memory_resize_buffer"><code class="xref py py-func docutils literal notranslate"><span class="pre">memory_resize_buffer</span></code></a> (buf, size)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#ICalGLib.memory_strdup" title="ICalGLib.memory_strdup"><code class="xref py py-func docutils literal notranslate"><span class="pre">memory_strdup</span></code></a> (s)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#ICalGLib.memory_tmp_buffer" title="ICalGLib.memory_tmp_buffer"><code class="xref py py-func docutils literal notranslate"><span class="pre">memory_tmp_buffer</span></code></a> (size)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#ICalGLib.memory_tmp_copy" title="ICalGLib.memory_tmp_copy"><code class="xref py py-func docutils literal notranslate"><span class="pre">memory_tmp_copy</span></code></a> (str)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#ICalGLib.mime_parse" title="ICalGLib.mime_parse"><code class="xref py py-func docutils literal notranslate"><span class="pre">mime_parse</span></code></a> (func, *user_data)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#ICalGLib.recur_expand_recurrence" title="ICalGLib.recur_expand_recurrence"><code class="xref py py-func docutils literal notranslate"><span class="pre">recur_expand_recurrence</span></code></a> (rule, start, count)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#ICalGLib.request_status_code" title="ICalGLib.request_status_code"><code class="xref py py-func docutils literal notranslate"><span class="pre">request_status_code</span></code></a> (stat)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#ICalGLib.request_status_desc" title="ICalGLib.request_status_desc"><code class="xref py py-func docutils literal notranslate"><span class="pre">request_status_desc</span></code></a> (stat)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#ICalGLib.request_status_from_num" title="ICalGLib.request_status_from_num"><code class="xref py py-func docutils literal notranslate"><span class="pre">request_status_from_num</span></code></a> (major, minor)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#ICalGLib.request_status_major" title="ICalGLib.request_status_major"><code class="xref py py-func docutils literal notranslate"><span class="pre">request_status_major</span></code></a> (stat)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#ICalGLib.request_status_minor" title="ICalGLib.request_status_minor"><code class="xref py py-func docutils literal notranslate"><span class="pre">request_status_minor</span></code></a> (stat)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#ICalGLib.restriction_check" title="ICalGLib.restriction_check"><code class="xref py py-func docutils literal notranslate"><span class="pre">restriction_check</span></code></a> (comp)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#ICalGLib.restriction_compare" title="ICalGLib.restriction_compare"><code class="xref py py-func docutils literal notranslate"><span class="pre">restriction_compare</span></code></a> (restr, count)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#ICalGLib.set_unknown_token_handling_setting" title="ICalGLib.set_unknown_token_handling_setting"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_unknown_token_handling_setting</span></code></a> (newSetting)</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="details">
+<h2>Details<a class="headerlink" href="#details" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="ICalGLib.bt">
+<code class="descclassname">ICalGLib.</code><code class="descname">bt</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ICalGLib.bt" title="Permalink to this definition">¶</a></dt>
+<dd><div class="versionadded">
+<p><span class="versionmodified">New in version 1.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="ICalGLib.errno_return">
+<code class="descclassname">ICalGLib.</code><code class="descname">errno_return</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ICalGLib.errno_return" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Return the error happened</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="enums.html#ICalGLib.ErrorEnum" title="ICalGLib.ErrorEnum"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ICalGLib.ErrorEnum</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns the error stored in the library. If no error, return <a class="reference internal" href="enums.html#ICalGLib.ErrorEnum.NO_ERROR" title="ICalGLib.ErrorEnum.NO_ERROR"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ICalGLib.ErrorEnum.NO_ERROR</span></code></a>.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="ICalGLib.error_clear_errno">
+<code class="descclassname">ICalGLib.</code><code class="descname">error_clear_errno</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ICalGLib.error_clear_errno" title="Permalink to this definition">¶</a></dt>
+<dd><div class="versionadded">
+<p><span class="versionmodified">New in version 1.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="ICalGLib.error_crash_here">
+<code class="descclassname">ICalGLib.</code><code class="descname">error_crash_here</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ICalGLib.error_crash_here" title="Permalink to this definition">¶</a></dt>
+<dd><p>Shout out the errors to the compiler.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="ICalGLib.error_get_error_state">
+<code class="descclassname">ICalGLib.</code><code class="descname">error_get_error_state</code><span class="sig-paren">(</span><em>error</em><span class="sig-paren">)</span><a class="headerlink" href="#ICalGLib.error_get_error_state" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>error</strong> (<a class="reference internal" href="enums.html#ICalGLib.ErrorEnum" title="ICalGLib.ErrorEnum"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ICalGLib.ErrorEnum</span></code></a>) – The error to be checked</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The state of the <cite>error</cite></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="enums.html#ICalGLib.ErrorState" title="ICalGLib.ErrorState"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ICalGLib.ErrorState</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the state of an error.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="ICalGLib.error_perror">
+<code class="descclassname">ICalGLib.</code><code class="descname">error_perror</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ICalGLib.error_perror" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The string representation of the current error</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the <a class="reference internal" href="enums.html#ICalGLib.ErrorEnum" title="ICalGLib.ErrorEnum"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ICalGLib.ErrorEnum</span></code></a> in the string representation. This method called the icalerrorno_return to get
+the current error.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="ICalGLib.error_restore">
+<code class="descclassname">ICalGLib.</code><code class="descname">error_restore</code><span class="sig-paren">(</span><em>error</em>, <em>es</em><span class="sig-paren">)</span><a class="headerlink" href="#ICalGLib.error_restore" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>error</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – The error to be restored</li>
+<li><strong>es</strong> (<a class="reference internal" href="enums.html#ICalGLib.ErrorState" title="ICalGLib.ErrorState"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ICalGLib.ErrorState</span></code></a>) – The error state to be restored</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Restores the error to specified state.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="ICalGLib.error_set_errno">
+<code class="descclassname">ICalGLib.</code><code class="descname">error_set_errno</code><span class="sig-paren">(</span><em>x</em><span class="sig-paren">)</span><a class="headerlink" href="#ICalGLib.error_set_errno" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>x</strong> (<a class="reference internal" href="enums.html#ICalGLib.ErrorEnum" title="ICalGLib.ErrorEnum"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ICalGLib.ErrorEnum</span></code></a>) – The error to be set</td>
+</tr>
+</tbody>
+</table>
+<p>Sets the errno.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="ICalGLib.error_set_error_state">
+<code class="descclassname">ICalGLib.</code><code class="descname">error_set_error_state</code><span class="sig-paren">(</span><em>error</em>, <em>state</em><span class="sig-paren">)</span><a class="headerlink" href="#ICalGLib.error_set_error_state" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>error</strong> (<a class="reference internal" href="enums.html#ICalGLib.ErrorEnum" title="ICalGLib.ErrorEnum"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ICalGLib.ErrorEnum</span></code></a>) – The error enum</li>
+<li><strong>state</strong> (<a class="reference internal" href="enums.html#ICalGLib.ErrorState" title="ICalGLib.ErrorState"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ICalGLib.ErrorState</span></code></a>) – The error state</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Sets the state to the corresponding error in the library.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="ICalGLib.error_stop_here">
+<code class="descclassname">ICalGLib.</code><code class="descname">error_stop_here</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ICalGLib.error_stop_here" title="Permalink to this definition">¶</a></dt>
+<dd><div class="versionadded">
+<p><span class="versionmodified">New in version 1.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="ICalGLib.error_strerror">
+<code class="descclassname">ICalGLib.</code><code class="descname">error_strerror</code><span class="sig-paren">(</span><em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#ICalGLib.error_strerror" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>e</strong> (<a class="reference internal" href="enums.html#ICalGLib.ErrorEnum" title="ICalGLib.ErrorEnum"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ICalGLib.ErrorEnum</span></code></a>) – The <a class="reference internal" href="enums.html#ICalGLib.ErrorEnum" title="ICalGLib.ErrorEnum"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ICalGLib.ErrorEnum</span></code></a> to be translated</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The string representation of <cite>e</cite></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Translates the <a class="reference internal" href="enums.html#ICalGLib.ErrorEnum" title="ICalGLib.ErrorEnum"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ICalGLib.ErrorEnum</span></code></a> to the string representation.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="ICalGLib.error_supress">
+<code class="descclassname">ICalGLib.</code><code class="descname">error_supress</code><span class="sig-paren">(</span><em>error</em><span class="sig-paren">)</span><a class="headerlink" href="#ICalGLib.error_supress" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>error</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – The error to be suppressed</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The error state suppressed</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="enums.html#ICalGLib.ErrorState" title="ICalGLib.ErrorState"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ICalGLib.ErrorState</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Suppresses the error.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="ICalGLib.get_unknown_token_handling_setting">
+<code class="descclassname">ICalGLib.</code><code class="descname">get_unknown_token_handling_setting</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ICalGLib.get_unknown_token_handling_setting" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The setting of <a class="reference internal" href="enums.html#ICalGLib.Unknowntokenhandling" title="ICalGLib.Unknowntokenhandling"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ICalGLib.Unknowntokenhandling</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="enums.html#ICalGLib.Unknowntokenhandling" title="ICalGLib.Unknowntokenhandling"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ICalGLib.Unknowntokenhandling</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the setting of <a class="reference internal" href="enums.html#ICalGLib.Unknowntokenhandling" title="ICalGLib.Unknowntokenhandling"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ICalGLib.Unknowntokenhandling</span></code></a>.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="ICalGLib.memory_add_tmp_buffer">
+<code class="descclassname">ICalGLib.</code><code class="descname">memory_add_tmp_buffer</code><span class="sig-paren">(</span><em>buf</em><span class="sig-paren">)</span><a class="headerlink" href="#ICalGLib.memory_add_tmp_buffer" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>buf</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">object</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – The existing buffer to be added into the ical</td>
+</tr>
+</tbody>
+</table>
+<p>Adds an existing buffer to the buffer ring.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="ICalGLib.memory_append_char">
+<code class="descclassname">ICalGLib.</code><code class="descname">memory_append_char</code><span class="sig-paren">(</span><em>buf</em>, <em>pos</em>, <em>ch</em><span class="sig-paren">)</span><a class="headerlink" href="#ICalGLib.memory_append_char" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>buf</strong> ([<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>]) – The buffer to be appended. It should not be the memory in ical.</li>
+<li><strong>pos</strong> ([<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>]) – The position at which the new string to be appended</li>
+<li><strong>ch</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – The character to be allocated</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">buf:</th><td class="field-body">The buffer to be appended. It should not be the memory in ical.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">pos:</th><td class="field-body">The position at which the new string to be appended</td>
+</tr>
+</tbody>
+</table>
+</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">(<strong>buf</strong>: [<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>], <strong>pos</strong>: [<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>])</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Append the character to the buffer. Only use them on normally allocated memory, or on buffers created
+from icalmemory_new_buffer, never with buffers created by icalmemory_tmp_buffer. If icalmemory_append_string
+has to resize a buffer on the ring, the ring will loose track of it an you will have memory problems.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="ICalGLib.memory_append_string">
+<code class="descclassname">ICalGLib.</code><code class="descname">memory_append_string</code><span class="sig-paren">(</span><em>buf</em>, <em>pos</em>, <em>str</em><span class="sig-paren">)</span><a class="headerlink" href="#ICalGLib.memory_append_string" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>buf</strong> ([<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>]) – The buffer to be appended. It should not be the memory in ical.</li>
+<li><strong>pos</strong> ([<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>]) – The position at which the new string to be appended</li>
+<li><strong>str</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – The string to be allocated</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">buf:</th><td class="field-body">The buffer to be appended. It should not be the memory in ical.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">pos:</th><td class="field-body">The position at which the new string to be appended</td>
+</tr>
+</tbody>
+</table>
+</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">(<strong>buf</strong>: [<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>], <strong>pos</strong>: [<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>])</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Appends the string to the buffer. Only use them on normally allocated memory, or on buffers created from
+icalmemory_new_buffer, never with buffers created by icalmemory_tmp_buffer. If icalmemory_append_string
+has to resize a buffer on the ring, the ring will loose track of it an you will have memory problems.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="ICalGLib.memory_free_buffer">
+<code class="descclassname">ICalGLib.</code><code class="descname">memory_free_buffer</code><span class="sig-paren">(</span><em>buf</em><span class="sig-paren">)</span><a class="headerlink" href="#ICalGLib.memory_free_buffer" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>buf</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">object</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – The buffer to be freed</td>
+</tr>
+</tbody>
+</table>
+<p>Frees the buffer.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="ICalGLib.memory_new_buffer">
+<code class="descclassname">ICalGLib.</code><code class="descname">memory_new_buffer</code><span class="sig-paren">(</span><em>size</em><span class="sig-paren">)</span><a class="headerlink" href="#ICalGLib.memory_new_buffer" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>size</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – The size of the new buffer to be created</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The newly created buffer with the target size.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">object</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Creates a new buffer with target size. The caller should deallocate it when necessary.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="ICalGLib.memory_resize_buffer">
+<code class="descclassname">ICalGLib.</code><code class="descname">memory_resize_buffer</code><span class="sig-paren">(</span><em>buf</em>, <em>size</em><span class="sig-paren">)</span><a class="headerlink" href="#ICalGLib.memory_resize_buffer" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>buf</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">object</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – The buffer needs to be resized</li>
+<li><strong>size</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – The target size the buffer to be resized to</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">The buffer after being resized.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">object</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Resizes the buffer to the target size.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="ICalGLib.memory_strdup">
+<code class="descclassname">ICalGLib.</code><code class="descname">memory_strdup</code><span class="sig-paren">(</span><em>s</em><span class="sig-paren">)</span><a class="headerlink" href="#ICalGLib.memory_strdup" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>s</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – The string to be cloned</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The cloned string.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>A wrapper around strdup. Partly to trap calls to strdup, partly because in -ansi, gcc on Red Hat claims
+that strdup is undeclared.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="ICalGLib.memory_tmp_buffer">
+<code class="descclassname">ICalGLib.</code><code class="descname">memory_tmp_buffer</code><span class="sig-paren">(</span><em>size</em><span class="sig-paren">)</span><a class="headerlink" href="#ICalGLib.memory_tmp_buffer" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>size</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – The size of the buffer to be created</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The newly created buffer</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">object</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Creates a buffer with target size.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="ICalGLib.memory_tmp_copy">
+<code class="descclassname">ICalGLib.</code><code class="descname">memory_tmp_copy</code><span class="sig-paren">(</span><em>str</em><span class="sig-paren">)</span><a class="headerlink" href="#ICalGLib.memory_tmp_copy" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>str</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – The string to be copied</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The new copy of the <cite>str</cite>.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Like strdup, but the buffer is on the ring.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="ICalGLib.mime_parse">
+<code class="descclassname">ICalGLib.</code><code class="descname">mime_parse</code><span class="sig-paren">(</span><em>func</em>, <em>*user_data</em><span class="sig-paren">)</span><a class="headerlink" href="#ICalGLib.mime_parse" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>func</strong> (<a class="reference internal" href="callbacks.html#ICalGLib.MimeParseFunc" title="ICalGLib.MimeParseFunc"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ICalGLib.MimeParseFunc</span></code></a>) – The parsing function</li>
+<li><strong>user_data</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">object</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – The date given to <cite>func</cite></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">The parsed <a class="reference internal" href="classes/Component.html#ICalGLib.Component" title="ICalGLib.Component"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ICalGLib.Component</span></code></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="classes/Component.html#ICalGLib.Component" title="ICalGLib.Component"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ICalGLib.Component</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Parses data to <a class="reference internal" href="classes/Component.html#ICalGLib.Component" title="ICalGLib.Component"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ICalGLib.Component</span></code></a> using the given function.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="ICalGLib.recur_expand_recurrence">
+<code class="descclassname">ICalGLib.</code><code class="descname">recur_expand_recurrence</code><span class="sig-paren">(</span><em>rule</em>, <em>start</em>, <em>count</em><span class="sig-paren">)</span><a class="headerlink" href="#ICalGLib.recur_expand_recurrence" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>rule</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – The rule of the recurrence</li>
+<li><strong>start</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – The start seconds past the POSIX epoch</li>
+<li><strong>count</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – The number of elements to be filled up in the <cite>array</cite></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">If successful, return the array. <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> if failed.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">[<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>]</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Fills an array with the ‘count’ number of occurrences generated by the rrule. Note that the times are
+returned in UTC, but the times are calculated in local time. YOu will have to convert the results back
+into local time before using them.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="ICalGLib.request_status_code">
+<code class="descclassname">ICalGLib.</code><code class="descname">request_status_code</code><span class="sig-paren">(</span><em>stat</em><span class="sig-paren">)</span><a class="headerlink" href="#ICalGLib.request_status_code" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>stat</strong> (<a class="reference internal" href="enums.html#ICalGLib.RequestStatus" title="ICalGLib.RequestStatus"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ICalGLib.RequestStatus</span></code></a>) – The <a class="reference internal" href="enums.html#ICalGLib.RequestStatus" title="ICalGLib.RequestStatus"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ICalGLib.RequestStatus</span></code></a> to be queried</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The code for a request status</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns the code for a request status.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="ICalGLib.request_status_desc">
+<code class="descclassname">ICalGLib.</code><code class="descname">request_status_desc</code><span class="sig-paren">(</span><em>stat</em><span class="sig-paren">)</span><a class="headerlink" href="#ICalGLib.request_status_desc" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>stat</strong> (<a class="reference internal" href="enums.html#ICalGLib.RequestStatus" title="ICalGLib.RequestStatus"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ICalGLib.RequestStatus</span></code></a>) – The <a class="reference internal" href="enums.html#ICalGLib.RequestStatus" title="ICalGLib.RequestStatus"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ICalGLib.RequestStatus</span></code></a> to be translated</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The description of the <cite>stat</cite></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns the descriptive text for a request status.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="ICalGLib.request_status_from_num">
+<code class="descclassname">ICalGLib.</code><code class="descname">request_status_from_num</code><span class="sig-paren">(</span><em>major</em>, <em>minor</em><span class="sig-paren">)</span><a class="headerlink" href="#ICalGLib.request_status_from_num" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>major</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – The major number</li>
+<li><strong>minor</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – The minor number</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">The corresponding <a class="reference internal" href="enums.html#ICalGLib.RequestStatus" title="ICalGLib.RequestStatus"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ICalGLib.RequestStatus</span></code></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="enums.html#ICalGLib.RequestStatus" title="ICalGLib.RequestStatus"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ICalGLib.RequestStatus</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Returns a request status for major/minor status numbers.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="ICalGLib.request_status_major">
+<code class="descclassname">ICalGLib.</code><code class="descname">request_status_major</code><span class="sig-paren">(</span><em>stat</em><span class="sig-paren">)</span><a class="headerlink" href="#ICalGLib.request_status_major" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>stat</strong> (<a class="reference internal" href="enums.html#ICalGLib.RequestStatus" title="ICalGLib.RequestStatus"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ICalGLib.RequestStatus</span></code></a>) – The <a class="reference internal" href="enums.html#ICalGLib.RequestStatus" title="ICalGLib.RequestStatus"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ICalGLib.RequestStatus</span></code></a> to be queried</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The major number for a request status</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns the major number for a request status.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="ICalGLib.request_status_minor">
+<code class="descclassname">ICalGLib.</code><code class="descname">request_status_minor</code><span class="sig-paren">(</span><em>stat</em><span class="sig-paren">)</span><a class="headerlink" href="#ICalGLib.request_status_minor" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>stat</strong> (<a class="reference internal" href="enums.html#ICalGLib.RequestStatus" title="ICalGLib.RequestStatus"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ICalGLib.RequestStatus</span></code></a>) – The <a class="reference internal" href="enums.html#ICalGLib.RequestStatus" title="ICalGLib.RequestStatus"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ICalGLib.RequestStatus</span></code></a> to be queried</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The minor number for a request status</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns the minor number for a request status.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="ICalGLib.restriction_check">
+<code class="descclassname">ICalGLib.</code><code class="descname">restriction_check</code><span class="sig-paren">(</span><em>comp</em><span class="sig-paren">)</span><a class="headerlink" href="#ICalGLib.restriction_check" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>comp</strong> (<a class="reference internal" href="classes/Component.html#ICalGLib.Component" title="ICalGLib.Component"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ICalGLib.Component</span></code></a>) – The component to be checked</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Whether the <cite>comp</cite> is valid.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Checks whether the <a class="reference internal" href="classes/Component.html#ICalGLib.Component" title="ICalGLib.Component"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ICalGLib.Component</span></code></a> is valid.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="ICalGLib.restriction_compare">
+<code class="descclassname">ICalGLib.</code><code class="descname">restriction_compare</code><span class="sig-paren">(</span><em>restr</em>, <em>count</em><span class="sig-paren">)</span><a class="headerlink" href="#ICalGLib.restriction_compare" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>restr</strong> (<a class="reference internal" href="enums.html#ICalGLib.RestrictionKind" title="ICalGLib.RestrictionKind"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ICalGLib.RestrictionKind</span></code></a>) – The restriction kind</li>
+<li><strong>count</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – The number of restrictions</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Whether it is valid or not. -1 indicates invalid or more analysis. 1 indicates pass and 0 or 2+ indicates fail.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Compares the kind of restriction and the count to determine whether it is valid.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="ICalGLib.set_unknown_token_handling_setting">
+<code class="descclassname">ICalGLib.</code><code class="descname">set_unknown_token_handling_setting</code><span class="sig-paren">(</span><em>newSetting</em><span class="sig-paren">)</span><a class="headerlink" href="#ICalGLib.set_unknown_token_handling_setting" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>newSetting</strong> (<a class="reference internal" href="enums.html#ICalGLib.Unknowntokenhandling" title="ICalGLib.Unknowntokenhandling"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ICalGLib.Unknowntokenhandling</span></code></a>) – A <a class="reference internal" href="enums.html#ICalGLib.Unknowntokenhandling" title="ICalGLib.Unknowntokenhandling"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ICalGLib.Unknowntokenhandling</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Sets <a class="reference internal" href="enums.html#ICalGLib.Unknowntokenhandling" title="ICalGLib.Unknowntokenhandling"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ICalGLib.Unknowntokenhandling</span></code></a>.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.0.</span></p>
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div> 
+
+</body>
+</html>

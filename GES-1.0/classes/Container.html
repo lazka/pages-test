@@ -1,0 +1,902 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    GES.Container -
+    
+      Classes -
+    
+    GES 1.0
+  </title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/css/pgi.css" type="text/css" />
+  
+
+  
+  <script type="text/javascript">
+
+    function openSidebar(element) {
+        window.location.href = element.href + location.hash;
+        return false;
+    }
+
+    function inIframe() {
+        try {
+            return window.self !== window.top;
+        } catch (e) {
+            return true;
+        }
+    }
+
+    function onLoaded() {
+        if(!inIframe()) {
+            var icons = document.getElementsByClassName('open-sidebar');
+
+            for (var i = 0; i < icons.length; i ++) {
+                icons[i].style.display = 'table-cell';
+            }
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', onLoaded, false);
+
+  </script>
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="GES 1.0 Python API Docs" href="../index.html"/>
+        <link rel="up" title="Classes" href="../classes.html"/>
+        <link rel="next" title="GES.Effect" href="Effect.html"/>
+        <link rel="prev" title="GES.CommandLineFormatter" href="CommandLineFormatter.html"/> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+<div class="non-fixed-bar">
+<table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#GES-1.0/classes/Container.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">GES 1.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>GES.Container</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="CommandLineFormatter.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="Effect.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">GES.Container</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#signal-details">Signal Details</a></li>
+<li><a class="reference internal" href="#property-details">Property Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+<div class="fixed-bar">
+  <table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#GES-1.0/classes/Container.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">GES 1.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>GES.Container</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="CommandLineFormatter.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="Effect.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">GES.Container</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#signal-details">Signal Details</a></li>
+<li><a class="reference internal" href="#property-details">Property Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+  <div class="wy-grid-for-nav">
+
+    
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="main">
+            
+  <div class="section" id="ges-container">
+<h1>GES.Container<a class="headerlink" href="#ges-container" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<svg width="351pt" height="188pt"
+ viewBox="0.00 0.00 350.50 188.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 184)">
+<title>g</title>
+<!-- GES.Container -->
+<g id="node1" class="node">
+<title>GES.Container</title>
+<g id="a_node1"><a xlink:href="#GES.Container" xlink:title="GES.Container">
+<path fill="none" stroke="#aaaaaa" d="M185.5,-18C185.5,-18 119.5,-18 119.5,-18 116.5,-18 113.5,-15 113.5,-12 113.5,-12 113.5,-6 113.5,-6 113.5,-3 116.5,0 119.5,0 119.5,0 185.5,0 185.5,0 188.5,0 191.5,-3 191.5,-6 191.5,-6 191.5,-12 191.5,-12 191.5,-15 188.5,-18 185.5,-18"/>
+<text text-anchor="middle" x="152.5" y="-6.7" font-family="inherit" font-size="8.50">GES.Container</text>
+</a>
+</g>
+</g>
+<!-- GES.Extractable -->
+<g id="node2" class="node">
+<title>GES.Extractable</title>
+<g id="a_node2"><a xlink:href="Extractable.html#GES.Extractable" xlink:title="GES.Extractable">
+<path fill="none" stroke="#3091d1" d="M79,-126C79,-126 6,-126 6,-126 3,-126 0,-123 0,-120 0,-120 0,-114 0,-114 0,-111 3,-108 6,-108 6,-108 79,-108 79,-108 82,-108 85,-111 85,-114 85,-114 85,-120 85,-120 85,-123 82,-126 79,-126"/>
+<text text-anchor="middle" x="42.5" y="-114.7" font-family="inherit" font-size="8.50">GES.Extractable</text>
+</a>
+</g>
+</g>
+<!-- GES.TimelineElement -->
+<g id="node4" class="node">
+<title>GES.TimelineElement</title>
+<g id="a_node4"><a xlink:href="TimelineElement.html#GES.TimelineElement" xlink:title="GES.TimelineElement">
+<path fill="none" stroke="#aaaaaa" d="M200,-72C200,-72 105,-72 105,-72 102,-72 99,-69 99,-66 99,-66 99,-60 99,-60 99,-57 102,-54 105,-54 105,-54 200,-54 200,-54 203,-54 206,-57 206,-60 206,-60 206,-66 206,-66 206,-69 203,-72 200,-72"/>
+<text text-anchor="middle" x="152.5" y="-60.7" font-family="inherit" font-size="8.50">GES.TimelineElement</text>
+</a>
+</g>
+</g>
+<!-- GES.Extractable&#45;&gt;GES.TimelineElement -->
+<g id="edge1" class="edge">
+<title>GES.Extractable&#45;&gt;GES.TimelineElement</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M59.69,-107.88C78.9,-98.79 110.04,-84.07 130.89,-74.22"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="131.66,-75.79 135.43,-72.07 130.16,-72.62 131.66,-75.79"/>
+</g>
+<!-- GES.MetaContainer -->
+<g id="node3" class="node">
+<title>GES.MetaContainer</title>
+<g id="a_node3"><a xlink:href="MetaContainer.html#GES.MetaContainer" xlink:title="GES.MetaContainer">
+<path fill="none" stroke="#3091d1" d="M196,-126C196,-126 109,-126 109,-126 106,-126 103,-123 103,-120 103,-120 103,-114 103,-114 103,-111 106,-108 109,-108 109,-108 196,-108 196,-108 199,-108 202,-111 202,-114 202,-114 202,-120 202,-120 202,-123 199,-126 196,-126"/>
+<text text-anchor="middle" x="152.5" y="-114.7" font-family="inherit" font-size="8.50">GES.MetaContainer</text>
+</a>
+</g>
+</g>
+<!-- GES.MetaContainer&#45;&gt;GES.TimelineElement -->
+<g id="edge2" class="edge">
+<title>GES.MetaContainer&#45;&gt;GES.TimelineElement</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M152.5,-107.88C152.5,-99.76 152.5,-87.13 152.5,-77.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="154.25,-77.24 152.5,-72.24 150.75,-77.24 154.25,-77.24"/>
+</g>
+<!-- GES.TimelineElement&#45;&gt;GES.Container -->
+<g id="edge3" class="edge">
+<title>GES.TimelineElement&#45;&gt;GES.Container</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M152.5,-53.88C152.5,-45.76 152.5,-33.13 152.5,-23.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="154.25,-23.24 152.5,-18.24 150.75,-23.24 154.25,-23.24"/>
+</g>
+<!-- GObject.GInterface -->
+<g id="node5" class="node">
+<title>GObject.GInterface</title>
+<g id="a_node5"><a xlink:href="../../GObject-2.0/classes/GInterface.html#GObject.GInterface" xlink:title="GObject.GInterface">
+<path fill="none" stroke="#3091d1" d="M140.5,-180C140.5,-180 54.5,-180 54.5,-180 51.5,-180 48.5,-177 48.5,-174 48.5,-174 48.5,-168 48.5,-168 48.5,-165 51.5,-162 54.5,-162 54.5,-162 140.5,-162 140.5,-162 143.5,-162 146.5,-165 146.5,-168 146.5,-168 146.5,-174 146.5,-174 146.5,-177 143.5,-180 140.5,-180"/>
+<text text-anchor="middle" x="97.5" y="-168.7" font-family="inherit" font-size="8.50">GObject.GInterface</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;GES.Extractable -->
+<g id="edge4" class="edge">
+<title>GObject.GInterface&#45;&gt;GES.Extractable</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M88.91,-161.88C79.84,-153.3 65.45,-139.7 55.1,-129.91"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="56.05,-128.4 51.21,-126.24 53.65,-130.95 56.05,-128.4"/>
+</g>
+<!-- GObject.GInterface&#45;&gt;GES.MetaContainer -->
+<g id="edge5" class="edge">
+<title>GObject.GInterface&#45;&gt;GES.MetaContainer</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M106.09,-161.88C115.16,-153.3 129.55,-139.7 139.9,-129.91"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="141.35,-130.95 143.79,-126.24 138.95,-128.4 141.35,-130.95"/>
+</g>
+<!-- GObject.InitiallyUnowned -->
+<g id="node6" class="node">
+<title>GObject.InitiallyUnowned</title>
+<g id="a_node6"><a xlink:href="../../GObject-2.0/classes/InitiallyUnowned.html#GObject.InitiallyUnowned" xlink:title="GObject.InitiallyUnowned">
+<path fill="none" stroke="#75507b" d="M336.5,-126C336.5,-126 226.5,-126 226.5,-126 223.5,-126 220.5,-123 220.5,-120 220.5,-120 220.5,-114 220.5,-114 220.5,-111 223.5,-108 226.5,-108 226.5,-108 336.5,-108 336.5,-108 339.5,-108 342.5,-111 342.5,-114 342.5,-114 342.5,-120 342.5,-120 342.5,-123 339.5,-126 336.5,-126"/>
+<text text-anchor="middle" x="281.5" y="-114.7" font-family="inherit" font-size="8.50">GObject.InitiallyUnowned</text>
+</a>
+</g>
+</g>
+<!-- GObject.InitiallyUnowned&#45;&gt;GES.TimelineElement -->
+<g id="edge6" class="edge">
+<title>GObject.InitiallyUnowned&#45;&gt;GES.TimelineElement</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M261.63,-107.99C238.97,-98.85 201.89,-83.91 177.34,-74.01"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="177.9,-72.35 172.61,-72.11 176.59,-75.6 177.9,-72.35"/>
+</g>
+<!-- GObject.Object -->
+<g id="node7" class="node">
+<title>GObject.Object</title>
+<g id="a_node7"><a xlink:href="../../GObject-2.0/classes/Object.html#GObject.Object" xlink:title="GObject.Object">
+<path fill="none" stroke="#75507b" d="M315.5,-180C315.5,-180 247.5,-180 247.5,-180 244.5,-180 241.5,-177 241.5,-174 241.5,-174 241.5,-168 241.5,-168 241.5,-165 244.5,-162 247.5,-162 247.5,-162 315.5,-162 315.5,-162 318.5,-162 321.5,-165 321.5,-168 321.5,-168 321.5,-174 321.5,-174 321.5,-177 318.5,-180 315.5,-180"/>
+<text text-anchor="middle" x="281.5" y="-168.7" font-family="inherit" font-size="8.50">GObject.Object</text>
+</a>
+</g>
+</g>
+<!-- GObject.Object&#45;&gt;GObject.InitiallyUnowned -->
+<g id="edge7" class="edge">
+<title>GObject.Object&#45;&gt;GObject.InitiallyUnowned</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M281.5,-161.88C281.5,-153.76 281.5,-141.13 281.5,-131.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="283.25,-131.24 281.5,-126.24 279.75,-131.24 283.25,-131.24"/>
+</g>
+</g>
+</svg>
+</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Subclasses:</th><td class="field-body"><a class="reference internal" href="Clip.html#GES.Clip" title="GES.Clip"><code class="xref py py-class docutils literal notranslate"><span class="pre">GES.Clip</span></code></a>, <a class="reference internal" href="Group.html#GES.Group" title="GES.Group"><code class="xref py py-class docutils literal notranslate"><span class="pre">GES.Group</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="methods">
+<span id="ges-container-methods"></span><h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="TimelineElement.html#ges-timelineelement-methods"><span class="std std-ref">GES.TimelineElement (38)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (37)</span></a>,     <a class="reference internal" href="Extractable.html#ges-extractable-methods"><span class="std std-ref">GES.Extractable (3)</span></a>,     <a class="reference internal" href="MetaContainer.html#ges-metacontainer-methods"><span class="std std-ref">GES.MetaContainer (40)</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Structs:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/ObjectClass.html#gobject-objectclass-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.ObjectClass (5)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="99%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><em>class</em></td>
+<td><a class="reference internal" href="#GES.Container.group" title="GES.Container.group"><code class="xref py py-func docutils literal notranslate"><span class="pre">group</span></code></a> (containers)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#GES.Container.add" title="GES.Container.add"><code class="xref py py-func docutils literal notranslate"><span class="pre">add</span></code></a> (child)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#GES.Container.edit" title="GES.Container.edit"><code class="xref py py-func docutils literal notranslate"><span class="pre">edit</span></code></a> (layers, new_layer_priority, mode, edge, position)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#GES.Container.get_children" title="GES.Container.get_children"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_children</span></code></a> (recursive)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#GES.Container.remove" title="GES.Container.remove"><code class="xref py py-func docutils literal notranslate"><span class="pre">remove</span></code></a> (child)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#GES.Container.ungroup" title="GES.Container.ungroup"><code class="xref py py-func docutils literal notranslate"><span class="pre">ungroup</span></code></a> (recursive)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="virtual-methods">
+<span id="ges-container-vfuncs"></span><h2>Virtual Methods<a class="headerlink" href="#virtual-methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="TimelineElement.html#ges-timelineelement-vfuncs"><span class="std std-ref">GES.TimelineElement (18)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-vfuncs" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (7)</span></a>,     <a class="reference internal" href="Extractable.html#ges-extractable-vfuncs"><span class="std std-ref">GES.Extractable (3)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="99%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#GES.Container.do_add_child" title="GES.Container.do_add_child"><code class="xref py py-func docutils literal notranslate"><span class="pre">do_add_child</span></code></a> (element)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#GES.Container.do_child_added" title="GES.Container.do_child_added"><code class="xref py py-func docutils literal notranslate"><span class="pre">do_child_added</span></code></a> (element)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#GES.Container.do_child_removed" title="GES.Container.do_child_removed"><code class="xref py py-func docutils literal notranslate"><span class="pre">do_child_removed</span></code></a> (element)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#GES.Container.do_edit" title="GES.Container.do_edit"><code class="xref py py-func docutils literal notranslate"><span class="pre">do_edit</span></code></a> (layers, new_layer_priority, mode, edge, position)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#GES.Container.do_remove_child" title="GES.Container.do_remove_child"><code class="xref py py-func docutils literal notranslate"><span class="pre">do_remove_child</span></code></a> (element)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#GES.Container.do_ungroup" title="GES.Container.do_ungroup"><code class="xref py py-func docutils literal notranslate"><span class="pre">do_ungroup</span></code></a> (recursive)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="ges-container-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="TimelineElement.html#ges-timelineelement-props"><span class="std std-ref">GES.TimelineElement (9)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="1%" />
+<col width="1%" />
+<col width="97%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Flags</th>
+<th class="head">Short Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="#GES.Container.props.height" title="GES.Container.props.height"><code class="xref py py-data docutils literal notranslate"><span class="pre">height</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+<td>r</td>
+<td>The span of priorities this container occupies</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="signals">
+<span id="ges-container-signals"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="TimelineElement.html#ges-timelineelement-signals"><span class="std std-ref">GES.TimelineElement (3)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-signals" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a>,     <a class="reference internal" href="MetaContainer.html#ges-metacontainer-signals"><span class="std std-ref">GES.MetaContainer (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="30%" />
+<col width="70%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Short Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="#GES.Container.signals.child_added" title="GES.Container.signals.child_added"><code class="xref py py-func docutils literal notranslate"><span class="pre">child-added</span></code></a></td>
+<td>Will be emitted after a child is added to the container.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#GES.Container.signals.child_removed" title="GES.Container.signals.child_removed"><code class="xref py py-func docutils literal notranslate"><span class="pre">child-removed</span></code></a></td>
+<td>Will be emitted after a child is removed from the container.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fields">
+<span id="ges-container-fields"></span><h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="TimelineElement.html#ges-timelineelement-fields"><span class="std std-ref">GES.TimelineElement (3)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-fields" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a>,     <a class="reference internal" href="MetaContainer.html#ges-metacontainer-fields"><span class="std std-ref">GES.MetaContainer (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="16%" />
+<col width="1%" />
+<col width="1%" />
+<col width="82%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Access</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>children</td>
+<td>[<a class="reference internal" href="TimelineElement.html#GES.TimelineElement" title="GES.TimelineElement"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.TimelineElement</span></code></a>]</td>
+<td>r</td>
+<td>The list of <a class="reference internal" href="TimelineElement.html#GES.TimelineElement" title="GES.TimelineElement"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.TimelineElement</span></code></a>-s controlled by this Container</td>
+</tr>
+<tr class="row-odd"><td>children_control_mode</td>
+<td><a class="reference internal" href="../enums.html#GES.ChildrenControlMode" title="GES.ChildrenControlMode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.ChildrenControlMode</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>height</td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+<td>r</td>
+<td>The <a class="reference internal" href="#GES.Container" title="GES.Container"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Container</span></code></a> <a class="reference internal" href="#GES.Container.props.height" title="GES.Container.props.height"><code class="xref py py-data docutils literal notranslate"><span class="pre">:height</span></code></a> of <cite>obj</cite></td>
+</tr>
+<tr class="row-odd"><td>initiated_move</td>
+<td><a class="reference internal" href="TimelineElement.html#GES.TimelineElement" title="GES.TimelineElement"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.TimelineElement</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>parent</td>
+<td><a class="reference internal" href="TimelineElement.html#GES.TimelineElement" title="GES.TimelineElement"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.TimelineElement</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="class-details">
+<h2>Class Details<a class="headerlink" href="#class-details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="GES.Container">
+<em class="property">class </em><code class="descclassname">GES.</code><code class="descname">Container</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#GES.Container" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Bases:</th><td class="field-body"><a class="reference internal" href="TimelineElement.html#GES.TimelineElement" title="GES.TimelineElement"><code class="xref py py-class docutils literal notranslate"><span class="pre">GES.TimelineElement</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Abstract:</th><td class="field-body">Yes</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Structure:</th><td class="field-body"><a class="reference internal" href="ContainerClass.html#GES.ContainerClass" title="GES.ContainerClass"><code class="xref py py-class docutils literal notranslate"><span class="pre">GES.ContainerClass</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>A <a class="reference internal" href="#GES.Container" title="GES.Container"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Container</span></code></a> is a timeline element that controls other
+<a class="reference internal" href="TimelineElement.html#GES.TimelineElement" title="GES.TimelineElement"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.TimelineElement</span></code></a>-s, which are its children. In particular, it is
+responsible for maintaining the relative <a class="reference internal" href="TimelineElement.html#GES.TimelineElement" title="GES.TimelineElement"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.TimelineElement</span></code></a> <a class="reference internal" href="TimelineElement.html#GES.TimelineElement.props.start" title="GES.TimelineElement.props.start"><code class="xref py py-data docutils literal notranslate"><span class="pre">:start</span></code></a> and
+<a class="reference internal" href="TimelineElement.html#GES.TimelineElement" title="GES.TimelineElement"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.TimelineElement</span></code></a> <a class="reference internal" href="TimelineElement.html#GES.TimelineElement.props.duration" title="GES.TimelineElement.props.duration"><code class="xref py py-data docutils literal notranslate"><span class="pre">:duration</span></code></a> times of its children. Therefore, if a
+container is temporally adjusted or moved to a new layer, it may
+accordingly adjust and move its children. Similarly, a change in one of
+its children may prompt the parent to correspondingly change its
+siblings.</p>
+<dl class="classmethod">
+<dt id="GES.Container.group">
+<em class="property">classmethod </em><code class="descname">group</code><span class="sig-paren">(</span><em>containers</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.freedesktop.org/gstreamer/gst-editing-services/blob/1.18.4/ges/ges-container.c#L1008"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#GES.Container.group" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>containers</strong> ([<a class="reference internal" href="#GES.Container" title="GES.Container"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Container</span></code></a>] or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – The <a class="reference internal" href="#GES.Container" title="GES.Container"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Container</span></code></a>-s to group</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The container created by merging
+<cite>containers</cite>, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> if they could not be merged into a single
+container.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#GES.Container" title="GES.Container"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Container</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Groups the containers into a single container by merging them. The
+containers must all belong to the same <a class="reference internal" href="TimelineElement.html#GES.TimelineElement" title="GES.TimelineElement"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.TimelineElement</span></code></a> <a class="reference internal" href="TimelineElement.html#GES.TimelineElement.props.timeline" title="GES.TimelineElement.props.timeline"><code class="xref py py-data docutils literal notranslate"><span class="pre">:timeline</span></code></a>.</p>
+<p>If the elements are all <a class="reference internal" href="Clip.html#GES.Clip" title="GES.Clip"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Clip</span></code></a>-s then this method will attempt to
+combine them all into a single <a class="reference internal" href="Clip.html#GES.Clip" title="GES.Clip"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Clip</span></code></a>. This should succeed if they:
+share the same <a class="reference internal" href="TimelineElement.html#GES.TimelineElement" title="GES.TimelineElement"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.TimelineElement</span></code></a> <a class="reference internal" href="TimelineElement.html#GES.TimelineElement.props.start" title="GES.TimelineElement.props.start"><code class="xref py py-data docutils literal notranslate"><span class="pre">:start</span></code></a>, <a class="reference internal" href="TimelineElement.html#GES.TimelineElement" title="GES.TimelineElement"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.TimelineElement</span></code></a> <a class="reference internal" href="TimelineElement.html#GES.TimelineElement.props.duration" title="GES.TimelineElement.props.duration"><code class="xref py py-data docutils literal notranslate"><span class="pre">:duration</span></code></a>
+and <a class="reference internal" href="TimelineElement.html#GES.TimelineElement" title="GES.TimelineElement"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.TimelineElement</span></code></a> <a class="reference internal" href="TimelineElement.html#GES.TimelineElement.props.in_point" title="GES.TimelineElement.props.in_point"><code class="xref py py-data docutils literal notranslate"><span class="pre">:in-point</span></code></a>; exist in the same layer; and all of
+the sources share the same <a class="reference internal" href="Asset.html#GES.Asset" title="GES.Asset"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Asset</span></code></a>. If this fails, or one of the
+elements is not a <a class="reference internal" href="Clip.html#GES.Clip" title="GES.Clip"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Clip</span></code></a>, this method will try to create a <a class="reference internal" href="Group.html#GES.Group" title="GES.Group"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Group</span></code></a>
+instead.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GES.Container.add">
+<code class="descname">add</code><span class="sig-paren">(</span><em>child</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.freedesktop.org/gstreamer/gst-editing-services/blob/1.18.4/ges/ges-container.c#L725"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#GES.Container.add" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>child</strong> (<a class="reference internal" href="TimelineElement.html#GES.TimelineElement" title="GES.TimelineElement"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.TimelineElement</span></code></a>) – The element to add as a child</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if <cite>child</cite> was successfully added to <cite>self</cite>.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Adds a timeline element to the container. The element will now be a
+child of the container (and the container will be the
+<a class="reference internal" href="TimelineElement.html#GES.TimelineElement" title="GES.TimelineElement"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.TimelineElement</span></code></a> <a class="reference internal" href="TimelineElement.html#GES.TimelineElement.props.parent" title="GES.TimelineElement.props.parent"><code class="xref py py-data docutils literal notranslate"><span class="pre">:parent</span></code></a> of the added element), which means that it
+is now controlled by the container. This may change the properties of
+the child or the container, depending on the subclass.</p>
+<p>Additionally, the children properties of the newly added element will
+be shared with the container, meaning they can also be read and set
+using <a class="reference internal" href="TimelineElement.html#GES.TimelineElement.get_child_property" title="GES.TimelineElement.get_child_property"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.TimelineElement.get_child_property</span></code></a>() and
+<a class="reference internal" href="TimelineElement.html#GES.TimelineElement.set_child_property" title="GES.TimelineElement.set_child_property"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.TimelineElement.set_child_property</span></code></a>() on the container.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GES.Container.edit">
+<code class="descname">edit</code><span class="sig-paren">(</span><em>layers</em>, <em>new_layer_priority</em>, <em>mode</em>, <em>edge</em>, <em>position</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.freedesktop.org/gstreamer/gst-editing-services/blob/1.18.4/ges/ges-container.c#L1083"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#GES.Container.edit" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>layers</strong> ([<a class="reference internal" href="Layer.html#GES.Layer" title="GES.Layer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Layer</span></code></a>] or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – A whitelist of layers
+where the edit can be performed, <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> allows all layers in the
+timeline</li>
+<li><strong>new_layer_priority</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – The priority/index of the layer <cite>self</cite> should
+be moved to. -1 means no move</li>
+<li><strong>mode</strong> (<a class="reference internal" href="../enums.html#GES.EditMode" title="GES.EditMode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.EditMode</span></code></a>) – The edit mode</li>
+<li><strong>edge</strong> (<a class="reference internal" href="../enums.html#GES.Edge" title="GES.Edge"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Edge</span></code></a>) – The edge of <cite>self</cite> where the edit should occur</li>
+<li><strong>position</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – The edit position: a new location for the edge of <cite>self</cite>
+(in nanoseconds)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if the edit of <cite>self</cite> completed, <a class="reference external" href="http://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a> on failure.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Edits the container within its timeline.</p>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 1.18: </span>use <a class="reference internal" href="TimelineElement.html#GES.TimelineElement.edit" title="GES.TimelineElement.edit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.TimelineElement.edit</span></code></a> instead.</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="GES.Container.get_children">
+<code class="descname">get_children</code><span class="sig-paren">(</span><em>recursive</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.freedesktop.org/gstreamer/gst-editing-services/blob/1.18.4/ges/ges-container.c#L934"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#GES.Container.get_children" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>recursive</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a>) – Whether to recursively get children in <cite>self</cite></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The list of
+<a class="reference internal" href="TimelineElement.html#GES.TimelineElement" title="GES.TimelineElement"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.TimelineElement</span></code></a>-s contained in <cite>self</cite>.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">[<a class="reference internal" href="TimelineElement.html#GES.TimelineElement" title="GES.TimelineElement"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.TimelineElement</span></code></a>]</td>
+</tr>
+</tbody>
+</table>
+<p>Get the list of timeline elements contained in the container. If
+<cite>recursive</cite> is <a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a>, and the container contains other containers as
+children, then their children will be added to the list, in addition to
+themselves, and so on.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GES.Container.remove">
+<code class="descname">remove</code><span class="sig-paren">(</span><em>child</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.freedesktop.org/gstreamer/gst-editing-services/blob/1.18.4/ges/ges-container.c#L829"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#GES.Container.remove" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>child</strong> (<a class="reference internal" href="TimelineElement.html#GES.TimelineElement" title="GES.TimelineElement"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.TimelineElement</span></code></a>) – The child to remove</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if <cite>child</cite> was successfully removed from <cite>self</cite>.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Removes a timeline element from the container. The element will no
+longer be controlled by the container.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GES.Container.ungroup">
+<code class="descname">ungroup</code><span class="sig-paren">(</span><em>recursive</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.freedesktop.org/gstreamer/gst-editing-services/blob/1.18.4/ges/ges-container.c#L969"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#GES.Container.ungroup" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>recursive</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a>) – Whether to recursively ungroup <cite>self</cite></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The list of
+new <a class="reference internal" href="#GES.Container" title="GES.Container"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Container</span></code></a>-s created from the splitting of <cite>self</cite>.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">[<a class="reference internal" href="#GES.Container" title="GES.Container"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Container</span></code></a>]</td>
+</tr>
+</tbody>
+</table>
+<p>Ungroups the container by splitting it into several containers
+containing various children of the original. The rules for how the
+container splits depends on the subclass. A <a class="reference internal" href="Group.html#GES.Group" title="GES.Group"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Group</span></code></a> will simply split
+into its children. A <a class="reference internal" href="Clip.html#GES.Clip" title="GES.Clip"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Clip</span></code></a> will split into one <a class="reference internal" href="Clip.html#GES.Clip" title="GES.Clip"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Clip</span></code></a> per
+<a class="reference internal" href="../flags.html#GES.TrackType" title="GES.TrackType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.TrackType</span></code></a> it overlaps with (so an audio-video clip will split into
+an audio clip and a video clip), where each clip contains all the
+<a class="reference internal" href="TrackElement.html#GES.TrackElement" title="GES.TrackElement"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.TrackElement</span></code></a>-s from the original clip with a matching
+<a class="reference internal" href="TrackElement.html#GES.TrackElement" title="GES.TrackElement"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.TrackElement</span></code></a> <a class="reference internal" href="TrackElement.html#GES.TrackElement.props.track_type" title="GES.TrackElement.props.track_type"><code class="xref py py-data docutils literal notranslate"><span class="pre">:track-type</span></code></a>.</p>
+<p>If <cite>recursive</cite> is <a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a>, and the container contains other containers as
+children, then they will also be ungrouped, and so on.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GES.Container.do_add_child">
+<code class="descname">do_add_child</code><span class="sig-paren">(</span><em>element</em><span class="sig-paren">)</span><em class="property"> virtual</em><a class="headerlink" href="#GES.Container.do_add_child" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>element</strong> (<a class="reference internal" href="TimelineElement.html#GES.TimelineElement" title="GES.TimelineElement"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.TimelineElement</span></code></a>) – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="GES.Container.do_child_added">
+<code class="descname">do_child_added</code><span class="sig-paren">(</span><em>element</em><span class="sig-paren">)</span><em class="property"> virtual</em><a class="headerlink" href="#GES.Container.do_child_added" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>element</strong> (<a class="reference internal" href="TimelineElement.html#GES.TimelineElement" title="GES.TimelineElement"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.TimelineElement</span></code></a>) – </td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="GES.Container.do_child_removed">
+<code class="descname">do_child_removed</code><span class="sig-paren">(</span><em>element</em><span class="sig-paren">)</span><em class="property"> virtual</em><a class="headerlink" href="#GES.Container.do_child_removed" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>element</strong> (<a class="reference internal" href="TimelineElement.html#GES.TimelineElement" title="GES.TimelineElement"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.TimelineElement</span></code></a>) – </td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="GES.Container.do_edit">
+<code class="descname">do_edit</code><span class="sig-paren">(</span><em>layers</em>, <em>new_layer_priority</em>, <em>mode</em>, <em>edge</em>, <em>position</em><span class="sig-paren">)</span><em class="property"> virtual</em><a class="headerlink" href="#GES.Container.do_edit" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>layers</strong> ([<a class="reference internal" href="Layer.html#GES.Layer" title="GES.Layer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Layer</span></code></a>] or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – A whitelist of layers
+where the edit can be performed, <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> allows all layers in the
+timeline</li>
+<li><strong>new_layer_priority</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – The priority/index of the layer <cite>container</cite> should
+be moved to. -1 means no move</li>
+<li><strong>mode</strong> (<a class="reference internal" href="../enums.html#GES.EditMode" title="GES.EditMode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.EditMode</span></code></a>) – The edit mode</li>
+<li><strong>edge</strong> (<a class="reference internal" href="../enums.html#GES.Edge" title="GES.Edge"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Edge</span></code></a>) – The edge of <cite>container</cite> where the edit should occur</li>
+<li><strong>position</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – The edit position: a new location for the edge of <cite>container</cite>
+(in nanoseconds)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if the edit of <cite>container</cite> completed, <a class="reference external" href="http://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a> on failure.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Edits the container within its timeline.</p>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 1.18: </span>use <a class="reference internal" href="TimelineElement.html#GES.TimelineElement.edit" title="GES.TimelineElement.edit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.TimelineElement.edit</span></code></a> instead.</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="GES.Container.do_remove_child">
+<code class="descname">do_remove_child</code><span class="sig-paren">(</span><em>element</em><span class="sig-paren">)</span><em class="property"> virtual</em><a class="headerlink" href="#GES.Container.do_remove_child" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>element</strong> (<a class="reference internal" href="TimelineElement.html#GES.TimelineElement" title="GES.TimelineElement"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.TimelineElement</span></code></a>) – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="GES.Container.do_ungroup">
+<code class="descname">do_ungroup</code><span class="sig-paren">(</span><em>recursive</em><span class="sig-paren">)</span><em class="property"> virtual</em><a class="headerlink" href="#GES.Container.do_ungroup" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>recursive</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a>) – Whether to recursively ungroup <cite>container</cite></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The list of
+new <a class="reference internal" href="#GES.Container" title="GES.Container"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Container</span></code></a>-s created from the splitting of <cite>container</cite>.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">[<a class="reference internal" href="#GES.Container" title="GES.Container"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Container</span></code></a>]</td>
+</tr>
+</tbody>
+</table>
+<p>Ungroups the container by splitting it into several containers
+containing various children of the original. The rules for how the
+container splits depends on the subclass. A <a class="reference internal" href="Group.html#GES.Group" title="GES.Group"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Group</span></code></a> will simply split
+into its children. A <a class="reference internal" href="Clip.html#GES.Clip" title="GES.Clip"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Clip</span></code></a> will split into one <a class="reference internal" href="Clip.html#GES.Clip" title="GES.Clip"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Clip</span></code></a> per
+<a class="reference internal" href="../flags.html#GES.TrackType" title="GES.TrackType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.TrackType</span></code></a> it overlaps with (so an audio-video clip will split into
+an audio clip and a video clip), where each clip contains all the
+<a class="reference internal" href="TrackElement.html#GES.TrackElement" title="GES.TrackElement"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.TrackElement</span></code></a>-s from the original clip with a matching
+<a class="reference internal" href="TrackElement.html#GES.TrackElement" title="GES.TrackElement"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.TrackElement</span></code></a> <a class="reference internal" href="TrackElement.html#GES.TrackElement.props.track_type" title="GES.TrackElement.props.track_type"><code class="xref py py-data docutils literal notranslate"><span class="pre">:track-type</span></code></a>.</p>
+<p>If <cite>recursive</cite> is <a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a>, and the container contains other containers as
+children, then they will also be ungrouped, and so on.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="signal-details">
+<h2>Signal Details<a class="headerlink" href="#signal-details" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="GES.Container.signals.child_added">
+<code class="descclassname">GES.Container.signals.</code><code class="descname">child_added</code><span class="sig-paren">(</span><em>container</em>, <em>element</em><span class="sig-paren">)</span><a class="headerlink" href="#GES.Container.signals.child_added" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Signal Name:</th><td class="field-body"><p class="first"><code class="docutils literal notranslate"><span class="pre">child-added</span></code></p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><p class="first"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.SignalFlags.RUN_FIRST" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RUN_FIRST</span></code></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>container</strong> (<a class="reference internal" href="#GES.Container" title="GES.Container"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Container</span></code></a>) – The object which received the signal</li>
+<li><strong>element</strong> (<a class="reference internal" href="TimelineElement.html#GES.TimelineElement" title="GES.TimelineElement"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.TimelineElement</span></code></a>) – The child that was added</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Will be emitted after a child is added to the container. Usually,
+you should connect with g_signal_connect_after() since the signal
+may be stopped internally.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="GES.Container.signals.child_removed">
+<code class="descclassname">GES.Container.signals.</code><code class="descname">child_removed</code><span class="sig-paren">(</span><em>container</em>, <em>element</em><span class="sig-paren">)</span><a class="headerlink" href="#GES.Container.signals.child_removed" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Signal Name:</th><td class="field-body"><p class="first"><code class="docutils literal notranslate"><span class="pre">child-removed</span></code></p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><p class="first"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.SignalFlags.RUN_LAST" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RUN_LAST</span></code></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>container</strong> (<a class="reference internal" href="#GES.Container" title="GES.Container"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Container</span></code></a>) – The object which received the signal</li>
+<li><strong>element</strong> (<a class="reference internal" href="TimelineElement.html#GES.TimelineElement" title="GES.TimelineElement"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.TimelineElement</span></code></a>) – The child that was removed</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Will be emitted after a child is removed from the container.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="property-details">
+<h2>Property Details<a class="headerlink" href="#property-details" title="Permalink to this headline">¶</a></h2>
+<dl class="data">
+<dt id="GES.Container.props.height">
+<code class="descclassname">GES.Container.props.</code><code class="descname">height</code><a class="headerlink" href="#GES.Container.props.height" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">height</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">1</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The span of the container’s children’s <a class="reference internal" href="TimelineElement.html#GES.TimelineElement" title="GES.TimelineElement"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.TimelineElement</span></code></a> <a class="reference internal" href="TimelineElement.html#GES.TimelineElement.props.priority" title="GES.TimelineElement.props.priority"><code class="xref py py-data docutils literal notranslate"><span class="pre">:priority</span></code></a>
+values, which is the number of integers that lie between (inclusive)
+the minimum and maximum priorities found amongst the container’s
+children (maximum - minimum + 1).</p>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div> 
+
+</body>
+</html>

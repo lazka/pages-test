@@ -1,0 +1,821 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    Gtk.MenuToolButton -
+    
+      Classes -
+    
+    Gtk 3.0
+  </title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/css/pgi.css" type="text/css" />
+  
+
+  
+  <script type="text/javascript">
+
+    function openSidebar(element) {
+        window.location.href = element.href + location.hash;
+        return false;
+    }
+
+    function inIframe() {
+        try {
+            return window.self !== window.top;
+        } catch (e) {
+            return true;
+        }
+    }
+
+    function onLoaded() {
+        if(!inIframe()) {
+            var icons = document.getElementsByClassName('open-sidebar');
+
+            for (var i = 0; i < icons.length; i ++) {
+                icons[i].style.display = 'table-cell';
+            }
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', onLoaded, false);
+
+  </script>
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="Gtk 3.0 Python API Docs" href="../index.html"/>
+        <link rel="up" title="Classes" href="../classes.html"/>
+        <link rel="next" title="Gtk.MessageDialog" href="MessageDialog.html"/>
+        <link rel="prev" title="Gtk.MenuShellAccessible" href="MenuShellAccessible.html"/> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+<div class="non-fixed-bar">
+<table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#Gtk-3.0/classes/MenuToolButton.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Gtk 3.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>Gtk.MenuToolButton</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="MenuShellAccessible.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="MessageDialog.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">Gtk.MenuToolButton</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#style-properties">Style Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#signal-details">Signal Details</a></li>
+<li><a class="reference internal" href="#property-details">Property Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+<div class="fixed-bar">
+  <table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#Gtk-3.0/classes/MenuToolButton.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Gtk 3.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>Gtk.MenuToolButton</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="MenuShellAccessible.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="MessageDialog.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">Gtk.MenuToolButton</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#style-properties">Style Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#signal-details">Signal Details</a></li>
+<li><a class="reference internal" href="#property-details">Property Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+  <div class="wy-grid-for-nav">
+
+    
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="main">
+            
+  <div class="section" id="gtk-menutoolbutton">
+<h1>Gtk.MenuToolButton<a class="headerlink" href="#gtk-menutoolbutton" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<svg width="484pt" height="404pt"
+ viewBox="0.00 0.00 483.50 404.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 400)">
+<title>g</title>
+<!-- Atk.ImplementorIface -->
+<g id="node1" class="node">
+<title>Atk.ImplementorIface</title>
+<g id="a_node1"><a xlink:href="../../Atk-1.0/classes/ImplementorIface.html#Atk.ImplementorIface" xlink:title="Atk.ImplementorIface">
+<path fill="none" stroke="#3091d1" d="M329.5,-342C329.5,-342 233.5,-342 233.5,-342 230.5,-342 227.5,-339 227.5,-336 227.5,-336 227.5,-330 227.5,-330 227.5,-327 230.5,-324 233.5,-324 233.5,-324 329.5,-324 329.5,-324 332.5,-324 335.5,-327 335.5,-330 335.5,-330 335.5,-336 335.5,-336 335.5,-339 332.5,-342 329.5,-342"/>
+<text text-anchor="middle" x="281.5" y="-330.7" font-family="inherit" font-size="8.50">Atk.ImplementorIface</text>
+</a>
+</g>
+</g>
+<!-- Gtk.Widget -->
+<g id="node13" class="node">
+<title>Gtk.Widget</title>
+<g id="a_node13"><a xlink:href="Widget.html#Gtk.Widget" xlink:title="Gtk.Widget">
+<path fill="none" stroke="#aaaaaa" d="M288.5,-288C288.5,-288 236.5,-288 236.5,-288 233.5,-288 230.5,-285 230.5,-282 230.5,-282 230.5,-276 230.5,-276 230.5,-273 233.5,-270 236.5,-270 236.5,-270 288.5,-270 288.5,-270 291.5,-270 294.5,-273 294.5,-276 294.5,-276 294.5,-282 294.5,-282 294.5,-285 291.5,-288 288.5,-288"/>
+<text text-anchor="middle" x="262.5" y="-276.7" font-family="inherit" font-size="8.50">Gtk.Widget</text>
+</a>
+</g>
+</g>
+<!-- Atk.ImplementorIface&#45;&gt;Gtk.Widget -->
+<g id="edge1" class="edge">
+<title>Atk.ImplementorIface&#45;&gt;Gtk.Widget</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M278.53,-323.88C275.51,-315.6 270.78,-302.66 267.24,-292.97"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="268.87,-292.34 265.51,-288.24 265.58,-293.54 268.87,-292.34"/>
+</g>
+<!-- GObject.GInterface -->
+<g id="node2" class="node">
+<title>GObject.GInterface</title>
+<g id="a_node2"><a xlink:href="../../GObject-2.0/classes/GInterface.html#GObject.GInterface" xlink:title="GObject.GInterface">
+<path fill="none" stroke="#3091d1" d="M183.5,-396C183.5,-396 97.5,-396 97.5,-396 94.5,-396 91.5,-393 91.5,-390 91.5,-390 91.5,-384 91.5,-384 91.5,-381 94.5,-378 97.5,-378 97.5,-378 183.5,-378 183.5,-378 186.5,-378 189.5,-381 189.5,-384 189.5,-384 189.5,-390 189.5,-390 189.5,-393 186.5,-396 183.5,-396"/>
+<text text-anchor="middle" x="140.5" y="-384.7" font-family="inherit" font-size="8.50">GObject.GInterface</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Atk.ImplementorIface -->
+<g id="edge2" class="edge">
+<title>GObject.GInterface&#45;&gt;Atk.ImplementorIface</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M162.22,-377.99C187.09,-368.82 227.85,-353.79 254.68,-343.89"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="255.44,-345.48 259.52,-342.11 254.22,-342.19 255.44,-345.48"/>
+</g>
+<!-- Gtk.Actionable -->
+<g id="node5" class="node">
+<title>Gtk.Actionable</title>
+<g id="a_node5"><a xlink:href="Actionable.html#Gtk.Actionable" xlink:title="Gtk.Actionable">
+<path fill="none" stroke="#3091d1" d="M73,-288C73,-288 6,-288 6,-288 3,-288 0,-285 0,-282 0,-282 0,-276 0,-276 0,-273 3,-270 6,-270 6,-270 73,-270 73,-270 76,-270 79,-273 79,-276 79,-276 79,-282 79,-282 79,-285 76,-288 73,-288"/>
+<text text-anchor="middle" x="39.5" y="-276.7" font-family="inherit" font-size="8.50">Gtk.Actionable</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Gtk.Actionable -->
+<g id="edge5" class="edge">
+<title>GObject.GInterface&#45;&gt;Gtk.Actionable</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M131.23,-377.83C121.55,-369.19 106.07,-355.03 93.5,-342 77.47,-325.39 60.15,-305.02 49.56,-292.27"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="50.77,-291 46.24,-288.26 48.07,-293.23 50.77,-291"/>
+</g>
+<!-- Gtk.Activatable -->
+<g id="node6" class="node">
+<title>Gtk.Activatable</title>
+<g id="a_node6"><a xlink:href="Activatable.html#Gtk.Activatable" xlink:title="Gtk.Activatable">
+<path fill="none" stroke="#3091d1" d="M143.5,-234C143.5,-234 73.5,-234 73.5,-234 70.5,-234 67.5,-231 67.5,-228 67.5,-228 67.5,-222 67.5,-222 67.5,-219 70.5,-216 73.5,-216 73.5,-216 143.5,-216 143.5,-216 146.5,-216 149.5,-219 149.5,-222 149.5,-222 149.5,-228 149.5,-228 149.5,-231 146.5,-234 143.5,-234"/>
+<text text-anchor="middle" x="108.5" y="-222.7" font-family="inherit" font-size="8.50">Gtk.Activatable</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Gtk.Activatable -->
+<g id="edge4" class="edge">
+<title>GObject.GInterface&#45;&gt;Gtk.Activatable</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M137.54,-377.99C134.41,-369.26 129.51,-354.8 126.5,-342 117.85,-305.24 112.29,-260.92 109.88,-239.25"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="111.62,-239.02 109.34,-234.24 108.14,-239.4 111.62,-239.02"/>
+</g>
+<!-- Gtk.Buildable -->
+<g id="node8" class="node">
+<title>Gtk.Buildable</title>
+<g id="a_node8"><a xlink:href="Buildable.html#Gtk.Buildable" xlink:title="Gtk.Buildable">
+<path fill="none" stroke="#3091d1" d="M203.5,-342C203.5,-342 141.5,-342 141.5,-342 138.5,-342 135.5,-339 135.5,-336 135.5,-336 135.5,-330 135.5,-330 135.5,-327 138.5,-324 141.5,-324 141.5,-324 203.5,-324 203.5,-324 206.5,-324 209.5,-327 209.5,-330 209.5,-330 209.5,-336 209.5,-336 209.5,-339 206.5,-342 203.5,-342"/>
+<text text-anchor="middle" x="172.5" y="-330.7" font-family="inherit" font-size="8.50">Gtk.Buildable</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Gtk.Buildable -->
+<g id="edge3" class="edge">
+<title>GObject.GInterface&#45;&gt;Gtk.Buildable</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M145.5,-377.88C150.64,-369.53 158.7,-356.42 164.68,-346.7"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="166.3,-347.42 167.43,-342.24 163.32,-345.58 166.3,-347.42"/>
+</g>
+<!-- GObject.InitiallyUnowned -->
+<g id="node3" class="node">
+<title>GObject.InitiallyUnowned</title>
+<g id="a_node3"><a xlink:href="../../GObject-2.0/classes/InitiallyUnowned.html#GObject.InitiallyUnowned" xlink:title="GObject.InitiallyUnowned">
+<path fill="none" stroke="#75507b" d="M469.5,-342C469.5,-342 359.5,-342 359.5,-342 356.5,-342 353.5,-339 353.5,-336 353.5,-336 353.5,-330 353.5,-330 353.5,-327 356.5,-324 359.5,-324 359.5,-324 469.5,-324 469.5,-324 472.5,-324 475.5,-327 475.5,-330 475.5,-330 475.5,-336 475.5,-336 475.5,-339 472.5,-342 469.5,-342"/>
+<text text-anchor="middle" x="414.5" y="-330.7" font-family="inherit" font-size="8.50">GObject.InitiallyUnowned</text>
+</a>
+</g>
+</g>
+<!-- GObject.InitiallyUnowned&#45;&gt;Gtk.Widget -->
+<g id="edge6" class="edge">
+<title>GObject.InitiallyUnowned&#45;&gt;Gtk.Widget</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M391.08,-323.99C364.08,-314.75 319.71,-299.57 290.8,-289.68"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="291.24,-287.98 285.94,-288.02 290.11,-291.29 291.24,-287.98"/>
+</g>
+<!-- GObject.Object -->
+<g id="node4" class="node">
+<title>GObject.Object</title>
+<g id="a_node4"><a xlink:href="../../GObject-2.0/classes/Object.html#GObject.Object" xlink:title="GObject.Object">
+<path fill="none" stroke="#75507b" d="M448.5,-396C448.5,-396 380.5,-396 380.5,-396 377.5,-396 374.5,-393 374.5,-390 374.5,-390 374.5,-384 374.5,-384 374.5,-381 377.5,-378 380.5,-378 380.5,-378 448.5,-378 448.5,-378 451.5,-378 454.5,-381 454.5,-384 454.5,-384 454.5,-390 454.5,-390 454.5,-393 451.5,-396 448.5,-396"/>
+<text text-anchor="middle" x="414.5" y="-384.7" font-family="inherit" font-size="8.50">GObject.Object</text>
+</a>
+</g>
+</g>
+<!-- GObject.Object&#45;&gt;GObject.InitiallyUnowned -->
+<g id="edge7" class="edge">
+<title>GObject.Object&#45;&gt;GObject.InitiallyUnowned</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M414.5,-377.88C414.5,-369.76 414.5,-357.13 414.5,-347.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="416.25,-347.24 414.5,-342.24 412.75,-347.24 416.25,-347.24"/>
+</g>
+<!-- Gtk.ToolButton -->
+<g id="node11" class="node">
+<title>Gtk.ToolButton</title>
+<g id="a_node11"><a xlink:href="ToolButton.html#Gtk.ToolButton" xlink:title="Gtk.ToolButton">
+<path fill="none" stroke="#75507b" d="M107,-72C107,-72 40,-72 40,-72 37,-72 34,-69 34,-66 34,-66 34,-60 34,-60 34,-57 37,-54 40,-54 40,-54 107,-54 107,-54 110,-54 113,-57 113,-60 113,-60 113,-66 113,-66 113,-69 110,-72 107,-72"/>
+<text text-anchor="middle" x="73.5" y="-60.7" font-family="inherit" font-size="8.50">Gtk.ToolButton</text>
+</a>
+</g>
+</g>
+<!-- Gtk.Actionable&#45;&gt;Gtk.ToolButton -->
+<g id="edge8" class="edge">
+<title>Gtk.Actionable&#45;&gt;Gtk.ToolButton</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M40.54,-269.83C43.69,-245.28 53.61,-169.99 64.5,-108 66.33,-97.57 68.75,-85.82 70.62,-77.09"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="72.36,-77.34 71.71,-72.08 68.94,-76.6 72.36,-77.34"/>
+</g>
+<!-- Gtk.ToolItem -->
+<g id="node12" class="node">
+<title>Gtk.ToolItem</title>
+<g id="a_node12"><a xlink:href="ToolItem.html#Gtk.ToolItem" xlink:title="Gtk.ToolItem">
+<path fill="none" stroke="#75507b" d="M137.5,-126C137.5,-126 79.5,-126 79.5,-126 76.5,-126 73.5,-123 73.5,-120 73.5,-120 73.5,-114 73.5,-114 73.5,-111 76.5,-108 79.5,-108 79.5,-108 137.5,-108 137.5,-108 140.5,-108 143.5,-111 143.5,-114 143.5,-114 143.5,-120 143.5,-120 143.5,-123 140.5,-126 137.5,-126"/>
+<text text-anchor="middle" x="108.5" y="-114.7" font-family="inherit" font-size="8.50">Gtk.ToolItem</text>
+</a>
+</g>
+</g>
+<!-- Gtk.Activatable&#45;&gt;Gtk.ToolItem -->
+<g id="edge9" class="edge">
+<title>Gtk.Activatable&#45;&gt;Gtk.ToolItem</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M108.5,-215.68C108.5,-197.42 108.5,-153.66 108.5,-131.44"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="110.25,-131.28 108.5,-126.28 106.75,-131.28 110.25,-131.28"/>
+</g>
+<!-- Gtk.Bin -->
+<g id="node7" class="node">
+<title>Gtk.Bin</title>
+<g id="a_node7"><a xlink:href="Bin.html#Gtk.Bin" xlink:title="Gtk.Bin">
+<path fill="none" stroke="#aaaaaa" d="M205.5,-180C205.5,-180 163.5,-180 163.5,-180 160.5,-180 157.5,-177 157.5,-174 157.5,-174 157.5,-168 157.5,-168 157.5,-165 160.5,-162 163.5,-162 163.5,-162 205.5,-162 205.5,-162 208.5,-162 211.5,-165 211.5,-168 211.5,-168 211.5,-174 211.5,-174 211.5,-177 208.5,-180 205.5,-180"/>
+<text text-anchor="middle" x="184.5" y="-168.7" font-family="inherit" font-size="8.50">Gtk.Bin</text>
+</a>
+</g>
+</g>
+<!-- Gtk.Bin&#45;&gt;Gtk.ToolItem -->
+<g id="edge10" class="edge">
+<title>Gtk.Bin&#45;&gt;Gtk.ToolItem</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M172.62,-161.88C159.76,-153.07 139.16,-138.98 124.79,-129.14"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="125.66,-127.62 120.54,-126.24 123.68,-130.51 125.66,-127.62"/>
+</g>
+<!-- Gtk.Buildable&#45;&gt;Gtk.Widget -->
+<g id="edge11" class="edge">
+<title>Gtk.Buildable&#45;&gt;Gtk.Widget</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M186.56,-323.88C202.02,-314.95 226.91,-300.56 243.95,-290.72"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="245.08,-292.08 248.54,-288.07 243.33,-289.05 245.08,-292.08"/>
+</g>
+<!-- Gtk.Container -->
+<g id="node9" class="node">
+<title>Gtk.Container</title>
+<g id="a_node9"><a xlink:href="Container.html#Gtk.Container" xlink:title="Gtk.Container">
+<path fill="none" stroke="#aaaaaa" d="M275.5,-234C275.5,-234 211.5,-234 211.5,-234 208.5,-234 205.5,-231 205.5,-228 205.5,-228 205.5,-222 205.5,-222 205.5,-219 208.5,-216 211.5,-216 211.5,-216 275.5,-216 275.5,-216 278.5,-216 281.5,-219 281.5,-222 281.5,-222 281.5,-228 281.5,-228 281.5,-231 278.5,-234 275.5,-234"/>
+<text text-anchor="middle" x="243.5" y="-222.7" font-family="inherit" font-size="8.50">Gtk.Container</text>
+</a>
+</g>
+</g>
+<!-- Gtk.Container&#45;&gt;Gtk.Bin -->
+<g id="edge12" class="edge">
+<title>Gtk.Container&#45;&gt;Gtk.Bin</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M234.28,-215.88C224.47,-207.23 208.85,-193.46 197.72,-183.66"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="198.76,-182.23 193.85,-180.24 196.44,-184.86 198.76,-182.23"/>
+</g>
+<!-- Gtk.MenuToolButton -->
+<g id="node10" class="node">
+<title>Gtk.MenuToolButton</title>
+<g id="a_node10"><a xlink:href="#Gtk.MenuToolButton" xlink:title="Gtk.MenuToolButton">
+<path fill="none" stroke="#75507b" d="M118.5,-18C118.5,-18 28.5,-18 28.5,-18 25.5,-18 22.5,-15 22.5,-12 22.5,-12 22.5,-6 22.5,-6 22.5,-3 25.5,0 28.5,0 28.5,0 118.5,0 118.5,0 121.5,0 124.5,-3 124.5,-6 124.5,-6 124.5,-12 124.5,-12 124.5,-15 121.5,-18 118.5,-18"/>
+<text text-anchor="middle" x="73.5" y="-6.7" font-family="inherit" font-size="8.50">Gtk.MenuToolButton</text>
+</a>
+</g>
+</g>
+<!-- Gtk.ToolButton&#45;&gt;Gtk.MenuToolButton -->
+<g id="edge13" class="edge">
+<title>Gtk.ToolButton&#45;&gt;Gtk.MenuToolButton</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M73.5,-53.88C73.5,-45.76 73.5,-33.13 73.5,-23.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="75.25,-23.24 73.5,-18.24 71.75,-23.24 75.25,-23.24"/>
+</g>
+<!-- Gtk.ToolItem&#45;&gt;Gtk.ToolButton -->
+<g id="edge14" class="edge">
+<title>Gtk.ToolItem&#45;&gt;Gtk.ToolButton</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M103.03,-107.88C97.36,-99.45 88.43,-86.18 81.87,-76.44"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="83.29,-75.41 79.05,-72.24 80.39,-77.36 83.29,-75.41"/>
+</g>
+<!-- Gtk.Widget&#45;&gt;Gtk.Container -->
+<g id="edge15" class="edge">
+<title>Gtk.Widget&#45;&gt;Gtk.Container</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M259.53,-269.88C256.51,-261.6 251.78,-248.66 248.24,-238.97"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="249.87,-238.34 246.51,-234.24 246.58,-239.54 249.87,-238.34"/>
+</g>
+</g>
+</svg>
+</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Subclasses:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="methods">
+<span id="gtk-menutoolbutton-methods"></span><h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="ToolButton.html#gtk-toolbutton-methods"><span class="std std-ref">Gtk.ToolButton (14)</span></a>,     <a class="reference internal" href="ToolItem.html#gtk-toolitem-methods"><span class="std std-ref">Gtk.ToolItem (28)</span></a>,     <a class="reference internal" href="Bin.html#gtk-bin-methods"><span class="std std-ref">Gtk.Bin (1)</span></a>,     <a class="reference internal" href="Container.html#gtk-container-methods"><span class="std std-ref">Gtk.Container (35)</span></a>,     <a class="reference internal" href="Widget.html#gtk-widget-methods"><span class="std std-ref">Gtk.Widget (278)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (37)</span></a>,     <a class="reference internal" href="Buildable.html#gtk-buildable-methods"><span class="std std-ref">Gtk.Buildable (10)</span></a>,     <a class="reference internal" href="Activatable.html#gtk-activatable-methods"><span class="std std-ref">Gtk.Activatable (6)</span></a>,     <a class="reference internal" href="Actionable.html#gtk-actionable-methods"><span class="std std-ref">Gtk.Actionable (5)</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Structs:</th><td class="field-body"><a class="reference internal" href="ContainerClass.html#gtk-containerclass-methods"><span class="std std-ref">Gtk.ContainerClass (5)</span></a>,     <a class="reference internal" href="WidgetClass.html#gtk-widgetclass-methods"><span class="std std-ref">Gtk.WidgetClass (12)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/ObjectClass.html#gobject-objectclass-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.ObjectClass (5)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="99%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><em>class</em></td>
+<td><a class="reference internal" href="#Gtk.MenuToolButton.new" title="Gtk.MenuToolButton.new"><code class="xref py py-func docutils literal notranslate"><span class="pre">new</span></code></a> (icon_widget, label)</td>
+</tr>
+<tr class="row-even"><td><em>class</em></td>
+<td><a class="reference internal" href="#Gtk.MenuToolButton.new_from_stock" title="Gtk.MenuToolButton.new_from_stock"><code class="xref py py-func docutils literal notranslate"><span class="pre">new_from_stock</span></code></a> (stock_id)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.MenuToolButton.get_menu" title="Gtk.MenuToolButton.get_menu"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_menu</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.MenuToolButton.set_arrow_tooltip_markup" title="Gtk.MenuToolButton.set_arrow_tooltip_markup"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_arrow_tooltip_markup</span></code></a> (markup)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.MenuToolButton.set_arrow_tooltip_text" title="Gtk.MenuToolButton.set_arrow_tooltip_text"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_arrow_tooltip_text</span></code></a> (text)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.MenuToolButton.set_menu" title="Gtk.MenuToolButton.set_menu"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_menu</span></code></a> (menu)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="virtual-methods">
+<span id="gtk-menutoolbutton-vfuncs"></span><h2>Virtual Methods<a class="headerlink" href="#virtual-methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="ToolButton.html#gtk-toolbutton-vfuncs"><span class="std std-ref">Gtk.ToolButton (1)</span></a>,     <a class="reference internal" href="ToolItem.html#gtk-toolitem-vfuncs"><span class="std std-ref">Gtk.ToolItem (2)</span></a>,     <a class="reference internal" href="Container.html#gtk-container-vfuncs"><span class="std std-ref">Gtk.Container (10)</span></a>,     <a class="reference internal" href="Widget.html#gtk-widget-vfuncs"><span class="std std-ref">Gtk.Widget (82)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-vfuncs" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (7)</span></a>,     <a class="reference internal" href="Buildable.html#gtk-buildable-vfuncs"><span class="std std-ref">Gtk.Buildable (10)</span></a>,     <a class="reference internal" href="Activatable.html#gtk-activatable-vfuncs"><span class="std std-ref">Gtk.Activatable (2)</span></a>,     <a class="reference internal" href="Actionable.html#gtk-actionable-vfuncs"><span class="std std-ref">Gtk.Actionable (4)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="99%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.MenuToolButton.do_show_menu" title="Gtk.MenuToolButton.do_show_menu"><code class="xref py py-func docutils literal notranslate"><span class="pre">do_show_menu</span></code></a> ()</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="gtk-menutoolbutton-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="ToolButton.html#gtk-toolbutton-props"><span class="std std-ref">Gtk.ToolButton (6)</span></a>,     <a class="reference internal" href="ToolItem.html#gtk-toolitem-props"><span class="std std-ref">Gtk.ToolItem (3)</span></a>,     <a class="reference internal" href="Container.html#gtk-container-props"><span class="std std-ref">Gtk.Container (3)</span></a>,     <a class="reference internal" href="Widget.html#gtk-widget-props"><span class="std std-ref">Gtk.Widget (39)</span></a>,     <a class="reference internal" href="Activatable.html#gtk-activatable-props"><span class="std std-ref">Gtk.Activatable (2)</span></a>,     <a class="reference internal" href="Actionable.html#gtk-actionable-props"><span class="std std-ref">Gtk.Actionable (2)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="1%" />
+<col width="1%" />
+<col width="97%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Flags</th>
+<th class="head">Short Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="#Gtk.MenuToolButton.props.menu" title="Gtk.MenuToolButton.props.menu"><code class="xref py py-data docutils literal notranslate"><span class="pre">menu</span></code></a></td>
+<td><a class="reference internal" href="Menu.html#Gtk.Menu" title="Gtk.Menu"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu</span></code></a></td>
+<td>r/w</td>
+<td>The dropdown menu</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="style-properties">
+<span id="gtk-menutoolbutton-style-props"></span><h2>Style Properties<a class="headerlink" href="#style-properties" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="ToolButton.html#gtk-toolbutton-style-props"><span class="std std-ref">Gtk.ToolButton (1)</span></a>,     <a class="reference internal" href="Widget.html#gtk-widget-style-props"><span class="std std-ref">Gtk.Widget (17)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="signals">
+<span id="gtk-menutoolbutton-signals"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="ToolButton.html#gtk-toolbutton-signals"><span class="std std-ref">Gtk.ToolButton (1)</span></a>,     <a class="reference internal" href="ToolItem.html#gtk-toolitem-signals"><span class="std std-ref">Gtk.ToolItem (2)</span></a>,     <a class="reference internal" href="Container.html#gtk-container-signals"><span class="std std-ref">Gtk.Container (4)</span></a>,     <a class="reference internal" href="Widget.html#gtk-widget-signals"><span class="std std-ref">Gtk.Widget (69)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-signals" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="30%" />
+<col width="70%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Short Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="#Gtk.MenuToolButton.signals.show_menu" title="Gtk.MenuToolButton.signals.show_menu"><code class="xref py py-func docutils literal notranslate"><span class="pre">show-menu</span></code></a></td>
+<td>The <a class="reference internal" href="#Gtk.MenuToolButton.signals.show_menu" title="Gtk.MenuToolButton.signals.show_menu"><code class="xref py py-func docutils literal notranslate"><span class="pre">::show-menu</span></code></a> signal is emitted before the menu is shown.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fields">
+<span id="gtk-menutoolbutton-fields"></span><h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="ToolButton.html#gtk-toolbutton-fields"><span class="std std-ref">Gtk.ToolButton (1)</span></a>,     <a class="reference internal" href="ToolItem.html#gtk-toolitem-fields"><span class="std std-ref">Gtk.ToolItem (2)</span></a>,     <a class="reference internal" href="Container.html#gtk-container-fields"><span class="std std-ref">Gtk.Container (4)</span></a>,     <a class="reference internal" href="Widget.html#gtk-widget-fields"><span class="std std-ref">Gtk.Widget (69)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-fields" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="16%" />
+<col width="1%" />
+<col width="1%" />
+<col width="82%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Access</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>parent</td>
+<td><a class="reference internal" href="ToolButton.html#Gtk.ToolButton" title="Gtk.ToolButton"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ToolButton</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="class-details">
+<h2>Class Details<a class="headerlink" href="#class-details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Gtk.MenuToolButton">
+<em class="property">class </em><code class="descclassname">Gtk.</code><code class="descname">MenuToolButton</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#Gtk.MenuToolButton" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Bases:</th><td class="field-body"><a class="reference internal" href="ToolButton.html#Gtk.ToolButton" title="Gtk.ToolButton"><code class="xref py py-class docutils literal notranslate"><span class="pre">Gtk.ToolButton</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Abstract:</th><td class="field-body">No</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Structure:</th><td class="field-body"><a class="reference internal" href="MenuToolButtonClass.html#Gtk.MenuToolButtonClass" title="Gtk.MenuToolButtonClass"><code class="xref py py-class docutils literal notranslate"><span class="pre">Gtk.MenuToolButtonClass</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>A <a class="reference internal" href="#Gtk.MenuToolButton" title="Gtk.MenuToolButton"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.MenuToolButton</span></code></a> is a <a class="reference internal" href="ToolItem.html#Gtk.ToolItem" title="Gtk.ToolItem"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ToolItem</span></code></a> that contains a button and
+a small additional button with an arrow. When clicked, the arrow
+button pops up a dropdown menu.</p>
+<p>Use <a class="reference internal" href="#Gtk.MenuToolButton.new" title="Gtk.MenuToolButton.new"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.MenuToolButton.new</span></code></a>() to create a new
+<a class="reference internal" href="#Gtk.MenuToolButton" title="Gtk.MenuToolButton"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.MenuToolButton</span></code></a>.</p>
+<dl class="docutils">
+<dt><a class="reference internal" href="#Gtk.MenuToolButton" title="Gtk.MenuToolButton"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.MenuToolButton</span></code></a> as <a class="reference internal" href="Buildable.html#Gtk.Buildable" title="Gtk.Buildable"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Buildable</span></code></a></dt>
+<dd></dd>
+</dl>
+<p>The <a class="reference internal" href="#Gtk.MenuToolButton" title="Gtk.MenuToolButton"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.MenuToolButton</span></code></a> implementation of the <a class="reference internal" href="Buildable.html#Gtk.Buildable" title="Gtk.Buildable"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Buildable</span></code></a> interface
+supports adding a menu by specifying “menu” as the “type” attribute
+of a &lt;child&gt; element.</p>
+<p>An example for a UI definition fragment with menus:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>&lt;object class=&quot;GtkMenuToolButton&quot;&gt;
+  &lt;child type=&quot;menu&quot;&gt;
+    &lt;object class=&quot;GtkMenu&quot;/&gt;
+  &lt;/child&gt;
+&lt;/object&gt;
+</pre></div>
+</div>
+<dl class="classmethod">
+<dt id="Gtk.MenuToolButton.new">
+<em class="property">classmethod </em><code class="descname">new</code><span class="sig-paren">(</span><em>icon_widget</em>, <em>label</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkmenutoolbutton.c#L343"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.MenuToolButton.new" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>icon_widget</strong> (<a class="reference internal" href="Widget.html#Gtk.Widget" title="Gtk.Widget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Widget</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – a widget that will be used as icon widget, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></li>
+<li><strong>label</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – a string that will be used as label, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">the new <a class="reference internal" href="#Gtk.MenuToolButton" title="Gtk.MenuToolButton"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.MenuToolButton</span></code></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="ToolItem.html#Gtk.ToolItem" title="Gtk.ToolItem"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ToolItem</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Creates a new <a class="reference internal" href="#Gtk.MenuToolButton" title="Gtk.MenuToolButton"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.MenuToolButton</span></code></a> using <cite>icon_widget</cite> as icon and
+<cite>label</cite> as label.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.6.</span></p>
+</div>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="Gtk.MenuToolButton.new_from_stock">
+<em class="property">classmethod </em><code class="descname">new_from_stock</code><span class="sig-paren">(</span><em>stock_id</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkmenutoolbutton.c#L373"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.MenuToolButton.new_from_stock" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>stock_id</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – the name of a stock item</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the new <a class="reference internal" href="#Gtk.MenuToolButton" title="Gtk.MenuToolButton"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.MenuToolButton</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="ToolItem.html#Gtk.ToolItem" title="Gtk.ToolItem"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ToolItem</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Creates a new <a class="reference internal" href="#Gtk.MenuToolButton" title="Gtk.MenuToolButton"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.MenuToolButton</span></code></a>.
+The new <a class="reference internal" href="#Gtk.MenuToolButton" title="Gtk.MenuToolButton"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.MenuToolButton</span></code></a> will contain an icon and label from
+the stock item indicated by <cite>stock_id</cite>.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.6.</span></p>
+</div>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 3.10: </span>Use <a class="reference internal" href="#Gtk.MenuToolButton.new" title="Gtk.MenuToolButton.new"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.MenuToolButton.new</span></code></a>() instead.</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.MenuToolButton.get_menu">
+<code class="descname">get_menu</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkmenutoolbutton.c#L434"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.MenuToolButton.get_menu" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the <a class="reference internal" href="Menu.html#Gtk.Menu" title="Gtk.Menu"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu</span></code></a> associated
+with <a class="reference internal" href="#Gtk.MenuToolButton" title="Gtk.MenuToolButton"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.MenuToolButton</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="Widget.html#Gtk.Widget" title="Gtk.Widget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Widget</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the <a class="reference internal" href="Menu.html#Gtk.Menu" title="Gtk.Menu"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu</span></code></a> associated with <a class="reference internal" href="#Gtk.MenuToolButton" title="Gtk.MenuToolButton"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.MenuToolButton</span></code></a>.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.6.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.MenuToolButton.set_arrow_tooltip_markup">
+<code class="descname">set_arrow_tooltip_markup</code><span class="sig-paren">(</span><em>markup</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkmenutoolbutton.c#L480"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.MenuToolButton.set_arrow_tooltip_markup" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>markup</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – markup text to be used as tooltip text for button’s arrow button</td>
+</tr>
+</tbody>
+</table>
+<p>Sets the tooltip markup text to be used as tooltip for the arrow button
+which pops up the menu.  See <a class="reference internal" href="ToolItem.html#Gtk.ToolItem.set_tooltip_text" title="Gtk.ToolItem.set_tooltip_text"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ToolItem.set_tooltip_text</span></code></a>() for setting
+a tooltip on the whole <a class="reference internal" href="#Gtk.MenuToolButton" title="Gtk.MenuToolButton"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.MenuToolButton</span></code></a>.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.12.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.MenuToolButton.set_arrow_tooltip_text">
+<code class="descname">set_arrow_tooltip_text</code><span class="sig-paren">(</span><em>text</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkmenutoolbutton.c#L460"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.MenuToolButton.set_arrow_tooltip_text" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>text</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – text to be used as tooltip text for button’s arrow button</td>
+</tr>
+</tbody>
+</table>
+<p>Sets the tooltip text to be used as tooltip for the arrow button which
+pops up the menu.  See <a class="reference internal" href="ToolItem.html#Gtk.ToolItem.set_tooltip_text" title="Gtk.ToolItem.set_tooltip_text"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ToolItem.set_tooltip_text</span></code></a>() for setting a tooltip
+on the whole <a class="reference internal" href="#Gtk.MenuToolButton" title="Gtk.MenuToolButton"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.MenuToolButton</span></code></a>.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.12.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.MenuToolButton.set_menu">
+<code class="descname">set_menu</code><span class="sig-paren">(</span><em>menu</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkmenutoolbutton.c#L405"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.MenuToolButton.set_menu" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>menu</strong> (<a class="reference internal" href="Widget.html#Gtk.Widget" title="Gtk.Widget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Widget</span></code></a>) – the <a class="reference internal" href="Menu.html#Gtk.Menu" title="Gtk.Menu"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu</span></code></a> associated with <a class="reference internal" href="#Gtk.MenuToolButton" title="Gtk.MenuToolButton"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.MenuToolButton</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Sets the <a class="reference internal" href="Menu.html#Gtk.Menu" title="Gtk.Menu"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu</span></code></a> that is popped up when the user clicks on the arrow.
+If <cite>menu</cite> is <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>, the arrow button becomes insensitive.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.6.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.MenuToolButton.do_show_menu">
+<code class="descname">do_show_menu</code><span class="sig-paren">(</span><span class="sig-paren">)</span><em class="property"> virtual</em><a class="headerlink" href="#Gtk.MenuToolButton.do_show_menu" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="signal-details">
+<h2>Signal Details<a class="headerlink" href="#signal-details" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="Gtk.MenuToolButton.signals.show_menu">
+<code class="descclassname">Gtk.MenuToolButton.signals.</code><code class="descname">show_menu</code><span class="sig-paren">(</span><em>menu_tool_button</em><span class="sig-paren">)</span><a class="headerlink" href="#Gtk.MenuToolButton.signals.show_menu" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Signal Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">show-menu</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.SignalFlags.RUN_FIRST" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RUN_FIRST</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>menu_tool_button</strong> (<a class="reference internal" href="#Gtk.MenuToolButton" title="Gtk.MenuToolButton"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.MenuToolButton</span></code></a>) – The object which received the signal</td>
+</tr>
+</tbody>
+</table>
+<p>The <a class="reference internal" href="#Gtk.MenuToolButton.signals.show_menu" title="Gtk.MenuToolButton.signals.show_menu"><code class="xref py py-func docutils literal notranslate"><span class="pre">::show-menu</span></code></a> signal is emitted before the menu is shown.</p>
+<p>It can be used to populate the menu on demand, using
+<a class="reference internal" href="#Gtk.MenuToolButton.set_menu" title="Gtk.MenuToolButton.set_menu"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.MenuToolButton.set_menu</span></code></a>().</p>
+<p>Note that even if you populate the menu dynamically in this way,
+you must set an empty menu on the <a class="reference internal" href="#Gtk.MenuToolButton" title="Gtk.MenuToolButton"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.MenuToolButton</span></code></a> beforehand,
+since the arrow is made insensitive if the menu is not set.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="property-details">
+<h2>Property Details<a class="headerlink" href="#property-details" title="Permalink to this headline">¶</a></h2>
+<dl class="data">
+<dt id="Gtk.MenuToolButton.props.menu">
+<code class="descclassname">Gtk.MenuToolButton.props.</code><code class="descname">menu</code><a class="headerlink" href="#Gtk.MenuToolButton.props.menu" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">menu</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="Menu.html#Gtk.Menu" title="Gtk.Menu"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The dropdown menu</p>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div> 
+
+</body>
+</html>

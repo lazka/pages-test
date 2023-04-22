@@ -1,0 +1,971 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    GMime.Message -
+    
+      Classes -
+    
+    GMime 3.0
+  </title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/css/pgi.css" type="text/css" />
+  
+
+  
+  <script type="text/javascript">
+
+    function openSidebar(element) {
+        window.location.href = element.href + location.hash;
+        return false;
+    }
+
+    function inIframe() {
+        try {
+            return window.self !== window.top;
+        } catch (e) {
+            return true;
+        }
+    }
+
+    function onLoaded() {
+        if(!inIframe()) {
+            var icons = document.getElementsByClassName('open-sidebar');
+
+            for (var i = 0; i < icons.length; i ++) {
+                icons[i].style.display = 'table-cell';
+            }
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', onLoaded, false);
+
+  </script>
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="GMime 3.0 Python API Docs" href="../index.html"/>
+        <link rel="up" title="Classes" href="../classes.html"/>
+        <link rel="next" title="GMime.MessagePart" href="MessagePart.html"/>
+        <link rel="prev" title="GMime.InternetAddressMailbox" href="InternetAddressMailbox.html"/> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+<div class="non-fixed-bar">
+<table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#GMime-3.0/classes/Message.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">GMime 3.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>GMime.Message</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="InternetAddressMailbox.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="MessagePart.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">GMime.Message</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+<div class="fixed-bar">
+  <table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#GMime-3.0/classes/Message.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">GMime 3.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>GMime.Message</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="InternetAddressMailbox.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="MessagePart.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">GMime.Message</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+  <div class="wy-grid-for-nav">
+
+    
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="main">
+            
+  <div class="section" id="gmime-message">
+<h1>GMime.Message<a class="headerlink" href="#gmime-message" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<svg width="95pt" height="134pt"
+ viewBox="0.00 0.00 95.00 134.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 130)">
+<title>g</title>
+<!-- GMime.Message -->
+<g id="node1" class="node">
+<title>GMime.Message</title>
+<g id="a_node1"><a xlink:href="#GMime.Message" xlink:title="GMime.Message">
+<path fill="none" stroke="#75507b" d="M81,-18C81,-18 6,-18 6,-18 3,-18 0,-15 0,-12 0,-12 0,-6 0,-6 0,-3 3,0 6,0 6,0 81,0 81,0 84,0 87,-3 87,-6 87,-6 87,-12 87,-12 87,-15 84,-18 81,-18"/>
+<text text-anchor="middle" x="43.5" y="-6.7" font-family="inherit" font-size="8.50">GMime.Message</text>
+</a>
+</g>
+</g>
+<!-- GMime.Object -->
+<g id="node2" class="node">
+<title>GMime.Object</title>
+<g id="a_node2"><a xlink:href="Object.html#GMime.Object" xlink:title="GMime.Object">
+<path fill="none" stroke="#aaaaaa" d="M76,-72C76,-72 11,-72 11,-72 8,-72 5,-69 5,-66 5,-66 5,-60 5,-60 5,-57 8,-54 11,-54 11,-54 76,-54 76,-54 79,-54 82,-57 82,-60 82,-60 82,-66 82,-66 82,-69 79,-72 76,-72"/>
+<text text-anchor="middle" x="43.5" y="-60.7" font-family="inherit" font-size="8.50">GMime.Object</text>
+</a>
+</g>
+</g>
+<!-- GMime.Object&#45;&gt;GMime.Message -->
+<g id="edge1" class="edge">
+<title>GMime.Object&#45;&gt;GMime.Message</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M43.5,-53.88C43.5,-45.76 43.5,-33.13 43.5,-23.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="45.25,-23.24 43.5,-18.24 41.75,-23.24 45.25,-23.24"/>
+</g>
+<!-- GObject.Object -->
+<g id="node3" class="node">
+<title>GObject.Object</title>
+<g id="a_node3"><a xlink:href="../../GObject-2.0/classes/Object.html#GObject.Object" xlink:title="GObject.Object">
+<path fill="none" stroke="#75507b" d="M77.5,-126C77.5,-126 9.5,-126 9.5,-126 6.5,-126 3.5,-123 3.5,-120 3.5,-120 3.5,-114 3.5,-114 3.5,-111 6.5,-108 9.5,-108 9.5,-108 77.5,-108 77.5,-108 80.5,-108 83.5,-111 83.5,-114 83.5,-114 83.5,-120 83.5,-120 83.5,-123 80.5,-126 77.5,-126"/>
+<text text-anchor="middle" x="43.5" y="-114.7" font-family="inherit" font-size="8.50">GObject.Object</text>
+</a>
+</g>
+</g>
+<!-- GObject.Object&#45;&gt;GMime.Object -->
+<g id="edge2" class="edge">
+<title>GObject.Object&#45;&gt;GMime.Object</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M43.5,-107.88C43.5,-99.76 43.5,-87.13 43.5,-77.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="45.25,-77.24 43.5,-72.24 41.75,-77.24 45.25,-77.24"/>
+</g>
+</g>
+</svg>
+</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Subclasses:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="methods">
+<span id="gmime-message-methods"></span><h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Object.html#gmime-object-methods"><span class="std std-ref">GMime.Object (27)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (37)</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Structs:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/ObjectClass.html#gobject-objectclass-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.ObjectClass (5)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="99%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><em>class</em></td>
+<td><a class="reference internal" href="#GMime.Message.new" title="GMime.Message.new"><code class="xref py py-func docutils literal notranslate"><span class="pre">new</span></code></a> (pretty_headers)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#GMime.Message.add_mailbox" title="GMime.Message.add_mailbox"><code class="xref py py-func docutils literal notranslate"><span class="pre">add_mailbox</span></code></a> (type, name, addr)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#GMime.Message.foreach" title="GMime.Message.foreach"><code class="xref py py-func docutils literal notranslate"><span class="pre">foreach</span></code></a> (callback, *user_data)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#GMime.Message.get_addresses" title="GMime.Message.get_addresses"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_addresses</span></code></a> (type)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#GMime.Message.get_all_recipients" title="GMime.Message.get_all_recipients"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_all_recipients</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#GMime.Message.get_autocrypt_gossip_headers" title="GMime.Message.get_autocrypt_gossip_headers"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_autocrypt_gossip_headers</span></code></a> (now, flags, session_key)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#GMime.Message.get_autocrypt_gossip_headers_from_inner_part" title="GMime.Message.get_autocrypt_gossip_headers_from_inner_part"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_autocrypt_gossip_headers_from_inner_part</span></code></a> (now, inner_part)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#GMime.Message.get_autocrypt_header" title="GMime.Message.get_autocrypt_header"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_autocrypt_header</span></code></a> (now)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#GMime.Message.get_bcc" title="GMime.Message.get_bcc"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_bcc</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#GMime.Message.get_body" title="GMime.Message.get_body"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_body</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#GMime.Message.get_cc" title="GMime.Message.get_cc"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_cc</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#GMime.Message.get_date" title="GMime.Message.get_date"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_date</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#GMime.Message.get_from" title="GMime.Message.get_from"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_from</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#GMime.Message.get_message_id" title="GMime.Message.get_message_id"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_message_id</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#GMime.Message.get_mime_part" title="GMime.Message.get_mime_part"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_mime_part</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#GMime.Message.get_reply_to" title="GMime.Message.get_reply_to"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_reply_to</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#GMime.Message.get_sender" title="GMime.Message.get_sender"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_sender</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#GMime.Message.get_subject" title="GMime.Message.get_subject"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_subject</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#GMime.Message.get_to" title="GMime.Message.get_to"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_to</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#GMime.Message.partial_split_message" title="GMime.Message.partial_split_message"><code class="xref py py-func docutils literal notranslate"><span class="pre">partial_split_message</span></code></a> (max_size)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#GMime.Message.set_date" title="GMime.Message.set_date"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_date</span></code></a> (date)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#GMime.Message.set_message_id" title="GMime.Message.set_message_id"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_message_id</span></code></a> (message_id)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#GMime.Message.set_mime_part" title="GMime.Message.set_mime_part"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_mime_part</span></code></a> (mime_part)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#GMime.Message.set_subject" title="GMime.Message.set_subject"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_subject</span></code></a> (subject, charset)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="virtual-methods">
+<span id="gmime-message-vfuncs"></span><h2>Virtual Methods<a class="headerlink" href="#virtual-methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Object.html#gmime-object-vfuncs"><span class="std std-ref">GMime.Object (8)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-vfuncs" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (7)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="gmime-message-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<p>None</p>
+</div>
+<div class="section" id="signals">
+<span id="gmime-message-signals"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-signals" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fields">
+<span id="gmime-message-fields"></span><h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-fields" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="16%" />
+<col width="1%" />
+<col width="1%" />
+<col width="82%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Access</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>addrlists</td>
+<td><a class="reference internal" href="InternetAddressList.html#GMime.InternetAddressList" title="GMime.InternetAddressList"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GMime.InternetAddressList</span></code></a></td>
+<td>r</td>
+<td>a table of address lists</td>
+</tr>
+<tr class="row-odd"><td>date</td>
+<td><a class="reference external" href="../../GLib-2.0/classes/DateTime.html#GLib.DateTime" title="(in GLib 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GLib.DateTime</span></code></a></td>
+<td>r</td>
+<td>Date value</td>
+</tr>
+<tr class="row-even"><td>marker</td>
+<td><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>message_id</td>
+<td><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+<td>r</td>
+<td>Message-Id string</td>
+</tr>
+<tr class="row-even"><td>mime_part</td>
+<td><a class="reference internal" href="Object.html#GMime.Object" title="GMime.Object"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GMime.Object</span></code></a></td>
+<td>r</td>
+<td>toplevel MIME part</td>
+</tr>
+<tr class="row-odd"><td>parent_object</td>
+<td><a class="reference internal" href="Object.html#GMime.Object" title="GMime.Object"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GMime.Object</span></code></a></td>
+<td>r</td>
+<td>parent <a class="reference internal" href="Object.html#GMime.Object" title="GMime.Object"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GMime.Object</span></code></a></td>
+</tr>
+<tr class="row-even"><td>subject</td>
+<td><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+<td>r</td>
+<td>Subject string</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="class-details">
+<h2>Class Details<a class="headerlink" href="#class-details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="GMime.Message">
+<em class="property">class </em><code class="descclassname">GMime.</code><code class="descname">Message</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#GMime.Message" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Bases:</th><td class="field-body"><a class="reference internal" href="Object.html#GMime.Object" title="GMime.Object"><code class="xref py py-class docutils literal notranslate"><span class="pre">GMime.Object</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Abstract:</th><td class="field-body">No</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Structure:</th><td class="field-body"><a class="reference internal" href="MessageClass.html#GMime.MessageClass" title="GMime.MessageClass"><code class="xref py py-class docutils literal notranslate"><span class="pre">GMime.MessageClass</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>A MIME Message object.</p>
+<dl class="classmethod">
+<dt id="GMime.Message.new">
+<em class="property">classmethod </em><code class="descname">new</code><span class="sig-paren">(</span><em>pretty_headers</em><span class="sig-paren">)</span><a class="headerlink" href="#GMime.Message.new" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>pretty_headers</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a>) – make pretty headers</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">an empty <a class="reference internal" href="#GMime.Message" title="GMime.Message"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GMime.Message</span></code></a> object.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#GMime.Message" title="GMime.Message"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GMime.Message</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>If <cite>pretty_headers</cite> is <a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a>, then the standard rfc822 headers are
+initialized so as to put headers in a nice friendly order. This is
+strictly a cosmetic thing, so if you are unsure, it is safe to say
+no (<a class="reference external" href="http://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a>).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GMime.Message.add_mailbox">
+<code class="descname">add_mailbox</code><span class="sig-paren">(</span><em>type</em>, <em>name</em>, <em>addr</em><span class="sig-paren">)</span><a class="headerlink" href="#GMime.Message.add_mailbox" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>type</strong> (<a class="reference internal" href="../enums.html#GMime.AddressType" title="GMime.AddressType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GMime.AddressType</span></code></a>) – A <a class="reference internal" href="../enums.html#GMime.AddressType" title="GMime.AddressType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GMime.AddressType</span></code></a></li>
+<li><strong>name</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – The name of the mailbox (or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>)</li>
+<li><strong>addr</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – The address of the mailbox</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Add a mailbox of a chosen type to the MIME message.</p>
+<p>Note: The <cite>name</cite> (and <cite>addr</cite>) strings should be in UTF-8.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GMime.Message.foreach">
+<code class="descname">foreach</code><span class="sig-paren">(</span><em>callback</em>, <em>*user_data</em><span class="sig-paren">)</span><a class="headerlink" href="#GMime.Message.foreach" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>callback</strong> (<a class="reference internal" href="../callbacks.html#GMime.ObjectForeachFunc" title="GMime.ObjectForeachFunc"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GMime.ObjectForeachFunc</span></code></a>) – function to call on each of the mime parts
+contained by the mime message</li>
+<li><strong>user_data</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">object</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – user-supplied callback data</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Recursively calls <cite>callback</cite> on each of the mime parts in the mime message.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GMime.Message.get_addresses">
+<code class="descname">get_addresses</code><span class="sig-paren">(</span><em>type</em><span class="sig-paren">)</span><a class="headerlink" href="#GMime.Message.get_addresses" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>type</strong> (<a class="reference internal" href="../enums.html#GMime.AddressType" title="GMime.AddressType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GMime.AddressType</span></code></a>) – A <a class="reference internal" href="../enums.html#GMime.AddressType" title="GMime.AddressType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GMime.AddressType</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a list of addresses of the specified
+<cite>type</cite> from the <cite>self</cite>.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="InternetAddressList.html#GMime.InternetAddressList" title="GMime.InternetAddressList"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GMime.InternetAddressList</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets a list of addresses of the specified <cite>type</cite> from the <cite>self</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GMime.Message.get_all_recipients">
+<code class="descname">get_all_recipients</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#GMime.Message.get_all_recipients" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a newly allocated <a class="reference internal" href="InternetAddressList.html#GMime.InternetAddressList" title="GMime.InternetAddressList"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GMime.InternetAddressList</span></code></a>
+containing all recipients of the message or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> if no recipients
+are set.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="InternetAddressList.html#GMime.InternetAddressList" title="GMime.InternetAddressList"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GMime.InternetAddressList</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the complete list of recipients for <cite>self</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GMime.Message.get_autocrypt_gossip_headers">
+<code class="descname">get_autocrypt_gossip_headers</code><span class="sig-paren">(</span><em>now</em>, <em>flags</em>, <em>session_key</em><span class="sig-paren">)</span><a class="headerlink" href="#GMime.Message.get_autocrypt_gossip_headers" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>now</strong> (<a class="reference external" href="../../GLib-2.0/classes/DateTime.html#GLib.DateTime" title="(in GLib 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GLib.DateTime</span></code></a>) – a <a class="reference external" href="../../GLib-2.0/classes/DateTime.html#GLib.DateTime" title="(in GLib 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GLib.DateTime</span></code></a> object, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></li>
+<li><strong>flags</strong> (<a class="reference internal" href="../flags.html#GMime.DecryptFlags" title="GMime.DecryptFlags"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GMime.DecryptFlags</span></code></a>) – a <a class="reference internal" href="../flags.html#GMime.DecryptFlags" title="GMime.DecryptFlags"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GMime.DecryptFlags</span></code></a>, to be used during decryption</li>
+<li><strong>session_key</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – session key to use or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first"><a class="reference external" href="../../GLib-2.0/classes/Error.html#GLib.Error" title="(in GLib 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLib.Error</span></code></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">a new <a class="reference internal" href="AutocryptHeaderList.html#GMime.AutocryptHeaderList" title="GMime.AutocryptHeaderList"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GMime.AutocryptHeaderList</span></code></a> object,
+or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> on error.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="AutocryptHeaderList.html#GMime.AutocryptHeaderList" title="GMime.AutocryptHeaderList"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GMime.AutocryptHeaderList</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Creates a new <a class="reference internal" href="AutocryptHeaderList.html#GMime.AutocryptHeaderList" title="GMime.AutocryptHeaderList"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GMime.AutocryptHeaderList</span></code></a> of relevant headers of the
+given type based on the recipient(s) of an e-mail message.</p>
+<p>Returns the same object as
+#g_mime_message_get_autocrypt_gossip_headers_with_inner_part , but
+handles decryption and cleanup automatically.</p>
+<p><cite>flags</cite> and <cite>session_key</cite> are passed through to
+<a class="reference internal" href="MultipartEncrypted.html#GMime.MultipartEncrypted.decrypt" title="GMime.MultipartEncrypted.decrypt"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GMime.MultipartEncrypted.decrypt</span></code></a>, as needed.</p>
+<p>If the message is not actually an encrypted message, returns <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>:
+it should be ignored for purposes of evaluating gossip.</p>
+<p>If decryption fails, returns <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>.  In this case, an exception
+will be set on <cite>err</cite> to provide information about the decryption
+failure.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GMime.Message.get_autocrypt_gossip_headers_from_inner_part">
+<code class="descname">get_autocrypt_gossip_headers_from_inner_part</code><span class="sig-paren">(</span><em>now</em>, <em>inner_part</em><span class="sig-paren">)</span><a class="headerlink" href="#GMime.Message.get_autocrypt_gossip_headers_from_inner_part" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>now</strong> (<a class="reference external" href="../../GLib-2.0/classes/DateTime.html#GLib.DateTime" title="(in GLib 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GLib.DateTime</span></code></a>) – a <a class="reference external" href="../../GLib-2.0/classes/DateTime.html#GLib.DateTime" title="(in GLib 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GLib.DateTime</span></code></a> object, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></li>
+<li><strong>inner_part</strong> (<a class="reference internal" href="Object.html#GMime.Object" title="GMime.Object"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GMime.Object</span></code></a>) – a <a class="reference internal" href="Object.html#GMime.Object" title="GMime.Object"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GMime.Object</span></code></a> which is the cleartext part of the inner message</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">a new <a class="reference internal" href="AutocryptHeaderList.html#GMime.AutocryptHeaderList" title="GMime.AutocryptHeaderList"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GMime.AutocryptHeaderList</span></code></a> object, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> on error.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="AutocryptHeaderList.html#GMime.AutocryptHeaderList" title="GMime.AutocryptHeaderList"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GMime.AutocryptHeaderList</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Creates a new <a class="reference internal" href="AutocryptHeaderList.html#GMime.AutocryptHeaderList" title="GMime.AutocryptHeaderList"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GMime.AutocryptHeaderList</span></code></a> of relevant headers of the
+given type based on the recipient(s) of an e-mail message.</p>
+<p>You must pass the decrypted inner part of the message to this
+function, since Autocrypt-Gossip headers are only stored within the
+encrypted layer.</p>
+<p>If you don’t already have the decrypted inner part available to
+you, you probably want to use
+<a class="reference internal" href="#GMime.Message.get_autocrypt_gossip_headers" title="GMime.Message.get_autocrypt_gossip_headers"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GMime.Message.get_autocrypt_gossip_headers</span></code></a> instead.</p>
+<p>Each header in the returned list will:</p>
+<ul class="simple">
+<li>have a valid address</li>
+<li>be of the type requested</li>
+<li>be complete</li>
+</ul>
+<p>If no Autocrypt header is found for a recipient, no
+<a class="reference internal" href="AutocryptHeader.html#GMime.AutocryptHeader" title="GMime.AutocryptHeader"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GMime.AutocryptHeader</span></code></a> will be in the list associated with that e-mail address.</p>
+<p>Note that the following types of Autocrypt headers will not be
+returned by this function:</p>
+<ul class="simple">
+<li>headers of an unrequested type</li>
+<li>headers that do not match an address in “From:”</li>
+<li>unparseable headers</li>
+<li>headers with unknown critical attributes</li>
+<li>duplicate valid headers for a given address</li>
+</ul>
+<p>On error (e.g. if this version of GMime cannot handle the requested
+Autocrypt type, or if a parameter is missing or malformed), returns
+<a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></p>
+<p>The returned Autocrypt headers will have their effective_date set
+to the earliest of either:</p>
+<ul class="simple">
+<li>the Date: header of the message or</li>
+<li><cite>now</cite> (or the current time, if <cite>now</cite> is <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>)</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="GMime.Message.get_autocrypt_header">
+<code class="descname">get_autocrypt_header</code><span class="sig-paren">(</span><em>now</em><span class="sig-paren">)</span><a class="headerlink" href="#GMime.Message.get_autocrypt_header" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>now</strong> (<a class="reference external" href="../../GLib-2.0/classes/DateTime.html#GLib.DateTime" title="(in GLib 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GLib.DateTime</span></code></a>) – a <a class="reference external" href="../../GLib-2.0/classes/DateTime.html#GLib.DateTime" title="(in GLib 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GLib.DateTime</span></code></a> object, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a new <a class="reference internal" href="AutocryptHeader.html#GMime.AutocryptHeader" title="GMime.AutocryptHeader"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GMime.AutocryptHeader</span></code></a> object,
+or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> if the message should be ignored for purposes of
+Autocrypt.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="AutocryptHeader.html#GMime.AutocryptHeader" title="GMime.AutocryptHeader"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GMime.AutocryptHeader</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Creates a new <a class="reference internal" href="AutocryptHeader.html#GMime.AutocryptHeader" title="GMime.AutocryptHeader"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GMime.AutocryptHeader</span></code></a> based on the relevant Autocrypt
+header associated with the sender of an e-mail message.</p>
+<p>If the message has no sender in the From: field, or has more than
+one sender, then this function will return <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>.  Autocrypt should
+ignore the message entirely.</p>
+<p>If there is one sender, but no single Autocrypt header is found
+that matches that e-mail address, a <a class="reference internal" href="AutocryptHeader.html#GMime.AutocryptHeader" title="GMime.AutocryptHeader"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GMime.AutocryptHeader</span></code></a> will be
+returned for the sender, but it will be incomplete (see
+<a class="reference internal" href="AutocryptHeader.html#GMime.AutocryptHeader.is_complete" title="GMime.AutocryptHeader.is_complete"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GMime.AutocryptHeader.is_complete</span></code></a>).</p>
+<p>Note that the following types of Autocrypt headers will not be
+returned by this function:</p>
+<ul class="simple">
+<li>headers that do not match an address in “From:”</li>
+<li>unparseable headers</li>
+<li>headers with unknown critical attributes</li>
+<li>duplicate valid headers for the sender’s address</li>
+</ul>
+<p>The returned Autocrypt header will have its effective_date set to
+the earliest of either:</p>
+<ul class="simple">
+<li>the Date: header of the message or</li>
+<li><cite>now</cite> (or the current time, if <cite>now</cite> is <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>)</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="GMime.Message.get_bcc">
+<code class="descname">get_bcc</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#GMime.Message.get_bcc" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the parsed list of addresses in the Bcc header(s).</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="InternetAddressList.html#GMime.InternetAddressList" title="GMime.InternetAddressList"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GMime.InternetAddressList</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets combined list of parsed addresses in the Bcc header(s).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GMime.Message.get_body">
+<code class="descname">get_body</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#GMime.Message.get_body" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a <a class="reference internal" href="Object.html#GMime.Object" title="GMime.Object"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GMime.Object</span></code></a> containing the textual
+content that appears to be the main body of the message.<p>Note: This function is NOT guaranteed to always work as it
+makes some assumptions that are not necessarily true. It is
+recommended that you traverse the MIME structure yourself.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="Object.html#GMime.Object" title="GMime.Object"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GMime.Object</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Attempts to identify the MIME part containing the body of the
+message.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GMime.Message.get_cc">
+<code class="descname">get_cc</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#GMime.Message.get_cc" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the parsed list of addresses in the Cc header(s).</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="InternetAddressList.html#GMime.InternetAddressList" title="GMime.InternetAddressList"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GMime.InternetAddressList</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets combined list of parsed addresses in the Cc header(s).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GMime.Message.get_date">
+<code class="descname">get_date</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#GMime.Message.get_date" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a <a class="reference external" href="../../GLib-2.0/classes/DateTime.html#GLib.DateTime" title="(in GLib 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GLib.DateTime</span></code></a> on success or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> if the date could not be parsed.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="../../GLib-2.0/classes/DateTime.html#GLib.DateTime" title="(in GLib 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GLib.DateTime</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the parsed date and time value from the Date header.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GMime.Message.get_from">
+<code class="descname">get_from</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#GMime.Message.get_from" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the parsed list of addresses in the From header.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="InternetAddressList.html#GMime.InternetAddressList" title="GMime.InternetAddressList"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GMime.InternetAddressList</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the parsed list of addresses in the From header.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GMime.Message.get_message_id">
+<code class="descname">get_message_id</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#GMime.Message.get_message_id" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the Message-Id of a message.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the Message-Id header of <cite>self</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GMime.Message.get_mime_part">
+<code class="descname">get_mime_part</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#GMime.Message.get_mime_part" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the toplevel MIME part of <cite>self</cite>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="Object.html#GMime.Object" title="GMime.Object"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GMime.Object</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the toplevel MIME part contained within <cite>self</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GMime.Message.get_reply_to">
+<code class="descname">get_reply_to</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#GMime.Message.get_reply_to" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the parsed list of addresses in the Reply-To header.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="InternetAddressList.html#GMime.InternetAddressList" title="GMime.InternetAddressList"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GMime.InternetAddressList</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the parsed list of addresses in the Reply-To header.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GMime.Message.get_sender">
+<code class="descname">get_sender</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#GMime.Message.get_sender" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the parsed list of addresses in the Sender header.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="InternetAddressList.html#GMime.InternetAddressList" title="GMime.InternetAddressList"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GMime.InternetAddressList</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the parsed list of addresses in the Sender header.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GMime.Message.get_subject">
+<code class="descname">get_subject</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#GMime.Message.get_subject" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the subject of the <cite>self</cite> in a form suitable for display
+or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> if no subject is set. If not <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>, the returned string
+will be in UTF-8.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the subject of the <cite>self</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GMime.Message.get_to">
+<code class="descname">get_to</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#GMime.Message.get_to" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the parsed list of addresses in the To header(s).</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="InternetAddressList.html#GMime.InternetAddressList" title="GMime.InternetAddressList"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GMime.InternetAddressList</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets combined list of parsed addresses in the To header(s).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GMime.Message.partial_split_message">
+<code class="descname">partial_split_message</code><span class="sig-paren">(</span><em>max_size</em><span class="sig-paren">)</span><a class="headerlink" href="#GMime.Message.partial_split_message" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>max_size</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – max size</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">an array of <a class="reference internal" href="#GMime.Message" title="GMime.Message"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GMime.Message</span></code></a> objects and
+sets <cite>nparts</cite> to the number of messages returned or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> on fail.<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">nparts:</th><td class="field-body">number of parts</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">(<a class="reference internal" href="#GMime.Message" title="GMime.Message"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GMime.Message</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>, <strong>nparts</strong>: <a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>)</td>
+</tr>
+</tbody>
+</table>
+<p>Splits <cite>self</cite> into an array of <a class="reference internal" href="#GMime.Message" title="GMime.Message"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GMime.Message</span></code></a> objects each
+containing a single <a class="reference internal" href="MessagePartial.html#GMime.MessagePartial" title="GMime.MessagePartial"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GMime.MessagePartial</span></code></a> object containing
+<cite>max_size</cite> bytes or fewer. <cite>nparts</cite> is set to the number of
+<a class="reference internal" href="MessagePartial.html#GMime.MessagePartial" title="GMime.MessagePartial"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GMime.MessagePartial</span></code></a> objects created.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GMime.Message.set_date">
+<code class="descname">set_date</code><span class="sig-paren">(</span><em>date</em><span class="sig-paren">)</span><a class="headerlink" href="#GMime.Message.set_date" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>date</strong> (<a class="reference external" href="../../GLib-2.0/classes/DateTime.html#GLib.DateTime" title="(in GLib 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GLib.DateTime</span></code></a>) – a date to be used in the Date header</td>
+</tr>
+</tbody>
+</table>
+<p>Sets the Date header on a MIME Message.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GMime.Message.set_message_id">
+<code class="descname">set_message_id</code><span class="sig-paren">(</span><em>message_id</em><span class="sig-paren">)</span><a class="headerlink" href="#GMime.Message.set_message_id" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>message_id</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – message-id (addr-spec portion)</td>
+</tr>
+</tbody>
+</table>
+<p>Set the Message-Id on a message.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GMime.Message.set_mime_part">
+<code class="descname">set_mime_part</code><span class="sig-paren">(</span><em>mime_part</em><span class="sig-paren">)</span><a class="headerlink" href="#GMime.Message.set_mime_part" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>mime_part</strong> (<a class="reference internal" href="Object.html#GMime.Object" title="GMime.Object"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GMime.Object</span></code></a>) – The root-level MIME Part</td>
+</tr>
+</tbody>
+</table>
+<p>Set the root-level MIME part of the message.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GMime.Message.set_subject">
+<code class="descname">set_subject</code><span class="sig-paren">(</span><em>subject</em>, <em>charset</em><span class="sig-paren">)</span><a class="headerlink" href="#GMime.Message.set_subject" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>subject</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – Subject string</li>
+<li><strong>charset</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – The charset to use for encoding the subject or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> to use the default</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Set the subject of a <cite>self</cite>.</p>
+<p>Note: The <cite>subject</cite> string should be in UTF-8.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div> 
+
+</body>
+</html>

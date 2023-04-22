@@ -1,0 +1,526 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    EvinceDocument.AnnotationTextMarkup -
+    
+      Classes -
+    
+    EvinceDocument 3.0
+  </title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/css/pgi.css" type="text/css" />
+  
+
+  
+  <script type="text/javascript">
+
+    function openSidebar(element) {
+        window.location.href = element.href + location.hash;
+        return false;
+    }
+
+    function inIframe() {
+        try {
+            return window.self !== window.top;
+        } catch (e) {
+            return true;
+        }
+    }
+
+    function onLoaded() {
+        if(!inIframe()) {
+            var icons = document.getElementsByClassName('open-sidebar');
+
+            for (var i = 0; i < icons.length; i ++) {
+                icons[i].style.display = 'table-cell';
+            }
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', onLoaded, false);
+
+  </script>
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="EvinceDocument 3.0 Python API Docs" href="../index.html"/>
+        <link rel="up" title="Classes" href="../classes.html"/>
+        <link rel="next" title="EvinceDocument.Attachment" href="Attachment.html"/>
+        <link rel="prev" title="EvinceDocument.AnnotationText" href="AnnotationText.html"/> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+<div class="non-fixed-bar">
+<table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#EvinceDocument-3.0/classes/AnnotationTextMarkup.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">EvinceDocument 3.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>EvinceDocument.AnnotationTextMarkup</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="AnnotationText.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="Attachment.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">EvinceDocument.AnnotationTextMarkup</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#property-details">Property Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+<div class="fixed-bar">
+  <table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#EvinceDocument-3.0/classes/AnnotationTextMarkup.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">EvinceDocument 3.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>EvinceDocument.AnnotationTextMarkup</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="AnnotationText.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="Attachment.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">EvinceDocument.AnnotationTextMarkup</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#property-details">Property Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+  <div class="wy-grid-for-nav">
+
+    
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="main">
+            
+  <div class="section" id="evincedocument-annotationtextmarkup">
+<h1>EvinceDocument.AnnotationTextMarkup<a class="headerlink" href="#evincedocument-annotationtextmarkup" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<svg width="332pt" height="134pt"
+ viewBox="0.00 0.00 331.50 134.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 130)">
+<title>g</title>
+<!-- EvinceDocument.Annotation -->
+<g id="node1" class="node">
+<title>EvinceDocument.Annotation</title>
+<g id="a_node1"><a xlink:href="Annotation.html#EvinceDocument.Annotation" xlink:title="EvinceDocument.Annotation">
+<path fill="none" stroke="#aaaaaa" d="M317.5,-72C317.5,-72 192.5,-72 192.5,-72 189.5,-72 186.5,-69 186.5,-66 186.5,-66 186.5,-60 186.5,-60 186.5,-57 189.5,-54 192.5,-54 192.5,-54 317.5,-54 317.5,-54 320.5,-54 323.5,-57 323.5,-60 323.5,-60 323.5,-66 323.5,-66 323.5,-69 320.5,-72 317.5,-72"/>
+<text text-anchor="middle" x="255" y="-60.7" font-family="inherit" font-size="8.50">EvinceDocument.Annotation</text>
+</a>
+</g>
+</g>
+<!-- EvinceDocument.AnnotationTextMarkup -->
+<g id="node3" class="node">
+<title>EvinceDocument.AnnotationTextMarkup</title>
+<g id="a_node3"><a xlink:href="#EvinceDocument.AnnotationTextMarkup" xlink:title="EvinceDocument.AnnotationTextMarkup">
+<path fill="none" stroke="#75507b" d="M255.5,-18C255.5,-18 82.5,-18 82.5,-18 79.5,-18 76.5,-15 76.5,-12 76.5,-12 76.5,-6 76.5,-6 76.5,-3 79.5,0 82.5,0 82.5,0 255.5,0 255.5,0 258.5,0 261.5,-3 261.5,-6 261.5,-6 261.5,-12 261.5,-12 261.5,-15 258.5,-18 255.5,-18"/>
+<text text-anchor="middle" x="169" y="-6.7" font-family="inherit" font-size="8.50">EvinceDocument.AnnotationTextMarkup</text>
+</a>
+</g>
+</g>
+<!-- EvinceDocument.Annotation&#45;&gt;EvinceDocument.AnnotationTextMarkup -->
+<g id="edge1" class="edge">
+<title>EvinceDocument.Annotation&#45;&gt;EvinceDocument.AnnotationTextMarkup</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M241.56,-53.88C226.79,-44.95 203.01,-30.56 186.72,-20.72"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="187.53,-19.16 182.34,-18.07 185.72,-22.15 187.53,-19.16"/>
+</g>
+<!-- EvinceDocument.AnnotationMarkup -->
+<g id="node2" class="node">
+<title>EvinceDocument.AnnotationMarkup</title>
+<g id="a_node2"><a xlink:href="AnnotationMarkup.html#EvinceDocument.AnnotationMarkup" xlink:title="EvinceDocument.AnnotationMarkup">
+<path fill="none" stroke="#3091d1" d="M162,-72C162,-72 6,-72 6,-72 3,-72 0,-69 0,-66 0,-66 0,-60 0,-60 0,-57 3,-54 6,-54 6,-54 162,-54 162,-54 165,-54 168,-57 168,-60 168,-60 168,-66 168,-66 168,-69 165,-72 162,-72"/>
+<text text-anchor="middle" x="84" y="-60.7" font-family="inherit" font-size="8.50">EvinceDocument.AnnotationMarkup</text>
+</a>
+</g>
+</g>
+<!-- EvinceDocument.AnnotationMarkup&#45;&gt;EvinceDocument.AnnotationTextMarkup -->
+<g id="edge2" class="edge">
+<title>EvinceDocument.AnnotationMarkup&#45;&gt;EvinceDocument.AnnotationTextMarkup</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M97.28,-53.88C111.88,-44.95 135.39,-30.56 151.48,-20.72"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="152.46,-22.17 155.81,-18.07 150.63,-19.18 152.46,-22.17"/>
+</g>
+<!-- GObject.GInterface -->
+<g id="node4" class="node">
+<title>GObject.GInterface</title>
+<g id="a_node4"><a xlink:href="../../GObject-2.0/classes/GInterface.html#GObject.GInterface" xlink:title="GObject.GInterface">
+<path fill="none" stroke="#3091d1" d="M127,-126C127,-126 41,-126 41,-126 38,-126 35,-123 35,-120 35,-120 35,-114 35,-114 35,-111 38,-108 41,-108 41,-108 127,-108 127,-108 130,-108 133,-111 133,-114 133,-114 133,-120 133,-120 133,-123 130,-126 127,-126"/>
+<text text-anchor="middle" x="84" y="-114.7" font-family="inherit" font-size="8.50">GObject.GInterface</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;EvinceDocument.AnnotationMarkup -->
+<g id="edge3" class="edge">
+<title>GObject.GInterface&#45;&gt;EvinceDocument.AnnotationMarkup</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M84,-107.88C84,-99.76 84,-87.13 84,-77.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="85.75,-77.24 84,-72.24 82.25,-77.24 85.75,-77.24"/>
+</g>
+<!-- GObject.Object -->
+<g id="node5" class="node">
+<title>GObject.Object</title>
+<g id="a_node5"><a xlink:href="../../GObject-2.0/classes/Object.html#GObject.Object" xlink:title="GObject.Object">
+<path fill="none" stroke="#75507b" d="M289,-126C289,-126 221,-126 221,-126 218,-126 215,-123 215,-120 215,-120 215,-114 215,-114 215,-111 218,-108 221,-108 221,-108 289,-108 289,-108 292,-108 295,-111 295,-114 295,-114 295,-120 295,-120 295,-123 292,-126 289,-126"/>
+<text text-anchor="middle" x="255" y="-114.7" font-family="inherit" font-size="8.50">GObject.Object</text>
+</a>
+</g>
+</g>
+<!-- GObject.Object&#45;&gt;EvinceDocument.Annotation -->
+<g id="edge4" class="edge">
+<title>GObject.Object&#45;&gt;EvinceDocument.Annotation</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M255,-107.88C255,-99.76 255,-87.13 255,-77.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="256.75,-77.24 255,-72.24 253.25,-77.24 256.75,-77.24"/>
+</g>
+</g>
+</svg>
+</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Subclasses:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="methods">
+<span id="evincedocument-annotationtextmarkup-methods"></span><h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Annotation.html#evincedocument-annotation-methods"><span class="std std-ref">EvinceDocument.Annotation (17)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (37)</span></a>,     <a class="reference internal" href="AnnotationMarkup.html#evincedocument-annotationmarkup-methods"><span class="std std-ref">EvinceDocument.AnnotationMarkup (11)</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Structs:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/ObjectClass.html#gobject-objectclass-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.ObjectClass (5)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="99%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><em>class</em></td>
+<td><a class="reference internal" href="#EvinceDocument.AnnotationTextMarkup.highlight_new" title="EvinceDocument.AnnotationTextMarkup.highlight_new"><code class="xref py py-func docutils literal notranslate"><span class="pre">highlight_new</span></code></a> (page)</td>
+</tr>
+<tr class="row-even"><td><em>class</em></td>
+<td><a class="reference internal" href="#EvinceDocument.AnnotationTextMarkup.squiggly_new" title="EvinceDocument.AnnotationTextMarkup.squiggly_new"><code class="xref py py-func docutils literal notranslate"><span class="pre">squiggly_new</span></code></a> (page)</td>
+</tr>
+<tr class="row-odd"><td><em>class</em></td>
+<td><a class="reference internal" href="#EvinceDocument.AnnotationTextMarkup.strike_out_new" title="EvinceDocument.AnnotationTextMarkup.strike_out_new"><code class="xref py py-func docutils literal notranslate"><span class="pre">strike_out_new</span></code></a> (page)</td>
+</tr>
+<tr class="row-even"><td><em>class</em></td>
+<td><a class="reference internal" href="#EvinceDocument.AnnotationTextMarkup.underline_new" title="EvinceDocument.AnnotationTextMarkup.underline_new"><code class="xref py py-func docutils literal notranslate"><span class="pre">underline_new</span></code></a> (page)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#EvinceDocument.AnnotationTextMarkup.get_markup_type" title="EvinceDocument.AnnotationTextMarkup.get_markup_type"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_markup_type</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#EvinceDocument.AnnotationTextMarkup.set_markup_type" title="EvinceDocument.AnnotationTextMarkup.set_markup_type"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_markup_type</span></code></a> (markup_type)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="virtual-methods">
+<span id="evincedocument-annotationtextmarkup-vfuncs"></span><h2>Virtual Methods<a class="headerlink" href="#virtual-methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-vfuncs" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (7)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="evincedocument-annotationtextmarkup-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Annotation.html#evincedocument-annotation-props"><span class="std std-ref">EvinceDocument.Annotation (7)</span></a>,     <a class="reference internal" href="AnnotationMarkup.html#evincedocument-annotationmarkup-props"><span class="std std-ref">EvinceDocument.AnnotationMarkup (6)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="1%" />
+<col width="1%" />
+<col width="97%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Flags</th>
+<th class="head">Short Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="#EvinceDocument.AnnotationTextMarkup.props.type" title="EvinceDocument.AnnotationTextMarkup.props.type"><code class="xref py py-data docutils literal notranslate"><span class="pre">type</span></code></a></td>
+<td><a class="reference internal" href="../enums.html#EvinceDocument.AnnotationTextMarkupType" title="EvinceDocument.AnnotationTextMarkupType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EvinceDocument.AnnotationTextMarkupType</span></code></a></td>
+<td>r/w/c</td>
+<td>The text markup annotation type</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="signals">
+<span id="evincedocument-annotationtextmarkup-signals"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-signals" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fields">
+<span id="evincedocument-annotationtextmarkup-fields"></span><h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-fields" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="class-details">
+<h2>Class Details<a class="headerlink" href="#class-details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="EvinceDocument.AnnotationTextMarkup">
+<em class="property">class </em><code class="descclassname">EvinceDocument.</code><code class="descname">AnnotationTextMarkup</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#EvinceDocument.AnnotationTextMarkup" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Bases:</th><td class="field-body"><a class="reference internal" href="Annotation.html#EvinceDocument.Annotation" title="EvinceDocument.Annotation"><code class="xref py py-class docutils literal notranslate"><span class="pre">EvinceDocument.Annotation</span></code></a>,         <a class="reference internal" href="AnnotationMarkup.html#EvinceDocument.AnnotationMarkup" title="EvinceDocument.AnnotationMarkup"><code class="xref py py-class docutils literal notranslate"><span class="pre">EvinceDocument.AnnotationMarkup</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Abstract:</th><td class="field-body">No</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Structure:</th><td class="field-body"><a class="reference internal" href="AnnotationTextMarkupClass.html#EvinceDocument.AnnotationTextMarkupClass" title="EvinceDocument.AnnotationTextMarkupClass"><code class="xref py py-class docutils literal notranslate"><span class="pre">EvinceDocument.AnnotationTextMarkupClass</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<dl class="classmethod">
+<dt id="EvinceDocument.AnnotationTextMarkup.highlight_new">
+<em class="property">classmethod </em><code class="descname">highlight_new</code><span class="sig-paren">(</span><em>page</em><span class="sig-paren">)</span><a class="headerlink" href="#EvinceDocument.AnnotationTextMarkup.highlight_new" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>page</strong> (<a class="reference internal" href="Page.html#EvinceDocument.Page" title="EvinceDocument.Page"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EvinceDocument.Page</span></code></a>) – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="Annotation.html#EvinceDocument.Annotation" title="EvinceDocument.Annotation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EvinceDocument.Annotation</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="EvinceDocument.AnnotationTextMarkup.squiggly_new">
+<em class="property">classmethod </em><code class="descname">squiggly_new</code><span class="sig-paren">(</span><em>page</em><span class="sig-paren">)</span><a class="headerlink" href="#EvinceDocument.AnnotationTextMarkup.squiggly_new" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>page</strong> (<a class="reference internal" href="Page.html#EvinceDocument.Page" title="EvinceDocument.Page"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EvinceDocument.Page</span></code></a>) – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="Annotation.html#EvinceDocument.Annotation" title="EvinceDocument.Annotation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EvinceDocument.Annotation</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="EvinceDocument.AnnotationTextMarkup.strike_out_new">
+<em class="property">classmethod </em><code class="descname">strike_out_new</code><span class="sig-paren">(</span><em>page</em><span class="sig-paren">)</span><a class="headerlink" href="#EvinceDocument.AnnotationTextMarkup.strike_out_new" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>page</strong> (<a class="reference internal" href="Page.html#EvinceDocument.Page" title="EvinceDocument.Page"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EvinceDocument.Page</span></code></a>) – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="Annotation.html#EvinceDocument.Annotation" title="EvinceDocument.Annotation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EvinceDocument.Annotation</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="EvinceDocument.AnnotationTextMarkup.underline_new">
+<em class="property">classmethod </em><code class="descname">underline_new</code><span class="sig-paren">(</span><em>page</em><span class="sig-paren">)</span><a class="headerlink" href="#EvinceDocument.AnnotationTextMarkup.underline_new" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>page</strong> (<a class="reference internal" href="Page.html#EvinceDocument.Page" title="EvinceDocument.Page"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EvinceDocument.Page</span></code></a>) – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="Annotation.html#EvinceDocument.Annotation" title="EvinceDocument.Annotation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EvinceDocument.Annotation</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="EvinceDocument.AnnotationTextMarkup.get_markup_type">
+<code class="descname">get_markup_type</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#EvinceDocument.AnnotationTextMarkup.get_markup_type" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#EvinceDocument.AnnotationTextMarkupType" title="EvinceDocument.AnnotationTextMarkupType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EvinceDocument.AnnotationTextMarkupType</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="EvinceDocument.AnnotationTextMarkup.set_markup_type">
+<code class="descname">set_markup_type</code><span class="sig-paren">(</span><em>markup_type</em><span class="sig-paren">)</span><a class="headerlink" href="#EvinceDocument.AnnotationTextMarkup.set_markup_type" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>markup_type</strong> (<a class="reference internal" href="../enums.html#EvinceDocument.AnnotationTextMarkupType" title="EvinceDocument.AnnotationTextMarkupType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EvinceDocument.AnnotationTextMarkupType</span></code></a>) – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="property-details">
+<h2>Property Details<a class="headerlink" href="#property-details" title="Permalink to this headline">¶</a></h2>
+<dl class="data">
+<dt id="EvinceDocument.AnnotationTextMarkup.props.type">
+<code class="descclassname">EvinceDocument.AnnotationTextMarkup.props.</code><code class="descname">type</code><a class="headerlink" href="#EvinceDocument.AnnotationTextMarkup.props.type" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">type</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../enums.html#EvinceDocument.AnnotationTextMarkupType" title="EvinceDocument.AnnotationTextMarkupType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EvinceDocument.AnnotationTextMarkupType</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference internal" href="../enums.html#EvinceDocument.AnnotationTextMarkupType.HIGHLIGHT" title="EvinceDocument.AnnotationTextMarkupType.HIGHLIGHT"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EvinceDocument.AnnotationTextMarkupType.HIGHLIGHT</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.CONSTRUCT" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CONSTRUCT</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The text markup annotation type</p>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div> 
+
+</body>
+</html>

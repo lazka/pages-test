@@ -1,0 +1,506 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    Polkit.SystemBusName -
+    
+      Classes -
+    
+    Polkit 1.0
+  </title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/css/pgi.css" type="text/css" />
+  
+
+  
+  <script type="text/javascript">
+
+    function openSidebar(element) {
+        window.location.href = element.href + location.hash;
+        return false;
+    }
+
+    function inIframe() {
+        try {
+            return window.self !== window.top;
+        } catch (e) {
+            return true;
+        }
+    }
+
+    function onLoaded() {
+        if(!inIframe()) {
+            var icons = document.getElementsByClassName('open-sidebar');
+
+            for (var i = 0; i < icons.length; i ++) {
+                icons[i].style.display = 'table-cell';
+            }
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', onLoaded, false);
+
+  </script>
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="Polkit 1.0 Python API Docs" href="../index.html"/>
+        <link rel="up" title="Classes" href="../classes.html"/>
+        <link rel="next" title="Polkit.TemporaryAuthorization" href="TemporaryAuthorization.html"/>
+        <link rel="prev" title="Polkit.Permission" href="Permission.html"/> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+<div class="non-fixed-bar">
+<table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#Polkit-1.0/classes/SystemBusName.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Polkit 1.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>Polkit.SystemBusName</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="Permission.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="TemporaryAuthorization.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">Polkit.SystemBusName</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#property-details">Property Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+<div class="fixed-bar">
+  <table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#Polkit-1.0/classes/SystemBusName.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Polkit 1.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>Polkit.SystemBusName</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="Permission.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="TemporaryAuthorization.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">Polkit.SystemBusName</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#property-details">Property Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+  <div class="wy-grid-for-nav">
+
+    
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="main">
+            
+  <div class="section" id="polkit-systembusname">
+<h1>Polkit.SystemBusName<a class="headerlink" href="#polkit-systembusname" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<svg width="192pt" height="134pt"
+ viewBox="0.00 0.00 192.00 134.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 130)">
+<title>g</title>
+<!-- GObject.GInterface -->
+<g id="node1" class="node">
+<title>GObject.GInterface</title>
+<g id="a_node1"><a xlink:href="../../GObject-2.0/classes/GInterface.html#GObject.GInterface" xlink:title="GObject.GInterface">
+<path fill="none" stroke="#3091d1" d="M92,-126C92,-126 6,-126 6,-126 3,-126 0,-123 0,-120 0,-120 0,-114 0,-114 0,-111 3,-108 6,-108 6,-108 92,-108 92,-108 95,-108 98,-111 98,-114 98,-114 98,-120 98,-120 98,-123 95,-126 92,-126"/>
+<text text-anchor="middle" x="49" y="-114.7" font-family="inherit" font-size="8.50">GObject.GInterface</text>
+</a>
+</g>
+</g>
+<!-- Polkit.Subject -->
+<g id="node3" class="node">
+<title>Polkit.Subject</title>
+<g id="a_node3"><a xlink:href="Subject.html#Polkit.Subject" xlink:title="Polkit.Subject">
+<path fill="none" stroke="#3091d1" d="M79.5,-72C79.5,-72 18.5,-72 18.5,-72 15.5,-72 12.5,-69 12.5,-66 12.5,-66 12.5,-60 12.5,-60 12.5,-57 15.5,-54 18.5,-54 18.5,-54 79.5,-54 79.5,-54 82.5,-54 85.5,-57 85.5,-60 85.5,-60 85.5,-66 85.5,-66 85.5,-69 82.5,-72 79.5,-72"/>
+<text text-anchor="middle" x="49" y="-60.7" font-family="inherit" font-size="8.50">Polkit.Subject</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Polkit.Subject -->
+<g id="edge1" class="edge">
+<title>GObject.GInterface&#45;&gt;Polkit.Subject</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M49,-107.88C49,-99.76 49,-87.13 49,-77.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="50.75,-77.24 49,-72.24 47.25,-77.24 50.75,-77.24"/>
+</g>
+<!-- GObject.Object -->
+<g id="node2" class="node">
+<title>GObject.Object</title>
+<g id="a_node2"><a xlink:href="../../GObject-2.0/classes/Object.html#GObject.Object" xlink:title="GObject.Object">
+<path fill="none" stroke="#75507b" d="M178,-72C178,-72 110,-72 110,-72 107,-72 104,-69 104,-66 104,-66 104,-60 104,-60 104,-57 107,-54 110,-54 110,-54 178,-54 178,-54 181,-54 184,-57 184,-60 184,-60 184,-66 184,-66 184,-69 181,-72 178,-72"/>
+<text text-anchor="middle" x="144" y="-60.7" font-family="inherit" font-size="8.50">GObject.Object</text>
+</a>
+</g>
+</g>
+<!-- Polkit.SystemBusName -->
+<g id="node4" class="node">
+<title>Polkit.SystemBusName</title>
+<g id="a_node4"><a xlink:href="#Polkit.SystemBusName" xlink:title="Polkit.SystemBusName">
+<path fill="none" stroke="#75507b" d="M147,-18C147,-18 45,-18 45,-18 42,-18 39,-15 39,-12 39,-12 39,-6 39,-6 39,-3 42,0 45,0 45,0 147,0 147,0 150,0 153,-3 153,-6 153,-6 153,-12 153,-12 153,-15 150,-18 147,-18"/>
+<text text-anchor="middle" x="96" y="-6.7" font-family="inherit" font-size="8.50">Polkit.SystemBusName</text>
+</a>
+</g>
+</g>
+<!-- GObject.Object&#45;&gt;Polkit.SystemBusName -->
+<g id="edge2" class="edge">
+<title>GObject.Object&#45;&gt;Polkit.SystemBusName</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M136.5,-53.88C128.59,-45.3 116.03,-31.7 107,-21.91"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="108.28,-20.73 103.61,-18.24 105.71,-23.1 108.28,-20.73"/>
+</g>
+<!-- Polkit.Subject&#45;&gt;Polkit.SystemBusName -->
+<g id="edge3" class="edge">
+<title>Polkit.Subject&#45;&gt;Polkit.SystemBusName</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M56.34,-53.88C64.02,-45.38 76.17,-31.94 85,-22.18"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="86.5,-23.12 88.55,-18.24 83.9,-20.78 86.5,-23.12"/>
+</g>
+</g>
+</svg>
+</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Subclasses:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="methods">
+<span id="polkit-systembusname-methods"></span><h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (37)</span></a>,     <a class="reference internal" href="Subject.html#polkit-subject-methods"><span class="std std-ref">Polkit.Subject (7)</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Structs:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/ObjectClass.html#gobject-objectclass-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.ObjectClass (5)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="99%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><em>class</em></td>
+<td><a class="reference internal" href="#Polkit.SystemBusName.new" title="Polkit.SystemBusName.new"><code class="xref py py-func docutils literal notranslate"><span class="pre">new</span></code></a> (name)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Polkit.SystemBusName.get_name" title="Polkit.SystemBusName.get_name"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_name</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Polkit.SystemBusName.get_process_sync" title="Polkit.SystemBusName.get_process_sync"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_process_sync</span></code></a> (cancellable)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Polkit.SystemBusName.get_user_sync" title="Polkit.SystemBusName.get_user_sync"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_user_sync</span></code></a> (cancellable)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Polkit.SystemBusName.set_name" title="Polkit.SystemBusName.set_name"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_name</span></code></a> (name)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="virtual-methods">
+<span id="polkit-systembusname-vfuncs"></span><h2>Virtual Methods<a class="headerlink" href="#virtual-methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-vfuncs" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (7)</span></a>,     <a class="reference internal" href="Subject.html#polkit-subject-vfuncs"><span class="std std-ref">Polkit.Subject (6)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="polkit-systembusname-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="1%" />
+<col width="1%" />
+<col width="97%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Flags</th>
+<th class="head">Short Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="#Polkit.SystemBusName.props.name" title="Polkit.SystemBusName.props.name"><code class="xref py py-data docutils literal notranslate"><span class="pre">name</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+<td>r/w/c</td>
+<td>The unique name on the system message bus</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="signals">
+<span id="polkit-systembusname-signals"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-signals" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fields">
+<span id="polkit-systembusname-fields"></span><h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-fields" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="class-details">
+<h2>Class Details<a class="headerlink" href="#class-details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Polkit.SystemBusName">
+<em class="property">class </em><code class="descclassname">Polkit.</code><code class="descname">SystemBusName</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#Polkit.SystemBusName" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Bases:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#GObject.Object" title="(in GObject 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GObject.Object</span></code></a>,         <a class="reference internal" href="Subject.html#Polkit.Subject" title="Polkit.Subject"><code class="xref py py-class docutils literal notranslate"><span class="pre">Polkit.Subject</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Abstract:</th><td class="field-body">No</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Structure:</th><td class="field-body"><a class="reference internal" href="SystemBusNameClass.html#Polkit.SystemBusNameClass" title="Polkit.SystemBusNameClass"><code class="xref py py-class docutils literal notranslate"><span class="pre">Polkit.SystemBusNameClass</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>An object that represents a process owning a unique name on the system bus.</p>
+<dl class="classmethod">
+<dt id="Polkit.SystemBusName.new">
+<em class="property">classmethod </em><code class="descname">new</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="headerlink" href="#Polkit.SystemBusName.new" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>name</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – A unique system bus name.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">A <a class="reference internal" href="#Polkit.SystemBusName" title="Polkit.SystemBusName"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Polkit.SystemBusName</span></code></a>. Free with <a class="reference external" href="../../GObject-2.0/classes/Object.html#GObject.Object.unref" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GObject.Object.unref</span></code></a>().</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="Subject.html#Polkit.Subject" title="Polkit.Subject"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Polkit.Subject</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Creates a new <a class="reference internal" href="#Polkit.SystemBusName" title="Polkit.SystemBusName"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Polkit.SystemBusName</span></code></a> for <cite>name</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Polkit.SystemBusName.get_name">
+<code class="descname">get_name</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Polkit.SystemBusName.get_name" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The unique system bus name for <cite>self</cite>. Do not
+free, this string is owned by <cite>self</cite>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the unique system bus name for <cite>self</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Polkit.SystemBusName.get_process_sync">
+<code class="descname">get_process_sync</code><span class="sig-paren">(</span><em>cancellable</em><span class="sig-paren">)</span><a class="headerlink" href="#Polkit.SystemBusName.get_process_sync" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>cancellable</strong> (<a class="reference external" href="../../Gio-2.0/classes/Cancellable.html#Gio.Cancellable" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Cancellable</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – A <a class="reference external" href="../../Gio-2.0/classes/Cancellable.html#Gio.Cancellable" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Cancellable</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference external" href="../../GLib-2.0/classes/Error.html#GLib.Error" title="(in GLib 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLib.Error</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A <a class="reference internal" href="UnixProcess.html#Polkit.UnixProcess" title="Polkit.UnixProcess"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Polkit.UnixProcess</span></code></a> object or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> if <cite>error</cite> is set.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="Subject.html#Polkit.Subject" title="Polkit.Subject"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Polkit.Subject</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Synchronously gets a <a class="reference internal" href="UnixProcess.html#Polkit.UnixProcess" title="Polkit.UnixProcess"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Polkit.UnixProcess</span></code></a> object for <cite>self</cite></p>
+<ul class="simple">
+<li>the calling thread is blocked until a reply is received.</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="Polkit.SystemBusName.get_user_sync">
+<code class="descname">get_user_sync</code><span class="sig-paren">(</span><em>cancellable</em><span class="sig-paren">)</span><a class="headerlink" href="#Polkit.SystemBusName.get_user_sync" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>cancellable</strong> (<a class="reference external" href="../../Gio-2.0/classes/Cancellable.html#Gio.Cancellable" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Cancellable</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – A <a class="reference external" href="../../Gio-2.0/classes/Cancellable.html#Gio.Cancellable" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Cancellable</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference external" href="../../GLib-2.0/classes/Error.html#GLib.Error" title="(in GLib 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLib.Error</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A <a class="reference internal" href="UnixUser.html#Polkit.UnixUser" title="Polkit.UnixUser"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Polkit.UnixUser</span></code></a> object or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> if <cite>error</cite> is set.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="UnixUser.html#Polkit.UnixUser" title="Polkit.UnixUser"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Polkit.UnixUser</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Synchronously gets a <a class="reference internal" href="UnixUser.html#Polkit.UnixUser" title="Polkit.UnixUser"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Polkit.UnixUser</span></code></a> object for <cite>self</cite>;
+the calling thread is blocked until a reply is received.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Polkit.SystemBusName.set_name">
+<code class="descname">set_name</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="headerlink" href="#Polkit.SystemBusName.set_name" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>name</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – A unique system bus name.</td>
+</tr>
+</tbody>
+</table>
+<p>Sets the unique system bus name for <cite>self</cite>.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="property-details">
+<h2>Property Details<a class="headerlink" href="#property-details" title="Permalink to this headline">¶</a></h2>
+<dl class="data">
+<dt id="Polkit.SystemBusName.props.name">
+<code class="descclassname">Polkit.SystemBusName.props.</code><code class="descname">name</code><a class="headerlink" href="#Polkit.SystemBusName.props.name" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">name</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.CONSTRUCT" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CONSTRUCT</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The unique name on the system message bus.</p>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div> 
+
+</body>
+</html>

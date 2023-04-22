@@ -1,0 +1,909 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    NM.AccessPoint -
+    
+      Classes -
+    
+    NM 1.0
+  </title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/css/pgi.css" type="text/css" />
+  
+
+  
+  <script type="text/javascript">
+
+    function openSidebar(element) {
+        window.location.href = element.href + location.hash;
+        return false;
+    }
+
+    function inIframe() {
+        try {
+            return window.self !== window.top;
+        } catch (e) {
+            return true;
+        }
+    }
+
+    function onLoaded() {
+        if(!inIframe()) {
+            var icons = document.getElementsByClassName('open-sidebar');
+
+            for (var i = 0; i < icons.length; i ++) {
+                icons[i].style.display = 'table-cell';
+            }
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', onLoaded, false);
+
+  </script>
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="NM 1.0 Python API Docs" href="../index.html"/>
+        <link rel="up" title="Classes" href="../classes.html"/>
+        <link rel="next" title="NM.ActiveConnection" href="ActiveConnection.html"/>
+        <link rel="prev" title="Classes" href="../classes.html"/> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+<div class="non-fixed-bar">
+<table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#NM-1.0/classes/AccessPoint.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">NM 1.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>NM.AccessPoint</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="../classes.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="ActiveConnection.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">NM.AccessPoint</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#property-details">Property Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+<div class="fixed-bar">
+  <table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#NM-1.0/classes/AccessPoint.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">NM 1.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>NM.AccessPoint</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="../classes.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="ActiveConnection.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">NM.AccessPoint</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#property-details">Property Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+  <div class="wy-grid-for-nav">
+
+    
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="main">
+            
+  <div class="section" id="nm-accesspoint">
+<h1>NM.AccessPoint<a class="headerlink" href="#nm-accesspoint" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<svg width="91pt" height="134pt"
+ viewBox="0.00 0.00 91.00 134.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 130)">
+<title>g</title>
+<!-- GObject.Object -->
+<g id="node1" class="node">
+<title>GObject.Object</title>
+<g id="a_node1"><a xlink:href="../../GObject-2.0/classes/Object.html#GObject.Object" xlink:title="GObject.Object">
+<path fill="none" stroke="#75507b" d="M75.5,-126C75.5,-126 7.5,-126 7.5,-126 4.5,-126 1.5,-123 1.5,-120 1.5,-120 1.5,-114 1.5,-114 1.5,-111 4.5,-108 7.5,-108 7.5,-108 75.5,-108 75.5,-108 78.5,-108 81.5,-111 81.5,-114 81.5,-114 81.5,-120 81.5,-120 81.5,-123 78.5,-126 75.5,-126"/>
+<text text-anchor="middle" x="41.5" y="-114.7" font-family="inherit" font-size="8.50">GObject.Object</text>
+</a>
+</g>
+</g>
+<!-- NM.Object -->
+<g id="node3" class="node">
+<title>NM.Object</title>
+<g id="a_node3"><a xlink:href="Object.html#NM.Object" xlink:title="NM.Object">
+<path fill="none" stroke="#aaaaaa" d="M65.5,-72C65.5,-72 17.5,-72 17.5,-72 14.5,-72 11.5,-69 11.5,-66 11.5,-66 11.5,-60 11.5,-60 11.5,-57 14.5,-54 17.5,-54 17.5,-54 65.5,-54 65.5,-54 68.5,-54 71.5,-57 71.5,-60 71.5,-60 71.5,-66 71.5,-66 71.5,-69 68.5,-72 65.5,-72"/>
+<text text-anchor="middle" x="41.5" y="-60.7" font-family="inherit" font-size="8.50">NM.Object</text>
+</a>
+</g>
+</g>
+<!-- GObject.Object&#45;&gt;NM.Object -->
+<g id="edge1" class="edge">
+<title>GObject.Object&#45;&gt;NM.Object</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M41.5,-107.88C41.5,-99.76 41.5,-87.13 41.5,-77.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="43.25,-77.24 41.5,-72.24 39.75,-77.24 43.25,-77.24"/>
+</g>
+<!-- NM.AccessPoint -->
+<g id="node2" class="node">
+<title>NM.AccessPoint</title>
+<g id="a_node2"><a xlink:href="#NM.AccessPoint" xlink:title="NM.AccessPoint">
+<path fill="none" stroke="#75507b" d="M77,-18C77,-18 6,-18 6,-18 3,-18 0,-15 0,-12 0,-12 0,-6 0,-6 0,-3 3,0 6,0 6,0 77,0 77,0 80,0 83,-3 83,-6 83,-6 83,-12 83,-12 83,-15 80,-18 77,-18"/>
+<text text-anchor="middle" x="41.5" y="-6.7" font-family="inherit" font-size="8.50">NM.AccessPoint</text>
+</a>
+</g>
+</g>
+<!-- NM.Object&#45;&gt;NM.AccessPoint -->
+<g id="edge2" class="edge">
+<title>NM.Object&#45;&gt;NM.AccessPoint</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M41.5,-53.88C41.5,-45.76 41.5,-33.13 41.5,-23.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="43.25,-23.24 41.5,-18.24 39.75,-23.24 43.25,-23.24"/>
+</g>
+</g>
+</svg>
+</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Subclasses:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="methods">
+<span id="nm-accesspoint-methods"></span><h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Object.html#nm-object-methods"><span class="std std-ref">NM.Object (2)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (37)</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Structs:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/ObjectClass.html#gobject-objectclass-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.ObjectClass (5)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="99%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.AccessPoint.connection_valid" title="NM.AccessPoint.connection_valid"><code class="xref py py-func docutils literal notranslate"><span class="pre">connection_valid</span></code></a> (connection)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.AccessPoint.filter_connections" title="NM.AccessPoint.filter_connections"><code class="xref py py-func docutils literal notranslate"><span class="pre">filter_connections</span></code></a> (connections)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.AccessPoint.get_bssid" title="NM.AccessPoint.get_bssid"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_bssid</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.AccessPoint.get_flags" title="NM.AccessPoint.get_flags"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_flags</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.AccessPoint.get_frequency" title="NM.AccessPoint.get_frequency"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_frequency</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.AccessPoint.get_last_seen" title="NM.AccessPoint.get_last_seen"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_last_seen</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.AccessPoint.get_max_bitrate" title="NM.AccessPoint.get_max_bitrate"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_max_bitrate</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.AccessPoint.get_mode" title="NM.AccessPoint.get_mode"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_mode</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.AccessPoint.get_rsn_flags" title="NM.AccessPoint.get_rsn_flags"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_rsn_flags</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.AccessPoint.get_ssid" title="NM.AccessPoint.get_ssid"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_ssid</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.AccessPoint.get_strength" title="NM.AccessPoint.get_strength"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_strength</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.AccessPoint.get_wpa_flags" title="NM.AccessPoint.get_wpa_flags"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_wpa_flags</span></code></a> ()</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="virtual-methods">
+<span id="nm-accesspoint-vfuncs"></span><h2>Virtual Methods<a class="headerlink" href="#virtual-methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-vfuncs" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (7)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="nm-accesspoint-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Object.html#nm-object-props"><span class="std std-ref">NM.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="1%" />
+<col width="1%" />
+<col width="97%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Flags</th>
+<th class="head">Short Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="#NM.AccessPoint.props.bssid" title="NM.AccessPoint.props.bssid"><code class="xref py py-data docutils literal notranslate"><span class="pre">bssid</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#NM.AccessPoint.props.flags" title="NM.AccessPoint.props.flags"><code class="xref py py-data docutils literal notranslate"><span class="pre">flags</span></code></a></td>
+<td><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.80211ApFlags</span></code></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#NM.AccessPoint.props.frequency" title="NM.AccessPoint.props.frequency"><code class="xref py py-data docutils literal notranslate"><span class="pre">frequency</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#NM.AccessPoint.props.hw_address" title="NM.AccessPoint.props.hw_address"><code class="xref py py-data docutils literal notranslate"><span class="pre">hw-address</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+<td>r</td>
+<td><blockquote class="first last">
+<div><code class="docutils literal notranslate"><span class="pre">deprecated</span></code></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#NM.AccessPoint.props.last_seen" title="NM.AccessPoint.props.last_seen"><code class="xref py py-data docutils literal notranslate"><span class="pre">last-seen</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#NM.AccessPoint.props.max_bitrate" title="NM.AccessPoint.props.max_bitrate"><code class="xref py py-data docutils literal notranslate"><span class="pre">max-bitrate</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#NM.AccessPoint.props.mode" title="NM.AccessPoint.props.mode"><code class="xref py py-data docutils literal notranslate"><span class="pre">mode</span></code></a></td>
+<td><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.80211Mode</span></code></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#NM.AccessPoint.props.rsn_flags" title="NM.AccessPoint.props.rsn_flags"><code class="xref py py-data docutils literal notranslate"><span class="pre">rsn-flags</span></code></a></td>
+<td><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.80211ApSecurityFlags</span></code></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#NM.AccessPoint.props.ssid" title="NM.AccessPoint.props.ssid"><code class="xref py py-data docutils literal notranslate"><span class="pre">ssid</span></code></a></td>
+<td><a class="reference external" href="../../GLib-2.0/classes/Bytes.html#GLib.Bytes" title="(in GLib 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GLib.Bytes</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#NM.AccessPoint.props.strength" title="NM.AccessPoint.props.strength"><code class="xref py py-data docutils literal notranslate"><span class="pre">strength</span></code></a></td>
+<td>&#160;</td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#NM.AccessPoint.props.wpa_flags" title="NM.AccessPoint.props.wpa_flags"><code class="xref py py-data docutils literal notranslate"><span class="pre">wpa-flags</span></code></a></td>
+<td><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.80211ApSecurityFlags</span></code></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="signals">
+<span id="nm-accesspoint-signals"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-signals" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fields">
+<span id="nm-accesspoint-fields"></span><h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-fields" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="class-details">
+<h2>Class Details<a class="headerlink" href="#class-details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="NM.AccessPoint">
+<em class="property">class </em><code class="descclassname">NM.</code><code class="descname">AccessPoint</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#NM.AccessPoint" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Bases:</th><td class="field-body"><a class="reference internal" href="Object.html#NM.Object" title="NM.Object"><code class="xref py py-class docutils literal notranslate"><span class="pre">NM.Object</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Abstract:</th><td class="field-body">No</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Structure:</th><td class="field-body"><a class="reference internal" href="AccessPointClass.html#NM.AccessPointClass" title="NM.AccessPointClass"><code class="xref py py-class docutils literal notranslate"><span class="pre">NM.AccessPointClass</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="NM.AccessPoint.connection_valid">
+<code class="descname">connection_valid</code><span class="sig-paren">(</span><em>connection</em><span class="sig-paren">)</span><a class="headerlink" href="#NM.AccessPoint.connection_valid" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>connection</strong> (<a class="reference internal" href="Connection.html#NM.Connection" title="NM.Connection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.Connection</span></code></a>) – an <a class="reference internal" href="Connection.html#NM.Connection" title="NM.Connection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.Connection</span></code></a> to validate against <cite>self</cite></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if the connection may be activated with this Wi-Fi AP,
+<a class="reference external" href="http://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a> if it cannot be.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Validates a given connection against a given Wi-Fi access point to ensure that
+the connection may be activated with that AP.  The connection must match the
+<cite>self</cite>’s SSID, (if given) BSSID, and other attributes like security settings,
+channel, band, etc.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.AccessPoint.filter_connections">
+<code class="descname">filter_connections</code><span class="sig-paren">(</span><em>connections</em><span class="sig-paren">)</span><a class="headerlink" href="#NM.AccessPoint.filter_connections" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>connections</strong> ([<a class="reference internal" href="Connection.html#NM.Connection" title="NM.Connection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.Connection</span></code></a>]) – an array of <a class="reference internal" href="Connection.html#NM.Connection" title="NM.Connection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.Connections</span></code></a> to
+filter</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">an array of
+<a class="reference internal" href="Connection.html#NM.Connection" title="NM.Connection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.Connections</span></code></a> that could be activated with the given <cite>self</cite>.  The array should
+be freed with g_ptr_array_unref() when it is no longer required.<p>WARNING: the transfer annotation for this function may not work correctly
+with bindings. See https://gitlab.gnome.org/GNOME/gobject-introspection/-/issues/305.
+You can filter the list yourself with <a class="reference internal" href="#NM.AccessPoint.connection_valid" title="NM.AccessPoint.connection_valid"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.AccessPoint.connection_valid</span></code></a>().</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">[<a class="reference internal" href="Connection.html#NM.Connection" title="NM.Connection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.Connection</span></code></a>]</td>
+</tr>
+</tbody>
+</table>
+<p>Filters a given array of connections for a given <a class="reference internal" href="#NM.AccessPoint" title="NM.AccessPoint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.AccessPoint</span></code></a> object and
+returns connections which may be activated with the access point.  Any
+returned connections will match the <cite>self</cite>’s SSID and (if given) BSSID and
+other attributes like security settings, channel, etc.</p>
+<p>To obtain the list of connections that are compatible with this access point,
+use <a class="reference internal" href="Client.html#NM.Client.get_connections" title="NM.Client.get_connections"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.Client.get_connections</span></code></a>() and then filter the returned list for a given
+<a class="reference internal" href="Device.html#NM.Device" title="NM.Device"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.Device</span></code></a> using <a class="reference internal" href="Device.html#NM.Device.filter_connections" title="NM.Device.filter_connections"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.Device.filter_connections</span></code></a>() and finally filter that list
+with this function.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.AccessPoint.get_bssid">
+<code class="descname">get_bssid</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NM.AccessPoint.get_bssid" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the BSSID of the access point. This is an internal string and must
+not be modified or freed.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the Basic Service Set ID (BSSID) of the Wi-Fi access point.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.AccessPoint.get_flags">
+<code class="descname">get_flags</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NM.AccessPoint.get_flags" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the flags</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.80211ApFlags</span></code></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the flags of the access point.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.AccessPoint.get_frequency">
+<code class="descname">get_frequency</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NM.AccessPoint.get_frequency" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the frequency in MHz</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the frequency of the access point in MHz.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.AccessPoint.get_last_seen">
+<code class="descname">get_last_seen</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NM.AccessPoint.get_last_seen" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the last seen time in seconds</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns the timestamp (in CLOCK_BOOTTIME seconds) for the last time the
+access point was found in scan results.  A value of -1 means the access
+point has not been found in a scan.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.2.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.AccessPoint.get_max_bitrate">
+<code class="descname">get_max_bitrate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NM.AccessPoint.get_max_bitrate" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the maximum bit rate (kbit/s)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the maximum bit rate of the access point in kbit/s.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.AccessPoint.get_mode">
+<code class="descname">get_mode</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NM.AccessPoint.get_mode" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the mode</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.80211Mode</span></code></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the mode of the access point.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.AccessPoint.get_rsn_flags">
+<code class="descname">get_rsn_flags</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NM.AccessPoint.get_rsn_flags" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the RSN flags</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.80211ApSecurityFlags</span></code></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the RSN (Robust Secure Network, ie WPA version 2) flags of the access
+point.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.AccessPoint.get_ssid">
+<code class="descname">get_ssid</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NM.AccessPoint.get_ssid" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the <a class="reference external" href="../../GLib-2.0/classes/Bytes.html#GLib.Bytes" title="(in GLib 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GLib.Bytes</span></code></a> containing the SSID, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> if the
+SSID is unknown.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="../../GLib-2.0/classes/Bytes.html#GLib.Bytes" title="(in GLib 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GLib.Bytes</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the SSID of the access point.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.AccessPoint.get_strength">
+<code class="descname">get_strength</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NM.AccessPoint.get_strength" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the signal strength (0 to 100)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the current signal strength of the access point as a percentage.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.AccessPoint.get_wpa_flags">
+<code class="descname">get_wpa_flags</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NM.AccessPoint.get_wpa_flags" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the WPA flags</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.80211ApSecurityFlags</span></code></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the WPA (version 1) flags of the access point.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="property-details">
+<h2>Property Details<a class="headerlink" href="#property-details" title="Permalink to this headline">¶</a></h2>
+<dl class="data">
+<dt id="NM.AccessPoint.props.bssid">
+<code class="descclassname">NM.AccessPoint.props.</code><code class="descname">bssid</code><a class="headerlink" href="#NM.AccessPoint.props.bssid" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">bssid</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The BSSID of the access point.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="NM.AccessPoint.props.flags">
+<code class="descclassname">NM.AccessPoint.props.</code><code class="descname">flags</code><a class="headerlink" href="#NM.AccessPoint.props.flags" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">flags</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.80211ApFlags</span></code></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.80211ApFlags.NONE</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The flags of the access point.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="NM.AccessPoint.props.frequency">
+<code class="descclassname">NM.AccessPoint.props.</code><code class="descname">frequency</code><a class="headerlink" href="#NM.AccessPoint.props.frequency" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">frequency</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">0</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The frequency of the access point.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="NM.AccessPoint.props.hw_address">
+<code class="descclassname">NM.AccessPoint.props.</code><code class="descname">hw_address</code><a class="headerlink" href="#NM.AccessPoint.props.hw_address" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">hw-address</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Alias for <a class="reference internal" href="#NM.AccessPoint" title="NM.AccessPoint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.AccessPoint</span></code></a> <a class="reference internal" href="#NM.AccessPoint.props.bssid" title="NM.AccessPoint.props.bssid"><code class="xref py py-data docutils literal notranslate"><span class="pre">:bssid</span></code></a>.</p>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 1.0: </span>Use <a class="reference internal" href="#NM.AccessPoint" title="NM.AccessPoint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.AccessPoint</span></code></a> <a class="reference internal" href="#NM.AccessPoint.props.bssid" title="NM.AccessPoint.props.bssid"><code class="xref py py-data docutils literal notranslate"><span class="pre">:bssid</span></code></a>.</p>
+</div>
+</dd></dl>
+
+<dl class="data">
+<dt id="NM.AccessPoint.props.last_seen">
+<code class="descclassname">NM.AccessPoint.props.</code><code class="descname">last_seen</code><a class="headerlink" href="#NM.AccessPoint.props.last_seen" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">last-seen</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">-1</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The timestamp (in CLOCK_BOOTTIME seconds) for the last time the
+access point was found in scan results.  A value of -1 means the
+access point has not been found in a scan.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.2.</span></p>
+</div>
+</dd></dl>
+
+<dl class="data">
+<dt id="NM.AccessPoint.props.max_bitrate">
+<code class="descclassname">NM.AccessPoint.props.</code><code class="descname">max_bitrate</code><a class="headerlink" href="#NM.AccessPoint.props.max_bitrate" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">max-bitrate</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">0</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The maximum bit rate of the access point in kbit/s.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="NM.AccessPoint.props.mode">
+<code class="descclassname">NM.AccessPoint.props.</code><code class="descname">mode</code><a class="headerlink" href="#NM.AccessPoint.props.mode" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">mode</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.80211Mode</span></code></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.80211Mode.UNKNOWN</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The mode of the access point; either “infrastructure” (a central
+coordinator of the wireless network allowing clients to connect) or
+“ad-hoc” (a network with no central controller).</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="NM.AccessPoint.props.rsn_flags">
+<code class="descclassname">NM.AccessPoint.props.</code><code class="descname">rsn_flags</code><a class="headerlink" href="#NM.AccessPoint.props.rsn_flags" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">rsn-flags</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.80211ApSecurityFlags</span></code></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.80211ApSecurityFlags.NONE</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The RSN flags of the access point.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="NM.AccessPoint.props.ssid">
+<code class="descclassname">NM.AccessPoint.props.</code><code class="descname">ssid</code><a class="headerlink" href="#NM.AccessPoint.props.ssid" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">ssid</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="../../GLib-2.0/classes/Bytes.html#GLib.Bytes" title="(in GLib 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GLib.Bytes</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The SSID of the access point, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> if it is not known.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="NM.AccessPoint.props.strength">
+<code class="descclassname">NM.AccessPoint.props.</code><code class="descname">strength</code><a class="headerlink" href="#NM.AccessPoint.props.strength" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">strength</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">0</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The current signal strength of the access point.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="NM.AccessPoint.props.wpa_flags">
+<code class="descclassname">NM.AccessPoint.props.</code><code class="descname">wpa_flags</code><a class="headerlink" href="#NM.AccessPoint.props.wpa_flags" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">wpa-flags</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.80211ApSecurityFlags</span></code></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.80211ApSecurityFlags.NONE</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The WPA flags of the access point.</p>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div> 
+
+</body>
+</html>

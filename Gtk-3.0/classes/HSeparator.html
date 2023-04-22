@@ -1,0 +1,510 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    Gtk.HSeparator -
+    
+      Classes -
+    
+    Gtk 3.0
+  </title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/css/pgi.css" type="text/css" />
+  
+
+  
+  <script type="text/javascript">
+
+    function openSidebar(element) {
+        window.location.href = element.href + location.hash;
+        return false;
+    }
+
+    function inIframe() {
+        try {
+            return window.self !== window.top;
+        } catch (e) {
+            return true;
+        }
+    }
+
+    function onLoaded() {
+        if(!inIframe()) {
+            var icons = document.getElementsByClassName('open-sidebar');
+
+            for (var i = 0; i < icons.length; i ++) {
+                icons[i].style.display = 'table-cell';
+            }
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', onLoaded, false);
+
+  </script>
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="Gtk 3.0 Python API Docs" href="../index.html"/>
+        <link rel="up" title="Classes" href="../classes.html"/>
+        <link rel="next" title="Gtk.HandleBox" href="HandleBox.html"/>
+        <link rel="prev" title="Gtk.HScrollbar" href="HScrollbar.html"/> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+<div class="non-fixed-bar">
+<table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#Gtk-3.0/classes/HSeparator.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Gtk 3.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>Gtk.HSeparator</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="HScrollbar.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="HandleBox.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">Gtk.HSeparator</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#style-properties">Style Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+<div class="fixed-bar">
+  <table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#Gtk-3.0/classes/HSeparator.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Gtk 3.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>Gtk.HSeparator</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="HScrollbar.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="HandleBox.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">Gtk.HSeparator</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#style-properties">Style Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+  <div class="wy-grid-for-nav">
+
+    
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="main">
+            
+  <div class="section" id="gtk-hseparator">
+<h1>Gtk.HSeparator<a class="headerlink" href="#gtk-hseparator" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<svg width="374pt" height="242pt"
+ viewBox="0.00 0.00 373.50 242.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 238)">
+<title>g</title>
+<!-- Atk.ImplementorIface -->
+<g id="node1" class="node">
+<title>Atk.ImplementorIface</title>
+<g id="a_node1"><a xlink:href="../../Atk-1.0/classes/ImplementorIface.html#Atk.ImplementorIface" xlink:title="Atk.ImplementorIface">
+<path fill="none" stroke="#3091d1" d="M219.5,-180C219.5,-180 123.5,-180 123.5,-180 120.5,-180 117.5,-177 117.5,-174 117.5,-174 117.5,-168 117.5,-168 117.5,-165 120.5,-162 123.5,-162 123.5,-162 219.5,-162 219.5,-162 222.5,-162 225.5,-165 225.5,-168 225.5,-168 225.5,-174 225.5,-174 225.5,-177 222.5,-180 219.5,-180"/>
+<text text-anchor="middle" x="171.5" y="-168.7" font-family="inherit" font-size="8.50">Atk.ImplementorIface</text>
+</a>
+</g>
+</g>
+<!-- Gtk.Widget -->
+<g id="node9" class="node">
+<title>Gtk.Widget</title>
+<g id="a_node9"><a xlink:href="Widget.html#Gtk.Widget" xlink:title="Gtk.Widget">
+<path fill="none" stroke="#aaaaaa" d="M176.5,-126C176.5,-126 124.5,-126 124.5,-126 121.5,-126 118.5,-123 118.5,-120 118.5,-120 118.5,-114 118.5,-114 118.5,-111 121.5,-108 124.5,-108 124.5,-108 176.5,-108 176.5,-108 179.5,-108 182.5,-111 182.5,-114 182.5,-114 182.5,-120 182.5,-120 182.5,-123 179.5,-126 176.5,-126"/>
+<text text-anchor="middle" x="150.5" y="-114.7" font-family="inherit" font-size="8.50">Gtk.Widget</text>
+</a>
+</g>
+</g>
+<!-- Atk.ImplementorIface&#45;&gt;Gtk.Widget -->
+<g id="edge1" class="edge">
+<title>Atk.ImplementorIface&#45;&gt;Gtk.Widget</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M168.22,-161.88C164.88,-153.6 159.65,-140.66 155.74,-130.97"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="157.32,-130.22 153.83,-126.24 154.08,-131.53 157.32,-130.22"/>
+</g>
+<!-- GObject.GInterface -->
+<g id="node2" class="node">
+<title>GObject.GInterface</title>
+<g id="a_node2"><a xlink:href="../../GObject-2.0/classes/GInterface.html#GObject.GInterface" xlink:title="GObject.GInterface">
+<path fill="none" stroke="#3091d1" d="M105.5,-234C105.5,-234 19.5,-234 19.5,-234 16.5,-234 13.5,-231 13.5,-228 13.5,-228 13.5,-222 13.5,-222 13.5,-219 16.5,-216 19.5,-216 19.5,-216 105.5,-216 105.5,-216 108.5,-216 111.5,-219 111.5,-222 111.5,-222 111.5,-228 111.5,-228 111.5,-231 108.5,-234 105.5,-234"/>
+<text text-anchor="middle" x="62.5" y="-222.7" font-family="inherit" font-size="8.50">GObject.GInterface</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Atk.ImplementorIface -->
+<g id="edge2" class="edge">
+<title>GObject.GInterface&#45;&gt;Atk.ImplementorIface</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M79.53,-215.88C98.49,-206.83 129.17,-192.19 149.83,-182.34"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="150.83,-183.8 154.59,-180.07 149.32,-180.64 150.83,-183.8"/>
+</g>
+<!-- Gtk.Buildable -->
+<g id="node5" class="node">
+<title>Gtk.Buildable</title>
+<g id="a_node5"><a xlink:href="Buildable.html#Gtk.Buildable" xlink:title="Gtk.Buildable">
+<path fill="none" stroke="#3091d1" d="M93.5,-180C93.5,-180 31.5,-180 31.5,-180 28.5,-180 25.5,-177 25.5,-174 25.5,-174 25.5,-168 25.5,-168 25.5,-165 28.5,-162 31.5,-162 31.5,-162 93.5,-162 93.5,-162 96.5,-162 99.5,-165 99.5,-168 99.5,-168 99.5,-174 99.5,-174 99.5,-177 96.5,-180 93.5,-180"/>
+<text text-anchor="middle" x="62.5" y="-168.7" font-family="inherit" font-size="8.50">Gtk.Buildable</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Gtk.Buildable -->
+<g id="edge3" class="edge">
+<title>GObject.GInterface&#45;&gt;Gtk.Buildable</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M62.5,-215.88C62.5,-207.76 62.5,-195.13 62.5,-185.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="64.25,-185.24 62.5,-180.24 60.75,-185.24 64.25,-185.24"/>
+</g>
+<!-- Gtk.Orientable -->
+<g id="node7" class="node">
+<title>Gtk.Orientable</title>
+<g id="a_node7"><a xlink:href="Orientable.html#Gtk.Orientable" xlink:title="Gtk.Orientable">
+<path fill="none" stroke="#3091d1" d="M73,-126C73,-126 6,-126 6,-126 3,-126 0,-123 0,-120 0,-120 0,-114 0,-114 0,-111 3,-108 6,-108 6,-108 73,-108 73,-108 76,-108 79,-111 79,-114 79,-114 79,-120 79,-120 79,-123 76,-126 73,-126"/>
+<text text-anchor="middle" x="39.5" y="-114.7" font-family="inherit" font-size="8.50">Gtk.Orientable</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Gtk.Orientable -->
+<g id="edge4" class="edge">
+<title>GObject.GInterface&#45;&gt;Gtk.Orientable</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M49.16,-215.76C38.08,-208.06 23.1,-195.45 16.5,-180 9.27,-163.08 20.11,-143.03 29.23,-130.42"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="30.86,-131.17 32.48,-126.12 28.06,-129.06 30.86,-131.17"/>
+</g>
+<!-- GObject.InitiallyUnowned -->
+<g id="node3" class="node">
+<title>GObject.InitiallyUnowned</title>
+<g id="a_node3"><a xlink:href="../../GObject-2.0/classes/InitiallyUnowned.html#GObject.InitiallyUnowned" xlink:title="GObject.InitiallyUnowned">
+<path fill="none" stroke="#75507b" d="M359.5,-180C359.5,-180 249.5,-180 249.5,-180 246.5,-180 243.5,-177 243.5,-174 243.5,-174 243.5,-168 243.5,-168 243.5,-165 246.5,-162 249.5,-162 249.5,-162 359.5,-162 359.5,-162 362.5,-162 365.5,-165 365.5,-168 365.5,-168 365.5,-174 365.5,-174 365.5,-177 362.5,-180 359.5,-180"/>
+<text text-anchor="middle" x="304.5" y="-168.7" font-family="inherit" font-size="8.50">GObject.InitiallyUnowned</text>
+</a>
+</g>
+</g>
+<!-- GObject.InitiallyUnowned&#45;&gt;Gtk.Widget -->
+<g id="edge5" class="edge">
+<title>GObject.InitiallyUnowned&#45;&gt;Gtk.Widget</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M280.77,-161.99C253.42,-152.75 208.46,-137.57 179.17,-127.68"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="179.55,-125.96 174.25,-126.02 178.43,-129.28 179.55,-125.96"/>
+</g>
+<!-- GObject.Object -->
+<g id="node4" class="node">
+<title>GObject.Object</title>
+<g id="a_node4"><a xlink:href="../../GObject-2.0/classes/Object.html#GObject.Object" xlink:title="GObject.Object">
+<path fill="none" stroke="#75507b" d="M338.5,-234C338.5,-234 270.5,-234 270.5,-234 267.5,-234 264.5,-231 264.5,-228 264.5,-228 264.5,-222 264.5,-222 264.5,-219 267.5,-216 270.5,-216 270.5,-216 338.5,-216 338.5,-216 341.5,-216 344.5,-219 344.5,-222 344.5,-222 344.5,-228 344.5,-228 344.5,-231 341.5,-234 338.5,-234"/>
+<text text-anchor="middle" x="304.5" y="-222.7" font-family="inherit" font-size="8.50">GObject.Object</text>
+</a>
+</g>
+</g>
+<!-- GObject.Object&#45;&gt;GObject.InitiallyUnowned -->
+<g id="edge6" class="edge">
+<title>GObject.Object&#45;&gt;GObject.InitiallyUnowned</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M304.5,-215.88C304.5,-207.76 304.5,-195.13 304.5,-185.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="306.25,-185.24 304.5,-180.24 302.75,-185.24 306.25,-185.24"/>
+</g>
+<!-- Gtk.Buildable&#45;&gt;Gtk.Widget -->
+<g id="edge7" class="edge">
+<title>Gtk.Buildable&#45;&gt;Gtk.Widget</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M76.25,-161.88C91.36,-152.95 115.7,-138.56 132.36,-128.72"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="133.43,-130.12 136.85,-126.07 131.65,-127.11 133.43,-130.12"/>
+</g>
+<!-- Gtk.HSeparator -->
+<g id="node6" class="node">
+<title>Gtk.HSeparator</title>
+<g id="a_node6"><a xlink:href="#Gtk.HSeparator" xlink:title="Gtk.HSeparator">
+<path fill="none" stroke="#75507b" d="M120,-18C120,-18 49,-18 49,-18 46,-18 43,-15 43,-12 43,-12 43,-6 43,-6 43,-3 46,0 49,0 49,0 120,0 120,0 123,0 126,-3 126,-6 126,-6 126,-12 126,-12 126,-15 123,-18 120,-18"/>
+<text text-anchor="middle" x="84.5" y="-6.7" font-family="inherit" font-size="8.50">Gtk.HSeparator</text>
+</a>
+</g>
+</g>
+<!-- Gtk.Separator -->
+<g id="node8" class="node">
+<title>Gtk.Separator</title>
+<g id="a_node8"><a xlink:href="Separator.html#Gtk.Separator" xlink:title="Gtk.Separator">
+<path fill="none" stroke="#75507b" d="M117,-72C117,-72 52,-72 52,-72 49,-72 46,-69 46,-66 46,-66 46,-60 46,-60 46,-57 49,-54 52,-54 52,-54 117,-54 117,-54 120,-54 123,-57 123,-60 123,-60 123,-66 123,-66 123,-69 120,-72 117,-72"/>
+<text text-anchor="middle" x="84.5" y="-60.7" font-family="inherit" font-size="8.50">Gtk.Separator</text>
+</a>
+</g>
+</g>
+<!-- Gtk.Orientable&#45;&gt;Gtk.Separator -->
+<g id="edge8" class="edge">
+<title>Gtk.Orientable&#45;&gt;Gtk.Separator</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M46.53,-107.88C53.89,-99.38 65.51,-85.94 73.96,-76.18"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="75.42,-77.17 77.37,-72.24 72.77,-74.88 75.42,-77.17"/>
+</g>
+<!-- Gtk.Separator&#45;&gt;Gtk.HSeparator -->
+<g id="edge9" class="edge">
+<title>Gtk.Separator&#45;&gt;Gtk.HSeparator</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M84.5,-53.88C84.5,-45.76 84.5,-33.13 84.5,-23.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="86.25,-23.24 84.5,-18.24 82.75,-23.24 86.25,-23.24"/>
+</g>
+<!-- Gtk.Widget&#45;&gt;Gtk.Separator -->
+<g id="edge10" class="edge">
+<title>Gtk.Widget&#45;&gt;Gtk.Separator</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M140.19,-107.88C129.11,-99.15 111.43,-85.22 98.97,-75.4"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="99.97,-73.96 94.96,-72.24 97.8,-76.71 99.97,-73.96"/>
+</g>
+</g>
+</svg>
+</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Subclasses:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="methods">
+<span id="gtk-hseparator-methods"></span><h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Separator.html#gtk-separator-methods"><span class="std std-ref">Gtk.Separator (1)</span></a>,     <a class="reference internal" href="Widget.html#gtk-widget-methods"><span class="std std-ref">Gtk.Widget (278)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (37)</span></a>,     <a class="reference internal" href="Buildable.html#gtk-buildable-methods"><span class="std std-ref">Gtk.Buildable (10)</span></a>,     <a class="reference internal" href="Orientable.html#gtk-orientable-methods"><span class="std std-ref">Gtk.Orientable (2)</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Structs:</th><td class="field-body"><a class="reference internal" href="WidgetClass.html#gtk-widgetclass-methods"><span class="std std-ref">Gtk.WidgetClass (12)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/ObjectClass.html#gobject-objectclass-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.ObjectClass (5)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="99%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><em>class</em></td>
+<td><a class="reference internal" href="#Gtk.HSeparator.new" title="Gtk.HSeparator.new"><code class="xref py py-func docutils literal notranslate"><span class="pre">new</span></code></a> ()</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="virtual-methods">
+<span id="gtk-hseparator-vfuncs"></span><h2>Virtual Methods<a class="headerlink" href="#virtual-methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Widget.html#gtk-widget-vfuncs"><span class="std std-ref">Gtk.Widget (82)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-vfuncs" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (7)</span></a>,     <a class="reference internal" href="Buildable.html#gtk-buildable-vfuncs"><span class="std std-ref">Gtk.Buildable (10)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="gtk-hseparator-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Widget.html#gtk-widget-props"><span class="std std-ref">Gtk.Widget (39)</span></a>,     <a class="reference internal" href="Orientable.html#gtk-orientable-props"><span class="std std-ref">Gtk.Orientable (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="style-properties">
+<span id="gtk-hseparator-style-props"></span><h2>Style Properties<a class="headerlink" href="#style-properties" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Widget.html#gtk-widget-style-props"><span class="std std-ref">Gtk.Widget (17)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="signals">
+<span id="gtk-hseparator-signals"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Widget.html#gtk-widget-signals"><span class="std std-ref">Gtk.Widget (69)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-signals" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fields">
+<span id="gtk-hseparator-fields"></span><h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Widget.html#gtk-widget-fields"><span class="std std-ref">Gtk.Widget (69)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-fields" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="16%" />
+<col width="1%" />
+<col width="1%" />
+<col width="82%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Access</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>separator</td>
+<td><a class="reference internal" href="Separator.html#Gtk.Separator" title="Gtk.Separator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Separator</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="class-details">
+<h2>Class Details<a class="headerlink" href="#class-details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Gtk.HSeparator">
+<em class="property">class </em><code class="descclassname">Gtk.</code><code class="descname">HSeparator</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#Gtk.HSeparator" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Bases:</th><td class="field-body"><a class="reference internal" href="Separator.html#Gtk.Separator" title="Gtk.Separator"><code class="xref py py-class docutils literal notranslate"><span class="pre">Gtk.Separator</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Abstract:</th><td class="field-body">No</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Structure:</th><td class="field-body"><a class="reference internal" href="HSeparatorClass.html#Gtk.HSeparatorClass" title="Gtk.HSeparatorClass"><code class="xref py py-class docutils literal notranslate"><span class="pre">Gtk.HSeparatorClass</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The <a class="reference internal" href="#Gtk.HSeparator" title="Gtk.HSeparator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.HSeparator</span></code></a> widget is a horizontal separator, used to group the
+widgets within a window. It displays a horizontal line with a shadow to
+make it appear sunken into the interface.</p>
+<p>The <a class="reference internal" href="#Gtk.HSeparator" title="Gtk.HSeparator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.HSeparator</span></code></a> widget is not used as a separator within menus.
+To create a separator in a menu create an empty <a class="reference internal" href="SeparatorMenuItem.html#Gtk.SeparatorMenuItem" title="Gtk.SeparatorMenuItem"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.SeparatorMenuItem</span></code></a>
+widget using <a class="reference internal" href="SeparatorMenuItem.html#Gtk.SeparatorMenuItem.new" title="Gtk.SeparatorMenuItem.new"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.SeparatorMenuItem.new</span></code></a>() and add it to the menu with
+<a class="reference internal" href="MenuShell.html#Gtk.MenuShell.append" title="Gtk.MenuShell.append"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.MenuShell.append</span></code></a>().</p>
+<p><a class="reference internal" href="#Gtk.HSeparator" title="Gtk.HSeparator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.HSeparator</span></code></a> has been deprecated, use <a class="reference internal" href="Separator.html#Gtk.Separator" title="Gtk.Separator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Separator</span></code></a> instead.</p>
+<dl class="classmethod">
+<dt id="Gtk.HSeparator.new">
+<em class="property">classmethod </em><code class="descname">new</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/deprecated/gtkhseparator.c#L75"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.HSeparator.new" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a new <a class="reference internal" href="#Gtk.HSeparator" title="Gtk.HSeparator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.HSeparator</span></code></a>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="Widget.html#Gtk.Widget" title="Gtk.Widget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Widget</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Creates a new <a class="reference internal" href="#Gtk.HSeparator" title="Gtk.HSeparator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.HSeparator</span></code></a>.</p>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 3.2: </span>Use <a class="reference internal" href="Separator.html#Gtk.Separator.new" title="Gtk.Separator.new"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Separator.new</span></code></a>() with <a class="reference internal" href="../enums.html#Gtk.Orientation.HORIZONTAL" title="Gtk.Orientation.HORIZONTAL"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Orientation.HORIZONTAL</span></code></a> instead</p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div> 
+
+</body>
+</html>

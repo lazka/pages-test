@@ -1,0 +1,1188 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    Gtk.AppChooserWidget -
+    
+      Classes -
+    
+    Gtk 3.0
+  </title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/css/pgi.css" type="text/css" />
+  
+
+  
+  <script type="text/javascript">
+
+    function openSidebar(element) {
+        window.location.href = element.href + location.hash;
+        return false;
+    }
+
+    function inIframe() {
+        try {
+            return window.self !== window.top;
+        } catch (e) {
+            return true;
+        }
+    }
+
+    function onLoaded() {
+        if(!inIframe()) {
+            var icons = document.getElementsByClassName('open-sidebar');
+
+            for (var i = 0; i < icons.length; i ++) {
+                icons[i].style.display = 'table-cell';
+            }
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', onLoaded, false);
+
+  </script>
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="Gtk 3.0 Python API Docs" href="../index.html"/>
+        <link rel="up" title="Classes" href="../classes.html"/>
+        <link rel="next" title="Gtk.Application" href="Application.html"/>
+        <link rel="prev" title="Gtk.AppChooserDialog" href="AppChooserDialog.html"/> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+<div class="non-fixed-bar">
+<table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#Gtk-3.0/classes/AppChooserWidget.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Gtk 3.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>Gtk.AppChooserWidget</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="AppChooserDialog.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="Application.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">Gtk.AppChooserWidget</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#child-properties">Child Properties</a></li>
+<li><a class="reference internal" href="#style-properties">Style Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#signal-details">Signal Details</a></li>
+<li><a class="reference internal" href="#property-details">Property Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+<div class="fixed-bar">
+  <table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#Gtk-3.0/classes/AppChooserWidget.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Gtk 3.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>Gtk.AppChooserWidget</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="AppChooserDialog.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="Application.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">Gtk.AppChooserWidget</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#child-properties">Child Properties</a></li>
+<li><a class="reference internal" href="#style-properties">Style Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#signal-details">Signal Details</a></li>
+<li><a class="reference internal" href="#property-details">Property Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+  <div class="wy-grid-for-nav">
+
+    
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="main">
+            
+  <div class="section" id="gtk-appchooserwidget">
+<h1>Gtk.AppChooserWidget<a class="headerlink" href="#gtk-appchooserwidget" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<svg width="490pt" height="296pt"
+ viewBox="0.00 0.00 490.00 296.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 292)">
+<title>g</title>
+<!-- Atk.ImplementorIface -->
+<g id="node1" class="node">
+<title>Atk.ImplementorIface</title>
+<g id="a_node1"><a xlink:href="../../Atk-1.0/classes/ImplementorIface.html#Atk.ImplementorIface" xlink:title="Atk.ImplementorIface">
+<path fill="none" stroke="#3091d1" d="M336,-234C336,-234 240,-234 240,-234 237,-234 234,-231 234,-228 234,-228 234,-222 234,-222 234,-219 237,-216 240,-216 240,-216 336,-216 336,-216 339,-216 342,-219 342,-222 342,-222 342,-228 342,-228 342,-231 339,-234 336,-234"/>
+<text text-anchor="middle" x="288" y="-222.7" font-family="inherit" font-size="8.50">Atk.ImplementorIface</text>
+</a>
+</g>
+</g>
+<!-- Gtk.Widget -->
+<g id="node11" class="node">
+<title>Gtk.Widget</title>
+<g id="a_node11"><a xlink:href="Widget.html#Gtk.Widget" xlink:title="Gtk.Widget">
+<path fill="none" stroke="#aaaaaa" d="M294,-180C294,-180 242,-180 242,-180 239,-180 236,-177 236,-174 236,-174 236,-168 236,-168 236,-165 239,-162 242,-162 242,-162 294,-162 294,-162 297,-162 300,-165 300,-168 300,-168 300,-174 300,-174 300,-177 297,-180 294,-180"/>
+<text text-anchor="middle" x="268" y="-168.7" font-family="inherit" font-size="8.50">Gtk.Widget</text>
+</a>
+</g>
+</g>
+<!-- Atk.ImplementorIface&#45;&gt;Gtk.Widget -->
+<g id="edge1" class="edge">
+<title>Atk.ImplementorIface&#45;&gt;Gtk.Widget</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M284.88,-215.88C281.69,-207.6 276.71,-194.66 272.99,-184.97"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="274.6,-184.28 271.17,-180.24 271.33,-185.53 274.6,-184.28"/>
+</g>
+<!-- GObject.GInterface -->
+<g id="node2" class="node">
+<title>GObject.GInterface</title>
+<g id="a_node2"><a xlink:href="../../GObject-2.0/classes/GInterface.html#GObject.GInterface" xlink:title="GObject.GInterface">
+<path fill="none" stroke="#3091d1" d="M190,-288C190,-288 104,-288 104,-288 101,-288 98,-285 98,-282 98,-282 98,-276 98,-276 98,-273 101,-270 104,-270 104,-270 190,-270 190,-270 193,-270 196,-273 196,-276 196,-276 196,-282 196,-282 196,-285 193,-288 190,-288"/>
+<text text-anchor="middle" x="147" y="-276.7" font-family="inherit" font-size="8.50">GObject.GInterface</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Atk.ImplementorIface -->
+<g id="edge2" class="edge">
+<title>GObject.GInterface&#45;&gt;Atk.ImplementorIface</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M168.72,-269.99C193.59,-260.82 234.35,-245.79 261.18,-235.89"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="261.94,-237.48 266.02,-234.11 260.72,-234.19 261.94,-237.48"/>
+</g>
+<!-- Gtk.AppChooser -->
+<g id="node5" class="node">
+<title>Gtk.AppChooser</title>
+<g id="a_node5"><a xlink:href="AppChooser.html#Gtk.AppChooser" xlink:title="Gtk.AppChooser">
+<path fill="none" stroke="#3091d1" d="M80,-180C80,-180 6,-180 6,-180 3,-180 0,-177 0,-174 0,-174 0,-168 0,-168 0,-165 3,-162 6,-162 6,-162 80,-162 80,-162 83,-162 86,-165 86,-168 86,-168 86,-174 86,-174 86,-177 83,-180 80,-180"/>
+<text text-anchor="middle" x="43" y="-168.7" font-family="inherit" font-size="8.50">Gtk.AppChooser</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Gtk.AppChooser -->
+<g id="edge5" class="edge">
+<title>GObject.GInterface&#45;&gt;Gtk.AppChooser</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M137.8,-269.76C128.18,-261.07 112.75,-246.86 100,-234 83.36,-217.2 64.99,-196.89 53.73,-184.2"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="54.81,-182.79 50.19,-180.21 52.19,-185.11 54.81,-182.79"/>
+</g>
+<!-- Gtk.Buildable -->
+<g id="node8" class="node">
+<title>Gtk.Buildable</title>
+<g id="a_node8"><a xlink:href="Buildable.html#Gtk.Buildable" xlink:title="Gtk.Buildable">
+<path fill="none" stroke="#3091d1" d="M210,-234C210,-234 148,-234 148,-234 145,-234 142,-231 142,-228 142,-228 142,-222 142,-222 142,-219 145,-216 148,-216 148,-216 210,-216 210,-216 213,-216 216,-219 216,-222 216,-222 216,-228 216,-228 216,-231 213,-234 210,-234"/>
+<text text-anchor="middle" x="179" y="-222.7" font-family="inherit" font-size="8.50">Gtk.Buildable</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Gtk.Buildable -->
+<g id="edge3" class="edge">
+<title>GObject.GInterface&#45;&gt;Gtk.Buildable</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M152,-269.88C157.14,-261.53 165.2,-248.42 171.18,-238.7"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="172.8,-239.42 173.93,-234.24 169.82,-237.58 172.8,-239.42"/>
+</g>
+<!-- Gtk.Orientable -->
+<g id="node10" class="node">
+<title>Gtk.Orientable</title>
+<g id="a_node10"><a xlink:href="Orientable.html#Gtk.Orientable" xlink:title="Gtk.Orientable">
+<path fill="none" stroke="#3091d1" d="M147.5,-126C147.5,-126 80.5,-126 80.5,-126 77.5,-126 74.5,-123 74.5,-120 74.5,-120 74.5,-114 74.5,-114 74.5,-111 77.5,-108 80.5,-108 80.5,-108 147.5,-108 147.5,-108 150.5,-108 153.5,-111 153.5,-114 153.5,-114 153.5,-120 153.5,-120 153.5,-123 150.5,-126 147.5,-126"/>
+<text text-anchor="middle" x="114" y="-114.7" font-family="inherit" font-size="8.50">Gtk.Orientable</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Gtk.Orientable -->
+<g id="edge4" class="edge">
+<title>GObject.GInterface&#45;&gt;Gtk.Orientable</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M144.06,-269.99C140.95,-261.25 136.06,-246.78 133,-234 124.19,-197.23 118.18,-152.91 115.53,-131.24"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="117.26,-130.99 114.93,-126.24 113.79,-131.41 117.26,-130.99"/>
+</g>
+<!-- GObject.InitiallyUnowned -->
+<g id="node3" class="node">
+<title>GObject.InitiallyUnowned</title>
+<g id="a_node3"><a xlink:href="../../GObject-2.0/classes/InitiallyUnowned.html#GObject.InitiallyUnowned" xlink:title="GObject.InitiallyUnowned">
+<path fill="none" stroke="#75507b" d="M476,-234C476,-234 366,-234 366,-234 363,-234 360,-231 360,-228 360,-228 360,-222 360,-222 360,-219 363,-216 366,-216 366,-216 476,-216 476,-216 479,-216 482,-219 482,-222 482,-222 482,-228 482,-228 482,-231 479,-234 476,-234"/>
+<text text-anchor="middle" x="421" y="-222.7" font-family="inherit" font-size="8.50">GObject.InitiallyUnowned</text>
+</a>
+</g>
+</g>
+<!-- GObject.InitiallyUnowned&#45;&gt;Gtk.Widget -->
+<g id="edge6" class="edge">
+<title>GObject.InitiallyUnowned&#45;&gt;Gtk.Widget</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M397.43,-215.99C370.25,-206.75 325.59,-191.57 296.49,-181.68"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="296.89,-179.97 291.6,-180.02 295.77,-183.29 296.89,-179.97"/>
+</g>
+<!-- GObject.Object -->
+<g id="node4" class="node">
+<title>GObject.Object</title>
+<g id="a_node4"><a xlink:href="../../GObject-2.0/classes/Object.html#GObject.Object" xlink:title="GObject.Object">
+<path fill="none" stroke="#75507b" d="M455,-288C455,-288 387,-288 387,-288 384,-288 381,-285 381,-282 381,-282 381,-276 381,-276 381,-273 384,-270 387,-270 387,-270 455,-270 455,-270 458,-270 461,-273 461,-276 461,-276 461,-282 461,-282 461,-285 458,-288 455,-288"/>
+<text text-anchor="middle" x="421" y="-276.7" font-family="inherit" font-size="8.50">GObject.Object</text>
+</a>
+</g>
+</g>
+<!-- GObject.Object&#45;&gt;GObject.InitiallyUnowned -->
+<g id="edge7" class="edge">
+<title>GObject.Object&#45;&gt;GObject.InitiallyUnowned</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M421,-269.88C421,-261.76 421,-249.13 421,-239.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="422.75,-239.24 421,-234.24 419.25,-239.24 422.75,-239.24"/>
+</g>
+<!-- Gtk.AppChooserWidget -->
+<g id="node6" class="node">
+<title>Gtk.AppChooserWidget</title>
+<g id="a_node6"><a xlink:href="#Gtk.AppChooserWidget" xlink:title="Gtk.AppChooserWidget">
+<path fill="none" stroke="#75507b" d="M131,-18C131,-18 27,-18 27,-18 24,-18 21,-15 21,-12 21,-12 21,-6 21,-6 21,-3 24,0 27,0 27,0 131,0 131,0 134,0 137,-3 137,-6 137,-6 137,-12 137,-12 137,-15 134,-18 131,-18"/>
+<text text-anchor="middle" x="79" y="-6.7" font-family="inherit" font-size="8.50">Gtk.AppChooserWidget</text>
+</a>
+</g>
+</g>
+<!-- Gtk.AppChooser&#45;&gt;Gtk.AppChooserWidget -->
+<g id="edge8" class="edge">
+<title>Gtk.AppChooser&#45;&gt;Gtk.AppChooserWidget</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M44.83,-161.85C50.66,-135.96 68.77,-55.47 75.99,-23.39"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="77.74,-23.59 77.13,-18.33 74.32,-22.82 77.74,-23.59"/>
+</g>
+<!-- Gtk.Box -->
+<g id="node7" class="node">
+<title>Gtk.Box</title>
+<g id="a_node7"><a xlink:href="Box.html#Gtk.Box" xlink:title="Gtk.Box">
+<path fill="none" stroke="#75507b" d="M135,-72C135,-72 93,-72 93,-72 90,-72 87,-69 87,-66 87,-66 87,-60 87,-60 87,-57 90,-54 93,-54 93,-54 135,-54 135,-54 138,-54 141,-57 141,-60 141,-60 141,-66 141,-66 141,-69 138,-72 135,-72"/>
+<text text-anchor="middle" x="114" y="-60.7" font-family="inherit" font-size="8.50">Gtk.Box</text>
+</a>
+</g>
+</g>
+<!-- Gtk.Box&#45;&gt;Gtk.AppChooserWidget -->
+<g id="edge9" class="edge">
+<title>Gtk.Box&#45;&gt;Gtk.AppChooserWidget</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M108.53,-53.88C102.86,-45.45 93.93,-32.18 87.37,-22.44"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="88.79,-21.41 84.55,-18.24 85.89,-23.36 88.79,-21.41"/>
+</g>
+<!-- Gtk.Buildable&#45;&gt;Gtk.Widget -->
+<g id="edge10" class="edge">
+<title>Gtk.Buildable&#45;&gt;Gtk.Widget</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M192.91,-215.88C208.19,-206.95 232.8,-192.56 249.66,-182.72"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="250.76,-184.1 254.19,-180.07 248.99,-181.08 250.76,-184.1"/>
+</g>
+<!-- Gtk.Container -->
+<g id="node9" class="node">
+<title>Gtk.Container</title>
+<g id="a_node9"><a xlink:href="Container.html#Gtk.Container" xlink:title="Gtk.Container">
+<path fill="none" stroke="#aaaaaa" d="M281,-126C281,-126 217,-126 217,-126 214,-126 211,-123 211,-120 211,-120 211,-114 211,-114 211,-111 214,-108 217,-108 217,-108 281,-108 281,-108 284,-108 287,-111 287,-114 287,-114 287,-120 287,-120 287,-123 284,-126 281,-126"/>
+<text text-anchor="middle" x="249" y="-114.7" font-family="inherit" font-size="8.50">Gtk.Container</text>
+</a>
+</g>
+</g>
+<!-- Gtk.Container&#45;&gt;Gtk.Box -->
+<g id="edge11" class="edge">
+<title>Gtk.Container&#45;&gt;Gtk.Box</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M228.2,-107.99C204.49,-98.85 165.69,-83.91 140,-74.01"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="140.34,-72.27 135.04,-72.11 139.08,-75.54 140.34,-72.27"/>
+</g>
+<!-- Gtk.Orientable&#45;&gt;Gtk.Box -->
+<g id="edge12" class="edge">
+<title>Gtk.Orientable&#45;&gt;Gtk.Box</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M114,-107.88C114,-99.76 114,-87.13 114,-77.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="115.75,-77.24 114,-72.24 112.25,-77.24 115.75,-77.24"/>
+</g>
+<!-- Gtk.Widget&#45;&gt;Gtk.Container -->
+<g id="edge13" class="edge">
+<title>Gtk.Widget&#45;&gt;Gtk.Container</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M265.03,-161.88C262.01,-153.6 257.28,-140.66 253.74,-130.97"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="255.37,-130.34 252.01,-126.24 252.08,-131.54 255.37,-130.34"/>
+</g>
+</g>
+</svg>
+</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Subclasses:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="methods">
+<span id="gtk-appchooserwidget-methods"></span><h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Box.html#gtk-box-methods"><span class="std std-ref">Gtk.Box (14)</span></a>,     <a class="reference internal" href="Container.html#gtk-container-methods"><span class="std std-ref">Gtk.Container (35)</span></a>,     <a class="reference internal" href="Widget.html#gtk-widget-methods"><span class="std std-ref">Gtk.Widget (278)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (37)</span></a>,     <a class="reference internal" href="Buildable.html#gtk-buildable-methods"><span class="std std-ref">Gtk.Buildable (10)</span></a>,     <a class="reference internal" href="Orientable.html#gtk-orientable-methods"><span class="std std-ref">Gtk.Orientable (2)</span></a>,     <a class="reference internal" href="AppChooser.html#gtk-appchooser-methods"><span class="std std-ref">Gtk.AppChooser (3)</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Structs:</th><td class="field-body"><a class="reference internal" href="ContainerClass.html#gtk-containerclass-methods"><span class="std std-ref">Gtk.ContainerClass (5)</span></a>,     <a class="reference internal" href="WidgetClass.html#gtk-widgetclass-methods"><span class="std std-ref">Gtk.WidgetClass (12)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/ObjectClass.html#gobject-objectclass-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.ObjectClass (5)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="99%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><em>class</em></td>
+<td><a class="reference internal" href="#Gtk.AppChooserWidget.new" title="Gtk.AppChooserWidget.new"><code class="xref py py-func docutils literal notranslate"><span class="pre">new</span></code></a> (content_type)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.AppChooserWidget.get_default_text" title="Gtk.AppChooserWidget.get_default_text"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_default_text</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.AppChooserWidget.get_show_all" title="Gtk.AppChooserWidget.get_show_all"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_show_all</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.AppChooserWidget.get_show_default" title="Gtk.AppChooserWidget.get_show_default"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_show_default</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.AppChooserWidget.get_show_fallback" title="Gtk.AppChooserWidget.get_show_fallback"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_show_fallback</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.AppChooserWidget.get_show_other" title="Gtk.AppChooserWidget.get_show_other"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_show_other</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.AppChooserWidget.get_show_recommended" title="Gtk.AppChooserWidget.get_show_recommended"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_show_recommended</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.AppChooserWidget.set_default_text" title="Gtk.AppChooserWidget.set_default_text"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_default_text</span></code></a> (text)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.AppChooserWidget.set_show_all" title="Gtk.AppChooserWidget.set_show_all"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_show_all</span></code></a> (setting)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.AppChooserWidget.set_show_default" title="Gtk.AppChooserWidget.set_show_default"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_show_default</span></code></a> (setting)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.AppChooserWidget.set_show_fallback" title="Gtk.AppChooserWidget.set_show_fallback"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_show_fallback</span></code></a> (setting)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.AppChooserWidget.set_show_other" title="Gtk.AppChooserWidget.set_show_other"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_show_other</span></code></a> (setting)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.AppChooserWidget.set_show_recommended" title="Gtk.AppChooserWidget.set_show_recommended"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_show_recommended</span></code></a> (setting)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="virtual-methods">
+<span id="gtk-appchooserwidget-vfuncs"></span><h2>Virtual Methods<a class="headerlink" href="#virtual-methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Container.html#gtk-container-vfuncs"><span class="std std-ref">Gtk.Container (10)</span></a>,     <a class="reference internal" href="Widget.html#gtk-widget-vfuncs"><span class="std std-ref">Gtk.Widget (82)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-vfuncs" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (7)</span></a>,     <a class="reference internal" href="Buildable.html#gtk-buildable-vfuncs"><span class="std std-ref">Gtk.Buildable (10)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="99%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.AppChooserWidget.do_application_activated" title="Gtk.AppChooserWidget.do_application_activated"><code class="xref py py-func docutils literal notranslate"><span class="pre">do_application_activated</span></code></a> (app_info)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.AppChooserWidget.do_application_selected" title="Gtk.AppChooserWidget.do_application_selected"><code class="xref py py-func docutils literal notranslate"><span class="pre">do_application_selected</span></code></a> (app_info)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.AppChooserWidget.do_populate_popup" title="Gtk.AppChooserWidget.do_populate_popup"><code class="xref py py-func docutils literal notranslate"><span class="pre">do_populate_popup</span></code></a> (menu, app_info)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="gtk-appchooserwidget-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Box.html#gtk-box-props"><span class="std std-ref">Gtk.Box (3)</span></a>,     <a class="reference internal" href="Container.html#gtk-container-props"><span class="std std-ref">Gtk.Container (3)</span></a>,     <a class="reference internal" href="Widget.html#gtk-widget-props"><span class="std std-ref">Gtk.Widget (39)</span></a>,     <a class="reference internal" href="Orientable.html#gtk-orientable-props"><span class="std std-ref">Gtk.Orientable (1)</span></a>,     <a class="reference internal" href="AppChooser.html#gtk-appchooser-props"><span class="std std-ref">Gtk.AppChooser (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="1%" />
+<col width="1%" />
+<col width="97%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Flags</th>
+<th class="head">Short Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="#Gtk.AppChooserWidget.props.default_text" title="Gtk.AppChooserWidget.props.default_text"><code class="xref py py-data docutils literal notranslate"><span class="pre">default-text</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+<td>r/w/en</td>
+<td>The default text appearing when there are no applications</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#Gtk.AppChooserWidget.props.show_all" title="Gtk.AppChooserWidget.props.show_all"><code class="xref py py-data docutils literal notranslate"><span class="pre">show-all</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+<td>r/w/c/en</td>
+<td>Whether the widget should show all applications</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#Gtk.AppChooserWidget.props.show_default" title="Gtk.AppChooserWidget.props.show_default"><code class="xref py py-data docutils literal notranslate"><span class="pre">show-default</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+<td>r/w/c/en</td>
+<td>Whether the widget should show the default application</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#Gtk.AppChooserWidget.props.show_fallback" title="Gtk.AppChooserWidget.props.show_fallback"><code class="xref py py-data docutils literal notranslate"><span class="pre">show-fallback</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+<td>r/w/c/en</td>
+<td>Whether the widget should show fallback applications</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#Gtk.AppChooserWidget.props.show_other" title="Gtk.AppChooserWidget.props.show_other"><code class="xref py py-data docutils literal notranslate"><span class="pre">show-other</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+<td>r/w/c/en</td>
+<td>Whether the widget should show other applications</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#Gtk.AppChooserWidget.props.show_recommended" title="Gtk.AppChooserWidget.props.show_recommended"><code class="xref py py-data docutils literal notranslate"><span class="pre">show-recommended</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+<td>r/w/c/en</td>
+<td>Whether the widget should show recommended applications</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="child-properties">
+<span id="gtk-appchooserwidget-child-props"></span><h2>Child Properties<a class="headerlink" href="#child-properties" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Box.html#gtk-box-child-props"><span class="std std-ref">Gtk.Box (5)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="style-properties">
+<span id="gtk-appchooserwidget-style-props"></span><h2>Style Properties<a class="headerlink" href="#style-properties" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Widget.html#gtk-widget-style-props"><span class="std std-ref">Gtk.Widget (17)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="signals">
+<span id="gtk-appchooserwidget-signals"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Container.html#gtk-container-signals"><span class="std std-ref">Gtk.Container (4)</span></a>,     <a class="reference internal" href="Widget.html#gtk-widget-signals"><span class="std std-ref">Gtk.Widget (69)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-signals" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="30%" />
+<col width="70%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Short Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="#Gtk.AppChooserWidget.signals.application_activated" title="Gtk.AppChooserWidget.signals.application_activated"><code class="xref py py-func docutils literal notranslate"><span class="pre">application-activated</span></code></a></td>
+<td>Emitted when an application item is activated from the widget’s list.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#Gtk.AppChooserWidget.signals.application_selected" title="Gtk.AppChooserWidget.signals.application_selected"><code class="xref py py-func docutils literal notranslate"><span class="pre">application-selected</span></code></a></td>
+<td>Emitted when an application item is selected from the widget’s list.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#Gtk.AppChooserWidget.signals.populate_popup" title="Gtk.AppChooserWidget.signals.populate_popup"><code class="xref py py-func docutils literal notranslate"><span class="pre">populate-popup</span></code></a></td>
+<td>Emitted when a context menu is about to popup over an application item.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fields">
+<span id="gtk-appchooserwidget-fields"></span><h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Container.html#gtk-container-fields"><span class="std std-ref">Gtk.Container (4)</span></a>,     <a class="reference internal" href="Widget.html#gtk-widget-fields"><span class="std std-ref">Gtk.Widget (69)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-fields" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="16%" />
+<col width="1%" />
+<col width="1%" />
+<col width="82%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Access</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>parent</td>
+<td><a class="reference internal" href="Box.html#Gtk.Box" title="Gtk.Box"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Box</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="class-details">
+<h2>Class Details<a class="headerlink" href="#class-details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Gtk.AppChooserWidget">
+<em class="property">class </em><code class="descclassname">Gtk.</code><code class="descname">AppChooserWidget</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#Gtk.AppChooserWidget" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Bases:</th><td class="field-body"><a class="reference internal" href="Box.html#Gtk.Box" title="Gtk.Box"><code class="xref py py-class docutils literal notranslate"><span class="pre">Gtk.Box</span></code></a>,         <a class="reference internal" href="AppChooser.html#Gtk.AppChooser" title="Gtk.AppChooser"><code class="xref py py-class docutils literal notranslate"><span class="pre">Gtk.AppChooser</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Abstract:</th><td class="field-body">No</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Structure:</th><td class="field-body"><a class="reference internal" href="AppChooserWidgetClass.html#Gtk.AppChooserWidgetClass" title="Gtk.AppChooserWidgetClass"><code class="xref py py-class docutils literal notranslate"><span class="pre">Gtk.AppChooserWidgetClass</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p><a class="reference internal" href="#Gtk.AppChooserWidget" title="Gtk.AppChooserWidget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.AppChooserWidget</span></code></a> is a widget for selecting applications.
+It is the main building block for <a class="reference internal" href="AppChooserDialog.html#Gtk.AppChooserDialog" title="Gtk.AppChooserDialog"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.AppChooserDialog</span></code></a>. Most
+applications only need to use the latter; but you can use
+this widget as part of a larger widget if you have special needs.</p>
+<p><a class="reference internal" href="#Gtk.AppChooserWidget" title="Gtk.AppChooserWidget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.AppChooserWidget</span></code></a> offers detailed control over what applications
+are shown, using the
+<a class="reference internal" href="#Gtk.AppChooserWidget" title="Gtk.AppChooserWidget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.AppChooserWidget</span></code></a> <a class="reference internal" href="#Gtk.AppChooserWidget.props.show_default" title="Gtk.AppChooserWidget.props.show_default"><code class="xref py py-data docutils literal notranslate"><span class="pre">:show-default</span></code></a>,
+<a class="reference internal" href="#Gtk.AppChooserWidget" title="Gtk.AppChooserWidget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.AppChooserWidget</span></code></a> <a class="reference internal" href="#Gtk.AppChooserWidget.props.show_recommended" title="Gtk.AppChooserWidget.props.show_recommended"><code class="xref py py-data docutils literal notranslate"><span class="pre">:show-recommended</span></code></a>,
+<a class="reference internal" href="#Gtk.AppChooserWidget" title="Gtk.AppChooserWidget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.AppChooserWidget</span></code></a> <a class="reference internal" href="#Gtk.AppChooserWidget.props.show_fallback" title="Gtk.AppChooserWidget.props.show_fallback"><code class="xref py py-data docutils literal notranslate"><span class="pre">:show-fallback</span></code></a>,
+<a class="reference internal" href="#Gtk.AppChooserWidget" title="Gtk.AppChooserWidget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.AppChooserWidget</span></code></a> <a class="reference internal" href="#Gtk.AppChooserWidget.props.show_other" title="Gtk.AppChooserWidget.props.show_other"><code class="xref py py-data docutils literal notranslate"><span class="pre">:show-other</span></code></a> and
+<a class="reference internal" href="#Gtk.AppChooserWidget" title="Gtk.AppChooserWidget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.AppChooserWidget</span></code></a> <a class="reference internal" href="#Gtk.AppChooserWidget.props.show_all" title="Gtk.AppChooserWidget.props.show_all"><code class="xref py py-data docutils literal notranslate"><span class="pre">:show-all</span></code></a>
+properties. See the <a class="reference internal" href="AppChooser.html#Gtk.AppChooser" title="Gtk.AppChooser"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.AppChooser</span></code></a> documentation for more information
+about these groups of applications.</p>
+<p>To keep track of the selected application, use the
+<a class="reference internal" href="#Gtk.AppChooserWidget" title="Gtk.AppChooserWidget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.AppChooserWidget</span></code></a> <a class="reference internal" href="#Gtk.AppChooserWidget.signals.application_selected" title="Gtk.AppChooserWidget.signals.application_selected"><code class="xref py py-func docutils literal notranslate"><span class="pre">::application-selected</span></code></a> and <a class="reference internal" href="#Gtk.AppChooserWidget" title="Gtk.AppChooserWidget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.AppChooserWidget</span></code></a> <a class="reference internal" href="#Gtk.AppChooserWidget.signals.application_activated" title="Gtk.AppChooserWidget.signals.application_activated"><code class="xref py py-func docutils literal notranslate"><span class="pre">::application-activated</span></code></a> signals.</p>
+<dl class="docutils">
+<dt>CSS nodes</dt>
+<dd></dd>
+</dl>
+<p><a class="reference internal" href="#Gtk.AppChooserWidget" title="Gtk.AppChooserWidget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.AppChooserWidget</span></code></a> has a single CSS node with name appchooser.</p>
+<dl class="classmethod">
+<dt id="Gtk.AppChooserWidget.new">
+<em class="property">classmethod </em><code class="descname">new</code><span class="sig-paren">(</span><em>content_type</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkappchooserwidget.c#L1175"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.AppChooserWidget.new" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>content_type</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – the content type to show applications for</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a newly created <a class="reference internal" href="#Gtk.AppChooserWidget" title="Gtk.AppChooserWidget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.AppChooserWidget</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="Widget.html#Gtk.Widget" title="Gtk.Widget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Widget</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Creates a new <a class="reference internal" href="#Gtk.AppChooserWidget" title="Gtk.AppChooserWidget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.AppChooserWidget</span></code></a> for applications
+that can handle content of the given type.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.AppChooserWidget.get_default_text">
+<code class="descname">get_default_text</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkappchooserwidget.c#L1444"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.AppChooserWidget.get_default_text" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the value of <a class="reference internal" href="#Gtk.AppChooserWidget" title="Gtk.AppChooserWidget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.AppChooserWidget</span></code></a> <a class="reference internal" href="#Gtk.AppChooserWidget.props.default_text" title="Gtk.AppChooserWidget.props.default_text"><code class="xref py py-data docutils literal notranslate"><span class="pre">:default-text</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns the text that is shown if there are not applications
+that can handle the content type.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.AppChooserWidget.get_show_all">
+<code class="descname">get_show_all</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkappchooserwidget.c#L1400"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.AppChooserWidget.get_show_all" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the value of <a class="reference internal" href="#Gtk.AppChooserWidget" title="Gtk.AppChooserWidget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.AppChooserWidget</span></code></a> <a class="reference internal" href="#Gtk.AppChooserWidget.props.show_all" title="Gtk.AppChooserWidget.props.show_all"><code class="xref py py-data docutils literal notranslate"><span class="pre">:show-all</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns the current value of the <a class="reference internal" href="#Gtk.AppChooserWidget" title="Gtk.AppChooserWidget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.AppChooserWidget</span></code></a> <a class="reference internal" href="#Gtk.AppChooserWidget.props.show_all" title="Gtk.AppChooserWidget.props.show_all"><code class="xref py py-data docutils literal notranslate"><span class="pre">:show-all</span></code></a>
+property.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.AppChooserWidget.get_show_default">
+<code class="descname">get_show_default</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkappchooserwidget.c#L1220"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.AppChooserWidget.get_show_default" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the value of <a class="reference internal" href="#Gtk.AppChooserWidget" title="Gtk.AppChooserWidget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.AppChooserWidget</span></code></a> <a class="reference internal" href="#Gtk.AppChooserWidget.props.show_default" title="Gtk.AppChooserWidget.props.show_default"><code class="xref py py-data docutils literal notranslate"><span class="pre">:show-default</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns the current value of the <a class="reference internal" href="#Gtk.AppChooserWidget" title="Gtk.AppChooserWidget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.AppChooserWidget</span></code></a> <a class="reference internal" href="#Gtk.AppChooserWidget.props.show_default" title="Gtk.AppChooserWidget.props.show_default"><code class="xref py py-data docutils literal notranslate"><span class="pre">:show-default</span></code></a>
+property.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.AppChooserWidget.get_show_fallback">
+<code class="descname">get_show_fallback</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkappchooserwidget.c#L1310"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.AppChooserWidget.get_show_fallback" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the value of <a class="reference internal" href="#Gtk.AppChooserWidget" title="Gtk.AppChooserWidget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.AppChooserWidget</span></code></a> <a class="reference internal" href="#Gtk.AppChooserWidget.props.show_fallback" title="Gtk.AppChooserWidget.props.show_fallback"><code class="xref py py-data docutils literal notranslate"><span class="pre">:show-fallback</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns the current value of the <a class="reference internal" href="#Gtk.AppChooserWidget" title="Gtk.AppChooserWidget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.AppChooserWidget</span></code></a> <a class="reference internal" href="#Gtk.AppChooserWidget.props.show_fallback" title="Gtk.AppChooserWidget.props.show_fallback"><code class="xref py py-data docutils literal notranslate"><span class="pre">:show-fallback</span></code></a>
+property.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.AppChooserWidget.get_show_other">
+<code class="descname">get_show_other</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkappchooserwidget.c#L1355"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.AppChooserWidget.get_show_other" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the value of <a class="reference internal" href="#Gtk.AppChooserWidget" title="Gtk.AppChooserWidget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.AppChooserWidget</span></code></a> <a class="reference internal" href="#Gtk.AppChooserWidget.props.show_other" title="Gtk.AppChooserWidget.props.show_other"><code class="xref py py-data docutils literal notranslate"><span class="pre">:show-other</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns the current value of the <a class="reference internal" href="#Gtk.AppChooserWidget" title="Gtk.AppChooserWidget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.AppChooserWidget</span></code></a> <a class="reference internal" href="#Gtk.AppChooserWidget.props.show_other" title="Gtk.AppChooserWidget.props.show_other"><code class="xref py py-data docutils literal notranslate"><span class="pre">:show-other</span></code></a>
+property.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.AppChooserWidget.get_show_recommended">
+<code class="descname">get_show_recommended</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkappchooserwidget.c#L1265"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.AppChooserWidget.get_show_recommended" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the value of <a class="reference internal" href="#Gtk.AppChooserWidget" title="Gtk.AppChooserWidget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.AppChooserWidget</span></code></a> <a class="reference internal" href="#Gtk.AppChooserWidget.props.show_recommended" title="Gtk.AppChooserWidget.props.show_recommended"><code class="xref py py-data docutils literal notranslate"><span class="pre">:show-recommended</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns the current value of the <a class="reference internal" href="#Gtk.AppChooserWidget" title="Gtk.AppChooserWidget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.AppChooserWidget</span></code></a> <a class="reference internal" href="#Gtk.AppChooserWidget.props.show_recommended" title="Gtk.AppChooserWidget.props.show_recommended"><code class="xref py py-data docutils literal notranslate"><span class="pre">:show-recommended</span></code></a>
+property.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.AppChooserWidget.set_default_text">
+<code class="descname">set_default_text</code><span class="sig-paren">(</span><em>text</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkappchooserwidget.c#L1417"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.AppChooserWidget.set_default_text" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>text</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – the new value for <a class="reference internal" href="#Gtk.AppChooserWidget" title="Gtk.AppChooserWidget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.AppChooserWidget</span></code></a> <a class="reference internal" href="#Gtk.AppChooserWidget.props.default_text" title="Gtk.AppChooserWidget.props.default_text"><code class="xref py py-data docutils literal notranslate"><span class="pre">:default-text</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Sets the text that is shown if there are not applications
+that can handle the content type.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.AppChooserWidget.set_show_all">
+<code class="descname">set_show_all</code><span class="sig-paren">(</span><em>setting</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkappchooserwidget.c#L1374"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.AppChooserWidget.set_show_all" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>setting</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a>) – the new value for <a class="reference internal" href="#Gtk.AppChooserWidget" title="Gtk.AppChooserWidget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.AppChooserWidget</span></code></a> <a class="reference internal" href="#Gtk.AppChooserWidget.props.show_all" title="Gtk.AppChooserWidget.props.show_all"><code class="xref py py-data docutils literal notranslate"><span class="pre">:show-all</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Sets whether the app chooser should show all applications
+in a flat list.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.AppChooserWidget.set_show_default">
+<code class="descname">set_show_default</code><span class="sig-paren">(</span><em>setting</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkappchooserwidget.c#L1194"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.AppChooserWidget.set_show_default" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>setting</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a>) – the new value for <a class="reference internal" href="#Gtk.AppChooserWidget" title="Gtk.AppChooserWidget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.AppChooserWidget</span></code></a> <a class="reference internal" href="#Gtk.AppChooserWidget.props.show_default" title="Gtk.AppChooserWidget.props.show_default"><code class="xref py py-data docutils literal notranslate"><span class="pre">:show-default</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Sets whether the app chooser should show the default handler
+for the content type in a separate section.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.AppChooserWidget.set_show_fallback">
+<code class="descname">set_show_fallback</code><span class="sig-paren">(</span><em>setting</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkappchooserwidget.c#L1284"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.AppChooserWidget.set_show_fallback" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>setting</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a>) – the new value for <a class="reference internal" href="#Gtk.AppChooserWidget" title="Gtk.AppChooserWidget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.AppChooserWidget</span></code></a> <a class="reference internal" href="#Gtk.AppChooserWidget.props.show_fallback" title="Gtk.AppChooserWidget.props.show_fallback"><code class="xref py py-data docutils literal notranslate"><span class="pre">:show-fallback</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Sets whether the app chooser should show related applications
+for the content type in a separate section.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.AppChooserWidget.set_show_other">
+<code class="descname">set_show_other</code><span class="sig-paren">(</span><em>setting</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkappchooserwidget.c#L1329"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.AppChooserWidget.set_show_other" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>setting</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a>) – the new value for <a class="reference internal" href="#Gtk.AppChooserWidget" title="Gtk.AppChooserWidget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.AppChooserWidget</span></code></a> <a class="reference internal" href="#Gtk.AppChooserWidget.props.show_other" title="Gtk.AppChooserWidget.props.show_other"><code class="xref py py-data docutils literal notranslate"><span class="pre">:show-other</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Sets whether the app chooser should show applications
+which are unrelated to the content type.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.AppChooserWidget.set_show_recommended">
+<code class="descname">set_show_recommended</code><span class="sig-paren">(</span><em>setting</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkappchooserwidget.c#L1239"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.AppChooserWidget.set_show_recommended" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>setting</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a>) – the new value for <a class="reference internal" href="#Gtk.AppChooserWidget" title="Gtk.AppChooserWidget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.AppChooserWidget</span></code></a> <a class="reference internal" href="#Gtk.AppChooserWidget.props.show_recommended" title="Gtk.AppChooserWidget.props.show_recommended"><code class="xref py py-data docutils literal notranslate"><span class="pre">:show-recommended</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Sets whether the app chooser should show recommended applications
+for the content type in a separate section.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.AppChooserWidget.do_application_activated">
+<code class="descname">do_application_activated</code><span class="sig-paren">(</span><em>app_info</em><span class="sig-paren">)</span><em class="property"> virtual</em><a class="headerlink" href="#Gtk.AppChooserWidget.do_application_activated" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>app_info</strong> (<a class="reference external" href="../../Gio-2.0/classes/AppInfo.html#Gio.AppInfo" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AppInfo</span></code></a>) – </td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.AppChooserWidget.do_application_selected">
+<code class="descname">do_application_selected</code><span class="sig-paren">(</span><em>app_info</em><span class="sig-paren">)</span><em class="property"> virtual</em><a class="headerlink" href="#Gtk.AppChooserWidget.do_application_selected" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>app_info</strong> (<a class="reference external" href="../../Gio-2.0/classes/AppInfo.html#Gio.AppInfo" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AppInfo</span></code></a>) – </td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.AppChooserWidget.do_populate_popup">
+<code class="descname">do_populate_popup</code><span class="sig-paren">(</span><em>menu</em>, <em>app_info</em><span class="sig-paren">)</span><em class="property"> virtual</em><a class="headerlink" href="#Gtk.AppChooserWidget.do_populate_popup" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>menu</strong> (<a class="reference internal" href="Menu.html#Gtk.Menu" title="Gtk.Menu"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu</span></code></a>) – </li>
+<li><strong>app_info</strong> (<a class="reference external" href="../../Gio-2.0/classes/AppInfo.html#Gio.AppInfo" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AppInfo</span></code></a>) – </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="signal-details">
+<h2>Signal Details<a class="headerlink" href="#signal-details" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="Gtk.AppChooserWidget.signals.application_activated">
+<code class="descclassname">Gtk.AppChooserWidget.signals.</code><code class="descname">application_activated</code><span class="sig-paren">(</span><em>app_chooser_widget</em>, <em>application</em><span class="sig-paren">)</span><a class="headerlink" href="#Gtk.AppChooserWidget.signals.application_activated" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Signal Name:</th><td class="field-body"><p class="first"><code class="docutils literal notranslate"><span class="pre">application-activated</span></code></p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><p class="first"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.SignalFlags.RUN_FIRST" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RUN_FIRST</span></code></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>app_chooser_widget</strong> (<a class="reference internal" href="#Gtk.AppChooserWidget" title="Gtk.AppChooserWidget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.AppChooserWidget</span></code></a>) – The object which received the signal</li>
+<li><strong>application</strong> (<a class="reference external" href="../../Gio-2.0/classes/AppInfo.html#Gio.AppInfo" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AppInfo</span></code></a>) – the activated <a class="reference external" href="../../Gio-2.0/classes/AppInfo.html#Gio.AppInfo" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AppInfo</span></code></a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Emitted when an application item is activated from the widget’s list.</p>
+<p>This usually happens when the user double clicks an item, or an item
+is selected and the user presses one of the keys Space, Shift+Space,
+Return or Enter.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gtk.AppChooserWidget.signals.application_selected">
+<code class="descclassname">Gtk.AppChooserWidget.signals.</code><code class="descname">application_selected</code><span class="sig-paren">(</span><em>app_chooser_widget</em>, <em>application</em><span class="sig-paren">)</span><a class="headerlink" href="#Gtk.AppChooserWidget.signals.application_selected" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Signal Name:</th><td class="field-body"><p class="first"><code class="docutils literal notranslate"><span class="pre">application-selected</span></code></p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><p class="first"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.SignalFlags.RUN_FIRST" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RUN_FIRST</span></code></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>app_chooser_widget</strong> (<a class="reference internal" href="#Gtk.AppChooserWidget" title="Gtk.AppChooserWidget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.AppChooserWidget</span></code></a>) – The object which received the signal</li>
+<li><strong>application</strong> (<a class="reference external" href="../../Gio-2.0/classes/AppInfo.html#Gio.AppInfo" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AppInfo</span></code></a>) – the selected <a class="reference external" href="../../Gio-2.0/classes/AppInfo.html#Gio.AppInfo" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AppInfo</span></code></a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Emitted when an application item is selected from the widget’s list.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gtk.AppChooserWidget.signals.populate_popup">
+<code class="descclassname">Gtk.AppChooserWidget.signals.</code><code class="descname">populate_popup</code><span class="sig-paren">(</span><em>app_chooser_widget</em>, <em>menu</em>, <em>application</em><span class="sig-paren">)</span><a class="headerlink" href="#Gtk.AppChooserWidget.signals.populate_popup" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Signal Name:</th><td class="field-body"><p class="first"><code class="docutils literal notranslate"><span class="pre">populate-popup</span></code></p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><p class="first"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.SignalFlags.RUN_FIRST" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RUN_FIRST</span></code></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>app_chooser_widget</strong> (<a class="reference internal" href="#Gtk.AppChooserWidget" title="Gtk.AppChooserWidget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.AppChooserWidget</span></code></a>) – The object which received the signal</li>
+<li><strong>menu</strong> (<a class="reference internal" href="Menu.html#Gtk.Menu" title="Gtk.Menu"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu</span></code></a>) – the <a class="reference internal" href="Menu.html#Gtk.Menu" title="Gtk.Menu"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu</span></code></a> to populate</li>
+<li><strong>application</strong> (<a class="reference external" href="../../Gio-2.0/classes/AppInfo.html#Gio.AppInfo" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AppInfo</span></code></a>) – the current <a class="reference external" href="../../Gio-2.0/classes/AppInfo.html#Gio.AppInfo" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AppInfo</span></code></a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Emitted when a context menu is about to popup over an application item.
+Clients can insert menu items into the provided <a class="reference internal" href="Menu.html#Gtk.Menu" title="Gtk.Menu"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu</span></code></a> object in the
+callback of this signal; the context menu will be shown over the item
+if at least one item has been added to the menu.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="property-details">
+<h2>Property Details<a class="headerlink" href="#property-details" title="Permalink to this headline">¶</a></h2>
+<dl class="data">
+<dt id="Gtk.AppChooserWidget.props.default_text">
+<code class="descclassname">Gtk.AppChooserWidget.props.</code><code class="descname">default_text</code><a class="headerlink" href="#Gtk.AppChooserWidget.props.default_text" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">default-text</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.EXPLICIT_NOTIFY" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EXPLICIT_NOTIFY</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The <a class="reference internal" href="#Gtk.AppChooserWidget" title="Gtk.AppChooserWidget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.AppChooserWidget</span></code></a> <a class="reference internal" href="#Gtk.AppChooserWidget.props.default_text" title="Gtk.AppChooserWidget.props.default_text"><code class="xref py py-data docutils literal notranslate"><span class="pre">:default-text</span></code></a> property determines the text
+that appears in the widget when there are no applications for the
+given content type.
+See also <a class="reference internal" href="#Gtk.AppChooserWidget.set_default_text" title="Gtk.AppChooserWidget.set_default_text"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.AppChooserWidget.set_default_text</span></code></a>().</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="Gtk.AppChooserWidget.props.show_all">
+<code class="descclassname">Gtk.AppChooserWidget.props.</code><code class="descname">show_all</code><a class="headerlink" href="#Gtk.AppChooserWidget.props.show_all" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">show-all</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.CONSTRUCT" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CONSTRUCT</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.EXPLICIT_NOTIFY" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EXPLICIT_NOTIFY</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>If the <a class="reference internal" href="#Gtk.AppChooserWidget" title="Gtk.AppChooserWidget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.AppChooserWidget</span></code></a> <a class="reference internal" href="#Gtk.AppChooserWidget.props.show_all" title="Gtk.AppChooserWidget.props.show_all"><code class="xref py py-data docutils literal notranslate"><span class="pre">:show-all</span></code></a> property is <a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a>, the app
+chooser presents all applications in a single list, without
+subsections for default, recommended or related applications.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="Gtk.AppChooserWidget.props.show_default">
+<code class="descclassname">Gtk.AppChooserWidget.props.</code><code class="descname">show_default</code><a class="headerlink" href="#Gtk.AppChooserWidget.props.show_default" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">show-default</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.CONSTRUCT" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CONSTRUCT</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.EXPLICIT_NOTIFY" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EXPLICIT_NOTIFY</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The <code class="xref py py-func docutils literal notranslate"><span class="pre">::show-default</span></code> property determines whether the app chooser
+should show the default handler for the content type in a
+separate section. If <a class="reference external" href="http://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a>, the default handler is listed
+among the recommended applications.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="Gtk.AppChooserWidget.props.show_fallback">
+<code class="descclassname">Gtk.AppChooserWidget.props.</code><code class="descname">show_fallback</code><a class="headerlink" href="#Gtk.AppChooserWidget.props.show_fallback" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">show-fallback</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.CONSTRUCT" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CONSTRUCT</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.EXPLICIT_NOTIFY" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EXPLICIT_NOTIFY</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The <a class="reference internal" href="#Gtk.AppChooserWidget" title="Gtk.AppChooserWidget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.AppChooserWidget</span></code></a> <a class="reference internal" href="#Gtk.AppChooserWidget.props.show_fallback" title="Gtk.AppChooserWidget.props.show_fallback"><code class="xref py py-data docutils literal notranslate"><span class="pre">:show-fallback</span></code></a> property determines whether
+the app chooser should show a section for fallback applications.
+If <a class="reference external" href="http://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a>, the fallback applications are listed among the other
+applications.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="Gtk.AppChooserWidget.props.show_other">
+<code class="descclassname">Gtk.AppChooserWidget.props.</code><code class="descname">show_other</code><a class="headerlink" href="#Gtk.AppChooserWidget.props.show_other" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">show-other</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.CONSTRUCT" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CONSTRUCT</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.EXPLICIT_NOTIFY" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EXPLICIT_NOTIFY</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The <a class="reference internal" href="#Gtk.AppChooserWidget" title="Gtk.AppChooserWidget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.AppChooserWidget</span></code></a> <a class="reference internal" href="#Gtk.AppChooserWidget.props.show_other" title="Gtk.AppChooserWidget.props.show_other"><code class="xref py py-data docutils literal notranslate"><span class="pre">:show-other</span></code></a> property determines whether
+the app chooser should show a section for other applications.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="Gtk.AppChooserWidget.props.show_recommended">
+<code class="descclassname">Gtk.AppChooserWidget.props.</code><code class="descname">show_recommended</code><a class="headerlink" href="#Gtk.AppChooserWidget.props.show_recommended" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">show-recommended</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.CONSTRUCT" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CONSTRUCT</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.EXPLICIT_NOTIFY" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EXPLICIT_NOTIFY</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The <a class="reference internal" href="#Gtk.AppChooserWidget" title="Gtk.AppChooserWidget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.AppChooserWidget</span></code></a> <a class="reference internal" href="#Gtk.AppChooserWidget.props.show_recommended" title="Gtk.AppChooserWidget.props.show_recommended"><code class="xref py py-data docutils literal notranslate"><span class="pre">:show-recommended</span></code></a> property determines
+whether the app chooser should show a section for recommended
+applications. If <a class="reference external" href="http://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a>, the recommended applications are listed
+among the other applications.</p>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div> 
+
+</body>
+</html>

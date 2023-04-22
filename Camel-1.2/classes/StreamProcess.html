@@ -1,0 +1,440 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    Camel.StreamProcess -
+    
+      Classes -
+    
+    Camel 1.2
+  </title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/css/pgi.css" type="text/css" />
+  
+
+  
+  <script type="text/javascript">
+
+    function openSidebar(element) {
+        window.location.href = element.href + location.hash;
+        return false;
+    }
+
+    function inIframe() {
+        try {
+            return window.self !== window.top;
+        } catch (e) {
+            return true;
+        }
+    }
+
+    function onLoaded() {
+        if(!inIframe()) {
+            var icons = document.getElementsByClassName('open-sidebar');
+
+            for (var i = 0; i < icons.length; i ++) {
+                icons[i].style.display = 'table-cell';
+            }
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', onLoaded, false);
+
+  </script>
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="Camel 1.2 Python API Docs" href="../index.html"/>
+        <link rel="up" title="Classes" href="../classes.html"/>
+        <link rel="next" title="Camel.TextIndex" href="TextIndex.html"/>
+        <link rel="prev" title="Camel.StreamNull" href="StreamNull.html"/> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+<div class="non-fixed-bar">
+<table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#Camel-1.2/classes/StreamProcess.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Camel 1.2</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>Camel.StreamProcess</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="StreamNull.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="TextIndex.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">Camel.StreamProcess</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+<div class="fixed-bar">
+  <table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#Camel-1.2/classes/StreamProcess.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Camel 1.2</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>Camel.StreamProcess</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="StreamNull.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="TextIndex.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">Camel.StreamProcess</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+  <div class="wy-grid-for-nav">
+
+    
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="main">
+            
+  <div class="section" id="camel-streamprocess">
+<h1>Camel.StreamProcess<a class="headerlink" href="#camel-streamprocess" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<svg width="191pt" height="188pt"
+ viewBox="0.00 0.00 191.00 188.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 184)">
+<title>g</title>
+<!-- Camel.Stream -->
+<g id="node1" class="node">
+<title>Camel.Stream</title>
+<g id="a_node1"><a xlink:href="Stream.html#Camel.Stream" xlink:title="Camel.Stream">
+<path fill="none" stroke="#75507b" d="M119.5,-72C119.5,-72 54.5,-72 54.5,-72 51.5,-72 48.5,-69 48.5,-66 48.5,-66 48.5,-60 48.5,-60 48.5,-57 51.5,-54 54.5,-54 54.5,-54 119.5,-54 119.5,-54 122.5,-54 125.5,-57 125.5,-60 125.5,-60 125.5,-66 125.5,-66 125.5,-69 122.5,-72 119.5,-72"/>
+<text text-anchor="middle" x="87" y="-60.7" font-family="inherit" font-size="8.50">Camel.Stream</text>
+</a>
+</g>
+</g>
+<!-- Camel.StreamProcess -->
+<g id="node2" class="node">
+<title>Camel.StreamProcess</title>
+<g id="a_node2"><a xlink:href="#Camel.StreamProcess" xlink:title="Camel.StreamProcess">
+<path fill="none" stroke="#75507b" d="M135.5,-18C135.5,-18 38.5,-18 38.5,-18 35.5,-18 32.5,-15 32.5,-12 32.5,-12 32.5,-6 32.5,-6 32.5,-3 35.5,0 38.5,0 38.5,0 135.5,0 135.5,0 138.5,0 141.5,-3 141.5,-6 141.5,-6 141.5,-12 141.5,-12 141.5,-15 138.5,-18 135.5,-18"/>
+<text text-anchor="middle" x="87" y="-6.7" font-family="inherit" font-size="8.50">Camel.StreamProcess</text>
+</a>
+</g>
+</g>
+<!-- Camel.Stream&#45;&gt;Camel.StreamProcess -->
+<g id="edge1" class="edge">
+<title>Camel.Stream&#45;&gt;Camel.StreamProcess</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M87,-53.88C87,-45.76 87,-33.13 87,-23.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="88.75,-23.24 87,-18.24 85.25,-23.24 88.75,-23.24"/>
+</g>
+<!-- GObject.GInterface -->
+<g id="node3" class="node">
+<title>GObject.GInterface</title>
+<g id="a_node3"><a xlink:href="../../GObject-2.0/classes/GInterface.html#GObject.GInterface" xlink:title="GObject.GInterface">
+<path fill="none" stroke="#3091d1" d="M177,-180C177,-180 91,-180 91,-180 88,-180 85,-177 85,-174 85,-174 85,-168 85,-168 85,-165 88,-162 91,-162 91,-162 177,-162 177,-162 180,-162 183,-165 183,-168 183,-168 183,-174 183,-174 183,-177 180,-180 177,-180"/>
+<text text-anchor="middle" x="134" y="-168.7" font-family="inherit" font-size="8.50">GObject.GInterface</text>
+</a>
+</g>
+</g>
+<!-- Gio.Seekable -->
+<g id="node5" class="node">
+<title>Gio.Seekable</title>
+<g id="a_node5"><a xlink:href="../../Gio-2.0/classes/Seekable.html#Gio.Seekable" xlink:title="Gio.Seekable">
+<path fill="none" stroke="#3091d1" d="M164,-126C164,-126 104,-126 104,-126 101,-126 98,-123 98,-120 98,-120 98,-114 98,-114 98,-111 101,-108 104,-108 104,-108 164,-108 164,-108 167,-108 170,-111 170,-114 170,-114 170,-120 170,-120 170,-123 167,-126 164,-126"/>
+<text text-anchor="middle" x="134" y="-114.7" font-family="inherit" font-size="8.50">Gio.Seekable</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Gio.Seekable -->
+<g id="edge2" class="edge">
+<title>GObject.GInterface&#45;&gt;Gio.Seekable</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M134,-161.88C134,-153.76 134,-141.13 134,-131.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="135.75,-131.24 134,-126.24 132.25,-131.24 135.75,-131.24"/>
+</g>
+<!-- GObject.Object -->
+<g id="node4" class="node">
+<title>GObject.Object</title>
+<g id="a_node4"><a xlink:href="../../GObject-2.0/classes/Object.html#GObject.Object" xlink:title="GObject.Object">
+<path fill="none" stroke="#75507b" d="M74,-126C74,-126 6,-126 6,-126 3,-126 0,-123 0,-120 0,-120 0,-114 0,-114 0,-111 3,-108 6,-108 6,-108 74,-108 74,-108 77,-108 80,-111 80,-114 80,-114 80,-120 80,-120 80,-123 77,-126 74,-126"/>
+<text text-anchor="middle" x="40" y="-114.7" font-family="inherit" font-size="8.50">GObject.Object</text>
+</a>
+</g>
+</g>
+<!-- GObject.Object&#45;&gt;Camel.Stream -->
+<g id="edge3" class="edge">
+<title>GObject.Object&#45;&gt;Camel.Stream</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M47.34,-107.88C55.02,-99.38 67.17,-85.94 76,-76.18"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="77.5,-77.12 79.55,-72.24 74.9,-74.78 77.5,-77.12"/>
+</g>
+<!-- Gio.Seekable&#45;&gt;Camel.Stream -->
+<g id="edge4" class="edge">
+<title>Gio.Seekable&#45;&gt;Camel.Stream</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M126.66,-107.88C118.98,-99.38 106.83,-85.94 98,-76.18"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="99.1,-74.78 94.45,-72.24 96.5,-77.12 99.1,-74.78"/>
+</g>
+</g>
+</svg>
+</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Subclasses:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="methods">
+<span id="camel-streamprocess-methods"></span><h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Stream.html#camel-stream-methods"><span class="std std-ref">Camel.Stream (10)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (37)</span></a>,     <a class="reference external" href="../../Gio-2.0/classes/Seekable.html#gio-seekable-methods" title="(in Gio 2.0 v2.0)"><span class="xref std std-ref">Gio.Seekable (5)</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Structs:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/ObjectClass.html#gobject-objectclass-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.ObjectClass (5)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="99%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><em>class</em></td>
+<td><a class="reference internal" href="#Camel.StreamProcess.new" title="Camel.StreamProcess.new"><code class="xref py py-func docutils literal notranslate"><span class="pre">new</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Camel.StreamProcess.connect" title="Camel.StreamProcess.connect"><code class="xref py py-func docutils literal notranslate"><span class="pre">connect</span></code></a> (command, env)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="virtual-methods">
+<span id="camel-streamprocess-vfuncs"></span><h2>Virtual Methods<a class="headerlink" href="#virtual-methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Stream.html#camel-stream-vfuncs"><span class="std std-ref">Camel.Stream (5)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-vfuncs" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (7)</span></a>,     <a class="reference external" href="../../Gio-2.0/classes/Seekable.html#gio-seekable-vfuncs" title="(in Gio 2.0 v2.0)"><span class="xref std std-ref">Gio.Seekable (5)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="camel-streamprocess-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Stream.html#camel-stream-props"><span class="std std-ref">Camel.Stream (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="signals">
+<span id="camel-streamprocess-signals"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-signals" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fields">
+<span id="camel-streamprocess-fields"></span><h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-fields" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="16%" />
+<col width="1%" />
+<col width="1%" />
+<col width="82%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Access</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>parent</td>
+<td><a class="reference internal" href="Stream.html#Camel.Stream" title="Camel.Stream"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Camel.Stream</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="class-details">
+<h2>Class Details<a class="headerlink" href="#class-details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Camel.StreamProcess">
+<em class="property">class </em><code class="descclassname">Camel.</code><code class="descname">StreamProcess</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#Camel.StreamProcess" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Bases:</th><td class="field-body"><a class="reference internal" href="Stream.html#Camel.Stream" title="Camel.Stream"><code class="xref py py-class docutils literal notranslate"><span class="pre">Camel.Stream</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Abstract:</th><td class="field-body">No</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Structure:</th><td class="field-body"><a class="reference internal" href="StreamProcessClass.html#Camel.StreamProcessClass" title="Camel.StreamProcessClass"><code class="xref py py-class docutils literal notranslate"><span class="pre">Camel.StreamProcessClass</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<dl class="classmethod">
+<dt id="Camel.StreamProcess.new">
+<em class="property">classmethod </em><code class="descname">new</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Camel.StreamProcess.new" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the stream</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="Stream.html#Camel.Stream" title="Camel.Stream"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Camel.Stream</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns a PROCESS stream.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Camel.StreamProcess.connect">
+<code class="descname">connect</code><span class="sig-paren">(</span><em>command</em>, <em>env</em><span class="sig-paren">)</span><a class="headerlink" href="#Camel.StreamProcess.connect" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>command</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – </li>
+<li><strong>env</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first"><a class="reference external" href="../../GLib-2.0/classes/Error.html#GLib.Error" title="(in GLib 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLib.Error</span></code></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div> 
+
+</body>
+</html>

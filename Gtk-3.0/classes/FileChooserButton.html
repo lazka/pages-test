@@ -1,0 +1,934 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    Gtk.FileChooserButton -
+    
+      Classes -
+    
+    Gtk 3.0
+  </title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/css/pgi.css" type="text/css" />
+  
+
+  
+  <script type="text/javascript">
+
+    function openSidebar(element) {
+        window.location.href = element.href + location.hash;
+        return false;
+    }
+
+    function inIframe() {
+        try {
+            return window.self !== window.top;
+        } catch (e) {
+            return true;
+        }
+    }
+
+    function onLoaded() {
+        if(!inIframe()) {
+            var icons = document.getElementsByClassName('open-sidebar');
+
+            for (var i = 0; i < icons.length; i ++) {
+                icons[i].style.display = 'table-cell';
+            }
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', onLoaded, false);
+
+  </script>
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="Gtk 3.0 Python API Docs" href="../index.html"/>
+        <link rel="up" title="Classes" href="../classes.html"/>
+        <link rel="next" title="Gtk.FileChooserDialog" href="FileChooserDialog.html"/>
+        <link rel="prev" title="Gtk.ExpanderAccessible" href="ExpanderAccessible.html"/> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+<div class="non-fixed-bar">
+<table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#Gtk-3.0/classes/FileChooserButton.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Gtk 3.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>Gtk.FileChooserButton</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="ExpanderAccessible.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="FileChooserDialog.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">Gtk.FileChooserButton</a><ul>
+<li><a class="reference internal" href="#example">Example</a></li>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#child-properties">Child Properties</a></li>
+<li><a class="reference internal" href="#style-properties">Style Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#signal-details">Signal Details</a></li>
+<li><a class="reference internal" href="#property-details">Property Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+<div class="fixed-bar">
+  <table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#Gtk-3.0/classes/FileChooserButton.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Gtk 3.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>Gtk.FileChooserButton</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="ExpanderAccessible.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="FileChooserDialog.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">Gtk.FileChooserButton</a><ul>
+<li><a class="reference internal" href="#example">Example</a></li>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#child-properties">Child Properties</a></li>
+<li><a class="reference internal" href="#style-properties">Style Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#signal-details">Signal Details</a></li>
+<li><a class="reference internal" href="#property-details">Property Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+  <div class="wy-grid-for-nav">
+
+    
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="main">
+            
+  <div class="section" id="gtk-filechooserbutton">
+<h1>Gtk.FileChooserButton<a class="headerlink" href="#gtk-filechooserbutton" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<svg width="488pt" height="296pt"
+ viewBox="0.00 0.00 488.00 296.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 292)">
+<title>g</title>
+<!-- Atk.ImplementorIface -->
+<g id="node1" class="node">
+<title>Atk.ImplementorIface</title>
+<g id="a_node1"><a xlink:href="../../Atk-1.0/classes/ImplementorIface.html#Atk.ImplementorIface" xlink:title="Atk.ImplementorIface">
+<path fill="none" stroke="#3091d1" d="M334,-234C334,-234 238,-234 238,-234 235,-234 232,-231 232,-228 232,-228 232,-222 232,-222 232,-219 235,-216 238,-216 238,-216 334,-216 334,-216 337,-216 340,-219 340,-222 340,-222 340,-228 340,-228 340,-231 337,-234 334,-234"/>
+<text text-anchor="middle" x="286" y="-222.7" font-family="inherit" font-size="8.50">Atk.ImplementorIface</text>
+</a>
+</g>
+</g>
+<!-- Gtk.Widget -->
+<g id="node11" class="node">
+<title>Gtk.Widget</title>
+<g id="a_node11"><a xlink:href="Widget.html#Gtk.Widget" xlink:title="Gtk.Widget">
+<path fill="none" stroke="#aaaaaa" d="M292,-180C292,-180 240,-180 240,-180 237,-180 234,-177 234,-174 234,-174 234,-168 234,-168 234,-165 237,-162 240,-162 240,-162 292,-162 292,-162 295,-162 298,-165 298,-168 298,-168 298,-174 298,-174 298,-177 295,-180 292,-180"/>
+<text text-anchor="middle" x="266" y="-168.7" font-family="inherit" font-size="8.50">Gtk.Widget</text>
+</a>
+</g>
+</g>
+<!-- Atk.ImplementorIface&#45;&gt;Gtk.Widget -->
+<g id="edge1" class="edge">
+<title>Atk.ImplementorIface&#45;&gt;Gtk.Widget</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M282.88,-215.88C279.69,-207.6 274.71,-194.66 270.99,-184.97"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="272.6,-184.28 269.17,-180.24 269.33,-185.53 272.6,-184.28"/>
+</g>
+<!-- GObject.GInterface -->
+<g id="node2" class="node">
+<title>GObject.GInterface</title>
+<g id="a_node2"><a xlink:href="../../GObject-2.0/classes/GInterface.html#GObject.GInterface" xlink:title="GObject.GInterface">
+<path fill="none" stroke="#3091d1" d="M188,-288C188,-288 102,-288 102,-288 99,-288 96,-285 96,-282 96,-282 96,-276 96,-276 96,-273 99,-270 102,-270 102,-270 188,-270 188,-270 191,-270 194,-273 194,-276 194,-276 194,-282 194,-282 194,-285 191,-288 188,-288"/>
+<text text-anchor="middle" x="145" y="-276.7" font-family="inherit" font-size="8.50">GObject.GInterface</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Atk.ImplementorIface -->
+<g id="edge2" class="edge">
+<title>GObject.GInterface&#45;&gt;Atk.ImplementorIface</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M166.72,-269.99C191.59,-260.82 232.35,-245.79 259.18,-235.89"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="259.94,-237.48 264.02,-234.11 258.72,-234.19 259.94,-237.48"/>
+</g>
+<!-- Gtk.Buildable -->
+<g id="node6" class="node">
+<title>Gtk.Buildable</title>
+<g id="a_node6"><a xlink:href="Buildable.html#Gtk.Buildable" xlink:title="Gtk.Buildable">
+<path fill="none" stroke="#3091d1" d="M208,-234C208,-234 146,-234 146,-234 143,-234 140,-231 140,-228 140,-228 140,-222 140,-222 140,-219 143,-216 146,-216 146,-216 208,-216 208,-216 211,-216 214,-219 214,-222 214,-222 214,-228 214,-228 214,-231 211,-234 208,-234"/>
+<text text-anchor="middle" x="177" y="-222.7" font-family="inherit" font-size="8.50">Gtk.Buildable</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Gtk.Buildable -->
+<g id="edge3" class="edge">
+<title>GObject.GInterface&#45;&gt;Gtk.Buildable</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M150,-269.88C155.14,-261.53 163.2,-248.42 169.18,-238.7"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="170.8,-239.42 171.93,-234.24 167.82,-237.58 170.8,-239.42"/>
+</g>
+<!-- Gtk.FileChooser -->
+<g id="node8" class="node">
+<title>Gtk.FileChooser</title>
+<g id="a_node8"><a xlink:href="FileChooser.html#Gtk.FileChooser" xlink:title="Gtk.FileChooser">
+<path fill="none" stroke="#3091d1" d="M78,-180C78,-180 6,-180 6,-180 3,-180 0,-177 0,-174 0,-174 0,-168 0,-168 0,-165 3,-162 6,-162 6,-162 78,-162 78,-162 81,-162 84,-165 84,-168 84,-168 84,-174 84,-174 84,-177 81,-180 78,-180"/>
+<text text-anchor="middle" x="42" y="-168.7" font-family="inherit" font-size="8.50">Gtk.FileChooser</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Gtk.FileChooser -->
+<g id="edge5" class="edge">
+<title>GObject.GInterface&#45;&gt;Gtk.FileChooser</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M135.78,-269.78C126.14,-261.11 110.69,-246.92 98,-234 81.56,-217.27 63.54,-196.93 52.5,-184.22"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="53.63,-182.86 49.04,-180.22 50.99,-185.15 53.63,-182.86"/>
+</g>
+<!-- Gtk.Orientable -->
+<g id="node10" class="node">
+<title>Gtk.Orientable</title>
+<g id="a_node10"><a xlink:href="Orientable.html#Gtk.Orientable" xlink:title="Gtk.Orientable">
+<path fill="none" stroke="#3091d1" d="M145.5,-126C145.5,-126 78.5,-126 78.5,-126 75.5,-126 72.5,-123 72.5,-120 72.5,-120 72.5,-114 72.5,-114 72.5,-111 75.5,-108 78.5,-108 78.5,-108 145.5,-108 145.5,-108 148.5,-108 151.5,-111 151.5,-114 151.5,-114 151.5,-120 151.5,-120 151.5,-123 148.5,-126 145.5,-126"/>
+<text text-anchor="middle" x="112" y="-114.7" font-family="inherit" font-size="8.50">Gtk.Orientable</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Gtk.Orientable -->
+<g id="edge4" class="edge">
+<title>GObject.GInterface&#45;&gt;Gtk.Orientable</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M142.06,-269.99C138.95,-261.25 134.06,-246.78 131,-234 122.19,-197.23 116.18,-152.91 113.53,-131.24"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="115.26,-130.99 112.93,-126.24 111.79,-131.41 115.26,-130.99"/>
+</g>
+<!-- GObject.InitiallyUnowned -->
+<g id="node3" class="node">
+<title>GObject.InitiallyUnowned</title>
+<g id="a_node3"><a xlink:href="../../GObject-2.0/classes/InitiallyUnowned.html#GObject.InitiallyUnowned" xlink:title="GObject.InitiallyUnowned">
+<path fill="none" stroke="#75507b" d="M474,-234C474,-234 364,-234 364,-234 361,-234 358,-231 358,-228 358,-228 358,-222 358,-222 358,-219 361,-216 364,-216 364,-216 474,-216 474,-216 477,-216 480,-219 480,-222 480,-222 480,-228 480,-228 480,-231 477,-234 474,-234"/>
+<text text-anchor="middle" x="419" y="-222.7" font-family="inherit" font-size="8.50">GObject.InitiallyUnowned</text>
+</a>
+</g>
+</g>
+<!-- GObject.InitiallyUnowned&#45;&gt;Gtk.Widget -->
+<g id="edge6" class="edge">
+<title>GObject.InitiallyUnowned&#45;&gt;Gtk.Widget</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M395.43,-215.99C368.25,-206.75 323.59,-191.57 294.49,-181.68"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="294.89,-179.97 289.6,-180.02 293.77,-183.29 294.89,-179.97"/>
+</g>
+<!-- GObject.Object -->
+<g id="node4" class="node">
+<title>GObject.Object</title>
+<g id="a_node4"><a xlink:href="../../GObject-2.0/classes/Object.html#GObject.Object" xlink:title="GObject.Object">
+<path fill="none" stroke="#75507b" d="M453,-288C453,-288 385,-288 385,-288 382,-288 379,-285 379,-282 379,-282 379,-276 379,-276 379,-273 382,-270 385,-270 385,-270 453,-270 453,-270 456,-270 459,-273 459,-276 459,-276 459,-282 459,-282 459,-285 456,-288 453,-288"/>
+<text text-anchor="middle" x="419" y="-276.7" font-family="inherit" font-size="8.50">GObject.Object</text>
+</a>
+</g>
+</g>
+<!-- GObject.Object&#45;&gt;GObject.InitiallyUnowned -->
+<g id="edge7" class="edge">
+<title>GObject.Object&#45;&gt;GObject.InitiallyUnowned</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M419,-269.88C419,-261.76 419,-249.13 419,-239.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="420.75,-239.24 419,-234.24 417.25,-239.24 420.75,-239.24"/>
+</g>
+<!-- Gtk.Box -->
+<g id="node5" class="node">
+<title>Gtk.Box</title>
+<g id="a_node5"><a xlink:href="Box.html#Gtk.Box" xlink:title="Gtk.Box">
+<path fill="none" stroke="#75507b" d="M133,-72C133,-72 91,-72 91,-72 88,-72 85,-69 85,-66 85,-66 85,-60 85,-60 85,-57 88,-54 91,-54 91,-54 133,-54 133,-54 136,-54 139,-57 139,-60 139,-60 139,-66 139,-66 139,-69 136,-72 133,-72"/>
+<text text-anchor="middle" x="112" y="-60.7" font-family="inherit" font-size="8.50">Gtk.Box</text>
+</a>
+</g>
+</g>
+<!-- Gtk.FileChooserButton -->
+<g id="node9" class="node">
+<title>Gtk.FileChooserButton</title>
+<g id="a_node9"><a xlink:href="#Gtk.FileChooserButton" xlink:title="Gtk.FileChooserButton">
+<path fill="none" stroke="#75507b" d="M127,-18C127,-18 27,-18 27,-18 24,-18 21,-15 21,-12 21,-12 21,-6 21,-6 21,-3 24,0 27,0 27,0 127,0 127,0 130,0 133,-3 133,-6 133,-6 133,-12 133,-12 133,-15 130,-18 127,-18"/>
+<text text-anchor="middle" x="77" y="-6.7" font-family="inherit" font-size="8.50">Gtk.FileChooserButton</text>
+</a>
+</g>
+</g>
+<!-- Gtk.Box&#45;&gt;Gtk.FileChooserButton -->
+<g id="edge8" class="edge">
+<title>Gtk.Box&#45;&gt;Gtk.FileChooserButton</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M106.53,-53.88C100.86,-45.45 91.93,-32.18 85.37,-22.44"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="86.79,-21.41 82.55,-18.24 83.89,-23.36 86.79,-21.41"/>
+</g>
+<!-- Gtk.Buildable&#45;&gt;Gtk.Widget -->
+<g id="edge9" class="edge">
+<title>Gtk.Buildable&#45;&gt;Gtk.Widget</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M190.91,-215.88C206.19,-206.95 230.8,-192.56 247.66,-182.72"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="248.76,-184.1 252.19,-180.07 246.99,-181.08 248.76,-184.1"/>
+</g>
+<!-- Gtk.Container -->
+<g id="node7" class="node">
+<title>Gtk.Container</title>
+<g id="a_node7"><a xlink:href="Container.html#Gtk.Container" xlink:title="Gtk.Container">
+<path fill="none" stroke="#aaaaaa" d="M279,-126C279,-126 215,-126 215,-126 212,-126 209,-123 209,-120 209,-120 209,-114 209,-114 209,-111 212,-108 215,-108 215,-108 279,-108 279,-108 282,-108 285,-111 285,-114 285,-114 285,-120 285,-120 285,-123 282,-126 279,-126"/>
+<text text-anchor="middle" x="247" y="-114.7" font-family="inherit" font-size="8.50">Gtk.Container</text>
+</a>
+</g>
+</g>
+<!-- Gtk.Container&#45;&gt;Gtk.Box -->
+<g id="edge10" class="edge">
+<title>Gtk.Container&#45;&gt;Gtk.Box</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M226.2,-107.99C202.49,-98.85 163.69,-83.91 138,-74.01"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="138.34,-72.27 133.04,-72.11 137.08,-75.54 138.34,-72.27"/>
+</g>
+<!-- Gtk.FileChooser&#45;&gt;Gtk.FileChooserButton -->
+<g id="edge11" class="edge">
+<title>Gtk.FileChooser&#45;&gt;Gtk.FileChooserButton</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M43.78,-161.85C49.45,-135.96 67.05,-55.47 74.07,-23.39"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="75.82,-23.59 75.18,-18.33 72.4,-22.84 75.82,-23.59"/>
+</g>
+<!-- Gtk.Orientable&#45;&gt;Gtk.Box -->
+<g id="edge12" class="edge">
+<title>Gtk.Orientable&#45;&gt;Gtk.Box</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M112,-107.88C112,-99.76 112,-87.13 112,-77.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="113.75,-77.24 112,-72.24 110.25,-77.24 113.75,-77.24"/>
+</g>
+<!-- Gtk.Widget&#45;&gt;Gtk.Container -->
+<g id="edge13" class="edge">
+<title>Gtk.Widget&#45;&gt;Gtk.Container</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M263.03,-161.88C260.01,-153.6 255.28,-140.66 251.74,-130.97"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="253.37,-130.34 250.01,-126.24 250.08,-131.54 253.37,-130.34"/>
+</g>
+</g>
+</svg>
+</p>
+<div class="section" id="example">
+<h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
+<img alt="../_images/FileChooserButton.png" src="../_images/FileChooserButton.png" />
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Subclasses:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="methods">
+<span id="gtk-filechooserbutton-methods"></span><h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Box.html#gtk-box-methods"><span class="std std-ref">Gtk.Box (14)</span></a>,     <a class="reference internal" href="Container.html#gtk-container-methods"><span class="std std-ref">Gtk.Container (35)</span></a>,     <a class="reference internal" href="Widget.html#gtk-widget-methods"><span class="std std-ref">Gtk.Widget (278)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (37)</span></a>,     <a class="reference internal" href="Buildable.html#gtk-buildable-methods"><span class="std std-ref">Gtk.Buildable (10)</span></a>,     <a class="reference internal" href="Orientable.html#gtk-orientable-methods"><span class="std std-ref">Gtk.Orientable (2)</span></a>,     <a class="reference internal" href="FileChooser.html#gtk-filechooser-methods"><span class="std std-ref">Gtk.FileChooser (63)</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Structs:</th><td class="field-body"><a class="reference internal" href="ContainerClass.html#gtk-containerclass-methods"><span class="std std-ref">Gtk.ContainerClass (5)</span></a>,     <a class="reference internal" href="WidgetClass.html#gtk-widgetclass-methods"><span class="std std-ref">Gtk.WidgetClass (12)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/ObjectClass.html#gobject-objectclass-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.ObjectClass (5)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="99%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><em>class</em></td>
+<td><a class="reference internal" href="#Gtk.FileChooserButton.new" title="Gtk.FileChooserButton.new"><code class="xref py py-func docutils literal notranslate"><span class="pre">new</span></code></a> (title, action)</td>
+</tr>
+<tr class="row-even"><td><em>class</em></td>
+<td><a class="reference internal" href="#Gtk.FileChooserButton.new_with_dialog" title="Gtk.FileChooserButton.new_with_dialog"><code class="xref py py-func docutils literal notranslate"><span class="pre">new_with_dialog</span></code></a> (dialog)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.FileChooserButton.get_focus_on_click" title="Gtk.FileChooserButton.get_focus_on_click"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_focus_on_click</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.FileChooserButton.get_title" title="Gtk.FileChooserButton.get_title"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_title</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.FileChooserButton.get_width_chars" title="Gtk.FileChooserButton.get_width_chars"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_width_chars</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.FileChooserButton.set_focus_on_click" title="Gtk.FileChooserButton.set_focus_on_click"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_focus_on_click</span></code></a> (focus_on_click)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.FileChooserButton.set_title" title="Gtk.FileChooserButton.set_title"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_title</span></code></a> (title)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.FileChooserButton.set_width_chars" title="Gtk.FileChooserButton.set_width_chars"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_width_chars</span></code></a> (n_chars)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="virtual-methods">
+<span id="gtk-filechooserbutton-vfuncs"></span><h2>Virtual Methods<a class="headerlink" href="#virtual-methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Container.html#gtk-container-vfuncs"><span class="std std-ref">Gtk.Container (10)</span></a>,     <a class="reference internal" href="Widget.html#gtk-widget-vfuncs"><span class="std std-ref">Gtk.Widget (82)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-vfuncs" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (7)</span></a>,     <a class="reference internal" href="Buildable.html#gtk-buildable-vfuncs"><span class="std std-ref">Gtk.Buildable (10)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="99%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.FileChooserButton.do_file_set" title="Gtk.FileChooserButton.do_file_set"><code class="xref py py-func docutils literal notranslate"><span class="pre">do_file_set</span></code></a> ()</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="gtk-filechooserbutton-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Box.html#gtk-box-props"><span class="std std-ref">Gtk.Box (3)</span></a>,     <a class="reference internal" href="Container.html#gtk-container-props"><span class="std std-ref">Gtk.Container (3)</span></a>,     <a class="reference internal" href="Widget.html#gtk-widget-props"><span class="std std-ref">Gtk.Widget (39)</span></a>,     <a class="reference internal" href="Orientable.html#gtk-orientable-props"><span class="std std-ref">Gtk.Orientable (1)</span></a>,     <a class="reference internal" href="FileChooser.html#gtk-filechooser-props"><span class="std std-ref">Gtk.FileChooser (11)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="1%" />
+<col width="1%" />
+<col width="97%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Flags</th>
+<th class="head">Short Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="#Gtk.FileChooserButton.props.dialog" title="Gtk.FileChooserButton.props.dialog"><code class="xref py py-data docutils literal notranslate"><span class="pre">dialog</span></code></a></td>
+<td><a class="reference internal" href="FileChooser.html#Gtk.FileChooser" title="Gtk.FileChooser"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.FileChooser</span></code></a></td>
+<td>w/co</td>
+<td>The file chooser dialog to use.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#Gtk.FileChooserButton.props.title" title="Gtk.FileChooserButton.props.title"><code class="xref py py-data docutils literal notranslate"><span class="pre">title</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+<td>r/w</td>
+<td>The title of the file chooser dialog.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#Gtk.FileChooserButton.props.width_chars" title="Gtk.FileChooserButton.props.width_chars"><code class="xref py py-data docutils literal notranslate"><span class="pre">width-chars</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+<td>r/w</td>
+<td>The desired width of the button widget, in characters.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="child-properties">
+<span id="gtk-filechooserbutton-child-props"></span><h2>Child Properties<a class="headerlink" href="#child-properties" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Box.html#gtk-box-child-props"><span class="std std-ref">Gtk.Box (5)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="style-properties">
+<span id="gtk-filechooserbutton-style-props"></span><h2>Style Properties<a class="headerlink" href="#style-properties" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Widget.html#gtk-widget-style-props"><span class="std std-ref">Gtk.Widget (17)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="signals">
+<span id="gtk-filechooserbutton-signals"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Container.html#gtk-container-signals"><span class="std std-ref">Gtk.Container (4)</span></a>,     <a class="reference internal" href="Widget.html#gtk-widget-signals"><span class="std std-ref">Gtk.Widget (69)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-signals" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a>,     <a class="reference internal" href="FileChooser.html#gtk-filechooser-signals"><span class="std std-ref">Gtk.FileChooser (5)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="30%" />
+<col width="70%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Short Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="#Gtk.FileChooserButton.signals.file_set" title="Gtk.FileChooserButton.signals.file_set"><code class="xref py py-func docutils literal notranslate"><span class="pre">file-set</span></code></a></td>
+<td>The <a class="reference internal" href="#Gtk.FileChooserButton.signals.file_set" title="Gtk.FileChooserButton.signals.file_set"><code class="xref py py-func docutils literal notranslate"><span class="pre">::file-set</span></code></a> signal is emitted when the user selects a file.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fields">
+<span id="gtk-filechooserbutton-fields"></span><h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Container.html#gtk-container-fields"><span class="std std-ref">Gtk.Container (4)</span></a>,     <a class="reference internal" href="Widget.html#gtk-widget-fields"><span class="std std-ref">Gtk.Widget (69)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-fields" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a>,     <a class="reference internal" href="FileChooser.html#gtk-filechooser-fields"><span class="std std-ref">Gtk.FileChooser (5)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="16%" />
+<col width="1%" />
+<col width="1%" />
+<col width="82%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Access</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>parent</td>
+<td><a class="reference internal" href="Box.html#Gtk.Box" title="Gtk.Box"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Box</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="class-details">
+<h2>Class Details<a class="headerlink" href="#class-details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Gtk.FileChooserButton">
+<em class="property">class </em><code class="descclassname">Gtk.</code><code class="descname">FileChooserButton</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#Gtk.FileChooserButton" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Bases:</th><td class="field-body"><a class="reference internal" href="Box.html#Gtk.Box" title="Gtk.Box"><code class="xref py py-class docutils literal notranslate"><span class="pre">Gtk.Box</span></code></a>,         <a class="reference internal" href="FileChooser.html#Gtk.FileChooser" title="Gtk.FileChooser"><code class="xref py py-class docutils literal notranslate"><span class="pre">Gtk.FileChooser</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Abstract:</th><td class="field-body">No</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Structure:</th><td class="field-body"><a class="reference internal" href="FileChooserButtonClass.html#Gtk.FileChooserButtonClass" title="Gtk.FileChooserButtonClass"><code class="xref py py-class docutils literal notranslate"><span class="pre">Gtk.FileChooserButtonClass</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The <a class="reference internal" href="#Gtk.FileChooserButton" title="Gtk.FileChooserButton"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.FileChooserButton</span></code></a> is a widget that lets the user select a
+file.  It implements the <a class="reference internal" href="FileChooser.html#Gtk.FileChooser" title="Gtk.FileChooser"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.FileChooser</span></code></a> interface.  Visually, it is a
+file name with a button to bring up a <a class="reference internal" href="FileChooserDialog.html#Gtk.FileChooserDialog" title="Gtk.FileChooserDialog"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.FileChooserDialog</span></code></a>.
+The user can then use that dialog to change the file associated with
+that button.  This widget does not support setting the
+<a class="reference internal" href="FileChooser.html#Gtk.FileChooser" title="Gtk.FileChooser"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.FileChooser</span></code></a> <a class="reference internal" href="FileChooser.html#Gtk.FileChooser.props.select_multiple" title="Gtk.FileChooser.props.select_multiple"><code class="xref py py-data docutils literal notranslate"><span class="pre">:select-multiple</span></code></a> property to <a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a>.</p>
+<dl class="docutils">
+<dt>Create a button to let the user select a file in /etc</dt>
+<dd></dd>
+</dl>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="n">GtkWidget</span><span class="w"> </span><span class="o">*</span><span class="n">button</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">  </span><span class="n">button</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">gtk_file_chooser_button_new</span><span class="w"> </span><span class="p">(</span><span class="n">_</span><span class="p">(</span><span class="s">&quot;Select a file&quot;</span><span class="p">),</span><span class="w"></span>
+<span class="w">                                        </span><span class="n">GTK_FILE_CHOOSER_ACTION_OPEN</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">gtk_file_chooser_set_current_folder</span><span class="w"> </span><span class="p">(</span><span class="n">GTK_FILE_CHOOSER</span><span class="w"> </span><span class="p">(</span><span class="n">button</span><span class="p">),</span><span class="w"></span>
+<span class="w">                                       </span><span class="s">&quot;/etc&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<p>The <a class="reference internal" href="#Gtk.FileChooserButton" title="Gtk.FileChooserButton"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.FileChooserButton</span></code></a> supports the <a class="reference internal" href="../enums.html#Gtk.FileChooserAction" title="Gtk.FileChooserAction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.FileChooserActions</span></code></a>
+<a class="reference internal" href="../enums.html#Gtk.FileChooserAction.OPEN" title="Gtk.FileChooserAction.OPEN"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.FileChooserAction.OPEN</span></code></a> and <a class="reference internal" href="../enums.html#Gtk.FileChooserAction.SELECT_FOLDER" title="Gtk.FileChooserAction.SELECT_FOLDER"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.FileChooserAction.SELECT_FOLDER</span></code></a>.</p>
+<p>The <a class="reference internal" href="#Gtk.FileChooserButton" title="Gtk.FileChooserButton"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.FileChooserButton</span></code></a> will ellipsize the label, and will thus
+request little horizontal space.  To give the button more space,
+you should call <a class="reference internal" href="Widget.html#Gtk.Widget.get_preferred_size" title="Gtk.Widget.get_preferred_size"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Widget.get_preferred_size</span></code></a>(),
+<a class="reference internal" href="#Gtk.FileChooserButton.set_width_chars" title="Gtk.FileChooserButton.set_width_chars"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.FileChooserButton.set_width_chars</span></code></a>(), or pack the button in
+such a way that other interface elements give space to the
+widget.</p>
+<dl class="docutils">
+<dt>CSS nodes</dt>
+<dd></dd>
+</dl>
+<p><a class="reference internal" href="#Gtk.FileChooserButton" title="Gtk.FileChooserButton"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.FileChooserButton</span></code></a> has a CSS node with name “filechooserbutton”, containing
+a subnode for the internal button with name “button” and style class “.file”.</p>
+<dl class="classmethod">
+<dt id="Gtk.FileChooserButton.new">
+<em class="property">classmethod </em><code class="descname">new</code><span class="sig-paren">(</span><em>title</em>, <em>action</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkfilechooserbutton.c#L3017"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.FileChooserButton.new" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>title</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – the title of the browse dialog.</li>
+<li><strong>action</strong> (<a class="reference internal" href="../enums.html#Gtk.FileChooserAction" title="Gtk.FileChooserAction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.FileChooserAction</span></code></a>) – the open mode for the widget.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">a new button widget.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="Widget.html#Gtk.Widget" title="Gtk.Widget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Widget</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Creates a new file-selecting button widget.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.6.</span></p>
+</div>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="Gtk.FileChooserButton.new_with_dialog">
+<em class="property">classmethod </em><code class="descname">new_with_dialog</code><span class="sig-paren">(</span><em>dialog</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkfilechooserbutton.c#L3048"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.FileChooserButton.new_with_dialog" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>dialog</strong> (<a class="reference internal" href="Dialog.html#Gtk.Dialog" title="Gtk.Dialog"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Dialog</span></code></a>) – the widget to use as dialog</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a new button widget.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="Widget.html#Gtk.Widget" title="Gtk.Widget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Widget</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Creates a <a class="reference internal" href="#Gtk.FileChooserButton" title="Gtk.FileChooserButton"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.FileChooserButton</span></code></a> widget which uses <cite>dialog</cite> as its
+file-picking window.</p>
+<p>Note that <cite>dialog</cite> must be a <a class="reference internal" href="Dialog.html#Gtk.Dialog" title="Gtk.Dialog"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Dialog</span></code></a> (or subclass) which
+implements the <a class="reference internal" href="FileChooser.html#Gtk.FileChooser" title="Gtk.FileChooser"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.FileChooser</span></code></a> interface and must not have
+<a class="reference internal" href="../flags.html#Gtk.DialogFlags.DESTROY_WITH_PARENT" title="Gtk.DialogFlags.DESTROY_WITH_PARENT"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.DialogFlags.DESTROY_WITH_PARENT</span></code></a> set.</p>
+<p>Also note that the dialog needs to have its confirmative button
+added with response <a class="reference internal" href="../enums.html#Gtk.ResponseType.ACCEPT" title="Gtk.ResponseType.ACCEPT"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ResponseType.ACCEPT</span></code></a> or <a class="reference internal" href="../enums.html#Gtk.ResponseType.OK" title="Gtk.ResponseType.OK"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ResponseType.OK</span></code></a> in
+order for the button to take over the file selected in the dialog.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.6.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.FileChooserButton.get_focus_on_click">
+<code class="descname">get_focus_on_click</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkfilechooserbutton.c#L3176"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.FileChooserButton.get_focus_on_click" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if the button grabs focus when it is clicked with
+the mouse.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns whether the button grabs focus when it is clicked with the mouse.
+See <a class="reference internal" href="#Gtk.FileChooserButton.set_focus_on_click" title="Gtk.FileChooserButton.set_focus_on_click"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.FileChooserButton.set_focus_on_click</span></code></a>().</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.10.</span></p>
+</div>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 3.20: </span>Use <a class="reference internal" href="Widget.html#Gtk.Widget.get_focus_on_click" title="Gtk.Widget.get_focus_on_click"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Widget.get_focus_on_click</span></code></a>() instead</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.FileChooserButton.get_title">
+<code class="descname">get_title</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkfilechooserbutton.c#L3091"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.FileChooserButton.get_title" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a pointer to the browse dialog’s title.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Retrieves the title of the browse dialog used by <cite>self</cite>. The returned value
+should not be modified or freed.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.6.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.FileChooserButton.get_width_chars">
+<code class="descname">get_width_chars</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkfilechooserbutton.c#L3112"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.FileChooserButton.get_width_chars" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">an integer width (in characters) that the button will use to size itself.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Retrieves the width in characters of the <cite>self</cite> widget’s entry and/or label.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.6.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.FileChooserButton.set_focus_on_click">
+<code class="descname">set_focus_on_click</code><span class="sig-paren">(</span><em>focus_on_click</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkfilechooserbutton.c#L3154"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.FileChooserButton.set_focus_on_click" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>focus_on_click</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a>) – whether the button grabs focus when clicked with the mouse</td>
+</tr>
+</tbody>
+</table>
+<p>Sets whether the button will grab focus when it is clicked with the mouse.
+Making mouse clicks not grab focus is useful in places like toolbars where
+you don’t want the keyboard focus removed from the main area of the
+application.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.10.</span></p>
+</div>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 3.20: </span>Use <a class="reference internal" href="Widget.html#Gtk.Widget.set_focus_on_click" title="Gtk.Widget.set_focus_on_click"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Widget.set_focus_on_click</span></code></a>() instead</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.FileChooserButton.set_title">
+<code class="descname">set_title</code><span class="sig-paren">(</span><em>title</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkfilechooserbutton.c#L3068"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.FileChooserButton.set_title" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>title</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – the new browse dialog title.</td>
+</tr>
+</tbody>
+</table>
+<p>Modifies the <cite>title</cite> of the browse dialog used by <cite>self</cite>.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.6.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.FileChooserButton.set_width_chars">
+<code class="descname">set_width_chars</code><span class="sig-paren">(</span><em>n_chars</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkfilechooserbutton.c#L3130"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.FileChooserButton.set_width_chars" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>n_chars</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – the new width, in characters.</td>
+</tr>
+</tbody>
+</table>
+<p>Sets the width (in characters) that <cite>self</cite> will use to <cite>n_chars</cite>.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.6.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.FileChooserButton.do_file_set">
+<code class="descname">do_file_set</code><span class="sig-paren">(</span><span class="sig-paren">)</span><em class="property"> virtual</em><a class="headerlink" href="#Gtk.FileChooserButton.do_file_set" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="signal-details">
+<h2>Signal Details<a class="headerlink" href="#signal-details" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="Gtk.FileChooserButton.signals.file_set">
+<code class="descclassname">Gtk.FileChooserButton.signals.</code><code class="descname">file_set</code><span class="sig-paren">(</span><em>file_chooser_button</em><span class="sig-paren">)</span><a class="headerlink" href="#Gtk.FileChooserButton.signals.file_set" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Signal Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">file-set</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.SignalFlags.RUN_FIRST" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RUN_FIRST</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>file_chooser_button</strong> (<a class="reference internal" href="#Gtk.FileChooserButton" title="Gtk.FileChooserButton"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.FileChooserButton</span></code></a>) – The object which received the signal</td>
+</tr>
+</tbody>
+</table>
+<p>The <a class="reference internal" href="#Gtk.FileChooserButton.signals.file_set" title="Gtk.FileChooserButton.signals.file_set"><code class="xref py py-func docutils literal notranslate"><span class="pre">::file-set</span></code></a> signal is emitted when the user selects a file.</p>
+<p>Note that this signal is only emitted when the user
+changes the file.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.12.</span></p>
+</div>
+</dd></dl>
+
+</div>
+<div class="section" id="property-details">
+<h2>Property Details<a class="headerlink" href="#property-details" title="Permalink to this headline">¶</a></h2>
+<dl class="data">
+<dt id="Gtk.FileChooserButton.props.dialog">
+<code class="descclassname">Gtk.FileChooserButton.props.</code><code class="descname">dialog</code><a class="headerlink" href="#Gtk.FileChooserButton.props.dialog" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">dialog</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="FileChooser.html#Gtk.FileChooser" title="Gtk.FileChooser"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.FileChooser</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.CONSTRUCT_ONLY" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CONSTRUCT_ONLY</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Instance of the <a class="reference internal" href="FileChooserDialog.html#Gtk.FileChooserDialog" title="Gtk.FileChooserDialog"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.FileChooserDialog</span></code></a> associated with the button.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.6.</span></p>
+</div>
+</dd></dl>
+
+<dl class="data">
+<dt id="Gtk.FileChooserButton.props.title">
+<code class="descclassname">Gtk.FileChooserButton.props.</code><code class="descname">title</code><a class="headerlink" href="#Gtk.FileChooserButton.props.title" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">title</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">'Select</span> <span class="pre">a</span> <span class="pre">File'</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Title to put on the <a class="reference internal" href="FileChooserDialog.html#Gtk.FileChooserDialog" title="Gtk.FileChooserDialog"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.FileChooserDialog</span></code></a> associated with the button.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.6.</span></p>
+</div>
+</dd></dl>
+
+<dl class="data">
+<dt id="Gtk.FileChooserButton.props.width_chars">
+<code class="descclassname">Gtk.FileChooserButton.props.</code><code class="descname">width_chars</code><a class="headerlink" href="#Gtk.FileChooserButton.props.width_chars" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">width-chars</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">-1</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The width of the entry and label inside the button, in characters.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.6.</span></p>
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div> 
+
+</body>
+</html>

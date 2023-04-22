@@ -1,0 +1,1925 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    Gtk.Menu -
+    
+      Classes -
+    
+    Gtk 3.0
+  </title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/css/pgi.css" type="text/css" />
+  
+
+  
+  <script type="text/javascript">
+
+    function openSidebar(element) {
+        window.location.href = element.href + location.hash;
+        return false;
+    }
+
+    function inIframe() {
+        try {
+            return window.self !== window.top;
+        } catch (e) {
+            return true;
+        }
+    }
+
+    function onLoaded() {
+        if(!inIframe()) {
+            var icons = document.getElementsByClassName('open-sidebar');
+
+            for (var i = 0; i < icons.length; i ++) {
+                icons[i].style.display = 'table-cell';
+            }
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', onLoaded, false);
+
+  </script>
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="Gtk 3.0 Python API Docs" href="../index.html"/>
+        <link rel="up" title="Classes" href="../classes.html"/>
+        <link rel="next" title="Gtk.MenuAccessible" href="MenuAccessible.html"/>
+        <link rel="prev" title="Gtk.LockButtonAccessible" href="LockButtonAccessible.html"/> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+<div class="non-fixed-bar">
+<table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#Gtk-3.0/classes/Menu.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Gtk 3.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>Gtk.Menu</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="LockButtonAccessible.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="MenuAccessible.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">Gtk.Menu</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#child-properties">Child Properties</a></li>
+<li><a class="reference internal" href="#style-properties">Style Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#signal-details">Signal Details</a></li>
+<li><a class="reference internal" href="#property-details">Property Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+<div class="fixed-bar">
+  <table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#Gtk-3.0/classes/Menu.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Gtk 3.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>Gtk.Menu</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="LockButtonAccessible.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="MenuAccessible.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">Gtk.Menu</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#child-properties">Child Properties</a></li>
+<li><a class="reference internal" href="#style-properties">Style Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#signal-details">Signal Details</a></li>
+<li><a class="reference internal" href="#property-details">Property Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+  <div class="wy-grid-for-nav">
+
+    
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="main">
+            
+  <div class="section" id="gtk-menu">
+<h1>Gtk.Menu<a class="headerlink" href="#gtk-menu" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<svg width="348pt" height="296pt"
+ viewBox="0.00 0.00 348.00 296.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 292)">
+<title>g</title>
+<!-- Atk.ImplementorIface -->
+<g id="node1" class="node">
+<title>Atk.ImplementorIface</title>
+<g id="a_node1"><a xlink:href="../../Atk-1.0/classes/ImplementorIface.html#Atk.ImplementorIface" xlink:title="Atk.ImplementorIface">
+<path fill="none" stroke="#3091d1" d="M242,-234C242,-234 146,-234 146,-234 143,-234 140,-231 140,-228 140,-228 140,-222 140,-222 140,-219 143,-216 146,-216 146,-216 242,-216 242,-216 245,-216 248,-219 248,-222 248,-222 248,-228 248,-228 248,-231 245,-234 242,-234"/>
+<text text-anchor="middle" x="194" y="-222.7" font-family="inherit" font-size="8.50">Atk.ImplementorIface</text>
+</a>
+</g>
+</g>
+<!-- Gtk.Widget -->
+<g id="node9" class="node">
+<title>Gtk.Widget</title>
+<g id="a_node9"><a xlink:href="Widget.html#Gtk.Widget" xlink:title="Gtk.Widget">
+<path fill="none" stroke="#aaaaaa" d="M220,-180C220,-180 168,-180 168,-180 165,-180 162,-177 162,-174 162,-174 162,-168 162,-168 162,-165 165,-162 168,-162 168,-162 220,-162 220,-162 223,-162 226,-165 226,-168 226,-168 226,-174 226,-174 226,-177 223,-180 220,-180"/>
+<text text-anchor="middle" x="194" y="-168.7" font-family="inherit" font-size="8.50">Gtk.Widget</text>
+</a>
+</g>
+</g>
+<!-- Atk.ImplementorIface&#45;&gt;Gtk.Widget -->
+<g id="edge1" class="edge">
+<title>Atk.ImplementorIface&#45;&gt;Gtk.Widget</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M194,-215.88C194,-207.76 194,-195.13 194,-185.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="195.75,-185.24 194,-180.24 192.25,-185.24 195.75,-185.24"/>
+</g>
+<!-- GObject.GInterface -->
+<g id="node2" class="node">
+<title>GObject.GInterface</title>
+<g id="a_node2"><a xlink:href="../../GObject-2.0/classes/GInterface.html#GObject.GInterface" xlink:title="GObject.GInterface">
+<path fill="none" stroke="#3091d1" d="M291,-288C291,-288 205,-288 205,-288 202,-288 199,-285 199,-282 199,-282 199,-276 199,-276 199,-273 202,-270 205,-270 205,-270 291,-270 291,-270 294,-270 297,-273 297,-276 297,-276 297,-282 297,-282 297,-285 294,-288 291,-288"/>
+<text text-anchor="middle" x="248" y="-276.7" font-family="inherit" font-size="8.50">GObject.GInterface</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Atk.ImplementorIface -->
+<g id="edge2" class="edge">
+<title>GObject.GInterface&#45;&gt;Atk.ImplementorIface</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M239.56,-269.88C230.66,-261.3 216.54,-247.7 206.37,-237.91"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="207.37,-236.45 202.56,-234.24 204.94,-238.97 207.37,-236.45"/>
+</g>
+<!-- Gtk.Buildable -->
+<g id="node5" class="node">
+<title>Gtk.Buildable</title>
+<g id="a_node5"><a xlink:href="Buildable.html#Gtk.Buildable" xlink:title="Gtk.Buildable">
+<path fill="none" stroke="#3091d1" d="M334,-234C334,-234 272,-234 272,-234 269,-234 266,-231 266,-228 266,-228 266,-222 266,-222 266,-219 269,-216 272,-216 272,-216 334,-216 334,-216 337,-216 340,-219 340,-222 340,-222 340,-228 340,-228 340,-231 337,-234 334,-234"/>
+<text text-anchor="middle" x="303" y="-222.7" font-family="inherit" font-size="8.50">Gtk.Buildable</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Gtk.Buildable -->
+<g id="edge3" class="edge">
+<title>GObject.GInterface&#45;&gt;Gtk.Buildable</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M256.59,-269.88C265.66,-261.3 280.05,-247.7 290.4,-237.91"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="291.85,-238.95 294.29,-234.24 289.45,-236.4 291.85,-238.95"/>
+</g>
+<!-- GObject.InitiallyUnowned -->
+<g id="node3" class="node">
+<title>GObject.InitiallyUnowned</title>
+<g id="a_node3"><a xlink:href="../../GObject-2.0/classes/InitiallyUnowned.html#GObject.InitiallyUnowned" xlink:title="GObject.InitiallyUnowned">
+<path fill="none" stroke="#75507b" d="M116,-234C116,-234 6,-234 6,-234 3,-234 0,-231 0,-228 0,-228 0,-222 0,-222 0,-219 3,-216 6,-216 6,-216 116,-216 116,-216 119,-216 122,-219 122,-222 122,-222 122,-228 122,-228 122,-231 119,-234 116,-234"/>
+<text text-anchor="middle" x="61" y="-222.7" font-family="inherit" font-size="8.50">GObject.InitiallyUnowned</text>
+</a>
+</g>
+</g>
+<!-- GObject.InitiallyUnowned&#45;&gt;Gtk.Widget -->
+<g id="edge4" class="edge">
+<title>GObject.InitiallyUnowned&#45;&gt;Gtk.Widget</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M81.49,-215.99C104.85,-206.85 143.08,-191.91 168.39,-182.01"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="169.25,-183.56 173.27,-180.11 167.97,-180.3 169.25,-183.56"/>
+</g>
+<!-- GObject.Object -->
+<g id="node4" class="node">
+<title>GObject.Object</title>
+<g id="a_node4"><a xlink:href="../../GObject-2.0/classes/Object.html#GObject.Object" xlink:title="GObject.Object">
+<path fill="none" stroke="#75507b" d="M95,-288C95,-288 27,-288 27,-288 24,-288 21,-285 21,-282 21,-282 21,-276 21,-276 21,-273 24,-270 27,-270 27,-270 95,-270 95,-270 98,-270 101,-273 101,-276 101,-276 101,-282 101,-282 101,-285 98,-288 95,-288"/>
+<text text-anchor="middle" x="61" y="-276.7" font-family="inherit" font-size="8.50">GObject.Object</text>
+</a>
+</g>
+</g>
+<!-- GObject.Object&#45;&gt;GObject.InitiallyUnowned -->
+<g id="edge5" class="edge">
+<title>GObject.Object&#45;&gt;GObject.InitiallyUnowned</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M61,-269.88C61,-261.76 61,-249.13 61,-239.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="62.75,-239.24 61,-234.24 59.25,-239.24 62.75,-239.24"/>
+</g>
+<!-- Gtk.Buildable&#45;&gt;Gtk.Widget -->
+<g id="edge6" class="edge">
+<title>Gtk.Buildable&#45;&gt;Gtk.Widget</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M285.97,-215.88C267.01,-206.83 236.33,-192.19 215.67,-182.34"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="216.18,-180.64 210.91,-180.07 214.67,-183.8 216.18,-180.64"/>
+</g>
+<!-- Gtk.Container -->
+<g id="node6" class="node">
+<title>Gtk.Container</title>
+<g id="a_node6"><a xlink:href="Container.html#Gtk.Container" xlink:title="Gtk.Container">
+<path fill="none" stroke="#aaaaaa" d="M226,-126C226,-126 162,-126 162,-126 159,-126 156,-123 156,-120 156,-120 156,-114 156,-114 156,-111 159,-108 162,-108 162,-108 226,-108 226,-108 229,-108 232,-111 232,-114 232,-114 232,-120 232,-120 232,-123 229,-126 226,-126"/>
+<text text-anchor="middle" x="194" y="-114.7" font-family="inherit" font-size="8.50">Gtk.Container</text>
+</a>
+</g>
+</g>
+<!-- Gtk.MenuShell -->
+<g id="node8" class="node">
+<title>Gtk.MenuShell</title>
+<g id="a_node8"><a xlink:href="MenuShell.html#Gtk.MenuShell" xlink:title="Gtk.MenuShell">
+<path fill="none" stroke="#aaaaaa" d="M227,-72C227,-72 161,-72 161,-72 158,-72 155,-69 155,-66 155,-66 155,-60 155,-60 155,-57 158,-54 161,-54 161,-54 227,-54 227,-54 230,-54 233,-57 233,-60 233,-60 233,-66 233,-66 233,-69 230,-72 227,-72"/>
+<text text-anchor="middle" x="194" y="-60.7" font-family="inherit" font-size="8.50">Gtk.MenuShell</text>
+</a>
+</g>
+</g>
+<!-- Gtk.Container&#45;&gt;Gtk.MenuShell -->
+<g id="edge7" class="edge">
+<title>Gtk.Container&#45;&gt;Gtk.MenuShell</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M194,-107.88C194,-99.76 194,-87.13 194,-77.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="195.75,-77.24 194,-72.24 192.25,-77.24 195.75,-77.24"/>
+</g>
+<!-- Gtk.Menu -->
+<g id="node7" class="node">
+<title>Gtk.Menu</title>
+<g id="a_node7"><a xlink:href="#Gtk.Menu" xlink:title="Gtk.Menu">
+<path fill="none" stroke="#75507b" d="M217,-18C217,-18 171,-18 171,-18 168,-18 165,-15 165,-12 165,-12 165,-6 165,-6 165,-3 168,0 171,0 171,0 217,0 217,0 220,0 223,-3 223,-6 223,-6 223,-12 223,-12 223,-15 220,-18 217,-18"/>
+<text text-anchor="middle" x="194" y="-6.7" font-family="inherit" font-size="8.50">Gtk.Menu</text>
+</a>
+</g>
+</g>
+<!-- Gtk.MenuShell&#45;&gt;Gtk.Menu -->
+<g id="edge8" class="edge">
+<title>Gtk.MenuShell&#45;&gt;Gtk.Menu</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M194,-53.88C194,-45.76 194,-33.13 194,-23.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="195.75,-23.24 194,-18.24 192.25,-23.24 195.75,-23.24"/>
+</g>
+<!-- Gtk.Widget&#45;&gt;Gtk.Container -->
+<g id="edge9" class="edge">
+<title>Gtk.Widget&#45;&gt;Gtk.Container</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M194,-161.88C194,-153.76 194,-141.13 194,-131.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="195.75,-131.24 194,-126.24 192.25,-131.24 195.75,-131.24"/>
+</g>
+</g>
+</svg>
+</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Subclasses:</th><td class="field-body"><a class="reference internal" href="RecentChooserMenu.html#Gtk.RecentChooserMenu" title="Gtk.RecentChooserMenu"><code class="xref py py-class docutils literal notranslate"><span class="pre">Gtk.RecentChooserMenu</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="methods">
+<span id="gtk-menu-methods"></span><h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="MenuShell.html#gtk-menushell-methods"><span class="std std-ref">Gtk.MenuShell (14)</span></a>,     <a class="reference internal" href="Container.html#gtk-container-methods"><span class="std std-ref">Gtk.Container (35)</span></a>,     <a class="reference internal" href="Widget.html#gtk-widget-methods"><span class="std std-ref">Gtk.Widget (278)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (37)</span></a>,     <a class="reference internal" href="Buildable.html#gtk-buildable-methods"><span class="std std-ref">Gtk.Buildable (10)</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Structs:</th><td class="field-body"><a class="reference internal" href="ContainerClass.html#gtk-containerclass-methods"><span class="std std-ref">Gtk.ContainerClass (5)</span></a>,     <a class="reference internal" href="WidgetClass.html#gtk-widgetclass-methods"><span class="std std-ref">Gtk.WidgetClass (12)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/ObjectClass.html#gobject-objectclass-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.ObjectClass (5)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="99%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><em>class</em></td>
+<td><a class="reference internal" href="#Gtk.Menu.get_for_attach_widget" title="Gtk.Menu.get_for_attach_widget"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_for_attach_widget</span></code></a> (widget)</td>
+</tr>
+<tr class="row-even"><td><em>class</em></td>
+<td><a class="reference internal" href="#Gtk.Menu.new" title="Gtk.Menu.new"><code class="xref py py-func docutils literal notranslate"><span class="pre">new</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td><em>class</em></td>
+<td><a class="reference internal" href="#Gtk.Menu.new_from_model" title="Gtk.Menu.new_from_model"><code class="xref py py-func docutils literal notranslate"><span class="pre">new_from_model</span></code></a> (model)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.Menu.attach" title="Gtk.Menu.attach"><code class="xref py py-func docutils literal notranslate"><span class="pre">attach</span></code></a> (child, left_attach, right_attach, top_attach, bottom_attach)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.Menu.attach_to_widget" title="Gtk.Menu.attach_to_widget"><code class="xref py py-func docutils literal notranslate"><span class="pre">attach_to_widget</span></code></a> (attach_widget, detacher)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.Menu.detach" title="Gtk.Menu.detach"><code class="xref py py-func docutils literal notranslate"><span class="pre">detach</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.Menu.get_accel_group" title="Gtk.Menu.get_accel_group"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_accel_group</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.Menu.get_accel_path" title="Gtk.Menu.get_accel_path"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_accel_path</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.Menu.get_active" title="Gtk.Menu.get_active"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_active</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.Menu.get_attach_widget" title="Gtk.Menu.get_attach_widget"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_attach_widget</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.Menu.get_monitor" title="Gtk.Menu.get_monitor"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_monitor</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.Menu.get_reserve_toggle_size" title="Gtk.Menu.get_reserve_toggle_size"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_reserve_toggle_size</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.Menu.get_tearoff_state" title="Gtk.Menu.get_tearoff_state"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_tearoff_state</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.Menu.get_title" title="Gtk.Menu.get_title"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_title</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.Menu.place_on_monitor" title="Gtk.Menu.place_on_monitor"><code class="xref py py-func docutils literal notranslate"><span class="pre">place_on_monitor</span></code></a> (monitor)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.Menu.popdown" title="Gtk.Menu.popdown"><code class="xref py py-func docutils literal notranslate"><span class="pre">popdown</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.Menu.popup" title="Gtk.Menu.popup"><code class="xref py py-func docutils literal notranslate"><span class="pre">popup</span></code></a> (parent_menu_shell, parent_menu_item, func, data, button, activate_time)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.Menu.popup_at_pointer" title="Gtk.Menu.popup_at_pointer"><code class="xref py py-func docutils literal notranslate"><span class="pre">popup_at_pointer</span></code></a> (trigger_event)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.Menu.popup_at_rect" title="Gtk.Menu.popup_at_rect"><code class="xref py py-func docutils literal notranslate"><span class="pre">popup_at_rect</span></code></a> (rect_window, rect, rect_anchor, menu_anchor, trigger_event)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.Menu.popup_at_widget" title="Gtk.Menu.popup_at_widget"><code class="xref py py-func docutils literal notranslate"><span class="pre">popup_at_widget</span></code></a> (widget, widget_anchor, menu_anchor, trigger_event)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.Menu.popup_for_device" title="Gtk.Menu.popup_for_device"><code class="xref py py-func docutils literal notranslate"><span class="pre">popup_for_device</span></code></a> (device, parent_menu_shell, parent_menu_item, func, data, button, activate_time)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.Menu.reorder_child" title="Gtk.Menu.reorder_child"><code class="xref py py-func docutils literal notranslate"><span class="pre">reorder_child</span></code></a> (child, position)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.Menu.reposition" title="Gtk.Menu.reposition"><code class="xref py py-func docutils literal notranslate"><span class="pre">reposition</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.Menu.set_accel_group" title="Gtk.Menu.set_accel_group"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_accel_group</span></code></a> (accel_group)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.Menu.set_accel_path" title="Gtk.Menu.set_accel_path"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_accel_path</span></code></a> (accel_path)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.Menu.set_active" title="Gtk.Menu.set_active"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_active</span></code></a> (index)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.Menu.set_monitor" title="Gtk.Menu.set_monitor"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_monitor</span></code></a> (monitor_num)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.Menu.set_reserve_toggle_size" title="Gtk.Menu.set_reserve_toggle_size"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_reserve_toggle_size</span></code></a> (reserve_toggle_size)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.Menu.set_screen" title="Gtk.Menu.set_screen"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_screen</span></code></a> (screen)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.Menu.set_tearoff_state" title="Gtk.Menu.set_tearoff_state"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_tearoff_state</span></code></a> (torn_off)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.Menu.set_title" title="Gtk.Menu.set_title"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_title</span></code></a> (title)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="virtual-methods">
+<span id="gtk-menu-vfuncs"></span><h2>Virtual Methods<a class="headerlink" href="#virtual-methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="MenuShell.html#gtk-menushell-vfuncs"><span class="std std-ref">Gtk.MenuShell (9)</span></a>,     <a class="reference internal" href="Container.html#gtk-container-vfuncs"><span class="std std-ref">Gtk.Container (10)</span></a>,     <a class="reference internal" href="Widget.html#gtk-widget-vfuncs"><span class="std std-ref">Gtk.Widget (82)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-vfuncs" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (7)</span></a>,     <a class="reference internal" href="Buildable.html#gtk-buildable-vfuncs"><span class="std std-ref">Gtk.Buildable (10)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="gtk-menu-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="MenuShell.html#gtk-menushell-props"><span class="std std-ref">Gtk.MenuShell (1)</span></a>,     <a class="reference internal" href="Container.html#gtk-container-props"><span class="std std-ref">Gtk.Container (3)</span></a>,     <a class="reference internal" href="Widget.html#gtk-widget-props"><span class="std std-ref">Gtk.Widget (39)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="1%" />
+<col width="1%" />
+<col width="97%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Flags</th>
+<th class="head">Short Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="#Gtk.Menu.props.accel_group" title="Gtk.Menu.props.accel_group"><code class="xref py py-data docutils literal notranslate"><span class="pre">accel-group</span></code></a></td>
+<td><a class="reference internal" href="AccelGroup.html#Gtk.AccelGroup" title="Gtk.AccelGroup"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.AccelGroup</span></code></a></td>
+<td>r/w</td>
+<td>The accel group holding accelerators for the menu</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#Gtk.Menu.props.accel_path" title="Gtk.Menu.props.accel_path"><code class="xref py py-data docutils literal notranslate"><span class="pre">accel-path</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+<td>r/w</td>
+<td>An accel path used to conveniently construct accel paths of child items</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#Gtk.Menu.props.active" title="Gtk.Menu.props.active"><code class="xref py py-data docutils literal notranslate"><span class="pre">active</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+<td>r/w</td>
+<td>The currently selected menu item</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#Gtk.Menu.props.anchor_hints" title="Gtk.Menu.props.anchor_hints"><code class="xref py py-data docutils literal notranslate"><span class="pre">anchor-hints</span></code></a></td>
+<td><a class="reference external" href="../../Gdk-3.0/flags.html#Gdk.AnchorHints" title="(in Gdk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gdk.AnchorHints</span></code></a></td>
+<td>r/w/c/en</td>
+<td>Positioning hints for when the menu might fall off-screen</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#Gtk.Menu.props.attach_widget" title="Gtk.Menu.props.attach_widget"><code class="xref py py-data docutils literal notranslate"><span class="pre">attach-widget</span></code></a></td>
+<td><a class="reference internal" href="Widget.html#Gtk.Widget" title="Gtk.Widget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Widget</span></code></a></td>
+<td>r/w</td>
+<td>The widget the menu is attached to</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#Gtk.Menu.props.menu_type_hint" title="Gtk.Menu.props.menu_type_hint"><code class="xref py py-data docutils literal notranslate"><span class="pre">menu-type-hint</span></code></a></td>
+<td><a class="reference external" href="../../Gdk-3.0/enums.html#Gdk.WindowTypeHint" title="(in Gdk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gdk.WindowTypeHint</span></code></a></td>
+<td>r/w/c/en</td>
+<td>Menu window type hint</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#Gtk.Menu.props.monitor" title="Gtk.Menu.props.monitor"><code class="xref py py-data docutils literal notranslate"><span class="pre">monitor</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+<td>r/w/en</td>
+<td>The monitor the menu will be popped up on</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#Gtk.Menu.props.rect_anchor_dx" title="Gtk.Menu.props.rect_anchor_dx"><code class="xref py py-data docutils literal notranslate"><span class="pre">rect-anchor-dx</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+<td>r/w/c/en</td>
+<td>Rect anchor horizontal offset</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#Gtk.Menu.props.rect_anchor_dy" title="Gtk.Menu.props.rect_anchor_dy"><code class="xref py py-data docutils literal notranslate"><span class="pre">rect-anchor-dy</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+<td>r/w/c/en</td>
+<td>Rect anchor vertical offset</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#Gtk.Menu.props.reserve_toggle_size" title="Gtk.Menu.props.reserve_toggle_size"><code class="xref py py-data docutils literal notranslate"><span class="pre">reserve-toggle-size</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+<td>r/w/en</td>
+<td>A boolean that indicates whether the menu reserves space for toggles and icons</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#Gtk.Menu.props.tearoff_state" title="Gtk.Menu.props.tearoff_state"><code class="xref py py-data docutils literal notranslate"><span class="pre">tearoff-state</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+<td>d/r/w</td>
+<td>A boolean that indicates whether the menu is torn-off <code class="docutils literal notranslate"><span class="pre">deprecated</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#Gtk.Menu.props.tearoff_title" title="Gtk.Menu.props.tearoff_title"><code class="xref py py-data docutils literal notranslate"><span class="pre">tearoff-title</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+<td>d/r/w</td>
+<td>A title that may be displayed by the window manager when this menu is torn-off <code class="docutils literal notranslate"><span class="pre">deprecated</span></code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="child-properties">
+<span id="gtk-menu-child-props"></span><h2>Child Properties<a class="headerlink" href="#child-properties" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="1%" />
+<col width="1%" />
+<col width="1%" />
+<col width="96%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Default</th>
+<th class="head">Flags</th>
+<th class="head">Short Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">bottom-attach</span></code></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+<td><code class="docutils literal notranslate"><span class="pre">-1</span></code></td>
+<td>r/w</td>
+<td>The row number to attach the bottom of the child to</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">left-attach</span></code></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+<td><code class="docutils literal notranslate"><span class="pre">-1</span></code></td>
+<td>r/w</td>
+<td>The column number to attach the left side of the child to</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">right-attach</span></code></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+<td><code class="docutils literal notranslate"><span class="pre">-1</span></code></td>
+<td>r/w</td>
+<td>The column number to attach the right side of the child to</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">top-attach</span></code></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+<td><code class="docutils literal notranslate"><span class="pre">-1</span></code></td>
+<td>r/w</td>
+<td>The row number to attach the top of the child to</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="style-properties">
+<span id="gtk-menu-style-props"></span><h2>Style Properties<a class="headerlink" href="#style-properties" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Widget.html#gtk-widget-style-props"><span class="std std-ref">Gtk.Widget (17)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="1%" />
+<col width="1%" />
+<col width="1%" />
+<col width="96%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Default</th>
+<th class="head">Flags</th>
+<th class="head">Short Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">arrow-placement</span></code></td>
+<td><a class="reference internal" href="../enums.html#Gtk.ArrowPlacement" title="Gtk.ArrowPlacement"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ArrowPlacement</span></code></a></td>
+<td><a class="reference internal" href="../enums.html#Gtk.ArrowPlacement.BOTH" title="Gtk.ArrowPlacement.BOTH"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ArrowPlacement.BOTH</span></code></a></td>
+<td>d/r</td>
+<td>Indicates where scroll arrows should be placed <code class="docutils literal notranslate"><span class="pre">deprecated</span></code></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">arrow-scaling</span></code></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">float</span></code></a></td>
+<td><code class="docutils literal notranslate"><span class="pre">0.699999988079071</span></code></td>
+<td>d/r</td>
+<td>Arbitrary constant to scale down the size of the scroll arrow <code class="docutils literal notranslate"><span class="pre">deprecated</span></code></td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">double-arrows</span></code></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a></td>
+<td>d/r</td>
+<td>When scrolling, always show both arrows. <code class="docutils literal notranslate"><span class="pre">deprecated</span></code></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">horizontal-offset</span></code></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+<td><code class="docutils literal notranslate"><span class="pre">-2</span></code></td>
+<td>r</td>
+<td>When the menu is a submenu, position it this number of pixels offset horizontally</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">horizontal-padding</span></code></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+<td><code class="docutils literal notranslate"><span class="pre">0</span></code></td>
+<td>d/r</td>
+<td>Extra space at the left and right edges of the menu <code class="docutils literal notranslate"><span class="pre">deprecated</span></code></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">vertical-offset</span></code></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+<td><code class="docutils literal notranslate"><span class="pre">0</span></code></td>
+<td>r</td>
+<td>When the menu is a submenu, position it this number of pixels offset vertically</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">vertical-padding</span></code></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+<td><code class="docutils literal notranslate"><span class="pre">1</span></code></td>
+<td>d/r</td>
+<td>Extra space at the top and bottom of the menu <code class="docutils literal notranslate"><span class="pre">deprecated</span></code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="signals">
+<span id="gtk-menu-signals"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="MenuShell.html#gtk-menushell-signals"><span class="std std-ref">Gtk.MenuShell (8)</span></a>,     <a class="reference internal" href="Container.html#gtk-container-signals"><span class="std std-ref">Gtk.Container (4)</span></a>,     <a class="reference internal" href="Widget.html#gtk-widget-signals"><span class="std std-ref">Gtk.Widget (69)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-signals" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="30%" />
+<col width="70%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Short Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="#Gtk.Menu.signals.move_scroll" title="Gtk.Menu.signals.move_scroll"><code class="xref py py-func docutils literal notranslate"><span class="pre">move-scroll</span></code></a></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#Gtk.Menu.signals.popped_up" title="Gtk.Menu.signals.popped_up"><code class="xref py py-func docutils literal notranslate"><span class="pre">popped-up</span></code></a></td>
+<td>Emitted when the position of <cite>menu</cite> is finalized after being popped up using <a class="reference internal" href="#Gtk.Menu.popup_at_rect" title="Gtk.Menu.popup_at_rect"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu.popup_at_rect</span></code></a> (), <a class="reference internal" href="#Gtk.Menu.popup_at_widget" title="Gtk.Menu.popup_at_widget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu.popup_at_widget</span></code></a> (), or <a class="reference internal" href="#Gtk.Menu.popup_at_pointer" title="Gtk.Menu.popup_at_pointer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu.popup_at_pointer</span></code></a> ().</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fields">
+<span id="gtk-menu-fields"></span><h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="MenuShell.html#gtk-menushell-fields"><span class="std std-ref">Gtk.MenuShell (8)</span></a>,     <a class="reference internal" href="Container.html#gtk-container-fields"><span class="std std-ref">Gtk.Container (4)</span></a>,     <a class="reference internal" href="Widget.html#gtk-widget-fields"><span class="std std-ref">Gtk.Widget (69)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-fields" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="16%" />
+<col width="1%" />
+<col width="1%" />
+<col width="82%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Access</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>menu_shell</td>
+<td><a class="reference internal" href="MenuShell.html#Gtk.MenuShell" title="Gtk.MenuShell"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.MenuShell</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="class-details">
+<h2>Class Details<a class="headerlink" href="#class-details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Gtk.Menu">
+<em class="property">class </em><code class="descclassname">Gtk.</code><code class="descname">Menu</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#Gtk.Menu" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Bases:</th><td class="field-body"><a class="reference internal" href="MenuShell.html#Gtk.MenuShell" title="Gtk.MenuShell"><code class="xref py py-class docutils literal notranslate"><span class="pre">Gtk.MenuShell</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Abstract:</th><td class="field-body">No</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Structure:</th><td class="field-body"><a class="reference internal" href="MenuClass.html#Gtk.MenuClass" title="Gtk.MenuClass"><code class="xref py py-class docutils literal notranslate"><span class="pre">Gtk.MenuClass</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>A <a class="reference internal" href="#Gtk.Menu" title="Gtk.Menu"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu</span></code></a> is a <a class="reference internal" href="MenuShell.html#Gtk.MenuShell" title="Gtk.MenuShell"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.MenuShell</span></code></a> that implements a drop down menu
+consisting of a list of <a class="reference internal" href="MenuItem.html#Gtk.MenuItem" title="Gtk.MenuItem"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.MenuItem</span></code></a> objects which can be navigated
+and activated by the user to perform application functions.</p>
+<p>A <a class="reference internal" href="#Gtk.Menu" title="Gtk.Menu"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu</span></code></a> is most commonly dropped down by activating a
+<a class="reference internal" href="MenuItem.html#Gtk.MenuItem" title="Gtk.MenuItem"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.MenuItem</span></code></a> in a <a class="reference internal" href="MenuBar.html#Gtk.MenuBar" title="Gtk.MenuBar"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.MenuBar</span></code></a> or popped up by activating a
+<a class="reference internal" href="MenuItem.html#Gtk.MenuItem" title="Gtk.MenuItem"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.MenuItem</span></code></a> in another <a class="reference internal" href="#Gtk.Menu" title="Gtk.Menu"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu</span></code></a>.</p>
+<p>A <a class="reference internal" href="#Gtk.Menu" title="Gtk.Menu"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu</span></code></a> can also be popped up by activating a <a class="reference internal" href="ComboBox.html#Gtk.ComboBox" title="Gtk.ComboBox"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ComboBox</span></code></a>.
+Other composite widgets such as the <a class="reference internal" href="Notebook.html#Gtk.Notebook" title="Gtk.Notebook"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Notebook</span></code></a> can pop up a
+<a class="reference internal" href="#Gtk.Menu" title="Gtk.Menu"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu</span></code></a> as well.</p>
+<p>Applications can display a <a class="reference internal" href="#Gtk.Menu" title="Gtk.Menu"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu</span></code></a> as a popup menu by calling the
+<a class="reference internal" href="#Gtk.Menu.popup" title="Gtk.Menu.popup"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu.popup</span></code></a>() function.  The example below shows how an application
+can pop up a menu when the 3rd mouse button is pressed.</p>
+<dl class="docutils">
+<dt>Connecting the popup signal handler.</dt>
+<dd></dd>
+</dl>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="c1">// connect our handler which will popup the menu</span>
+<span class="w">  </span><span class="n">g_signal_connect_swapped</span><span class="w"> </span><span class="p">(</span><span class="n">window</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;button_press_event&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="n">G_CALLBACK</span><span class="w"> </span><span class="p">(</span><span class="n">my_popup_handler</span><span class="p">),</span><span class="w"> </span><span class="n">menu</span><span class="p">);</span><span class="w"></span>
+</pre></div>
+</div>
+<dl class="docutils">
+<dt>Signal handler which displays a popup menu.</dt>
+<dd></dd>
+</dl>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="n">gint</span><span class="w"></span>
+<span class="nf">my_popup_handler</span><span class="w"> </span><span class="p">(</span><span class="n">GtkWidget</span><span class="w"> </span><span class="o">*</span><span class="n">widget</span><span class="p">,</span><span class="w"> </span><span class="n">GdkEvent</span><span class="w"> </span><span class="o">*</span><span class="n">event</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="n">GtkMenu</span><span class="w"> </span><span class="o">*</span><span class="n">menu</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="n">GdkEventButton</span><span class="w"> </span><span class="o">*</span><span class="n">event_button</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">  </span><span class="n">g_return_val_if_fail</span><span class="w"> </span><span class="p">(</span><span class="n">widget</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="nb">NULL</span><span class="p">,</span><span class="w"> </span><span class="n">FALSE</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">g_return_val_if_fail</span><span class="w"> </span><span class="p">(</span><span class="n">GTK_IS_MENU</span><span class="w"> </span><span class="p">(</span><span class="n">widget</span><span class="p">),</span><span class="w"> </span><span class="n">FALSE</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">g_return_val_if_fail</span><span class="w"> </span><span class="p">(</span><span class="n">event</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="nb">NULL</span><span class="p">,</span><span class="w"> </span><span class="n">FALSE</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">  </span><span class="c1">// The &quot;widget&quot; is the menu that was supplied when</span>
+<span class="w">  </span><span class="c1">// g_signal_connect_swapped() was called.</span>
+<span class="w">  </span><span class="n">menu</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">GTK_MENU</span><span class="w"> </span><span class="p">(</span><span class="n">widget</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">event</span><span class="o">-&gt;</span><span class="n">type</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">GDK_BUTTON_PRESS</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="n">event_button</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">GdkEventButton</span><span class="w"> </span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="n">event</span><span class="p">;</span><span class="w"></span>
+<span class="w">      </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">event_button</span><span class="o">-&gt;</span><span class="n">button</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">GDK_BUTTON_SECONDARY</span><span class="p">)</span><span class="w"></span>
+<span class="w">        </span><span class="p">{</span><span class="w"></span>
+<span class="w">          </span><span class="n">gtk_menu_popup</span><span class="w"> </span><span class="p">(</span><span class="n">menu</span><span class="p">,</span><span class="w"> </span><span class="nb">NULL</span><span class="p">,</span><span class="w"> </span><span class="nb">NULL</span><span class="p">,</span><span class="w"> </span><span class="nb">NULL</span><span class="p">,</span><span class="w"> </span><span class="nb">NULL</span><span class="p">,</span><span class="w"></span>
+<span class="w">                          </span><span class="n">event_button</span><span class="o">-&gt;</span><span class="n">button</span><span class="p">,</span><span class="w"> </span><span class="n">event_button</span><span class="o">-&gt;</span><span class="n">time</span><span class="p">);</span><span class="w"></span>
+<span class="w">          </span><span class="k">return</span><span class="w"> </span><span class="n">TRUE</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="n">FALSE</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<dl class="docutils">
+<dt>CSS nodes</dt>
+<dd></dd>
+</dl>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>menu
+├── arrow.top
+├── &lt;child&gt;
+┊
+├── &lt;child&gt;
+╰── arrow.bottom
+</pre></div>
+</div>
+<p>The main CSS node of <a class="reference internal" href="#Gtk.Menu" title="Gtk.Menu"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu</span></code></a> has name menu, and there are two subnodes
+with name arrow, for scrolling menu arrows. These subnodes get the
+.top and .bottom style classes.</p>
+<dl class="classmethod">
+<dt id="Gtk.Menu.get_for_attach_widget">
+<em class="property">classmethod </em><code class="descname">get_for_attach_widget</code><span class="sig-paren">(</span><em>widget</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkmenu.c#L6217"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.Menu.get_for_attach_widget" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>widget</strong> (<a class="reference internal" href="Widget.html#Gtk.Widget" title="Gtk.Widget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Widget</span></code></a>) – a <a class="reference internal" href="Widget.html#Gtk.Widget" title="Gtk.Widget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Widget</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the list
+of menus attached to his widget.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">[<a class="reference internal" href="Widget.html#Gtk.Widget" title="Gtk.Widget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Widget</span></code></a>]</td>
+</tr>
+</tbody>
+</table>
+<p>Returns a list of the menus which are attached to this widget.
+This list is owned by GTK+ and must not be modified.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.6.</span></p>
+</div>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="Gtk.Menu.new">
+<em class="property">classmethod </em><code class="descname">new</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkmenu.c#L1697"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.Menu.new" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a new <a class="reference internal" href="#Gtk.Menu" title="Gtk.Menu"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="Widget.html#Gtk.Widget" title="Gtk.Widget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Widget</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Creates a new <a class="reference internal" href="#Gtk.Menu" title="Gtk.Menu"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu</span></code></a></p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="Gtk.Menu.new_from_model">
+<em class="property">classmethod </em><code class="descname">new_from_model</code><span class="sig-paren">(</span><em>model</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkmenu.c#L6329"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.Menu.new_from_model" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>model</strong> (<a class="reference external" href="../../Gio-2.0/classes/MenuModel.html#Gio.MenuModel" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.MenuModel</span></code></a>) – a <a class="reference external" href="../../Gio-2.0/classes/MenuModel.html#Gio.MenuModel" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.MenuModel</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a new <a class="reference internal" href="#Gtk.Menu" title="Gtk.Menu"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="Widget.html#Gtk.Widget" title="Gtk.Widget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Widget</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Creates a <a class="reference internal" href="#Gtk.Menu" title="Gtk.Menu"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu</span></code></a> and populates it with menu items and
+submenus according to <cite>model</cite>.</p>
+<p>The created menu items are connected to actions found in the
+<a class="reference internal" href="ApplicationWindow.html#Gtk.ApplicationWindow" title="Gtk.ApplicationWindow"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ApplicationWindow</span></code></a> to which the menu belongs - typically
+by means of being attached to a widget (see <a class="reference internal" href="#Gtk.Menu.attach_to_widget" title="Gtk.Menu.attach_to_widget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu.attach_to_widget</span></code></a>())
+that is contained within the <a class="reference internal" href="ApplicationWindow.html#Gtk.ApplicationWindow" title="Gtk.ApplicationWindow"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ApplicationWindows</span></code></a> widget hierarchy.</p>
+<p>Actions can also be added using <a class="reference internal" href="Widget.html#Gtk.Widget.insert_action_group" title="Gtk.Widget.insert_action_group"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Widget.insert_action_group</span></code></a>() on the menu’s
+attach widget or on any of its parent widgets.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.4.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.Menu.attach">
+<code class="descname">attach</code><span class="sig-paren">(</span><em>child</em>, <em>left_attach</em>, <em>right_attach</em>, <em>top_attach</em>, <em>bottom_attach</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkmenu.c#L5738"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.Menu.attach" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>child</strong> (<a class="reference internal" href="Widget.html#Gtk.Widget" title="Gtk.Widget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Widget</span></code></a>) – a <a class="reference internal" href="MenuItem.html#Gtk.MenuItem" title="Gtk.MenuItem"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.MenuItem</span></code></a></li>
+<li><strong>left_attach</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – The column number to attach the left side of the item to</li>
+<li><strong>right_attach</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – The column number to attach the right side of the item to</li>
+<li><strong>top_attach</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – The row number to attach the top of the item to</li>
+<li><strong>bottom_attach</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – The row number to attach the bottom of the item to</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Adds a new <a class="reference internal" href="MenuItem.html#Gtk.MenuItem" title="Gtk.MenuItem"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.MenuItem</span></code></a> to a (table) menu. The number of “cells” that
+an item will occupy is specified by <cite>left_attach</cite>, <cite>right_attach</cite>,
+<cite>top_attach</cite> and <cite>bottom_attach</cite>. These each represent the leftmost,
+rightmost, uppermost and lower column and row numbers of the table.
+(Columns and rows are indexed from zero).</p>
+<p>Note that this function is not related to <a class="reference internal" href="#Gtk.Menu.detach" title="Gtk.Menu.detach"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu.detach</span></code></a>().</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.4.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.Menu.attach_to_widget">
+<code class="descname">attach_to_widget</code><span class="sig-paren">(</span><em>attach_widget</em>, <em>detacher</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkmenu.c#L1537"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.Menu.attach_to_widget" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>attach_widget</strong> (<a class="reference internal" href="Widget.html#Gtk.Widget" title="Gtk.Widget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Widget</span></code></a>) – the <a class="reference internal" href="Widget.html#Gtk.Widget" title="Gtk.Widget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Widget</span></code></a> that the menu will be attached to</li>
+<li><strong>detacher</strong> (<a class="reference internal" href="../callbacks.html#Gtk.MenuDetachFunc" title="Gtk.MenuDetachFunc"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.MenuDetachFunc</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – the user supplied callback function
+that will be called when the menu calls <a class="reference internal" href="#Gtk.Menu.detach" title="Gtk.Menu.detach"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu.detach</span></code></a>()</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Attaches the menu to the widget and provides a callback function
+that will be invoked when the menu calls <a class="reference internal" href="#Gtk.Menu.detach" title="Gtk.Menu.detach"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu.detach</span></code></a>() during
+its destruction.</p>
+<p>If the menu is attached to the widget then it will be destroyed
+when the widget is destroyed, as if it was a child widget.
+An attached menu will also move between screens correctly if the
+widgets moves between screens.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.Menu.detach">
+<code class="descname">detach</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkmenu.c#L1615"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.Menu.detach" title="Permalink to this definition">¶</a></dt>
+<dd><p>Detaches the menu from the widget to which it had been attached.
+This function will call the callback function, <cite>detacher</cite>, provided
+when the <a class="reference internal" href="#Gtk.Menu.attach_to_widget" title="Gtk.Menu.attach_to_widget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu.attach_to_widget</span></code></a>() function was called.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.Menu.get_accel_group">
+<code class="descname">get_accel_group</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkmenu.c#L2713"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.Menu.get_accel_group" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the <a class="reference internal" href="AccelGroup.html#Gtk.AccelGroup" title="Gtk.AccelGroup"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.AccelGroup</span></code></a> associated with the menu</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="AccelGroup.html#Gtk.AccelGroup" title="Gtk.AccelGroup"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.AccelGroup</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the <a class="reference internal" href="AccelGroup.html#Gtk.AccelGroup" title="Gtk.AccelGroup"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.AccelGroup</span></code></a> which holds global accelerators for the
+menu. See <a class="reference internal" href="#Gtk.Menu.set_accel_group" title="Gtk.Menu.set_accel_group"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu.set_accel_group</span></code></a>().</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.Menu.get_accel_path">
+<code class="descname">get_accel_path</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkmenu.c#L2794"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.Menu.get_accel_path" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the accelerator path set on the menu.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Retrieves the accelerator path set on the menu.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.14.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.Menu.get_active">
+<code class="descname">get_active</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkmenu.c#L2600"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.Menu.get_active" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the <a class="reference internal" href="MenuItem.html#Gtk.MenuItem" title="Gtk.MenuItem"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.MenuItem</span></code></a> that was last selected
+in the menu.  If a selection has not yet been made, the
+first menu item is selected.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="Widget.html#Gtk.Widget" title="Gtk.Widget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Widget</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns the selected menu item from the menu.  This is used by the
+<a class="reference internal" href="ComboBox.html#Gtk.ComboBox" title="Gtk.ComboBox"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ComboBox</span></code></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.Menu.get_attach_widget">
+<code class="descname">get_attach_widget</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkmenu.c#L1594"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.Menu.get_attach_widget" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the <a class="reference internal" href="Widget.html#Gtk.Widget" title="Gtk.Widget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Widget</span></code></a> that the menu is attached to</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="Widget.html#Gtk.Widget" title="Gtk.Widget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Widget</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns the <a class="reference internal" href="Widget.html#Gtk.Widget" title="Gtk.Widget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Widget</span></code></a> that the menu is attached to.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.Menu.get_monitor">
+<code class="descname">get_monitor</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkmenu.c#L6162"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.Menu.get_monitor" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the number of the monitor on which the menu should
+be popped up or -1, if no monitor has been set</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Retrieves the number of the monitor on which to show the menu.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.14.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.Menu.get_reserve_toggle_size">
+<code class="descname">get_reserve_toggle_size</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkmenu.c#L6302"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.Menu.get_reserve_toggle_size" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Whether the menu reserves toggle space</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns whether the menu reserves space for toggles and
+icons, regardless of their actual presence.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.18.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.Menu.get_tearoff_state">
+<code class="descname">get_tearoff_state</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkmenu.c#L3090"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.Menu.get_tearoff_state" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if the menu is currently torn off.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns whether the menu is torn off.
+See <a class="reference internal" href="#Gtk.Menu.set_tearoff_state" title="Gtk.Menu.set_tearoff_state"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu.set_tearoff_state</span></code></a>().</p>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 3.10.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.Menu.get_title">
+<code class="descname">get_title</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkmenu.c#L3144"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.Menu.get_title" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the title of the menu, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> if the menu
+has no title set on it. This string is owned by GTK+
+and should not be modified or freed.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns the title of the menu. See <a class="reference internal" href="#Gtk.Menu.set_title" title="Gtk.Menu.set_title"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu.set_title</span></code></a>().</p>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 3.10.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.Menu.place_on_monitor">
+<code class="descname">place_on_monitor</code><span class="sig-paren">(</span><em>monitor</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkmenu.c#L6180"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.Menu.place_on_monitor" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>monitor</strong> (<a class="reference external" href="../../Gdk-3.0/classes/Monitor.html#Gdk.Monitor" title="(in Gdk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gdk.Monitor</span></code></a>) – the monitor to place the menu on</td>
+</tr>
+</tbody>
+</table>
+<p>Places <cite>self</cite> on the given monitor.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.22.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.Menu.popdown">
+<code class="descname">popdown</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkmenu.c#L2509"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.Menu.popdown" title="Permalink to this definition">¶</a></dt>
+<dd><p>Removes the menu from the screen.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.Menu.popup">
+<code class="descname">popup</code><span class="sig-paren">(</span><em>parent_menu_shell</em>, <em>parent_menu_item</em>, <em>func</em>, <em>data</em>, <em>button</em>, <em>activate_time</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkmenu.c#L2148"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.Menu.popup" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>parent_menu_shell</strong> (<a class="reference internal" href="Widget.html#Gtk.Widget" title="Gtk.Widget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Widget</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – the menu shell containing the
+triggering menu item, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></li>
+<li><strong>parent_menu_item</strong> (<a class="reference internal" href="Widget.html#Gtk.Widget" title="Gtk.Widget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Widget</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – the menu item whose activation
+triggered the popup, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></li>
+<li><strong>func</strong> (<a class="reference internal" href="../callbacks.html#Gtk.MenuPositionFunc" title="Gtk.MenuPositionFunc"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.MenuPositionFunc</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – a user supplied function used to position
+the menu, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></li>
+<li><strong>data</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">object</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – user supplied data to be passed to <cite>func</cite>.</li>
+<li><strong>button</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – the mouse button which was pressed to initiate the event.</li>
+<li><strong>activate_time</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – the time at which the activation event occurred.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Displays a menu and makes it available for selection.</p>
+<p>Applications can use this function to display context-sensitive
+menus, and will typically supply <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> for the <cite>parent_menu_shell</cite>,
+<cite>parent_menu_item</cite>, <cite>func</cite> and <cite>data</cite> parameters. The default menu
+positioning function will position the menu at the current mouse
+cursor position.</p>
+<p>The <cite>button</cite> parameter should be the mouse button pressed to initiate
+the menu popup. If the menu popup was initiated by something other
+than a mouse button press, such as a mouse button release or a keypress,
+<cite>button</cite> should be 0.</p>
+<p>The <cite>activate_time</cite> parameter is used to conflict-resolve initiation
+of concurrent requests for mouse/keyboard grab requests. To function
+properly, this needs to be the timestamp of the user event (such as
+a mouse click or key press) that caused the initiation of the popup.
+Only if no such event is available, <a class="reference internal" href="../functions.html#Gtk.get_current_event_time" title="Gtk.get_current_event_time"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.get_current_event_time</span></code></a>() can
+be used instead.</p>
+<p>Note that this function does not work very well on GDK backends that
+do not have global coordinates, such as Wayland or Mir. You should
+probably use one of the gtk_menu_popup_at_ variants, which do not
+have this problem.</p>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 3.22: </span>Please use <a class="reference internal" href="#Gtk.Menu.popup_at_widget" title="Gtk.Menu.popup_at_widget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu.popup_at_widget</span></code></a>(), <a class="reference internal" href="#Gtk.Menu.popup_at_pointer" title="Gtk.Menu.popup_at_pointer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu.popup_at_pointer</span></code></a>(). or <a class="reference internal" href="#Gtk.Menu.popup_at_rect" title="Gtk.Menu.popup_at_rect"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu.popup_at_rect</span></code></a>() instead</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.Menu.popup_at_pointer">
+<code class="descname">popup_at_pointer</code><span class="sig-paren">(</span><em>trigger_event</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkmenu.c#L2397"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.Menu.popup_at_pointer" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>trigger_event</strong> (<a class="reference external" href="../../Gdk-3.0/classes/Event.html#Gdk.Event" title="(in Gdk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gdk.Event</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – the <a class="reference external" href="../../Gdk-3.0/classes/Event.html#Gdk.Event" title="(in Gdk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gdk.Event</span></code></a> that initiated this request or
+<a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> if it’s the current event</td>
+</tr>
+</tbody>
+</table>
+<p>Displays <cite>self</cite> and makes it available for selection.</p>
+<p>See <a class="reference internal" href="#Gtk.Menu.popup_at_widget" title="Gtk.Menu.popup_at_widget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu.popup_at_widget</span></code></a> () to pop up a menu at a widget.
+<a class="reference internal" href="#Gtk.Menu.popup_at_rect" title="Gtk.Menu.popup_at_rect"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu.popup_at_rect</span></code></a> () also allows you to position a menu at an arbitrary
+rectangle.</p>
+<p><cite>self</cite> will be positioned at the pointer associated with <cite>trigger_event</cite>.</p>
+<p>Properties that influence the behaviour of this function are
+<a class="reference internal" href="#Gtk.Menu" title="Gtk.Menu"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu</span></code></a> <a class="reference internal" href="#Gtk.Menu.props.anchor_hints" title="Gtk.Menu.props.anchor_hints"><code class="xref py py-data docutils literal notranslate"><span class="pre">:anchor-hints</span></code></a>, <a class="reference internal" href="#Gtk.Menu" title="Gtk.Menu"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu</span></code></a> <a class="reference internal" href="#Gtk.Menu.props.rect_anchor_dx" title="Gtk.Menu.props.rect_anchor_dx"><code class="xref py py-data docutils literal notranslate"><span class="pre">:rect-anchor-dx</span></code></a>, <a class="reference internal" href="#Gtk.Menu" title="Gtk.Menu"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu</span></code></a> <a class="reference internal" href="#Gtk.Menu.props.rect_anchor_dy" title="Gtk.Menu.props.rect_anchor_dy"><code class="xref py py-data docutils literal notranslate"><span class="pre">:rect-anchor-dy</span></code></a>, and
+<a class="reference internal" href="#Gtk.Menu" title="Gtk.Menu"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu</span></code></a> <a class="reference internal" href="#Gtk.Menu.props.menu_type_hint" title="Gtk.Menu.props.menu_type_hint"><code class="xref py py-data docutils literal notranslate"><span class="pre">:menu-type-hint</span></code></a>. Connect to the <a class="reference internal" href="#Gtk.Menu" title="Gtk.Menu"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu</span></code></a> <a class="reference internal" href="#Gtk.Menu.signals.popped_up" title="Gtk.Menu.signals.popped_up"><code class="xref py py-func docutils literal notranslate"><span class="pre">::popped-up</span></code></a> signal to find
+out how it was actually positioned.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.22.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.Menu.popup_at_rect">
+<code class="descname">popup_at_rect</code><span class="sig-paren">(</span><em>rect_window</em>, <em>rect</em>, <em>rect_anchor</em>, <em>menu_anchor</em>, <em>trigger_event</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkmenu.c#L2235"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.Menu.popup_at_rect" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>rect_window</strong> (<a class="reference external" href="../../Gdk-3.0/classes/Window.html#Gdk.Window" title="(in Gdk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gdk.Window</span></code></a>) – the <a class="reference external" href="../../Gdk-3.0/classes/Window.html#Gdk.Window" title="(in Gdk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gdk.Window</span></code></a> <cite>rect</cite> is relative to</li>
+<li><strong>rect</strong> (<a class="reference external" href="../../Gdk-3.0/classes/Rectangle.html#Gdk.Rectangle" title="(in Gdk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gdk.Rectangle</span></code></a>) – the <a class="reference external" href="../../Gdk-3.0/classes/Rectangle.html#Gdk.Rectangle" title="(in Gdk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gdk.Rectangle</span></code></a> to align <cite>self</cite> with</li>
+<li><strong>rect_anchor</strong> (<a class="reference external" href="../../Gdk-3.0/enums.html#Gdk.Gravity" title="(in Gdk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gdk.Gravity</span></code></a>) – the point on <cite>rect</cite> to align with <cite>self</cite>’s anchor point</li>
+<li><strong>menu_anchor</strong> (<a class="reference external" href="../../Gdk-3.0/enums.html#Gdk.Gravity" title="(in Gdk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gdk.Gravity</span></code></a>) – the point on <cite>self</cite> to align with <cite>rect</cite>’s anchor point</li>
+<li><strong>trigger_event</strong> (<a class="reference external" href="../../Gdk-3.0/classes/Event.html#Gdk.Event" title="(in Gdk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gdk.Event</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – the <a class="reference external" href="../../Gdk-3.0/classes/Event.html#Gdk.Event" title="(in Gdk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gdk.Event</span></code></a> that initiated this request or
+<a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> if it’s the current event</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Displays <cite>self</cite> and makes it available for selection.</p>
+<p>See <a class="reference internal" href="#Gtk.Menu.popup_at_widget" title="Gtk.Menu.popup_at_widget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu.popup_at_widget</span></code></a> () and <a class="reference internal" href="#Gtk.Menu.popup_at_pointer" title="Gtk.Menu.popup_at_pointer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu.popup_at_pointer</span></code></a> (), which
+handle more common cases for popping up menus.</p>
+<p><cite>self</cite> will be positioned at <cite>rect</cite>, aligning their anchor points. <cite>rect</cite> is
+relative to the top-left corner of <cite>rect_window</cite>. <cite>rect_anchor</cite> and
+<cite>menu_anchor</cite> determine anchor points on <cite>rect</cite> and <cite>self</cite> to pin together.
+<cite>self</cite> can optionally be offset by <a class="reference internal" href="#Gtk.Menu" title="Gtk.Menu"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu</span></code></a> <a class="reference internal" href="#Gtk.Menu.props.rect_anchor_dx" title="Gtk.Menu.props.rect_anchor_dx"><code class="xref py py-data docutils literal notranslate"><span class="pre">:rect-anchor-dx</span></code></a> and
+<a class="reference internal" href="#Gtk.Menu" title="Gtk.Menu"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu</span></code></a> <a class="reference internal" href="#Gtk.Menu.props.rect_anchor_dy" title="Gtk.Menu.props.rect_anchor_dy"><code class="xref py py-data docutils literal notranslate"><span class="pre">:rect-anchor-dy</span></code></a>.</p>
+<p>Anchors should be specified under the assumption that the text direction is
+left-to-right; they will be flipped horizontally automatically if the text
+direction is right-to-left.</p>
+<p>Other properties that influence the behaviour of this function are
+<a class="reference internal" href="#Gtk.Menu" title="Gtk.Menu"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu</span></code></a> <a class="reference internal" href="#Gtk.Menu.props.anchor_hints" title="Gtk.Menu.props.anchor_hints"><code class="xref py py-data docutils literal notranslate"><span class="pre">:anchor-hints</span></code></a> and <a class="reference internal" href="#Gtk.Menu" title="Gtk.Menu"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu</span></code></a> <a class="reference internal" href="#Gtk.Menu.props.menu_type_hint" title="Gtk.Menu.props.menu_type_hint"><code class="xref py py-data docutils literal notranslate"><span class="pre">:menu-type-hint</span></code></a>. Connect to the
+<a class="reference internal" href="#Gtk.Menu" title="Gtk.Menu"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu</span></code></a> <a class="reference internal" href="#Gtk.Menu.signals.popped_up" title="Gtk.Menu.signals.popped_up"><code class="xref py py-func docutils literal notranslate"><span class="pre">::popped-up</span></code></a> signal to find out how it was actually positioned.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.22.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.Menu.popup_at_widget">
+<code class="descname">popup_at_widget</code><span class="sig-paren">(</span><em>widget</em>, <em>widget_anchor</em>, <em>menu_anchor</em>, <em>trigger_event</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkmenu.c#L2319"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.Menu.popup_at_widget" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>widget</strong> (<a class="reference internal" href="Widget.html#Gtk.Widget" title="Gtk.Widget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Widget</span></code></a>) – the <a class="reference internal" href="Widget.html#Gtk.Widget" title="Gtk.Widget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Widget</span></code></a> to align <cite>self</cite> with</li>
+<li><strong>widget_anchor</strong> (<a class="reference external" href="../../Gdk-3.0/enums.html#Gdk.Gravity" title="(in Gdk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gdk.Gravity</span></code></a>) – the point on <cite>widget</cite> to align with <cite>self</cite>’s anchor point</li>
+<li><strong>menu_anchor</strong> (<a class="reference external" href="../../Gdk-3.0/enums.html#Gdk.Gravity" title="(in Gdk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gdk.Gravity</span></code></a>) – the point on <cite>self</cite> to align with <cite>widget</cite>’s anchor point</li>
+<li><strong>trigger_event</strong> (<a class="reference external" href="../../Gdk-3.0/classes/Event.html#Gdk.Event" title="(in Gdk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gdk.Event</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – the <a class="reference external" href="../../Gdk-3.0/classes/Event.html#Gdk.Event" title="(in Gdk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gdk.Event</span></code></a> that initiated this request or
+<a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> if it’s the current event</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Displays <cite>self</cite> and makes it available for selection.</p>
+<p>See <a class="reference internal" href="#Gtk.Menu.popup_at_pointer" title="Gtk.Menu.popup_at_pointer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu.popup_at_pointer</span></code></a> () to pop up a menu at the master pointer.
+<a class="reference internal" href="#Gtk.Menu.popup_at_rect" title="Gtk.Menu.popup_at_rect"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu.popup_at_rect</span></code></a> () also allows you to position a menu at an arbitrary
+rectangle.</p>
+<p><cite>self</cite> will be positioned at <cite>widget</cite>, aligning their anchor points.
+<cite>widget_anchor</cite> and <cite>menu_anchor</cite> determine anchor points on <cite>widget</cite> and <cite>self</cite>
+to pin together. <cite>self</cite> can optionally be offset by <a class="reference internal" href="#Gtk.Menu" title="Gtk.Menu"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu</span></code></a> <a class="reference internal" href="#Gtk.Menu.props.rect_anchor_dx" title="Gtk.Menu.props.rect_anchor_dx"><code class="xref py py-data docutils literal notranslate"><span class="pre">:rect-anchor-dx</span></code></a>
+and <a class="reference internal" href="#Gtk.Menu" title="Gtk.Menu"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu</span></code></a> <a class="reference internal" href="#Gtk.Menu.props.rect_anchor_dy" title="Gtk.Menu.props.rect_anchor_dy"><code class="xref py py-data docutils literal notranslate"><span class="pre">:rect-anchor-dy</span></code></a>.</p>
+<p>Anchors should be specified under the assumption that the text direction is
+left-to-right; they will be flipped horizontally automatically if the text
+direction is right-to-left.</p>
+<p>Other properties that influence the behaviour of this function are
+<a class="reference internal" href="#Gtk.Menu" title="Gtk.Menu"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu</span></code></a> <a class="reference internal" href="#Gtk.Menu.props.anchor_hints" title="Gtk.Menu.props.anchor_hints"><code class="xref py py-data docutils literal notranslate"><span class="pre">:anchor-hints</span></code></a> and <a class="reference internal" href="#Gtk.Menu" title="Gtk.Menu"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu</span></code></a> <a class="reference internal" href="#Gtk.Menu.props.menu_type_hint" title="Gtk.Menu.props.menu_type_hint"><code class="xref py py-data docutils literal notranslate"><span class="pre">:menu-type-hint</span></code></a>. Connect to the
+<a class="reference internal" href="#Gtk.Menu" title="Gtk.Menu"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu</span></code></a> <a class="reference internal" href="#Gtk.Menu.signals.popped_up" title="Gtk.Menu.signals.popped_up"><code class="xref py py-func docutils literal notranslate"><span class="pre">::popped-up</span></code></a> signal to find out how it was actually positioned.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.22.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.Menu.popup_for_device">
+<code class="descname">popup_for_device</code><span class="sig-paren">(</span><em>device</em>, <em>parent_menu_shell</em>, <em>parent_menu_item</em>, <em>func</em>, <em>data</em>, <em>button</em>, <em>activate_time</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkmenu.c#L2079"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.Menu.popup_for_device" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>device</strong> (<a class="reference external" href="../../Gdk-3.0/classes/Device.html#Gdk.Device" title="(in Gdk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gdk.Device</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – a <a class="reference external" href="../../Gdk-3.0/classes/Device.html#Gdk.Device" title="(in Gdk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gdk.Device</span></code></a></li>
+<li><strong>parent_menu_shell</strong> (<a class="reference internal" href="Widget.html#Gtk.Widget" title="Gtk.Widget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Widget</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – the menu shell containing the triggering
+menu item, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></li>
+<li><strong>parent_menu_item</strong> (<a class="reference internal" href="Widget.html#Gtk.Widget" title="Gtk.Widget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Widget</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – the menu item whose activation triggered
+the popup, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></li>
+<li><strong>func</strong> (<a class="reference internal" href="../callbacks.html#Gtk.MenuPositionFunc" title="Gtk.MenuPositionFunc"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.MenuPositionFunc</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – a user supplied function used to position the menu,
+or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></li>
+<li><strong>data</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">object</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – user supplied data to be passed to <cite>func</cite></li>
+<li><strong>button</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – the mouse button which was pressed to initiate the event</li>
+<li><strong>activate_time</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – the time at which the activation event occurred</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Displays a menu and makes it available for selection.</p>
+<p>Applications can use this function to display context-sensitive menus,
+and will typically supply <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> for the <cite>parent_menu_shell</cite>,
+<cite>parent_menu_item</cite>, <cite>func</cite>, <cite>data</cite> and <cite>destroy</cite> parameters. The default
+menu positioning function will position the menu at the current position
+of <cite>device</cite> (or its corresponding pointer).</p>
+<p>The <cite>button</cite> parameter should be the mouse button pressed to initiate
+the menu popup. If the menu popup was initiated by something other than
+a mouse button press, such as a mouse button release or a keypress,
+<cite>button</cite> should be 0.</p>
+<p>The <cite>activate_time</cite> parameter is used to conflict-resolve initiation of
+concurrent requests for mouse/keyboard grab requests. To function
+properly, this needs to be the time stamp of the user event (such as
+a mouse click or key press) that caused the initiation of the popup.
+Only if no such event is available, <a class="reference internal" href="../functions.html#Gtk.get_current_event_time" title="Gtk.get_current_event_time"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.get_current_event_time</span></code></a>() can
+be used instead.</p>
+<p>Note that this function does not work very well on GDK backends that
+do not have global coordinates, such as Wayland or Mir. You should
+probably use one of the gtk_menu_popup_at_ variants, which do not
+have this problem.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.0.</span></p>
+</div>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 3.22: </span>Please use <a class="reference internal" href="#Gtk.Menu.popup_at_widget" title="Gtk.Menu.popup_at_widget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu.popup_at_widget</span></code></a>(), <a class="reference internal" href="#Gtk.Menu.popup_at_pointer" title="Gtk.Menu.popup_at_pointer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu.popup_at_pointer</span></code></a>(). or <a class="reference internal" href="#Gtk.Menu.popup_at_rect" title="Gtk.Menu.popup_at_rect"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu.popup_at_rect</span></code></a>() instead</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.Menu.reorder_child">
+<code class="descname">reorder_child</code><span class="sig-paren">(</span><em>child</em>, <em>position</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkmenu.c#L3164"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.Menu.reorder_child" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>child</strong> (<a class="reference internal" href="Widget.html#Gtk.Widget" title="Gtk.Widget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Widget</span></code></a>) – the <a class="reference internal" href="MenuItem.html#Gtk.MenuItem" title="Gtk.MenuItem"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.MenuItem</span></code></a> to move</li>
+<li><strong>position</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – the new position to place <cite>child</cite>.
+Positions are numbered from 0 to n - 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Moves <cite>child</cite> to a new <cite>position</cite> in the list of <cite>self</cite>
+children.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.Menu.reposition">
+<code class="descname">reposition</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkmenu.c#L2848"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.Menu.reposition" title="Permalink to this definition">¶</a></dt>
+<dd><p>Repositions the menu according to its position function.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.Menu.set_accel_group">
+<code class="descname">set_accel_group</code><span class="sig-paren">(</span><em>accel_group</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkmenu.c#L2683"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.Menu.set_accel_group" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>accel_group</strong> (<a class="reference internal" href="AccelGroup.html#Gtk.AccelGroup" title="Gtk.AccelGroup"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.AccelGroup</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – the <a class="reference internal" href="AccelGroup.html#Gtk.AccelGroup" title="Gtk.AccelGroup"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.AccelGroup</span></code></a> to be associated
+with the menu.</td>
+</tr>
+</tbody>
+</table>
+<p>Set the <a class="reference internal" href="AccelGroup.html#Gtk.AccelGroup" title="Gtk.AccelGroup"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.AccelGroup</span></code></a> which holds global accelerators for the
+menu.  This accelerator group needs to also be added to all windows
+that this menu is being used in with <a class="reference internal" href="Window.html#Gtk.Window.add_accel_group" title="Gtk.Window.add_accel_group"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Window.add_accel_group</span></code></a>(),
+in order for those windows to support all the accelerators
+contained in this group.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.Menu.set_accel_path">
+<code class="descname">set_accel_path</code><span class="sig-paren">(</span><em>accel_path</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkmenu.c#L2767"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.Menu.set_accel_path" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>accel_path</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – a valid accelerator path, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> to unset the path</td>
+</tr>
+</tbody>
+</table>
+<p>Sets an accelerator path for this menu from which accelerator paths
+for its immediate children, its menu items, can be constructed.
+The main purpose of this function is to spare the programmer the
+inconvenience of having to call <a class="reference internal" href="MenuItem.html#Gtk.MenuItem.set_accel_path" title="Gtk.MenuItem.set_accel_path"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.MenuItem.set_accel_path</span></code></a>() on
+each menu item that should support runtime user changable accelerators.
+Instead, by just calling <a class="reference internal" href="#Gtk.Menu.set_accel_path" title="Gtk.Menu.set_accel_path"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu.set_accel_path</span></code></a>() on their parent,
+each menu item of this menu, that contains a label describing its
+purpose, automatically gets an accel path assigned.</p>
+<p>For example, a menu containing menu items “New” and “Exit”, will, after
+<code class="docutils literal notranslate"><span class="pre">gtk_menu_set_accel_path</span> <span class="pre">(menu,</span> <span class="pre">&quot;&lt;Gnumeric-Sheet&gt;/File&quot;);</span></code> has been
+called, assign its items the accel paths: <code class="docutils literal notranslate"><span class="pre">&quot;&lt;Gnumeric-Sheet&gt;/File/New&quot;</span></code>
+and <code class="docutils literal notranslate"><span class="pre">&quot;&lt;Gnumeric-Sheet&gt;/File/Exit&quot;</span></code>.</p>
+<p>Assigning accel paths to menu items then enables the user to change
+their accelerators at runtime. More details about accelerator paths
+and their default setups can be found at <a class="reference internal" href="AccelMap.html#Gtk.AccelMap.add_entry" title="Gtk.AccelMap.add_entry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.AccelMap.add_entry</span></code></a>().</p>
+<p>Note that <cite>accel_path</cite> string will be stored in a #GQuark. Therefore,
+if you pass a static string, you can save some memory by interning
+it first with <a class="reference external" href="../../GLib-2.0/functions.html#GLib.intern_static_string" title="(in GLib 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GLib.intern_static_string</span></code></a>().</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.Menu.set_active">
+<code class="descname">set_active</code><span class="sig-paren">(</span><em>index</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkmenu.c#L2644"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.Menu.set_active" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>index</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – the index of the menu item to select.  Index values are
+from 0 to n-1</td>
+</tr>
+</tbody>
+</table>
+<p>Selects the specified menu item within the menu.  This is used by
+the <a class="reference internal" href="ComboBox.html#Gtk.ComboBox" title="Gtk.ComboBox"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ComboBox</span></code></a> and should not be used by anyone else.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.Menu.set_monitor">
+<code class="descname">set_monitor</code><span class="sig-paren">(</span><em>monitor_num</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkmenu.c#L6135"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.Menu.set_monitor" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>monitor_num</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – the number of the monitor on which the menu should
+be popped up</td>
+</tr>
+</tbody>
+</table>
+<p>Informs GTK+ on which monitor a menu should be popped up.
+See <a class="reference external" href="../../Gdk-3.0/classes/Monitor.html#Gdk.Monitor.get_geometry" title="(in Gdk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gdk.Monitor.get_geometry</span></code></a>().</p>
+<p>This function should be called from a <a class="reference internal" href="../callbacks.html#Gtk.MenuPositionFunc" title="Gtk.MenuPositionFunc"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.MenuPositionFunc</span></code></a>
+if the menu should not appear on the same monitor as the pointer.
+This information can’t be reliably inferred from the coordinates
+returned by a <a class="reference internal" href="../callbacks.html#Gtk.MenuPositionFunc" title="Gtk.MenuPositionFunc"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.MenuPositionFunc</span></code></a>, since, for very long menus,
+these coordinates may extend beyond the monitor boundaries or even
+the screen boundaries.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.4.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.Menu.set_reserve_toggle_size">
+<code class="descname">set_reserve_toggle_size</code><span class="sig-paren">(</span><em>reserve_toggle_size</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkmenu.c#L6272"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.Menu.set_reserve_toggle_size" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>reserve_toggle_size</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a>) – whether to reserve size for toggles</td>
+</tr>
+</tbody>
+</table>
+<p>Sets whether the menu should reserve space for drawing toggles
+or icons, regardless of their actual presence.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.18.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.Menu.set_screen">
+<code class="descname">set_screen</code><span class="sig-paren">(</span><em>screen</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkmenu.c#L5694"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.Menu.set_screen" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>screen</strong> (<a class="reference external" href="../../Gdk-3.0/classes/Screen.html#Gdk.Screen" title="(in Gdk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gdk.Screen</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – a <a class="reference external" href="../../Gdk-3.0/classes/Screen.html#Gdk.Screen" title="(in Gdk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gdk.Screen</span></code></a>, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> if the screen should be
+determined by the widget the menu is attached to</td>
+</tr>
+</tbody>
+</table>
+<p>Sets the <a class="reference external" href="../../Gdk-3.0/classes/Screen.html#Gdk.Screen" title="(in Gdk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gdk.Screen</span></code></a> on which the menu will be displayed.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.2.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.Menu.set_tearoff_state">
+<code class="descname">set_tearoff_state</code><span class="sig-paren">(</span><em>torn_off</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkmenu.c#L2972"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.Menu.set_tearoff_state" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>torn_off</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a>) – If <a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a>, menu is displayed as a tearoff menu.</td>
+</tr>
+</tbody>
+</table>
+<p>Changes the tearoff state of the menu.  A menu is normally
+displayed as drop down menu which persists as long as the menu is
+active.  It can also be displayed as a tearoff menu which persists
+until it is closed or reattached.</p>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 3.10.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.Menu.set_title">
+<code class="descname">set_title</code><span class="sig-paren">(</span><em>title</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkmenu.c#L3114"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.Menu.set_title" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>title</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – a string containing the title for the menu, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> to
+inherit the title of the parent menu item, if any</td>
+</tr>
+</tbody>
+</table>
+<p>Sets the title string for the menu.</p>
+<p>The title is displayed when the menu is shown as a tearoff
+menu. If <cite>title</cite> is <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>, the menu will see if it is attached
+to a parent menu item, and if so it will try to use the same
+text as that menu item’s label.</p>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 3.10.</span></p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="signal-details">
+<h2>Signal Details<a class="headerlink" href="#signal-details" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="Gtk.Menu.signals.move_scroll">
+<code class="descclassname">Gtk.Menu.signals.</code><code class="descname">move_scroll</code><span class="sig-paren">(</span><em>menu</em>, <em>scroll_type</em><span class="sig-paren">)</span><a class="headerlink" href="#Gtk.Menu.signals.move_scroll" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Signal Name:</th><td class="field-body"><p class="first"><code class="docutils literal notranslate"><span class="pre">move-scroll</span></code></p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><p class="first"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.SignalFlags.RUN_LAST" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RUN_LAST</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.SignalFlags.ACTION" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ACTION</span></code></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>menu</strong> (<a class="reference internal" href="#Gtk.Menu" title="Gtk.Menu"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu</span></code></a>) – The object which received the signal</li>
+<li><strong>scroll_type</strong> (<a class="reference internal" href="../enums.html#Gtk.ScrollType" title="Gtk.ScrollType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ScrollType</span></code></a>) – a <a class="reference internal" href="../enums.html#Gtk.ScrollType" title="Gtk.ScrollType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ScrollType</span></code></a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gtk.Menu.signals.popped_up">
+<code class="descclassname">Gtk.Menu.signals.</code><code class="descname">popped_up</code><span class="sig-paren">(</span><em>menu</em>, <em>flipped_rect</em>, <em>final_rect</em>, <em>flipped_x</em>, <em>flipped_y</em><span class="sig-paren">)</span><a class="headerlink" href="#Gtk.Menu.signals.popped_up" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Signal Name:</th><td class="field-body"><p class="first"><code class="docutils literal notranslate"><span class="pre">popped-up</span></code></p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><p class="first"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.SignalFlags.RUN_FIRST" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RUN_FIRST</span></code></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>menu</strong> (<a class="reference internal" href="#Gtk.Menu" title="Gtk.Menu"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu</span></code></a>) – The object which received the signal</li>
+<li><strong>flipped_rect</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">object</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – the position of <cite>menu</cite> after any possible
+flipping or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> if the backend can’t obtain it</li>
+<li><strong>final_rect</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">object</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – the final position of <cite>menu</cite> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> if the
+backend can’t obtain it</li>
+<li><strong>flipped_x</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a>) – <a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if the anchors were flipped horizontally</li>
+<li><strong>flipped_y</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a>) – <a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if the anchors were flipped vertically</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Emitted when the position of <cite>menu</cite> is finalized after being popped up
+using <a class="reference internal" href="#Gtk.Menu.popup_at_rect" title="Gtk.Menu.popup_at_rect"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu.popup_at_rect</span></code></a> (), <a class="reference internal" href="#Gtk.Menu.popup_at_widget" title="Gtk.Menu.popup_at_widget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu.popup_at_widget</span></code></a> (), or
+<a class="reference internal" href="#Gtk.Menu.popup_at_pointer" title="Gtk.Menu.popup_at_pointer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu.popup_at_pointer</span></code></a> ().</p>
+<p><cite>menu</cite> might be flipped over the anchor rectangle in order to keep it
+on-screen, in which case <cite>flipped_x</cite> and <cite>flipped_y</cite> will be set to <a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a>
+accordingly.</p>
+<p><cite>flipped_rect</cite> is the ideal position of <cite>menu</cite> after any possible flipping,
+but before any possible sliding. <cite>final_rect</cite> is <cite>flipped_rect</cite>, but possibly
+translated in the case that flipping is still ineffective in keeping <cite>menu</cite>
+on-screen.</p>
+<p>The blue menu is <cite>menu</cite>’s ideal position, the green menu is <cite>flipped_rect</cite>,
+and the red menu is <cite>final_rect</cite>.</p>
+<p>See <a class="reference internal" href="#Gtk.Menu.popup_at_rect" title="Gtk.Menu.popup_at_rect"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu.popup_at_rect</span></code></a> (), <a class="reference internal" href="#Gtk.Menu.popup_at_widget" title="Gtk.Menu.popup_at_widget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu.popup_at_widget</span></code></a> (),
+<a class="reference internal" href="#Gtk.Menu.popup_at_pointer" title="Gtk.Menu.popup_at_pointer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu.popup_at_pointer</span></code></a> (), <a class="reference internal" href="#Gtk.Menu" title="Gtk.Menu"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu</span></code></a> <a class="reference internal" href="#Gtk.Menu.props.anchor_hints" title="Gtk.Menu.props.anchor_hints"><code class="xref py py-data docutils literal notranslate"><span class="pre">:anchor-hints</span></code></a>,
+<a class="reference internal" href="#Gtk.Menu" title="Gtk.Menu"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu</span></code></a> <a class="reference internal" href="#Gtk.Menu.props.rect_anchor_dx" title="Gtk.Menu.props.rect_anchor_dx"><code class="xref py py-data docutils literal notranslate"><span class="pre">:rect-anchor-dx</span></code></a>, <a class="reference internal" href="#Gtk.Menu" title="Gtk.Menu"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu</span></code></a> <a class="reference internal" href="#Gtk.Menu.props.rect_anchor_dy" title="Gtk.Menu.props.rect_anchor_dy"><code class="xref py py-data docutils literal notranslate"><span class="pre">:rect-anchor-dy</span></code></a>, and
+<a class="reference internal" href="#Gtk.Menu" title="Gtk.Menu"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu</span></code></a> <a class="reference internal" href="#Gtk.Menu.props.menu_type_hint" title="Gtk.Menu.props.menu_type_hint"><code class="xref py py-data docutils literal notranslate"><span class="pre">:menu-type-hint</span></code></a>.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.22.</span></p>
+</div>
+</dd></dl>
+
+</div>
+<div class="section" id="property-details">
+<h2>Property Details<a class="headerlink" href="#property-details" title="Permalink to this headline">¶</a></h2>
+<dl class="data">
+<dt id="Gtk.Menu.props.accel_group">
+<code class="descclassname">Gtk.Menu.props.</code><code class="descname">accel_group</code><a class="headerlink" href="#Gtk.Menu.props.accel_group" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">accel-group</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="AccelGroup.html#Gtk.AccelGroup" title="Gtk.AccelGroup"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.AccelGroup</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The accel group holding accelerators for the menu.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.14.</span></p>
+</div>
+</dd></dl>
+
+<dl class="data">
+<dt id="Gtk.Menu.props.accel_path">
+<code class="descclassname">Gtk.Menu.props.</code><code class="descname">accel_path</code><a class="headerlink" href="#Gtk.Menu.props.accel_path" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">accel-path</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>An accel path used to conveniently construct accel paths of child items.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.14.</span></p>
+</div>
+</dd></dl>
+
+<dl class="data">
+<dt id="Gtk.Menu.props.active">
+<code class="descclassname">Gtk.Menu.props.</code><code class="descname">active</code><a class="headerlink" href="#Gtk.Menu.props.active" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">active</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">-1</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The index of the currently selected menu item, or -1 if no
+menu item is selected.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.14.</span></p>
+</div>
+</dd></dl>
+
+<dl class="data">
+<dt id="Gtk.Menu.props.anchor_hints">
+<code class="descclassname">Gtk.Menu.props.</code><code class="descname">anchor_hints</code><a class="headerlink" href="#Gtk.Menu.props.anchor_hints" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">anchor-hints</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="../../Gdk-3.0/flags.html#Gdk.AnchorHints" title="(in Gdk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gdk.AnchorHints</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="../../Gdk-3.0/flags.html#Gdk.AnchorHints.FLIP_X" title="(in Gdk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gdk.AnchorHints.FLIP_X</span></code></a> | <a class="reference external" href="../../Gdk-3.0/flags.html#Gdk.AnchorHints.FLIP_Y" title="(in Gdk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gdk.AnchorHints.FLIP_Y</span></code></a> | <a class="reference external" href="../../Gdk-3.0/flags.html#Gdk.AnchorHints.SLIDE_X" title="(in Gdk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gdk.AnchorHints.SLIDE_X</span></code></a> | <a class="reference external" href="../../Gdk-3.0/flags.html#Gdk.AnchorHints.SLIDE_Y" title="(in Gdk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gdk.AnchorHints.SLIDE_Y</span></code></a> | <a class="reference external" href="../../Gdk-3.0/flags.html#Gdk.AnchorHints.RESIZE_X" title="(in Gdk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gdk.AnchorHints.RESIZE_X</span></code></a> | <a class="reference external" href="../../Gdk-3.0/flags.html#Gdk.AnchorHints.RESIZE_Y" title="(in Gdk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gdk.AnchorHints.RESIZE_Y</span></code></a> | <a class="reference external" href="../../Gdk-3.0/flags.html#Gdk.AnchorHints.FLIP" title="(in Gdk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gdk.AnchorHints.FLIP</span></code></a> | <a class="reference external" href="../../Gdk-3.0/flags.html#Gdk.AnchorHints.SLIDE" title="(in Gdk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gdk.AnchorHints.SLIDE</span></code></a> | <a class="reference external" href="../../Gdk-3.0/flags.html#Gdk.AnchorHints.RESIZE" title="(in Gdk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gdk.AnchorHints.RESIZE</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.CONSTRUCT" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CONSTRUCT</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.EXPLICIT_NOTIFY" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EXPLICIT_NOTIFY</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Positioning hints for aligning the menu relative to a rectangle.</p>
+<p>These hints determine how the menu should be positioned in the case that
+the menu would fall off-screen if placed in its ideal position.</p>
+<p>For example, <a class="reference external" href="../../Gdk-3.0/flags.html#Gdk.AnchorHints.FLIP_Y" title="(in Gdk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gdk.AnchorHints.FLIP_Y</span></code></a> will replace <a class="reference external" href="../../Gdk-3.0/enums.html#Gdk.Gravity.NORTH_WEST" title="(in Gdk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gdk.Gravity.NORTH_WEST</span></code></a> with
+<a class="reference external" href="../../Gdk-3.0/enums.html#Gdk.Gravity.SOUTH_WEST" title="(in Gdk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gdk.Gravity.SOUTH_WEST</span></code></a> and vice versa if the menu extends beyond the
+bottom edge of the monitor.</p>
+<p>See <a class="reference internal" href="#Gtk.Menu.popup_at_rect" title="Gtk.Menu.popup_at_rect"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu.popup_at_rect</span></code></a> (), <a class="reference internal" href="#Gtk.Menu.popup_at_widget" title="Gtk.Menu.popup_at_widget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu.popup_at_widget</span></code></a> (),
+<a class="reference internal" href="#Gtk.Menu.popup_at_pointer" title="Gtk.Menu.popup_at_pointer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu.popup_at_pointer</span></code></a> (), <a class="reference internal" href="#Gtk.Menu" title="Gtk.Menu"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu</span></code></a> <a class="reference internal" href="#Gtk.Menu.props.rect_anchor_dx" title="Gtk.Menu.props.rect_anchor_dx"><code class="xref py py-data docutils literal notranslate"><span class="pre">:rect-anchor-dx</span></code></a>,
+<a class="reference internal" href="#Gtk.Menu" title="Gtk.Menu"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu</span></code></a> <a class="reference internal" href="#Gtk.Menu.props.rect_anchor_dy" title="Gtk.Menu.props.rect_anchor_dy"><code class="xref py py-data docutils literal notranslate"><span class="pre">:rect-anchor-dy</span></code></a>, <a class="reference internal" href="#Gtk.Menu" title="Gtk.Menu"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu</span></code></a> <a class="reference internal" href="#Gtk.Menu.props.menu_type_hint" title="Gtk.Menu.props.menu_type_hint"><code class="xref py py-data docutils literal notranslate"><span class="pre">:menu-type-hint</span></code></a>, and <a class="reference internal" href="#Gtk.Menu" title="Gtk.Menu"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu</span></code></a> <a class="reference internal" href="#Gtk.Menu.signals.popped_up" title="Gtk.Menu.signals.popped_up"><code class="xref py py-func docutils literal notranslate"><span class="pre">::popped-up</span></code></a>.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.22.</span></p>
+</div>
+</dd></dl>
+
+<dl class="data">
+<dt id="Gtk.Menu.props.attach_widget">
+<code class="descclassname">Gtk.Menu.props.</code><code class="descname">attach_widget</code><a class="headerlink" href="#Gtk.Menu.props.attach_widget" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">attach-widget</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="Widget.html#Gtk.Widget" title="Gtk.Widget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Widget</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The widget the menu is attached to. Setting this property attaches
+the menu without a <a class="reference internal" href="../callbacks.html#Gtk.MenuDetachFunc" title="Gtk.MenuDetachFunc"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.MenuDetachFunc</span></code></a>. If you need to use a detacher,
+use <a class="reference internal" href="#Gtk.Menu.attach_to_widget" title="Gtk.Menu.attach_to_widget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu.attach_to_widget</span></code></a>() directly.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.14.</span></p>
+</div>
+</dd></dl>
+
+<dl class="data">
+<dt id="Gtk.Menu.props.menu_type_hint">
+<code class="descclassname">Gtk.Menu.props.</code><code class="descname">menu_type_hint</code><a class="headerlink" href="#Gtk.Menu.props.menu_type_hint" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">menu-type-hint</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="../../Gdk-3.0/enums.html#Gdk.WindowTypeHint" title="(in Gdk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gdk.WindowTypeHint</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="../../Gdk-3.0/enums.html#Gdk.WindowTypeHint.POPUP_MENU" title="(in Gdk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gdk.WindowTypeHint.POPUP_MENU</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.CONSTRUCT" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CONSTRUCT</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.EXPLICIT_NOTIFY" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EXPLICIT_NOTIFY</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The <a class="reference external" href="../../Gdk-3.0/enums.html#Gdk.WindowTypeHint" title="(in Gdk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gdk.WindowTypeHint</span></code></a> to use for the menu’s <a class="reference external" href="../../Gdk-3.0/classes/Window.html#Gdk.Window" title="(in Gdk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gdk.Window</span></code></a>.</p>
+<p>See <a class="reference internal" href="#Gtk.Menu.popup_at_rect" title="Gtk.Menu.popup_at_rect"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu.popup_at_rect</span></code></a> (), <a class="reference internal" href="#Gtk.Menu.popup_at_widget" title="Gtk.Menu.popup_at_widget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu.popup_at_widget</span></code></a> (),
+<a class="reference internal" href="#Gtk.Menu.popup_at_pointer" title="Gtk.Menu.popup_at_pointer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu.popup_at_pointer</span></code></a> (), <a class="reference internal" href="#Gtk.Menu" title="Gtk.Menu"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu</span></code></a> <a class="reference internal" href="#Gtk.Menu.props.anchor_hints" title="Gtk.Menu.props.anchor_hints"><code class="xref py py-data docutils literal notranslate"><span class="pre">:anchor-hints</span></code></a>,
+<a class="reference internal" href="#Gtk.Menu" title="Gtk.Menu"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu</span></code></a> <a class="reference internal" href="#Gtk.Menu.props.rect_anchor_dx" title="Gtk.Menu.props.rect_anchor_dx"><code class="xref py py-data docutils literal notranslate"><span class="pre">:rect-anchor-dx</span></code></a>, <a class="reference internal" href="#Gtk.Menu" title="Gtk.Menu"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu</span></code></a> <a class="reference internal" href="#Gtk.Menu.props.rect_anchor_dy" title="Gtk.Menu.props.rect_anchor_dy"><code class="xref py py-data docutils literal notranslate"><span class="pre">:rect-anchor-dy</span></code></a>, and <a class="reference internal" href="#Gtk.Menu" title="Gtk.Menu"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu</span></code></a> <a class="reference internal" href="#Gtk.Menu.signals.popped_up" title="Gtk.Menu.signals.popped_up"><code class="xref py py-func docutils literal notranslate"><span class="pre">::popped-up</span></code></a>.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.22.</span></p>
+</div>
+</dd></dl>
+
+<dl class="data">
+<dt id="Gtk.Menu.props.monitor">
+<code class="descclassname">Gtk.Menu.props.</code><code class="descname">monitor</code><a class="headerlink" href="#Gtk.Menu.props.monitor" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">monitor</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">-1</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.EXPLICIT_NOTIFY" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EXPLICIT_NOTIFY</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The monitor the menu will be popped up on.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.14.</span></p>
+</div>
+</dd></dl>
+
+<dl class="data">
+<dt id="Gtk.Menu.props.rect_anchor_dx">
+<code class="descclassname">Gtk.Menu.props.</code><code class="descname">rect_anchor_dx</code><a class="headerlink" href="#Gtk.Menu.props.rect_anchor_dx" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">rect-anchor-dx</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">0</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.CONSTRUCT" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CONSTRUCT</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.EXPLICIT_NOTIFY" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EXPLICIT_NOTIFY</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Horizontal offset to apply to the menu, i.e. the rectangle or widget
+anchor.</p>
+<p>See <a class="reference internal" href="#Gtk.Menu.popup_at_rect" title="Gtk.Menu.popup_at_rect"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu.popup_at_rect</span></code></a> (), <a class="reference internal" href="#Gtk.Menu.popup_at_widget" title="Gtk.Menu.popup_at_widget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu.popup_at_widget</span></code></a> (),
+<a class="reference internal" href="#Gtk.Menu.popup_at_pointer" title="Gtk.Menu.popup_at_pointer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu.popup_at_pointer</span></code></a> (), <a class="reference internal" href="#Gtk.Menu" title="Gtk.Menu"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu</span></code></a> <a class="reference internal" href="#Gtk.Menu.props.anchor_hints" title="Gtk.Menu.props.anchor_hints"><code class="xref py py-data docutils literal notranslate"><span class="pre">:anchor-hints</span></code></a>,
+<a class="reference internal" href="#Gtk.Menu" title="Gtk.Menu"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu</span></code></a> <a class="reference internal" href="#Gtk.Menu.props.rect_anchor_dy" title="Gtk.Menu.props.rect_anchor_dy"><code class="xref py py-data docutils literal notranslate"><span class="pre">:rect-anchor-dy</span></code></a>, <a class="reference internal" href="#Gtk.Menu" title="Gtk.Menu"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu</span></code></a> <a class="reference internal" href="#Gtk.Menu.props.menu_type_hint" title="Gtk.Menu.props.menu_type_hint"><code class="xref py py-data docutils literal notranslate"><span class="pre">:menu-type-hint</span></code></a>, and <a class="reference internal" href="#Gtk.Menu" title="Gtk.Menu"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu</span></code></a> <a class="reference internal" href="#Gtk.Menu.signals.popped_up" title="Gtk.Menu.signals.popped_up"><code class="xref py py-func docutils literal notranslate"><span class="pre">::popped-up</span></code></a>.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.22.</span></p>
+</div>
+</dd></dl>
+
+<dl class="data">
+<dt id="Gtk.Menu.props.rect_anchor_dy">
+<code class="descclassname">Gtk.Menu.props.</code><code class="descname">rect_anchor_dy</code><a class="headerlink" href="#Gtk.Menu.props.rect_anchor_dy" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">rect-anchor-dy</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">0</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.CONSTRUCT" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CONSTRUCT</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.EXPLICIT_NOTIFY" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EXPLICIT_NOTIFY</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Vertical offset to apply to the menu, i.e. the rectangle or widget anchor.</p>
+<p>See <a class="reference internal" href="#Gtk.Menu.popup_at_rect" title="Gtk.Menu.popup_at_rect"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu.popup_at_rect</span></code></a> (), <a class="reference internal" href="#Gtk.Menu.popup_at_widget" title="Gtk.Menu.popup_at_widget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu.popup_at_widget</span></code></a> (),
+<a class="reference internal" href="#Gtk.Menu.popup_at_pointer" title="Gtk.Menu.popup_at_pointer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu.popup_at_pointer</span></code></a> (), <a class="reference internal" href="#Gtk.Menu" title="Gtk.Menu"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu</span></code></a> <a class="reference internal" href="#Gtk.Menu.props.anchor_hints" title="Gtk.Menu.props.anchor_hints"><code class="xref py py-data docutils literal notranslate"><span class="pre">:anchor-hints</span></code></a>,
+<a class="reference internal" href="#Gtk.Menu" title="Gtk.Menu"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu</span></code></a> <a class="reference internal" href="#Gtk.Menu.props.rect_anchor_dx" title="Gtk.Menu.props.rect_anchor_dx"><code class="xref py py-data docutils literal notranslate"><span class="pre">:rect-anchor-dx</span></code></a>, <a class="reference internal" href="#Gtk.Menu" title="Gtk.Menu"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu</span></code></a> <a class="reference internal" href="#Gtk.Menu.props.menu_type_hint" title="Gtk.Menu.props.menu_type_hint"><code class="xref py py-data docutils literal notranslate"><span class="pre">:menu-type-hint</span></code></a>, and <a class="reference internal" href="#Gtk.Menu" title="Gtk.Menu"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Menu</span></code></a> <a class="reference internal" href="#Gtk.Menu.signals.popped_up" title="Gtk.Menu.signals.popped_up"><code class="xref py py-func docutils literal notranslate"><span class="pre">::popped-up</span></code></a>.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.22.</span></p>
+</div>
+</dd></dl>
+
+<dl class="data">
+<dt id="Gtk.Menu.props.reserve_toggle_size">
+<code class="descclassname">Gtk.Menu.props.</code><code class="descname">reserve_toggle_size</code><a class="headerlink" href="#Gtk.Menu.props.reserve_toggle_size" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">reserve-toggle-size</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.EXPLICIT_NOTIFY" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EXPLICIT_NOTIFY</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>A boolean that indicates whether the menu reserves space for
+toggles and icons, regardless of their actual presence.</p>
+<p>This property should only be changed from its default value
+for special-purposes such as tabular menus. Regular menus that
+are connected to a menu bar or context menus should reserve
+toggle space for consistency.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.18.</span></p>
+</div>
+</dd></dl>
+
+<dl class="data">
+<dt id="Gtk.Menu.props.tearoff_state">
+<code class="descclassname">Gtk.Menu.props.</code><code class="descname">tearoff_state</code><a class="headerlink" href="#Gtk.Menu.props.tearoff_state" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">tearoff-state</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.DEPRECATED" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DEPRECATED</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>A boolean that indicates whether the menu is torn-off.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.6.</span></p>
+</div>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 3.10.</span></p>
+</div>
+</dd></dl>
+
+<dl class="data">
+<dt id="Gtk.Menu.props.tearoff_title">
+<code class="descclassname">Gtk.Menu.props.</code><code class="descname">tearoff_title</code><a class="headerlink" href="#Gtk.Menu.props.tearoff_title" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">tearoff-title</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.DEPRECATED" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DEPRECATED</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>A title that may be displayed by the window manager when this
+menu is torn-off.</p>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 3.10.</span></p>
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div> 
+
+</body>
+</html>

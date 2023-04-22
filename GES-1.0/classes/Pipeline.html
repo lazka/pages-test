@@ -1,0 +1,967 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    GES.Pipeline -
+    
+      Classes -
+    
+    GES 1.0
+  </title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/css/pgi.css" type="text/css" />
+  
+
+  
+  <script type="text/javascript">
+
+    function openSidebar(element) {
+        window.location.href = element.href + location.hash;
+        return false;
+    }
+
+    function inIframe() {
+        try {
+            return window.self !== window.top;
+        } catch (e) {
+            return true;
+        }
+    }
+
+    function onLoaded() {
+        if(!inIframe()) {
+            var icons = document.getElementsByClassName('open-sidebar');
+
+            for (var i = 0; i < icons.length; i ++) {
+                icons[i].style.display = 'table-cell';
+            }
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', onLoaded, false);
+
+  </script>
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="GES 1.0 Python API Docs" href="../index.html"/>
+        <link rel="up" title="Classes" href="../classes.html"/>
+        <link rel="next" title="GES.PitiviFormatter" href="PitiviFormatter.html"/>
+        <link rel="prev" title="GES.OverlayClip" href="OverlayClip.html"/> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+<div class="non-fixed-bar">
+<table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#GES-1.0/classes/Pipeline.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">GES 1.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>GES.Pipeline</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="OverlayClip.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="PitiviFormatter.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">GES.Pipeline</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#property-details">Property Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+<div class="fixed-bar">
+  <table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#GES-1.0/classes/Pipeline.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">GES 1.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>GES.Pipeline</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="OverlayClip.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="PitiviFormatter.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">GES.Pipeline</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#property-details">Property Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+  <div class="wy-grid-for-nav">
+
+    
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="main">
+            
+  <div class="section" id="ges-pipeline">
+<h1>GES.Pipeline<a class="headerlink" href="#ges-pipeline" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<svg width="287pt" height="350pt"
+ viewBox="0.00 0.00 287.00 350.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 346)">
+<title>g</title>
+<!-- GES.Pipeline -->
+<g id="node1" class="node">
+<title>GES.Pipeline</title>
+<g id="a_node1"><a xlink:href="#GES.Pipeline" xlink:title="GES.Pipeline">
+<path fill="none" stroke="#75507b" d="M143,-18C143,-18 85,-18 85,-18 82,-18 79,-15 79,-12 79,-12 79,-6 79,-6 79,-3 82,0 85,0 85,0 143,0 143,0 146,0 149,-3 149,-6 149,-6 149,-12 149,-12 149,-15 146,-18 143,-18"/>
+<text text-anchor="middle" x="114" y="-6.7" font-family="inherit" font-size="8.50">GES.Pipeline</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface -->
+<g id="node2" class="node">
+<title>GObject.GInterface</title>
+<g id="a_node2"><a xlink:href="../../GObject-2.0/classes/GInterface.html#GObject.GInterface" xlink:title="GObject.GInterface">
+<path fill="none" stroke="#3091d1" d="M132,-234C132,-234 46,-234 46,-234 43,-234 40,-231 40,-228 40,-228 40,-222 40,-222 40,-219 43,-216 46,-216 46,-216 132,-216 132,-216 135,-216 138,-219 138,-222 138,-222 138,-228 138,-228 138,-231 135,-234 132,-234"/>
+<text text-anchor="middle" x="89" y="-222.7" font-family="inherit" font-size="8.50">GObject.GInterface</text>
+</a>
+</g>
+</g>
+<!-- Gst.ChildProxy -->
+<g id="node6" class="node">
+<title>Gst.ChildProxy</title>
+<g id="a_node6"><a xlink:href="../../Gst-1.0/classes/ChildProxy.html#Gst.ChildProxy" xlink:title="Gst.ChildProxy">
+<path fill="none" stroke="#3091d1" d="M159.5,-180C159.5,-180 92.5,-180 92.5,-180 89.5,-180 86.5,-177 86.5,-174 86.5,-174 86.5,-168 86.5,-168 86.5,-165 89.5,-162 92.5,-162 92.5,-162 159.5,-162 159.5,-162 162.5,-162 165.5,-165 165.5,-168 165.5,-168 165.5,-174 165.5,-174 165.5,-177 162.5,-180 159.5,-180"/>
+<text text-anchor="middle" x="126" y="-168.7" font-family="inherit" font-size="8.50">Gst.ChildProxy</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Gst.ChildProxy -->
+<g id="edge1" class="edge">
+<title>GObject.GInterface&#45;&gt;Gst.ChildProxy</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M94.78,-215.88C100.77,-207.45 110.22,-194.18 117.15,-184.44"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="118.66,-185.33 120.14,-180.24 115.81,-183.3 118.66,-185.33"/>
+</g>
+<!-- GstVideo.VideoOverlay -->
+<g id="node10" class="node">
+<title>GstVideo.VideoOverlay</title>
+<g id="a_node10"><a xlink:href="../../GstVideo-1.0/classes/VideoOverlay.html#GstVideo.VideoOverlay" xlink:title="GstVideo.VideoOverlay">
+<path fill="none" stroke="#3091d1" d="M110,-126C110,-126 6,-126 6,-126 3,-126 0,-123 0,-120 0,-120 0,-114 0,-114 0,-111 3,-108 6,-108 6,-108 110,-108 110,-108 113,-108 116,-111 116,-114 116,-114 116,-120 116,-120 116,-123 113,-126 110,-126"/>
+<text text-anchor="middle" x="58" y="-114.7" font-family="inherit" font-size="8.50">GstVideo.VideoOverlay</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;GstVideo.VideoOverlay -->
+<g id="edge2" class="edge">
+<title>GObject.GInterface&#45;&gt;GstVideo.VideoOverlay</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M86.57,-215.68C81.2,-197.34 68.32,-153.28 61.85,-131.15"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="63.5,-130.59 60.42,-126.28 60.15,-131.57 63.5,-130.59"/>
+</g>
+<!-- GObject.InitiallyUnowned -->
+<g id="node3" class="node">
+<title>GObject.InitiallyUnowned</title>
+<g id="a_node3"><a xlink:href="../../GObject-2.0/classes/InitiallyUnowned.html#GObject.InitiallyUnowned" xlink:title="GObject.InitiallyUnowned">
+<path fill="none" stroke="#75507b" d="M273,-288C273,-288 163,-288 163,-288 160,-288 157,-285 157,-282 157,-282 157,-276 157,-276 157,-273 160,-270 163,-270 163,-270 273,-270 273,-270 276,-270 279,-273 279,-276 279,-276 279,-282 279,-282 279,-285 276,-288 273,-288"/>
+<text text-anchor="middle" x="218" y="-276.7" font-family="inherit" font-size="8.50">GObject.InitiallyUnowned</text>
+</a>
+</g>
+</g>
+<!-- Gst.Object -->
+<g id="node8" class="node">
+<title>Gst.Object</title>
+<g id="a_node8"><a xlink:href="../../Gst-1.0/classes/Object.html#Gst.Object" xlink:title="Gst.Object">
+<path fill="none" stroke="#aaaaaa" d="M242.5,-234C242.5,-234 193.5,-234 193.5,-234 190.5,-234 187.5,-231 187.5,-228 187.5,-228 187.5,-222 187.5,-222 187.5,-219 190.5,-216 193.5,-216 193.5,-216 242.5,-216 242.5,-216 245.5,-216 248.5,-219 248.5,-222 248.5,-222 248.5,-228 248.5,-228 248.5,-231 245.5,-234 242.5,-234"/>
+<text text-anchor="middle" x="218" y="-222.7" font-family="inherit" font-size="8.50">Gst.Object</text>
+</a>
+</g>
+</g>
+<!-- GObject.InitiallyUnowned&#45;&gt;Gst.Object -->
+<g id="edge3" class="edge">
+<title>GObject.InitiallyUnowned&#45;&gt;Gst.Object</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M218,-269.88C218,-261.76 218,-249.13 218,-239.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="219.75,-239.24 218,-234.24 216.25,-239.24 219.75,-239.24"/>
+</g>
+<!-- GObject.Object -->
+<g id="node4" class="node">
+<title>GObject.Object</title>
+<g id="a_node4"><a xlink:href="../../GObject-2.0/classes/Object.html#GObject.Object" xlink:title="GObject.Object">
+<path fill="none" stroke="#75507b" d="M252,-342C252,-342 184,-342 184,-342 181,-342 178,-339 178,-336 178,-336 178,-330 178,-330 178,-327 181,-324 184,-324 184,-324 252,-324 252,-324 255,-324 258,-327 258,-330 258,-330 258,-336 258,-336 258,-339 255,-342 252,-342"/>
+<text text-anchor="middle" x="218" y="-330.7" font-family="inherit" font-size="8.50">GObject.Object</text>
+</a>
+</g>
+</g>
+<!-- GObject.Object&#45;&gt;GObject.InitiallyUnowned -->
+<g id="edge4" class="edge">
+<title>GObject.Object&#45;&gt;GObject.InitiallyUnowned</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M218,-323.88C218,-315.76 218,-303.13 218,-293.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="219.75,-293.24 218,-288.24 216.25,-293.24 219.75,-293.24"/>
+</g>
+<!-- Gst.Bin -->
+<g id="node5" class="node">
+<title>Gst.Bin</title>
+<g id="a_node5"><a xlink:href="../../Gst-1.0/classes/Bin.html#Gst.Bin" xlink:title="Gst.Bin">
+<path fill="none" stroke="#75507b" d="M182,-126C182,-126 140,-126 140,-126 137,-126 134,-123 134,-120 134,-120 134,-114 134,-114 134,-111 137,-108 140,-108 140,-108 182,-108 182,-108 185,-108 188,-111 188,-114 188,-114 188,-120 188,-120 188,-123 185,-126 182,-126"/>
+<text text-anchor="middle" x="161" y="-114.7" font-family="inherit" font-size="8.50">Gst.Bin</text>
+</a>
+</g>
+</g>
+<!-- Gst.Pipeline -->
+<g id="node9" class="node">
+<title>Gst.Pipeline</title>
+<g id="a_node9"><a xlink:href="../../Gst-1.0/classes/Pipeline.html#Gst.Pipeline" xlink:title="Gst.Pipeline">
+<path fill="none" stroke="#75507b" d="M177.5,-72C177.5,-72 122.5,-72 122.5,-72 119.5,-72 116.5,-69 116.5,-66 116.5,-66 116.5,-60 116.5,-60 116.5,-57 119.5,-54 122.5,-54 122.5,-54 177.5,-54 177.5,-54 180.5,-54 183.5,-57 183.5,-60 183.5,-60 183.5,-66 183.5,-66 183.5,-69 180.5,-72 177.5,-72"/>
+<text text-anchor="middle" x="150" y="-60.7" font-family="inherit" font-size="8.50">Gst.Pipeline</text>
+</a>
+</g>
+</g>
+<!-- Gst.Bin&#45;&gt;Gst.Pipeline -->
+<g id="edge5" class="edge">
+<title>Gst.Bin&#45;&gt;Gst.Pipeline</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M159.28,-107.88C157.55,-99.68 154.84,-86.89 152.8,-77.24"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="154.49,-76.77 151.74,-72.24 151.07,-77.49 154.49,-76.77"/>
+</g>
+<!-- Gst.ChildProxy&#45;&gt;Gst.Bin -->
+<g id="edge6" class="edge">
+<title>Gst.ChildProxy&#45;&gt;Gst.Bin</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M131.47,-161.88C137.14,-153.45 146.07,-140.18 152.63,-130.44"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="154.11,-131.36 155.45,-126.24 151.21,-129.41 154.11,-131.36"/>
+</g>
+<!-- Gst.Element -->
+<g id="node7" class="node">
+<title>Gst.Element</title>
+<g id="a_node7"><a xlink:href="../../Gst-1.0/classes/Element.html#Gst.Element" xlink:title="Gst.Element">
+<path fill="none" stroke="#aaaaaa" d="M246,-180C246,-180 190,-180 190,-180 187,-180 184,-177 184,-174 184,-174 184,-168 184,-168 184,-165 187,-162 190,-162 190,-162 246,-162 246,-162 249,-162 252,-165 252,-168 252,-168 252,-174 252,-174 252,-177 249,-180 246,-180"/>
+<text text-anchor="middle" x="218" y="-168.7" font-family="inherit" font-size="8.50">Gst.Element</text>
+</a>
+</g>
+</g>
+<!-- Gst.Element&#45;&gt;Gst.Bin -->
+<g id="edge7" class="edge">
+<title>Gst.Element&#45;&gt;Gst.Bin</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M209.09,-161.88C199.61,-153.23 184.52,-139.46 173.78,-129.66"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="174.91,-128.32 170.03,-126.24 172.55,-130.9 174.91,-128.32"/>
+</g>
+<!-- Gst.Object&#45;&gt;Gst.Element -->
+<g id="edge8" class="edge">
+<title>Gst.Object&#45;&gt;Gst.Element</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M218,-215.88C218,-207.76 218,-195.13 218,-185.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="219.75,-185.24 218,-180.24 216.25,-185.24 219.75,-185.24"/>
+</g>
+<!-- Gst.Pipeline&#45;&gt;GES.Pipeline -->
+<g id="edge9" class="edge">
+<title>Gst.Pipeline&#45;&gt;GES.Pipeline</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M144.38,-53.88C138.54,-45.45 129.36,-32.18 122.61,-22.44"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="123.99,-21.35 119.7,-18.24 121.11,-23.35 123.99,-21.35"/>
+</g>
+<!-- GstVideo.VideoOverlay&#45;&gt;GES.Pipeline -->
+<g id="edge10" class="edge">
+<title>GstVideo.VideoOverlay&#45;&gt;GES.Pipeline</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M62.39,-107.68C72.13,-89.26 95.56,-44.91 107.2,-22.88"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="108.84,-23.52 109.63,-18.28 105.74,-21.88 108.84,-23.52"/>
+</g>
+</g>
+</svg>
+</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Subclasses:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="methods">
+<span id="ges-pipeline-methods"></span><h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../Gst-1.0/classes/Pipeline.html#gst-pipeline-methods" title="(in Gst 1.0 v1.0)"><span class="xref std std-ref">Gst.Pipeline (11)</span></a>,     <a class="reference external" href="../../Gst-1.0/classes/Bin.html#gst-bin-methods" title="(in Gst 1.0 v1.0)"><span class="xref std std-ref">Gst.Bin (18)</span></a>,     <a class="reference external" href="../../Gst-1.0/classes/Element.html#gst-element-methods" title="(in Gst 1.0 v1.0)"><span class="xref std std-ref">Gst.Element (79)</span></a>,     <a class="reference external" href="../../Gst-1.0/classes/Object.html#gst-object-methods" title="(in Gst 1.0 v1.0)"><span class="xref std std-ref">Gst.Object (27)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (37)</span></a>,     <a class="reference external" href="../../Gst-1.0/classes/ChildProxy.html#gst-childproxy-methods" title="(in Gst 1.0 v1.0)"><span class="xref std std-ref">Gst.ChildProxy (8)</span></a>,     <a class="reference external" href="../../GstVideo-1.0/classes/VideoOverlay.html#gstvideo-videooverlay-methods" title="(in GstVideo 1.0 v1.0)"><span class="xref std std-ref">GstVideo.VideoOverlay (8)</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Structs:</th><td class="field-body"><a class="reference external" href="../../Gst-1.0/classes/ElementClass.html#gst-elementclass-methods" title="(in Gst 1.0 v1.0)"><span class="xref std std-ref">Gst.ElementClass (10)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/ObjectClass.html#gobject-objectclass-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.ObjectClass (5)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="99%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><em>class</em></td>
+<td><a class="reference internal" href="#GES.Pipeline.new" title="GES.Pipeline.new"><code class="xref py py-func docutils literal notranslate"><span class="pre">new</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#GES.Pipeline.get_mode" title="GES.Pipeline.get_mode"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_mode</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#GES.Pipeline.get_thumbnail" title="GES.Pipeline.get_thumbnail"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_thumbnail</span></code></a> (caps)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#GES.Pipeline.get_thumbnail_rgb24" title="GES.Pipeline.get_thumbnail_rgb24"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_thumbnail_rgb24</span></code></a> (width, height)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#GES.Pipeline.preview_get_audio_sink" title="GES.Pipeline.preview_get_audio_sink"><code class="xref py py-func docutils literal notranslate"><span class="pre">preview_get_audio_sink</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#GES.Pipeline.preview_get_video_sink" title="GES.Pipeline.preview_get_video_sink"><code class="xref py py-func docutils literal notranslate"><span class="pre">preview_get_video_sink</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#GES.Pipeline.preview_set_audio_sink" title="GES.Pipeline.preview_set_audio_sink"><code class="xref py py-func docutils literal notranslate"><span class="pre">preview_set_audio_sink</span></code></a> (sink)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#GES.Pipeline.preview_set_video_sink" title="GES.Pipeline.preview_set_video_sink"><code class="xref py py-func docutils literal notranslate"><span class="pre">preview_set_video_sink</span></code></a> (sink)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#GES.Pipeline.save_thumbnail" title="GES.Pipeline.save_thumbnail"><code class="xref py py-func docutils literal notranslate"><span class="pre">save_thumbnail</span></code></a> (width, height, format, location)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#GES.Pipeline.set_mode" title="GES.Pipeline.set_mode"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_mode</span></code></a> (mode)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#GES.Pipeline.set_render_settings" title="GES.Pipeline.set_render_settings"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_render_settings</span></code></a> (output_uri, profile)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#GES.Pipeline.set_timeline" title="GES.Pipeline.set_timeline"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_timeline</span></code></a> (timeline)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="virtual-methods">
+<span id="ges-pipeline-vfuncs"></span><h2>Virtual Methods<a class="headerlink" href="#virtual-methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../Gst-1.0/classes/Bin.html#gst-bin-vfuncs" title="(in Gst 1.0 v1.0)"><span class="xref std std-ref">Gst.Bin (8)</span></a>,     <a class="reference external" href="../../Gst-1.0/classes/Element.html#gst-element-vfuncs" title="(in Gst 1.0 v1.0)"><span class="xref std std-ref">Gst.Element (16)</span></a>,     <a class="reference external" href="../../Gst-1.0/classes/Object.html#gst-object-vfuncs" title="(in Gst 1.0 v1.0)"><span class="xref std std-ref">Gst.Object (1)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-vfuncs" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (7)</span></a>,     <a class="reference external" href="../../Gst-1.0/classes/ChildProxy.html#gst-childproxy-vfuncs" title="(in Gst 1.0 v1.0)"><span class="xref std std-ref">Gst.ChildProxy (5)</span></a>,     <a class="reference external" href="../../GstVideo-1.0/classes/VideoOverlay.html#gstvideo-videooverlay-vfuncs" title="(in GstVideo 1.0 v1.0)"><span class="xref std std-ref">GstVideo.VideoOverlay (4)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="ges-pipeline-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../Gst-1.0/classes/Pipeline.html#gst-pipeline-props" title="(in Gst 1.0 v1.0)"><span class="xref std std-ref">Gst.Pipeline (3)</span></a>,     <a class="reference external" href="../../Gst-1.0/classes/Bin.html#gst-bin-props" title="(in Gst 1.0 v1.0)"><span class="xref std std-ref">Gst.Bin (2)</span></a>,     <a class="reference external" href="../../Gst-1.0/classes/Object.html#gst-object-props" title="(in Gst 1.0 v1.0)"><span class="xref std std-ref">Gst.Object (2)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="1%" />
+<col width="1%" />
+<col width="97%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Flags</th>
+<th class="head">Short Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="#GES.Pipeline.props.audio_filter" title="GES.Pipeline.props.audio_filter"><code class="xref py py-data docutils literal notranslate"><span class="pre">audio-filter</span></code></a></td>
+<td><a class="reference external" href="../../Gst-1.0/classes/Element.html#Gst.Element" title="(in Gst 1.0 v1.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gst.Element</span></code></a></td>
+<td>r/w</td>
+<td>the audio filter(s) to apply, if possible</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#GES.Pipeline.props.audio_sink" title="GES.Pipeline.props.audio_sink"><code class="xref py py-data docutils literal notranslate"><span class="pre">audio-sink</span></code></a></td>
+<td><a class="reference external" href="../../Gst-1.0/classes/Element.html#Gst.Element" title="(in Gst 1.0 v1.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gst.Element</span></code></a></td>
+<td>r/w</td>
+<td>Audio sink for the preview.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#GES.Pipeline.props.mode" title="GES.Pipeline.props.mode"><code class="xref py py-data docutils literal notranslate"><span class="pre">mode</span></code></a></td>
+<td><a class="reference internal" href="../flags.html#GES.PipelineFlags" title="GES.PipelineFlags"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.PipelineFlags</span></code></a></td>
+<td>r/w</td>
+<td>The pipeline’s mode.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#GES.Pipeline.props.timeline" title="GES.Pipeline.props.timeline"><code class="xref py py-data docutils literal notranslate"><span class="pre">timeline</span></code></a></td>
+<td><a class="reference internal" href="Timeline.html#GES.Timeline" title="GES.Timeline"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Timeline</span></code></a></td>
+<td>r/w</td>
+<td>The timeline to use in this pipeline.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#GES.Pipeline.props.video_filter" title="GES.Pipeline.props.video_filter"><code class="xref py py-data docutils literal notranslate"><span class="pre">video-filter</span></code></a></td>
+<td><a class="reference external" href="../../Gst-1.0/classes/Element.html#Gst.Element" title="(in Gst 1.0 v1.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gst.Element</span></code></a></td>
+<td>r/w</td>
+<td>the Video filter(s) to apply, if possible</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#GES.Pipeline.props.video_sink" title="GES.Pipeline.props.video_sink"><code class="xref py py-data docutils literal notranslate"><span class="pre">video-sink</span></code></a></td>
+<td><a class="reference external" href="../../Gst-1.0/classes/Element.html#Gst.Element" title="(in Gst 1.0 v1.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gst.Element</span></code></a></td>
+<td>r/w</td>
+<td>Video sink for the preview.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="signals">
+<span id="ges-pipeline-signals"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../Gst-1.0/classes/Bin.html#gst-bin-signals" title="(in Gst 1.0 v1.0)"><span class="xref std std-ref">Gst.Bin (5)</span></a>,     <a class="reference external" href="../../Gst-1.0/classes/Element.html#gst-element-signals" title="(in Gst 1.0 v1.0)"><span class="xref std std-ref">Gst.Element (3)</span></a>,     <a class="reference external" href="../../Gst-1.0/classes/Object.html#gst-object-signals" title="(in Gst 1.0 v1.0)"><span class="xref std std-ref">Gst.Object (1)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-signals" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a>,     <a class="reference external" href="../../Gst-1.0/classes/ChildProxy.html#gst-childproxy-signals" title="(in Gst 1.0 v1.0)"><span class="xref std std-ref">Gst.ChildProxy (2)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fields">
+<span id="ges-pipeline-fields"></span><h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../Gst-1.0/classes/Bin.html#gst-bin-fields" title="(in Gst 1.0 v1.0)"><span class="xref std std-ref">Gst.Bin (5)</span></a>,     <a class="reference external" href="../../Gst-1.0/classes/Element.html#gst-element-fields" title="(in Gst 1.0 v1.0)"><span class="xref std std-ref">Gst.Element (3)</span></a>,     <a class="reference external" href="../../Gst-1.0/classes/Object.html#gst-object-fields" title="(in Gst 1.0 v1.0)"><span class="xref std std-ref">Gst.Object (1)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-fields" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a>,     <a class="reference external" href="../../Gst-1.0/classes/ChildProxy.html#gst-childproxy-fields" title="(in Gst 1.0 v1.0)"><span class="xref std std-ref">Gst.ChildProxy (2)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="16%" />
+<col width="1%" />
+<col width="1%" />
+<col width="82%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Access</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>parent</td>
+<td><a class="reference external" href="../../Gst-1.0/classes/Pipeline.html#Gst.Pipeline" title="(in Gst 1.0 v1.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gst.Pipeline</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="class-details">
+<h2>Class Details<a class="headerlink" href="#class-details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="GES.Pipeline">
+<em class="property">class </em><code class="descclassname">GES.</code><code class="descname">Pipeline</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#GES.Pipeline" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Bases:</th><td class="field-body"><a class="reference external" href="../../Gst-1.0/classes/Pipeline.html#Gst.Pipeline" title="(in Gst 1.0 v1.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Gst.Pipeline</span></code></a>,         <a class="reference external" href="../../GstVideo-1.0/classes/VideoOverlay.html#GstVideo.VideoOverlay" title="(in GstVideo 1.0 v1.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GstVideo.VideoOverlay</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Abstract:</th><td class="field-body">No</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Structure:</th><td class="field-body"><a class="reference internal" href="PipelineClass.html#GES.PipelineClass" title="GES.PipelineClass"><code class="xref py py-class docutils literal notranslate"><span class="pre">GES.PipelineClass</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>A <a class="reference internal" href="#GES.Pipeline" title="GES.Pipeline"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Pipeline</span></code></a> can take an audio-video <a class="reference internal" href="Timeline.html#GES.Timeline" title="GES.Timeline"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Timeline</span></code></a> and conveniently
+link its <a class="reference internal" href="Track.html#GES.Track" title="GES.Track"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Track</span></code></a>-s to an internal #playsink element, for
+preview/playback, and an internal #encodebin element, for rendering.
+You can switch between these modes using <a class="reference internal" href="#GES.Pipeline.set_mode" title="GES.Pipeline.set_mode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Pipeline.set_mode</span></code></a>().</p>
+<p>You can choose the specific audio and video sinks used for previewing
+the timeline by setting the <a class="reference internal" href="#GES.Pipeline" title="GES.Pipeline"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Pipeline</span></code></a> <a class="reference internal" href="#GES.Pipeline.props.audio_sink" title="GES.Pipeline.props.audio_sink"><code class="xref py py-data docutils literal notranslate"><span class="pre">:audio-sink</span></code></a> and
+<a class="reference internal" href="#GES.Pipeline" title="GES.Pipeline"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Pipeline</span></code></a> <a class="reference internal" href="#GES.Pipeline.props.video_sink" title="GES.Pipeline.props.video_sink"><code class="xref py py-data docutils literal notranslate"><span class="pre">:video-sink</span></code></a> properties.</p>
+<p>You can set the encoding and save location used in rendering by calling
+<a class="reference internal" href="#GES.Pipeline.set_render_settings" title="GES.Pipeline.set_render_settings"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Pipeline.set_render_settings</span></code></a>().</p>
+<dl class="classmethod">
+<dt id="GES.Pipeline.new">
+<em class="property">classmethod </em><code class="descname">new</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.freedesktop.org/gstreamer/gst-editing-services/blob/1.18.4/ges/ges-pipeline.c#L432"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#GES.Pipeline.new" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The newly created pipeline.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#GES.Pipeline" title="GES.Pipeline"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Pipeline</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Creates a new pipeline.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GES.Pipeline.get_mode">
+<code class="descname">get_mode</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.freedesktop.org/gstreamer/gst-editing-services/blob/1.18.4/ges/ges-pipeline.c#L1163"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#GES.Pipeline.get_mode" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The current mode of <cite>self</cite>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../flags.html#GES.PipelineFlags" title="GES.PipelineFlags"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.PipelineFlags</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the <a class="reference internal" href="#GES.Pipeline" title="GES.Pipeline"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Pipeline</span></code></a> <a class="reference internal" href="#GES.Pipeline.props.mode" title="GES.Pipeline.props.mode"><code class="xref py py-data docutils literal notranslate"><span class="pre">:mode</span></code></a> of the pipeline.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GES.Pipeline.get_thumbnail">
+<code class="descname">get_thumbnail</code><span class="sig-paren">(</span><em>caps</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.freedesktop.org/gstreamer/gst-editing-services/blob/1.18.4/ges/ges-pipeline.c#L1306"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#GES.Pipeline.get_thumbnail" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>caps</strong> (<a class="reference external" href="../../Gst-1.0/classes/Caps.html#Gst.Caps" title="(in Gst 1.0 v1.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gst.Caps</span></code></a>) – Some caps to specifying the desired format, or
+#GST_CAPS_ANY to use the native format</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">A sample of <cite>self</cite>’s current image preview in
+the format given by <cite>caps</cite>, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> if an error prevented fetching the
+sample.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="../../Gst-1.0/classes/Sample.html#Gst.Sample" title="(in Gst 1.0 v1.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gst.Sample</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets a sample from the pipeline of the currently displayed image in
+preview, in the specified format.</p>
+<p>Note that if you use “ANY” caps for <cite>caps</cite>, then the current format of
+the image is used. You can retrieve these caps from the returned sample
+with <a class="reference external" href="../../Gst-1.0/classes/Sample.html#Gst.Sample.get_caps" title="(in Gst 1.0 v1.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gst.Sample.get_caps</span></code></a>().</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GES.Pipeline.get_thumbnail_rgb24">
+<code class="descname">get_thumbnail_rgb24</code><span class="sig-paren">(</span><em>width</em>, <em>height</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.freedesktop.org/gstreamer/gst-editing-services/blob/1.18.4/ges/ges-pipeline.c#L1404"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#GES.Pipeline.get_thumbnail_rgb24" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>width</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – The requested pixel width of the image, or -1 to use the native
+size</li>
+<li><strong>height</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – The requested pixel height of the image, or -1 to use the
+native size</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">A sample of <cite>self</cite>’s current image preview in
+the “RGB” format, scaled to <cite>width</cite> and <cite>height</cite>, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> if an error
+prevented fetching the sample.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="../../Gst-1.0/classes/Sample.html#Gst.Sample" title="(in Gst 1.0 v1.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gst.Sample</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Gets a sample from the pipeline of the currently displayed image in
+preview, in the 24-bit “RGB” format and of the desired width and
+height.</p>
+<p>See <a class="reference internal" href="#GES.Pipeline.get_thumbnail" title="GES.Pipeline.get_thumbnail"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Pipeline.get_thumbnail</span></code></a>().</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GES.Pipeline.preview_get_audio_sink">
+<code class="descname">preview_get_audio_sink</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.freedesktop.org/gstreamer/gst-editing-services/blob/1.18.4/ges/ges-pipeline.c#L1472"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#GES.Pipeline.preview_get_audio_sink" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The audio sink used by <cite>self</cite> for preview.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="../../Gst-1.0/classes/Element.html#Gst.Element" title="(in Gst 1.0 v1.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gst.Element</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the <a class="reference internal" href="#GES.Pipeline" title="GES.Pipeline"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Pipeline</span></code></a> <a class="reference internal" href="#GES.Pipeline.props.audio_sink" title="GES.Pipeline.props.audio_sink"><code class="xref py py-data docutils literal notranslate"><span class="pre">:audio-sink</span></code></a> of the pipeline.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GES.Pipeline.preview_get_video_sink">
+<code class="descname">preview_get_video_sink</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.freedesktop.org/gstreamer/gst-editing-services/blob/1.18.4/ges/ges-pipeline.c#L1435"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#GES.Pipeline.preview_get_video_sink" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The video sink used by <cite>self</cite> for preview.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="../../Gst-1.0/classes/Element.html#Gst.Element" title="(in Gst 1.0 v1.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gst.Element</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the <a class="reference internal" href="#GES.Pipeline" title="GES.Pipeline"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Pipeline</span></code></a> <a class="reference internal" href="#GES.Pipeline.props.video_sink" title="GES.Pipeline.props.video_sink"><code class="xref py py-data docutils literal notranslate"><span class="pre">:video-sink</span></code></a> of the pipeline.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GES.Pipeline.preview_set_audio_sink">
+<code class="descname">preview_set_audio_sink</code><span class="sig-paren">(</span><em>sink</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.freedesktop.org/gstreamer/gst-editing-services/blob/1.18.4/ges/ges-pipeline.c#L1492"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#GES.Pipeline.preview_set_audio_sink" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>sink</strong> (<a class="reference external" href="../../Gst-1.0/classes/Element.html#Gst.Element" title="(in Gst 1.0 v1.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gst.Element</span></code></a>) – A audio sink for <cite>self</cite> to use for preview</td>
+</tr>
+</tbody>
+</table>
+<p>Sets the <a class="reference internal" href="#GES.Pipeline" title="GES.Pipeline"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Pipeline</span></code></a> <a class="reference internal" href="#GES.Pipeline.props.audio_sink" title="GES.Pipeline.props.audio_sink"><code class="xref py py-data docutils literal notranslate"><span class="pre">:audio-sink</span></code></a> of the pipeline.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GES.Pipeline.preview_set_video_sink">
+<code class="descname">preview_set_video_sink</code><span class="sig-paren">(</span><em>sink</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.freedesktop.org/gstreamer/gst-editing-services/blob/1.18.4/ges/ges-pipeline.c#L1455"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#GES.Pipeline.preview_set_video_sink" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>sink</strong> (<a class="reference external" href="../../Gst-1.0/classes/Element.html#Gst.Element" title="(in Gst 1.0 v1.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gst.Element</span></code></a>) – A video sink for <cite>self</cite> to use for preview</td>
+</tr>
+</tbody>
+</table>
+<p>Sets the <a class="reference internal" href="#GES.Pipeline" title="GES.Pipeline"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Pipeline</span></code></a> <a class="reference internal" href="#GES.Pipeline.props.video_sink" title="GES.Pipeline.props.video_sink"><code class="xref py py-data docutils literal notranslate"><span class="pre">:video-sink</span></code></a> of the pipeline.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GES.Pipeline.save_thumbnail">
+<code class="descname">save_thumbnail</code><span class="sig-paren">(</span><em>width</em>, <em>height</em>, <em>format</em>, <em>location</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.freedesktop.org/gstreamer/gst-editing-services/blob/1.18.4/ges/ges-pipeline.c#L1343"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#GES.Pipeline.save_thumbnail" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>width</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – The requested pixel width of the image, or -1 to use the native
+size</li>
+<li><strong>height</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – The requested pixel height of the image, or -1 to use the
+native size</li>
+<li><strong>format</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – The desired mime type (for example, “image/jpeg”)</li>
+<li><strong>location</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – The path to save the thumbnail to</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first"><a class="reference external" href="../../GLib-2.0/classes/Error.html#GLib.Error" title="(in GLib 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLib.Error</span></code></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if <cite>self</cite>’s current image preview was successfully saved
+to <cite>location</cite> using the given <cite>format</cite>, <cite>height</cite> and <cite>width</cite>.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Saves the currently displayed image of the pipeline in preview to the
+given location, in the specified dimensions and format.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GES.Pipeline.set_mode">
+<code class="descname">set_mode</code><span class="sig-paren">(</span><em>mode</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.freedesktop.org/gstreamer/gst-editing-services/blob/1.18.4/ges/ges-pipeline.c#L1187"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#GES.Pipeline.set_mode" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>mode</strong> (<a class="reference internal" href="../flags.html#GES.PipelineFlags" title="GES.PipelineFlags"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.PipelineFlags</span></code></a>) – The mode to set for <cite>self</cite></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if the mode of <cite>self</cite> was successfully set to <cite>mode</cite>.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Sets the <a class="reference internal" href="#GES.Pipeline" title="GES.Pipeline"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Pipeline</span></code></a> <a class="reference internal" href="#GES.Pipeline.props.mode" title="GES.Pipeline.props.mode"><code class="xref py py-data docutils literal notranslate"><span class="pre">:mode</span></code></a> of the pipeline.</p>
+<p>Note that the pipeline will be set to <a class="reference external" href="../../Gst-1.0/enums.html#Gst.State.NULL" title="(in Gst 1.0 v1.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gst.State.NULL</span></code></a> during this call to
+perform the necessary changes. You will need to set the state again yourself
+after calling this.</p>
+<p>**NOTE**: <a class="reference external" href="ges_pipeline_set_render_settings">Rendering settings</a> need to be
+set before setting <cite>mode</cite> to <a class="reference internal" href="../flags.html#GES.PipelineFlags.RENDER" title="GES.PipelineFlags.RENDER"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.PipelineFlags.RENDER</span></code></a> or
+<a class="reference internal" href="../flags.html#GES.PipelineFlags.SMART_RENDER" title="GES.PipelineFlags.SMART_RENDER"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.PipelineFlags.SMART_RENDER</span></code></a>, the call to this method will fail
+otherwise.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GES.Pipeline.set_render_settings">
+<code class="descname">set_render_settings</code><span class="sig-paren">(</span><em>output_uri</em>, <em>profile</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.freedesktop.org/gstreamer/gst-editing-services/blob/1.18.4/ges/ges-pipeline.c#L1050"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#GES.Pipeline.set_render_settings" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>output_uri</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – The URI to save the <a class="reference internal" href="#GES.Pipeline" title="GES.Pipeline"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Pipeline</span></code></a> <a class="reference internal" href="#GES.Pipeline.props.timeline" title="GES.Pipeline.props.timeline"><code class="xref py py-data docutils literal notranslate"><span class="pre">:timeline</span></code></a> rendering
+result to</li>
+<li><strong>profile</strong> (<a class="reference external" href="../../GstPbutils-1.0/classes/EncodingProfile.html#GstPbutils.EncodingProfile" title="(in GstPbutils 1.0 v1.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GstPbutils.EncodingProfile</span></code></a>) – The encoding to use for rendering the <a class="reference internal" href="#GES.Pipeline" title="GES.Pipeline"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Pipeline</span></code></a> <a class="reference internal" href="#GES.Pipeline.props.timeline" title="GES.Pipeline.props.timeline"><code class="xref py py-data docutils literal notranslate"><span class="pre">:timeline</span></code></a></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if the settings were successfully set on <cite>self</cite>.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Specifies encoding setting to be used by the pipeline to render its
+<a class="reference internal" href="#GES.Pipeline" title="GES.Pipeline"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Pipeline</span></code></a> <a class="reference internal" href="#GES.Pipeline.props.timeline" title="GES.Pipeline.props.timeline"><code class="xref py py-data docutils literal notranslate"><span class="pre">:timeline</span></code></a>, and where the result should be written to.</p>
+<p>This method **must** be called before setting the pipeline mode to
+<a class="reference internal" href="../flags.html#GES.PipelineFlags.RENDER" title="GES.PipelineFlags.RENDER"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.PipelineFlags.RENDER</span></code></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GES.Pipeline.set_timeline">
+<code class="descname">set_timeline</code><span class="sig-paren">(</span><em>timeline</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.freedesktop.org/gstreamer/gst-editing-services/blob/1.18.4/ges/ges-pipeline.c#L1007"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#GES.Pipeline.set_timeline" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>timeline</strong> (<a class="reference internal" href="Timeline.html#GES.Timeline" title="GES.Timeline"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Timeline</span></code></a>) – The timeline to set for <cite>self</cite></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if <cite>timeline</cite> was successfully given to <cite>self</cite>.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Takes the given timeline and sets it as the <a class="reference internal" href="#GES.Pipeline" title="GES.Pipeline"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Pipeline</span></code></a> <a class="reference internal" href="#GES.Pipeline.props.timeline" title="GES.Pipeline.props.timeline"><code class="xref py py-data docutils literal notranslate"><span class="pre">:timeline</span></code></a> for
+the pipeline.</p>
+<p>Note that you should only call this method once on a given pipeline
+because a pipeline can not have its <a class="reference internal" href="#GES.Pipeline" title="GES.Pipeline"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Pipeline</span></code></a> <a class="reference internal" href="#GES.Pipeline.props.timeline" title="GES.Pipeline.props.timeline"><code class="xref py py-data docutils literal notranslate"><span class="pre">:timeline</span></code></a> changed after
+it has been set.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="property-details">
+<h2>Property Details<a class="headerlink" href="#property-details" title="Permalink to this headline">¶</a></h2>
+<dl class="data">
+<dt id="GES.Pipeline.props.audio_filter">
+<code class="descclassname">GES.Pipeline.props.</code><code class="descname">audio_filter</code><a class="headerlink" href="#GES.Pipeline.props.audio_filter" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">audio-filter</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="../../Gst-1.0/classes/Element.html#Gst.Element" title="(in Gst 1.0 v1.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gst.Element</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The audio filter(s) to apply during playback in preview mode,
+immediately before the <a class="reference internal" href="#GES.Pipeline" title="GES.Pipeline"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Pipeline</span></code></a> <a class="reference internal" href="#GES.Pipeline.props.audio_sink" title="GES.Pipeline.props.audio_sink"><code class="xref py py-data docutils literal notranslate"><span class="pre">:audio-sink</span></code></a>. This exposes the
+#playsink:audio-filter property of the internal #playsink.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.6.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="data">
+<dt id="GES.Pipeline.props.audio_sink">
+<code class="descclassname">GES.Pipeline.props.</code><code class="descname">audio_sink</code><a class="headerlink" href="#GES.Pipeline.props.audio_sink" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">audio-sink</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="../../Gst-1.0/classes/Element.html#Gst.Element" title="(in Gst 1.0 v1.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gst.Element</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The audio sink used for preview. This exposes the
+#playsink:audio-sink property of the internal #playsink.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GES.Pipeline.props.mode">
+<code class="descclassname">GES.Pipeline.props.</code><code class="descname">mode</code><a class="headerlink" href="#GES.Pipeline.props.mode" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">mode</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../flags.html#GES.PipelineFlags" title="GES.PipelineFlags"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.PipelineFlags</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference internal" href="../flags.html#GES.PipelineFlags.AUDIO_PREVIEW" title="GES.PipelineFlags.AUDIO_PREVIEW"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.PipelineFlags.AUDIO_PREVIEW</span></code></a> | <a class="reference internal" href="../flags.html#GES.PipelineFlags.VIDEO_PREVIEW" title="GES.PipelineFlags.VIDEO_PREVIEW"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.PipelineFlags.VIDEO_PREVIEW</span></code></a> | <a class="reference internal" href="../flags.html#GES.PipelineFlags.FULL_PREVIEW" title="GES.PipelineFlags.FULL_PREVIEW"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.PipelineFlags.FULL_PREVIEW</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The pipeline’s mode. In preview mode (for audio or video, or both)
+the pipeline can display the timeline’s content to an end user. In
+rendering mode the pipeline can encode the timeline’s content and
+save it to a file.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GES.Pipeline.props.timeline">
+<code class="descclassname">GES.Pipeline.props.</code><code class="descname">timeline</code><a class="headerlink" href="#GES.Pipeline.props.timeline" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">timeline</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="Timeline.html#GES.Timeline" title="GES.Timeline"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Timeline</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The timeline used by this pipeline, whose content it will play and
+render, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> if the pipeline does not yet have a timeline.</p>
+<p>Note that after you set the timeline for the first time, subsequent
+calls to change the timeline will fail.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GES.Pipeline.props.video_filter">
+<code class="descclassname">GES.Pipeline.props.</code><code class="descname">video_filter</code><a class="headerlink" href="#GES.Pipeline.props.video_filter" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">video-filter</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="../../Gst-1.0/classes/Element.html#Gst.Element" title="(in Gst 1.0 v1.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gst.Element</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The video filter(s) to apply during playback in preview mode,
+immediately before the <a class="reference internal" href="#GES.Pipeline" title="GES.Pipeline"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Pipeline</span></code></a> <a class="reference internal" href="#GES.Pipeline.props.video_sink" title="GES.Pipeline.props.video_sink"><code class="xref py py-data docutils literal notranslate"><span class="pre">:video-sink</span></code></a>. This exposes the
+#playsink:video-filter property of the internal #playsink.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.6.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="data">
+<dt id="GES.Pipeline.props.video_sink">
+<code class="descclassname">GES.Pipeline.props.</code><code class="descname">video_sink</code><a class="headerlink" href="#GES.Pipeline.props.video_sink" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">video-sink</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="../../Gst-1.0/classes/Element.html#Gst.Element" title="(in Gst 1.0 v1.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gst.Element</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The video sink used for preview. This exposes the
+#playsink:video-sink property of the internal #playsink.</p>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div> 
+
+</body>
+</html>

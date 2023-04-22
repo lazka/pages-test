@@ -1,0 +1,1487 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    GstVideo.VideoEncoder -
+    
+      Classes -
+    
+    GstVideo 1.0
+  </title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/css/pgi.css" type="text/css" />
+  
+
+  
+  <script type="text/javascript">
+
+    function openSidebar(element) {
+        window.location.href = element.href + location.hash;
+        return false;
+    }
+
+    function inIframe() {
+        try {
+            return window.self !== window.top;
+        } catch (e) {
+            return true;
+        }
+    }
+
+    function onLoaded() {
+        if(!inIframe()) {
+            var icons = document.getElementsByClassName('open-sidebar');
+
+            for (var i = 0; i < icons.length; i ++) {
+                icons[i].style.display = 'table-cell';
+            }
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', onLoaded, false);
+
+  </script>
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="GstVideo 1.0 Python API Docs" href="../index.html"/>
+        <link rel="up" title="Classes" href="../classes.html"/>
+        <link rel="next" title="GstVideo.VideoFilter" href="VideoFilter.html"/>
+        <link rel="prev" title="GstVideo.VideoDecoder" href="VideoDecoder.html"/> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+<div class="non-fixed-bar">
+<table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#GstVideo-1.0/classes/VideoEncoder.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">GstVideo 1.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>GstVideo.VideoEncoder</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="VideoDecoder.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="VideoFilter.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">GstVideo.VideoEncoder</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#property-details">Property Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+<div class="fixed-bar">
+  <table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#GstVideo-1.0/classes/VideoEncoder.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">GstVideo 1.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>GstVideo.VideoEncoder</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="VideoDecoder.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="VideoFilter.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">GstVideo.VideoEncoder</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#property-details">Property Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+  <div class="wy-grid-for-nav">
+
+    
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="main">
+            
+  <div class="section" id="gstvideo-videoencoder">
+<h1>GstVideo.VideoEncoder<a class="headerlink" href="#gstvideo-videoencoder" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<svg width="216pt" height="242pt"
+ viewBox="0.00 0.00 216.00 242.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 238)">
+<title>g</title>
+<!-- GObject.GInterface -->
+<g id="node1" class="node">
+<title>GObject.GInterface</title>
+<g id="a_node1"><a xlink:href="../../GObject-2.0/classes/GInterface.html#GObject.GInterface" xlink:title="GObject.GInterface">
+<path fill="none" stroke="#3091d1" d="M92,-126C92,-126 6,-126 6,-126 3,-126 0,-123 0,-120 0,-120 0,-114 0,-114 0,-111 3,-108 6,-108 6,-108 92,-108 92,-108 95,-108 98,-111 98,-114 98,-114 98,-120 98,-120 98,-123 95,-126 92,-126"/>
+<text text-anchor="middle" x="49" y="-114.7" font-family="inherit" font-size="8.50">GObject.GInterface</text>
+</a>
+</g>
+</g>
+<!-- Gst.Preset -->
+<g id="node6" class="node">
+<title>Gst.Preset</title>
+<g id="a_node6"><a xlink:href="../../Gst-1.0/classes/Preset.html#Gst.Preset" xlink:title="Gst.Preset">
+<path fill="none" stroke="#3091d1" d="M81,-72C81,-72 33,-72 33,-72 30,-72 27,-69 27,-66 27,-66 27,-60 27,-60 27,-57 30,-54 33,-54 33,-54 81,-54 81,-54 84,-54 87,-57 87,-60 87,-60 87,-66 87,-66 87,-69 84,-72 81,-72"/>
+<text text-anchor="middle" x="57" y="-60.7" font-family="inherit" font-size="8.50">Gst.Preset</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Gst.Preset -->
+<g id="edge1" class="edge">
+<title>GObject.GInterface&#45;&gt;Gst.Preset</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M50.25,-107.88C51.51,-99.68 53.48,-86.89 54.96,-77.24"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="56.7,-77.45 55.73,-72.24 53.24,-76.92 56.7,-77.45"/>
+</g>
+<!-- GObject.InitiallyUnowned -->
+<g id="node2" class="node">
+<title>GObject.InitiallyUnowned</title>
+<g id="a_node2"><a xlink:href="../../GObject-2.0/classes/InitiallyUnowned.html#GObject.InitiallyUnowned" xlink:title="GObject.InitiallyUnowned">
+<path fill="none" stroke="#75507b" d="M202,-180C202,-180 92,-180 92,-180 89,-180 86,-177 86,-174 86,-174 86,-168 86,-168 86,-165 89,-162 92,-162 92,-162 202,-162 202,-162 205,-162 208,-165 208,-168 208,-168 208,-174 208,-174 208,-177 205,-180 202,-180"/>
+<text text-anchor="middle" x="147" y="-168.7" font-family="inherit" font-size="8.50">GObject.InitiallyUnowned</text>
+</a>
+</g>
+</g>
+<!-- Gst.Object -->
+<g id="node5" class="node">
+<title>Gst.Object</title>
+<g id="a_node5"><a xlink:href="../../Gst-1.0/classes/Object.html#Gst.Object" xlink:title="Gst.Object">
+<path fill="none" stroke="#aaaaaa" d="M171.5,-126C171.5,-126 122.5,-126 122.5,-126 119.5,-126 116.5,-123 116.5,-120 116.5,-120 116.5,-114 116.5,-114 116.5,-111 119.5,-108 122.5,-108 122.5,-108 171.5,-108 171.5,-108 174.5,-108 177.5,-111 177.5,-114 177.5,-114 177.5,-120 177.5,-120 177.5,-123 174.5,-126 171.5,-126"/>
+<text text-anchor="middle" x="147" y="-114.7" font-family="inherit" font-size="8.50">Gst.Object</text>
+</a>
+</g>
+</g>
+<!-- GObject.InitiallyUnowned&#45;&gt;Gst.Object -->
+<g id="edge2" class="edge">
+<title>GObject.InitiallyUnowned&#45;&gt;Gst.Object</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M147,-161.88C147,-153.76 147,-141.13 147,-131.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="148.75,-131.24 147,-126.24 145.25,-131.24 148.75,-131.24"/>
+</g>
+<!-- GObject.Object -->
+<g id="node3" class="node">
+<title>GObject.Object</title>
+<g id="a_node3"><a xlink:href="../../GObject-2.0/classes/Object.html#GObject.Object" xlink:title="GObject.Object">
+<path fill="none" stroke="#75507b" d="M181,-234C181,-234 113,-234 113,-234 110,-234 107,-231 107,-228 107,-228 107,-222 107,-222 107,-219 110,-216 113,-216 113,-216 181,-216 181,-216 184,-216 187,-219 187,-222 187,-222 187,-228 187,-228 187,-231 184,-234 181,-234"/>
+<text text-anchor="middle" x="147" y="-222.7" font-family="inherit" font-size="8.50">GObject.Object</text>
+</a>
+</g>
+</g>
+<!-- GObject.Object&#45;&gt;GObject.InitiallyUnowned -->
+<g id="edge3" class="edge">
+<title>GObject.Object&#45;&gt;GObject.InitiallyUnowned</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M147,-215.88C147,-207.76 147,-195.13 147,-185.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="148.75,-185.24 147,-180.24 145.25,-185.24 148.75,-185.24"/>
+</g>
+<!-- Gst.Element -->
+<g id="node4" class="node">
+<title>Gst.Element</title>
+<g id="a_node4"><a xlink:href="../../Gst-1.0/classes/Element.html#Gst.Element" xlink:title="Gst.Element">
+<path fill="none" stroke="#aaaaaa" d="M171,-72C171,-72 115,-72 115,-72 112,-72 109,-69 109,-66 109,-66 109,-60 109,-60 109,-57 112,-54 115,-54 115,-54 171,-54 171,-54 174,-54 177,-57 177,-60 177,-60 177,-66 177,-66 177,-69 174,-72 171,-72"/>
+<text text-anchor="middle" x="143" y="-60.7" font-family="inherit" font-size="8.50">Gst.Element</text>
+</a>
+</g>
+</g>
+<!-- GstVideo.VideoEncoder -->
+<g id="node7" class="node">
+<title>GstVideo.VideoEncoder</title>
+<g id="a_node7"><a xlink:href="#GstVideo.VideoEncoder" xlink:title="GstVideo.VideoEncoder">
+<path fill="none" stroke="#aaaaaa" d="M150,-18C150,-18 46,-18 46,-18 43,-18 40,-15 40,-12 40,-12 40,-6 40,-6 40,-3 43,0 46,0 46,0 150,0 150,0 153,0 156,-3 156,-6 156,-6 156,-12 156,-12 156,-15 153,-18 150,-18"/>
+<text text-anchor="middle" x="98" y="-6.7" font-family="inherit" font-size="8.50">GstVideo.VideoEncoder</text>
+</a>
+</g>
+</g>
+<!-- Gst.Element&#45;&gt;GstVideo.VideoEncoder -->
+<g id="edge4" class="edge">
+<title>Gst.Element&#45;&gt;GstVideo.VideoEncoder</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M135.97,-53.88C128.61,-45.38 116.99,-31.94 108.54,-22.18"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="109.73,-20.88 105.13,-18.24 107.08,-23.17 109.73,-20.88"/>
+</g>
+<!-- Gst.Object&#45;&gt;Gst.Element -->
+<g id="edge5" class="edge">
+<title>Gst.Object&#45;&gt;Gst.Element</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M146.38,-107.88C145.74,-99.68 144.76,-86.89 144.02,-77.24"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="145.76,-77.09 143.63,-72.24 142.27,-77.36 145.76,-77.09"/>
+</g>
+<!-- Gst.Preset&#45;&gt;GstVideo.VideoEncoder -->
+<g id="edge6" class="edge">
+<title>Gst.Preset&#45;&gt;GstVideo.VideoEncoder</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M63.41,-53.88C70.11,-45.38 80.7,-31.94 88.4,-22.18"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="89.78,-23.25 91.5,-18.24 87.03,-21.08 89.78,-23.25"/>
+</g>
+</g>
+</svg>
+</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Subclasses:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="methods">
+<span id="gstvideo-videoencoder-methods"></span><h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../Gst-1.0/classes/Element.html#gst-element-methods" title="(in Gst 1.0 v1.0)"><span class="xref std std-ref">Gst.Element (79)</span></a>,     <a class="reference external" href="../../Gst-1.0/classes/Object.html#gst-object-methods" title="(in Gst 1.0 v1.0)"><span class="xref std std-ref">Gst.Object (27)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (37)</span></a>,     <a class="reference external" href="../../Gst-1.0/classes/Preset.html#gst-preset-methods" title="(in Gst 1.0 v1.0)"><span class="xref std std-ref">Gst.Preset (11)</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Structs:</th><td class="field-body"><a class="reference external" href="../../Gst-1.0/classes/ElementClass.html#gst-elementclass-methods" title="(in Gst 1.0 v1.0)"><span class="xref std std-ref">Gst.ElementClass (10)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/ObjectClass.html#gobject-objectclass-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.ObjectClass (5)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="99%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#GstVideo.VideoEncoder.allocate_output_buffer" title="GstVideo.VideoEncoder.allocate_output_buffer"><code class="xref py py-func docutils literal notranslate"><span class="pre">allocate_output_buffer</span></code></a> (size)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#GstVideo.VideoEncoder.allocate_output_frame" title="GstVideo.VideoEncoder.allocate_output_frame"><code class="xref py py-func docutils literal notranslate"><span class="pre">allocate_output_frame</span></code></a> (frame, size)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#GstVideo.VideoEncoder.finish_frame" title="GstVideo.VideoEncoder.finish_frame"><code class="xref py py-func docutils literal notranslate"><span class="pre">finish_frame</span></code></a> (frame)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#GstVideo.VideoEncoder.finish_subframe" title="GstVideo.VideoEncoder.finish_subframe"><code class="xref py py-func docutils literal notranslate"><span class="pre">finish_subframe</span></code></a> (frame)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#GstVideo.VideoEncoder.get_allocator" title="GstVideo.VideoEncoder.get_allocator"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_allocator</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#GstVideo.VideoEncoder.get_frame" title="GstVideo.VideoEncoder.get_frame"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_frame</span></code></a> (frame_number)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#GstVideo.VideoEncoder.get_frames" title="GstVideo.VideoEncoder.get_frames"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_frames</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#GstVideo.VideoEncoder.get_latency" title="GstVideo.VideoEncoder.get_latency"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_latency</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#GstVideo.VideoEncoder.get_max_encode_time" title="GstVideo.VideoEncoder.get_max_encode_time"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_max_encode_time</span></code></a> (frame)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#GstVideo.VideoEncoder.get_min_force_key_unit_interval" title="GstVideo.VideoEncoder.get_min_force_key_unit_interval"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_min_force_key_unit_interval</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#GstVideo.VideoEncoder.get_oldest_frame" title="GstVideo.VideoEncoder.get_oldest_frame"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_oldest_frame</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#GstVideo.VideoEncoder.get_output_state" title="GstVideo.VideoEncoder.get_output_state"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_output_state</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#GstVideo.VideoEncoder.is_qos_enabled" title="GstVideo.VideoEncoder.is_qos_enabled"><code class="xref py py-func docutils literal notranslate"><span class="pre">is_qos_enabled</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#GstVideo.VideoEncoder.merge_tags" title="GstVideo.VideoEncoder.merge_tags"><code class="xref py py-func docutils literal notranslate"><span class="pre">merge_tags</span></code></a> (tags, mode)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#GstVideo.VideoEncoder.negotiate" title="GstVideo.VideoEncoder.negotiate"><code class="xref py py-func docutils literal notranslate"><span class="pre">negotiate</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#GstVideo.VideoEncoder.proxy_getcaps" title="GstVideo.VideoEncoder.proxy_getcaps"><code class="xref py py-func docutils literal notranslate"><span class="pre">proxy_getcaps</span></code></a> (caps, filter)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#GstVideo.VideoEncoder.set_headers" title="GstVideo.VideoEncoder.set_headers"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_headers</span></code></a> (headers)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#GstVideo.VideoEncoder.set_latency" title="GstVideo.VideoEncoder.set_latency"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_latency</span></code></a> (min_latency, max_latency)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#GstVideo.VideoEncoder.set_min_force_key_unit_interval" title="GstVideo.VideoEncoder.set_min_force_key_unit_interval"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_min_force_key_unit_interval</span></code></a> (interval)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#GstVideo.VideoEncoder.set_min_pts" title="GstVideo.VideoEncoder.set_min_pts"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_min_pts</span></code></a> (min_pts)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#GstVideo.VideoEncoder.set_output_state" title="GstVideo.VideoEncoder.set_output_state"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_output_state</span></code></a> (caps, reference)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#GstVideo.VideoEncoder.set_qos_enabled" title="GstVideo.VideoEncoder.set_qos_enabled"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_qos_enabled</span></code></a> (enabled)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="virtual-methods">
+<span id="gstvideo-videoencoder-vfuncs"></span><h2>Virtual Methods<a class="headerlink" href="#virtual-methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../Gst-1.0/classes/Element.html#gst-element-vfuncs" title="(in Gst 1.0 v1.0)"><span class="xref std std-ref">Gst.Element (16)</span></a>,     <a class="reference external" href="../../Gst-1.0/classes/Object.html#gst-object-vfuncs" title="(in Gst 1.0 v1.0)"><span class="xref std std-ref">Gst.Object (1)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-vfuncs" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (7)</span></a>,     <a class="reference external" href="../../Gst-1.0/classes/Preset.html#gst-preset-vfuncs" title="(in Gst 1.0 v1.0)"><span class="xref std std-ref">Gst.Preset (8)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="99%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#GstVideo.VideoEncoder.do_close" title="GstVideo.VideoEncoder.do_close"><code class="xref py py-func docutils literal notranslate"><span class="pre">do_close</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#GstVideo.VideoEncoder.do_decide_allocation" title="GstVideo.VideoEncoder.do_decide_allocation"><code class="xref py py-func docutils literal notranslate"><span class="pre">do_decide_allocation</span></code></a> (query)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#GstVideo.VideoEncoder.do_finish" title="GstVideo.VideoEncoder.do_finish"><code class="xref py py-func docutils literal notranslate"><span class="pre">do_finish</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#GstVideo.VideoEncoder.do_flush" title="GstVideo.VideoEncoder.do_flush"><code class="xref py py-func docutils literal notranslate"><span class="pre">do_flush</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#GstVideo.VideoEncoder.do_getcaps" title="GstVideo.VideoEncoder.do_getcaps"><code class="xref py py-func docutils literal notranslate"><span class="pre">do_getcaps</span></code></a> (filter)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#GstVideo.VideoEncoder.do_handle_frame" title="GstVideo.VideoEncoder.do_handle_frame"><code class="xref py py-func docutils literal notranslate"><span class="pre">do_handle_frame</span></code></a> (frame)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#GstVideo.VideoEncoder.do_negotiate" title="GstVideo.VideoEncoder.do_negotiate"><code class="xref py py-func docutils literal notranslate"><span class="pre">do_negotiate</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#GstVideo.VideoEncoder.do_open" title="GstVideo.VideoEncoder.do_open"><code class="xref py py-func docutils literal notranslate"><span class="pre">do_open</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#GstVideo.VideoEncoder.do_pre_push" title="GstVideo.VideoEncoder.do_pre_push"><code class="xref py py-func docutils literal notranslate"><span class="pre">do_pre_push</span></code></a> (frame)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#GstVideo.VideoEncoder.do_propose_allocation" title="GstVideo.VideoEncoder.do_propose_allocation"><code class="xref py py-func docutils literal notranslate"><span class="pre">do_propose_allocation</span></code></a> (query)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#GstVideo.VideoEncoder.do_reset" title="GstVideo.VideoEncoder.do_reset"><code class="xref py py-func docutils literal notranslate"><span class="pre">do_reset</span></code></a> (hard)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#GstVideo.VideoEncoder.do_set_format" title="GstVideo.VideoEncoder.do_set_format"><code class="xref py py-func docutils literal notranslate"><span class="pre">do_set_format</span></code></a> (state)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#GstVideo.VideoEncoder.do_sink_event" title="GstVideo.VideoEncoder.do_sink_event"><code class="xref py py-func docutils literal notranslate"><span class="pre">do_sink_event</span></code></a> (event)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#GstVideo.VideoEncoder.do_sink_query" title="GstVideo.VideoEncoder.do_sink_query"><code class="xref py py-func docutils literal notranslate"><span class="pre">do_sink_query</span></code></a> (query)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#GstVideo.VideoEncoder.do_src_event" title="GstVideo.VideoEncoder.do_src_event"><code class="xref py py-func docutils literal notranslate"><span class="pre">do_src_event</span></code></a> (event)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#GstVideo.VideoEncoder.do_src_query" title="GstVideo.VideoEncoder.do_src_query"><code class="xref py py-func docutils literal notranslate"><span class="pre">do_src_query</span></code></a> (query)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#GstVideo.VideoEncoder.do_start" title="GstVideo.VideoEncoder.do_start"><code class="xref py py-func docutils literal notranslate"><span class="pre">do_start</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#GstVideo.VideoEncoder.do_stop" title="GstVideo.VideoEncoder.do_stop"><code class="xref py py-func docutils literal notranslate"><span class="pre">do_stop</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#GstVideo.VideoEncoder.do_transform_meta" title="GstVideo.VideoEncoder.do_transform_meta"><code class="xref py py-func docutils literal notranslate"><span class="pre">do_transform_meta</span></code></a> (frame, meta)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="gstvideo-videoencoder-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../Gst-1.0/classes/Object.html#gst-object-props" title="(in Gst 1.0 v1.0)"><span class="xref std std-ref">Gst.Object (2)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="1%" />
+<col width="1%" />
+<col width="97%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Flags</th>
+<th class="head">Short Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="#GstVideo.VideoEncoder.props.min_force_key_unit_interval" title="GstVideo.VideoEncoder.props.min_force_key_unit_interval"><code class="xref py py-data docutils literal notranslate"><span class="pre">min-force-key-unit-interval</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+<td>r/w</td>
+<td>Minimum interval between force-keyunit requests in nanoseconds</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#GstVideo.VideoEncoder.props.qos" title="GstVideo.VideoEncoder.props.qos"><code class="xref py py-data docutils literal notranslate"><span class="pre">qos</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+<td>r/w</td>
+<td>Handle Quality-of-Service events from downstream</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="signals">
+<span id="gstvideo-videoencoder-signals"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../Gst-1.0/classes/Element.html#gst-element-signals" title="(in Gst 1.0 v1.0)"><span class="xref std std-ref">Gst.Element (3)</span></a>,     <a class="reference external" href="../../Gst-1.0/classes/Object.html#gst-object-signals" title="(in Gst 1.0 v1.0)"><span class="xref std std-ref">Gst.Object (1)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-signals" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fields">
+<span id="gstvideo-videoencoder-fields"></span><h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../Gst-1.0/classes/Element.html#gst-element-fields" title="(in Gst 1.0 v1.0)"><span class="xref std std-ref">Gst.Element (3)</span></a>,     <a class="reference external" href="../../Gst-1.0/classes/Object.html#gst-object-fields" title="(in Gst 1.0 v1.0)"><span class="xref std std-ref">Gst.Object (1)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-fields" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="16%" />
+<col width="1%" />
+<col width="1%" />
+<col width="82%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Access</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>element</td>
+<td><a class="reference external" href="../../Gst-1.0/classes/Element.html#Gst.Element" title="(in Gst 1.0 v1.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gst.Element</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>input_segment</td>
+<td><a class="reference external" href="../../Gst-1.0/classes/Segment.html#Gst.Segment" title="(in Gst 1.0 v1.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gst.Segment</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>output_segment</td>
+<td><a class="reference external" href="../../Gst-1.0/classes/Segment.html#Gst.Segment" title="(in Gst 1.0 v1.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gst.Segment</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>padding</td>
+<td>[<a class="reference external" href="http://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">object</span></code></a>]</td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>sinkpad</td>
+<td><a class="reference external" href="../../Gst-1.0/classes/Pad.html#Gst.Pad" title="(in Gst 1.0 v1.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gst.Pad</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>srcpad</td>
+<td><a class="reference external" href="../../Gst-1.0/classes/Pad.html#Gst.Pad" title="(in Gst 1.0 v1.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gst.Pad</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>stream_lock</td>
+<td><a class="reference external" href="../../GLib-2.0/classes/RecMutex.html#GLib.RecMutex" title="(in GLib 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GLib.RecMutex</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="class-details">
+<h2>Class Details<a class="headerlink" href="#class-details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="GstVideo.VideoEncoder">
+<em class="property">class </em><code class="descclassname">GstVideo.</code><code class="descname">VideoEncoder</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#GstVideo.VideoEncoder" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Bases:</th><td class="field-body"><a class="reference external" href="../../Gst-1.0/classes/Element.html#Gst.Element" title="(in Gst 1.0 v1.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Gst.Element</span></code></a>,         <a class="reference external" href="../../Gst-1.0/classes/Preset.html#Gst.Preset" title="(in Gst 1.0 v1.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Gst.Preset</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Abstract:</th><td class="field-body">Yes</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Structure:</th><td class="field-body"><a class="reference internal" href="VideoEncoderClass.html#GstVideo.VideoEncoderClass" title="GstVideo.VideoEncoderClass"><code class="xref py py-class docutils literal notranslate"><span class="pre">GstVideo.VideoEncoderClass</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>This base class is for video encoders turning raw video into
+encoded video data.</p>
+<p><a class="reference internal" href="#GstVideo.VideoEncoder" title="GstVideo.VideoEncoder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GstVideo.VideoEncoder</span></code></a> and subclass should cooperate as follows.</p>
+<dl class="docutils">
+<dt>Configuration</dt>
+<dd></dd>
+</dl>
+<ul class="simple">
+<li>Initially, <a class="reference internal" href="#GstVideo.VideoEncoder" title="GstVideo.VideoEncoder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GstVideo.VideoEncoder</span></code></a> calls <cite>start</cite> when the encoder element
+is activated, which allows subclass to perform any global setup.</li>
+<li><a class="reference internal" href="#GstVideo.VideoEncoder" title="GstVideo.VideoEncoder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GstVideo.VideoEncoder</span></code></a> calls <cite>set_format</cite> to inform subclass of the format
+of input video data that it is about to receive.  Subclass should
+setup for encoding and configure base class as appropriate
+(e.g. latency). While unlikely, it might be called more than once,
+if changing input parameters require reconfiguration.  Baseclass
+will ensure that processing of current configuration is finished.</li>
+<li><a class="reference internal" href="#GstVideo.VideoEncoder" title="GstVideo.VideoEncoder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GstVideo.VideoEncoder</span></code></a> calls <cite>stop</cite> at end of all processing.</li>
+</ul>
+<dl class="docutils">
+<dt>Data processing</dt>
+<dd></dd>
+</dl>
+<ul class="simple">
+<li>Base class collects input data and metadata into a frame and hands
+this to subclass’ <cite>handle_frame</cite>.<ul>
+<li>If codec processing results in encoded data, subclass should call
+<cite>gst_video_encoder_finish_frame</cite> to have encoded data pushed
+downstream.</li>
+<li>If implemented, baseclass calls subclass <cite>pre_push</cite> just prior to
+pushing to allow subclasses to modify some metadata on the buffer.
+If it returns <a class="reference external" href="../../Gst-1.0/enums.html#Gst.FlowReturn.OK" title="(in Gst 1.0 v1.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gst.FlowReturn.OK</span></code></a>, the buffer is pushed downstream.</li>
+<li><a class="reference internal" href="VideoEncoderClass.html#GstVideo.VideoEncoderClass" title="GstVideo.VideoEncoderClass"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GstVideo.VideoEncoderClass</span></code></a> will handle both srcpad and sinkpad events.
+Sink events will be passed to subclass if <cite>event</cite> callback has been
+provided.</li>
+</ul>
+</li>
+</ul>
+<dl class="docutils">
+<dt>Shutdown phase</dt>
+<dd></dd>
+</dl>
+<ul class="simple">
+<li><a class="reference internal" href="#GstVideo.VideoEncoder" title="GstVideo.VideoEncoder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GstVideo.VideoEncoder</span></code></a> class calls <cite>stop</cite> to inform the subclass that data
+parsing will be stopped.</li>
+</ul>
+<p>Subclass is responsible for providing pad template caps for
+source and sink pads. The pads need to be named “sink” and “src”. It should
+also be able to provide fixed src pad caps in <cite>getcaps</cite> by the time it calls
+<cite>gst_video_encoder_finish_frame</cite>.</p>
+<p>Things that subclass need to take care of:</p>
+<ul class="simple">
+<li>Provide pad templates</li>
+<li>Provide source pad caps before pushing the first buffer</li>
+<li>Accept data in <cite>handle_frame</cite> and provide encoded results to
+<cite>gst_video_encoder_finish_frame</cite>.</li>
+</ul>
+<p>The <a class="reference internal" href="#GstVideo.VideoEncoder" title="GstVideo.VideoEncoder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GstVideo.VideoEncoder</span></code></a> <a class="reference internal" href="#GstVideo.VideoEncoder.props.qos" title="GstVideo.VideoEncoder.props.qos"><code class="xref py py-data docutils literal notranslate"><span class="pre">:qos</span></code></a> property will enable the Quality-of-Service
+features of the encoder which gather statistics about the real-time
+performance of the downstream elements. If enabled, subclasses can
+use <a class="reference internal" href="#GstVideo.VideoEncoder.get_max_encode_time" title="GstVideo.VideoEncoder.get_max_encode_time"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GstVideo.VideoEncoder.get_max_encode_time</span></code></a>() to check if input frames
+are already late and drop them right away to give a chance to the
+pipeline to catch up.</p>
+<dl class="method">
+<dt id="GstVideo.VideoEncoder.allocate_output_buffer">
+<code class="descname">allocate_output_buffer</code><span class="sig-paren">(</span><em>size</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.freedesktop.org/gstreamer/gst-plugins-base/blob/1.18.4/gst-libs/gst/video/gstvideoencoder.c#L2036"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#GstVideo.VideoEncoder.allocate_output_buffer" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>size</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – size of the buffer</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">allocated buffer</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="../../Gst-1.0/classes/Buffer.html#Gst.Buffer" title="(in Gst 1.0 v1.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gst.Buffer</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Helper function that allocates a buffer to hold an encoded video frame
+for <cite>self</cite>’s current <a class="reference internal" href="VideoCodecState.html#GstVideo.VideoCodecState" title="GstVideo.VideoCodecState"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GstVideo.VideoCodecState</span></code></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstVideo.VideoEncoder.allocate_output_frame">
+<code class="descname">allocate_output_frame</code><span class="sig-paren">(</span><em>frame</em>, <em>size</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.freedesktop.org/gstreamer/gst-plugins-base/blob/1.18.4/gst-libs/gst/video/gstvideoencoder.c#L2093"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#GstVideo.VideoEncoder.allocate_output_frame" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>frame</strong> (<a class="reference internal" href="VideoCodecFrame.html#GstVideo.VideoCodecFrame" title="GstVideo.VideoCodecFrame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GstVideo.VideoCodecFrame</span></code></a>) – a <a class="reference internal" href="VideoCodecFrame.html#GstVideo.VideoCodecFrame" title="GstVideo.VideoCodecFrame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GstVideo.VideoCodecFrame</span></code></a></li>
+<li><strong>size</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – size of the buffer</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="../../Gst-1.0/enums.html#Gst.FlowReturn.OK" title="(in Gst 1.0 v1.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gst.FlowReturn.OK</span></code></a> if an output buffer could be allocated</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="../../Gst-1.0/enums.html#Gst.FlowReturn" title="(in Gst 1.0 v1.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gst.FlowReturn</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Helper function that allocates a buffer to hold an encoded video frame for <cite>self</cite>’s
+current <a class="reference internal" href="VideoCodecState.html#GstVideo.VideoCodecState" title="GstVideo.VideoCodecState"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GstVideo.VideoCodecState</span></code></a>.  Subclass should already have configured video
+state and set src pad caps.</p>
+<p>The buffer allocated here is owned by the frame and you should only
+keep references to the frame, not the buffer.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstVideo.VideoEncoder.finish_frame">
+<code class="descname">finish_frame</code><span class="sig-paren">(</span><em>frame</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.freedesktop.org/gstreamer/gst-plugins-base/blob/1.18.4/gst-libs/gst/video/gstvideoencoder.c#L2494"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#GstVideo.VideoEncoder.finish_frame" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>frame</strong> (<a class="reference internal" href="VideoCodecFrame.html#GstVideo.VideoCodecFrame" title="GstVideo.VideoCodecFrame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GstVideo.VideoCodecFrame</span></code></a>) – an encoded <a class="reference internal" href="VideoCodecFrame.html#GstVideo.VideoCodecFrame" title="GstVideo.VideoCodecFrame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GstVideo.VideoCodecFrame</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a <a class="reference external" href="../../Gst-1.0/enums.html#Gst.FlowReturn" title="(in Gst 1.0 v1.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gst.FlowReturn</span></code></a> resulting from sending data downstream</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="../../Gst-1.0/enums.html#Gst.FlowReturn" title="(in Gst 1.0 v1.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gst.FlowReturn</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p><cite>frame</cite> must have a valid encoded data buffer, whose metadata fields
+are then appropriately set according to frame data or no buffer at
+all if the frame should be dropped.
+It is subsequently pushed downstream or provided to <cite>pre_push</cite>.
+In any case, the frame is considered finished and released.</p>
+<p>After calling this function the output buffer of the frame is to be
+considered read-only. This function will also change the metadata
+of the buffer.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstVideo.VideoEncoder.finish_subframe">
+<code class="descname">finish_subframe</code><span class="sig-paren">(</span><em>frame</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.freedesktop.org/gstreamer/gst-plugins-base/blob/1.18.4/gst-libs/gst/video/gstvideoencoder.c#L2648"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#GstVideo.VideoEncoder.finish_subframe" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>frame</strong> (<a class="reference internal" href="VideoCodecFrame.html#GstVideo.VideoCodecFrame" title="GstVideo.VideoCodecFrame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GstVideo.VideoCodecFrame</span></code></a>) – a <a class="reference internal" href="VideoCodecFrame.html#GstVideo.VideoCodecFrame" title="GstVideo.VideoCodecFrame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GstVideo.VideoCodecFrame</span></code></a> being encoded</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a <a class="reference external" href="../../Gst-1.0/enums.html#Gst.FlowReturn" title="(in Gst 1.0 v1.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gst.FlowReturn</span></code></a> resulting from pushing the buffer downstream.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="../../Gst-1.0/enums.html#Gst.FlowReturn" title="(in Gst 1.0 v1.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gst.FlowReturn</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>If multiple subframes are produced for one input frame then use this method
+for each subframe, except for the last one. Before calling this function,
+you need to fill frame-&gt;output_buffer with the encoded buffer to push.</p>
+<p>You must call <a class="reference internal" href="#GstVideo.VideoEncoder.finish_frame" title="GstVideo.VideoEncoder.finish_frame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GstVideo.VideoEncoder.finish_frame</span></code></a>() for the last sub-frame
+to tell the encoder that the frame has been fully encoded.</p>
+<p>This function will change the metadata of <cite>frame</cite> and frame-&gt;output_buffer
+will be pushed downstream.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.18.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstVideo.VideoEncoder.get_allocator">
+<code class="descname">get_allocator</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.freedesktop.org/gstreamer/gst-plugins-base/blob/1.18.4/gst-libs/gst/video/gstvideoencoder.c#L3011"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#GstVideo.VideoEncoder.get_allocator" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">allocator:</th><td class="field-body">the <a class="reference external" href="../../Gst-1.0/classes/Allocator.html#Gst.Allocator" title="(in Gst 1.0 v1.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gst.Allocator</span></code></a>
+used</td>
+</tr>
+<tr class="field-even field"><th class="field-name">params:</th><td class="field-body">the
+<a class="reference external" href="../../Gst-1.0/classes/AllocationParams.html#Gst.AllocationParams" title="(in Gst 1.0 v1.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gst.AllocationParams</span></code></a> of <cite>allocator</cite></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">(<strong>allocator</strong>: <a class="reference external" href="../../Gst-1.0/classes/Allocator.html#Gst.Allocator" title="(in Gst 1.0 v1.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gst.Allocator</span></code></a>, <strong>params</strong>: <a class="reference external" href="../../Gst-1.0/classes/AllocationParams.html#Gst.AllocationParams" title="(in Gst 1.0 v1.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gst.AllocationParams</span></code></a>)</td>
+</tr>
+</tbody>
+</table>
+<p>Lets <a class="reference internal" href="#GstVideo.VideoEncoder" title="GstVideo.VideoEncoder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GstVideo.VideoEncoder</span></code></a> sub-classes to know the memory <cite>allocator</cite>
+used by the base class and its <cite>params</cite>.</p>
+<p>Unref the <cite>allocator</cite> after use it.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstVideo.VideoEncoder.get_frame">
+<code class="descname">get_frame</code><span class="sig-paren">(</span><em>frame_number</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.freedesktop.org/gstreamer/gst-plugins-base/blob/1.18.4/gst-libs/gst/video/gstvideoencoder.c#L2910"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#GstVideo.VideoEncoder.get_frame" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>frame_number</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – system_frame_number of a frame</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">pending unfinished <a class="reference internal" href="VideoCodecFrame.html#GstVideo.VideoCodecFrame" title="GstVideo.VideoCodecFrame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GstVideo.VideoCodecFrame</span></code></a> identified by <cite>frame_number</cite>.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="VideoCodecFrame.html#GstVideo.VideoCodecFrame" title="GstVideo.VideoCodecFrame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GstVideo.VideoCodecFrame</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get a pending unfinished <a class="reference internal" href="VideoCodecFrame.html#GstVideo.VideoCodecFrame" title="GstVideo.VideoCodecFrame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GstVideo.VideoCodecFrame</span></code></a></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstVideo.VideoEncoder.get_frames">
+<code class="descname">get_frames</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.freedesktop.org/gstreamer/gst-plugins-base/blob/1.18.4/gst-libs/gst/video/gstvideoencoder.c#L2940"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#GstVideo.VideoEncoder.get_frames" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">pending unfinished <a class="reference internal" href="VideoCodecFrame.html#GstVideo.VideoCodecFrame" title="GstVideo.VideoCodecFrame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GstVideo.VideoCodecFrame</span></code></a>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">[<a class="reference internal" href="VideoCodecFrame.html#GstVideo.VideoCodecFrame" title="GstVideo.VideoCodecFrame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GstVideo.VideoCodecFrame</span></code></a>]</td>
+</tr>
+</tbody>
+</table>
+<p>Get all pending unfinished <a class="reference internal" href="VideoCodecFrame.html#GstVideo.VideoCodecFrame" title="GstVideo.VideoCodecFrame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GstVideo.VideoCodecFrame</span></code></a></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstVideo.VideoEncoder.get_latency">
+<code class="descname">get_latency</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.freedesktop.org/gstreamer/gst-plugins-base/blob/1.18.4/gst-libs/gst/video/gstvideoencoder.c#L2869"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#GstVideo.VideoEncoder.get_latency" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">min_latency:</th><td class="field-body">address of variable in which to store the
+configured minimum latency, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">max_latency:</th><td class="field-body">address of variable in which to store the
+configured maximum latency, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">(<strong>min_latency</strong>: <a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>, <strong>max_latency</strong>: <a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>)</td>
+</tr>
+</tbody>
+</table>
+<p>Query the configured encoding latency. Results will be returned via
+<cite>min_latency</cite> and <cite>max_latency</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstVideo.VideoEncoder.get_max_encode_time">
+<code class="descname">get_max_encode_time</code><span class="sig-paren">(</span><em>frame</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.freedesktop.org/gstreamer/gst-plugins-base/blob/1.18.4/gst-libs/gst/video/gstvideoencoder.c#L3061"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#GstVideo.VideoEncoder.get_max_encode_time" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>frame</strong> (<a class="reference internal" href="VideoCodecFrame.html#GstVideo.VideoCodecFrame" title="GstVideo.VideoCodecFrame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GstVideo.VideoCodecFrame</span></code></a>) – a <a class="reference internal" href="VideoCodecFrame.html#GstVideo.VideoCodecFrame" title="GstVideo.VideoCodecFrame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GstVideo.VideoCodecFrame</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">max decoding time.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Determines maximum possible encoding time for <cite>frame</cite> that will
+allow it to encode and arrive in time (as determined by QoS events).
+In particular, a negative result means encoding in time is no longer possible
+and should therefore occur as soon/skippy as possible.</p>
+<p>If no QoS events have been received from downstream, or if
+<a class="reference internal" href="#GstVideo.VideoEncoder" title="GstVideo.VideoEncoder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GstVideo.VideoEncoder</span></code></a> <a class="reference internal" href="#GstVideo.VideoEncoder.props.qos" title="GstVideo.VideoEncoder.props.qos"><code class="xref py py-data docutils literal notranslate"><span class="pre">:qos</span></code></a> is disabled this function returns <a class="reference external" href="../../GObject-2.0/constants.html#GObject.G_MAXINT64" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GObject.G_MAXINT64</span></code></a>.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.14.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstVideo.VideoEncoder.get_min_force_key_unit_interval">
+<code class="descname">get_min_force_key_unit_interval</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.freedesktop.org/gstreamer/gst-plugins-base/blob/1.18.4/gst-libs/gst/video/gstvideoencoder.c#L3159"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#GstVideo.VideoEncoder.get_min_force_key_unit_interval" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the minimum force-keyunit interval</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns the minimum force-keyunit interval, see <a class="reference internal" href="#GstVideo.VideoEncoder.set_min_force_key_unit_interval" title="GstVideo.VideoEncoder.set_min_force_key_unit_interval"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GstVideo.VideoEncoder.set_min_force_key_unit_interval</span></code></a>()
+for more details.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.18.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstVideo.VideoEncoder.get_oldest_frame">
+<code class="descname">get_oldest_frame</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.freedesktop.org/gstreamer/gst-plugins-base/blob/1.18.4/gst-libs/gst/video/gstvideoencoder.c#L2888"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#GstVideo.VideoEncoder.get_oldest_frame" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">oldest unfinished pending <a class="reference internal" href="VideoCodecFrame.html#GstVideo.VideoCodecFrame" title="GstVideo.VideoCodecFrame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GstVideo.VideoCodecFrame</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="VideoCodecFrame.html#GstVideo.VideoCodecFrame" title="GstVideo.VideoCodecFrame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GstVideo.VideoCodecFrame</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get the oldest unfinished pending <a class="reference internal" href="VideoCodecFrame.html#GstVideo.VideoCodecFrame" title="GstVideo.VideoCodecFrame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GstVideo.VideoCodecFrame</span></code></a></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstVideo.VideoEncoder.get_output_state">
+<code class="descname">get_output_state</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.freedesktop.org/gstreamer/gst-plugins-base/blob/1.18.4/gst-libs/gst/video/gstvideoencoder.c#L2762"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#GstVideo.VideoEncoder.get_output_state" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference internal" href="VideoCodecState.html#GstVideo.VideoCodecState" title="GstVideo.VideoCodecState"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GstVideo.VideoCodecState</span></code></a> describing format of video data.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="VideoCodecState.html#GstVideo.VideoCodecState" title="GstVideo.VideoCodecState"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GstVideo.VideoCodecState</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get the current <a class="reference internal" href="VideoCodecState.html#GstVideo.VideoCodecState" title="GstVideo.VideoCodecState"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GstVideo.VideoCodecState</span></code></a></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstVideo.VideoEncoder.is_qos_enabled">
+<code class="descname">is_qos_enabled</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.freedesktop.org/gstreamer/gst-plugins-base/blob/1.18.4/gst-libs/gst/video/gstvideoencoder.c#L3114"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#GstVideo.VideoEncoder.is_qos_enabled" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if the encoder is configured to perform Quality-of-Service.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Checks if <cite>self</cite> is currently configured to handle Quality-of-Service
+events from downstream.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.14.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstVideo.VideoEncoder.merge_tags">
+<code class="descname">merge_tags</code><span class="sig-paren">(</span><em>tags</em>, <em>mode</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.freedesktop.org/gstreamer/gst-plugins-base/blob/1.18.4/gst-libs/gst/video/gstvideoencoder.c#L2971"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#GstVideo.VideoEncoder.merge_tags" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>tags</strong> (<a class="reference external" href="../../Gst-1.0/classes/TagList.html#Gst.TagList" title="(in Gst 1.0 v1.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gst.TagList</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – a <a class="reference external" href="../../Gst-1.0/classes/TagList.html#Gst.TagList" title="(in Gst 1.0 v1.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gst.TagList</span></code></a> to merge, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> to unset
+previously-set tags</li>
+<li><strong>mode</strong> (<a class="reference external" href="../../Gst-1.0/enums.html#Gst.TagMergeMode" title="(in Gst 1.0 v1.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gst.TagMergeMode</span></code></a>) – the <a class="reference external" href="../../Gst-1.0/enums.html#Gst.TagMergeMode" title="(in Gst 1.0 v1.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gst.TagMergeMode</span></code></a> to use, usually <a class="reference external" href="../../Gst-1.0/enums.html#Gst.TagMergeMode.REPLACE" title="(in Gst 1.0 v1.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gst.TagMergeMode.REPLACE</span></code></a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Sets the video encoder tags and how they should be merged with any
+upstream stream tags. This will override any tags previously-set
+with <a class="reference internal" href="#GstVideo.VideoEncoder.merge_tags" title="GstVideo.VideoEncoder.merge_tags"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GstVideo.VideoEncoder.merge_tags</span></code></a>().</p>
+<p>Note that this is provided for convenience, and the subclass is
+not required to use this and can still do tag handling on its own.</p>
+<p>MT safe.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstVideo.VideoEncoder.negotiate">
+<code class="descname">negotiate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.freedesktop.org/gstreamer/gst-plugins-base/blob/1.18.4/gst-libs/gst/video/gstvideoencoder.c#L2003"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#GstVideo.VideoEncoder.negotiate" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if the negotiation succeeded, else <a class="reference external" href="http://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Negotiate with downstream elements to currently configured <a class="reference internal" href="VideoCodecState.html#GstVideo.VideoCodecState" title="GstVideo.VideoCodecState"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GstVideo.VideoCodecState</span></code></a>.
+Unmark <a class="reference external" href="../../Gst-1.0/flags.html#Gst.PadFlags.NEED_RECONFIGURE" title="(in Gst 1.0 v1.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gst.PadFlags.NEED_RECONFIGURE</span></code></a> in any case. But mark it again if
+negotiate fails.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstVideo.VideoEncoder.proxy_getcaps">
+<code class="descname">proxy_getcaps</code><span class="sig-paren">(</span><em>caps</em>, <em>filter</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.freedesktop.org/gstreamer/gst-plugins-base/blob/1.18.4/gst-libs/gst/video/gstvideoencoder.c#L789"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#GstVideo.VideoEncoder.proxy_getcaps" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>caps</strong> (<a class="reference external" href="../../Gst-1.0/classes/Caps.html#Gst.Caps" title="(in Gst 1.0 v1.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gst.Caps</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – initial caps</li>
+<li><strong>filter</strong> (<a class="reference external" href="../../Gst-1.0/classes/Caps.html#Gst.Caps" title="(in Gst 1.0 v1.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gst.Caps</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – filter caps</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">a <a class="reference external" href="../../Gst-1.0/classes/Caps.html#Gst.Caps" title="(in Gst 1.0 v1.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gst.Caps</span></code></a> owned by caller</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="../../Gst-1.0/classes/Caps.html#Gst.Caps" title="(in Gst 1.0 v1.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gst.Caps</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Returns caps that express <cite>caps</cite> (or sink template caps if <cite>caps</cite> == <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>)
+restricted to resolution/format/… combinations supported by downstream
+elements (e.g. muxers).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstVideo.VideoEncoder.set_headers">
+<code class="descname">set_headers</code><span class="sig-paren">(</span><em>headers</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.freedesktop.org/gstreamer/gst-plugins-base/blob/1.18.4/gst-libs/gst/video/gstvideoencoder.c#L623"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#GstVideo.VideoEncoder.set_headers" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>headers</strong> ([<a class="reference external" href="../../Gst-1.0/classes/Buffer.html#Gst.Buffer" title="(in Gst 1.0 v1.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gst.Buffer</span></code></a>]) – a list of <a class="reference external" href="../../Gst-1.0/classes/Buffer.html#Gst.Buffer" title="(in Gst 1.0 v1.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gst.Buffer</span></code></a> containing the codec header</td>
+</tr>
+</tbody>
+</table>
+<p>Set the codec headers to be sent downstream whenever requested.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstVideo.VideoEncoder.set_latency">
+<code class="descname">set_latency</code><span class="sig-paren">(</span><em>min_latency</em>, <em>max_latency</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.freedesktop.org/gstreamer/gst-plugins-base/blob/1.18.4/gst-libs/gst/video/gstvideoencoder.c#L2842"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#GstVideo.VideoEncoder.set_latency" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>min_latency</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – minimum latency</li>
+<li><strong>max_latency</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – maximum latency</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Informs baseclass of encoding latency.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstVideo.VideoEncoder.set_min_force_key_unit_interval">
+<code class="descname">set_min_force_key_unit_interval</code><span class="sig-paren">(</span><em>interval</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.freedesktop.org/gstreamer/gst-plugins-base/blob/1.18.4/gst-libs/gst/video/gstvideoencoder.c#L3138"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#GstVideo.VideoEncoder.set_min_force_key_unit_interval" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>interval</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – minimum interval</td>
+</tr>
+</tbody>
+</table>
+<p>Sets the minimum interval for requesting keyframes based on force-keyunit
+events. Setting this to 0 will allow to handle every event, setting this to
+<a class="reference external" href="../../Gst-1.0/constants.html#Gst.CLOCK_TIME_NONE" title="(in Gst 1.0 v1.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gst.CLOCK_TIME_NONE</span></code></a> causes force-keyunit events to be ignored.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.18.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstVideo.VideoEncoder.set_min_pts">
+<code class="descname">set_min_pts</code><span class="sig-paren">(</span><em>min_pts</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.freedesktop.org/gstreamer/gst-plugins-base/blob/1.18.4/gst-libs/gst/video/gstvideoencoder.c#L3036"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#GstVideo.VideoEncoder.set_min_pts" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>min_pts</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – minimal PTS that will be passed to handle_frame</td>
+</tr>
+</tbody>
+</table>
+<p>Request minimal value for PTS passed to handle_frame.</p>
+<p>For streams with reordered frames this can be used to ensure that there
+is enough time to accommodate first DTS, which may be less than first PTS</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.6.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstVideo.VideoEncoder.set_output_state">
+<code class="descname">set_output_state</code><span class="sig-paren">(</span><em>caps</em>, <em>reference</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.freedesktop.org/gstreamer/gst-plugins-base/blob/1.18.4/gst-libs/gst/video/gstvideoencoder.c#L2802"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#GstVideo.VideoEncoder.set_output_state" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>caps</strong> (<a class="reference external" href="../../Gst-1.0/classes/Caps.html#Gst.Caps" title="(in Gst 1.0 v1.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gst.Caps</span></code></a>) – the <a class="reference external" href="../../Gst-1.0/classes/Caps.html#Gst.Caps" title="(in Gst 1.0 v1.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gst.Caps</span></code></a> to use for the output</li>
+<li><strong>reference</strong> (<a class="reference internal" href="VideoCodecState.html#GstVideo.VideoCodecState" title="GstVideo.VideoCodecState"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GstVideo.VideoCodecState</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – An optional reference <cite>GstVideoCodecState</cite></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">the newly configured output state.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="VideoCodecState.html#GstVideo.VideoCodecState" title="GstVideo.VideoCodecState"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GstVideo.VideoCodecState</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Creates a new <a class="reference internal" href="VideoCodecState.html#GstVideo.VideoCodecState" title="GstVideo.VideoCodecState"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GstVideo.VideoCodecState</span></code></a> with the specified caps as the output state
+for the encoder.
+Any previously set output state on <cite>self</cite> will be replaced by the newly
+created one.</p>
+<p>The specified <cite>caps</cite> should not contain any resolution, pixel-aspect-ratio,
+framerate, codec-data, …. Those should be specified instead in the returned
+<a class="reference internal" href="VideoCodecState.html#GstVideo.VideoCodecState" title="GstVideo.VideoCodecState"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GstVideo.VideoCodecState</span></code></a>.</p>
+<p>If the subclass wishes to copy over existing fields (like pixel aspect ratio,
+or framerate) from an existing <a class="reference internal" href="VideoCodecState.html#GstVideo.VideoCodecState" title="GstVideo.VideoCodecState"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GstVideo.VideoCodecState</span></code></a>, it can be provided as a
+<cite>reference</cite>.</p>
+<p>If the subclass wishes to override some fields from the output state (like
+pixel-aspect-ratio or framerate) it can do so on the returned <a class="reference internal" href="VideoCodecState.html#GstVideo.VideoCodecState" title="GstVideo.VideoCodecState"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GstVideo.VideoCodecState</span></code></a>.</p>
+<p>The new output state will only take effect (set on pads and buffers) starting
+from the next call to <a class="reference internal" href="#GstVideo.VideoEncoder.finish_frame" title="GstVideo.VideoEncoder.finish_frame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GstVideo.VideoEncoder.finish_frame</span></code></a>().</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstVideo.VideoEncoder.set_qos_enabled">
+<code class="descname">set_qos_enabled</code><span class="sig-paren">(</span><em>enabled</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.freedesktop.org/gstreamer/gst-plugins-base/blob/1.18.4/gst-libs/gst/video/gstvideoencoder.c#L3096"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#GstVideo.VideoEncoder.set_qos_enabled" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>enabled</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a>) – the new qos value.</td>
+</tr>
+</tbody>
+</table>
+<p>Configures <cite>self</cite> to handle Quality-of-Service events from downstream.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.14.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstVideo.VideoEncoder.do_close">
+<code class="descname">do_close</code><span class="sig-paren">(</span><span class="sig-paren">)</span><em class="property"> virtual</em><a class="headerlink" href="#GstVideo.VideoEncoder.do_close" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstVideo.VideoEncoder.do_decide_allocation">
+<code class="descname">do_decide_allocation</code><span class="sig-paren">(</span><em>query</em><span class="sig-paren">)</span><em class="property"> virtual</em><a class="headerlink" href="#GstVideo.VideoEncoder.do_decide_allocation" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>query</strong> (<a class="reference external" href="../../Gst-1.0/classes/Query.html#Gst.Query" title="(in Gst 1.0 v1.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gst.Query</span></code></a>) – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstVideo.VideoEncoder.do_finish">
+<code class="descname">do_finish</code><span class="sig-paren">(</span><span class="sig-paren">)</span><em class="property"> virtual</em><a class="headerlink" href="#GstVideo.VideoEncoder.do_finish" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="../../Gst-1.0/enums.html#Gst.FlowReturn" title="(in Gst 1.0 v1.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gst.FlowReturn</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstVideo.VideoEncoder.do_flush">
+<code class="descname">do_flush</code><span class="sig-paren">(</span><span class="sig-paren">)</span><em class="property"> virtual</em><a class="headerlink" href="#GstVideo.VideoEncoder.do_flush" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstVideo.VideoEncoder.do_getcaps">
+<code class="descname">do_getcaps</code><span class="sig-paren">(</span><em>filter</em><span class="sig-paren">)</span><em class="property"> virtual</em><a class="headerlink" href="#GstVideo.VideoEncoder.do_getcaps" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>filter</strong> (<a class="reference external" href="../../Gst-1.0/classes/Caps.html#Gst.Caps" title="(in Gst 1.0 v1.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gst.Caps</span></code></a>) – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="../../Gst-1.0/classes/Caps.html#Gst.Caps" title="(in Gst 1.0 v1.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gst.Caps</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstVideo.VideoEncoder.do_handle_frame">
+<code class="descname">do_handle_frame</code><span class="sig-paren">(</span><em>frame</em><span class="sig-paren">)</span><em class="property"> virtual</em><a class="headerlink" href="#GstVideo.VideoEncoder.do_handle_frame" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>frame</strong> (<a class="reference internal" href="VideoCodecFrame.html#GstVideo.VideoCodecFrame" title="GstVideo.VideoCodecFrame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GstVideo.VideoCodecFrame</span></code></a>) – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="../../Gst-1.0/enums.html#Gst.FlowReturn" title="(in Gst 1.0 v1.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gst.FlowReturn</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstVideo.VideoEncoder.do_negotiate">
+<code class="descname">do_negotiate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><em class="property"> virtual</em><a class="headerlink" href="#GstVideo.VideoEncoder.do_negotiate" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if the negotiation succeeded, else <a class="reference external" href="http://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Negotiate with downstream elements to currently configured <a class="reference internal" href="VideoCodecState.html#GstVideo.VideoCodecState" title="GstVideo.VideoCodecState"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GstVideo.VideoCodecState</span></code></a>.
+Unmark <a class="reference external" href="../../Gst-1.0/flags.html#Gst.PadFlags.NEED_RECONFIGURE" title="(in Gst 1.0 v1.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gst.PadFlags.NEED_RECONFIGURE</span></code></a> in any case. But mark it again if
+negotiate fails.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstVideo.VideoEncoder.do_open">
+<code class="descname">do_open</code><span class="sig-paren">(</span><span class="sig-paren">)</span><em class="property"> virtual</em><a class="headerlink" href="#GstVideo.VideoEncoder.do_open" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstVideo.VideoEncoder.do_pre_push">
+<code class="descname">do_pre_push</code><span class="sig-paren">(</span><em>frame</em><span class="sig-paren">)</span><em class="property"> virtual</em><a class="headerlink" href="#GstVideo.VideoEncoder.do_pre_push" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>frame</strong> (<a class="reference internal" href="VideoCodecFrame.html#GstVideo.VideoCodecFrame" title="GstVideo.VideoCodecFrame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GstVideo.VideoCodecFrame</span></code></a>) – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="../../Gst-1.0/enums.html#Gst.FlowReturn" title="(in Gst 1.0 v1.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gst.FlowReturn</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstVideo.VideoEncoder.do_propose_allocation">
+<code class="descname">do_propose_allocation</code><span class="sig-paren">(</span><em>query</em><span class="sig-paren">)</span><em class="property"> virtual</em><a class="headerlink" href="#GstVideo.VideoEncoder.do_propose_allocation" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>query</strong> (<a class="reference external" href="../../Gst-1.0/classes/Query.html#Gst.Query" title="(in Gst 1.0 v1.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gst.Query</span></code></a>) – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstVideo.VideoEncoder.do_reset">
+<code class="descname">do_reset</code><span class="sig-paren">(</span><em>hard</em><span class="sig-paren">)</span><em class="property"> virtual</em><a class="headerlink" href="#GstVideo.VideoEncoder.do_reset" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>hard</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a>) – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstVideo.VideoEncoder.do_set_format">
+<code class="descname">do_set_format</code><span class="sig-paren">(</span><em>state</em><span class="sig-paren">)</span><em class="property"> virtual</em><a class="headerlink" href="#GstVideo.VideoEncoder.do_set_format" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>state</strong> (<a class="reference internal" href="VideoCodecState.html#GstVideo.VideoCodecState" title="GstVideo.VideoCodecState"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GstVideo.VideoCodecState</span></code></a>) – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstVideo.VideoEncoder.do_sink_event">
+<code class="descname">do_sink_event</code><span class="sig-paren">(</span><em>event</em><span class="sig-paren">)</span><em class="property"> virtual</em><a class="headerlink" href="#GstVideo.VideoEncoder.do_sink_event" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>event</strong> (<a class="reference external" href="../../Gst-1.0/classes/Event.html#Gst.Event" title="(in Gst 1.0 v1.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gst.Event</span></code></a>) – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstVideo.VideoEncoder.do_sink_query">
+<code class="descname">do_sink_query</code><span class="sig-paren">(</span><em>query</em><span class="sig-paren">)</span><em class="property"> virtual</em><a class="headerlink" href="#GstVideo.VideoEncoder.do_sink_query" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>query</strong> (<a class="reference external" href="../../Gst-1.0/classes/Query.html#Gst.Query" title="(in Gst 1.0 v1.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gst.Query</span></code></a>) – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstVideo.VideoEncoder.do_src_event">
+<code class="descname">do_src_event</code><span class="sig-paren">(</span><em>event</em><span class="sig-paren">)</span><em class="property"> virtual</em><a class="headerlink" href="#GstVideo.VideoEncoder.do_src_event" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>event</strong> (<a class="reference external" href="../../Gst-1.0/classes/Event.html#Gst.Event" title="(in Gst 1.0 v1.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gst.Event</span></code></a>) – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstVideo.VideoEncoder.do_src_query">
+<code class="descname">do_src_query</code><span class="sig-paren">(</span><em>query</em><span class="sig-paren">)</span><em class="property"> virtual</em><a class="headerlink" href="#GstVideo.VideoEncoder.do_src_query" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>query</strong> (<a class="reference external" href="../../Gst-1.0/classes/Query.html#Gst.Query" title="(in Gst 1.0 v1.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gst.Query</span></code></a>) – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstVideo.VideoEncoder.do_start">
+<code class="descname">do_start</code><span class="sig-paren">(</span><span class="sig-paren">)</span><em class="property"> virtual</em><a class="headerlink" href="#GstVideo.VideoEncoder.do_start" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstVideo.VideoEncoder.do_stop">
+<code class="descname">do_stop</code><span class="sig-paren">(</span><span class="sig-paren">)</span><em class="property"> virtual</em><a class="headerlink" href="#GstVideo.VideoEncoder.do_stop" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstVideo.VideoEncoder.do_transform_meta">
+<code class="descname">do_transform_meta</code><span class="sig-paren">(</span><em>frame</em>, <em>meta</em><span class="sig-paren">)</span><em class="property"> virtual</em><a class="headerlink" href="#GstVideo.VideoEncoder.do_transform_meta" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>frame</strong> (<a class="reference internal" href="VideoCodecFrame.html#GstVideo.VideoCodecFrame" title="GstVideo.VideoCodecFrame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GstVideo.VideoCodecFrame</span></code></a>) – </li>
+<li><strong>meta</strong> (<a class="reference external" href="../../Gst-1.0/classes/Meta.html#Gst.Meta" title="(in Gst 1.0 v1.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gst.Meta</span></code></a>) – </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="property-details">
+<h2>Property Details<a class="headerlink" href="#property-details" title="Permalink to this headline">¶</a></h2>
+<dl class="data">
+<dt id="GstVideo.VideoEncoder.props.min_force_key_unit_interval">
+<code class="descclassname">GstVideo.VideoEncoder.props.</code><code class="descname">min_force_key_unit_interval</code><a class="headerlink" href="#GstVideo.VideoEncoder.props.min_force_key_unit_interval" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">min-force-key-unit-interval</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">0</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Minimum interval between force-keyunit requests in nanoseconds. See
+<a class="reference internal" href="#GstVideo.VideoEncoder.set_min_force_key_unit_interval" title="GstVideo.VideoEncoder.set_min_force_key_unit_interval"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GstVideo.VideoEncoder.set_min_force_key_unit_interval</span></code></a>() for more details.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.18.</span></p>
+</div>
+</dd></dl>
+
+<dl class="data">
+<dt id="GstVideo.VideoEncoder.props.qos">
+<code class="descclassname">GstVideo.VideoEncoder.props.</code><code class="descname">qos</code><a class="headerlink" href="#GstVideo.VideoEncoder.props.qos" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">qos</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Handle Quality-of-Service events from downstream</p>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div> 
+
+</body>
+</html>

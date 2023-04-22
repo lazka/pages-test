@@ -1,0 +1,420 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    LibvirtGObject.DomainDisk -
+    
+      Classes -
+    
+    LibvirtGObject 1.0
+  </title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/css/pgi.css" type="text/css" />
+  
+
+  
+  <script type="text/javascript">
+
+    function openSidebar(element) {
+        window.location.href = element.href + location.hash;
+        return false;
+    }
+
+    function inIframe() {
+        try {
+            return window.self !== window.top;
+        } catch (e) {
+            return true;
+        }
+    }
+
+    function onLoaded() {
+        if(!inIframe()) {
+            var icons = document.getElementsByClassName('open-sidebar');
+
+            for (var i = 0; i < icons.length; i ++) {
+                icons[i].style.display = 'table-cell';
+            }
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', onLoaded, false);
+
+  </script>
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="LibvirtGObject 1.0 Python API Docs" href="../index.html"/>
+        <link rel="up" title="Classes" href="../classes.html"/>
+        <link rel="next" title="LibvirtGObject.DomainInterface" href="DomainInterface.html"/>
+        <link rel="prev" title="LibvirtGObject.DomainDevice" href="DomainDevice.html"/> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+<div class="non-fixed-bar">
+<table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#LibvirtGObject-1.0/classes/DomainDisk.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">LibvirtGObject 1.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>LibvirtGObject.DomainDisk</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="DomainDevice.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="DomainInterface.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">LibvirtGObject.DomainDisk</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+<div class="fixed-bar">
+  <table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#LibvirtGObject-1.0/classes/DomainDisk.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">LibvirtGObject 1.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>LibvirtGObject.DomainDisk</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="DomainDevice.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="DomainInterface.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">LibvirtGObject.DomainDisk</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+  <div class="wy-grid-for-nav">
+
+    
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="main">
+            
+  <div class="section" id="libvirtgobject-domaindisk">
+<h1>LibvirtGObject.DomainDisk<a class="headerlink" href="#libvirtgobject-domaindisk" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<svg width="150pt" height="134pt"
+ viewBox="0.00 0.00 150.00 134.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 130)">
+<title>g</title>
+<!-- GObject.Object -->
+<g id="node1" class="node">
+<title>GObject.Object</title>
+<g id="a_node1"><a xlink:href="../../GObject-2.0/classes/Object.html#GObject.Object" xlink:title="GObject.Object">
+<path fill="none" stroke="#75507b" d="M105,-126C105,-126 37,-126 37,-126 34,-126 31,-123 31,-120 31,-120 31,-114 31,-114 31,-111 34,-108 37,-108 37,-108 105,-108 105,-108 108,-108 111,-111 111,-114 111,-114 111,-120 111,-120 111,-123 108,-126 105,-126"/>
+<text text-anchor="middle" x="71" y="-114.7" font-family="inherit" font-size="8.50">GObject.Object</text>
+</a>
+</g>
+</g>
+<!-- LibvirtGObject.DomainDevice -->
+<g id="node2" class="node">
+<title>LibvirtGObject.DomainDevice</title>
+<g id="a_node2"><a xlink:href="DomainDevice.html#LibvirtGObject.DomainDevice" xlink:title="LibvirtGObject.DomainDevice">
+<path fill="none" stroke="#aaaaaa" d="M136,-72C136,-72 6,-72 6,-72 3,-72 0,-69 0,-66 0,-66 0,-60 0,-60 0,-57 3,-54 6,-54 6,-54 136,-54 136,-54 139,-54 142,-57 142,-60 142,-60 142,-66 142,-66 142,-69 139,-72 136,-72"/>
+<text text-anchor="middle" x="71" y="-60.7" font-family="inherit" font-size="8.50">LibvirtGObject.DomainDevice</text>
+</a>
+</g>
+</g>
+<!-- GObject.Object&#45;&gt;LibvirtGObject.DomainDevice -->
+<g id="edge1" class="edge">
+<title>GObject.Object&#45;&gt;LibvirtGObject.DomainDevice</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M71,-107.88C71,-99.76 71,-87.13 71,-77.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="72.75,-77.24 71,-72.24 69.25,-77.24 72.75,-77.24"/>
+</g>
+<!-- LibvirtGObject.DomainDisk -->
+<g id="node3" class="node">
+<title>LibvirtGObject.DomainDisk</title>
+<g id="a_node3"><a xlink:href="#LibvirtGObject.DomainDisk" xlink:title="LibvirtGObject.DomainDisk">
+<path fill="none" stroke="#75507b" d="M130.5,-18C130.5,-18 11.5,-18 11.5,-18 8.5,-18 5.5,-15 5.5,-12 5.5,-12 5.5,-6 5.5,-6 5.5,-3 8.5,0 11.5,0 11.5,0 130.5,0 130.5,0 133.5,0 136.5,-3 136.5,-6 136.5,-6 136.5,-12 136.5,-12 136.5,-15 133.5,-18 130.5,-18"/>
+<text text-anchor="middle" x="71" y="-6.7" font-family="inherit" font-size="8.50">LibvirtGObject.DomainDisk</text>
+</a>
+</g>
+</g>
+<!-- LibvirtGObject.DomainDevice&#45;&gt;LibvirtGObject.DomainDisk -->
+<g id="edge2" class="edge">
+<title>LibvirtGObject.DomainDevice&#45;&gt;LibvirtGObject.DomainDisk</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M71,-53.88C71,-45.76 71,-33.13 71,-23.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="72.75,-23.24 71,-18.24 69.25,-23.24 72.75,-23.24"/>
+</g>
+</g>
+</svg>
+</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Subclasses:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="methods">
+<span id="libvirtgobject-domaindisk-methods"></span><h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="DomainDevice.html#libvirtgobject-domaindevice-methods"><span class="std std-ref">LibvirtGObject.DomainDevice (2)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (37)</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Structs:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/ObjectClass.html#gobject-objectclass-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.ObjectClass (5)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="99%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#LibvirtGObject.DomainDisk.get_stats" title="LibvirtGObject.DomainDisk.get_stats"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_stats</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#LibvirtGObject.DomainDisk.resize" title="LibvirtGObject.DomainDisk.resize"><code class="xref py py-func docutils literal notranslate"><span class="pre">resize</span></code></a> (size, flags)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="virtual-methods">
+<span id="libvirtgobject-domaindisk-vfuncs"></span><h2>Virtual Methods<a class="headerlink" href="#virtual-methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-vfuncs" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (7)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="libvirtgobject-domaindisk-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="DomainDevice.html#libvirtgobject-domaindevice-props"><span class="std std-ref">LibvirtGObject.DomainDevice (2)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="signals">
+<span id="libvirtgobject-domaindisk-signals"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-signals" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fields">
+<span id="libvirtgobject-domaindisk-fields"></span><h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-fields" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="16%" />
+<col width="1%" />
+<col width="1%" />
+<col width="82%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Access</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>parent</td>
+<td><a class="reference internal" href="DomainDevice.html#LibvirtGObject.DomainDevice" title="LibvirtGObject.DomainDevice"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LibvirtGObject.DomainDevice</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="class-details">
+<h2>Class Details<a class="headerlink" href="#class-details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="LibvirtGObject.DomainDisk">
+<em class="property">class </em><code class="descclassname">LibvirtGObject.</code><code class="descname">DomainDisk</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#LibvirtGObject.DomainDisk" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Bases:</th><td class="field-body"><a class="reference internal" href="DomainDevice.html#LibvirtGObject.DomainDevice" title="LibvirtGObject.DomainDevice"><code class="xref py py-class docutils literal notranslate"><span class="pre">LibvirtGObject.DomainDevice</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Abstract:</th><td class="field-body">No</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Structure:</th><td class="field-body"><a class="reference internal" href="DomainDiskClass.html#LibvirtGObject.DomainDiskClass" title="LibvirtGObject.DomainDiskClass"><code class="xref py py-class docutils literal notranslate"><span class="pre">LibvirtGObject.DomainDiskClass</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="LibvirtGObject.DomainDisk.get_stats">
+<code class="descname">get_stats</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#LibvirtGObject.DomainDisk.get_stats" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference external" href="../../GLib-2.0/classes/Error.html#GLib.Error" title="(in GLib 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLib.Error</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the stats or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> in case of error.The
+returned object should be unreffed with <a class="reference external" href="../../GObject-2.0/classes/Object.html#GObject.Object.unref" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GObject.Object.unref</span></code></a>() when no longer
+needed.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="DomainDiskStats.html#LibvirtGObject.DomainDiskStats" title="LibvirtGObject.DomainDiskStats"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LibvirtGObject.DomainDiskStats</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>This function returns network disk stats. Individual fields
+within the stats structure may be returned as -1, which indicates
+that the hypervisor does not support that particular statistic.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="LibvirtGObject.DomainDisk.resize">
+<code class="descname">resize</code><span class="sig-paren">(</span><em>size</em>, <em>flags</em><span class="sig-paren">)</span><a class="headerlink" href="#LibvirtGObject.DomainDisk.resize" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>size</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – new size of the block image in kilobytes</li>
+<li><strong>flags</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – flags, currently unused. Pass ‘0’.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first"><a class="reference external" href="../../GLib-2.0/classes/Error.html#GLib.Error" title="(in GLib 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLib.Error</span></code></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if size was successfully changed, <a class="reference external" href="http://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a> otherwise.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>This function resize the disk of a running domain.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div> 
+
+</body>
+</html>

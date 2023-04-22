@@ -1,0 +1,784 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    Gtk.RadioToolButton -
+    
+      Classes -
+    
+    Gtk 3.0
+  </title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/css/pgi.css" type="text/css" />
+  
+
+  
+  <script type="text/javascript">
+
+    function openSidebar(element) {
+        window.location.href = element.href + location.hash;
+        return false;
+    }
+
+    function inIframe() {
+        try {
+            return window.self !== window.top;
+        } catch (e) {
+            return true;
+        }
+    }
+
+    function onLoaded() {
+        if(!inIframe()) {
+            var icons = document.getElementsByClassName('open-sidebar');
+
+            for (var i = 0; i < icons.length; i ++) {
+                icons[i].style.display = 'table-cell';
+            }
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', onLoaded, false);
+
+  </script>
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="Gtk 3.0 Python API Docs" href="../index.html"/>
+        <link rel="up" title="Classes" href="../classes.html"/>
+        <link rel="next" title="Gtk.Range" href="Range.html"/>
+        <link rel="prev" title="Gtk.RadioMenuItemAccessible" href="RadioMenuItemAccessible.html"/> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+<div class="non-fixed-bar">
+<table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#Gtk-3.0/classes/RadioToolButton.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Gtk 3.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>Gtk.RadioToolButton</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="RadioMenuItemAccessible.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="Range.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">Gtk.RadioToolButton</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#style-properties">Style Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#property-details">Property Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+<div class="fixed-bar">
+  <table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#Gtk-3.0/classes/RadioToolButton.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Gtk 3.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>Gtk.RadioToolButton</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="RadioMenuItemAccessible.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="Range.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">Gtk.RadioToolButton</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#style-properties">Style Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#property-details">Property Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+  <div class="wy-grid-for-nav">
+
+    
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="main">
+            
+  <div class="section" id="gtk-radiotoolbutton">
+<h1>Gtk.RadioToolButton<a class="headerlink" href="#gtk-radiotoolbutton" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<svg width="484pt" height="458pt"
+ viewBox="0.00 0.00 483.50 458.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 454)">
+<title>g</title>
+<!-- Atk.ImplementorIface -->
+<g id="node1" class="node">
+<title>Atk.ImplementorIface</title>
+<g id="a_node1"><a xlink:href="../../Atk-1.0/classes/ImplementorIface.html#Atk.ImplementorIface" xlink:title="Atk.ImplementorIface">
+<path fill="none" stroke="#3091d1" d="M329.5,-396C329.5,-396 233.5,-396 233.5,-396 230.5,-396 227.5,-393 227.5,-390 227.5,-390 227.5,-384 227.5,-384 227.5,-381 230.5,-378 233.5,-378 233.5,-378 329.5,-378 329.5,-378 332.5,-378 335.5,-381 335.5,-384 335.5,-384 335.5,-390 335.5,-390 335.5,-393 332.5,-396 329.5,-396"/>
+<text text-anchor="middle" x="281.5" y="-384.7" font-family="inherit" font-size="8.50">Atk.ImplementorIface</text>
+</a>
+</g>
+</g>
+<!-- Gtk.Widget -->
+<g id="node14" class="node">
+<title>Gtk.Widget</title>
+<g id="a_node14"><a xlink:href="Widget.html#Gtk.Widget" xlink:title="Gtk.Widget">
+<path fill="none" stroke="#aaaaaa" d="M288.5,-342C288.5,-342 236.5,-342 236.5,-342 233.5,-342 230.5,-339 230.5,-336 230.5,-336 230.5,-330 230.5,-330 230.5,-327 233.5,-324 236.5,-324 236.5,-324 288.5,-324 288.5,-324 291.5,-324 294.5,-327 294.5,-330 294.5,-330 294.5,-336 294.5,-336 294.5,-339 291.5,-342 288.5,-342"/>
+<text text-anchor="middle" x="262.5" y="-330.7" font-family="inherit" font-size="8.50">Gtk.Widget</text>
+</a>
+</g>
+</g>
+<!-- Atk.ImplementorIface&#45;&gt;Gtk.Widget -->
+<g id="edge1" class="edge">
+<title>Atk.ImplementorIface&#45;&gt;Gtk.Widget</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M278.53,-377.88C275.51,-369.6 270.78,-356.66 267.24,-346.97"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="268.87,-346.34 265.51,-342.24 265.58,-347.54 268.87,-346.34"/>
+</g>
+<!-- GObject.GInterface -->
+<g id="node2" class="node">
+<title>GObject.GInterface</title>
+<g id="a_node2"><a xlink:href="../../GObject-2.0/classes/GInterface.html#GObject.GInterface" xlink:title="GObject.GInterface">
+<path fill="none" stroke="#3091d1" d="M183.5,-450C183.5,-450 97.5,-450 97.5,-450 94.5,-450 91.5,-447 91.5,-444 91.5,-444 91.5,-438 91.5,-438 91.5,-435 94.5,-432 97.5,-432 97.5,-432 183.5,-432 183.5,-432 186.5,-432 189.5,-435 189.5,-438 189.5,-438 189.5,-444 189.5,-444 189.5,-447 186.5,-450 183.5,-450"/>
+<text text-anchor="middle" x="140.5" y="-438.7" font-family="inherit" font-size="8.50">GObject.GInterface</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Atk.ImplementorIface -->
+<g id="edge2" class="edge">
+<title>GObject.GInterface&#45;&gt;Atk.ImplementorIface</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M162.22,-431.99C187.09,-422.82 227.85,-407.79 254.68,-397.89"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="255.44,-399.48 259.52,-396.11 254.22,-396.19 255.44,-399.48"/>
+</g>
+<!-- Gtk.Actionable -->
+<g id="node5" class="node">
+<title>Gtk.Actionable</title>
+<g id="a_node5"><a xlink:href="Actionable.html#Gtk.Actionable" xlink:title="Gtk.Actionable">
+<path fill="none" stroke="#3091d1" d="M73,-342C73,-342 6,-342 6,-342 3,-342 0,-339 0,-336 0,-336 0,-330 0,-330 0,-327 3,-324 6,-324 6,-324 73,-324 73,-324 76,-324 79,-327 79,-330 79,-330 79,-336 79,-336 79,-339 76,-342 73,-342"/>
+<text text-anchor="middle" x="39.5" y="-330.7" font-family="inherit" font-size="8.50">Gtk.Actionable</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Gtk.Actionable -->
+<g id="edge5" class="edge">
+<title>GObject.GInterface&#45;&gt;Gtk.Actionable</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M131.23,-431.83C121.55,-423.19 106.07,-409.03 93.5,-396 77.47,-379.39 60.15,-359.02 49.56,-346.27"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="50.77,-345 46.24,-342.26 48.07,-347.23 50.77,-345"/>
+</g>
+<!-- Gtk.Activatable -->
+<g id="node6" class="node">
+<title>Gtk.Activatable</title>
+<g id="a_node6"><a xlink:href="Activatable.html#Gtk.Activatable" xlink:title="Gtk.Activatable">
+<path fill="none" stroke="#3091d1" d="M143.5,-288C143.5,-288 73.5,-288 73.5,-288 70.5,-288 67.5,-285 67.5,-282 67.5,-282 67.5,-276 67.5,-276 67.5,-273 70.5,-270 73.5,-270 73.5,-270 143.5,-270 143.5,-270 146.5,-270 149.5,-273 149.5,-276 149.5,-276 149.5,-282 149.5,-282 149.5,-285 146.5,-288 143.5,-288"/>
+<text text-anchor="middle" x="108.5" y="-276.7" font-family="inherit" font-size="8.50">Gtk.Activatable</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Gtk.Activatable -->
+<g id="edge4" class="edge">
+<title>GObject.GInterface&#45;&gt;Gtk.Activatable</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M137.54,-431.99C134.41,-423.26 129.51,-408.8 126.5,-396 117.85,-359.24 112.29,-314.92 109.88,-293.25"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="111.62,-293.02 109.34,-288.24 108.14,-293.4 111.62,-293.02"/>
+</g>
+<!-- Gtk.Buildable -->
+<g id="node8" class="node">
+<title>Gtk.Buildable</title>
+<g id="a_node8"><a xlink:href="Buildable.html#Gtk.Buildable" xlink:title="Gtk.Buildable">
+<path fill="none" stroke="#3091d1" d="M203.5,-396C203.5,-396 141.5,-396 141.5,-396 138.5,-396 135.5,-393 135.5,-390 135.5,-390 135.5,-384 135.5,-384 135.5,-381 138.5,-378 141.5,-378 141.5,-378 203.5,-378 203.5,-378 206.5,-378 209.5,-381 209.5,-384 209.5,-384 209.5,-390 209.5,-390 209.5,-393 206.5,-396 203.5,-396"/>
+<text text-anchor="middle" x="172.5" y="-384.7" font-family="inherit" font-size="8.50">Gtk.Buildable</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Gtk.Buildable -->
+<g id="edge3" class="edge">
+<title>GObject.GInterface&#45;&gt;Gtk.Buildable</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M145.5,-431.88C150.64,-423.53 158.7,-410.42 164.68,-400.7"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="166.3,-401.42 167.43,-396.24 163.32,-399.58 166.3,-401.42"/>
+</g>
+<!-- GObject.InitiallyUnowned -->
+<g id="node3" class="node">
+<title>GObject.InitiallyUnowned</title>
+<g id="a_node3"><a xlink:href="../../GObject-2.0/classes/InitiallyUnowned.html#GObject.InitiallyUnowned" xlink:title="GObject.InitiallyUnowned">
+<path fill="none" stroke="#75507b" d="M469.5,-396C469.5,-396 359.5,-396 359.5,-396 356.5,-396 353.5,-393 353.5,-390 353.5,-390 353.5,-384 353.5,-384 353.5,-381 356.5,-378 359.5,-378 359.5,-378 469.5,-378 469.5,-378 472.5,-378 475.5,-381 475.5,-384 475.5,-384 475.5,-390 475.5,-390 475.5,-393 472.5,-396 469.5,-396"/>
+<text text-anchor="middle" x="414.5" y="-384.7" font-family="inherit" font-size="8.50">GObject.InitiallyUnowned</text>
+</a>
+</g>
+</g>
+<!-- GObject.InitiallyUnowned&#45;&gt;Gtk.Widget -->
+<g id="edge6" class="edge">
+<title>GObject.InitiallyUnowned&#45;&gt;Gtk.Widget</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M391.08,-377.99C364.08,-368.75 319.71,-353.57 290.8,-343.68"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="291.24,-341.98 285.94,-342.02 290.11,-345.29 291.24,-341.98"/>
+</g>
+<!-- GObject.Object -->
+<g id="node4" class="node">
+<title>GObject.Object</title>
+<g id="a_node4"><a xlink:href="../../GObject-2.0/classes/Object.html#GObject.Object" xlink:title="GObject.Object">
+<path fill="none" stroke="#75507b" d="M448.5,-450C448.5,-450 380.5,-450 380.5,-450 377.5,-450 374.5,-447 374.5,-444 374.5,-444 374.5,-438 374.5,-438 374.5,-435 377.5,-432 380.5,-432 380.5,-432 448.5,-432 448.5,-432 451.5,-432 454.5,-435 454.5,-438 454.5,-438 454.5,-444 454.5,-444 454.5,-447 451.5,-450 448.5,-450"/>
+<text text-anchor="middle" x="414.5" y="-438.7" font-family="inherit" font-size="8.50">GObject.Object</text>
+</a>
+</g>
+</g>
+<!-- GObject.Object&#45;&gt;GObject.InitiallyUnowned -->
+<g id="edge7" class="edge">
+<title>GObject.Object&#45;&gt;GObject.InitiallyUnowned</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M414.5,-431.88C414.5,-423.76 414.5,-411.13 414.5,-401.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="416.25,-401.24 414.5,-396.24 412.75,-401.24 416.25,-401.24"/>
+</g>
+<!-- Gtk.ToolButton -->
+<g id="node12" class="node">
+<title>Gtk.ToolButton</title>
+<g id="a_node12"><a xlink:href="ToolButton.html#Gtk.ToolButton" xlink:title="Gtk.ToolButton">
+<path fill="none" stroke="#75507b" d="M107,-126C107,-126 40,-126 40,-126 37,-126 34,-123 34,-120 34,-120 34,-114 34,-114 34,-111 37,-108 40,-108 40,-108 107,-108 107,-108 110,-108 113,-111 113,-114 113,-114 113,-120 113,-120 113,-123 110,-126 107,-126"/>
+<text text-anchor="middle" x="73.5" y="-114.7" font-family="inherit" font-size="8.50">Gtk.ToolButton</text>
+</a>
+</g>
+</g>
+<!-- Gtk.Actionable&#45;&gt;Gtk.ToolButton -->
+<g id="edge8" class="edge">
+<title>Gtk.Actionable&#45;&gt;Gtk.ToolButton</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M40.54,-323.83C43.69,-299.28 53.61,-223.99 64.5,-162 66.33,-151.57 68.75,-139.82 70.62,-131.09"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="72.36,-131.34 71.71,-126.08 68.94,-130.6 72.36,-131.34"/>
+</g>
+<!-- Gtk.ToolItem -->
+<g id="node13" class="node">
+<title>Gtk.ToolItem</title>
+<g id="a_node13"><a xlink:href="ToolItem.html#Gtk.ToolItem" xlink:title="Gtk.ToolItem">
+<path fill="none" stroke="#75507b" d="M137.5,-180C137.5,-180 79.5,-180 79.5,-180 76.5,-180 73.5,-177 73.5,-174 73.5,-174 73.5,-168 73.5,-168 73.5,-165 76.5,-162 79.5,-162 79.5,-162 137.5,-162 137.5,-162 140.5,-162 143.5,-165 143.5,-168 143.5,-168 143.5,-174 143.5,-174 143.5,-177 140.5,-180 137.5,-180"/>
+<text text-anchor="middle" x="108.5" y="-168.7" font-family="inherit" font-size="8.50">Gtk.ToolItem</text>
+</a>
+</g>
+</g>
+<!-- Gtk.Activatable&#45;&gt;Gtk.ToolItem -->
+<g id="edge9" class="edge">
+<title>Gtk.Activatable&#45;&gt;Gtk.ToolItem</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M108.5,-269.68C108.5,-251.42 108.5,-207.66 108.5,-185.44"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="110.25,-185.28 108.5,-180.28 106.75,-185.28 110.25,-185.28"/>
+</g>
+<!-- Gtk.Bin -->
+<g id="node7" class="node">
+<title>Gtk.Bin</title>
+<g id="a_node7"><a xlink:href="Bin.html#Gtk.Bin" xlink:title="Gtk.Bin">
+<path fill="none" stroke="#aaaaaa" d="M205.5,-234C205.5,-234 163.5,-234 163.5,-234 160.5,-234 157.5,-231 157.5,-228 157.5,-228 157.5,-222 157.5,-222 157.5,-219 160.5,-216 163.5,-216 163.5,-216 205.5,-216 205.5,-216 208.5,-216 211.5,-219 211.5,-222 211.5,-222 211.5,-228 211.5,-228 211.5,-231 208.5,-234 205.5,-234"/>
+<text text-anchor="middle" x="184.5" y="-222.7" font-family="inherit" font-size="8.50">Gtk.Bin</text>
+</a>
+</g>
+</g>
+<!-- Gtk.Bin&#45;&gt;Gtk.ToolItem -->
+<g id="edge10" class="edge">
+<title>Gtk.Bin&#45;&gt;Gtk.ToolItem</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M172.62,-215.88C159.76,-207.07 139.16,-192.98 124.79,-183.14"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="125.66,-181.62 120.54,-180.24 123.68,-184.51 125.66,-181.62"/>
+</g>
+<!-- Gtk.Buildable&#45;&gt;Gtk.Widget -->
+<g id="edge11" class="edge">
+<title>Gtk.Buildable&#45;&gt;Gtk.Widget</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M186.56,-377.88C202.02,-368.95 226.91,-354.56 243.95,-344.72"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="245.08,-346.08 248.54,-342.07 243.33,-343.05 245.08,-346.08"/>
+</g>
+<!-- Gtk.Container -->
+<g id="node9" class="node">
+<title>Gtk.Container</title>
+<g id="a_node9"><a xlink:href="Container.html#Gtk.Container" xlink:title="Gtk.Container">
+<path fill="none" stroke="#aaaaaa" d="M275.5,-288C275.5,-288 211.5,-288 211.5,-288 208.5,-288 205.5,-285 205.5,-282 205.5,-282 205.5,-276 205.5,-276 205.5,-273 208.5,-270 211.5,-270 211.5,-270 275.5,-270 275.5,-270 278.5,-270 281.5,-273 281.5,-276 281.5,-276 281.5,-282 281.5,-282 281.5,-285 278.5,-288 275.5,-288"/>
+<text text-anchor="middle" x="243.5" y="-276.7" font-family="inherit" font-size="8.50">Gtk.Container</text>
+</a>
+</g>
+</g>
+<!-- Gtk.Container&#45;&gt;Gtk.Bin -->
+<g id="edge12" class="edge">
+<title>Gtk.Container&#45;&gt;Gtk.Bin</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M234.28,-269.88C224.47,-261.23 208.85,-247.46 197.72,-237.66"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="198.76,-236.23 193.85,-234.24 196.44,-238.86 198.76,-236.23"/>
+</g>
+<!-- Gtk.RadioToolButton -->
+<g id="node10" class="node">
+<title>Gtk.RadioToolButton</title>
+<g id="a_node10"><a xlink:href="#Gtk.RadioToolButton" xlink:title="Gtk.RadioToolButton">
+<path fill="none" stroke="#75507b" d="M119,-18C119,-18 28,-18 28,-18 25,-18 22,-15 22,-12 22,-12 22,-6 22,-6 22,-3 25,0 28,0 28,0 119,0 119,0 122,0 125,-3 125,-6 125,-6 125,-12 125,-12 125,-15 122,-18 119,-18"/>
+<text text-anchor="middle" x="73.5" y="-6.7" font-family="inherit" font-size="8.50">Gtk.RadioToolButton</text>
+</a>
+</g>
+</g>
+<!-- Gtk.ToggleToolButton -->
+<g id="node11" class="node">
+<title>Gtk.ToggleToolButton</title>
+<g id="a_node11"><a xlink:href="ToggleToolButton.html#Gtk.ToggleToolButton" xlink:title="Gtk.ToggleToolButton">
+<path fill="none" stroke="#75507b" d="M120.5,-72C120.5,-72 26.5,-72 26.5,-72 23.5,-72 20.5,-69 20.5,-66 20.5,-66 20.5,-60 20.5,-60 20.5,-57 23.5,-54 26.5,-54 26.5,-54 120.5,-54 120.5,-54 123.5,-54 126.5,-57 126.5,-60 126.5,-60 126.5,-66 126.5,-66 126.5,-69 123.5,-72 120.5,-72"/>
+<text text-anchor="middle" x="73.5" y="-60.7" font-family="inherit" font-size="8.50">Gtk.ToggleToolButton</text>
+</a>
+</g>
+</g>
+<!-- Gtk.ToggleToolButton&#45;&gt;Gtk.RadioToolButton -->
+<g id="edge13" class="edge">
+<title>Gtk.ToggleToolButton&#45;&gt;Gtk.RadioToolButton</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M73.5,-53.88C73.5,-45.76 73.5,-33.13 73.5,-23.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="75.25,-23.24 73.5,-18.24 71.75,-23.24 75.25,-23.24"/>
+</g>
+<!-- Gtk.ToolButton&#45;&gt;Gtk.ToggleToolButton -->
+<g id="edge14" class="edge">
+<title>Gtk.ToolButton&#45;&gt;Gtk.ToggleToolButton</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M73.5,-107.88C73.5,-99.76 73.5,-87.13 73.5,-77.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="75.25,-77.24 73.5,-72.24 71.75,-77.24 75.25,-77.24"/>
+</g>
+<!-- Gtk.ToolItem&#45;&gt;Gtk.ToolButton -->
+<g id="edge15" class="edge">
+<title>Gtk.ToolItem&#45;&gt;Gtk.ToolButton</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M103.03,-161.88C97.36,-153.45 88.43,-140.18 81.87,-130.44"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="83.29,-129.41 79.05,-126.24 80.39,-131.36 83.29,-129.41"/>
+</g>
+<!-- Gtk.Widget&#45;&gt;Gtk.Container -->
+<g id="edge16" class="edge">
+<title>Gtk.Widget&#45;&gt;Gtk.Container</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M259.53,-323.88C256.51,-315.6 251.78,-302.66 248.24,-292.97"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="249.87,-292.34 246.51,-288.24 246.58,-293.54 249.87,-292.34"/>
+</g>
+</g>
+</svg>
+</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Subclasses:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="methods">
+<span id="gtk-radiotoolbutton-methods"></span><h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="ToggleToolButton.html#gtk-toggletoolbutton-methods"><span class="std std-ref">Gtk.ToggleToolButton (4)</span></a>,     <a class="reference internal" href="ToolButton.html#gtk-toolbutton-methods"><span class="std std-ref">Gtk.ToolButton (14)</span></a>,     <a class="reference internal" href="ToolItem.html#gtk-toolitem-methods"><span class="std std-ref">Gtk.ToolItem (28)</span></a>,     <a class="reference internal" href="Bin.html#gtk-bin-methods"><span class="std std-ref">Gtk.Bin (1)</span></a>,     <a class="reference internal" href="Container.html#gtk-container-methods"><span class="std std-ref">Gtk.Container (35)</span></a>,     <a class="reference internal" href="Widget.html#gtk-widget-methods"><span class="std std-ref">Gtk.Widget (278)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (37)</span></a>,     <a class="reference internal" href="Buildable.html#gtk-buildable-methods"><span class="std std-ref">Gtk.Buildable (10)</span></a>,     <a class="reference internal" href="Activatable.html#gtk-activatable-methods"><span class="std std-ref">Gtk.Activatable (6)</span></a>,     <a class="reference internal" href="Actionable.html#gtk-actionable-methods"><span class="std std-ref">Gtk.Actionable (5)</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Structs:</th><td class="field-body"><a class="reference internal" href="ContainerClass.html#gtk-containerclass-methods"><span class="std std-ref">Gtk.ContainerClass (5)</span></a>,     <a class="reference internal" href="WidgetClass.html#gtk-widgetclass-methods"><span class="std std-ref">Gtk.WidgetClass (12)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/ObjectClass.html#gobject-objectclass-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.ObjectClass (5)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="99%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><em>class</em></td>
+<td><a class="reference internal" href="#Gtk.RadioToolButton.new" title="Gtk.RadioToolButton.new"><code class="xref py py-func docutils literal notranslate"><span class="pre">new</span></code></a> (group)</td>
+</tr>
+<tr class="row-even"><td><em>class</em></td>
+<td><a class="reference internal" href="#Gtk.RadioToolButton.new_from_stock" title="Gtk.RadioToolButton.new_from_stock"><code class="xref py py-func docutils literal notranslate"><span class="pre">new_from_stock</span></code></a> (group, stock_id)</td>
+</tr>
+<tr class="row-odd"><td><em>class</em></td>
+<td><a class="reference internal" href="#Gtk.RadioToolButton.new_from_widget" title="Gtk.RadioToolButton.new_from_widget"><code class="xref py py-func docutils literal notranslate"><span class="pre">new_from_widget</span></code></a> (group)</td>
+</tr>
+<tr class="row-even"><td><em>class</em></td>
+<td><a class="reference internal" href="#Gtk.RadioToolButton.new_with_stock_from_widget" title="Gtk.RadioToolButton.new_with_stock_from_widget"><code class="xref py py-func docutils literal notranslate"><span class="pre">new_with_stock_from_widget</span></code></a> (group, stock_id)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.RadioToolButton.get_group" title="Gtk.RadioToolButton.get_group"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_group</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.RadioToolButton.set_group" title="Gtk.RadioToolButton.set_group"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_group</span></code></a> (group)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="virtual-methods">
+<span id="gtk-radiotoolbutton-vfuncs"></span><h2>Virtual Methods<a class="headerlink" href="#virtual-methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="ToggleToolButton.html#gtk-toggletoolbutton-vfuncs"><span class="std std-ref">Gtk.ToggleToolButton (1)</span></a>,     <a class="reference internal" href="ToolButton.html#gtk-toolbutton-vfuncs"><span class="std std-ref">Gtk.ToolButton (1)</span></a>,     <a class="reference internal" href="ToolItem.html#gtk-toolitem-vfuncs"><span class="std std-ref">Gtk.ToolItem (2)</span></a>,     <a class="reference internal" href="Container.html#gtk-container-vfuncs"><span class="std std-ref">Gtk.Container (10)</span></a>,     <a class="reference internal" href="Widget.html#gtk-widget-vfuncs"><span class="std std-ref">Gtk.Widget (82)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-vfuncs" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (7)</span></a>,     <a class="reference internal" href="Buildable.html#gtk-buildable-vfuncs"><span class="std std-ref">Gtk.Buildable (10)</span></a>,     <a class="reference internal" href="Activatable.html#gtk-activatable-vfuncs"><span class="std std-ref">Gtk.Activatable (2)</span></a>,     <a class="reference internal" href="Actionable.html#gtk-actionable-vfuncs"><span class="std std-ref">Gtk.Actionable (4)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="gtk-radiotoolbutton-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="ToggleToolButton.html#gtk-toggletoolbutton-props"><span class="std std-ref">Gtk.ToggleToolButton (1)</span></a>,     <a class="reference internal" href="ToolButton.html#gtk-toolbutton-props"><span class="std std-ref">Gtk.ToolButton (6)</span></a>,     <a class="reference internal" href="ToolItem.html#gtk-toolitem-props"><span class="std std-ref">Gtk.ToolItem (3)</span></a>,     <a class="reference internal" href="Container.html#gtk-container-props"><span class="std std-ref">Gtk.Container (3)</span></a>,     <a class="reference internal" href="Widget.html#gtk-widget-props"><span class="std std-ref">Gtk.Widget (39)</span></a>,     <a class="reference internal" href="Activatable.html#gtk-activatable-props"><span class="std std-ref">Gtk.Activatable (2)</span></a>,     <a class="reference internal" href="Actionable.html#gtk-actionable-props"><span class="std std-ref">Gtk.Actionable (2)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="1%" />
+<col width="1%" />
+<col width="97%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Flags</th>
+<th class="head">Short Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="#Gtk.RadioToolButton.props.group" title="Gtk.RadioToolButton.props.group"><code class="xref py py-data docutils literal notranslate"><span class="pre">group</span></code></a></td>
+<td><a class="reference internal" href="#Gtk.RadioToolButton" title="Gtk.RadioToolButton"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.RadioToolButton</span></code></a></td>
+<td>w</td>
+<td>The radio tool button whose group this button belongs to.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="style-properties">
+<span id="gtk-radiotoolbutton-style-props"></span><h2>Style Properties<a class="headerlink" href="#style-properties" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="ToolButton.html#gtk-toolbutton-style-props"><span class="std std-ref">Gtk.ToolButton (1)</span></a>,     <a class="reference internal" href="Widget.html#gtk-widget-style-props"><span class="std std-ref">Gtk.Widget (17)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="signals">
+<span id="gtk-radiotoolbutton-signals"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="ToggleToolButton.html#gtk-toggletoolbutton-signals"><span class="std std-ref">Gtk.ToggleToolButton (1)</span></a>,     <a class="reference internal" href="ToolButton.html#gtk-toolbutton-signals"><span class="std std-ref">Gtk.ToolButton (1)</span></a>,     <a class="reference internal" href="ToolItem.html#gtk-toolitem-signals"><span class="std std-ref">Gtk.ToolItem (2)</span></a>,     <a class="reference internal" href="Container.html#gtk-container-signals"><span class="std std-ref">Gtk.Container (4)</span></a>,     <a class="reference internal" href="Widget.html#gtk-widget-signals"><span class="std std-ref">Gtk.Widget (69)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-signals" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fields">
+<span id="gtk-radiotoolbutton-fields"></span><h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="ToggleToolButton.html#gtk-toggletoolbutton-fields"><span class="std std-ref">Gtk.ToggleToolButton (1)</span></a>,     <a class="reference internal" href="ToolButton.html#gtk-toolbutton-fields"><span class="std std-ref">Gtk.ToolButton (1)</span></a>,     <a class="reference internal" href="ToolItem.html#gtk-toolitem-fields"><span class="std std-ref">Gtk.ToolItem (2)</span></a>,     <a class="reference internal" href="Container.html#gtk-container-fields"><span class="std std-ref">Gtk.Container (4)</span></a>,     <a class="reference internal" href="Widget.html#gtk-widget-fields"><span class="std std-ref">Gtk.Widget (69)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-fields" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="16%" />
+<col width="1%" />
+<col width="1%" />
+<col width="82%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Access</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>parent</td>
+<td><a class="reference internal" href="ToggleToolButton.html#Gtk.ToggleToolButton" title="Gtk.ToggleToolButton"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ToggleToolButton</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="class-details">
+<h2>Class Details<a class="headerlink" href="#class-details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Gtk.RadioToolButton">
+<em class="property">class </em><code class="descclassname">Gtk.</code><code class="descname">RadioToolButton</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#Gtk.RadioToolButton" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Bases:</th><td class="field-body"><a class="reference internal" href="ToggleToolButton.html#Gtk.ToggleToolButton" title="Gtk.ToggleToolButton"><code class="xref py py-class docutils literal notranslate"><span class="pre">Gtk.ToggleToolButton</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Abstract:</th><td class="field-body">No</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Structure:</th><td class="field-body"><a class="reference internal" href="RadioToolButtonClass.html#Gtk.RadioToolButtonClass" title="Gtk.RadioToolButtonClass"><code class="xref py py-class docutils literal notranslate"><span class="pre">Gtk.RadioToolButtonClass</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>A <a class="reference internal" href="#Gtk.RadioToolButton" title="Gtk.RadioToolButton"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.RadioToolButton</span></code></a> is a <a class="reference internal" href="ToolItem.html#Gtk.ToolItem" title="Gtk.ToolItem"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ToolItem</span></code></a> that contains a radio button,
+that is, a button that is part of a group of toggle buttons where only
+one button can be active at a time.</p>
+<p>Use <a class="reference internal" href="#Gtk.RadioToolButton.new" title="Gtk.RadioToolButton.new"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.RadioToolButton.new</span></code></a>() to create a new <a class="reference internal" href="#Gtk.RadioToolButton" title="Gtk.RadioToolButton"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.RadioToolButton</span></code></a>. Use
+<a class="reference internal" href="#Gtk.RadioToolButton.new_from_widget" title="Gtk.RadioToolButton.new_from_widget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.RadioToolButton.new_from_widget</span></code></a>() to create a new <a class="reference internal" href="#Gtk.RadioToolButton" title="Gtk.RadioToolButton"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.RadioToolButton</span></code></a>
+that is part of the same group as an existing <a class="reference internal" href="#Gtk.RadioToolButton" title="Gtk.RadioToolButton"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.RadioToolButton</span></code></a>.</p>
+<dl class="docutils">
+<dt>CSS nodes</dt>
+<dd></dd>
+</dl>
+<p><a class="reference internal" href="#Gtk.RadioToolButton" title="Gtk.RadioToolButton"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.RadioToolButton</span></code></a> has a single CSS node with name toolbutton.</p>
+<dl class="classmethod">
+<dt id="Gtk.RadioToolButton.new">
+<em class="property">classmethod </em><code class="descname">new</code><span class="sig-paren">(</span><em>group</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkradiotoolbutton.c#L140"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.RadioToolButton.new" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>group</strong> ([<a class="reference internal" href="RadioButton.html#Gtk.RadioButton" title="Gtk.RadioButton"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.RadioButton</span></code></a>] or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – An
+existing radio button group, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> if you are creating a new group</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The new <a class="reference internal" href="#Gtk.RadioToolButton" title="Gtk.RadioToolButton"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.RadioToolButton</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="ToolItem.html#Gtk.ToolItem" title="Gtk.ToolItem"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ToolItem</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Creates a new <a class="reference internal" href="#Gtk.RadioToolButton" title="Gtk.RadioToolButton"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.RadioToolButton</span></code></a>, adding it to <cite>group</cite>.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.4.</span></p>
+</div>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="Gtk.RadioToolButton.new_from_stock">
+<em class="property">classmethod </em><code class="descname">new_from_stock</code><span class="sig-paren">(</span><em>group</em>, <em>stock_id</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkradiotoolbutton.c#L170"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.RadioToolButton.new_from_stock" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>group</strong> ([<a class="reference internal" href="RadioButton.html#Gtk.RadioButton" title="Gtk.RadioButton"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.RadioButton</span></code></a>] or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – an existing radio button
+group, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> if you are creating a new group</li>
+<li><strong>stock_id</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – the name of a stock item</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">The new <a class="reference internal" href="#Gtk.RadioToolButton" title="Gtk.RadioToolButton"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.RadioToolButton</span></code></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="ToolItem.html#Gtk.ToolItem" title="Gtk.ToolItem"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ToolItem</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Creates a new <a class="reference internal" href="#Gtk.RadioToolButton" title="Gtk.RadioToolButton"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.RadioToolButton</span></code></a>, adding it to <cite>group</cite>.
+The new <a class="reference internal" href="#Gtk.RadioToolButton" title="Gtk.RadioToolButton"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.RadioToolButton</span></code></a> will contain an icon and label from the
+stock item indicated by <cite>stock_id</cite>.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.4.</span></p>
+</div>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 3.10: </span>Use <a class="reference internal" href="#Gtk.RadioToolButton.new" title="Gtk.RadioToolButton.new"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.RadioToolButton.new</span></code></a>() instead.</p>
+</div>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="Gtk.RadioToolButton.new_from_widget">
+<em class="property">classmethod </em><code class="descname">new_from_widget</code><span class="sig-paren">(</span><em>group</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkradiotoolbutton.c#L197"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.RadioToolButton.new_from_widget" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>group</strong> (<a class="reference internal" href="#Gtk.RadioToolButton" title="Gtk.RadioToolButton"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.RadioToolButton</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – An existing <a class="reference internal" href="#Gtk.RadioToolButton" title="Gtk.RadioToolButton"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.RadioToolButton</span></code></a>, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The new <a class="reference internal" href="#Gtk.RadioToolButton" title="Gtk.RadioToolButton"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.RadioToolButton</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="ToolItem.html#Gtk.ToolItem" title="Gtk.ToolItem"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ToolItem</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Creates a new <a class="reference internal" href="#Gtk.RadioToolButton" title="Gtk.RadioToolButton"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.RadioToolButton</span></code></a> adding it to the same group as <cite>gruup</cite></p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.4.</span></p>
+</div>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="Gtk.RadioToolButton.new_with_stock_from_widget">
+<em class="property">classmethod </em><code class="descname">new_with_stock_from_widget</code><span class="sig-paren">(</span><em>group</em>, <em>stock_id</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkradiotoolbutton.c#L226"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.RadioToolButton.new_with_stock_from_widget" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>group</strong> (<a class="reference internal" href="#Gtk.RadioToolButton" title="Gtk.RadioToolButton"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.RadioToolButton</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – An existing <a class="reference internal" href="#Gtk.RadioToolButton" title="Gtk.RadioToolButton"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.RadioToolButton</span></code></a>.</li>
+<li><strong>stock_id</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – the name of a stock item</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">A new <a class="reference internal" href="#Gtk.RadioToolButton" title="Gtk.RadioToolButton"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.RadioToolButton</span></code></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="ToolItem.html#Gtk.ToolItem" title="Gtk.ToolItem"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ToolItem</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Creates a new <a class="reference internal" href="#Gtk.RadioToolButton" title="Gtk.RadioToolButton"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.RadioToolButton</span></code></a> adding it to the same group as <cite>group</cite>.
+The new <a class="reference internal" href="#Gtk.RadioToolButton" title="Gtk.RadioToolButton"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.RadioToolButton</span></code></a> will contain an icon and label from the
+stock item indicated by <cite>stock_id</cite>.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.4.</span></p>
+</div>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 3.10: </span><a class="reference internal" href="#Gtk.RadioToolButton.new_from_widget" title="Gtk.RadioToolButton.new_from_widget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.RadioToolButton.new_from_widget</span></code></a></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.RadioToolButton.get_group">
+<code class="descname">get_group</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkradiotoolbutton.c#L260"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.RadioToolButton.get_group" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The group <cite>self</cite> belongs to.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">[<a class="reference internal" href="RadioButton.html#Gtk.RadioButton" title="Gtk.RadioButton"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.RadioButton</span></code></a>]</td>
+</tr>
+</tbody>
+</table>
+<p>Returns the radio button group <cite>self</cite> belongs to.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.4.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.RadioToolButton.set_group">
+<code class="descname">set_group</code><span class="sig-paren">(</span><em>group</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkradiotoolbutton.c#L278"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.RadioToolButton.set_group" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>group</strong> ([<a class="reference internal" href="RadioButton.html#Gtk.RadioButton" title="Gtk.RadioButton"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.RadioButton</span></code></a>] or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – an existing radio button group, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Adds <cite>self</cite> to <cite>group</cite>, removing it from the group it belonged to before.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.4.</span></p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="property-details">
+<h2>Property Details<a class="headerlink" href="#property-details" title="Permalink to this headline">¶</a></h2>
+<dl class="data">
+<dt id="Gtk.RadioToolButton.props.group">
+<code class="descclassname">Gtk.RadioToolButton.props.</code><code class="descname">group</code><a class="headerlink" href="#Gtk.RadioToolButton.props.group" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">group</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="#Gtk.RadioToolButton" title="Gtk.RadioToolButton"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.RadioToolButton</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Sets a new group for a radio tool button.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.4.</span></p>
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div> 
+
+</body>
+</html>

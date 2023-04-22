@@ -1,0 +1,453 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    Gtk.WindowAccessible -
+    
+      Classes -
+    
+    Gtk 3.0
+  </title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/css/pgi.css" type="text/css" />
+  
+
+  
+  <script type="text/javascript">
+
+    function openSidebar(element) {
+        window.location.href = element.href + location.hash;
+        return false;
+    }
+
+    function inIframe() {
+        try {
+            return window.self !== window.top;
+        } catch (e) {
+            return true;
+        }
+    }
+
+    function onLoaded() {
+        if(!inIframe()) {
+            var icons = document.getElementsByClassName('open-sidebar');
+
+            for (var i = 0; i < icons.length; i ++) {
+                icons[i].style.display = 'table-cell';
+            }
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', onLoaded, false);
+
+  </script>
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="Gtk 3.0 Python API Docs" href="../index.html"/>
+        <link rel="up" title="Classes" href="../classes.html"/>
+        <link rel="next" title="Gtk.WindowGroup" href="WindowGroup.html"/>
+        <link rel="prev" title="Gtk.Window" href="Window.html"/> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+<div class="non-fixed-bar">
+<table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#Gtk-3.0/classes/WindowAccessible.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Gtk 3.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>Gtk.WindowAccessible</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="Window.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="WindowGroup.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">Gtk.WindowAccessible</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+<div class="fixed-bar">
+  <table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#Gtk-3.0/classes/WindowAccessible.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Gtk 3.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>Gtk.WindowAccessible</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="Window.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="WindowGroup.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">Gtk.WindowAccessible</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+  <div class="wy-grid-for-nav">
+
+    
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="main">
+            
+  <div class="section" id="gtk-windowaccessible">
+<h1>Gtk.WindowAccessible<a class="headerlink" href="#gtk-windowaccessible" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<svg width="251pt" height="296pt"
+ viewBox="0.00 0.00 250.50 296.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 292)">
+<title>g</title>
+<!-- Atk.Component -->
+<g id="node1" class="node">
+<title>Atk.Component</title>
+<g id="a_node1"><a xlink:href="../../Atk-1.0/classes/Component.html#Atk.Component" xlink:title="Atk.Component">
+<path fill="none" stroke="#3091d1" d="M139,-180C139,-180 68,-180 68,-180 65,-180 62,-177 62,-174 62,-174 62,-168 62,-168 62,-165 65,-162 68,-162 68,-162 139,-162 139,-162 142,-162 145,-165 145,-168 145,-168 145,-174 145,-174 145,-177 142,-180 139,-180"/>
+<text text-anchor="middle" x="103.5" y="-168.7" font-family="inherit" font-size="8.50">Atk.Component</text>
+</a>
+</g>
+</g>
+<!-- Gtk.WidgetAccessible -->
+<g id="node8" class="node">
+<title>Gtk.WidgetAccessible</title>
+<g id="a_node8"><a xlink:href="WidgetAccessible.html#Gtk.WidgetAccessible" xlink:title="Gtk.WidgetAccessible">
+<path fill="none" stroke="#75507b" d="M187.5,-126C187.5,-126 91.5,-126 91.5,-126 88.5,-126 85.5,-123 85.5,-120 85.5,-120 85.5,-114 85.5,-114 85.5,-111 88.5,-108 91.5,-108 91.5,-108 187.5,-108 187.5,-108 190.5,-108 193.5,-111 193.5,-114 193.5,-114 193.5,-120 193.5,-120 193.5,-123 190.5,-126 187.5,-126"/>
+<text text-anchor="middle" x="139.5" y="-114.7" font-family="inherit" font-size="8.50">Gtk.WidgetAccessible</text>
+</a>
+</g>
+</g>
+<!-- Atk.Component&#45;&gt;Gtk.WidgetAccessible -->
+<g id="edge1" class="edge">
+<title>Atk.Component&#45;&gt;Gtk.WidgetAccessible</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M109.12,-161.88C114.96,-153.45 124.14,-140.18 130.89,-130.44"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="132.39,-131.35 133.8,-126.24 129.51,-129.35 132.39,-131.35"/>
+</g>
+<!-- Atk.Object -->
+<g id="node2" class="node">
+<title>Atk.Object</title>
+<g id="a_node2"><a xlink:href="../../Atk-1.0/classes/Object.html#Atk.Object" xlink:title="Atk.Object">
+<path fill="none" stroke="#75507b" d="M227,-234C227,-234 178,-234 178,-234 175,-234 172,-231 172,-228 172,-228 172,-222 172,-222 172,-219 175,-216 178,-216 178,-216 227,-216 227,-216 230,-216 233,-219 233,-222 233,-222 233,-228 233,-228 233,-231 230,-234 227,-234"/>
+<text text-anchor="middle" x="202.5" y="-222.7" font-family="inherit" font-size="8.50">Atk.Object</text>
+</a>
+</g>
+</g>
+<!-- Gtk.Accessible -->
+<g id="node6" class="node">
+<title>Gtk.Accessible</title>
+<g id="a_node6"><a xlink:href="Accessible.html#Gtk.Accessible" xlink:title="Gtk.Accessible">
+<path fill="none" stroke="#75507b" d="M236,-180C236,-180 169,-180 169,-180 166,-180 163,-177 163,-174 163,-174 163,-168 163,-168 163,-165 166,-162 169,-162 169,-162 236,-162 236,-162 239,-162 242,-165 242,-168 242,-168 242,-174 242,-174 242,-177 239,-180 236,-180"/>
+<text text-anchor="middle" x="202.5" y="-168.7" font-family="inherit" font-size="8.50">Gtk.Accessible</text>
+</a>
+</g>
+</g>
+<!-- Atk.Object&#45;&gt;Gtk.Accessible -->
+<g id="edge2" class="edge">
+<title>Atk.Object&#45;&gt;Gtk.Accessible</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M202.5,-215.88C202.5,-207.76 202.5,-195.13 202.5,-185.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="204.25,-185.24 202.5,-180.24 200.75,-185.24 204.25,-185.24"/>
+</g>
+<!-- Atk.Window -->
+<g id="node3" class="node">
+<title>Atk.Window</title>
+<g id="a_node3"><a xlink:href="../../Atk-1.0/classes/Window.html#Atk.Window" xlink:title="Atk.Window">
+<path fill="none" stroke="#3091d1" d="M61,-126C61,-126 6,-126 6,-126 3,-126 0,-123 0,-120 0,-120 0,-114 0,-114 0,-111 3,-108 6,-108 6,-108 61,-108 61,-108 64,-108 67,-111 67,-114 67,-114 67,-120 67,-120 67,-123 64,-126 61,-126"/>
+<text text-anchor="middle" x="33.5" y="-114.7" font-family="inherit" font-size="8.50">Atk.Window</text>
+</a>
+</g>
+</g>
+<!-- Gtk.WindowAccessible -->
+<g id="node9" class="node">
+<title>Gtk.WindowAccessible</title>
+<g id="a_node9"><a xlink:href="#Gtk.WindowAccessible" xlink:title="Gtk.WindowAccessible">
+<path fill="none" stroke="#75507b" d="M136.5,-18C136.5,-18 36.5,-18 36.5,-18 33.5,-18 30.5,-15 30.5,-12 30.5,-12 30.5,-6 30.5,-6 30.5,-3 33.5,0 36.5,0 36.5,0 136.5,0 136.5,0 139.5,0 142.5,-3 142.5,-6 142.5,-6 142.5,-12 142.5,-12 142.5,-15 139.5,-18 136.5,-18"/>
+<text text-anchor="middle" x="86.5" y="-6.7" font-family="inherit" font-size="8.50">Gtk.WindowAccessible</text>
+</a>
+</g>
+</g>
+<!-- Atk.Window&#45;&gt;Gtk.WindowAccessible -->
+<g id="edge3" class="edge">
+<title>Atk.Window&#45;&gt;Gtk.WindowAccessible</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M37.66,-107.68C46.87,-89.26 69.04,-44.91 80.06,-22.88"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="81.69,-23.53 82.36,-18.28 78.56,-21.97 81.69,-23.53"/>
+</g>
+<!-- GObject.GInterface -->
+<g id="node4" class="node">
+<title>GObject.GInterface</title>
+<g id="a_node4"><a xlink:href="../../GObject-2.0/classes/GInterface.html#GObject.GInterface" xlink:title="GObject.GInterface">
+<path fill="none" stroke="#3091d1" d="M111.5,-234C111.5,-234 25.5,-234 25.5,-234 22.5,-234 19.5,-231 19.5,-228 19.5,-228 19.5,-222 19.5,-222 19.5,-219 22.5,-216 25.5,-216 25.5,-216 111.5,-216 111.5,-216 114.5,-216 117.5,-219 117.5,-222 117.5,-222 117.5,-228 117.5,-228 117.5,-231 114.5,-234 111.5,-234"/>
+<text text-anchor="middle" x="68.5" y="-222.7" font-family="inherit" font-size="8.50">GObject.GInterface</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Atk.Component -->
+<g id="edge4" class="edge">
+<title>GObject.GInterface&#45;&gt;Atk.Component</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M73.97,-215.88C79.64,-207.45 88.57,-194.18 95.13,-184.44"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="96.61,-185.36 97.95,-180.24 93.71,-183.41 96.61,-185.36"/>
+</g>
+<!-- GObject.GInterface&#45;&gt;Atk.Window -->
+<g id="edge5" class="edge">
+<title>GObject.GInterface&#45;&gt;Atk.Window</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M65.43,-215.93C62.11,-207.14 56.73,-192.64 52.5,-180 46.87,-163.19 40.98,-143.59 37.27,-131.01"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="38.91,-130.37 35.83,-126.07 35.55,-131.36 38.91,-130.37"/>
+</g>
+<!-- GObject.Object -->
+<g id="node5" class="node">
+<title>GObject.Object</title>
+<g id="a_node5"><a xlink:href="../../GObject-2.0/classes/Object.html#GObject.Object" xlink:title="GObject.Object">
+<path fill="none" stroke="#75507b" d="M236.5,-288C236.5,-288 168.5,-288 168.5,-288 165.5,-288 162.5,-285 162.5,-282 162.5,-282 162.5,-276 162.5,-276 162.5,-273 165.5,-270 168.5,-270 168.5,-270 236.5,-270 236.5,-270 239.5,-270 242.5,-273 242.5,-276 242.5,-276 242.5,-282 242.5,-282 242.5,-285 239.5,-288 236.5,-288"/>
+<text text-anchor="middle" x="202.5" y="-276.7" font-family="inherit" font-size="8.50">GObject.Object</text>
+</a>
+</g>
+</g>
+<!-- GObject.Object&#45;&gt;Atk.Object -->
+<g id="edge6" class="edge">
+<title>GObject.Object&#45;&gt;Atk.Object</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M202.5,-269.88C202.5,-261.76 202.5,-249.13 202.5,-239.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="204.25,-239.24 202.5,-234.24 200.75,-239.24 204.25,-239.24"/>
+</g>
+<!-- Gtk.Accessible&#45;&gt;Gtk.WidgetAccessible -->
+<g id="edge7" class="edge">
+<title>Gtk.Accessible&#45;&gt;Gtk.WidgetAccessible</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M192.66,-161.88C182.18,-153.23 165.5,-139.46 153.62,-129.66"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="154.45,-128.07 149.48,-126.24 152.22,-130.77 154.45,-128.07"/>
+</g>
+<!-- Gtk.ContainerAccessible -->
+<g id="node7" class="node">
+<title>Gtk.ContainerAccessible</title>
+<g id="a_node7"><a xlink:href="ContainerAccessible.html#Gtk.ContainerAccessible" xlink:title="Gtk.ContainerAccessible">
+<path fill="none" stroke="#75507b" d="M188.5,-72C188.5,-72 80.5,-72 80.5,-72 77.5,-72 74.5,-69 74.5,-66 74.5,-66 74.5,-60 74.5,-60 74.5,-57 77.5,-54 80.5,-54 80.5,-54 188.5,-54 188.5,-54 191.5,-54 194.5,-57 194.5,-60 194.5,-60 194.5,-66 194.5,-66 194.5,-69 191.5,-72 188.5,-72"/>
+<text text-anchor="middle" x="134.5" y="-60.7" font-family="inherit" font-size="8.50">Gtk.ContainerAccessible</text>
+</a>
+</g>
+</g>
+<!-- Gtk.ContainerAccessible&#45;&gt;Gtk.WindowAccessible -->
+<g id="edge8" class="edge">
+<title>Gtk.ContainerAccessible&#45;&gt;Gtk.WindowAccessible</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M127,-53.88C119.09,-45.3 106.53,-31.7 97.5,-21.91"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="98.78,-20.73 94.11,-18.24 96.21,-23.1 98.78,-20.73"/>
+</g>
+<!-- Gtk.WidgetAccessible&#45;&gt;Gtk.ContainerAccessible -->
+<g id="edge9" class="edge">
+<title>Gtk.WidgetAccessible&#45;&gt;Gtk.ContainerAccessible</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M138.72,-107.88C137.93,-99.68 136.7,-86.89 135.77,-77.24"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="137.51,-77.05 135.29,-72.24 134.03,-77.38 137.51,-77.05"/>
+</g>
+</g>
+</svg>
+</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Subclasses:</th><td class="field-body"><a class="reference internal" href="PlugAccessible.html#Gtk.PlugAccessible" title="Gtk.PlugAccessible"><code class="xref py py-class docutils literal notranslate"><span class="pre">Gtk.PlugAccessible</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="methods">
+<span id="gtk-windowaccessible-methods"></span><h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Accessible.html#gtk-accessible-methods"><span class="std std-ref">Gtk.Accessible (3)</span></a>,     <a class="reference external" href="../../Atk-1.0/classes/Object.html#atk-object-methods" title="(in Atk 1.0 v1.0)"><span class="xref std std-ref">Atk.Object (25)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (37)</span></a>,     <a class="reference external" href="../../Atk-1.0/classes/Component.html#atk-component-methods" title="(in Atk 1.0 v1.0)"><span class="xref std std-ref">Atk.Component (15)</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Structs:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/ObjectClass.html#gobject-objectclass-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.ObjectClass (5)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="virtual-methods">
+<span id="gtk-windowaccessible-vfuncs"></span><h2>Virtual Methods<a class="headerlink" href="#virtual-methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Accessible.html#gtk-accessible-vfuncs"><span class="std std-ref">Gtk.Accessible (3)</span></a>,     <a class="reference external" href="../../Atk-1.0/classes/Object.html#atk-object-vfuncs" title="(in Atk 1.0 v1.0)"><span class="xref std std-ref">Atk.Object (24)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-vfuncs" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (7)</span></a>,     <a class="reference external" href="../../Atk-1.0/classes/Component.html#atk-component-vfuncs" title="(in Atk 1.0 v1.0)"><span class="xref std std-ref">Atk.Component (16)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="gtk-windowaccessible-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Accessible.html#gtk-accessible-props"><span class="std std-ref">Gtk.Accessible (1)</span></a>,     <a class="reference external" href="../../Atk-1.0/classes/Object.html#atk-object-props" title="(in Atk 1.0 v1.0)"><span class="xref std std-ref">Atk.Object (15)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="signals">
+<span id="gtk-windowaccessible-signals"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../Atk-1.0/classes/Object.html#atk-object-signals" title="(in Atk 1.0 v1.0)"><span class="xref std std-ref">Atk.Object (6)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-signals" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a>,     <a class="reference external" href="../../Atk-1.0/classes/Component.html#atk-component-signals" title="(in Atk 1.0 v1.0)"><span class="xref std std-ref">Atk.Component (1)</span></a>,     <a class="reference external" href="../../Atk-1.0/classes/Window.html#atk-window-signals" title="(in Atk 1.0 v1.0)"><span class="xref std std-ref">Atk.Window (9)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fields">
+<span id="gtk-windowaccessible-fields"></span><h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../Atk-1.0/classes/Object.html#atk-object-fields" title="(in Atk 1.0 v1.0)"><span class="xref std std-ref">Atk.Object (6)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-fields" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a>,     <a class="reference external" href="../../Atk-1.0/classes/Component.html#atk-component-fields" title="(in Atk 1.0 v1.0)"><span class="xref std std-ref">Atk.Component (1)</span></a>,     <a class="reference external" href="../../Atk-1.0/classes/Window.html#atk-window-fields" title="(in Atk 1.0 v1.0)"><span class="xref std std-ref">Atk.Window (9)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="16%" />
+<col width="1%" />
+<col width="1%" />
+<col width="82%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Access</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>parent</td>
+<td><a class="reference internal" href="ContainerAccessible.html#Gtk.ContainerAccessible" title="Gtk.ContainerAccessible"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ContainerAccessible</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="class-details">
+<h2>Class Details<a class="headerlink" href="#class-details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Gtk.WindowAccessible">
+<em class="property">class </em><code class="descclassname">Gtk.</code><code class="descname">WindowAccessible</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#Gtk.WindowAccessible" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Bases:</th><td class="field-body"><a class="reference internal" href="ContainerAccessible.html#Gtk.ContainerAccessible" title="Gtk.ContainerAccessible"><code class="xref py py-class docutils literal notranslate"><span class="pre">Gtk.ContainerAccessible</span></code></a>,         <a class="reference external" href="../../Atk-1.0/classes/Window.html#Atk.Window" title="(in Atk 1.0 v1.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Atk.Window</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Abstract:</th><td class="field-body">No</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Structure:</th><td class="field-body"><a class="reference internal" href="WindowAccessibleClass.html#Gtk.WindowAccessibleClass" title="Gtk.WindowAccessibleClass"><code class="xref py py-class docutils literal notranslate"><span class="pre">Gtk.WindowAccessibleClass</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div> 
+
+</body>
+</html>

@@ -1,0 +1,1315 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    Gtk.Toolbar -
+    
+      Classes -
+    
+    Gtk 3.0
+  </title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/css/pgi.css" type="text/css" />
+  
+
+  
+  <script type="text/javascript">
+
+    function openSidebar(element) {
+        window.location.href = element.href + location.hash;
+        return false;
+    }
+
+    function inIframe() {
+        try {
+            return window.self !== window.top;
+        } catch (e) {
+            return true;
+        }
+    }
+
+    function onLoaded() {
+        if(!inIframe()) {
+            var icons = document.getElementsByClassName('open-sidebar');
+
+            for (var i = 0; i < icons.length; i ++) {
+                icons[i].style.display = 'table-cell';
+            }
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', onLoaded, false);
+
+  </script>
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="Gtk 3.0 Python API Docs" href="../index.html"/>
+        <link rel="up" title="Classes" href="../classes.html"/>
+        <link rel="next" title="Gtk.Tooltip" href="Tooltip.html"/>
+        <link rel="prev" title="Gtk.ToolPalette" href="ToolPalette.html"/> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+<div class="non-fixed-bar">
+<table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#Gtk-3.0/classes/Toolbar.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Gtk 3.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>Gtk.Toolbar</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="ToolPalette.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="Tooltip.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">Gtk.Toolbar</a><ul>
+<li><a class="reference internal" href="#example">Example</a></li>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#child-properties">Child Properties</a></li>
+<li><a class="reference internal" href="#style-properties">Style Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#signal-details">Signal Details</a></li>
+<li><a class="reference internal" href="#property-details">Property Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+<div class="fixed-bar">
+  <table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#Gtk-3.0/classes/Toolbar.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Gtk 3.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>Gtk.Toolbar</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="ToolPalette.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="Tooltip.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">Gtk.Toolbar</a><ul>
+<li><a class="reference internal" href="#example">Example</a></li>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#child-properties">Child Properties</a></li>
+<li><a class="reference internal" href="#style-properties">Style Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#signal-details">Signal Details</a></li>
+<li><a class="reference internal" href="#property-details">Property Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+  <div class="wy-grid-for-nav">
+
+    
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="main">
+            
+  <div class="section" id="gtk-toolbar">
+<h1>Gtk.Toolbar<a class="headerlink" href="#gtk-toolbar" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<svg width="484pt" height="242pt"
+ viewBox="0.00 0.00 483.50 242.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 238)">
+<title>g</title>
+<!-- Atk.ImplementorIface -->
+<g id="node1" class="node">
+<title>Atk.ImplementorIface</title>
+<g id="a_node1"><a xlink:href="../../Atk-1.0/classes/ImplementorIface.html#Atk.ImplementorIface" xlink:title="Atk.ImplementorIface">
+<path fill="none" stroke="#3091d1" d="M329.5,-180C329.5,-180 233.5,-180 233.5,-180 230.5,-180 227.5,-177 227.5,-174 227.5,-174 227.5,-168 227.5,-168 227.5,-165 230.5,-162 233.5,-162 233.5,-162 329.5,-162 329.5,-162 332.5,-162 335.5,-165 335.5,-168 335.5,-168 335.5,-174 335.5,-174 335.5,-177 332.5,-180 329.5,-180"/>
+<text text-anchor="middle" x="281.5" y="-168.7" font-family="inherit" font-size="8.50">Atk.ImplementorIface</text>
+</a>
+</g>
+</g>
+<!-- Gtk.Widget -->
+<g id="node10" class="node">
+<title>Gtk.Widget</title>
+<g id="a_node10"><a xlink:href="Widget.html#Gtk.Widget" xlink:title="Gtk.Widget">
+<path fill="none" stroke="#aaaaaa" d="M286.5,-126C286.5,-126 234.5,-126 234.5,-126 231.5,-126 228.5,-123 228.5,-120 228.5,-120 228.5,-114 228.5,-114 228.5,-111 231.5,-108 234.5,-108 234.5,-108 286.5,-108 286.5,-108 289.5,-108 292.5,-111 292.5,-114 292.5,-114 292.5,-120 292.5,-120 292.5,-123 289.5,-126 286.5,-126"/>
+<text text-anchor="middle" x="260.5" y="-114.7" font-family="inherit" font-size="8.50">Gtk.Widget</text>
+</a>
+</g>
+</g>
+<!-- Atk.ImplementorIface&#45;&gt;Gtk.Widget -->
+<g id="edge1" class="edge">
+<title>Atk.ImplementorIface&#45;&gt;Gtk.Widget</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M278.22,-161.88C274.88,-153.6 269.65,-140.66 265.74,-130.97"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="267.32,-130.22 263.83,-126.24 264.08,-131.53 267.32,-130.22"/>
+</g>
+<!-- GObject.GInterface -->
+<g id="node2" class="node">
+<title>GObject.GInterface</title>
+<g id="a_node2"><a xlink:href="../../GObject-2.0/classes/GInterface.html#GObject.GInterface" xlink:title="GObject.GInterface">
+<path fill="none" stroke="#3091d1" d="M183.5,-234C183.5,-234 97.5,-234 97.5,-234 94.5,-234 91.5,-231 91.5,-228 91.5,-228 91.5,-222 91.5,-222 91.5,-219 94.5,-216 97.5,-216 97.5,-216 183.5,-216 183.5,-216 186.5,-216 189.5,-219 189.5,-222 189.5,-222 189.5,-228 189.5,-228 189.5,-231 186.5,-234 183.5,-234"/>
+<text text-anchor="middle" x="140.5" y="-222.7" font-family="inherit" font-size="8.50">GObject.GInterface</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Atk.ImplementorIface -->
+<g id="edge2" class="edge">
+<title>GObject.GInterface&#45;&gt;Atk.ImplementorIface</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M162.22,-215.99C187.09,-206.82 227.85,-191.79 254.68,-181.89"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="255.44,-183.48 259.52,-180.11 254.22,-180.19 255.44,-183.48"/>
+</g>
+<!-- Gtk.Buildable -->
+<g id="node5" class="node">
+<title>Gtk.Buildable</title>
+<g id="a_node5"><a xlink:href="Buildable.html#Gtk.Buildable" xlink:title="Gtk.Buildable">
+<path fill="none" stroke="#3091d1" d="M203.5,-180C203.5,-180 141.5,-180 141.5,-180 138.5,-180 135.5,-177 135.5,-174 135.5,-174 135.5,-168 135.5,-168 135.5,-165 138.5,-162 141.5,-162 141.5,-162 203.5,-162 203.5,-162 206.5,-162 209.5,-165 209.5,-168 209.5,-168 209.5,-174 209.5,-174 209.5,-177 206.5,-180 203.5,-180"/>
+<text text-anchor="middle" x="172.5" y="-168.7" font-family="inherit" font-size="8.50">Gtk.Buildable</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Gtk.Buildable -->
+<g id="edge3" class="edge">
+<title>GObject.GInterface&#45;&gt;Gtk.Buildable</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M145.5,-215.88C150.64,-207.53 158.7,-194.42 164.68,-184.7"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="166.3,-185.42 167.43,-180.24 163.32,-183.58 166.3,-185.42"/>
+</g>
+<!-- Gtk.Orientable -->
+<g id="node7" class="node">
+<title>Gtk.Orientable</title>
+<g id="a_node7"><a xlink:href="Orientable.html#Gtk.Orientable" xlink:title="Gtk.Orientable">
+<path fill="none" stroke="#3091d1" d="M73,-126C73,-126 6,-126 6,-126 3,-126 0,-123 0,-120 0,-120 0,-114 0,-114 0,-111 3,-108 6,-108 6,-108 73,-108 73,-108 76,-108 79,-111 79,-114 79,-114 79,-120 79,-120 79,-123 76,-126 73,-126"/>
+<text text-anchor="middle" x="39.5" y="-114.7" font-family="inherit" font-size="8.50">Gtk.Orientable</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Gtk.Orientable -->
+<g id="edge4" class="edge">
+<title>GObject.GInterface&#45;&gt;Gtk.Orientable</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M131.23,-215.83C121.55,-207.19 106.07,-193.03 93.5,-180 77.47,-163.39 60.15,-143.02 49.56,-130.27"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="50.77,-129 46.24,-126.26 48.07,-131.23 50.77,-129"/>
+</g>
+<!-- Gtk.ToolShell -->
+<g id="node8" class="node">
+<title>Gtk.ToolShell</title>
+<g id="a_node8"><a xlink:href="ToolShell.html#Gtk.ToolShell" xlink:title="Gtk.ToolShell">
+<path fill="none" stroke="#3091d1" d="M137,-72C137,-72 78,-72 78,-72 75,-72 72,-69 72,-66 72,-66 72,-60 72,-60 72,-57 75,-54 78,-54 78,-54 137,-54 137,-54 140,-54 143,-57 143,-60 143,-60 143,-66 143,-66 143,-69 140,-72 137,-72"/>
+<text text-anchor="middle" x="107.5" y="-60.7" font-family="inherit" font-size="8.50">Gtk.ToolShell</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Gtk.ToolShell -->
+<g id="edge5" class="edge">
+<title>GObject.GInterface&#45;&gt;Gtk.ToolShell</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M137.56,-215.99C134.45,-207.25 129.56,-192.78 126.5,-180 117.69,-143.23 111.68,-98.91 109.03,-77.24"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="110.76,-76.99 108.43,-72.24 107.29,-77.41 110.76,-76.99"/>
+</g>
+<!-- GObject.InitiallyUnowned -->
+<g id="node3" class="node">
+<title>GObject.InitiallyUnowned</title>
+<g id="a_node3"><a xlink:href="../../GObject-2.0/classes/InitiallyUnowned.html#GObject.InitiallyUnowned" xlink:title="GObject.InitiallyUnowned">
+<path fill="none" stroke="#75507b" d="M469.5,-180C469.5,-180 359.5,-180 359.5,-180 356.5,-180 353.5,-177 353.5,-174 353.5,-174 353.5,-168 353.5,-168 353.5,-165 356.5,-162 359.5,-162 359.5,-162 469.5,-162 469.5,-162 472.5,-162 475.5,-165 475.5,-168 475.5,-168 475.5,-174 475.5,-174 475.5,-177 472.5,-180 469.5,-180"/>
+<text text-anchor="middle" x="414.5" y="-168.7" font-family="inherit" font-size="8.50">GObject.InitiallyUnowned</text>
+</a>
+</g>
+</g>
+<!-- GObject.InitiallyUnowned&#45;&gt;Gtk.Widget -->
+<g id="edge6" class="edge">
+<title>GObject.InitiallyUnowned&#45;&gt;Gtk.Widget</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M390.77,-161.99C363.42,-152.75 318.46,-137.57 289.17,-127.68"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="289.55,-125.96 284.25,-126.02 288.43,-129.28 289.55,-125.96"/>
+</g>
+<!-- GObject.Object -->
+<g id="node4" class="node">
+<title>GObject.Object</title>
+<g id="a_node4"><a xlink:href="../../GObject-2.0/classes/Object.html#GObject.Object" xlink:title="GObject.Object">
+<path fill="none" stroke="#75507b" d="M448.5,-234C448.5,-234 380.5,-234 380.5,-234 377.5,-234 374.5,-231 374.5,-228 374.5,-228 374.5,-222 374.5,-222 374.5,-219 377.5,-216 380.5,-216 380.5,-216 448.5,-216 448.5,-216 451.5,-216 454.5,-219 454.5,-222 454.5,-222 454.5,-228 454.5,-228 454.5,-231 451.5,-234 448.5,-234"/>
+<text text-anchor="middle" x="414.5" y="-222.7" font-family="inherit" font-size="8.50">GObject.Object</text>
+</a>
+</g>
+</g>
+<!-- GObject.Object&#45;&gt;GObject.InitiallyUnowned -->
+<g id="edge7" class="edge">
+<title>GObject.Object&#45;&gt;GObject.InitiallyUnowned</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M414.5,-215.88C414.5,-207.76 414.5,-195.13 414.5,-185.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="416.25,-185.24 414.5,-180.24 412.75,-185.24 416.25,-185.24"/>
+</g>
+<!-- Gtk.Buildable&#45;&gt;Gtk.Widget -->
+<g id="edge8" class="edge">
+<title>Gtk.Buildable&#45;&gt;Gtk.Widget</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M186.25,-161.88C201.36,-152.95 225.7,-138.56 242.36,-128.72"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="243.43,-130.12 246.85,-126.07 241.65,-127.11 243.43,-130.12"/>
+</g>
+<!-- Gtk.Container -->
+<g id="node6" class="node">
+<title>Gtk.Container</title>
+<g id="a_node6"><a xlink:href="Container.html#Gtk.Container" xlink:title="Gtk.Container">
+<path fill="none" stroke="#aaaaaa" d="M272.5,-72C272.5,-72 208.5,-72 208.5,-72 205.5,-72 202.5,-69 202.5,-66 202.5,-66 202.5,-60 202.5,-60 202.5,-57 205.5,-54 208.5,-54 208.5,-54 272.5,-54 272.5,-54 275.5,-54 278.5,-57 278.5,-60 278.5,-60 278.5,-66 278.5,-66 278.5,-69 275.5,-72 272.5,-72"/>
+<text text-anchor="middle" x="240.5" y="-60.7" font-family="inherit" font-size="8.50">Gtk.Container</text>
+</a>
+</g>
+</g>
+<!-- Gtk.Toolbar -->
+<g id="node9" class="node">
+<title>Gtk.Toolbar</title>
+<g id="a_node9"><a xlink:href="#Gtk.Toolbar" xlink:title="Gtk.Toolbar">
+<path fill="none" stroke="#75507b" d="M134,-18C134,-18 81,-18 81,-18 78,-18 75,-15 75,-12 75,-12 75,-6 75,-6 75,-3 78,0 81,0 81,0 134,0 134,0 137,0 140,-3 140,-6 140,-6 140,-12 140,-12 140,-15 137,-18 134,-18"/>
+<text text-anchor="middle" x="107.5" y="-6.7" font-family="inherit" font-size="8.50">Gtk.Toolbar</text>
+</a>
+</g>
+</g>
+<!-- Gtk.Container&#45;&gt;Gtk.Toolbar -->
+<g id="edge9" class="edge">
+<title>Gtk.Container&#45;&gt;Gtk.Toolbar</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M220.01,-53.99C196.65,-44.85 158.42,-29.91 133.11,-20.01"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="133.53,-18.3 128.23,-18.11 132.25,-21.56 133.53,-18.3"/>
+</g>
+<!-- Gtk.Orientable&#45;&gt;Gtk.Toolbar -->
+<g id="edge10" class="edge">
+<title>Gtk.Orientable&#45;&gt;Gtk.Toolbar</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M41.3,-107.85C44.3,-95.47 51.12,-71.52 62.5,-54 70.73,-41.33 83.19,-29.51 92.92,-21.32"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="94.15,-22.57 96.9,-18.04 91.93,-19.87 94.15,-22.57"/>
+</g>
+<!-- Gtk.ToolShell&#45;&gt;Gtk.Toolbar -->
+<g id="edge11" class="edge">
+<title>Gtk.ToolShell&#45;&gt;Gtk.Toolbar</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M107.5,-53.88C107.5,-45.76 107.5,-33.13 107.5,-23.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="109.25,-23.24 107.5,-18.24 105.75,-23.24 109.25,-23.24"/>
+</g>
+<!-- Gtk.Widget&#45;&gt;Gtk.Container -->
+<g id="edge12" class="edge">
+<title>Gtk.Widget&#45;&gt;Gtk.Container</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M257.38,-107.88C254.19,-99.6 249.21,-86.66 245.49,-76.97"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="247.1,-76.28 243.67,-72.24 243.83,-77.53 247.1,-76.28"/>
+</g>
+</g>
+</svg>
+</p>
+<div class="section" id="example">
+<h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
+<img alt="../_images/Toolbar.png" src="../_images/Toolbar.png" />
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Subclasses:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="methods">
+<span id="gtk-toolbar-methods"></span><h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Container.html#gtk-container-methods"><span class="std std-ref">Gtk.Container (35)</span></a>,     <a class="reference internal" href="Widget.html#gtk-widget-methods"><span class="std std-ref">Gtk.Widget (278)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (37)</span></a>,     <a class="reference internal" href="Buildable.html#gtk-buildable-methods"><span class="std std-ref">Gtk.Buildable (10)</span></a>,     <a class="reference internal" href="Orientable.html#gtk-orientable-methods"><span class="std std-ref">Gtk.Orientable (2)</span></a>,     <a class="reference internal" href="ToolShell.html#gtk-toolshell-methods"><span class="std std-ref">Gtk.ToolShell (9)</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Structs:</th><td class="field-body"><a class="reference internal" href="ContainerClass.html#gtk-containerclass-methods"><span class="std std-ref">Gtk.ContainerClass (5)</span></a>,     <a class="reference internal" href="WidgetClass.html#gtk-widgetclass-methods"><span class="std std-ref">Gtk.WidgetClass (12)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/ObjectClass.html#gobject-objectclass-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.ObjectClass (5)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="99%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><em>class</em></td>
+<td><a class="reference internal" href="#Gtk.Toolbar.new" title="Gtk.Toolbar.new"><code class="xref py py-func docutils literal notranslate"><span class="pre">new</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.Toolbar.get_drop_index" title="Gtk.Toolbar.get_drop_index"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_drop_index</span></code></a> (x, y)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.Toolbar.get_icon_size" title="Gtk.Toolbar.get_icon_size"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_icon_size</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.Toolbar.get_item_index" title="Gtk.Toolbar.get_item_index"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_item_index</span></code></a> (item)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.Toolbar.get_n_items" title="Gtk.Toolbar.get_n_items"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_n_items</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.Toolbar.get_nth_item" title="Gtk.Toolbar.get_nth_item"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_nth_item</span></code></a> (n)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.Toolbar.get_relief_style" title="Gtk.Toolbar.get_relief_style"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_relief_style</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.Toolbar.get_show_arrow" title="Gtk.Toolbar.get_show_arrow"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_show_arrow</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.Toolbar.get_style" title="Gtk.Toolbar.get_style"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_style</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.Toolbar.insert" title="Gtk.Toolbar.insert"><code class="xref py py-func docutils literal notranslate"><span class="pre">insert</span></code></a> (item, pos)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.Toolbar.set_drop_highlight_item" title="Gtk.Toolbar.set_drop_highlight_item"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_drop_highlight_item</span></code></a> (tool_item, index_)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.Toolbar.set_icon_size" title="Gtk.Toolbar.set_icon_size"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_icon_size</span></code></a> (icon_size)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.Toolbar.set_show_arrow" title="Gtk.Toolbar.set_show_arrow"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_show_arrow</span></code></a> (show_arrow)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.Toolbar.set_style" title="Gtk.Toolbar.set_style"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_style</span></code></a> (style)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.Toolbar.unset_icon_size" title="Gtk.Toolbar.unset_icon_size"><code class="xref py py-func docutils literal notranslate"><span class="pre">unset_icon_size</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.Toolbar.unset_style" title="Gtk.Toolbar.unset_style"><code class="xref py py-func docutils literal notranslate"><span class="pre">unset_style</span></code></a> ()</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="virtual-methods">
+<span id="gtk-toolbar-vfuncs"></span><h2>Virtual Methods<a class="headerlink" href="#virtual-methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Container.html#gtk-container-vfuncs"><span class="std std-ref">Gtk.Container (10)</span></a>,     <a class="reference internal" href="Widget.html#gtk-widget-vfuncs"><span class="std std-ref">Gtk.Widget (82)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-vfuncs" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (7)</span></a>,     <a class="reference internal" href="Buildable.html#gtk-buildable-vfuncs"><span class="std std-ref">Gtk.Buildable (10)</span></a>,     <a class="reference internal" href="ToolShell.html#gtk-toolshell-vfuncs"><span class="std std-ref">Gtk.ToolShell (9)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="99%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.Toolbar.do_orientation_changed" title="Gtk.Toolbar.do_orientation_changed"><code class="xref py py-func docutils literal notranslate"><span class="pre">do_orientation_changed</span></code></a> (orientation)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.Toolbar.do_popup_context_menu" title="Gtk.Toolbar.do_popup_context_menu"><code class="xref py py-func docutils literal notranslate"><span class="pre">do_popup_context_menu</span></code></a> (x, y, button_number)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.Toolbar.do_style_changed" title="Gtk.Toolbar.do_style_changed"><code class="xref py py-func docutils literal notranslate"><span class="pre">do_style_changed</span></code></a> (style)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="gtk-toolbar-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Container.html#gtk-container-props"><span class="std std-ref">Gtk.Container (3)</span></a>,     <a class="reference internal" href="Widget.html#gtk-widget-props"><span class="std std-ref">Gtk.Widget (39)</span></a>,     <a class="reference internal" href="Orientable.html#gtk-orientable-props"><span class="std std-ref">Gtk.Orientable (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="1%" />
+<col width="1%" />
+<col width="97%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Flags</th>
+<th class="head">Short Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="#Gtk.Toolbar.props.icon_size" title="Gtk.Toolbar.props.icon_size"><code class="xref py py-data docutils literal notranslate"><span class="pre">icon-size</span></code></a></td>
+<td><a class="reference internal" href="../enums.html#Gtk.IconSize" title="Gtk.IconSize"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.IconSize</span></code></a></td>
+<td>r/w/en</td>
+<td>Size of icons in this toolbar</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#Gtk.Toolbar.props.icon_size_set" title="Gtk.Toolbar.props.icon_size_set"><code class="xref py py-data docutils literal notranslate"><span class="pre">icon-size-set</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+<td>r/w</td>
+<td>Whether the icon-size property has been set</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#Gtk.Toolbar.props.show_arrow" title="Gtk.Toolbar.props.show_arrow"><code class="xref py py-data docutils literal notranslate"><span class="pre">show-arrow</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+<td>r/w/en</td>
+<td>If an arrow should be shown if the toolbar doesn’t fit</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#Gtk.Toolbar.props.toolbar_style" title="Gtk.Toolbar.props.toolbar_style"><code class="xref py py-data docutils literal notranslate"><span class="pre">toolbar-style</span></code></a></td>
+<td><a class="reference internal" href="../enums.html#Gtk.ToolbarStyle" title="Gtk.ToolbarStyle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ToolbarStyle</span></code></a></td>
+<td>r/w/en</td>
+<td>How to draw the toolbar</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="child-properties">
+<span id="gtk-toolbar-child-props"></span><h2>Child Properties<a class="headerlink" href="#child-properties" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="1%" />
+<col width="1%" />
+<col width="1%" />
+<col width="96%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Default</th>
+<th class="head">Flags</th>
+<th class="head">Short Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">expand</span></code></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a></td>
+<td>r/w</td>
+<td>Whether the item should receive extra space when the toolbar grows</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">homogeneous</span></code></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a></td>
+<td>r/w</td>
+<td>Whether the item should be the same size as other homogeneous items</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="style-properties">
+<span id="gtk-toolbar-style-props"></span><h2>Style Properties<a class="headerlink" href="#style-properties" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Widget.html#gtk-widget-style-props"><span class="std std-ref">Gtk.Widget (17)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="1%" />
+<col width="1%" />
+<col width="1%" />
+<col width="96%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Default</th>
+<th class="head">Flags</th>
+<th class="head">Short Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">button-relief</span></code></td>
+<td><a class="reference internal" href="../enums.html#Gtk.ReliefStyle" title="Gtk.ReliefStyle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ReliefStyle</span></code></a></td>
+<td><a class="reference internal" href="../enums.html#Gtk.ReliefStyle.NONE" title="Gtk.ReliefStyle.NONE"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ReliefStyle.NONE</span></code></a></td>
+<td>r</td>
+<td>Type of bevel around toolbar buttons</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">internal-padding</span></code></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+<td><code class="docutils literal notranslate"><span class="pre">0</span></code></td>
+<td>d/r</td>
+<td>Amount of border space between the toolbar shadow and the buttons <code class="docutils literal notranslate"><span class="pre">deprecated</span></code></td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">max-child-expand</span></code></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+<td><code class="docutils literal notranslate"><span class="pre">2147483647</span></code></td>
+<td>r</td>
+<td>Maximum amount of space an expandable item will be given</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">shadow-type</span></code></td>
+<td><a class="reference internal" href="../enums.html#Gtk.ShadowType" title="Gtk.ShadowType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ShadowType</span></code></a></td>
+<td><a class="reference internal" href="../enums.html#Gtk.ShadowType.OUT" title="Gtk.ShadowType.OUT"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ShadowType.OUT</span></code></a></td>
+<td>d/r</td>
+<td>Style of bevel around the toolbar <code class="docutils literal notranslate"><span class="pre">deprecated</span></code></td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">space-size</span></code></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+<td><code class="docutils literal notranslate"><span class="pre">12</span></code></td>
+<td>d/r</td>
+<td>Size of spacers <code class="docutils literal notranslate"><span class="pre">deprecated</span></code></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">space-style</span></code></td>
+<td><a class="reference internal" href="../enums.html#Gtk.ToolbarSpaceStyle" title="Gtk.ToolbarSpaceStyle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ToolbarSpaceStyle</span></code></a></td>
+<td><a class="reference internal" href="../enums.html#Gtk.ToolbarSpaceStyle.LINE" title="Gtk.ToolbarSpaceStyle.LINE"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ToolbarSpaceStyle.LINE</span></code></a></td>
+<td>d/r</td>
+<td>Whether spacers are vertical lines or just blank <code class="docutils literal notranslate"><span class="pre">deprecated</span></code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="signals">
+<span id="gtk-toolbar-signals"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Container.html#gtk-container-signals"><span class="std std-ref">Gtk.Container (4)</span></a>,     <a class="reference internal" href="Widget.html#gtk-widget-signals"><span class="std std-ref">Gtk.Widget (69)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-signals" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="30%" />
+<col width="70%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Short Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="#Gtk.Toolbar.signals.focus_home_or_end" title="Gtk.Toolbar.signals.focus_home_or_end"><code class="xref py py-func docutils literal notranslate"><span class="pre">focus-home-or-end</span></code></a></td>
+<td>A keybinding signal used internally by GTK+.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#Gtk.Toolbar.signals.orientation_changed" title="Gtk.Toolbar.signals.orientation_changed"><code class="xref py py-func docutils literal notranslate"><span class="pre">orientation-changed</span></code></a></td>
+<td>Emitted when the orientation of the toolbar changes.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#Gtk.Toolbar.signals.popup_context_menu" title="Gtk.Toolbar.signals.popup_context_menu"><code class="xref py py-func docutils literal notranslate"><span class="pre">popup-context-menu</span></code></a></td>
+<td>Emitted when the user right-clicks the toolbar or uses the keybinding to display a popup menu.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#Gtk.Toolbar.signals.style_changed" title="Gtk.Toolbar.signals.style_changed"><code class="xref py py-func docutils literal notranslate"><span class="pre">style-changed</span></code></a></td>
+<td>Emitted when the style of the toolbar changes.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fields">
+<span id="gtk-toolbar-fields"></span><h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Container.html#gtk-container-fields"><span class="std std-ref">Gtk.Container (4)</span></a>,     <a class="reference internal" href="Widget.html#gtk-widget-fields"><span class="std std-ref">Gtk.Widget (69)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-fields" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="16%" />
+<col width="1%" />
+<col width="1%" />
+<col width="82%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Access</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>container</td>
+<td><a class="reference internal" href="Container.html#Gtk.Container" title="Gtk.Container"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Container</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="class-details">
+<h2>Class Details<a class="headerlink" href="#class-details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Gtk.Toolbar">
+<em class="property">class </em><code class="descclassname">Gtk.</code><code class="descname">Toolbar</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#Gtk.Toolbar" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Bases:</th><td class="field-body"><a class="reference internal" href="Container.html#Gtk.Container" title="Gtk.Container"><code class="xref py py-class docutils literal notranslate"><span class="pre">Gtk.Container</span></code></a>,         <a class="reference internal" href="Orientable.html#Gtk.Orientable" title="Gtk.Orientable"><code class="xref py py-class docutils literal notranslate"><span class="pre">Gtk.Orientable</span></code></a>,         <a class="reference internal" href="ToolShell.html#Gtk.ToolShell" title="Gtk.ToolShell"><code class="xref py py-class docutils literal notranslate"><span class="pre">Gtk.ToolShell</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Abstract:</th><td class="field-body">No</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Structure:</th><td class="field-body"><a class="reference internal" href="ToolbarClass.html#Gtk.ToolbarClass" title="Gtk.ToolbarClass"><code class="xref py py-class docutils literal notranslate"><span class="pre">Gtk.ToolbarClass</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>A toolbar is created with a call to <a class="reference internal" href="#Gtk.Toolbar.new" title="Gtk.Toolbar.new"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Toolbar.new</span></code></a>().</p>
+<p>A toolbar can contain instances of a subclass of <a class="reference internal" href="ToolItem.html#Gtk.ToolItem" title="Gtk.ToolItem"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ToolItem</span></code></a>. To add
+a <a class="reference internal" href="ToolItem.html#Gtk.ToolItem" title="Gtk.ToolItem"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ToolItem</span></code></a> to the a toolbar, use <a class="reference internal" href="#Gtk.Toolbar.insert" title="Gtk.Toolbar.insert"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Toolbar.insert</span></code></a>(). To remove
+an item from the toolbar use <a class="reference internal" href="Container.html#Gtk.Container.remove" title="Gtk.Container.remove"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Container.remove</span></code></a>(). To add a button
+to the toolbar, add an instance of <a class="reference internal" href="ToolButton.html#Gtk.ToolButton" title="Gtk.ToolButton"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ToolButton</span></code></a>.</p>
+<p>Toolbar items can be visually grouped by adding instances of
+<a class="reference internal" href="SeparatorToolItem.html#Gtk.SeparatorToolItem" title="Gtk.SeparatorToolItem"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.SeparatorToolItem</span></code></a> to the toolbar. If the <a class="reference internal" href="#Gtk.Toolbar" title="Gtk.Toolbar"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Toolbar</span></code></a> child property
+“expand” is <a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> and the property <a class="reference internal" href="SeparatorToolItem.html#Gtk.SeparatorToolItem" title="Gtk.SeparatorToolItem"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.SeparatorToolItem</span></code></a> <a class="reference internal" href="SeparatorToolItem.html#Gtk.SeparatorToolItem.props.draw" title="Gtk.SeparatorToolItem.props.draw"><code class="xref py py-data docutils literal notranslate"><span class="pre">:draw</span></code></a> is set to
+<a class="reference external" href="http://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a>, the effect is to force all following items to the end of the toolbar.</p>
+<p>By default, a toolbar can be shrunk, upon which it will add an arrow button
+to show an overflow menu offering access to any <a class="reference internal" href="ToolItem.html#Gtk.ToolItem" title="Gtk.ToolItem"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ToolItem</span></code></a> child that has
+a proxy menu item. To disable this and request enough size for all children,
+call <a class="reference internal" href="#Gtk.Toolbar.set_show_arrow" title="Gtk.Toolbar.set_show_arrow"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Toolbar.set_show_arrow</span></code></a>() to set <a class="reference internal" href="#Gtk.Toolbar" title="Gtk.Toolbar"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Toolbar</span></code></a> <a class="reference internal" href="#Gtk.Toolbar.props.show_arrow" title="Gtk.Toolbar.props.show_arrow"><code class="xref py py-data docutils literal notranslate"><span class="pre">:show-arrow</span></code></a> to <a class="reference external" href="http://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a>.</p>
+<p>Creating a context menu for the toolbar can be done by connecting to
+the <a class="reference internal" href="#Gtk.Toolbar" title="Gtk.Toolbar"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Toolbar</span></code></a> <a class="reference internal" href="#Gtk.Toolbar.signals.popup_context_menu" title="Gtk.Toolbar.signals.popup_context_menu"><code class="xref py py-func docutils literal notranslate"><span class="pre">::popup-context-menu</span></code></a> signal.</p>
+<dl class="docutils">
+<dt>CSS nodes</dt>
+<dd></dd>
+</dl>
+<p><a class="reference internal" href="#Gtk.Toolbar" title="Gtk.Toolbar"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Toolbar</span></code></a> has a single CSS node with name toolbar.</p>
+<dl class="classmethod">
+<dt id="Gtk.Toolbar.new">
+<em class="property">classmethod </em><code class="descname">new</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtktoolbar.c#L2742"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.Toolbar.new" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the newly-created toolbar.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="Widget.html#Gtk.Widget" title="Gtk.Widget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Widget</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Creates a new toolbar.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.Toolbar.get_drop_index">
+<code class="descname">get_drop_index</code><span class="sig-paren">(</span><em>x</em>, <em>y</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtktoolbar.c#L3060"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.Toolbar.get_drop_index" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>x</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – x coordinate of a point on the toolbar</li>
+<li><strong>y</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – y coordinate of a point on the toolbar</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">The position corresponding to the point (<cite>x</cite>, <cite>y</cite>) on the toolbar.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Returns the position corresponding to the indicated point on
+<cite>self</cite>. This is useful when dragging items to the toolbar:
+this function returns the position a new item should be
+inserted.</p>
+<p><cite>x</cite> and <cite>y</cite> are in <cite>self</cite> coordinates.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.4.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.Toolbar.get_icon_size">
+<code class="descname">get_icon_size</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtktoolbar.c#L2957"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.Toolbar.get_icon_size" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the current icon size for the icons on the toolbar.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#Gtk.IconSize" title="Gtk.IconSize"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.IconSize</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Retrieves the icon size for the toolbar. See <a class="reference internal" href="#Gtk.Toolbar.set_icon_size" title="Gtk.Toolbar.set_icon_size"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Toolbar.set_icon_size</span></code></a>().</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.Toolbar.get_item_index">
+<code class="descname">get_item_index</code><span class="sig-paren">(</span><em>item</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtktoolbar.c#L2793"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.Toolbar.get_item_index" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>item</strong> (<a class="reference internal" href="ToolItem.html#Gtk.ToolItem" title="Gtk.ToolItem"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ToolItem</span></code></a>) – a <a class="reference internal" href="ToolItem.html#Gtk.ToolItem" title="Gtk.ToolItem"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ToolItem</span></code></a> that is a child of <cite>self</cite></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the position of item on the toolbar.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns the position of <cite>item</cite> on the toolbar, starting from 0.
+It is an error if <cite>item</cite> is not a child of the toolbar.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.4.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.Toolbar.get_n_items">
+<code class="descname">get_n_items</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtktoolbar.c#L2899"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.Toolbar.get_n_items" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the number of items on the toolbar</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns the number of items on the toolbar.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.4.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.Toolbar.get_nth_item">
+<code class="descname">get_nth_item</code><span class="sig-paren">(</span><em>n</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtktoolbar.c#L2925"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.Toolbar.get_nth_item" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>n</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – A position on the toolbar</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The <cite>n</cite>’th <a class="reference internal" href="ToolItem.html#Gtk.ToolItem" title="Gtk.ToolItem"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ToolItem</span></code></a> on <cite>self</cite>,
+or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> if there isn’t an <cite>n</cite>’th item.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="ToolItem.html#Gtk.ToolItem" title="Gtk.ToolItem"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ToolItem</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns the <cite>n</cite>’th item on <cite>self</cite>, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> if the
+toolbar does not contain an <cite>n</cite>’th item.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.4.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.Toolbar.get_relief_style">
+<code class="descname">get_relief_style</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtktoolbar.c#L2976"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.Toolbar.get_relief_style" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The relief style of buttons on <cite>self</cite>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#Gtk.ReliefStyle" title="Gtk.ReliefStyle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ReliefStyle</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns the relief style of buttons on <cite>self</cite>. See
+<a class="reference internal" href="Button.html#Gtk.Button.set_relief" title="Gtk.Button.set_relief"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Button.set_relief</span></code></a>().</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.4.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.Toolbar.get_show_arrow">
+<code class="descname">get_show_arrow</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtktoolbar.c#L3033"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.Toolbar.get_show_arrow" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if the toolbar has an overflow menu.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns whether the toolbar has an overflow menu.
+See <a class="reference internal" href="#Gtk.Toolbar.set_show_arrow" title="Gtk.Toolbar.set_show_arrow"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Toolbar.set_show_arrow</span></code></a>().</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.4.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.Toolbar.get_style">
+<code class="descname">get_style</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtktoolbar.c#L2853"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.Toolbar.get_style" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the current style of <cite>self</cite></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#Gtk.ToolbarStyle" title="Gtk.ToolbarStyle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ToolbarStyle</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Retrieves whether the toolbar has text, icons, or both . See
+<a class="reference internal" href="#Gtk.Toolbar.set_style" title="Gtk.Toolbar.set_style"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Toolbar.set_style</span></code></a>().</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.Toolbar.insert">
+<code class="descname">insert</code><span class="sig-paren">(</span><em>item</em>, <em>pos</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtktoolbar.c#L2766"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.Toolbar.insert" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>item</strong> (<a class="reference internal" href="ToolItem.html#Gtk.ToolItem" title="Gtk.ToolItem"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ToolItem</span></code></a>) – a <a class="reference internal" href="ToolItem.html#Gtk.ToolItem" title="Gtk.ToolItem"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ToolItem</span></code></a></li>
+<li><strong>pos</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – the position of the new item</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Insert a <a class="reference internal" href="ToolItem.html#Gtk.ToolItem" title="Gtk.ToolItem"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ToolItem</span></code></a> into the toolbar at position <cite>pos</cite>. If <cite>pos</cite> is
+0 the item is prepended to the start of the toolbar. If <cite>pos</cite> is
+negative, the item is appended to the end of the toolbar.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.4.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.Toolbar.set_drop_highlight_item">
+<code class="descname">set_drop_highlight_item</code><span class="sig-paren">(</span><em>tool_item</em>, <em>index_</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtktoolbar.c#L2318"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.Toolbar.set_drop_highlight_item" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>tool_item</strong> (<a class="reference internal" href="ToolItem.html#Gtk.ToolItem" title="Gtk.ToolItem"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ToolItem</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – a <a class="reference internal" href="ToolItem.html#Gtk.ToolItem" title="Gtk.ToolItem"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ToolItem</span></code></a>, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> to turn of highlighting</li>
+<li><strong>index</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – a position on <cite>self</cite></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Highlights <cite>self</cite> to give an idea of what it would look like
+if <cite>item</cite> was added to <cite>self</cite> at the position indicated by <cite>index_</cite>.
+If <cite>item</cite> is <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>, highlighting is turned off. In that case <cite>index_</cite>
+is ignored.</p>
+<p>The <cite>tool_item</cite> passed to this function must not be part of any widget
+hierarchy. When an item is set as drop highlight item it can not
+added to any widget hierarchy or used as highlight item for another
+toolbar.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.4.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.Toolbar.set_icon_size">
+<code class="descname">set_icon_size</code><span class="sig-paren">(</span><em>icon_size</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtktoolbar.c#L3132"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.Toolbar.set_icon_size" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>icon_size</strong> (<a class="reference internal" href="../enums.html#Gtk.IconSize" title="Gtk.IconSize"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.IconSize</span></code></a>) – The <a class="reference internal" href="../enums.html#Gtk.IconSize" title="Gtk.IconSize"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.IconSize</span></code></a> that stock icons in the toolbar shall have.</td>
+</tr>
+</tbody>
+</table>
+<p>This function sets the size of stock icons in the toolbar. You
+can call it both before you add the icons and after they’ve been
+added. The size you set will override user preferences for the default
+icon size.</p>
+<p>This should only be used for special-purpose toolbars, normal
+application toolbars should respect the user preferences for the
+size of icons.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.Toolbar.set_show_arrow">
+<code class="descname">set_show_arrow</code><span class="sig-paren">(</span><em>show_arrow</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtktoolbar.c#L2999"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.Toolbar.set_show_arrow" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>show_arrow</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a>) – Whether to show an overflow menu</td>
+</tr>
+</tbody>
+</table>
+<p>Sets whether to show an overflow menu when <cite>self</cite> isn’t allocated enough
+size to show all of its items. If <a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a>, items which can’t fit in <cite>self</cite>,
+and which have a proxy menu item set by <a class="reference internal" href="ToolItem.html#Gtk.ToolItem.set_proxy_menu_item" title="Gtk.ToolItem.set_proxy_menu_item"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ToolItem.set_proxy_menu_item</span></code></a>()
+or <a class="reference internal" href="ToolItem.html#Gtk.ToolItem" title="Gtk.ToolItem"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ToolItem</span></code></a> <a class="reference internal" href="ToolItem.html#Gtk.ToolItem.signals.create_menu_proxy" title="Gtk.ToolItem.signals.create_menu_proxy"><code class="xref py py-func docutils literal notranslate"><span class="pre">::create-menu-proxy</span></code></a>, will be available in an overflow menu,
+which can be opened by an added arrow button. If <a class="reference external" href="http://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a>, <cite>self</cite> will
+request enough size to fit all of its child items without any overflow.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.4.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.Toolbar.set_style">
+<code class="descname">set_style</code><span class="sig-paren">(</span><em>style</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtktoolbar.c#L2831"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.Toolbar.set_style" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>style</strong> (<a class="reference internal" href="../enums.html#Gtk.ToolbarStyle" title="Gtk.ToolbarStyle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ToolbarStyle</span></code></a>) – the new style for <cite>self</cite>.</td>
+</tr>
+</tbody>
+</table>
+<p>Alters the view of <cite>self</cite> to display either icons only, text only, or both.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.Toolbar.unset_icon_size">
+<code class="descname">unset_icon_size</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtktoolbar.c#L3166"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.Toolbar.unset_icon_size" title="Permalink to this definition">¶</a></dt>
+<dd><p>Unsets toolbar icon size set with <a class="reference internal" href="#Gtk.Toolbar.set_icon_size" title="Gtk.Toolbar.set_icon_size"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Toolbar.set_icon_size</span></code></a>(), so that
+user preferences will be used to determine the icon size.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.Toolbar.unset_style">
+<code class="descname">unset_style</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtktoolbar.c#L2868"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.Toolbar.unset_style" title="Permalink to this definition">¶</a></dt>
+<dd><p>Unsets a toolbar style set with <a class="reference internal" href="#Gtk.Toolbar.set_style" title="Gtk.Toolbar.set_style"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Toolbar.set_style</span></code></a>(), so that
+user preferences will be used to determine the toolbar style.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.Toolbar.do_orientation_changed">
+<code class="descname">do_orientation_changed</code><span class="sig-paren">(</span><em>orientation</em><span class="sig-paren">)</span><em class="property"> virtual</em><a class="headerlink" href="#Gtk.Toolbar.do_orientation_changed" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>orientation</strong> (<a class="reference internal" href="../enums.html#Gtk.Orientation" title="Gtk.Orientation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Orientation</span></code></a>) – </td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.Toolbar.do_popup_context_menu">
+<code class="descname">do_popup_context_menu</code><span class="sig-paren">(</span><em>x</em>, <em>y</em>, <em>button_number</em><span class="sig-paren">)</span><em class="property"> virtual</em><a class="headerlink" href="#Gtk.Toolbar.do_popup_context_menu" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>x</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – </li>
+<li><strong>y</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – </li>
+<li><strong>button_number</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.Toolbar.do_style_changed">
+<code class="descname">do_style_changed</code><span class="sig-paren">(</span><em>style</em><span class="sig-paren">)</span><em class="property"> virtual</em><a class="headerlink" href="#Gtk.Toolbar.do_style_changed" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>style</strong> (<a class="reference internal" href="../enums.html#Gtk.ToolbarStyle" title="Gtk.ToolbarStyle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ToolbarStyle</span></code></a>) – </td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="signal-details">
+<h2>Signal Details<a class="headerlink" href="#signal-details" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="Gtk.Toolbar.signals.focus_home_or_end">
+<code class="descclassname">Gtk.Toolbar.signals.</code><code class="descname">focus_home_or_end</code><span class="sig-paren">(</span><em>toolbar</em>, <em>focus_home</em><span class="sig-paren">)</span><a class="headerlink" href="#Gtk.Toolbar.signals.focus_home_or_end" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Signal Name:</th><td class="field-body"><p class="first"><code class="docutils literal notranslate"><span class="pre">focus-home-or-end</span></code></p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><p class="first"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.SignalFlags.RUN_LAST" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RUN_LAST</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.SignalFlags.ACTION" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ACTION</span></code></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>toolbar</strong> (<a class="reference internal" href="#Gtk.Toolbar" title="Gtk.Toolbar"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Toolbar</span></code></a>) – The object which received the signal</li>
+<li><strong>focus_home</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a>) – <a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if the first item should be focused</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if the signal was handled, <a class="reference external" href="http://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a> if not</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>A keybinding signal used internally by GTK+. This signal can’t
+be used in application code</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gtk.Toolbar.signals.orientation_changed">
+<code class="descclassname">Gtk.Toolbar.signals.</code><code class="descname">orientation_changed</code><span class="sig-paren">(</span><em>toolbar</em>, <em>orientation</em><span class="sig-paren">)</span><a class="headerlink" href="#Gtk.Toolbar.signals.orientation_changed" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Signal Name:</th><td class="field-body"><p class="first"><code class="docutils literal notranslate"><span class="pre">orientation-changed</span></code></p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><p class="first"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.SignalFlags.RUN_FIRST" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RUN_FIRST</span></code></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>toolbar</strong> (<a class="reference internal" href="#Gtk.Toolbar" title="Gtk.Toolbar"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Toolbar</span></code></a>) – The object which received the signal</li>
+<li><strong>orientation</strong> (<a class="reference internal" href="../enums.html#Gtk.Orientation" title="Gtk.Orientation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Orientation</span></code></a>) – the new <a class="reference internal" href="../enums.html#Gtk.Orientation" title="Gtk.Orientation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Orientation</span></code></a> of the toolbar</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Emitted when the orientation of the toolbar changes.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gtk.Toolbar.signals.popup_context_menu">
+<code class="descclassname">Gtk.Toolbar.signals.</code><code class="descname">popup_context_menu</code><span class="sig-paren">(</span><em>toolbar</em>, <em>x</em>, <em>y</em>, <em>button</em><span class="sig-paren">)</span><a class="headerlink" href="#Gtk.Toolbar.signals.popup_context_menu" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Signal Name:</th><td class="field-body"><p class="first"><code class="docutils literal notranslate"><span class="pre">popup-context-menu</span></code></p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><p class="first"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.SignalFlags.RUN_LAST" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RUN_LAST</span></code></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>toolbar</strong> (<a class="reference internal" href="#Gtk.Toolbar" title="Gtk.Toolbar"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Toolbar</span></code></a>) – The object which received the signal</li>
+<li><strong>x</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – the x coordinate of the point where the menu should appear</li>
+<li><strong>y</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – the y coordinate of the point where the menu should appear</li>
+<li><strong>button</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – the mouse button the user pressed, or -1</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">return <a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if the signal was handled, <a class="reference external" href="http://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a> if not</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Emitted when the user right-clicks the toolbar or uses the
+keybinding to display a popup menu.</p>
+<p>Application developers should handle this signal if they want
+to display a context menu on the toolbar. The context-menu should
+appear at the coordinates given by <cite>x</cite> and <cite>y</cite>. The mouse button
+number is given by the <cite>button</cite> parameter. If the menu was popped
+up using the keybaord, <cite>button</cite> is -1.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gtk.Toolbar.signals.style_changed">
+<code class="descclassname">Gtk.Toolbar.signals.</code><code class="descname">style_changed</code><span class="sig-paren">(</span><em>toolbar</em>, <em>style</em><span class="sig-paren">)</span><a class="headerlink" href="#Gtk.Toolbar.signals.style_changed" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Signal Name:</th><td class="field-body"><p class="first"><code class="docutils literal notranslate"><span class="pre">style-changed</span></code></p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><p class="first"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.SignalFlags.RUN_FIRST" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RUN_FIRST</span></code></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>toolbar</strong> (<a class="reference internal" href="#Gtk.Toolbar" title="Gtk.Toolbar"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Toolbar</span></code></a>) – The object which received the signal</li>
+<li><strong>style</strong> (<a class="reference internal" href="../enums.html#Gtk.ToolbarStyle" title="Gtk.ToolbarStyle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ToolbarStyle</span></code></a>) – the new <a class="reference internal" href="../enums.html#Gtk.ToolbarStyle" title="Gtk.ToolbarStyle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ToolbarStyle</span></code></a> of the toolbar</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Emitted when the style of the toolbar changes.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="property-details">
+<h2>Property Details<a class="headerlink" href="#property-details" title="Permalink to this headline">¶</a></h2>
+<dl class="data">
+<dt id="Gtk.Toolbar.props.icon_size">
+<code class="descclassname">Gtk.Toolbar.props.</code><code class="descname">icon_size</code><a class="headerlink" href="#Gtk.Toolbar.props.icon_size" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">icon-size</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../enums.html#Gtk.IconSize" title="Gtk.IconSize"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.IconSize</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference internal" href="../enums.html#Gtk.IconSize.LARGE_TOOLBAR" title="Gtk.IconSize.LARGE_TOOLBAR"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.IconSize.LARGE_TOOLBAR</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.EXPLICIT_NOTIFY" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EXPLICIT_NOTIFY</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The size of the icons in a toolbar is normally determined by
+the toolbar-icon-size setting. When this property is set, it
+overrides the setting.</p>
+<p>This should only be used for special-purpose toolbars, normal
+application toolbars should respect the user preferences for the
+size of icons.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.10.</span></p>
+</div>
+</dd></dl>
+
+<dl class="data">
+<dt id="Gtk.Toolbar.props.icon_size_set">
+<code class="descclassname">Gtk.Toolbar.props.</code><code class="descname">icon_size_set</code><a class="headerlink" href="#Gtk.Toolbar.props.icon_size_set" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">icon-size-set</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Is <a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if the icon-size property has been set.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.10.</span></p>
+</div>
+</dd></dl>
+
+<dl class="data">
+<dt id="Gtk.Toolbar.props.show_arrow">
+<code class="descclassname">Gtk.Toolbar.props.</code><code class="descname">show_arrow</code><a class="headerlink" href="#Gtk.Toolbar.props.show_arrow" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">show-arrow</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.EXPLICIT_NOTIFY" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EXPLICIT_NOTIFY</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>If an arrow should be shown if the toolbar doesn’t fit</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="Gtk.Toolbar.props.toolbar_style">
+<code class="descclassname">Gtk.Toolbar.props.</code><code class="descname">toolbar_style</code><a class="headerlink" href="#Gtk.Toolbar.props.toolbar_style" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">toolbar-style</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../enums.html#Gtk.ToolbarStyle" title="Gtk.ToolbarStyle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ToolbarStyle</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference internal" href="../enums.html#Gtk.ToolbarStyle.BOTH_HORIZ" title="Gtk.ToolbarStyle.BOTH_HORIZ"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ToolbarStyle.BOTH_HORIZ</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.EXPLICIT_NOTIFY" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EXPLICIT_NOTIFY</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>How to draw the toolbar</p>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div> 
+
+</body>
+</html>

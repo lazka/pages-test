@@ -1,0 +1,703 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    NM.SettingBridgePort -
+    
+      Classes -
+    
+    NM 1.0
+  </title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/css/pgi.css" type="text/css" />
+  
+
+  
+  <script type="text/javascript">
+
+    function openSidebar(element) {
+        window.location.href = element.href + location.hash;
+        return false;
+    }
+
+    function inIframe() {
+        try {
+            return window.self !== window.top;
+        } catch (e) {
+            return true;
+        }
+    }
+
+    function onLoaded() {
+        if(!inIframe()) {
+            var icons = document.getElementsByClassName('open-sidebar');
+
+            for (var i = 0; i < icons.length; i ++) {
+                icons[i].style.display = 'table-cell';
+            }
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', onLoaded, false);
+
+  </script>
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="NM 1.0 Python API Docs" href="../index.html"/>
+        <link rel="up" title="Classes" href="../classes.html"/>
+        <link rel="next" title="NM.SettingCdma" href="SettingCdma.html"/>
+        <link rel="prev" title="NM.SettingBridge" href="SettingBridge.html"/> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+<div class="non-fixed-bar">
+<table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#NM-1.0/classes/SettingBridgePort.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">NM 1.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>NM.SettingBridgePort</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="SettingBridge.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="SettingCdma.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">NM.SettingBridgePort</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#property-details">Property Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+<div class="fixed-bar">
+  <table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#NM-1.0/classes/SettingBridgePort.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">NM 1.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>NM.SettingBridgePort</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="SettingBridge.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="SettingCdma.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">NM.SettingBridgePort</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#property-details">Property Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+  <div class="wy-grid-for-nav">
+
+    
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="main">
+            
+  <div class="section" id="nm-settingbridgeport">
+<h1>NM.SettingBridgePort<a class="headerlink" href="#nm-settingbridgeport" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<svg width="115pt" height="134pt"
+ viewBox="0.00 0.00 115.00 134.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 130)">
+<title>g</title>
+<!-- GObject.Object -->
+<g id="node1" class="node">
+<title>GObject.Object</title>
+<g id="a_node1"><a xlink:href="../../GObject-2.0/classes/Object.html#GObject.Object" xlink:title="GObject.Object">
+<path fill="none" stroke="#75507b" d="M87.5,-126C87.5,-126 19.5,-126 19.5,-126 16.5,-126 13.5,-123 13.5,-120 13.5,-120 13.5,-114 13.5,-114 13.5,-111 16.5,-108 19.5,-108 19.5,-108 87.5,-108 87.5,-108 90.5,-108 93.5,-111 93.5,-114 93.5,-114 93.5,-120 93.5,-120 93.5,-123 90.5,-126 87.5,-126"/>
+<text text-anchor="middle" x="53.5" y="-114.7" font-family="inherit" font-size="8.50">GObject.Object</text>
+</a>
+</g>
+</g>
+<!-- NM.Setting -->
+<g id="node2" class="node">
+<title>NM.Setting</title>
+<g id="a_node2"><a xlink:href="Setting.html#NM.Setting" xlink:title="NM.Setting">
+<path fill="none" stroke="#aaaaaa" d="M78.5,-72C78.5,-72 28.5,-72 28.5,-72 25.5,-72 22.5,-69 22.5,-66 22.5,-66 22.5,-60 22.5,-60 22.5,-57 25.5,-54 28.5,-54 28.5,-54 78.5,-54 78.5,-54 81.5,-54 84.5,-57 84.5,-60 84.5,-60 84.5,-66 84.5,-66 84.5,-69 81.5,-72 78.5,-72"/>
+<text text-anchor="middle" x="53.5" y="-60.7" font-family="inherit" font-size="8.50">NM.Setting</text>
+</a>
+</g>
+</g>
+<!-- GObject.Object&#45;&gt;NM.Setting -->
+<g id="edge1" class="edge">
+<title>GObject.Object&#45;&gt;NM.Setting</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M53.5,-107.88C53.5,-99.76 53.5,-87.13 53.5,-77.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="55.25,-77.24 53.5,-72.24 51.75,-77.24 55.25,-77.24"/>
+</g>
+<!-- NM.SettingBridgePort -->
+<g id="node3" class="node">
+<title>NM.SettingBridgePort</title>
+<g id="a_node3"><a xlink:href="#NM.SettingBridgePort" xlink:title="NM.SettingBridgePort">
+<path fill="none" stroke="#75507b" d="M101,-18C101,-18 6,-18 6,-18 3,-18 0,-15 0,-12 0,-12 0,-6 0,-6 0,-3 3,0 6,0 6,0 101,0 101,0 104,0 107,-3 107,-6 107,-6 107,-12 107,-12 107,-15 104,-18 101,-18"/>
+<text text-anchor="middle" x="53.5" y="-6.7" font-family="inherit" font-size="8.50">NM.SettingBridgePort</text>
+</a>
+</g>
+</g>
+<!-- NM.Setting&#45;&gt;NM.SettingBridgePort -->
+<g id="edge2" class="edge">
+<title>NM.Setting&#45;&gt;NM.SettingBridgePort</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M53.5,-53.88C53.5,-45.76 53.5,-33.13 53.5,-23.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="55.25,-23.24 53.5,-18.24 51.75,-23.24 55.25,-23.24"/>
+</g>
+</g>
+</svg>
+</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Subclasses:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="methods">
+<span id="nm-settingbridgeport-methods"></span><h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Setting.html#nm-setting-methods"><span class="std std-ref">NM.Setting (20)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (37)</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Structs:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/ObjectClass.html#gobject-objectclass-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.ObjectClass (5)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="99%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><em>class</em></td>
+<td><a class="reference internal" href="#NM.SettingBridgePort.new" title="NM.SettingBridgePort.new"><code class="xref py py-func docutils literal notranslate"><span class="pre">new</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.SettingBridgePort.add_vlan" title="NM.SettingBridgePort.add_vlan"><code class="xref py py-func docutils literal notranslate"><span class="pre">add_vlan</span></code></a> (vlan)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.SettingBridgePort.clear_vlans" title="NM.SettingBridgePort.clear_vlans"><code class="xref py py-func docutils literal notranslate"><span class="pre">clear_vlans</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.SettingBridgePort.get_hairpin_mode" title="NM.SettingBridgePort.get_hairpin_mode"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_hairpin_mode</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.SettingBridgePort.get_num_vlans" title="NM.SettingBridgePort.get_num_vlans"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_num_vlans</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.SettingBridgePort.get_path_cost" title="NM.SettingBridgePort.get_path_cost"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_path_cost</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.SettingBridgePort.get_priority" title="NM.SettingBridgePort.get_priority"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_priority</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.SettingBridgePort.get_vlan" title="NM.SettingBridgePort.get_vlan"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_vlan</span></code></a> (idx)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.SettingBridgePort.remove_vlan" title="NM.SettingBridgePort.remove_vlan"><code class="xref py py-func docutils literal notranslate"><span class="pre">remove_vlan</span></code></a> (idx)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.SettingBridgePort.remove_vlan_by_vid" title="NM.SettingBridgePort.remove_vlan_by_vid"><code class="xref py py-func docutils literal notranslate"><span class="pre">remove_vlan_by_vid</span></code></a> (vid_start, vid_end)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="virtual-methods">
+<span id="nm-settingbridgeport-vfuncs"></span><h2>Virtual Methods<a class="headerlink" href="#virtual-methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Setting.html#nm-setting-vfuncs"><span class="std std-ref">NM.Setting (7)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-vfuncs" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (7)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="nm-settingbridgeport-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Setting.html#nm-setting-props"><span class="std std-ref">NM.Setting (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="1%" />
+<col width="1%" />
+<col width="97%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Flags</th>
+<th class="head">Short Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="#NM.SettingBridgePort.props.hairpin_mode" title="NM.SettingBridgePort.props.hairpin_mode"><code class="xref py py-data docutils literal notranslate"><span class="pre">hairpin-mode</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+<td>r/w</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#NM.SettingBridgePort.props.path_cost" title="NM.SettingBridgePort.props.path_cost"><code class="xref py py-data docutils literal notranslate"><span class="pre">path-cost</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+<td>r/w</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#NM.SettingBridgePort.props.priority" title="NM.SettingBridgePort.props.priority"><code class="xref py py-data docutils literal notranslate"><span class="pre">priority</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+<td>r/w</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#NM.SettingBridgePort.props.vlans" title="NM.SettingBridgePort.props.vlans"><code class="xref py py-data docutils literal notranslate"><span class="pre">vlans</span></code></a></td>
+<td><a class="reference external" href="../../GLib-2.0/classes/PtrArray.html#GLib.PtrArray" title="(in GLib 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GLib.PtrArray</span></code></a></td>
+<td>r/w</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="signals">
+<span id="nm-settingbridgeport-signals"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-signals" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fields">
+<span id="nm-settingbridgeport-fields"></span><h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-fields" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="16%" />
+<col width="1%" />
+<col width="1%" />
+<col width="82%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Access</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>parent</td>
+<td><a class="reference internal" href="Setting.html#NM.Setting" title="NM.Setting"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.Setting</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="class-details">
+<h2>Class Details<a class="headerlink" href="#class-details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="NM.SettingBridgePort">
+<em class="property">class </em><code class="descclassname">NM.</code><code class="descname">SettingBridgePort</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#NM.SettingBridgePort" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Bases:</th><td class="field-body"><a class="reference internal" href="Setting.html#NM.Setting" title="NM.Setting"><code class="xref py py-class docutils literal notranslate"><span class="pre">NM.Setting</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Abstract:</th><td class="field-body">No</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Structure:</th><td class="field-body"><a class="reference internal" href="SettingBridgePortClass.html#NM.SettingBridgePortClass" title="NM.SettingBridgePortClass"><code class="xref py py-class docutils literal notranslate"><span class="pre">NM.SettingBridgePortClass</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Bridge Port Settings</p>
+<dl class="classmethod">
+<dt id="NM.SettingBridgePort.new">
+<em class="property">classmethod </em><code class="descname">new</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NM.SettingBridgePort.new" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the new empty <a class="reference internal" href="#NM.SettingBridgePort" title="NM.SettingBridgePort"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.SettingBridgePort</span></code></a> object</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="Setting.html#NM.Setting" title="NM.Setting"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.Setting</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Creates a new <a class="reference internal" href="#NM.SettingBridgePort" title="NM.SettingBridgePort"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.SettingBridgePort</span></code></a> object with default values.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.SettingBridgePort.add_vlan">
+<code class="descname">add_vlan</code><span class="sig-paren">(</span><em>vlan</em><span class="sig-paren">)</span><a class="headerlink" href="#NM.SettingBridgePort.add_vlan" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>vlan</strong> (<a class="reference internal" href="BridgeVlan.html#NM.BridgeVlan" title="NM.BridgeVlan"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.BridgeVlan</span></code></a>) – the vlan to add</td>
+</tr>
+</tbody>
+</table>
+<p>Appends a new vlan and associated information to the setting.  The
+given vlan gets sealed and a reference to it is added.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.18.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.SettingBridgePort.clear_vlans">
+<code class="descname">clear_vlans</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NM.SettingBridgePort.clear_vlans" title="Permalink to this definition">¶</a></dt>
+<dd><p>Removes all configured VLANs.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.18.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.SettingBridgePort.get_hairpin_mode">
+<code class="descname">get_hairpin_mode</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NM.SettingBridgePort.get_hairpin_mode" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the <a class="reference internal" href="#NM.SettingBridgePort" title="NM.SettingBridgePort"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.SettingBridgePort</span></code></a> <a class="reference internal" href="#NM.SettingBridgePort.props.hairpin_mode" title="NM.SettingBridgePort.props.hairpin_mode"><code class="xref py py-data docutils literal notranslate"><span class="pre">:hairpin-mode</span></code></a> property of the setting</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.SettingBridgePort.get_num_vlans">
+<code class="descname">get_num_vlans</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NM.SettingBridgePort.get_num_vlans" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the number of VLANs</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.18.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.SettingBridgePort.get_path_cost">
+<code class="descname">get_path_cost</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NM.SettingBridgePort.get_path_cost" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the <a class="reference internal" href="#NM.SettingBridgePort" title="NM.SettingBridgePort"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.SettingBridgePort</span></code></a> <a class="reference internal" href="#NM.SettingBridgePort.props.path_cost" title="NM.SettingBridgePort.props.path_cost"><code class="xref py py-data docutils literal notranslate"><span class="pre">:path-cost</span></code></a> property of the setting</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.SettingBridgePort.get_priority">
+<code class="descname">get_priority</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NM.SettingBridgePort.get_priority" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the <a class="reference internal" href="#NM.SettingBridgePort" title="NM.SettingBridgePort"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.SettingBridgePort</span></code></a> <a class="reference internal" href="#NM.SettingBridgePort.props.priority" title="NM.SettingBridgePort.props.priority"><code class="xref py py-data docutils literal notranslate"><span class="pre">:priority</span></code></a> property of the setting</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.SettingBridgePort.get_vlan">
+<code class="descname">get_vlan</code><span class="sig-paren">(</span><em>idx</em><span class="sig-paren">)</span><a class="headerlink" href="#NM.SettingBridgePort.get_vlan" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>idx</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – index number of the VLAN to return</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the VLAN at index <cite>idx</cite></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="BridgeVlan.html#NM.BridgeVlan" title="NM.BridgeVlan"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.BridgeVlan</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.18.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.SettingBridgePort.remove_vlan">
+<code class="descname">remove_vlan</code><span class="sig-paren">(</span><em>idx</em><span class="sig-paren">)</span><a class="headerlink" href="#NM.SettingBridgePort.remove_vlan" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>idx</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – index number of the VLAN.</td>
+</tr>
+</tbody>
+</table>
+<p>Removes the vlan at index <cite>idx</cite>.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.18.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.SettingBridgePort.remove_vlan_by_vid">
+<code class="descname">remove_vlan_by_vid</code><span class="sig-paren">(</span><em>vid_start</em>, <em>vid_end</em><span class="sig-paren">)</span><a class="headerlink" href="#NM.SettingBridgePort.remove_vlan_by_vid" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>vid_start</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – the vlan start index</li>
+<li><strong>vid_end</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – the vlan end index</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if the vlan was found and removed; <a class="reference external" href="http://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a> otherwise</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Remove the VLAN with range <cite>vid_start</cite> to <cite>vid_end</cite>.
+If <cite>vid_end</cite> is zero, it is assumed to be equal to <cite>vid_start</cite>
+and so the single-id VLAN with id <cite>vid_start</cite> is removed.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.18.</span></p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="property-details">
+<h2>Property Details<a class="headerlink" href="#property-details" title="Permalink to this headline">¶</a></h2>
+<dl class="data">
+<dt id="NM.SettingBridgePort.props.hairpin_mode">
+<code class="descclassname">NM.SettingBridgePort.props.</code><code class="descname">hairpin_mode</code><a class="headerlink" href="#NM.SettingBridgePort.props.hairpin_mode" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">hairpin-mode</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Enables or disables “hairpin mode” for the port, which allows frames to
+be sent back out through the port the frame was received on.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="NM.SettingBridgePort.props.path_cost">
+<code class="descclassname">NM.SettingBridgePort.props.</code><code class="descname">path_cost</code><a class="headerlink" href="#NM.SettingBridgePort.props.path_cost" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">path-cost</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">100</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The Spanning Tree Protocol (STP) port cost for destinations via this
+port.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="NM.SettingBridgePort.props.priority">
+<code class="descclassname">NM.SettingBridgePort.props.</code><code class="descname">priority</code><a class="headerlink" href="#NM.SettingBridgePort.props.priority" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">priority</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">32</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The Spanning Tree Protocol (STP) priority of this bridge port.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="NM.SettingBridgePort.props.vlans">
+<code class="descclassname">NM.SettingBridgePort.props.</code><code class="descname">vlans</code><a class="headerlink" href="#NM.SettingBridgePort.props.vlans" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">vlans</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="../../GLib-2.0/classes/PtrArray.html#GLib.PtrArray" title="(in GLib 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GLib.PtrArray</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Array of bridge VLAN objects. In addition to the VLANs
+specified here, the port will also have the default-pvid
+VLAN configured on the bridge by the bridge.vlan-default-pvid
+property.</p>
+<p>In nmcli the VLAN list can be specified with the following
+syntax:</p>
+<p>$vid ‘pvid [untagged]’ [, $vid ‘pvid [untagged]’]…</p>
+<p>where $vid is either a single id between 1 and 4094 or a
+range, represented as a couple of ids separated by a dash.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.18.</span></p>
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div> 
+
+</body>
+</html>

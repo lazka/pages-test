@@ -1,0 +1,555 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    GooCanvas.CanvasPathModel -
+    
+      Classes -
+    
+    GooCanvas 2.0
+  </title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/css/pgi.css" type="text/css" />
+  
+
+  
+  <script type="text/javascript">
+
+    function openSidebar(element) {
+        window.location.href = element.href + location.hash;
+        return false;
+    }
+
+    function inIframe() {
+        try {
+            return window.self !== window.top;
+        } catch (e) {
+            return true;
+        }
+    }
+
+    function onLoaded() {
+        if(!inIframe()) {
+            var icons = document.getElementsByClassName('open-sidebar');
+
+            for (var i = 0; i < icons.length; i ++) {
+                icons[i].style.display = 'table-cell';
+            }
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', onLoaded, false);
+
+  </script>
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="GooCanvas 2.0 Python API Docs" href="../index.html"/>
+        <link rel="up" title="Classes" href="../classes.html"/>
+        <link rel="next" title="GooCanvas.CanvasPolyline" href="CanvasPolyline.html"/>
+        <link rel="prev" title="GooCanvas.CanvasPath" href="CanvasPath.html"/> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+<div class="non-fixed-bar">
+<table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#GooCanvas-2.0/classes/CanvasPathModel.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">GooCanvas 2.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>GooCanvas.CanvasPathModel</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="CanvasPath.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="CanvasPolyline.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">GooCanvas.CanvasPathModel</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#property-details">Property Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+<div class="fixed-bar">
+  <table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#GooCanvas-2.0/classes/CanvasPathModel.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">GooCanvas 2.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>GooCanvas.CanvasPathModel</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="CanvasPath.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="CanvasPolyline.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">GooCanvas.CanvasPathModel</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#property-details">Property Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+  <div class="wy-grid-for-nav">
+
+    
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="main">
+            
+  <div class="section" id="goocanvas-canvaspathmodel">
+<h1>GooCanvas.CanvasPathModel<a class="headerlink" href="#goocanvas-canvaspathmodel" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<svg width="250pt" height="188pt"
+ viewBox="0.00 0.00 250.00 188.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 184)">
+<title>g</title>
+<!-- GObject.GInterface -->
+<g id="node1" class="node">
+<title>GObject.GInterface</title>
+<g id="a_node1"><a xlink:href="../../GObject-2.0/classes/GInterface.html#GObject.GInterface" xlink:title="GObject.GInterface">
+<path fill="none" stroke="#3091d1" d="M115,-180C115,-180 29,-180 29,-180 26,-180 23,-177 23,-174 23,-174 23,-168 23,-168 23,-165 26,-162 29,-162 29,-162 115,-162 115,-162 118,-162 121,-165 121,-168 121,-168 121,-174 121,-174 121,-177 118,-180 115,-180"/>
+<text text-anchor="middle" x="72" y="-168.7" font-family="inherit" font-size="8.50">GObject.GInterface</text>
+</a>
+</g>
+</g>
+<!-- GooCanvas.CanvasItemModel -->
+<g id="node3" class="node">
+<title>GooCanvas.CanvasItemModel</title>
+<g id="a_node3"><a xlink:href="CanvasItemModel.html#GooCanvas.CanvasItemModel" xlink:title="GooCanvas.CanvasItemModel">
+<path fill="none" stroke="#3091d1" d="M138,-126C138,-126 6,-126 6,-126 3,-126 0,-123 0,-120 0,-120 0,-114 0,-114 0,-111 3,-108 6,-108 6,-108 138,-108 138,-108 141,-108 144,-111 144,-114 144,-114 144,-120 144,-120 144,-123 141,-126 138,-126"/>
+<text text-anchor="middle" x="72" y="-114.7" font-family="inherit" font-size="8.50">GooCanvas.CanvasItemModel</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;GooCanvas.CanvasItemModel -->
+<g id="edge1" class="edge">
+<title>GObject.GInterface&#45;&gt;GooCanvas.CanvasItemModel</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M72,-161.88C72,-153.76 72,-141.13 72,-131.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="73.75,-131.24 72,-126.24 70.25,-131.24 73.75,-131.24"/>
+</g>
+<!-- GObject.Object -->
+<g id="node2" class="node">
+<title>GObject.Object</title>
+<g id="a_node2"><a xlink:href="../../GObject-2.0/classes/Object.html#GObject.Object" xlink:title="GObject.Object">
+<path fill="none" stroke="#75507b" d="M236,-126C236,-126 168,-126 168,-126 165,-126 162,-123 162,-120 162,-120 162,-114 162,-114 162,-111 165,-108 168,-108 168,-108 236,-108 236,-108 239,-108 242,-111 242,-114 242,-114 242,-120 242,-120 242,-123 239,-126 236,-126"/>
+<text text-anchor="middle" x="202" y="-114.7" font-family="inherit" font-size="8.50">GObject.Object</text>
+</a>
+</g>
+</g>
+<!-- GooCanvas.CanvasItemModelSimple -->
+<g id="node4" class="node">
+<title>GooCanvas.CanvasItemModelSimple</title>
+<g id="a_node4"><a xlink:href="CanvasItemModelSimple.html#GooCanvas.CanvasItemModelSimple" xlink:title="GooCanvas.CanvasItemModelSimple">
+<path fill="none" stroke="#75507b" d="M217.5,-72C217.5,-72 56.5,-72 56.5,-72 53.5,-72 50.5,-69 50.5,-66 50.5,-66 50.5,-60 50.5,-60 50.5,-57 53.5,-54 56.5,-54 56.5,-54 217.5,-54 217.5,-54 220.5,-54 223.5,-57 223.5,-60 223.5,-60 223.5,-66 223.5,-66 223.5,-69 220.5,-72 217.5,-72"/>
+<text text-anchor="middle" x="137" y="-60.7" font-family="inherit" font-size="8.50">GooCanvas.CanvasItemModelSimple</text>
+</a>
+</g>
+</g>
+<!-- GObject.Object&#45;&gt;GooCanvas.CanvasItemModelSimple -->
+<g id="edge2" class="edge">
+<title>GObject.Object&#45;&gt;GooCanvas.CanvasItemModelSimple</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M191.84,-107.88C180.94,-99.15 163.52,-85.22 151.25,-75.4"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="152.3,-74 147.3,-72.24 150.11,-76.73 152.3,-74"/>
+</g>
+<!-- GooCanvas.CanvasItemModel&#45;&gt;GooCanvas.CanvasItemModelSimple -->
+<g id="edge3" class="edge">
+<title>GooCanvas.CanvasItemModel&#45;&gt;GooCanvas.CanvasItemModelSimple</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M82.16,-107.88C93.06,-99.15 110.48,-85.22 122.75,-75.4"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="123.89,-76.73 126.7,-72.24 121.7,-74 123.89,-76.73"/>
+</g>
+<!-- GooCanvas.CanvasPathModel -->
+<g id="node5" class="node">
+<title>GooCanvas.CanvasPathModel</title>
+<g id="a_node5"><a xlink:href="#GooCanvas.CanvasPathModel" xlink:title="GooCanvas.CanvasPathModel">
+<path fill="none" stroke="#75507b" d="M202.5,-18C202.5,-18 71.5,-18 71.5,-18 68.5,-18 65.5,-15 65.5,-12 65.5,-12 65.5,-6 65.5,-6 65.5,-3 68.5,0 71.5,0 71.5,0 202.5,0 202.5,0 205.5,0 208.5,-3 208.5,-6 208.5,-6 208.5,-12 208.5,-12 208.5,-15 205.5,-18 202.5,-18"/>
+<text text-anchor="middle" x="137" y="-6.7" font-family="inherit" font-size="8.50">GooCanvas.CanvasPathModel</text>
+</a>
+</g>
+</g>
+<!-- GooCanvas.CanvasItemModelSimple&#45;&gt;GooCanvas.CanvasPathModel -->
+<g id="edge4" class="edge">
+<title>GooCanvas.CanvasItemModelSimple&#45;&gt;GooCanvas.CanvasPathModel</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M137,-53.88C137,-45.76 137,-33.13 137,-23.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="138.75,-23.24 137,-18.24 135.25,-23.24 138.75,-23.24"/>
+</g>
+</g>
+</svg>
+</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Subclasses:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="methods">
+<span id="goocanvas-canvaspathmodel-methods"></span><h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (37)</span></a>,     <a class="reference internal" href="CanvasItemModel.html#goocanvas-canvasitemmodel-methods"><span class="std std-ref">GooCanvas.CanvasItemModel (30)</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Structs:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/ObjectClass.html#gobject-objectclass-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.ObjectClass (5)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="virtual-methods">
+<span id="goocanvas-canvaspathmodel-vfuncs"></span><h2>Virtual Methods<a class="headerlink" href="#virtual-methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-vfuncs" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (7)</span></a>,     <a class="reference internal" href="CanvasItemModel.html#goocanvas-canvasitemmodel-vfuncs"><span class="std std-ref">GooCanvas.CanvasItemModel (19)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="goocanvas-canvaspathmodel-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="CanvasItemModelSimple.html#goocanvas-canvasitemmodelsimple-props"><span class="std std-ref">GooCanvas.CanvasItemModelSimple (23)</span></a>,     <a class="reference internal" href="CanvasItemModel.html#goocanvas-canvasitemmodel-props"><span class="std std-ref">GooCanvas.CanvasItemModel (9)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="1%" />
+<col width="1%" />
+<col width="97%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Flags</th>
+<th class="head">Short Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="#GooCanvas.CanvasPathModel.props.data" title="GooCanvas.CanvasPathModel.props.data"><code class="xref py py-data docutils literal notranslate"><span class="pre">data</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+<td>w</td>
+<td>The sequence of path commands</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#GooCanvas.CanvasPathModel.props.height" title="GooCanvas.CanvasPathModel.props.height"><code class="xref py py-data docutils literal notranslate"><span class="pre">height</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">float</span></code></a></td>
+<td>r/w</td>
+<td>The height of the path</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#GooCanvas.CanvasPathModel.props.width" title="GooCanvas.CanvasPathModel.props.width"><code class="xref py py-data docutils literal notranslate"><span class="pre">width</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">float</span></code></a></td>
+<td>r/w</td>
+<td>The width of the path</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#GooCanvas.CanvasPathModel.props.x" title="GooCanvas.CanvasPathModel.props.x"><code class="xref py py-data docutils literal notranslate"><span class="pre">x</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">float</span></code></a></td>
+<td>r/w</td>
+<td>The x coordinate of the path</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#GooCanvas.CanvasPathModel.props.y" title="GooCanvas.CanvasPathModel.props.y"><code class="xref py py-data docutils literal notranslate"><span class="pre">y</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">float</span></code></a></td>
+<td>r/w</td>
+<td>The y coordinate of the path</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="signals">
+<span id="goocanvas-canvaspathmodel-signals"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-signals" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a>,     <a class="reference internal" href="CanvasItemModel.html#goocanvas-canvasitemmodel-signals"><span class="std std-ref">GooCanvas.CanvasItemModel (6)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fields">
+<span id="goocanvas-canvaspathmodel-fields"></span><h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-fields" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a>,     <a class="reference internal" href="CanvasItemModel.html#goocanvas-canvasitemmodel-fields"><span class="std std-ref">GooCanvas.CanvasItemModel (6)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="16%" />
+<col width="1%" />
+<col width="1%" />
+<col width="82%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Access</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>parent_object</td>
+<td><a class="reference internal" href="CanvasItemModelSimple.html#GooCanvas.CanvasItemModelSimple" title="GooCanvas.CanvasItemModelSimple"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GooCanvas.CanvasItemModelSimple</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>path_data</td>
+<td><a class="reference internal" href="CanvasPathData.html#GooCanvas.CanvasPathData" title="GooCanvas.CanvasPathData"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GooCanvas.CanvasPathData</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="class-details">
+<h2>Class Details<a class="headerlink" href="#class-details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="GooCanvas.CanvasPathModel">
+<em class="property">class </em><code class="descclassname">GooCanvas.</code><code class="descname">CanvasPathModel</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#GooCanvas.CanvasPathModel" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Bases:</th><td class="field-body"><a class="reference internal" href="CanvasItemModelSimple.html#GooCanvas.CanvasItemModelSimple" title="GooCanvas.CanvasItemModelSimple"><code class="xref py py-class docutils literal notranslate"><span class="pre">GooCanvas.CanvasItemModelSimple</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Abstract:</th><td class="field-body">No</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Structure:</th><td class="field-body"><a class="reference internal" href="CanvasPathModelClass.html#GooCanvas.CanvasPathModelClass" title="GooCanvas.CanvasPathModelClass"><code class="xref py py-class docutils literal notranslate"><span class="pre">GooCanvas.CanvasPathModelClass</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p><a class="reference internal" href="#GooCanvas.CanvasPathModel" title="GooCanvas.CanvasPathModel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GooCanvas.CanvasPathModel</span></code></a> represents a model for path items, which are a series of
+one or more lines, bezier curves, or elliptical arcs.</p>
+<p>It is a subclass of <a class="reference internal" href="CanvasItemModelSimple.html#GooCanvas.CanvasItemModelSimple" title="GooCanvas.CanvasItemModelSimple"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GooCanvas.CanvasItemModelSimple</span></code></a> and so inherits all of the
+style properties such as “stroke-color”, “fill-color” and “line-width”.</p>
+<p>It also implements the <a class="reference internal" href="CanvasItemModel.html#GooCanvas.CanvasItemModel" title="GooCanvas.CanvasItemModel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GooCanvas.CanvasItemModel</span></code></a> interface, so you can use the
+<a class="reference internal" href="CanvasItemModel.html#GooCanvas.CanvasItemModel" title="GooCanvas.CanvasItemModel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GooCanvas.CanvasItemModel</span></code></a> functions such as <a class="reference internal" href="CanvasItemModel.html#GooCanvas.CanvasItemModel.raise_" title="GooCanvas.CanvasItemModel.raise_"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GooCanvas.CanvasItemModel.raise_</span></code></a>() and
+<a class="reference internal" href="CanvasItemModel.html#GooCanvas.CanvasItemModel.rotate" title="GooCanvas.CanvasItemModel.rotate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GooCanvas.CanvasItemModel.rotate</span></code></a>().</p>
+<p><a class="reference internal" href="#GooCanvas.CanvasPathModel" title="GooCanvas.CanvasPathModel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GooCanvas.CanvasPathModel</span></code></a> uses the same path specification strings as the Scalable
+Vector Graphics (SVG) path element. For details see the</p>
+<p><a class="reference external" href="http://www.w3.org/Graphics/SVG/">SVG specification</a>.
+To create a <a class="reference internal" href="#GooCanvas.CanvasPathModel" title="GooCanvas.CanvasPathModel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GooCanvas.CanvasPathModel</span></code></a> use goo_canvas_path_model_new().</p>
+<p>To get or set the properties of an existing <a class="reference internal" href="#GooCanvas.CanvasPathModel" title="GooCanvas.CanvasPathModel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GooCanvas.CanvasPathModel</span></code></a>, use
+g_object_get() and g_object_set().</p>
+<p>To respond to events such as mouse clicks on the path you must connect
+to the signal handlers of the corresponding <a class="reference internal" href="CanvasPath.html#GooCanvas.CanvasPath" title="GooCanvas.CanvasPath"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GooCanvas.CanvasPath</span></code></a> objects.
+(See <a class="reference internal" href="Canvas.html#GooCanvas.Canvas.get_item" title="GooCanvas.Canvas.get_item"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GooCanvas.Canvas.get_item</span></code></a>() and <a class="reference internal" href="Canvas.html#GooCanvas.Canvas" title="GooCanvas.Canvas"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GooCanvas.Canvas</span></code></a> <a class="reference internal" href="Canvas.html#GooCanvas.Canvas.signals.item_created" title="GooCanvas.Canvas.signals.item_created"><code class="xref py py-func docutils literal notranslate"><span class="pre">::item-created</span></code></a>.)</p>
+</dd></dl>
+
+</div>
+<div class="section" id="property-details">
+<h2>Property Details<a class="headerlink" href="#property-details" title="Permalink to this headline">¶</a></h2>
+<dl class="data">
+<dt id="GooCanvas.CanvasPathModel.props.data">
+<code class="descclassname">GooCanvas.CanvasPathModel.props.</code><code class="descname">data</code><a class="headerlink" href="#GooCanvas.CanvasPathModel.props.data" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">data</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The sequence of path commands</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GooCanvas.CanvasPathModel.props.height">
+<code class="descclassname">GooCanvas.CanvasPathModel.props.</code><code class="descname">height</code><a class="headerlink" href="#GooCanvas.CanvasPathModel.props.height" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">height</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">float</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">0.0</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The height of the path</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GooCanvas.CanvasPathModel.props.width">
+<code class="descclassname">GooCanvas.CanvasPathModel.props.</code><code class="descname">width</code><a class="headerlink" href="#GooCanvas.CanvasPathModel.props.width" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">width</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">float</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">0.0</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The width of the path</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GooCanvas.CanvasPathModel.props.x">
+<code class="descclassname">GooCanvas.CanvasPathModel.props.</code><code class="descname">x</code><a class="headerlink" href="#GooCanvas.CanvasPathModel.props.x" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">x</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">float</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">0.0</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The x coordinate of the path</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GooCanvas.CanvasPathModel.props.y">
+<code class="descclassname">GooCanvas.CanvasPathModel.props.</code><code class="descname">y</code><a class="headerlink" href="#GooCanvas.CanvasPathModel.props.y" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">y</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">float</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">0.0</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The y coordinate of the path</p>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div> 
+
+</body>
+</html>

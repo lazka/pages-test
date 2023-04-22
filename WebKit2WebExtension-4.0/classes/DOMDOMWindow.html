@@ -1,0 +1,2305 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    WebKit2WebExtension.DOMDOMWindow -
+    
+      Classes -
+    
+    WebKit2WebExtension 4.0
+  </title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/css/pgi.css" type="text/css" />
+  
+
+  
+  <script type="text/javascript">
+
+    function openSidebar(element) {
+        window.location.href = element.href + location.hash;
+        return false;
+    }
+
+    function inIframe() {
+        try {
+            return window.self !== window.top;
+        } catch (e) {
+            return true;
+        }
+    }
+
+    function onLoaded() {
+        if(!inIframe()) {
+            var icons = document.getElementsByClassName('open-sidebar');
+
+            for (var i = 0; i < icons.length; i ++) {
+                icons[i].style.display = 'table-cell';
+            }
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', onLoaded, false);
+
+  </script>
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="WebKit2WebExtension 4.0 Python API Docs" href="../index.html"/>
+        <link rel="up" title="Classes" href="../classes.html"/>
+        <link rel="next" title="WebKit2WebExtension.DOMDocument" href="DOMDocument.html"/>
+        <link rel="prev" title="WebKit2WebExtension.DOMDOMTokenList" href="DOMDOMTokenList.html"/> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+<div class="non-fixed-bar">
+<table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#WebKit2WebExtension-4.0/classes/DOMDOMWindow.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">WebKit2WebExtension 4.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>WebKit2WebExtension.DOMDOMWindow</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="DOMDOMTokenList.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="DOMDocument.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">WebKit2WebExtension.DOMDOMWindow</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#property-details">Property Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+<div class="fixed-bar">
+  <table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#WebKit2WebExtension-4.0/classes/DOMDOMWindow.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">WebKit2WebExtension 4.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>WebKit2WebExtension.DOMDOMWindow</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="DOMDOMTokenList.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="DOMDocument.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">WebKit2WebExtension.DOMDOMWindow</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#property-details">Property Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+  <div class="wy-grid-for-nav">
+
+    
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="main">
+            
+  <div class="section" id="webkit2webextension-domdomwindow">
+<h1>WebKit2WebExtension.DOMDOMWindow<a class="headerlink" href="#webkit2webextension-domdomwindow" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<svg width="374pt" height="134pt"
+ viewBox="0.00 0.00 373.50 134.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 130)">
+<title>g</title>
+<!-- GObject.GInterface -->
+<g id="node1" class="node">
+<title>GObject.GInterface</title>
+<g id="a_node1"><a xlink:href="../../GObject-2.0/classes/GInterface.html#GObject.GInterface" xlink:title="GObject.GInterface">
+<path fill="none" stroke="#3091d1" d="M135.5,-126C135.5,-126 49.5,-126 49.5,-126 46.5,-126 43.5,-123 43.5,-120 43.5,-120 43.5,-114 43.5,-114 43.5,-111 46.5,-108 49.5,-108 49.5,-108 135.5,-108 135.5,-108 138.5,-108 141.5,-111 141.5,-114 141.5,-114 141.5,-120 141.5,-120 141.5,-123 138.5,-126 135.5,-126"/>
+<text text-anchor="middle" x="92.5" y="-114.7" font-family="inherit" font-size="8.50">GObject.GInterface</text>
+</a>
+</g>
+</g>
+<!-- WebKit2WebExtension.DOMEventTarget -->
+<g id="node4" class="node">
+<title>WebKit2WebExtension.DOMEventTarget</title>
+<g id="a_node4"><a xlink:href="DOMEventTarget.html#WebKit2WebExtension.DOMEventTarget" xlink:title="WebKit2WebExtension.DOMEventTarget">
+<path fill="none" stroke="#3091d1" d="M179,-72C179,-72 6,-72 6,-72 3,-72 0,-69 0,-66 0,-66 0,-60 0,-60 0,-57 3,-54 6,-54 6,-54 179,-54 179,-54 182,-54 185,-57 185,-60 185,-60 185,-66 185,-66 185,-69 182,-72 179,-72"/>
+<text text-anchor="middle" x="92.5" y="-60.7" font-family="inherit" font-size="8.50">WebKit2WebExtension.DOMEventTarget</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;WebKit2WebExtension.DOMEventTarget -->
+<g id="edge1" class="edge">
+<title>GObject.GInterface&#45;&gt;WebKit2WebExtension.DOMEventTarget</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M92.5,-107.88C92.5,-99.76 92.5,-87.13 92.5,-77.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="94.25,-77.24 92.5,-72.24 90.75,-77.24 94.25,-77.24"/>
+</g>
+<!-- GObject.Object -->
+<g id="node2" class="node">
+<title>GObject.Object</title>
+<g id="a_node2"><a xlink:href="../../GObject-2.0/classes/Object.html#GObject.Object" xlink:title="GObject.Object">
+<path fill="none" stroke="#75507b" d="M318.5,-126C318.5,-126 250.5,-126 250.5,-126 247.5,-126 244.5,-123 244.5,-120 244.5,-120 244.5,-114 244.5,-114 244.5,-111 247.5,-108 250.5,-108 250.5,-108 318.5,-108 318.5,-108 321.5,-108 324.5,-111 324.5,-114 324.5,-114 324.5,-120 324.5,-120 324.5,-123 321.5,-126 318.5,-126"/>
+<text text-anchor="middle" x="284.5" y="-114.7" font-family="inherit" font-size="8.50">GObject.Object</text>
+</a>
+</g>
+</g>
+<!-- WebKit2WebExtension.DOMObject -->
+<g id="node5" class="node">
+<title>WebKit2WebExtension.DOMObject</title>
+<g id="a_node5"><a xlink:href="DOMObject.html#WebKit2WebExtension.DOMObject" xlink:title="WebKit2WebExtension.DOMObject">
+<path fill="none" stroke="#75507b" d="M359.5,-72C359.5,-72 209.5,-72 209.5,-72 206.5,-72 203.5,-69 203.5,-66 203.5,-66 203.5,-60 203.5,-60 203.5,-57 206.5,-54 209.5,-54 209.5,-54 359.5,-54 359.5,-54 362.5,-54 365.5,-57 365.5,-60 365.5,-60 365.5,-66 365.5,-66 365.5,-69 362.5,-72 359.5,-72"/>
+<text text-anchor="middle" x="284.5" y="-60.7" font-family="inherit" font-size="8.50">WebKit2WebExtension.DOMObject</text>
+</a>
+</g>
+</g>
+<!-- GObject.Object&#45;&gt;WebKit2WebExtension.DOMObject -->
+<g id="edge2" class="edge">
+<title>GObject.Object&#45;&gt;WebKit2WebExtension.DOMObject</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M284.5,-107.88C284.5,-99.76 284.5,-87.13 284.5,-77.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="286.25,-77.24 284.5,-72.24 282.75,-77.24 286.25,-77.24"/>
+</g>
+<!-- WebKit2WebExtension.DOMDOMWindow -->
+<g id="node3" class="node">
+<title>WebKit2WebExtension.DOMDOMWindow</title>
+<g id="a_node3"><a xlink:href="#WebKit2WebExtension.DOMDOMWindow" xlink:title="WebKit2WebExtension.DOMDOMWindow">
+<path fill="none" stroke="#75507b" d="M277,-18C277,-18 100,-18 100,-18 97,-18 94,-15 94,-12 94,-12 94,-6 94,-6 94,-3 97,0 100,0 100,0 277,0 277,0 280,0 283,-3 283,-6 283,-6 283,-12 283,-12 283,-15 280,-18 277,-18"/>
+<text text-anchor="middle" x="188.5" y="-6.7" font-family="inherit" font-size="8.50">WebKit2WebExtension.DOMDOMWindow</text>
+</a>
+</g>
+</g>
+<!-- WebKit2WebExtension.DOMEventTarget&#45;&gt;WebKit2WebExtension.DOMDOMWindow -->
+<g id="edge3" class="edge">
+<title>WebKit2WebExtension.DOMEventTarget&#45;&gt;WebKit2WebExtension.DOMDOMWindow</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M107.5,-53.88C124.13,-44.87 150.99,-30.32 169.18,-20.47"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="170.04,-21.99 173.61,-18.07 168.38,-18.91 170.04,-21.99"/>
+</g>
+<!-- WebKit2WebExtension.DOMObject&#45;&gt;WebKit2WebExtension.DOMDOMWindow -->
+<g id="edge4" class="edge">
+<title>WebKit2WebExtension.DOMObject&#45;&gt;WebKit2WebExtension.DOMDOMWindow</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M269.5,-53.88C252.87,-44.87 226.01,-30.32 207.82,-20.47"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="208.62,-18.91 203.39,-18.07 206.96,-21.99 208.62,-18.91"/>
+</g>
+</g>
+</svg>
+</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Subclasses:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="methods">
+<span id="webkit2webextension-domdomwindow-methods"></span><h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (37)</span></a>,     <a class="reference internal" href="DOMEventTarget.html#webkit2webextension-domeventtarget-methods"><span class="std std-ref">WebKit2WebExtension.DOMEventTarget (3)</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Structs:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/ObjectClass.html#gobject-objectclass-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.ObjectClass (5)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="99%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow.alert" title="WebKit2WebExtension.DOMDOMWindow.alert"><code class="xref py py-func docutils literal notranslate"><span class="pre">alert</span></code></a> (message)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow.blur" title="WebKit2WebExtension.DOMDOMWindow.blur"><code class="xref py py-func docutils literal notranslate"><span class="pre">blur</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow.capture_events" title="WebKit2WebExtension.DOMDOMWindow.capture_events"><code class="xref py py-func docutils literal notranslate"><span class="pre">capture_events</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow.close" title="WebKit2WebExtension.DOMDOMWindow.close"><code class="xref py py-func docutils literal notranslate"><span class="pre">close</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow.confirm" title="WebKit2WebExtension.DOMDOMWindow.confirm"><code class="xref py py-func docutils literal notranslate"><span class="pre">confirm</span></code></a> (message)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow.find" title="WebKit2WebExtension.DOMDOMWindow.find"><code class="xref py py-func docutils literal notranslate"><span class="pre">find</span></code></a> (string, caseSensitive, backwards, wrap, wholeWord, searchInFrames, showDialog)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow.focus" title="WebKit2WebExtension.DOMDOMWindow.focus"><code class="xref py py-func docutils literal notranslate"><span class="pre">focus</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow.get_closed" title="WebKit2WebExtension.DOMDOMWindow.get_closed"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_closed</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow.get_computed_style" title="WebKit2WebExtension.DOMDOMWindow.get_computed_style"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_computed_style</span></code></a> (element, pseudoElement)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow.get_default_status" title="WebKit2WebExtension.DOMDOMWindow.get_default_status"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_default_status</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow.get_device_pixel_ratio" title="WebKit2WebExtension.DOMDOMWindow.get_device_pixel_ratio"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_device_pixel_ratio</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow.get_document" title="WebKit2WebExtension.DOMDOMWindow.get_document"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_document</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow.get_frame_element" title="WebKit2WebExtension.DOMDOMWindow.get_frame_element"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_frame_element</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow.get_frames" title="WebKit2WebExtension.DOMDOMWindow.get_frames"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_frames</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow.get_inner_height" title="WebKit2WebExtension.DOMDOMWindow.get_inner_height"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_inner_height</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow.get_inner_width" title="WebKit2WebExtension.DOMDOMWindow.get_inner_width"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_inner_width</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow.get_length" title="WebKit2WebExtension.DOMDOMWindow.get_length"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_length</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow.get_name" title="WebKit2WebExtension.DOMDOMWindow.get_name"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_name</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow.get_offscreen_buffering" title="WebKit2WebExtension.DOMDOMWindow.get_offscreen_buffering"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_offscreen_buffering</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow.get_opener" title="WebKit2WebExtension.DOMDOMWindow.get_opener"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_opener</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow.get_orientation" title="WebKit2WebExtension.DOMDOMWindow.get_orientation"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_orientation</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow.get_outer_height" title="WebKit2WebExtension.DOMDOMWindow.get_outer_height"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_outer_height</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow.get_outer_width" title="WebKit2WebExtension.DOMDOMWindow.get_outer_width"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_outer_width</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow.get_page_x_offset" title="WebKit2WebExtension.DOMDOMWindow.get_page_x_offset"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_page_x_offset</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow.get_page_y_offset" title="WebKit2WebExtension.DOMDOMWindow.get_page_y_offset"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_page_y_offset</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow.get_parent" title="WebKit2WebExtension.DOMDOMWindow.get_parent"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_parent</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow.get_screen_left" title="WebKit2WebExtension.DOMDOMWindow.get_screen_left"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_screen_left</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow.get_screen_top" title="WebKit2WebExtension.DOMDOMWindow.get_screen_top"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_screen_top</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow.get_screen_x" title="WebKit2WebExtension.DOMDOMWindow.get_screen_x"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_screen_x</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow.get_screen_y" title="WebKit2WebExtension.DOMDOMWindow.get_screen_y"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_screen_y</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow.get_scroll_x" title="WebKit2WebExtension.DOMDOMWindow.get_scroll_x"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_scroll_x</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow.get_scroll_y" title="WebKit2WebExtension.DOMDOMWindow.get_scroll_y"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_scroll_y</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow.get_selection" title="WebKit2WebExtension.DOMDOMWindow.get_selection"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_selection</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow.get_self" title="WebKit2WebExtension.DOMDOMWindow.get_self"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_self</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow.get_status" title="WebKit2WebExtension.DOMDOMWindow.get_status"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_status</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow.get_top" title="WebKit2WebExtension.DOMDOMWindow.get_top"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_top</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow.get_window" title="WebKit2WebExtension.DOMDOMWindow.get_window"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_window</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow.move_by" title="WebKit2WebExtension.DOMDOMWindow.move_by"><code class="xref py py-func docutils literal notranslate"><span class="pre">move_by</span></code></a> (x, y)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow.move_to" title="WebKit2WebExtension.DOMDOMWindow.move_to"><code class="xref py py-func docutils literal notranslate"><span class="pre">move_to</span></code></a> (x, y)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow.print_" title="WebKit2WebExtension.DOMDOMWindow.print_"><code class="xref py py-func docutils literal notranslate"><span class="pre">print_</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow.prompt" title="WebKit2WebExtension.DOMDOMWindow.prompt"><code class="xref py py-func docutils literal notranslate"><span class="pre">prompt</span></code></a> (message, defaultValue)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow.release_events" title="WebKit2WebExtension.DOMDOMWindow.release_events"><code class="xref py py-func docutils literal notranslate"><span class="pre">release_events</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow.resize_by" title="WebKit2WebExtension.DOMDOMWindow.resize_by"><code class="xref py py-func docutils literal notranslate"><span class="pre">resize_by</span></code></a> (x, y)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow.resize_to" title="WebKit2WebExtension.DOMDOMWindow.resize_to"><code class="xref py py-func docutils literal notranslate"><span class="pre">resize_to</span></code></a> (width, height)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow.scroll_by" title="WebKit2WebExtension.DOMDOMWindow.scroll_by"><code class="xref py py-func docutils literal notranslate"><span class="pre">scroll_by</span></code></a> (x, y)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow.scroll_to" title="WebKit2WebExtension.DOMDOMWindow.scroll_to"><code class="xref py py-func docutils literal notranslate"><span class="pre">scroll_to</span></code></a> (x, y)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow.set_default_status" title="WebKit2WebExtension.DOMDOMWindow.set_default_status"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_default_status</span></code></a> (value)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow.set_name" title="WebKit2WebExtension.DOMDOMWindow.set_name"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_name</span></code></a> (value)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow.set_status" title="WebKit2WebExtension.DOMDOMWindow.set_status"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_status</span></code></a> (value)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow.stop" title="WebKit2WebExtension.DOMDOMWindow.stop"><code class="xref py py-func docutils literal notranslate"><span class="pre">stop</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow.webkit_message_handlers_post_message" title="WebKit2WebExtension.DOMDOMWindow.webkit_message_handlers_post_message"><code class="xref py py-func docutils literal notranslate"><span class="pre">webkit_message_handlers_post_message</span></code></a> (handler, message)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="virtual-methods">
+<span id="webkit2webextension-domdomwindow-vfuncs"></span><h2>Virtual Methods<a class="headerlink" href="#virtual-methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-vfuncs" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (7)</span></a>,     <a class="reference internal" href="DOMEventTarget.html#webkit2webextension-domeventtarget-vfuncs"><span class="std std-ref">WebKit2WebExtension.DOMEventTarget (3)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="webkit2webextension-domdomwindow-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="DOMObject.html#webkit2webextension-domobject-props"><span class="std std-ref">WebKit2WebExtension.DOMObject (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="1%" />
+<col width="1%" />
+<col width="97%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Flags</th>
+<th class="head">Short Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow.props.closed" title="WebKit2WebExtension.DOMDOMWindow.props.closed"><code class="xref py py-data docutils literal notranslate"><span class="pre">closed</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+<td>r</td>
+<td>read-only <a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a> DOMWindow:closed</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow.props.default_status" title="WebKit2WebExtension.DOMDOMWindow.props.default_status"><code class="xref py py-data docutils literal notranslate"><span class="pre">default-status</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+<td>r/w</td>
+<td>read-write <a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a> DOMWindow:default-status</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow.props.device_pixel_ratio" title="WebKit2WebExtension.DOMDOMWindow.props.device_pixel_ratio"><code class="xref py py-data docutils literal notranslate"><span class="pre">device-pixel-ratio</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">float</span></code></a></td>
+<td>r</td>
+<td>read-only <a class="reference external" href="http://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">float</span></code></a> DOMWindow:device-pixel-ratio</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow.props.document" title="WebKit2WebExtension.DOMDOMWindow.props.document"><code class="xref py py-data docutils literal notranslate"><span class="pre">document</span></code></a></td>
+<td><a class="reference internal" href="DOMDocument.html#WebKit2WebExtension.DOMDocument" title="WebKit2WebExtension.DOMDocument"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WebKit2WebExtension.DOMDocument</span></code></a></td>
+<td>r</td>
+<td>read-only <a class="reference internal" href="DOMDocument.html#WebKit2WebExtension.DOMDocument" title="WebKit2WebExtension.DOMDocument"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WebKit2WebExtension.DOMDocument</span></code></a> DOMWindow:document</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow.props.frame_element" title="WebKit2WebExtension.DOMDOMWindow.props.frame_element"><code class="xref py py-data docutils literal notranslate"><span class="pre">frame-element</span></code></a></td>
+<td><a class="reference internal" href="DOMElement.html#WebKit2WebExtension.DOMElement" title="WebKit2WebExtension.DOMElement"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WebKit2WebExtension.DOMElement</span></code></a></td>
+<td>r</td>
+<td>read-only <a class="reference internal" href="DOMElement.html#WebKit2WebExtension.DOMElement" title="WebKit2WebExtension.DOMElement"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WebKit2WebExtension.DOMElement</span></code></a> DOMWindow:frame-element</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow.props.frames" title="WebKit2WebExtension.DOMDOMWindow.props.frames"><code class="xref py py-data docutils literal notranslate"><span class="pre">frames</span></code></a></td>
+<td><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow" title="WebKit2WebExtension.DOMDOMWindow"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WebKit2WebExtension.DOMDOMWindow</span></code></a></td>
+<td>r</td>
+<td>read-only <a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow" title="WebKit2WebExtension.DOMDOMWindow"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WebKit2WebExtension.DOMDOMWindow</span></code></a> DOMWindow:frames</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow.props.inner_height" title="WebKit2WebExtension.DOMDOMWindow.props.inner_height"><code class="xref py py-data docutils literal notranslate"><span class="pre">inner-height</span></code></a></td>
+<td>&#160;</td>
+<td>r</td>
+<td>read-only <a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a> DOMWindow:inner-height</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow.props.inner_width" title="WebKit2WebExtension.DOMDOMWindow.props.inner_width"><code class="xref py py-data docutils literal notranslate"><span class="pre">inner-width</span></code></a></td>
+<td>&#160;</td>
+<td>r</td>
+<td>read-only <a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a> DOMWindow:inner-width</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow.props.length" title="WebKit2WebExtension.DOMDOMWindow.props.length"><code class="xref py py-data docutils literal notranslate"><span class="pre">length</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+<td>r</td>
+<td>read-only <a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a> DOMWindow:length</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow.props.name" title="WebKit2WebExtension.DOMDOMWindow.props.name"><code class="xref py py-data docutils literal notranslate"><span class="pre">name</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+<td>r/w</td>
+<td>read-write <a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a> DOMWindow:name</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow.props.offscreen_buffering" title="WebKit2WebExtension.DOMDOMWindow.props.offscreen_buffering"><code class="xref py py-data docutils literal notranslate"><span class="pre">offscreen-buffering</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+<td>r</td>
+<td>read-only <a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a> DOMWindow:offscreen-buffering</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow.props.opener" title="WebKit2WebExtension.DOMDOMWindow.props.opener"><code class="xref py py-data docutils literal notranslate"><span class="pre">opener</span></code></a></td>
+<td><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow" title="WebKit2WebExtension.DOMDOMWindow"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WebKit2WebExtension.DOMDOMWindow</span></code></a></td>
+<td>r</td>
+<td>read-only <a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow" title="WebKit2WebExtension.DOMDOMWindow"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WebKit2WebExtension.DOMDOMWindow</span></code></a> DOMWindow:opener</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow.props.orientation" title="WebKit2WebExtension.DOMDOMWindow.props.orientation"><code class="xref py py-data docutils literal notranslate"><span class="pre">orientation</span></code></a></td>
+<td>&#160;</td>
+<td>r</td>
+<td>read-only <a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a> DOMWindow:orientation</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow.props.outer_height" title="WebKit2WebExtension.DOMDOMWindow.props.outer_height"><code class="xref py py-data docutils literal notranslate"><span class="pre">outer-height</span></code></a></td>
+<td>&#160;</td>
+<td>r</td>
+<td>read-only <a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a> DOMWindow:outer-height</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow.props.outer_width" title="WebKit2WebExtension.DOMDOMWindow.props.outer_width"><code class="xref py py-data docutils literal notranslate"><span class="pre">outer-width</span></code></a></td>
+<td>&#160;</td>
+<td>r</td>
+<td>read-only <a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a> DOMWindow:outer-width</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow.props.page_x_offset" title="WebKit2WebExtension.DOMDOMWindow.props.page_x_offset"><code class="xref py py-data docutils literal notranslate"><span class="pre">page-x-offset</span></code></a></td>
+<td>&#160;</td>
+<td>r</td>
+<td>read-only <a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a> DOMWindow:page-x-offset</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow.props.page_y_offset" title="WebKit2WebExtension.DOMDOMWindow.props.page_y_offset"><code class="xref py py-data docutils literal notranslate"><span class="pre">page-y-offset</span></code></a></td>
+<td>&#160;</td>
+<td>r</td>
+<td>read-only <a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a> DOMWindow:page-y-offset</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow.props.parent" title="WebKit2WebExtension.DOMDOMWindow.props.parent"><code class="xref py py-data docutils literal notranslate"><span class="pre">parent</span></code></a></td>
+<td><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow" title="WebKit2WebExtension.DOMDOMWindow"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WebKit2WebExtension.DOMDOMWindow</span></code></a></td>
+<td>r</td>
+<td>read-only <a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow" title="WebKit2WebExtension.DOMDOMWindow"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WebKit2WebExtension.DOMDOMWindow</span></code></a> DOMWindow:parent</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow.props.screen_left" title="WebKit2WebExtension.DOMDOMWindow.props.screen_left"><code class="xref py py-data docutils literal notranslate"><span class="pre">screen-left</span></code></a></td>
+<td>&#160;</td>
+<td>r</td>
+<td>read-only <a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a> DOMWindow:screen-left</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow.props.screen_top" title="WebKit2WebExtension.DOMDOMWindow.props.screen_top"><code class="xref py py-data docutils literal notranslate"><span class="pre">screen-top</span></code></a></td>
+<td>&#160;</td>
+<td>r</td>
+<td>read-only <a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a> DOMWindow:screen-top</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow.props.screen_x" title="WebKit2WebExtension.DOMDOMWindow.props.screen_x"><code class="xref py py-data docutils literal notranslate"><span class="pre">screen-x</span></code></a></td>
+<td>&#160;</td>
+<td>r</td>
+<td>read-only <a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a> DOMWindow:screen-x</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow.props.screen_y" title="WebKit2WebExtension.DOMDOMWindow.props.screen_y"><code class="xref py py-data docutils literal notranslate"><span class="pre">screen-y</span></code></a></td>
+<td>&#160;</td>
+<td>r</td>
+<td>read-only <a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a> DOMWindow:screen-y</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow.props.scroll_x" title="WebKit2WebExtension.DOMDOMWindow.props.scroll_x"><code class="xref py py-data docutils literal notranslate"><span class="pre">scroll-x</span></code></a></td>
+<td>&#160;</td>
+<td>r</td>
+<td>read-only <a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a> DOMWindow:scroll-x</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow.props.scroll_y" title="WebKit2WebExtension.DOMDOMWindow.props.scroll_y"><code class="xref py py-data docutils literal notranslate"><span class="pre">scroll-y</span></code></a></td>
+<td>&#160;</td>
+<td>r</td>
+<td>read-only <a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a> DOMWindow:scroll-y</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow.props.self" title="WebKit2WebExtension.DOMDOMWindow.props.self"><code class="xref py py-data docutils literal notranslate"><span class="pre">self</span></code></a></td>
+<td><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow" title="WebKit2WebExtension.DOMDOMWindow"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WebKit2WebExtension.DOMDOMWindow</span></code></a></td>
+<td>r</td>
+<td>read-only <a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow" title="WebKit2WebExtension.DOMDOMWindow"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WebKit2WebExtension.DOMDOMWindow</span></code></a> DOMWindow:self</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow.props.status" title="WebKit2WebExtension.DOMDOMWindow.props.status"><code class="xref py py-data docutils literal notranslate"><span class="pre">status</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+<td>r/w</td>
+<td>read-write <a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a> DOMWindow:status</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow.props.top" title="WebKit2WebExtension.DOMDOMWindow.props.top"><code class="xref py py-data docutils literal notranslate"><span class="pre">top</span></code></a></td>
+<td><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow" title="WebKit2WebExtension.DOMDOMWindow"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WebKit2WebExtension.DOMDOMWindow</span></code></a></td>
+<td>r</td>
+<td>read-only <a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow" title="WebKit2WebExtension.DOMDOMWindow"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WebKit2WebExtension.DOMDOMWindow</span></code></a> DOMWindow:top</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow.props.window" title="WebKit2WebExtension.DOMDOMWindow.props.window"><code class="xref py py-data docutils literal notranslate"><span class="pre">window</span></code></a></td>
+<td><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow" title="WebKit2WebExtension.DOMDOMWindow"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WebKit2WebExtension.DOMDOMWindow</span></code></a></td>
+<td>r</td>
+<td>read-only <a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow" title="WebKit2WebExtension.DOMDOMWindow"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WebKit2WebExtension.DOMDOMWindow</span></code></a> DOMWindow:window</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="signals">
+<span id="webkit2webextension-domdomwindow-signals"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-signals" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fields">
+<span id="webkit2webextension-domdomwindow-fields"></span><h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-fields" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="16%" />
+<col width="1%" />
+<col width="1%" />
+<col width="82%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Access</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>parent_instance</td>
+<td><a class="reference internal" href="DOMObject.html#WebKit2WebExtension.DOMObject" title="WebKit2WebExtension.DOMObject"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WebKit2WebExtension.DOMObject</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="class-details">
+<h2>Class Details<a class="headerlink" href="#class-details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="WebKit2WebExtension.DOMDOMWindow">
+<em class="property">class </em><code class="descclassname">WebKit2WebExtension.</code><code class="descname">DOMDOMWindow</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#WebKit2WebExtension.DOMDOMWindow" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Bases:</th><td class="field-body"><a class="reference internal" href="DOMObject.html#WebKit2WebExtension.DOMObject" title="WebKit2WebExtension.DOMObject"><code class="xref py py-class docutils literal notranslate"><span class="pre">WebKit2WebExtension.DOMObject</span></code></a>,         <a class="reference internal" href="DOMEventTarget.html#WebKit2WebExtension.DOMEventTarget" title="WebKit2WebExtension.DOMEventTarget"><code class="xref py py-class docutils literal notranslate"><span class="pre">WebKit2WebExtension.DOMEventTarget</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Abstract:</th><td class="field-body">No</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Structure:</th><td class="field-body"><a class="reference internal" href="DOMDOMWindowClass.html#WebKit2WebExtension.DOMDOMWindowClass" title="WebKit2WebExtension.DOMDOMWindowClass"><code class="xref py py-class docutils literal notranslate"><span class="pre">WebKit2WebExtension.DOMDOMWindowClass</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="WebKit2WebExtension.DOMDOMWindow.alert">
+<code class="descname">alert</code><span class="sig-paren">(</span><em>message</em><span class="sig-paren">)</span><a class="headerlink" href="#WebKit2WebExtension.DOMDOMWindow.alert" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>message</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – A <a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.16.</span></p>
+</div>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 2.22: </span>Use JavaScriptCore API instead</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebKit2WebExtension.DOMDOMWindow.blur">
+<code class="descname">blur</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#WebKit2WebExtension.DOMDOMWindow.blur" title="Permalink to this definition">¶</a></dt>
+<dd><div class="versionadded">
+<p><span class="versionmodified">New in version 2.16.</span></p>
+</div>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 2.22: </span>Use JavaScriptCore API instead</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebKit2WebExtension.DOMDOMWindow.capture_events">
+<code class="descname">capture_events</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#WebKit2WebExtension.DOMDOMWindow.capture_events" title="Permalink to this definition">¶</a></dt>
+<dd><div class="versionadded">
+<p><span class="versionmodified">New in version 2.16.</span></p>
+</div>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 2.22: </span>Use JavaScriptCore API instead</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebKit2WebExtension.DOMDOMWindow.close">
+<code class="descname">close</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#WebKit2WebExtension.DOMDOMWindow.close" title="Permalink to this definition">¶</a></dt>
+<dd><div class="versionadded">
+<p><span class="versionmodified">New in version 2.16.</span></p>
+</div>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 2.22: </span>Use JavaScriptCore API instead</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebKit2WebExtension.DOMDOMWindow.confirm">
+<code class="descname">confirm</code><span class="sig-paren">(</span><em>message</em><span class="sig-paren">)</span><a class="headerlink" href="#WebKit2WebExtension.DOMDOMWindow.confirm" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>message</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – A <a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">A <a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.16.</span></p>
+</div>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 2.22: </span>Use JavaScriptCore API instead</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebKit2WebExtension.DOMDOMWindow.find">
+<code class="descname">find</code><span class="sig-paren">(</span><em>string</em>, <em>caseSensitive</em>, <em>backwards</em>, <em>wrap</em>, <em>wholeWord</em>, <em>searchInFrames</em>, <em>showDialog</em><span class="sig-paren">)</span><a class="headerlink" href="#WebKit2WebExtension.DOMDOMWindow.find" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>string</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – A <a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></li>
+<li><strong>caseSensitive</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a>) – A <a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></li>
+<li><strong>backwards</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a>) – A <a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></li>
+<li><strong>wrap</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a>) – A <a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></li>
+<li><strong>wholeWord</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a>) – A <a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></li>
+<li><strong>searchInFrames</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a>) – A <a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></li>
+<li><strong>showDialog</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a>) – A <a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">A <a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.16.</span></p>
+</div>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 2.22: </span>Use JavaScriptCore API instead</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebKit2WebExtension.DOMDOMWindow.focus">
+<code class="descname">focus</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#WebKit2WebExtension.DOMDOMWindow.focus" title="Permalink to this definition">¶</a></dt>
+<dd><div class="versionadded">
+<p><span class="versionmodified">New in version 2.16.</span></p>
+</div>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 2.22: </span>Use JavaScriptCore API instead</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebKit2WebExtension.DOMDOMWindow.get_closed">
+<code class="descname">get_closed</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#WebKit2WebExtension.DOMDOMWindow.get_closed" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A <a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.16.</span></p>
+</div>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 2.22: </span>Use JavaScriptCore API instead</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebKit2WebExtension.DOMDOMWindow.get_computed_style">
+<code class="descname">get_computed_style</code><span class="sig-paren">(</span><em>element</em>, <em>pseudoElement</em><span class="sig-paren">)</span><a class="headerlink" href="#WebKit2WebExtension.DOMDOMWindow.get_computed_style" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>element</strong> (<a class="reference internal" href="DOMElement.html#WebKit2WebExtension.DOMElement" title="WebKit2WebExtension.DOMElement"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WebKit2WebExtension.DOMElement</span></code></a>) – A <a class="reference internal" href="DOMElement.html#WebKit2WebExtension.DOMElement" title="WebKit2WebExtension.DOMElement"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WebKit2WebExtension.DOMElement</span></code></a></li>
+<li><strong>pseudoElement</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – A <a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">A <a class="reference internal" href="DOMCSSStyleDeclaration.html#WebKit2WebExtension.DOMCSSStyleDeclaration" title="WebKit2WebExtension.DOMCSSStyleDeclaration"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WebKit2WebExtension.DOMCSSStyleDeclaration</span></code></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="DOMCSSStyleDeclaration.html#WebKit2WebExtension.DOMCSSStyleDeclaration" title="WebKit2WebExtension.DOMCSSStyleDeclaration"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WebKit2WebExtension.DOMCSSStyleDeclaration</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.16.</span></p>
+</div>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 2.22: </span>Use JavaScriptCore API instead</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebKit2WebExtension.DOMDOMWindow.get_default_status">
+<code class="descname">get_default_status</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#WebKit2WebExtension.DOMDOMWindow.get_default_status" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A <a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.16.</span></p>
+</div>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 2.22: </span>Use JavaScriptCore API instead</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebKit2WebExtension.DOMDOMWindow.get_device_pixel_ratio">
+<code class="descname">get_device_pixel_ratio</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#WebKit2WebExtension.DOMDOMWindow.get_device_pixel_ratio" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A <a class="reference external" href="http://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">float</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">float</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.16.</span></p>
+</div>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 2.22: </span>Use JavaScriptCore API instead</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebKit2WebExtension.DOMDOMWindow.get_document">
+<code class="descname">get_document</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#WebKit2WebExtension.DOMDOMWindow.get_document" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A <a class="reference internal" href="DOMDocument.html#WebKit2WebExtension.DOMDocument" title="WebKit2WebExtension.DOMDocument"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WebKit2WebExtension.DOMDocument</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="DOMDocument.html#WebKit2WebExtension.DOMDocument" title="WebKit2WebExtension.DOMDocument"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WebKit2WebExtension.DOMDocument</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.16.</span></p>
+</div>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 2.22: </span>Use JavaScriptCore API instead</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebKit2WebExtension.DOMDOMWindow.get_frame_element">
+<code class="descname">get_frame_element</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#WebKit2WebExtension.DOMDOMWindow.get_frame_element" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A <a class="reference internal" href="DOMElement.html#WebKit2WebExtension.DOMElement" title="WebKit2WebExtension.DOMElement"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WebKit2WebExtension.DOMElement</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="DOMElement.html#WebKit2WebExtension.DOMElement" title="WebKit2WebExtension.DOMElement"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WebKit2WebExtension.DOMElement</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.16.</span></p>
+</div>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 2.22: </span>Use JavaScriptCore API instead</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebKit2WebExtension.DOMDOMWindow.get_frames">
+<code class="descname">get_frames</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#WebKit2WebExtension.DOMDOMWindow.get_frames" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A <a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow" title="WebKit2WebExtension.DOMDOMWindow"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WebKit2WebExtension.DOMDOMWindow</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow" title="WebKit2WebExtension.DOMDOMWindow"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WebKit2WebExtension.DOMDOMWindow</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.16.</span></p>
+</div>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 2.22: </span>Use JavaScriptCore API instead</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebKit2WebExtension.DOMDOMWindow.get_inner_height">
+<code class="descname">get_inner_height</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#WebKit2WebExtension.DOMDOMWindow.get_inner_height" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A <a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.16.</span></p>
+</div>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 2.22: </span>Use JavaScriptCore API instead</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebKit2WebExtension.DOMDOMWindow.get_inner_width">
+<code class="descname">get_inner_width</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#WebKit2WebExtension.DOMDOMWindow.get_inner_width" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A <a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.16.</span></p>
+</div>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 2.22: </span>Use JavaScriptCore API instead</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebKit2WebExtension.DOMDOMWindow.get_length">
+<code class="descname">get_length</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#WebKit2WebExtension.DOMDOMWindow.get_length" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A <a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.16.</span></p>
+</div>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 2.22: </span>Use JavaScriptCore API instead</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebKit2WebExtension.DOMDOMWindow.get_name">
+<code class="descname">get_name</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#WebKit2WebExtension.DOMDOMWindow.get_name" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A <a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.16.</span></p>
+</div>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 2.22: </span>Use JavaScriptCore API instead</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebKit2WebExtension.DOMDOMWindow.get_offscreen_buffering">
+<code class="descname">get_offscreen_buffering</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#WebKit2WebExtension.DOMDOMWindow.get_offscreen_buffering" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A <a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.16.</span></p>
+</div>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 2.22: </span>Use JavaScriptCore API instead</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebKit2WebExtension.DOMDOMWindow.get_opener">
+<code class="descname">get_opener</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#WebKit2WebExtension.DOMDOMWindow.get_opener" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A <a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow" title="WebKit2WebExtension.DOMDOMWindow"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WebKit2WebExtension.DOMDOMWindow</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow" title="WebKit2WebExtension.DOMDOMWindow"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WebKit2WebExtension.DOMDOMWindow</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.16.</span></p>
+</div>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 2.22: </span>Use JavaScriptCore API instead</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebKit2WebExtension.DOMDOMWindow.get_orientation">
+<code class="descname">get_orientation</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#WebKit2WebExtension.DOMDOMWindow.get_orientation" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A <a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.16.</span></p>
+</div>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 2.22: </span>Use JavaScriptCore API instead</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebKit2WebExtension.DOMDOMWindow.get_outer_height">
+<code class="descname">get_outer_height</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#WebKit2WebExtension.DOMDOMWindow.get_outer_height" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A <a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.16.</span></p>
+</div>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 2.22: </span>Use JavaScriptCore API instead</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebKit2WebExtension.DOMDOMWindow.get_outer_width">
+<code class="descname">get_outer_width</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#WebKit2WebExtension.DOMDOMWindow.get_outer_width" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A <a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.16.</span></p>
+</div>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 2.22: </span>Use JavaScriptCore API instead</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebKit2WebExtension.DOMDOMWindow.get_page_x_offset">
+<code class="descname">get_page_x_offset</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#WebKit2WebExtension.DOMDOMWindow.get_page_x_offset" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A <a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.16.</span></p>
+</div>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 2.22: </span>Use JavaScriptCore API instead</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebKit2WebExtension.DOMDOMWindow.get_page_y_offset">
+<code class="descname">get_page_y_offset</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#WebKit2WebExtension.DOMDOMWindow.get_page_y_offset" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A <a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.16.</span></p>
+</div>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 2.22: </span>Use JavaScriptCore API instead</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebKit2WebExtension.DOMDOMWindow.get_parent">
+<code class="descname">get_parent</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#WebKit2WebExtension.DOMDOMWindow.get_parent" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A <a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow" title="WebKit2WebExtension.DOMDOMWindow"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WebKit2WebExtension.DOMDOMWindow</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow" title="WebKit2WebExtension.DOMDOMWindow"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WebKit2WebExtension.DOMDOMWindow</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.16.</span></p>
+</div>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 2.22: </span>Use JavaScriptCore API instead</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebKit2WebExtension.DOMDOMWindow.get_screen_left">
+<code class="descname">get_screen_left</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#WebKit2WebExtension.DOMDOMWindow.get_screen_left" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A <a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.16.</span></p>
+</div>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 2.22: </span>Use JavaScriptCore API instead</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebKit2WebExtension.DOMDOMWindow.get_screen_top">
+<code class="descname">get_screen_top</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#WebKit2WebExtension.DOMDOMWindow.get_screen_top" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A <a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.16.</span></p>
+</div>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 2.22: </span>Use JavaScriptCore API instead</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebKit2WebExtension.DOMDOMWindow.get_screen_x">
+<code class="descname">get_screen_x</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#WebKit2WebExtension.DOMDOMWindow.get_screen_x" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A <a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.16.</span></p>
+</div>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 2.22: </span>Use JavaScriptCore API instead</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebKit2WebExtension.DOMDOMWindow.get_screen_y">
+<code class="descname">get_screen_y</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#WebKit2WebExtension.DOMDOMWindow.get_screen_y" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A <a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.16.</span></p>
+</div>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 2.22: </span>Use JavaScriptCore API instead</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebKit2WebExtension.DOMDOMWindow.get_scroll_x">
+<code class="descname">get_scroll_x</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#WebKit2WebExtension.DOMDOMWindow.get_scroll_x" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A <a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.16.</span></p>
+</div>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 2.22: </span>Use JavaScriptCore API instead</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebKit2WebExtension.DOMDOMWindow.get_scroll_y">
+<code class="descname">get_scroll_y</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#WebKit2WebExtension.DOMDOMWindow.get_scroll_y" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A <a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.16.</span></p>
+</div>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 2.22: </span>Use JavaScriptCore API instead</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebKit2WebExtension.DOMDOMWindow.get_selection">
+<code class="descname">get_selection</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#WebKit2WebExtension.DOMDOMWindow.get_selection" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A <a class="reference internal" href="DOMDOMSelection.html#WebKit2WebExtension.DOMDOMSelection" title="WebKit2WebExtension.DOMDOMSelection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WebKit2WebExtension.DOMDOMSelection</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="DOMDOMSelection.html#WebKit2WebExtension.DOMDOMSelection" title="WebKit2WebExtension.DOMDOMSelection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WebKit2WebExtension.DOMDOMSelection</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.16.</span></p>
+</div>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 2.22: </span>Use JavaScriptCore API instead</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebKit2WebExtension.DOMDOMWindow.get_self">
+<code class="descname">get_self</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#WebKit2WebExtension.DOMDOMWindow.get_self" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A <a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow" title="WebKit2WebExtension.DOMDOMWindow"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WebKit2WebExtension.DOMDOMWindow</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow" title="WebKit2WebExtension.DOMDOMWindow"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WebKit2WebExtension.DOMDOMWindow</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.16.</span></p>
+</div>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 2.22: </span>Use JavaScriptCore API instead</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebKit2WebExtension.DOMDOMWindow.get_status">
+<code class="descname">get_status</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#WebKit2WebExtension.DOMDOMWindow.get_status" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A <a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.16.</span></p>
+</div>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 2.22: </span>Use JavaScriptCore API instead</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebKit2WebExtension.DOMDOMWindow.get_top">
+<code class="descname">get_top</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#WebKit2WebExtension.DOMDOMWindow.get_top" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A <a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow" title="WebKit2WebExtension.DOMDOMWindow"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WebKit2WebExtension.DOMDOMWindow</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow" title="WebKit2WebExtension.DOMDOMWindow"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WebKit2WebExtension.DOMDOMWindow</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.16.</span></p>
+</div>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 2.22: </span>Use JavaScriptCore API instead</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebKit2WebExtension.DOMDOMWindow.get_window">
+<code class="descname">get_window</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#WebKit2WebExtension.DOMDOMWindow.get_window" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A <a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow" title="WebKit2WebExtension.DOMDOMWindow"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WebKit2WebExtension.DOMDOMWindow</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow" title="WebKit2WebExtension.DOMDOMWindow"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WebKit2WebExtension.DOMDOMWindow</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.16.</span></p>
+</div>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 2.22: </span>Use JavaScriptCore API instead</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebKit2WebExtension.DOMDOMWindow.move_by">
+<code class="descname">move_by</code><span class="sig-paren">(</span><em>x</em>, <em>y</em><span class="sig-paren">)</span><a class="headerlink" href="#WebKit2WebExtension.DOMDOMWindow.move_by" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>x</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">float</span></code></a>) – A <a class="reference external" href="http://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">float</span></code></a></li>
+<li><strong>y</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">float</span></code></a>) – A <a class="reference external" href="http://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">float</span></code></a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.16.</span></p>
+</div>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 2.22: </span>Use JavaScriptCore API instead</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebKit2WebExtension.DOMDOMWindow.move_to">
+<code class="descname">move_to</code><span class="sig-paren">(</span><em>x</em>, <em>y</em><span class="sig-paren">)</span><a class="headerlink" href="#WebKit2WebExtension.DOMDOMWindow.move_to" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>x</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">float</span></code></a>) – A <a class="reference external" href="http://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">float</span></code></a></li>
+<li><strong>y</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">float</span></code></a>) – A <a class="reference external" href="http://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">float</span></code></a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.16.</span></p>
+</div>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 2.22: </span>Use JavaScriptCore API instead</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebKit2WebExtension.DOMDOMWindow.print_">
+<code class="descname">print_</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#WebKit2WebExtension.DOMDOMWindow.print_" title="Permalink to this definition">¶</a></dt>
+<dd><div class="versionadded">
+<p><span class="versionmodified">New in version 2.16.</span></p>
+</div>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 2.22: </span>Use JavaScriptCore API instead</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebKit2WebExtension.DOMDOMWindow.prompt">
+<code class="descname">prompt</code><span class="sig-paren">(</span><em>message</em>, <em>defaultValue</em><span class="sig-paren">)</span><a class="headerlink" href="#WebKit2WebExtension.DOMDOMWindow.prompt" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>message</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – A <a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></li>
+<li><strong>defaultValue</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – A <a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">A <a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.16.</span></p>
+</div>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 2.22: </span>Use JavaScriptCore API instead</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebKit2WebExtension.DOMDOMWindow.release_events">
+<code class="descname">release_events</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#WebKit2WebExtension.DOMDOMWindow.release_events" title="Permalink to this definition">¶</a></dt>
+<dd><div class="versionadded">
+<p><span class="versionmodified">New in version 2.16.</span></p>
+</div>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 2.22: </span>Use JavaScriptCore API instead</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebKit2WebExtension.DOMDOMWindow.resize_by">
+<code class="descname">resize_by</code><span class="sig-paren">(</span><em>x</em>, <em>y</em><span class="sig-paren">)</span><a class="headerlink" href="#WebKit2WebExtension.DOMDOMWindow.resize_by" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>x</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">float</span></code></a>) – A <a class="reference external" href="http://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">float</span></code></a></li>
+<li><strong>y</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">float</span></code></a>) – A <a class="reference external" href="http://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">float</span></code></a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.16.</span></p>
+</div>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 2.22: </span>Use JavaScriptCore API instead</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebKit2WebExtension.DOMDOMWindow.resize_to">
+<code class="descname">resize_to</code><span class="sig-paren">(</span><em>width</em>, <em>height</em><span class="sig-paren">)</span><a class="headerlink" href="#WebKit2WebExtension.DOMDOMWindow.resize_to" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>width</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">float</span></code></a>) – A <a class="reference external" href="http://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">float</span></code></a></li>
+<li><strong>height</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">float</span></code></a>) – A <a class="reference external" href="http://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">float</span></code></a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.16.</span></p>
+</div>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 2.22: </span>Use JavaScriptCore API instead</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebKit2WebExtension.DOMDOMWindow.scroll_by">
+<code class="descname">scroll_by</code><span class="sig-paren">(</span><em>x</em>, <em>y</em><span class="sig-paren">)</span><a class="headerlink" href="#WebKit2WebExtension.DOMDOMWindow.scroll_by" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>x</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">float</span></code></a>) – A <a class="reference external" href="http://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">float</span></code></a></li>
+<li><strong>y</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">float</span></code></a>) – A <a class="reference external" href="http://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">float</span></code></a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.16.</span></p>
+</div>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 2.22: </span>Use JavaScriptCore API instead</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebKit2WebExtension.DOMDOMWindow.scroll_to">
+<code class="descname">scroll_to</code><span class="sig-paren">(</span><em>x</em>, <em>y</em><span class="sig-paren">)</span><a class="headerlink" href="#WebKit2WebExtension.DOMDOMWindow.scroll_to" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>x</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">float</span></code></a>) – A <a class="reference external" href="http://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">float</span></code></a></li>
+<li><strong>y</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">float</span></code></a>) – A <a class="reference external" href="http://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">float</span></code></a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.16.</span></p>
+</div>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 2.22: </span>Use JavaScriptCore API instead</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebKit2WebExtension.DOMDOMWindow.set_default_status">
+<code class="descname">set_default_status</code><span class="sig-paren">(</span><em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#WebKit2WebExtension.DOMDOMWindow.set_default_status" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>value</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – A <a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.16.</span></p>
+</div>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 2.22: </span>Use JavaScriptCore API instead</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebKit2WebExtension.DOMDOMWindow.set_name">
+<code class="descname">set_name</code><span class="sig-paren">(</span><em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#WebKit2WebExtension.DOMDOMWindow.set_name" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>value</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – A <a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.16.</span></p>
+</div>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 2.22: </span>Use JavaScriptCore API instead</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebKit2WebExtension.DOMDOMWindow.set_status">
+<code class="descname">set_status</code><span class="sig-paren">(</span><em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#WebKit2WebExtension.DOMDOMWindow.set_status" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>value</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – A <a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.16.</span></p>
+</div>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 2.22: </span>Use JavaScriptCore API instead</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebKit2WebExtension.DOMDOMWindow.stop">
+<code class="descname">stop</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#WebKit2WebExtension.DOMDOMWindow.stop" title="Permalink to this definition">¶</a></dt>
+<dd><div class="versionadded">
+<p><span class="versionmodified">New in version 2.16.</span></p>
+</div>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 2.22: </span>Use JavaScriptCore API instead</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebKit2WebExtension.DOMDOMWindow.webkit_message_handlers_post_message">
+<code class="descname">webkit_message_handlers_post_message</code><span class="sig-paren">(</span><em>handler</em>, <em>message</em><span class="sig-paren">)</span><a class="headerlink" href="#WebKit2WebExtension.DOMDOMWindow.webkit_message_handlers_post_message" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>handler</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – </li>
+<li><strong>message</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="property-details">
+<h2>Property Details<a class="headerlink" href="#property-details" title="Permalink to this headline">¶</a></h2>
+<dl class="data">
+<dt id="WebKit2WebExtension.DOMDOMWindow.props.closed">
+<code class="descclassname">WebKit2WebExtension.DOMDOMWindow.props.</code><code class="descname">closed</code><a class="headerlink" href="#WebKit2WebExtension.DOMDOMWindow.props.closed" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">closed</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>read-only <a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a> DOMWindow:closed</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="WebKit2WebExtension.DOMDOMWindow.props.default_status">
+<code class="descclassname">WebKit2WebExtension.DOMDOMWindow.props.</code><code class="descname">default_status</code><a class="headerlink" href="#WebKit2WebExtension.DOMDOMWindow.props.default_status" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">default-status</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">''</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>read-write <a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a> DOMWindow:default-status</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="WebKit2WebExtension.DOMDOMWindow.props.device_pixel_ratio">
+<code class="descclassname">WebKit2WebExtension.DOMDOMWindow.props.</code><code class="descname">device_pixel_ratio</code><a class="headerlink" href="#WebKit2WebExtension.DOMDOMWindow.props.device_pixel_ratio" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">device-pixel-ratio</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">float</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">0.0</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>read-only <a class="reference external" href="http://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">float</span></code></a> DOMWindow:device-pixel-ratio</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="WebKit2WebExtension.DOMDOMWindow.props.document">
+<code class="descclassname">WebKit2WebExtension.DOMDOMWindow.props.</code><code class="descname">document</code><a class="headerlink" href="#WebKit2WebExtension.DOMDOMWindow.props.document" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">document</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="DOMDocument.html#WebKit2WebExtension.DOMDocument" title="WebKit2WebExtension.DOMDocument"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WebKit2WebExtension.DOMDocument</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>read-only <a class="reference internal" href="DOMDocument.html#WebKit2WebExtension.DOMDocument" title="WebKit2WebExtension.DOMDocument"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WebKit2WebExtension.DOMDocument</span></code></a> DOMWindow:document</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="WebKit2WebExtension.DOMDOMWindow.props.frame_element">
+<code class="descclassname">WebKit2WebExtension.DOMDOMWindow.props.</code><code class="descname">frame_element</code><a class="headerlink" href="#WebKit2WebExtension.DOMDOMWindow.props.frame_element" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">frame-element</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="DOMElement.html#WebKit2WebExtension.DOMElement" title="WebKit2WebExtension.DOMElement"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WebKit2WebExtension.DOMElement</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>read-only <a class="reference internal" href="DOMElement.html#WebKit2WebExtension.DOMElement" title="WebKit2WebExtension.DOMElement"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WebKit2WebExtension.DOMElement</span></code></a> DOMWindow:frame-element</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="WebKit2WebExtension.DOMDOMWindow.props.frames">
+<code class="descclassname">WebKit2WebExtension.DOMDOMWindow.props.</code><code class="descname">frames</code><a class="headerlink" href="#WebKit2WebExtension.DOMDOMWindow.props.frames" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">frames</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow" title="WebKit2WebExtension.DOMDOMWindow"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WebKit2WebExtension.DOMDOMWindow</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>read-only <a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow" title="WebKit2WebExtension.DOMDOMWindow"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WebKit2WebExtension.DOMDOMWindow</span></code></a> DOMWindow:frames</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="WebKit2WebExtension.DOMDOMWindow.props.inner_height">
+<code class="descclassname">WebKit2WebExtension.DOMDOMWindow.props.</code><code class="descname">inner_height</code><a class="headerlink" href="#WebKit2WebExtension.DOMDOMWindow.props.inner_height" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">inner-height</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">0</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>read-only <a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a> DOMWindow:inner-height</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="WebKit2WebExtension.DOMDOMWindow.props.inner_width">
+<code class="descclassname">WebKit2WebExtension.DOMDOMWindow.props.</code><code class="descname">inner_width</code><a class="headerlink" href="#WebKit2WebExtension.DOMDOMWindow.props.inner_width" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">inner-width</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">0</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>read-only <a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a> DOMWindow:inner-width</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="WebKit2WebExtension.DOMDOMWindow.props.length">
+<code class="descclassname">WebKit2WebExtension.DOMDOMWindow.props.</code><code class="descname">length</code><a class="headerlink" href="#WebKit2WebExtension.DOMDOMWindow.props.length" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">length</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">0</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>read-only <a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a> DOMWindow:length</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="WebKit2WebExtension.DOMDOMWindow.props.name">
+<code class="descclassname">WebKit2WebExtension.DOMDOMWindow.props.</code><code class="descname">name</code><a class="headerlink" href="#WebKit2WebExtension.DOMDOMWindow.props.name" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">name</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">''</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>read-write <a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a> DOMWindow:name</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="WebKit2WebExtension.DOMDOMWindow.props.offscreen_buffering">
+<code class="descclassname">WebKit2WebExtension.DOMDOMWindow.props.</code><code class="descname">offscreen_buffering</code><a class="headerlink" href="#WebKit2WebExtension.DOMDOMWindow.props.offscreen_buffering" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">offscreen-buffering</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>read-only <a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a> DOMWindow:offscreen-buffering</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="WebKit2WebExtension.DOMDOMWindow.props.opener">
+<code class="descclassname">WebKit2WebExtension.DOMDOMWindow.props.</code><code class="descname">opener</code><a class="headerlink" href="#WebKit2WebExtension.DOMDOMWindow.props.opener" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">opener</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow" title="WebKit2WebExtension.DOMDOMWindow"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WebKit2WebExtension.DOMDOMWindow</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>read-only <a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow" title="WebKit2WebExtension.DOMDOMWindow"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WebKit2WebExtension.DOMDOMWindow</span></code></a> DOMWindow:opener</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="WebKit2WebExtension.DOMDOMWindow.props.orientation">
+<code class="descclassname">WebKit2WebExtension.DOMDOMWindow.props.</code><code class="descname">orientation</code><a class="headerlink" href="#WebKit2WebExtension.DOMDOMWindow.props.orientation" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">orientation</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">0</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>read-only <a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a> DOMWindow:orientation</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="WebKit2WebExtension.DOMDOMWindow.props.outer_height">
+<code class="descclassname">WebKit2WebExtension.DOMDOMWindow.props.</code><code class="descname">outer_height</code><a class="headerlink" href="#WebKit2WebExtension.DOMDOMWindow.props.outer_height" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">outer-height</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">0</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>read-only <a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a> DOMWindow:outer-height</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="WebKit2WebExtension.DOMDOMWindow.props.outer_width">
+<code class="descclassname">WebKit2WebExtension.DOMDOMWindow.props.</code><code class="descname">outer_width</code><a class="headerlink" href="#WebKit2WebExtension.DOMDOMWindow.props.outer_width" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">outer-width</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">0</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>read-only <a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a> DOMWindow:outer-width</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="WebKit2WebExtension.DOMDOMWindow.props.page_x_offset">
+<code class="descclassname">WebKit2WebExtension.DOMDOMWindow.props.</code><code class="descname">page_x_offset</code><a class="headerlink" href="#WebKit2WebExtension.DOMDOMWindow.props.page_x_offset" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">page-x-offset</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">0</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>read-only <a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a> DOMWindow:page-x-offset</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="WebKit2WebExtension.DOMDOMWindow.props.page_y_offset">
+<code class="descclassname">WebKit2WebExtension.DOMDOMWindow.props.</code><code class="descname">page_y_offset</code><a class="headerlink" href="#WebKit2WebExtension.DOMDOMWindow.props.page_y_offset" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">page-y-offset</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">0</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>read-only <a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a> DOMWindow:page-y-offset</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="WebKit2WebExtension.DOMDOMWindow.props.parent">
+<code class="descclassname">WebKit2WebExtension.DOMDOMWindow.props.</code><code class="descname">parent</code><a class="headerlink" href="#WebKit2WebExtension.DOMDOMWindow.props.parent" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">parent</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow" title="WebKit2WebExtension.DOMDOMWindow"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WebKit2WebExtension.DOMDOMWindow</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>read-only <a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow" title="WebKit2WebExtension.DOMDOMWindow"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WebKit2WebExtension.DOMDOMWindow</span></code></a> DOMWindow:parent</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="WebKit2WebExtension.DOMDOMWindow.props.screen_left">
+<code class="descclassname">WebKit2WebExtension.DOMDOMWindow.props.</code><code class="descname">screen_left</code><a class="headerlink" href="#WebKit2WebExtension.DOMDOMWindow.props.screen_left" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">screen-left</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">0</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>read-only <a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a> DOMWindow:screen-left</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="WebKit2WebExtension.DOMDOMWindow.props.screen_top">
+<code class="descclassname">WebKit2WebExtension.DOMDOMWindow.props.</code><code class="descname">screen_top</code><a class="headerlink" href="#WebKit2WebExtension.DOMDOMWindow.props.screen_top" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">screen-top</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">0</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>read-only <a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a> DOMWindow:screen-top</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="WebKit2WebExtension.DOMDOMWindow.props.screen_x">
+<code class="descclassname">WebKit2WebExtension.DOMDOMWindow.props.</code><code class="descname">screen_x</code><a class="headerlink" href="#WebKit2WebExtension.DOMDOMWindow.props.screen_x" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">screen-x</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">0</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>read-only <a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a> DOMWindow:screen-x</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="WebKit2WebExtension.DOMDOMWindow.props.screen_y">
+<code class="descclassname">WebKit2WebExtension.DOMDOMWindow.props.</code><code class="descname">screen_y</code><a class="headerlink" href="#WebKit2WebExtension.DOMDOMWindow.props.screen_y" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">screen-y</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">0</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>read-only <a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a> DOMWindow:screen-y</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="WebKit2WebExtension.DOMDOMWindow.props.scroll_x">
+<code class="descclassname">WebKit2WebExtension.DOMDOMWindow.props.</code><code class="descname">scroll_x</code><a class="headerlink" href="#WebKit2WebExtension.DOMDOMWindow.props.scroll_x" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">scroll-x</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">0</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>read-only <a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a> DOMWindow:scroll-x</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="WebKit2WebExtension.DOMDOMWindow.props.scroll_y">
+<code class="descclassname">WebKit2WebExtension.DOMDOMWindow.props.</code><code class="descname">scroll_y</code><a class="headerlink" href="#WebKit2WebExtension.DOMDOMWindow.props.scroll_y" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">scroll-y</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">0</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>read-only <a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a> DOMWindow:scroll-y</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="WebKit2WebExtension.DOMDOMWindow.props.self">
+<code class="descclassname">WebKit2WebExtension.DOMDOMWindow.props.</code><code class="descname">self</code><a class="headerlink" href="#WebKit2WebExtension.DOMDOMWindow.props.self" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">self</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow" title="WebKit2WebExtension.DOMDOMWindow"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WebKit2WebExtension.DOMDOMWindow</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>read-only <a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow" title="WebKit2WebExtension.DOMDOMWindow"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WebKit2WebExtension.DOMDOMWindow</span></code></a> DOMWindow:self</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="WebKit2WebExtension.DOMDOMWindow.props.status">
+<code class="descclassname">WebKit2WebExtension.DOMDOMWindow.props.</code><code class="descname">status</code><a class="headerlink" href="#WebKit2WebExtension.DOMDOMWindow.props.status" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">status</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">''</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>read-write <a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a> DOMWindow:status</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="WebKit2WebExtension.DOMDOMWindow.props.top">
+<code class="descclassname">WebKit2WebExtension.DOMDOMWindow.props.</code><code class="descname">top</code><a class="headerlink" href="#WebKit2WebExtension.DOMDOMWindow.props.top" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">top</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow" title="WebKit2WebExtension.DOMDOMWindow"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WebKit2WebExtension.DOMDOMWindow</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>read-only <a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow" title="WebKit2WebExtension.DOMDOMWindow"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WebKit2WebExtension.DOMDOMWindow</span></code></a> DOMWindow:top</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="WebKit2WebExtension.DOMDOMWindow.props.window">
+<code class="descclassname">WebKit2WebExtension.DOMDOMWindow.props.</code><code class="descname">window</code><a class="headerlink" href="#WebKit2WebExtension.DOMDOMWindow.props.window" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">window</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow" title="WebKit2WebExtension.DOMDOMWindow"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WebKit2WebExtension.DOMDOMWindow</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>read-only <a class="reference internal" href="#WebKit2WebExtension.DOMDOMWindow" title="WebKit2WebExtension.DOMDOMWindow"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WebKit2WebExtension.DOMDOMWindow</span></code></a> DOMWindow:window</p>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div> 
+
+</body>
+</html>

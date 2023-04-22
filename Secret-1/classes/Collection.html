@@ -1,0 +1,1300 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    Secret.Collection -
+    
+      Classes -
+    
+    Secret 1
+  </title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/css/pgi.css" type="text/css" />
+  
+
+  
+  <script type="text/javascript">
+
+    function openSidebar(element) {
+        window.location.href = element.href + location.hash;
+        return false;
+    }
+
+    function inIframe() {
+        try {
+            return window.self !== window.top;
+        } catch (e) {
+            return true;
+        }
+    }
+
+    function onLoaded() {
+        if(!inIframe()) {
+            var icons = document.getElementsByClassName('open-sidebar');
+
+            for (var i = 0; i < icons.length; i ++) {
+                icons[i].style.display = 'table-cell';
+            }
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', onLoaded, false);
+
+  </script>
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="Secret 1 Python API Docs" href="../index.html"/>
+        <link rel="up" title="Classes" href="../classes.html"/>
+        <link rel="next" title="Secret.Item" href="Item.html"/>
+        <link rel="prev" title="Classes" href="../classes.html"/> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+<div class="non-fixed-bar">
+<table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#Secret-1/classes/Collection.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Secret 1</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>Secret.Collection</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="../classes.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="Item.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">Secret.Collection</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#property-details">Property Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+<div class="fixed-bar">
+  <table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#Secret-1/classes/Collection.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Secret 1</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>Secret.Collection</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="../classes.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="Item.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">Secret.Collection</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#property-details">Property Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+  <div class="wy-grid-for-nav">
+
+    
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="main">
+            
+  <div class="section" id="secret-collection">
+<h1>Secret.Collection<a class="headerlink" href="#secret-collection" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<svg width="392pt" height="188pt"
+ viewBox="0.00 0.00 392.00 188.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 184)">
+<title>g</title>
+<!-- GObject.GInterface -->
+<g id="node1" class="node">
+<title>GObject.GInterface</title>
+<g id="a_node1"><a xlink:href="../../GObject-2.0/classes/GInterface.html#GObject.GInterface" xlink:title="GObject.GInterface">
+<path fill="none" stroke="#3091d1" d="M198,-180C198,-180 112,-180 112,-180 109,-180 106,-177 106,-174 106,-174 106,-168 106,-168 106,-165 109,-162 112,-162 112,-162 198,-162 198,-162 201,-162 204,-165 204,-168 204,-168 204,-174 204,-174 204,-177 201,-180 198,-180"/>
+<text text-anchor="middle" x="155" y="-168.7" font-family="inherit" font-size="8.50">GObject.GInterface</text>
+</a>
+</g>
+</g>
+<!-- Gio.AsyncInitable -->
+<g id="node3" class="node">
+<title>Gio.AsyncInitable</title>
+<g id="a_node3"><a xlink:href="../../Gio-2.0/classes/AsyncInitable.html#Gio.AsyncInitable" xlink:title="Gio.AsyncInitable">
+<path fill="none" stroke="#3091d1" d="M84,-126C84,-126 6,-126 6,-126 3,-126 0,-123 0,-120 0,-120 0,-114 0,-114 0,-111 3,-108 6,-108 6,-108 84,-108 84,-108 87,-108 90,-111 90,-114 90,-114 90,-120 90,-120 90,-123 87,-126 84,-126"/>
+<text text-anchor="middle" x="45" y="-114.7" font-family="inherit" font-size="8.50">Gio.AsyncInitable</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Gio.AsyncInitable -->
+<g id="edge1" class="edge">
+<title>GObject.GInterface&#45;&gt;Gio.AsyncInitable</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M137.81,-161.88C118.6,-152.79 87.46,-138.07 66.61,-128.22"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="67.34,-126.62 62.07,-126.07 65.84,-129.79 67.34,-126.62"/>
+</g>
+<!-- Gio.DBusInterface -->
+<g id="node4" class="node">
+<title>Gio.DBusInterface</title>
+<g id="a_node4"><a xlink:href="../../Gio-2.0/classes/DBusInterface.html#Gio.DBusInterface" xlink:title="Gio.DBusInterface">
+<path fill="none" stroke="#3091d1" d="M196,-126C196,-126 114,-126 114,-126 111,-126 108,-123 108,-120 108,-120 108,-114 108,-114 108,-111 111,-108 114,-108 114,-108 196,-108 196,-108 199,-108 202,-111 202,-114 202,-114 202,-120 202,-120 202,-123 199,-126 196,-126"/>
+<text text-anchor="middle" x="155" y="-114.7" font-family="inherit" font-size="8.50">Gio.DBusInterface</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Gio.DBusInterface -->
+<g id="edge2" class="edge">
+<title>GObject.GInterface&#45;&gt;Gio.DBusInterface</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M155,-161.88C155,-153.76 155,-141.13 155,-131.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="156.75,-131.24 155,-126.24 153.25,-131.24 156.75,-131.24"/>
+</g>
+<!-- Gio.Initable -->
+<g id="node6" class="node">
+<title>Gio.Initable</title>
+<g id="a_node6"><a xlink:href="../../Gio-2.0/classes/Initable.html#Gio.Initable" xlink:title="Gio.Initable">
+<path fill="none" stroke="#3091d1" d="M279.5,-126C279.5,-126 226.5,-126 226.5,-126 223.5,-126 220.5,-123 220.5,-120 220.5,-120 220.5,-114 220.5,-114 220.5,-111 223.5,-108 226.5,-108 226.5,-108 279.5,-108 279.5,-108 282.5,-108 285.5,-111 285.5,-114 285.5,-114 285.5,-120 285.5,-120 285.5,-123 282.5,-126 279.5,-126"/>
+<text text-anchor="middle" x="253" y="-114.7" font-family="inherit" font-size="8.50">Gio.Initable</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Gio.Initable -->
+<g id="edge3" class="edge">
+<title>GObject.GInterface&#45;&gt;Gio.Initable</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M170.31,-161.88C187.29,-152.87 214.71,-138.32 233.28,-128.47"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="234.2,-129.96 237.8,-126.07 232.56,-126.87 234.2,-129.96"/>
+</g>
+<!-- GObject.Object -->
+<g id="node2" class="node">
+<title>GObject.Object</title>
+<g id="a_node2"><a xlink:href="../../GObject-2.0/classes/Object.html#GObject.Object" xlink:title="GObject.Object">
+<path fill="none" stroke="#75507b" d="M378,-126C378,-126 310,-126 310,-126 307,-126 304,-123 304,-120 304,-120 304,-114 304,-114 304,-111 307,-108 310,-108 310,-108 378,-108 378,-108 381,-108 384,-111 384,-114 384,-114 384,-120 384,-120 384,-123 381,-126 378,-126"/>
+<text text-anchor="middle" x="344" y="-114.7" font-family="inherit" font-size="8.50">GObject.Object</text>
+</a>
+</g>
+</g>
+<!-- Gio.DBusProxy -->
+<g id="node5" class="node">
+<title>Gio.DBusProxy</title>
+<g id="a_node5"><a xlink:href="../../Gio-2.0/classes/DBusProxy.html#Gio.DBusProxy" xlink:title="Gio.DBusProxy">
+<path fill="none" stroke="#75507b" d="M238,-72C238,-72 170,-72 170,-72 167,-72 164,-69 164,-66 164,-66 164,-60 164,-60 164,-57 167,-54 170,-54 170,-54 238,-54 238,-54 241,-54 244,-57 244,-60 244,-60 244,-66 244,-66 244,-69 241,-72 238,-72"/>
+<text text-anchor="middle" x="204" y="-60.7" font-family="inherit" font-size="8.50">Gio.DBusProxy</text>
+</a>
+</g>
+</g>
+<!-- GObject.Object&#45;&gt;Gio.DBusProxy -->
+<g id="edge4" class="edge">
+<title>GObject.Object&#45;&gt;Gio.DBusProxy</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M322.43,-107.99C297.74,-98.82 257.27,-83.79 230.63,-73.89"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="231.12,-72.21 225.82,-72.11 229.9,-75.49 231.12,-72.21"/>
+</g>
+<!-- Gio.AsyncInitable&#45;&gt;Gio.DBusProxy -->
+<g id="edge5" class="edge">
+<title>Gio.AsyncInitable&#45;&gt;Gio.DBusProxy</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M69.5,-107.99C97.74,-98.75 144.15,-83.57 174.4,-73.68"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="175.27,-75.24 179.48,-72.02 174.18,-71.91 175.27,-75.24"/>
+</g>
+<!-- Gio.DBusInterface&#45;&gt;Gio.DBusProxy -->
+<g id="edge6" class="edge">
+<title>Gio.DBusInterface&#45;&gt;Gio.DBusProxy</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M162.66,-107.88C170.74,-99.3 183.55,-85.7 192.77,-75.91"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="194.08,-77.08 196.24,-72.24 191.53,-74.68 194.08,-77.08"/>
+</g>
+<!-- Secret.Collection -->
+<g id="node7" class="node">
+<title>Secret.Collection</title>
+<g id="a_node7"><a xlink:href="#Secret.Collection" xlink:title="Secret.Collection">
+<path fill="none" stroke="#75507b" d="M241.5,-18C241.5,-18 166.5,-18 166.5,-18 163.5,-18 160.5,-15 160.5,-12 160.5,-12 160.5,-6 160.5,-6 160.5,-3 163.5,0 166.5,0 166.5,0 241.5,0 241.5,0 244.5,0 247.5,-3 247.5,-6 247.5,-6 247.5,-12 247.5,-12 247.5,-15 244.5,-18 241.5,-18"/>
+<text text-anchor="middle" x="204" y="-6.7" font-family="inherit" font-size="8.50">Secret.Collection</text>
+</a>
+</g>
+</g>
+<!-- Gio.DBusProxy&#45;&gt;Secret.Collection -->
+<g id="edge7" class="edge">
+<title>Gio.DBusProxy&#45;&gt;Secret.Collection</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M204,-53.88C204,-45.76 204,-33.13 204,-23.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="205.75,-23.24 204,-18.24 202.25,-23.24 205.75,-23.24"/>
+</g>
+<!-- Gio.Initable&#45;&gt;Gio.DBusProxy -->
+<g id="edge8" class="edge">
+<title>Gio.Initable&#45;&gt;Gio.DBusProxy</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M245.34,-107.88C237.26,-99.3 224.45,-85.7 215.23,-75.91"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="216.47,-74.68 211.76,-72.24 213.92,-77.08 216.47,-74.68"/>
+</g>
+</g>
+</svg>
+</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Subclasses:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="methods">
+<span id="secret-collection-methods"></span><h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../Gio-2.0/classes/DBusProxy.html#gio-dbusproxy-methods" title="(in Gio 2.0 v2.0)"><span class="xref std std-ref">Gio.DBusProxy (25)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (37)</span></a>,     <a class="reference external" href="../../Gio-2.0/classes/AsyncInitable.html#gio-asyncinitable-methods" title="(in Gio 2.0 v2.0)"><span class="xref std std-ref">Gio.AsyncInitable (4)</span></a>,     <a class="reference external" href="../../Gio-2.0/classes/DBusInterface.html#gio-dbusinterface-methods" title="(in Gio 2.0 v2.0)"><span class="xref std std-ref">Gio.DBusInterface (3)</span></a>,     <a class="reference external" href="../../Gio-2.0/classes/Initable.html#gio-initable-methods" title="(in Gio 2.0 v2.0)"><span class="xref std std-ref">Gio.Initable (2)</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Structs:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/ObjectClass.html#gobject-objectclass-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.ObjectClass (5)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="99%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><em>class</em></td>
+<td><a class="reference internal" href="#Secret.Collection.create" title="Secret.Collection.create"><code class="xref py py-func docutils literal notranslate"><span class="pre">create</span></code></a> (service, label, alias, flags, cancellable, callback, *user_data)</td>
+</tr>
+<tr class="row-even"><td><em>class</em></td>
+<td><a class="reference internal" href="#Secret.Collection.create_finish" title="Secret.Collection.create_finish"><code class="xref py py-func docutils literal notranslate"><span class="pre">create_finish</span></code></a> (result)</td>
+</tr>
+<tr class="row-odd"><td><em>class</em></td>
+<td><a class="reference internal" href="#Secret.Collection.create_sync" title="Secret.Collection.create_sync"><code class="xref py py-func docutils literal notranslate"><span class="pre">create_sync</span></code></a> (service, label, alias, flags, cancellable)</td>
+</tr>
+<tr class="row-even"><td><em>class</em></td>
+<td><a class="reference internal" href="#Secret.Collection.for_alias" title="Secret.Collection.for_alias"><code class="xref py py-func docutils literal notranslate"><span class="pre">for_alias</span></code></a> (service, alias, flags, cancellable, callback, *user_data)</td>
+</tr>
+<tr class="row-odd"><td><em>class</em></td>
+<td><a class="reference internal" href="#Secret.Collection.for_alias_finish" title="Secret.Collection.for_alias_finish"><code class="xref py py-func docutils literal notranslate"><span class="pre">for_alias_finish</span></code></a> (result)</td>
+</tr>
+<tr class="row-even"><td><em>class</em></td>
+<td><a class="reference internal" href="#Secret.Collection.for_alias_sync" title="Secret.Collection.for_alias_sync"><code class="xref py py-func docutils literal notranslate"><span class="pre">for_alias_sync</span></code></a> (service, alias, flags, cancellable)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Secret.Collection.delete" title="Secret.Collection.delete"><code class="xref py py-func docutils literal notranslate"><span class="pre">delete</span></code></a> (cancellable, callback, *user_data)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Secret.Collection.delete_finish" title="Secret.Collection.delete_finish"><code class="xref py py-func docutils literal notranslate"><span class="pre">delete_finish</span></code></a> (result)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Secret.Collection.delete_sync" title="Secret.Collection.delete_sync"><code class="xref py py-func docutils literal notranslate"><span class="pre">delete_sync</span></code></a> (cancellable)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Secret.Collection.get_created" title="Secret.Collection.get_created"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_created</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Secret.Collection.get_flags" title="Secret.Collection.get_flags"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_flags</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Secret.Collection.get_items" title="Secret.Collection.get_items"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_items</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Secret.Collection.get_label" title="Secret.Collection.get_label"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_label</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Secret.Collection.get_locked" title="Secret.Collection.get_locked"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_locked</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Secret.Collection.get_modified" title="Secret.Collection.get_modified"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_modified</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Secret.Collection.get_service" title="Secret.Collection.get_service"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_service</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Secret.Collection.load_items" title="Secret.Collection.load_items"><code class="xref py py-func docutils literal notranslate"><span class="pre">load_items</span></code></a> (cancellable, callback, *user_data)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Secret.Collection.load_items_finish" title="Secret.Collection.load_items_finish"><code class="xref py py-func docutils literal notranslate"><span class="pre">load_items_finish</span></code></a> (result)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Secret.Collection.load_items_sync" title="Secret.Collection.load_items_sync"><code class="xref py py-func docutils literal notranslate"><span class="pre">load_items_sync</span></code></a> (cancellable)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Secret.Collection.refresh" title="Secret.Collection.refresh"><code class="xref py py-func docutils literal notranslate"><span class="pre">refresh</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Secret.Collection.search" title="Secret.Collection.search"><code class="xref py py-func docutils literal notranslate"><span class="pre">search</span></code></a> (schema, attributes, flags, cancellable, callback, *user_data)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Secret.Collection.search_finish" title="Secret.Collection.search_finish"><code class="xref py py-func docutils literal notranslate"><span class="pre">search_finish</span></code></a> (result)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Secret.Collection.search_sync" title="Secret.Collection.search_sync"><code class="xref py py-func docutils literal notranslate"><span class="pre">search_sync</span></code></a> (schema, attributes, flags, cancellable)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Secret.Collection.set_label" title="Secret.Collection.set_label"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_label</span></code></a> (label, cancellable, callback, *user_data)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Secret.Collection.set_label_finish" title="Secret.Collection.set_label_finish"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_label_finish</span></code></a> (result)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Secret.Collection.set_label_sync" title="Secret.Collection.set_label_sync"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_label_sync</span></code></a> (label, cancellable)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="virtual-methods">
+<span id="secret-collection-vfuncs"></span><h2>Virtual Methods<a class="headerlink" href="#virtual-methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../Gio-2.0/classes/DBusProxy.html#gio-dbusproxy-vfuncs" title="(in Gio 2.0 v2.0)"><span class="xref std std-ref">Gio.DBusProxy (2)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-vfuncs" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (7)</span></a>,     <a class="reference external" href="../../Gio-2.0/classes/AsyncInitable.html#gio-asyncinitable-vfuncs" title="(in Gio 2.0 v2.0)"><span class="xref std std-ref">Gio.AsyncInitable (2)</span></a>,     <a class="reference external" href="../../Gio-2.0/classes/DBusInterface.html#gio-dbusinterface-vfuncs" title="(in Gio 2.0 v2.0)"><span class="xref std std-ref">Gio.DBusInterface (3)</span></a>,     <a class="reference external" href="../../Gio-2.0/classes/Initable.html#gio-initable-vfuncs" title="(in Gio 2.0 v2.0)"><span class="xref std std-ref">Gio.Initable (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="secret-collection-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../Gio-2.0/classes/DBusProxy.html#gio-dbusproxy-props" title="(in Gio 2.0 v2.0)"><span class="xref std std-ref">Gio.DBusProxy (9)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="1%" />
+<col width="1%" />
+<col width="97%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Flags</th>
+<th class="head">Short Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="#Secret.Collection.props.created" title="Secret.Collection.props.created"><code class="xref py py-data docutils literal notranslate"><span class="pre">created</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+<td>r/w</td>
+<td>Item creation date</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#Secret.Collection.props.flags" title="Secret.Collection.props.flags"><code class="xref py py-data docutils literal notranslate"><span class="pre">flags</span></code></a></td>
+<td><a class="reference internal" href="../flags.html#Secret.CollectionFlags" title="Secret.CollectionFlags"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Secret.CollectionFlags</span></code></a></td>
+<td>r/w/co</td>
+<td>Collection flags</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#Secret.Collection.props.label" title="Secret.Collection.props.label"><code class="xref py py-data docutils literal notranslate"><span class="pre">label</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+<td>r/w</td>
+<td>Item label</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#Secret.Collection.props.locked" title="Secret.Collection.props.locked"><code class="xref py py-data docutils literal notranslate"><span class="pre">locked</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+<td>r</td>
+<td>Item locked</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#Secret.Collection.props.modified" title="Secret.Collection.props.modified"><code class="xref py py-data docutils literal notranslate"><span class="pre">modified</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+<td>r/w</td>
+<td>Item modified date</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#Secret.Collection.props.service" title="Secret.Collection.props.service"><code class="xref py py-data docutils literal notranslate"><span class="pre">service</span></code></a></td>
+<td><a class="reference internal" href="Service.html#Secret.Service" title="Secret.Service"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Secret.Service</span></code></a></td>
+<td>r/w/co</td>
+<td>Secret Service</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="signals">
+<span id="secret-collection-signals"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../Gio-2.0/classes/DBusProxy.html#gio-dbusproxy-signals" title="(in Gio 2.0 v2.0)"><span class="xref std std-ref">Gio.DBusProxy (2)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-signals" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fields">
+<span id="secret-collection-fields"></span><h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../Gio-2.0/classes/DBusProxy.html#gio-dbusproxy-fields" title="(in Gio 2.0 v2.0)"><span class="xref std std-ref">Gio.DBusProxy (2)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-fields" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="16%" />
+<col width="1%" />
+<col width="1%" />
+<col width="82%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Access</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>parent</td>
+<td><a class="reference external" href="../../Gio-2.0/classes/DBusProxy.html#Gio.DBusProxy" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.DBusProxy</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="class-details">
+<h2>Class Details<a class="headerlink" href="#class-details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Secret.Collection">
+<em class="property">class </em><code class="descclassname">Secret.</code><code class="descname">Collection</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#Secret.Collection" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Bases:</th><td class="field-body"><a class="reference external" href="../../Gio-2.0/classes/DBusProxy.html#Gio.DBusProxy" title="(in Gio 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Gio.DBusProxy</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Abstract:</th><td class="field-body">No</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Structure:</th><td class="field-body"><a class="reference internal" href="CollectionClass.html#Secret.CollectionClass" title="Secret.CollectionClass"><code class="xref py py-class docutils literal notranslate"><span class="pre">Secret.CollectionClass</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>A proxy object representing a collection of secrets in the Secret Service.</p>
+<dl class="classmethod">
+<dt id="Secret.Collection.create">
+<em class="property">classmethod </em><code class="descname">create</code><span class="sig-paren">(</span><em>service</em>, <em>label</em>, <em>alias</em>, <em>flags</em>, <em>cancellable</em>, <em>callback</em>, <em>*user_data</em><span class="sig-paren">)</span><a class="headerlink" href="#Secret.Collection.create" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>service</strong> (<a class="reference internal" href="Service.html#Secret.Service" title="Secret.Service"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Secret.Service</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – a secret service object</li>
+<li><strong>label</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – label for the new collection</li>
+<li><strong>alias</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – alias to assign to the collection</li>
+<li><strong>flags</strong> (<a class="reference internal" href="../flags.html#Secret.CollectionCreateFlags" title="Secret.CollectionCreateFlags"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Secret.CollectionCreateFlags</span></code></a>) – currently unused</li>
+<li><strong>cancellable</strong> (<a class="reference external" href="../../Gio-2.0/classes/Cancellable.html#Gio.Cancellable" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Cancellable</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – optional cancellation object</li>
+<li><strong>callback</strong> (<a class="reference external" href="../../Gio-2.0/callbacks.html#Gio.AsyncReadyCallback" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AsyncReadyCallback</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – called when the operation completes</li>
+<li><strong>user_data</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">object</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – data to pass to the callback</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Create a new collection in the secret service.</p>
+<p>This method returns immediately and completes asynchronously. The secret
+service may prompt the user. <a class="reference internal" href="Service.html#Secret.Service.prompt" title="Secret.Service.prompt"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Secret.Service.prompt</span></code></a>() will be used to handle
+any prompts that are required.</p>
+<p>An <cite>alias</cite> is a well-known tag for a collection, such as ‘default’ (ie: the
+default collection to store items in). This allows other applications to
+easily identify and share a collection. If you specify an <cite>alias</cite>, and a
+collection with that alias already exists, then a new collection will not
+be created. The previous one will be returned instead.</p>
+<p>If <cite>service</cite> is <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>, then <a class="reference internal" href="Service.html#Secret.Service.get" title="Secret.Service.get"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Secret.Service.get</span></code></a>() will be called to get
+the default <a class="reference internal" href="Service.html#Secret.Service" title="Secret.Service"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Secret.Service</span></code></a> proxy.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="Secret.Collection.create_finish">
+<em class="property">classmethod </em><code class="descname">create_finish</code><span class="sig-paren">(</span><em>result</em><span class="sig-paren">)</span><a class="headerlink" href="#Secret.Collection.create_finish" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>result</strong> (<a class="reference external" href="../../Gio-2.0/classes/AsyncResult.html#Gio.AsyncResult" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AsyncResult</span></code></a>) – the asynchronous result passed to the callback</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference external" href="../../GLib-2.0/classes/Error.html#GLib.Error" title="(in GLib 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLib.Error</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the new collection, which should be unreferenced
+with <a class="reference external" href="../../GObject-2.0/classes/Object.html#GObject.Object.unref" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GObject.Object.unref</span></code></a>()</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#Secret.Collection" title="Secret.Collection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Secret.Collection</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Finish operation to create a new collection in the secret service.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="Secret.Collection.create_sync">
+<em class="property">classmethod </em><code class="descname">create_sync</code><span class="sig-paren">(</span><em>service</em>, <em>label</em>, <em>alias</em>, <em>flags</em>, <em>cancellable</em><span class="sig-paren">)</span><a class="headerlink" href="#Secret.Collection.create_sync" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>service</strong> (<a class="reference internal" href="Service.html#Secret.Service" title="Secret.Service"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Secret.Service</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – a secret service object</li>
+<li><strong>label</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – label for the new collection</li>
+<li><strong>alias</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – alias to assign to the collection</li>
+<li><strong>flags</strong> (<a class="reference internal" href="../flags.html#Secret.CollectionCreateFlags" title="Secret.CollectionCreateFlags"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Secret.CollectionCreateFlags</span></code></a>) – currently unused</li>
+<li><strong>cancellable</strong> (<a class="reference external" href="../../Gio-2.0/classes/Cancellable.html#Gio.Cancellable" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Cancellable</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – optional cancellation object</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first"><a class="reference external" href="../../GLib-2.0/classes/Error.html#GLib.Error" title="(in GLib 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLib.Error</span></code></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">the new collection, which should be unreferenced
+with <a class="reference external" href="../../GObject-2.0/classes/Object.html#GObject.Object.unref" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GObject.Object.unref</span></code></a>()</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="#Secret.Collection" title="Secret.Collection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Secret.Collection</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Create a new collection in the secret service.</p>
+<p>This method may block indefinitely and should not be used in user interface
+threads. The secret service may prompt the user. <a class="reference internal" href="Service.html#Secret.Service.prompt" title="Secret.Service.prompt"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Secret.Service.prompt</span></code></a>()
+will be used to handle any prompts that are required.</p>
+<p>An <cite>alias</cite> is a well-known tag for a collection, such as ‘default’ (ie: the
+default collection to store items in). This allows other applications to
+easily identify and share a collection. If you specify an <cite>alias</cite>, and a
+collection with that alias already exists, then a new collection will not
+be created. The previous one will be returned instead.</p>
+<p>If <cite>service</cite> is <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>, then <a class="reference internal" href="Service.html#Secret.Service.get_sync" title="Secret.Service.get_sync"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Secret.Service.get_sync</span></code></a>() will be called to get
+the default <a class="reference internal" href="Service.html#Secret.Service" title="Secret.Service"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Secret.Service</span></code></a> proxy.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="Secret.Collection.for_alias">
+<em class="property">classmethod </em><code class="descname">for_alias</code><span class="sig-paren">(</span><em>service</em>, <em>alias</em>, <em>flags</em>, <em>cancellable</em>, <em>callback</em>, <em>*user_data</em><span class="sig-paren">)</span><a class="headerlink" href="#Secret.Collection.for_alias" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>service</strong> (<a class="reference internal" href="Service.html#Secret.Service" title="Secret.Service"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Secret.Service</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – a secret service object</li>
+<li><strong>alias</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – the alias to lookup</li>
+<li><strong>flags</strong> (<a class="reference internal" href="../flags.html#Secret.CollectionFlags" title="Secret.CollectionFlags"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Secret.CollectionFlags</span></code></a>) – options for the collection initialization</li>
+<li><strong>cancellable</strong> (<a class="reference external" href="../../Gio-2.0/classes/Cancellable.html#Gio.Cancellable" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Cancellable</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – optional cancellation object</li>
+<li><strong>callback</strong> (<a class="reference external" href="../../Gio-2.0/callbacks.html#Gio.AsyncReadyCallback" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AsyncReadyCallback</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – called when the operation completes</li>
+<li><strong>user_data</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">object</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – data to pass to the callback</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Lookup which collection is assigned to this alias. Aliases help determine
+well known collections, such as ‘default’.</p>
+<p>If <cite>service</cite> is <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>, then <a class="reference internal" href="Service.html#Secret.Service.get" title="Secret.Service.get"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Secret.Service.get</span></code></a>() will be called to get
+the default <a class="reference internal" href="Service.html#Secret.Service" title="Secret.Service"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Secret.Service</span></code></a> proxy.</p>
+<p>This method will return immediately and complete asynchronously.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="Secret.Collection.for_alias_finish">
+<em class="property">classmethod </em><code class="descname">for_alias_finish</code><span class="sig-paren">(</span><em>result</em><span class="sig-paren">)</span><a class="headerlink" href="#Secret.Collection.for_alias_finish" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>result</strong> (<a class="reference external" href="../../Gio-2.0/classes/AsyncResult.html#Gio.AsyncResult" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AsyncResult</span></code></a>) – asynchronous result passed to callback</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference external" href="../../GLib-2.0/classes/Error.html#GLib.Error" title="(in GLib 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLib.Error</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the collection, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> if none assigned to the alias</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#Secret.Collection" title="Secret.Collection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Secret.Collection</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Finish an asynchronous operation to lookup which collection is assigned
+to an alias.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="Secret.Collection.for_alias_sync">
+<em class="property">classmethod </em><code class="descname">for_alias_sync</code><span class="sig-paren">(</span><em>service</em>, <em>alias</em>, <em>flags</em>, <em>cancellable</em><span class="sig-paren">)</span><a class="headerlink" href="#Secret.Collection.for_alias_sync" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>service</strong> (<a class="reference internal" href="Service.html#Secret.Service" title="Secret.Service"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Secret.Service</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – a secret service object</li>
+<li><strong>alias</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – the alias to lookup</li>
+<li><strong>flags</strong> (<a class="reference internal" href="../flags.html#Secret.CollectionFlags" title="Secret.CollectionFlags"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Secret.CollectionFlags</span></code></a>) – options for the collection initialization</li>
+<li><strong>cancellable</strong> (<a class="reference external" href="../../Gio-2.0/classes/Cancellable.html#Gio.Cancellable" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Cancellable</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – optional cancellation object</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first"><a class="reference external" href="../../GLib-2.0/classes/Error.html#GLib.Error" title="(in GLib 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLib.Error</span></code></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">the collection, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> if none assigned to the alias</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="#Secret.Collection" title="Secret.Collection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Secret.Collection</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Lookup which collection is assigned to this alias. Aliases help determine
+well known collections, such as ‘default’.</p>
+<p>If <cite>service</cite> is <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>, then <a class="reference internal" href="Service.html#Secret.Service.get_sync" title="Secret.Service.get_sync"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Secret.Service.get_sync</span></code></a>() will be called to get
+the default <a class="reference internal" href="Service.html#Secret.Service" title="Secret.Service"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Secret.Service</span></code></a> proxy.</p>
+<p>This method may block and should not be used in user interface threads.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Secret.Collection.delete">
+<code class="descname">delete</code><span class="sig-paren">(</span><em>cancellable</em>, <em>callback</em>, <em>*user_data</em><span class="sig-paren">)</span><a class="headerlink" href="#Secret.Collection.delete" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>cancellable</strong> (<a class="reference external" href="../../Gio-2.0/classes/Cancellable.html#Gio.Cancellable" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Cancellable</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – optional cancellation object</li>
+<li><strong>callback</strong> (<a class="reference external" href="../../Gio-2.0/callbacks.html#Gio.AsyncReadyCallback" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AsyncReadyCallback</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – called when the operation completes</li>
+<li><strong>user_data</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">object</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – data to pass to the callback</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Delete this collection.</p>
+<p>This method returns immediately and completes asynchronously. The secret
+service may prompt the user. <a class="reference internal" href="Service.html#Secret.Service.prompt" title="Secret.Service.prompt"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Secret.Service.prompt</span></code></a>() will be used to handle
+any prompts that show up.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Secret.Collection.delete_finish">
+<code class="descname">delete_finish</code><span class="sig-paren">(</span><em>result</em><span class="sig-paren">)</span><a class="headerlink" href="#Secret.Collection.delete_finish" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>result</strong> (<a class="reference external" href="../../Gio-2.0/classes/AsyncResult.html#Gio.AsyncResult" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AsyncResult</span></code></a>) – asynchronous result passed to the callback</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference external" href="../../GLib-2.0/classes/Error.html#GLib.Error" title="(in GLib 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLib.Error</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">whether the collection was successfully deleted or not</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Complete operation to delete this collection.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Secret.Collection.delete_sync">
+<code class="descname">delete_sync</code><span class="sig-paren">(</span><em>cancellable</em><span class="sig-paren">)</span><a class="headerlink" href="#Secret.Collection.delete_sync" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>cancellable</strong> (<a class="reference external" href="../../Gio-2.0/classes/Cancellable.html#Gio.Cancellable" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Cancellable</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – optional cancellation object</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference external" href="../../GLib-2.0/classes/Error.html#GLib.Error" title="(in GLib 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLib.Error</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">whether the collection was successfully deleted or not</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Delete this collection.</p>
+<p>This method may block indefinitely and should not be used in user
+interface threads. The secret service may prompt the user.
+<a class="reference internal" href="Service.html#Secret.Service.prompt" title="Secret.Service.prompt"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Secret.Service.prompt</span></code></a>() will be used to handle any prompts that show up.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Secret.Collection.get_created">
+<code class="descname">get_created</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Secret.Collection.get_created" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the created date and time</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get the created date and time of the collection. The return value is
+the number of seconds since the unix epoch, January 1st 1970.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Secret.Collection.get_flags">
+<code class="descname">get_flags</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Secret.Collection.get_flags" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the flags for features initialized</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../flags.html#Secret.CollectionFlags" title="Secret.CollectionFlags"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Secret.CollectionFlags</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get the flags representing what features of the <a class="reference internal" href="#Secret.Collection" title="Secret.Collection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Secret.Collection</span></code></a> proxy
+have been initialized.</p>
+<p>Use <a class="reference internal" href="#Secret.Collection.load_items" title="Secret.Collection.load_items"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Secret.Collection.load_items</span></code></a>()  to initialize further features
+and change the flags.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Secret.Collection.get_items">
+<code class="descname">get_items</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Secret.Collection.get_items" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a list of items,
+when done, the list should be freed with g_list_free, and each item should
+be released with <a class="reference external" href="../../GObject-2.0/classes/Object.html#GObject.Object.unref" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GObject.Object.unref</span></code></a>()</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">[<a class="reference internal" href="Item.html#Secret.Item" title="Secret.Item"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Secret.Item</span></code></a>]</td>
+</tr>
+</tbody>
+</table>
+<p>Get the list of items in this collection.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Secret.Collection.get_label">
+<code class="descname">get_label</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Secret.Collection.get_label" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the label, which should be freed with <a class="reference external" href="../../GLib-2.0/functions.html#GLib.free" title="(in GLib 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GLib.free</span></code></a>()</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get the label of this collection.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Secret.Collection.get_locked">
+<code class="descname">get_locked</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Secret.Collection.get_locked" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">whether the collection is locked or not</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get whether the collection is locked or not.</p>
+<p>Use <a class="reference internal" href="Service.html#Secret.Service.lock" title="Secret.Service.lock"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Secret.Service.lock</span></code></a>() or <a class="reference internal" href="Service.html#Secret.Service.unlock" title="Secret.Service.unlock"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Secret.Service.unlock</span></code></a>() to lock or unlock the
+collection.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Secret.Collection.get_modified">
+<code class="descname">get_modified</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Secret.Collection.get_modified" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the modified date and time</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get the modified date and time of the collection. The return value is
+the number of seconds since the unix epoch, January 1st 1970.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Secret.Collection.get_service">
+<code class="descname">get_service</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Secret.Collection.get_service" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the Secret Service object</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="Service.html#Secret.Service" title="Secret.Service"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Secret.Service</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get the Secret Service object that this collection was created with.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Secret.Collection.load_items">
+<code class="descname">load_items</code><span class="sig-paren">(</span><em>cancellable</em>, <em>callback</em>, <em>*user_data</em><span class="sig-paren">)</span><a class="headerlink" href="#Secret.Collection.load_items" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>cancellable</strong> (<a class="reference external" href="../../Gio-2.0/classes/Cancellable.html#Gio.Cancellable" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Cancellable</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – optional cancellation object</li>
+<li><strong>callback</strong> (<a class="reference external" href="../../Gio-2.0/callbacks.html#Gio.AsyncReadyCallback" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AsyncReadyCallback</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – called when the operation completes</li>
+<li><strong>user_data</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">object</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – data to be passed to the callback</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Ensure that the <a class="reference internal" href="#Secret.Collection" title="Secret.Collection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Secret.Collection</span></code></a> proxy has loaded all the items present
+in the Secret Service. This affects the result of
+<a class="reference internal" href="#Secret.Collection.get_items" title="Secret.Collection.get_items"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Secret.Collection.get_items</span></code></a>().</p>
+<p>For collections returned from <a class="reference internal" href="Service.html#Secret.Service.get_collections" title="Secret.Service.get_collections"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Secret.Service.get_collections</span></code></a>() the items
+will have already been loaded.</p>
+<p>This method will return immediately and complete asynchronously.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Secret.Collection.load_items_finish">
+<code class="descname">load_items_finish</code><span class="sig-paren">(</span><em>result</em><span class="sig-paren">)</span><a class="headerlink" href="#Secret.Collection.load_items_finish" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>result</strong> (<a class="reference external" href="../../Gio-2.0/classes/AsyncResult.html#Gio.AsyncResult" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AsyncResult</span></code></a>) – the asynchronous result passed to the callback</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference external" href="../../GLib-2.0/classes/Error.html#GLib.Error" title="(in GLib 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLib.Error</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">whether the load was successful or not</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Complete an asynchronous operation to ensure that the <a class="reference internal" href="#Secret.Collection" title="Secret.Collection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Secret.Collection</span></code></a> proxy
+has loaded all the items present in the Secret Service.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Secret.Collection.load_items_sync">
+<code class="descname">load_items_sync</code><span class="sig-paren">(</span><em>cancellable</em><span class="sig-paren">)</span><a class="headerlink" href="#Secret.Collection.load_items_sync" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>cancellable</strong> (<a class="reference external" href="../../Gio-2.0/classes/Cancellable.html#Gio.Cancellable" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Cancellable</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – optional cancellation object</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference external" href="../../GLib-2.0/classes/Error.html#GLib.Error" title="(in GLib 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLib.Error</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">whether the load was successful or not</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Ensure that the <a class="reference internal" href="#Secret.Collection" title="Secret.Collection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Secret.Collection</span></code></a> proxy has loaded all the items present
+in the Secret Service. This affects the result of
+<a class="reference internal" href="#Secret.Collection.get_items" title="Secret.Collection.get_items"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Secret.Collection.get_items</span></code></a>().</p>
+<p>For collections returned from <a class="reference internal" href="Service.html#Secret.Service.get_collections" title="Secret.Service.get_collections"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Secret.Service.get_collections</span></code></a>() the items
+will have already been loaded.</p>
+<p>This method may block indefinitely and should not be used in user interface
+threads.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Secret.Collection.refresh">
+<code class="descname">refresh</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Secret.Collection.refresh" title="Permalink to this definition">¶</a></dt>
+<dd><p>Refresh the properties on this collection. This fires off a request to
+refresh, and the properties will be updated later.</p>
+<p>Calling this method is not normally necessary, as the secret service
+will notify the client when properties change.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Secret.Collection.search">
+<code class="descname">search</code><span class="sig-paren">(</span><em>schema</em>, <em>attributes</em>, <em>flags</em>, <em>cancellable</em>, <em>callback</em>, <em>*user_data</em><span class="sig-paren">)</span><a class="headerlink" href="#Secret.Collection.search" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>schema</strong> (<a class="reference internal" href="Schema.html#Secret.Schema" title="Secret.Schema"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Secret.Schema</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – the schema for the attributes</li>
+<li><strong>attributes</strong> ({<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>: <a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>}) – search for items matching these attributes</li>
+<li><strong>flags</strong> (<a class="reference internal" href="../flags.html#Secret.SearchFlags" title="Secret.SearchFlags"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Secret.SearchFlags</span></code></a>) – search option flags</li>
+<li><strong>cancellable</strong> (<a class="reference external" href="../../Gio-2.0/classes/Cancellable.html#Gio.Cancellable" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Cancellable</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – optional cancellation object</li>
+<li><strong>callback</strong> (<a class="reference external" href="../../Gio-2.0/callbacks.html#Gio.AsyncReadyCallback" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AsyncReadyCallback</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – called when the operation completes</li>
+<li><strong>user_data</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">object</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – data to pass to the callback</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Search for items matching the <cite>attributes</cite> in the <cite>collection</cite>.
+The <cite>attributes</cite> should be a table of string keys and string values.</p>
+<p>If <a class="reference internal" href="../flags.html#Secret.SearchFlags.ALL" title="Secret.SearchFlags.ALL"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Secret.SearchFlags.ALL</span></code></a> is set in <cite>flags</cite>, then all the items matching the
+search will be returned. Otherwise only the first item will be returned.
+This is almost always the unlocked item that was most recently stored.</p>
+<p>If <a class="reference internal" href="../flags.html#Secret.SearchFlags.UNLOCK" title="Secret.SearchFlags.UNLOCK"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Secret.SearchFlags.UNLOCK</span></code></a> is set in <cite>flags</cite>, then items will be unlocked
+if necessary. In either case, locked and unlocked items will match the
+search and be returned. If the unlock fails, the search does not fail.</p>
+<p>If <a class="reference internal" href="../flags.html#Secret.SearchFlags.LOAD_SECRETS" title="Secret.SearchFlags.LOAD_SECRETS"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Secret.SearchFlags.LOAD_SECRETS</span></code></a> is set in <cite>flags</cite>, then the items will have
+their secret values loaded and available via <a class="reference internal" href="Item.html#Secret.Item.get_secret" title="Secret.Item.get_secret"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Secret.Item.get_secret</span></code></a>().</p>
+<p>This function returns immediately and completes asynchronously.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Secret.Collection.search_finish">
+<code class="descname">search_finish</code><span class="sig-paren">(</span><em>result</em><span class="sig-paren">)</span><a class="headerlink" href="#Secret.Collection.search_finish" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>result</strong> (<a class="reference external" href="../../Gio-2.0/classes/AsyncResult.html#Gio.AsyncResult" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AsyncResult</span></code></a>) – asynchronous result passed to callback</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference external" href="../../GLib-2.0/classes/Error.html#GLib.Error" title="(in GLib 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLib.Error</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a list of items that matched the search</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">[<a class="reference internal" href="Item.html#Secret.Item" title="Secret.Item"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Secret.Item</span></code></a>]</td>
+</tr>
+</tbody>
+</table>
+<p>Complete asynchronous operation to search for items in a collection.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Secret.Collection.search_sync">
+<code class="descname">search_sync</code><span class="sig-paren">(</span><em>schema</em>, <em>attributes</em>, <em>flags</em>, <em>cancellable</em><span class="sig-paren">)</span><a class="headerlink" href="#Secret.Collection.search_sync" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>schema</strong> (<a class="reference internal" href="Schema.html#Secret.Schema" title="Secret.Schema"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Secret.Schema</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – the schema for the attributes</li>
+<li><strong>attributes</strong> ({<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>: <a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>}) – search for items matching these attributes</li>
+<li><strong>flags</strong> (<a class="reference internal" href="../flags.html#Secret.SearchFlags" title="Secret.SearchFlags"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Secret.SearchFlags</span></code></a>) – search option flags</li>
+<li><strong>cancellable</strong> (<a class="reference external" href="../../Gio-2.0/classes/Cancellable.html#Gio.Cancellable" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Cancellable</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – optional cancellation object</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first"><a class="reference external" href="../../GLib-2.0/classes/Error.html#GLib.Error" title="(in GLib 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLib.Error</span></code></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">a list of items that matched the search</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">[<a class="reference internal" href="Item.html#Secret.Item" title="Secret.Item"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Secret.Item</span></code></a>]</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Search for items matching the <cite>attributes</cite> in the <cite>collection</cite>.
+The <cite>attributes</cite> should be a table of string keys and string values.</p>
+<p>If <a class="reference internal" href="../flags.html#Secret.SearchFlags.ALL" title="Secret.SearchFlags.ALL"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Secret.SearchFlags.ALL</span></code></a> is set in <cite>flags</cite>, then all the items matching the
+search will be returned. Otherwise only the first item will be returned.
+This is almost always the unlocked item that was most recently stored.</p>
+<p>If <a class="reference internal" href="../flags.html#Secret.SearchFlags.UNLOCK" title="Secret.SearchFlags.UNLOCK"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Secret.SearchFlags.UNLOCK</span></code></a> is set in <cite>flags</cite>, then items will be unlocked
+if necessary. In either case, locked and unlocked items will match the
+search and be returned. If the unlock fails, the search does not fail.</p>
+<p>If <a class="reference internal" href="../flags.html#Secret.SearchFlags.LOAD_SECRETS" title="Secret.SearchFlags.LOAD_SECRETS"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Secret.SearchFlags.LOAD_SECRETS</span></code></a> is set in <cite>flags</cite>, then the items will have
+their secret values loaded and available via <a class="reference internal" href="Item.html#Secret.Item.get_secret" title="Secret.Item.get_secret"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Secret.Item.get_secret</span></code></a>().</p>
+<p>This function may block indefinitely. Use the asynchronous version
+in user interface threads.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Secret.Collection.set_label">
+<code class="descname">set_label</code><span class="sig-paren">(</span><em>label</em>, <em>cancellable</em>, <em>callback</em>, <em>*user_data</em><span class="sig-paren">)</span><a class="headerlink" href="#Secret.Collection.set_label" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>label</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – a new label</li>
+<li><strong>cancellable</strong> (<a class="reference external" href="../../Gio-2.0/classes/Cancellable.html#Gio.Cancellable" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Cancellable</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – optional cancellation object</li>
+<li><strong>callback</strong> (<a class="reference external" href="../../Gio-2.0/callbacks.html#Gio.AsyncReadyCallback" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AsyncReadyCallback</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – called when the operation completes</li>
+<li><strong>user_data</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">object</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – data to pass to the callback</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Set the label of this collection.</p>
+<p>This function returns immediately and completes asynchronously.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Secret.Collection.set_label_finish">
+<code class="descname">set_label_finish</code><span class="sig-paren">(</span><em>result</em><span class="sig-paren">)</span><a class="headerlink" href="#Secret.Collection.set_label_finish" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>result</strong> (<a class="reference external" href="../../Gio-2.0/classes/AsyncResult.html#Gio.AsyncResult" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AsyncResult</span></code></a>) – asynchronous result passed to callback</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference external" href="../../GLib-2.0/classes/Error.html#GLib.Error" title="(in GLib 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLib.Error</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">whether the change was successful or not</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Complete asynchronous operation to set the label of this collection.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Secret.Collection.set_label_sync">
+<code class="descname">set_label_sync</code><span class="sig-paren">(</span><em>label</em>, <em>cancellable</em><span class="sig-paren">)</span><a class="headerlink" href="#Secret.Collection.set_label_sync" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>label</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – a new label</li>
+<li><strong>cancellable</strong> (<a class="reference external" href="../../Gio-2.0/classes/Cancellable.html#Gio.Cancellable" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Cancellable</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – optional cancellation object</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first"><a class="reference external" href="../../GLib-2.0/classes/Error.html#GLib.Error" title="(in GLib 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLib.Error</span></code></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">whether the change was successful or not</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Set the label of this collection.</p>
+<p>This function may block indefinitely. Use the asynchronous version
+in user interface threads.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="property-details">
+<h2>Property Details<a class="headerlink" href="#property-details" title="Permalink to this headline">¶</a></h2>
+<dl class="data">
+<dt id="Secret.Collection.props.created">
+<code class="descclassname">Secret.Collection.props.</code><code class="descname">created</code><a class="headerlink" href="#Secret.Collection.props.created" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">created</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">0</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The date and time (in seconds since the UNIX epoch) that this
+collection was created.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="Secret.Collection.props.flags">
+<code class="descclassname">Secret.Collection.props.</code><code class="descname">flags</code><a class="headerlink" href="#Secret.Collection.props.flags" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">flags</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../flags.html#Secret.CollectionFlags" title="Secret.CollectionFlags"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Secret.CollectionFlags</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference internal" href="../flags.html#Secret.CollectionFlags.NONE" title="Secret.CollectionFlags.NONE"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Secret.CollectionFlags.NONE</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.CONSTRUCT_ONLY" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CONSTRUCT_ONLY</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>A set of flags describing which parts of the secret collection have
+been initialized.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="Secret.Collection.props.label">
+<code class="descclassname">Secret.Collection.props.</code><code class="descname">label</code><a class="headerlink" href="#Secret.Collection.props.label" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">label</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The human readable label for the collection.</p>
+<p>Setting this property will result in the label of the collection being
+set asynchronously. To properly track the changing of the label use the
+<a class="reference internal" href="#Secret.Collection.set_label" title="Secret.Collection.set_label"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Secret.Collection.set_label</span></code></a>() function.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="Secret.Collection.props.locked">
+<code class="descclassname">Secret.Collection.props.</code><code class="descname">locked</code><a class="headerlink" href="#Secret.Collection.props.locked" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">locked</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Whether the collection is locked or not.</p>
+<p>To lock or unlock a collection use the <a class="reference internal" href="Service.html#Secret.Service.lock" title="Secret.Service.lock"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Secret.Service.lock</span></code></a>() or
+<a class="reference internal" href="Service.html#Secret.Service.unlock" title="Secret.Service.unlock"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Secret.Service.unlock</span></code></a>() functions.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="Secret.Collection.props.modified">
+<code class="descclassname">Secret.Collection.props.</code><code class="descname">modified</code><a class="headerlink" href="#Secret.Collection.props.modified" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">modified</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">0</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The date and time (in seconds since the UNIX epoch) that this
+collection was last modified.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="Secret.Collection.props.service">
+<code class="descclassname">Secret.Collection.props.</code><code class="descname">service</code><a class="headerlink" href="#Secret.Collection.props.service" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">service</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="Service.html#Secret.Service" title="Secret.Service"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Secret.Service</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.CONSTRUCT_ONLY" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CONSTRUCT_ONLY</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The <a class="reference internal" href="Service.html#Secret.Service" title="Secret.Service"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Secret.Service</span></code></a> object that this collection is associated with and
+uses to interact with the actual D-Bus Secret Service.</p>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div> 
+
+</body>
+</html>

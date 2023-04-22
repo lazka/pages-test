@@ -1,0 +1,560 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    GES.MultiFileSource -
+    
+      Classes -
+    
+    GES 1.0
+  </title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/css/pgi.css" type="text/css" />
+  
+
+  
+  <script type="text/javascript">
+
+    function openSidebar(element) {
+        window.location.href = element.href + location.hash;
+        return false;
+    }
+
+    function inIframe() {
+        try {
+            return window.self !== window.top;
+        } catch (e) {
+            return true;
+        }
+    }
+
+    function onLoaded() {
+        if(!inIframe()) {
+            var icons = document.getElementsByClassName('open-sidebar');
+
+            for (var i = 0; i < icons.length; i ++) {
+                icons[i].style.display = 'table-cell';
+            }
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', onLoaded, false);
+
+  </script>
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="GES 1.0 Python API Docs" href="../index.html"/>
+        <link rel="up" title="Classes" href="../classes.html"/>
+        <link rel="next" title="GES.Operation" href="Operation.html"/>
+        <link rel="prev" title="GES.MarkerList" href="MarkerList.html"/> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+<div class="non-fixed-bar">
+<table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#GES-1.0/classes/MultiFileSource.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">GES 1.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>GES.MultiFileSource</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="MarkerList.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="Operation.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">GES.MultiFileSource</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#property-details">Property Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+<div class="fixed-bar">
+  <table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#GES-1.0/classes/MultiFileSource.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">GES 1.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>GES.MultiFileSource</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="MarkerList.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="Operation.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">GES.MultiFileSource</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#property-details">Property Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+  <div class="wy-grid-for-nav">
+
+    
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="main">
+            
+  <div class="section" id="ges-multifilesource">
+<h1>GES.MultiFileSource<a class="headerlink" href="#ges-multifilesource" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<svg width="351pt" height="350pt"
+ viewBox="0.00 0.00 350.50 350.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 346)">
+<title>g</title>
+<!-- GES.Extractable -->
+<g id="node1" class="node">
+<title>GES.Extractable</title>
+<g id="a_node1"><a xlink:href="Extractable.html#GES.Extractable" xlink:title="GES.Extractable">
+<path fill="none" stroke="#3091d1" d="M79,-288C79,-288 6,-288 6,-288 3,-288 0,-285 0,-282 0,-282 0,-276 0,-276 0,-273 3,-270 6,-270 6,-270 79,-270 79,-270 82,-270 85,-273 85,-276 85,-276 85,-282 85,-282 85,-285 82,-288 79,-288"/>
+<text text-anchor="middle" x="42.5" y="-276.7" font-family="inherit" font-size="8.50">GES.Extractable</text>
+</a>
+</g>
+</g>
+<!-- GES.TimelineElement -->
+<g id="node5" class="node">
+<title>GES.TimelineElement</title>
+<g id="a_node5"><a xlink:href="TimelineElement.html#GES.TimelineElement" xlink:title="GES.TimelineElement">
+<path fill="none" stroke="#aaaaaa" d="M200,-234C200,-234 105,-234 105,-234 102,-234 99,-231 99,-228 99,-228 99,-222 99,-222 99,-219 102,-216 105,-216 105,-216 200,-216 200,-216 203,-216 206,-219 206,-222 206,-222 206,-228 206,-228 206,-231 203,-234 200,-234"/>
+<text text-anchor="middle" x="152.5" y="-222.7" font-family="inherit" font-size="8.50">GES.TimelineElement</text>
+</a>
+</g>
+</g>
+<!-- GES.Extractable&#45;&gt;GES.TimelineElement -->
+<g id="edge1" class="edge">
+<title>GES.Extractable&#45;&gt;GES.TimelineElement</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M59.69,-269.88C78.9,-260.79 110.04,-246.07 130.89,-236.22"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="131.66,-237.79 135.43,-234.07 130.16,-234.62 131.66,-237.79"/>
+</g>
+<!-- GES.MetaContainer -->
+<g id="node2" class="node">
+<title>GES.MetaContainer</title>
+<g id="a_node2"><a xlink:href="MetaContainer.html#GES.MetaContainer" xlink:title="GES.MetaContainer">
+<path fill="none" stroke="#3091d1" d="M196,-288C196,-288 109,-288 109,-288 106,-288 103,-285 103,-282 103,-282 103,-276 103,-276 103,-273 106,-270 109,-270 109,-270 196,-270 196,-270 199,-270 202,-273 202,-276 202,-276 202,-282 202,-282 202,-285 199,-288 196,-288"/>
+<text text-anchor="middle" x="152.5" y="-276.7" font-family="inherit" font-size="8.50">GES.MetaContainer</text>
+</a>
+</g>
+</g>
+<!-- GES.MetaContainer&#45;&gt;GES.TimelineElement -->
+<g id="edge2" class="edge">
+<title>GES.MetaContainer&#45;&gt;GES.TimelineElement</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M152.5,-269.88C152.5,-261.76 152.5,-249.13 152.5,-239.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="154.25,-239.24 152.5,-234.24 150.75,-239.24 154.25,-239.24"/>
+</g>
+<!-- GES.MultiFileSource -->
+<g id="node3" class="node">
+<title>GES.MultiFileSource</title>
+<g id="a_node3"><a xlink:href="#GES.MultiFileSource" xlink:title="GES.MultiFileSource">
+<path fill="none" stroke="#75507b" d="M196.5,-18C196.5,-18 108.5,-18 108.5,-18 105.5,-18 102.5,-15 102.5,-12 102.5,-12 102.5,-6 102.5,-6 102.5,-3 105.5,0 108.5,0 108.5,0 196.5,0 196.5,0 199.5,0 202.5,-3 202.5,-6 202.5,-6 202.5,-12 202.5,-12 202.5,-15 199.5,-18 196.5,-18"/>
+<text text-anchor="middle" x="152.5" y="-6.7" font-family="inherit" font-size="8.50">GES.MultiFileSource</text>
+</a>
+</g>
+</g>
+<!-- GES.Source -->
+<g id="node4" class="node">
+<title>GES.Source</title>
+<g id="a_node4"><a xlink:href="Source.html#GES.Source" xlink:title="GES.Source">
+<path fill="none" stroke="#75507b" d="M179,-126C179,-126 126,-126 126,-126 123,-126 120,-123 120,-120 120,-120 120,-114 120,-114 120,-111 123,-108 126,-108 126,-108 179,-108 179,-108 182,-108 185,-111 185,-114 185,-114 185,-120 185,-120 185,-123 182,-126 179,-126"/>
+<text text-anchor="middle" x="152.5" y="-114.7" font-family="inherit" font-size="8.50">GES.Source</text>
+</a>
+</g>
+</g>
+<!-- GES.VideoSource -->
+<g id="node7" class="node">
+<title>GES.VideoSource</title>
+<g id="a_node7"><a xlink:href="VideoSource.html#GES.VideoSource" xlink:title="GES.VideoSource">
+<path fill="none" stroke="#aaaaaa" d="M191,-72C191,-72 114,-72 114,-72 111,-72 108,-69 108,-66 108,-66 108,-60 108,-60 108,-57 111,-54 114,-54 114,-54 191,-54 191,-54 194,-54 197,-57 197,-60 197,-60 197,-66 197,-66 197,-69 194,-72 191,-72"/>
+<text text-anchor="middle" x="152.5" y="-60.7" font-family="inherit" font-size="8.50">GES.VideoSource</text>
+</a>
+</g>
+</g>
+<!-- GES.Source&#45;&gt;GES.VideoSource -->
+<g id="edge3" class="edge">
+<title>GES.Source&#45;&gt;GES.VideoSource</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M152.5,-107.88C152.5,-99.76 152.5,-87.13 152.5,-77.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="154.25,-77.24 152.5,-72.24 150.75,-77.24 154.25,-77.24"/>
+</g>
+<!-- GES.TrackElement -->
+<g id="node6" class="node">
+<title>GES.TrackElement</title>
+<g id="a_node6"><a xlink:href="TrackElement.html#GES.TrackElement" xlink:title="GES.TrackElement">
+<path fill="none" stroke="#aaaaaa" d="M193.5,-180C193.5,-180 111.5,-180 111.5,-180 108.5,-180 105.5,-177 105.5,-174 105.5,-174 105.5,-168 105.5,-168 105.5,-165 108.5,-162 111.5,-162 111.5,-162 193.5,-162 193.5,-162 196.5,-162 199.5,-165 199.5,-168 199.5,-168 199.5,-174 199.5,-174 199.5,-177 196.5,-180 193.5,-180"/>
+<text text-anchor="middle" x="152.5" y="-168.7" font-family="inherit" font-size="8.50">GES.TrackElement</text>
+</a>
+</g>
+</g>
+<!-- GES.TimelineElement&#45;&gt;GES.TrackElement -->
+<g id="edge4" class="edge">
+<title>GES.TimelineElement&#45;&gt;GES.TrackElement</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M152.5,-215.88C152.5,-207.76 152.5,-195.13 152.5,-185.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="154.25,-185.24 152.5,-180.24 150.75,-185.24 154.25,-185.24"/>
+</g>
+<!-- GES.TrackElement&#45;&gt;GES.Source -->
+<g id="edge5" class="edge">
+<title>GES.TrackElement&#45;&gt;GES.Source</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M152.5,-161.88C152.5,-153.76 152.5,-141.13 152.5,-131.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="154.25,-131.24 152.5,-126.24 150.75,-131.24 154.25,-131.24"/>
+</g>
+<!-- GES.VideoSource&#45;&gt;GES.MultiFileSource -->
+<g id="edge6" class="edge">
+<title>GES.VideoSource&#45;&gt;GES.MultiFileSource</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M152.5,-53.88C152.5,-45.76 152.5,-33.13 152.5,-23.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="154.25,-23.24 152.5,-18.24 150.75,-23.24 154.25,-23.24"/>
+</g>
+<!-- GObject.GInterface -->
+<g id="node8" class="node">
+<title>GObject.GInterface</title>
+<g id="a_node8"><a xlink:href="../../GObject-2.0/classes/GInterface.html#GObject.GInterface" xlink:title="GObject.GInterface">
+<path fill="none" stroke="#3091d1" d="M140.5,-342C140.5,-342 54.5,-342 54.5,-342 51.5,-342 48.5,-339 48.5,-336 48.5,-336 48.5,-330 48.5,-330 48.5,-327 51.5,-324 54.5,-324 54.5,-324 140.5,-324 140.5,-324 143.5,-324 146.5,-327 146.5,-330 146.5,-330 146.5,-336 146.5,-336 146.5,-339 143.5,-342 140.5,-342"/>
+<text text-anchor="middle" x="97.5" y="-330.7" font-family="inherit" font-size="8.50">GObject.GInterface</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;GES.Extractable -->
+<g id="edge7" class="edge">
+<title>GObject.GInterface&#45;&gt;GES.Extractable</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M88.91,-323.88C79.84,-315.3 65.45,-301.7 55.1,-291.91"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="56.05,-290.4 51.21,-288.24 53.65,-292.95 56.05,-290.4"/>
+</g>
+<!-- GObject.GInterface&#45;&gt;GES.MetaContainer -->
+<g id="edge8" class="edge">
+<title>GObject.GInterface&#45;&gt;GES.MetaContainer</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M106.09,-323.88C115.16,-315.3 129.55,-301.7 139.9,-291.91"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="141.35,-292.95 143.79,-288.24 138.95,-290.4 141.35,-292.95"/>
+</g>
+<!-- GObject.InitiallyUnowned -->
+<g id="node9" class="node">
+<title>GObject.InitiallyUnowned</title>
+<g id="a_node9"><a xlink:href="../../GObject-2.0/classes/InitiallyUnowned.html#GObject.InitiallyUnowned" xlink:title="GObject.InitiallyUnowned">
+<path fill="none" stroke="#75507b" d="M336.5,-288C336.5,-288 226.5,-288 226.5,-288 223.5,-288 220.5,-285 220.5,-282 220.5,-282 220.5,-276 220.5,-276 220.5,-273 223.5,-270 226.5,-270 226.5,-270 336.5,-270 336.5,-270 339.5,-270 342.5,-273 342.5,-276 342.5,-276 342.5,-282 342.5,-282 342.5,-285 339.5,-288 336.5,-288"/>
+<text text-anchor="middle" x="281.5" y="-276.7" font-family="inherit" font-size="8.50">GObject.InitiallyUnowned</text>
+</a>
+</g>
+</g>
+<!-- GObject.InitiallyUnowned&#45;&gt;GES.TimelineElement -->
+<g id="edge9" class="edge">
+<title>GObject.InitiallyUnowned&#45;&gt;GES.TimelineElement</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M261.63,-269.99C238.97,-260.85 201.89,-245.91 177.34,-236.01"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="177.9,-234.35 172.61,-234.11 176.59,-237.6 177.9,-234.35"/>
+</g>
+<!-- GObject.Object -->
+<g id="node10" class="node">
+<title>GObject.Object</title>
+<g id="a_node10"><a xlink:href="../../GObject-2.0/classes/Object.html#GObject.Object" xlink:title="GObject.Object">
+<path fill="none" stroke="#75507b" d="M315.5,-342C315.5,-342 247.5,-342 247.5,-342 244.5,-342 241.5,-339 241.5,-336 241.5,-336 241.5,-330 241.5,-330 241.5,-327 244.5,-324 247.5,-324 247.5,-324 315.5,-324 315.5,-324 318.5,-324 321.5,-327 321.5,-330 321.5,-330 321.5,-336 321.5,-336 321.5,-339 318.5,-342 315.5,-342"/>
+<text text-anchor="middle" x="281.5" y="-330.7" font-family="inherit" font-size="8.50">GObject.Object</text>
+</a>
+</g>
+</g>
+<!-- GObject.Object&#45;&gt;GObject.InitiallyUnowned -->
+<g id="edge10" class="edge">
+<title>GObject.Object&#45;&gt;GObject.InitiallyUnowned</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M281.5,-323.88C281.5,-315.76 281.5,-303.13 281.5,-293.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="283.25,-293.24 281.5,-288.24 279.75,-293.24 283.25,-293.24"/>
+</g>
+</g>
+</svg>
+</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Subclasses:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="methods">
+<span id="ges-multifilesource-methods"></span><h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="VideoSource.html#ges-videosource-methods"><span class="std std-ref">GES.VideoSource (1)</span></a>,     <a class="reference internal" href="TrackElement.html#ges-trackelement-methods"><span class="std std-ref">GES.TrackElement (22)</span></a>,     <a class="reference internal" href="TimelineElement.html#ges-timelineelement-methods"><span class="std std-ref">GES.TimelineElement (38)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (37)</span></a>,     <a class="reference internal" href="Extractable.html#ges-extractable-methods"><span class="std std-ref">GES.Extractable (3)</span></a>,     <a class="reference internal" href="MetaContainer.html#ges-metacontainer-methods"><span class="std std-ref">GES.MetaContainer (40)</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Structs:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/ObjectClass.html#gobject-objectclass-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.ObjectClass (5)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="99%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><em>class</em></td>
+<td><a class="reference internal" href="#GES.MultiFileSource.new" title="GES.MultiFileSource.new"><code class="xref py py-func docutils literal notranslate"><span class="pre">new</span></code></a> (uri)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="virtual-methods">
+<span id="ges-multifilesource-vfuncs"></span><h2>Virtual Methods<a class="headerlink" href="#virtual-methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="TrackElement.html#ges-trackelement-vfuncs"><span class="std std-ref">GES.TrackElement (3)</span></a>,     <a class="reference internal" href="TimelineElement.html#ges-timelineelement-vfuncs"><span class="std std-ref">GES.TimelineElement (18)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-vfuncs" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (7)</span></a>,     <a class="reference internal" href="Extractable.html#ges-extractable-vfuncs"><span class="std std-ref">GES.Extractable (3)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="ges-multifilesource-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="TrackElement.html#ges-trackelement-props"><span class="std std-ref">GES.TrackElement (5)</span></a>,     <a class="reference internal" href="TimelineElement.html#ges-timelineelement-props"><span class="std std-ref">GES.TimelineElement (9)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="1%" />
+<col width="1%" />
+<col width="97%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Flags</th>
+<th class="head">Short Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="#GES.MultiFileSource.props.uri" title="GES.MultiFileSource.props.uri"><code class="xref py py-data docutils literal notranslate"><span class="pre">uri</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+<td>r/w/co</td>
+<td>multifile uri</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="signals">
+<span id="ges-multifilesource-signals"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="TrackElement.html#ges-trackelement-signals"><span class="std std-ref">GES.TrackElement (2)</span></a>,     <a class="reference internal" href="TimelineElement.html#ges-timelineelement-signals"><span class="std std-ref">GES.TimelineElement (3)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-signals" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a>,     <a class="reference internal" href="MetaContainer.html#ges-metacontainer-signals"><span class="std std-ref">GES.MetaContainer (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fields">
+<span id="ges-multifilesource-fields"></span><h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="TrackElement.html#ges-trackelement-fields"><span class="std std-ref">GES.TrackElement (2)</span></a>,     <a class="reference internal" href="TimelineElement.html#ges-timelineelement-fields"><span class="std std-ref">GES.TimelineElement (3)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-fields" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a>,     <a class="reference internal" href="MetaContainer.html#ges-metacontainer-fields"><span class="std std-ref">GES.MetaContainer (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="16%" />
+<col width="1%" />
+<col width="1%" />
+<col width="82%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Access</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>parent</td>
+<td><a class="reference internal" href="VideoSource.html#GES.VideoSource" title="GES.VideoSource"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.VideoSource</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>uri</td>
+<td><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="class-details">
+<h2>Class Details<a class="headerlink" href="#class-details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="GES.MultiFileSource">
+<em class="property">class </em><code class="descclassname">GES.</code><code class="descname">MultiFileSource</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#GES.MultiFileSource" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Bases:</th><td class="field-body"><a class="reference internal" href="VideoSource.html#GES.VideoSource" title="GES.VideoSource"><code class="xref py py-class docutils literal notranslate"><span class="pre">GES.VideoSource</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Abstract:</th><td class="field-body">No</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Structure:</th><td class="field-body"><a class="reference internal" href="MultiFileSourceClass.html#GES.MultiFileSourceClass" title="GES.MultiFileSourceClass"><code class="xref py py-class docutils literal notranslate"><span class="pre">GES.MultiFileSourceClass</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Outputs the video stream from a given image sequence. The start frame chosen
+will be determined by the in-point property on the track element.</p>
+<p>This should not be used anymore, the <code class="docutils literal notranslate"><span class="pre">imagesequence://</span></code> protocol should be
+used instead. Check the #imagesequencesrc GStreamer element for more
+information.</p>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 1.18: </span>Use <a class="reference internal" href="UriSource.html#GES.UriSource" title="GES.UriSource"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.UriSource</span></code></a> instead</p>
+</div>
+<dl class="classmethod">
+<dt id="GES.MultiFileSource.new">
+<em class="property">classmethod </em><code class="descname">new</code><span class="sig-paren">(</span><em>uri</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.freedesktop.org/gstreamer/gst-editing-services/blob/1.18.4/ges/ges-multi-file-source.c#L273"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#GES.MultiFileSource.new" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>uri</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#GES.MultiFileSource" title="GES.MultiFileSource"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.MultiFileSource</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="property-details">
+<h2>Property Details<a class="headerlink" href="#property-details" title="Permalink to this headline">¶</a></h2>
+<dl class="data">
+<dt id="GES.MultiFileSource.props.uri">
+<code class="descclassname">GES.MultiFileSource.props.</code><code class="descname">uri</code><a class="headerlink" href="#GES.MultiFileSource.props.uri" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">uri</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.CONSTRUCT_ONLY" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CONSTRUCT_ONLY</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The uri of the file/resource to use. You can set a start index,
+a stop index and a sequence pattern.
+The format is &lt;multifile://start:stop`location`-pattern&gt;.
+The pattern uses printf string formating.</p>
+<p>Example uris:</p>
+<p>multifile:///home/you/image\%03d.jpg</p>
+<p>multifile://20:50&#64;/home/you/sequence/\%04d.png</p>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div> 
+
+</body>
+</html>

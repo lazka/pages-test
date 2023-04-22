@@ -1,0 +1,606 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    Gtk.Scrollbar -
+    
+      Classes -
+    
+    Gtk 3.0
+  </title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/css/pgi.css" type="text/css" />
+  
+
+  
+  <script type="text/javascript">
+
+    function openSidebar(element) {
+        window.location.href = element.href + location.hash;
+        return false;
+    }
+
+    function inIframe() {
+        try {
+            return window.self !== window.top;
+        } catch (e) {
+            return true;
+        }
+    }
+
+    function onLoaded() {
+        if(!inIframe()) {
+            var icons = document.getElementsByClassName('open-sidebar');
+
+            for (var i = 0; i < icons.length; i ++) {
+                icons[i].style.display = 'table-cell';
+            }
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', onLoaded, false);
+
+  </script>
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="Gtk 3.0 Python API Docs" href="../index.html"/>
+        <link rel="up" title="Classes" href="../classes.html"/>
+        <link rel="next" title="Gtk.ScrolledWindow" href="ScrolledWindow.html"/>
+        <link rel="prev" title="Gtk.ScaleButtonAccessible" href="ScaleButtonAccessible.html"/> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+<div class="non-fixed-bar">
+<table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#Gtk-3.0/classes/Scrollbar.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Gtk 3.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>Gtk.Scrollbar</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="ScaleButtonAccessible.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="ScrolledWindow.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">Gtk.Scrollbar</a><ul>
+<li><a class="reference internal" href="#example">Example</a></li>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#style-properties">Style Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+<div class="fixed-bar">
+  <table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#Gtk-3.0/classes/Scrollbar.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Gtk 3.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>Gtk.Scrollbar</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="ScaleButtonAccessible.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="ScrolledWindow.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">Gtk.Scrollbar</a><ul>
+<li><a class="reference internal" href="#example">Example</a></li>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#style-properties">Style Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+  <div class="wy-grid-for-nav">
+
+    
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="main">
+            
+  <div class="section" id="gtk-scrollbar">
+<h1>Gtk.Scrollbar<a class="headerlink" href="#gtk-scrollbar" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<svg width="374pt" height="242pt"
+ viewBox="0.00 0.00 373.50 242.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 238)">
+<title>g</title>
+<!-- Atk.ImplementorIface -->
+<g id="node1" class="node">
+<title>Atk.ImplementorIface</title>
+<g id="a_node1"><a xlink:href="../../Atk-1.0/classes/ImplementorIface.html#Atk.ImplementorIface" xlink:title="Atk.ImplementorIface">
+<path fill="none" stroke="#3091d1" d="M219.5,-180C219.5,-180 123.5,-180 123.5,-180 120.5,-180 117.5,-177 117.5,-174 117.5,-174 117.5,-168 117.5,-168 117.5,-165 120.5,-162 123.5,-162 123.5,-162 219.5,-162 219.5,-162 222.5,-162 225.5,-165 225.5,-168 225.5,-168 225.5,-174 225.5,-174 225.5,-177 222.5,-180 219.5,-180"/>
+<text text-anchor="middle" x="171.5" y="-168.7" font-family="inherit" font-size="8.50">Atk.ImplementorIface</text>
+</a>
+</g>
+</g>
+<!-- Gtk.Widget -->
+<g id="node9" class="node">
+<title>Gtk.Widget</title>
+<g id="a_node9"><a xlink:href="Widget.html#Gtk.Widget" xlink:title="Gtk.Widget">
+<path fill="none" stroke="#aaaaaa" d="M176.5,-126C176.5,-126 124.5,-126 124.5,-126 121.5,-126 118.5,-123 118.5,-120 118.5,-120 118.5,-114 118.5,-114 118.5,-111 121.5,-108 124.5,-108 124.5,-108 176.5,-108 176.5,-108 179.5,-108 182.5,-111 182.5,-114 182.5,-114 182.5,-120 182.5,-120 182.5,-123 179.5,-126 176.5,-126"/>
+<text text-anchor="middle" x="150.5" y="-114.7" font-family="inherit" font-size="8.50">Gtk.Widget</text>
+</a>
+</g>
+</g>
+<!-- Atk.ImplementorIface&#45;&gt;Gtk.Widget -->
+<g id="edge1" class="edge">
+<title>Atk.ImplementorIface&#45;&gt;Gtk.Widget</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M168.22,-161.88C164.88,-153.6 159.65,-140.66 155.74,-130.97"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="157.32,-130.22 153.83,-126.24 154.08,-131.53 157.32,-130.22"/>
+</g>
+<!-- GObject.GInterface -->
+<g id="node2" class="node">
+<title>GObject.GInterface</title>
+<g id="a_node2"><a xlink:href="../../GObject-2.0/classes/GInterface.html#GObject.GInterface" xlink:title="GObject.GInterface">
+<path fill="none" stroke="#3091d1" d="M105.5,-234C105.5,-234 19.5,-234 19.5,-234 16.5,-234 13.5,-231 13.5,-228 13.5,-228 13.5,-222 13.5,-222 13.5,-219 16.5,-216 19.5,-216 19.5,-216 105.5,-216 105.5,-216 108.5,-216 111.5,-219 111.5,-222 111.5,-222 111.5,-228 111.5,-228 111.5,-231 108.5,-234 105.5,-234"/>
+<text text-anchor="middle" x="62.5" y="-222.7" font-family="inherit" font-size="8.50">GObject.GInterface</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Atk.ImplementorIface -->
+<g id="edge2" class="edge">
+<title>GObject.GInterface&#45;&gt;Atk.ImplementorIface</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M79.53,-215.88C98.49,-206.83 129.17,-192.19 149.83,-182.34"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="150.83,-183.8 154.59,-180.07 149.32,-180.64 150.83,-183.8"/>
+</g>
+<!-- Gtk.Buildable -->
+<g id="node5" class="node">
+<title>Gtk.Buildable</title>
+<g id="a_node5"><a xlink:href="Buildable.html#Gtk.Buildable" xlink:title="Gtk.Buildable">
+<path fill="none" stroke="#3091d1" d="M93.5,-180C93.5,-180 31.5,-180 31.5,-180 28.5,-180 25.5,-177 25.5,-174 25.5,-174 25.5,-168 25.5,-168 25.5,-165 28.5,-162 31.5,-162 31.5,-162 93.5,-162 93.5,-162 96.5,-162 99.5,-165 99.5,-168 99.5,-168 99.5,-174 99.5,-174 99.5,-177 96.5,-180 93.5,-180"/>
+<text text-anchor="middle" x="62.5" y="-168.7" font-family="inherit" font-size="8.50">Gtk.Buildable</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Gtk.Buildable -->
+<g id="edge3" class="edge">
+<title>GObject.GInterface&#45;&gt;Gtk.Buildable</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M62.5,-215.88C62.5,-207.76 62.5,-195.13 62.5,-185.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="64.25,-185.24 62.5,-180.24 60.75,-185.24 64.25,-185.24"/>
+</g>
+<!-- Gtk.Orientable -->
+<g id="node6" class="node">
+<title>Gtk.Orientable</title>
+<g id="a_node6"><a xlink:href="Orientable.html#Gtk.Orientable" xlink:title="Gtk.Orientable">
+<path fill="none" stroke="#3091d1" d="M73,-126C73,-126 6,-126 6,-126 3,-126 0,-123 0,-120 0,-120 0,-114 0,-114 0,-111 3,-108 6,-108 6,-108 73,-108 73,-108 76,-108 79,-111 79,-114 79,-114 79,-120 79,-120 79,-123 76,-126 73,-126"/>
+<text text-anchor="middle" x="39.5" y="-114.7" font-family="inherit" font-size="8.50">Gtk.Orientable</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Gtk.Orientable -->
+<g id="edge4" class="edge">
+<title>GObject.GInterface&#45;&gt;Gtk.Orientable</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M49.16,-215.76C38.08,-208.06 23.1,-195.45 16.5,-180 9.27,-163.08 20.11,-143.03 29.23,-130.42"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="30.86,-131.17 32.48,-126.12 28.06,-129.06 30.86,-131.17"/>
+</g>
+<!-- GObject.InitiallyUnowned -->
+<g id="node3" class="node">
+<title>GObject.InitiallyUnowned</title>
+<g id="a_node3"><a xlink:href="../../GObject-2.0/classes/InitiallyUnowned.html#GObject.InitiallyUnowned" xlink:title="GObject.InitiallyUnowned">
+<path fill="none" stroke="#75507b" d="M359.5,-180C359.5,-180 249.5,-180 249.5,-180 246.5,-180 243.5,-177 243.5,-174 243.5,-174 243.5,-168 243.5,-168 243.5,-165 246.5,-162 249.5,-162 249.5,-162 359.5,-162 359.5,-162 362.5,-162 365.5,-165 365.5,-168 365.5,-168 365.5,-174 365.5,-174 365.5,-177 362.5,-180 359.5,-180"/>
+<text text-anchor="middle" x="304.5" y="-168.7" font-family="inherit" font-size="8.50">GObject.InitiallyUnowned</text>
+</a>
+</g>
+</g>
+<!-- GObject.InitiallyUnowned&#45;&gt;Gtk.Widget -->
+<g id="edge5" class="edge">
+<title>GObject.InitiallyUnowned&#45;&gt;Gtk.Widget</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M280.77,-161.99C253.42,-152.75 208.46,-137.57 179.17,-127.68"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="179.55,-125.96 174.25,-126.02 178.43,-129.28 179.55,-125.96"/>
+</g>
+<!-- GObject.Object -->
+<g id="node4" class="node">
+<title>GObject.Object</title>
+<g id="a_node4"><a xlink:href="../../GObject-2.0/classes/Object.html#GObject.Object" xlink:title="GObject.Object">
+<path fill="none" stroke="#75507b" d="M338.5,-234C338.5,-234 270.5,-234 270.5,-234 267.5,-234 264.5,-231 264.5,-228 264.5,-228 264.5,-222 264.5,-222 264.5,-219 267.5,-216 270.5,-216 270.5,-216 338.5,-216 338.5,-216 341.5,-216 344.5,-219 344.5,-222 344.5,-222 344.5,-228 344.5,-228 344.5,-231 341.5,-234 338.5,-234"/>
+<text text-anchor="middle" x="304.5" y="-222.7" font-family="inherit" font-size="8.50">GObject.Object</text>
+</a>
+</g>
+</g>
+<!-- GObject.Object&#45;&gt;GObject.InitiallyUnowned -->
+<g id="edge6" class="edge">
+<title>GObject.Object&#45;&gt;GObject.InitiallyUnowned</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M304.5,-215.88C304.5,-207.76 304.5,-195.13 304.5,-185.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="306.25,-185.24 304.5,-180.24 302.75,-185.24 306.25,-185.24"/>
+</g>
+<!-- Gtk.Buildable&#45;&gt;Gtk.Widget -->
+<g id="edge7" class="edge">
+<title>Gtk.Buildable&#45;&gt;Gtk.Widget</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M76.25,-161.88C91.36,-152.95 115.7,-138.56 132.36,-128.72"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="133.43,-130.12 136.85,-126.07 131.65,-127.11 133.43,-130.12"/>
+</g>
+<!-- Gtk.Range -->
+<g id="node7" class="node">
+<title>Gtk.Range</title>
+<g id="a_node7"><a xlink:href="Range.html#Gtk.Range" xlink:title="Gtk.Range">
+<path fill="none" stroke="#aaaaaa" d="M109.5,-72C109.5,-72 59.5,-72 59.5,-72 56.5,-72 53.5,-69 53.5,-66 53.5,-66 53.5,-60 53.5,-60 53.5,-57 56.5,-54 59.5,-54 59.5,-54 109.5,-54 109.5,-54 112.5,-54 115.5,-57 115.5,-60 115.5,-60 115.5,-66 115.5,-66 115.5,-69 112.5,-72 109.5,-72"/>
+<text text-anchor="middle" x="84.5" y="-60.7" font-family="inherit" font-size="8.50">Gtk.Range</text>
+</a>
+</g>
+</g>
+<!-- Gtk.Orientable&#45;&gt;Gtk.Range -->
+<g id="edge8" class="edge">
+<title>Gtk.Orientable&#45;&gt;Gtk.Range</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M46.53,-107.88C53.89,-99.38 65.51,-85.94 73.96,-76.18"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="75.42,-77.17 77.37,-72.24 72.77,-74.88 75.42,-77.17"/>
+</g>
+<!-- Gtk.Scrollbar -->
+<g id="node8" class="node">
+<title>Gtk.Scrollbar</title>
+<g id="a_node8"><a xlink:href="#Gtk.Scrollbar" xlink:title="Gtk.Scrollbar">
+<path fill="none" stroke="#75507b" d="M114,-18C114,-18 55,-18 55,-18 52,-18 49,-15 49,-12 49,-12 49,-6 49,-6 49,-3 52,0 55,0 55,0 114,0 114,0 117,0 120,-3 120,-6 120,-6 120,-12 120,-12 120,-15 117,-18 114,-18"/>
+<text text-anchor="middle" x="84.5" y="-6.7" font-family="inherit" font-size="8.50">Gtk.Scrollbar</text>
+</a>
+</g>
+</g>
+<!-- Gtk.Range&#45;&gt;Gtk.Scrollbar -->
+<g id="edge9" class="edge">
+<title>Gtk.Range&#45;&gt;Gtk.Scrollbar</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M84.5,-53.88C84.5,-45.76 84.5,-33.13 84.5,-23.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="86.25,-23.24 84.5,-18.24 82.75,-23.24 86.25,-23.24"/>
+</g>
+<!-- Gtk.Widget&#45;&gt;Gtk.Range -->
+<g id="edge10" class="edge">
+<title>Gtk.Widget&#45;&gt;Gtk.Range</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M140.19,-107.88C129.11,-99.15 111.43,-85.22 98.97,-75.4"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="99.97,-73.96 94.96,-72.24 97.8,-76.71 99.97,-73.96"/>
+</g>
+</g>
+</svg>
+</p>
+<div class="section" id="example">
+<h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
+<img alt="../_images/Scrollbar.png" src="../_images/Scrollbar.png" />
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Subclasses:</th><td class="field-body"><a class="reference internal" href="HScrollbar.html#Gtk.HScrollbar" title="Gtk.HScrollbar"><code class="xref py py-class docutils literal notranslate"><span class="pre">Gtk.HScrollbar</span></code></a>, <a class="reference internal" href="VScrollbar.html#Gtk.VScrollbar" title="Gtk.VScrollbar"><code class="xref py py-class docutils literal notranslate"><span class="pre">Gtk.VScrollbar</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="methods">
+<span id="gtk-scrollbar-methods"></span><h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Range.html#gtk-range-methods"><span class="std std-ref">Gtk.Range (28)</span></a>,     <a class="reference internal" href="Widget.html#gtk-widget-methods"><span class="std std-ref">Gtk.Widget (278)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (37)</span></a>,     <a class="reference internal" href="Buildable.html#gtk-buildable-methods"><span class="std std-ref">Gtk.Buildable (10)</span></a>,     <a class="reference internal" href="Orientable.html#gtk-orientable-methods"><span class="std std-ref">Gtk.Orientable (2)</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Structs:</th><td class="field-body"><a class="reference internal" href="WidgetClass.html#gtk-widgetclass-methods"><span class="std std-ref">Gtk.WidgetClass (12)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/ObjectClass.html#gobject-objectclass-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.ObjectClass (5)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="99%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><em>class</em></td>
+<td><a class="reference internal" href="#Gtk.Scrollbar.new" title="Gtk.Scrollbar.new"><code class="xref py py-func docutils literal notranslate"><span class="pre">new</span></code></a> (orientation, adjustment)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="virtual-methods">
+<span id="gtk-scrollbar-vfuncs"></span><h2>Virtual Methods<a class="headerlink" href="#virtual-methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Range.html#gtk-range-vfuncs"><span class="std std-ref">Gtk.Range (6)</span></a>,     <a class="reference internal" href="Widget.html#gtk-widget-vfuncs"><span class="std std-ref">Gtk.Widget (82)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-vfuncs" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (7)</span></a>,     <a class="reference internal" href="Buildable.html#gtk-buildable-vfuncs"><span class="std std-ref">Gtk.Buildable (10)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="gtk-scrollbar-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Range.html#gtk-range-props"><span class="std std-ref">Gtk.Range (8)</span></a>,     <a class="reference internal" href="Widget.html#gtk-widget-props"><span class="std std-ref">Gtk.Widget (39)</span></a>,     <a class="reference internal" href="Orientable.html#gtk-orientable-props"><span class="std std-ref">Gtk.Orientable (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="style-properties">
+<span id="gtk-scrollbar-style-props"></span><h2>Style Properties<a class="headerlink" href="#style-properties" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Range.html#gtk-range-style-props"><span class="std std-ref">Gtk.Range (8)</span></a>,     <a class="reference internal" href="Widget.html#gtk-widget-style-props"><span class="std std-ref">Gtk.Widget (17)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="1%" />
+<col width="1%" />
+<col width="1%" />
+<col width="96%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Default</th>
+<th class="head">Flags</th>
+<th class="head">Short Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">fixed-slider-length</span></code></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a></td>
+<td>r</td>
+<td>Don’t change slider size, just lock it to the minimum length</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">has-backward-stepper</span></code></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a></td>
+<td>r</td>
+<td><a class="reference external" href="../../xlib-2.0/classes/Display.html#xlib.Display" title="(in xlib 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">xlib.Display</span></code></a> the standard backward arrow button</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">has-forward-stepper</span></code></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a></td>
+<td>r</td>
+<td><a class="reference external" href="../../xlib-2.0/classes/Display.html#xlib.Display" title="(in xlib 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">xlib.Display</span></code></a> the standard forward arrow button</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">has-secondary-backward-stepper</span></code></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a></td>
+<td>r</td>
+<td><a class="reference external" href="../../xlib-2.0/classes/Display.html#xlib.Display" title="(in xlib 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">xlib.Display</span></code></a> a second backward arrow button on the opposite end of the scrollbar</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">has-secondary-forward-stepper</span></code></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a></td>
+<td>r</td>
+<td><a class="reference external" href="../../xlib-2.0/classes/Display.html#xlib.Display" title="(in xlib 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">xlib.Display</span></code></a> a second forward arrow button on the opposite end of the scrollbar</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">min-slider-length</span></code></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+<td><code class="docutils literal notranslate"><span class="pre">21</span></code></td>
+<td>d/r</td>
+<td>Minimum length of scrollbar slider <code class="docutils literal notranslate"><span class="pre">deprecated</span></code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="signals">
+<span id="gtk-scrollbar-signals"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Range.html#gtk-range-signals"><span class="std std-ref">Gtk.Range (4)</span></a>,     <a class="reference internal" href="Widget.html#gtk-widget-signals"><span class="std std-ref">Gtk.Widget (69)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-signals" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fields">
+<span id="gtk-scrollbar-fields"></span><h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Range.html#gtk-range-fields"><span class="std std-ref">Gtk.Range (4)</span></a>,     <a class="reference internal" href="Widget.html#gtk-widget-fields"><span class="std std-ref">Gtk.Widget (69)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-fields" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="16%" />
+<col width="1%" />
+<col width="1%" />
+<col width="82%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Access</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>range</td>
+<td><a class="reference internal" href="Range.html#Gtk.Range" title="Gtk.Range"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Range</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="class-details">
+<h2>Class Details<a class="headerlink" href="#class-details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Gtk.Scrollbar">
+<em class="property">class </em><code class="descclassname">Gtk.</code><code class="descname">Scrollbar</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#Gtk.Scrollbar" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Bases:</th><td class="field-body"><a class="reference internal" href="Range.html#Gtk.Range" title="Gtk.Range"><code class="xref py py-class docutils literal notranslate"><span class="pre">Gtk.Range</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Abstract:</th><td class="field-body">No</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Structure:</th><td class="field-body"><a class="reference internal" href="ScrollbarClass.html#Gtk.ScrollbarClass" title="Gtk.ScrollbarClass"><code class="xref py py-class docutils literal notranslate"><span class="pre">Gtk.ScrollbarClass</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The <a class="reference internal" href="#Gtk.Scrollbar" title="Gtk.Scrollbar"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Scrollbar</span></code></a> widget is a horizontal or vertical scrollbar,
+depending on the value of the <a class="reference internal" href="Orientable.html#Gtk.Orientable" title="Gtk.Orientable"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Orientable</span></code></a> <a class="reference internal" href="Orientable.html#Gtk.Orientable.props.orientation" title="Gtk.Orientable.props.orientation"><code class="xref py py-data docutils literal notranslate"><span class="pre">:orientation</span></code></a> property.</p>
+<p>Its position and movement are controlled by the adjustment that is passed to
+or created by <a class="reference internal" href="#Gtk.Scrollbar.new" title="Gtk.Scrollbar.new"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Scrollbar.new</span></code></a>(). See <a class="reference internal" href="Adjustment.html#Gtk.Adjustment" title="Gtk.Adjustment"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Adjustment</span></code></a> for more details. The
+<a class="reference internal" href="Adjustment.html#Gtk.Adjustment" title="Gtk.Adjustment"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Adjustment</span></code></a> <a class="reference internal" href="Adjustment.html#Gtk.Adjustment.props.value" title="Gtk.Adjustment.props.value"><code class="xref py py-data docutils literal notranslate"><span class="pre">:value</span></code></a> field sets the position of the thumb and must be between
+<a class="reference internal" href="Adjustment.html#Gtk.Adjustment" title="Gtk.Adjustment"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Adjustment</span></code></a> <a class="reference internal" href="Adjustment.html#Gtk.Adjustment.props.lower" title="Gtk.Adjustment.props.lower"><code class="xref py py-data docutils literal notranslate"><span class="pre">:lower</span></code></a> and <a class="reference internal" href="Adjustment.html#Gtk.Adjustment" title="Gtk.Adjustment"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Adjustment</span></code></a> <a class="reference internal" href="Adjustment.html#Gtk.Adjustment.props.upper" title="Gtk.Adjustment.props.upper"><code class="xref py py-data docutils literal notranslate"><span class="pre">:upper</span></code></a> - <a class="reference internal" href="Adjustment.html#Gtk.Adjustment" title="Gtk.Adjustment"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Adjustment</span></code></a> <a class="reference internal" href="Adjustment.html#Gtk.Adjustment.props.page_size" title="Gtk.Adjustment.props.page_size"><code class="xref py py-data docutils literal notranslate"><span class="pre">:page-size</span></code></a>. The
+<a class="reference internal" href="Adjustment.html#Gtk.Adjustment" title="Gtk.Adjustment"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Adjustment</span></code></a> <a class="reference internal" href="Adjustment.html#Gtk.Adjustment.props.page_size" title="Gtk.Adjustment.props.page_size"><code class="xref py py-data docutils literal notranslate"><span class="pre">:page-size</span></code></a> represents the size of the visible scrollable area.
+The fields <a class="reference internal" href="Adjustment.html#Gtk.Adjustment" title="Gtk.Adjustment"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Adjustment</span></code></a> <a class="reference internal" href="Adjustment.html#Gtk.Adjustment.props.step_increment" title="Gtk.Adjustment.props.step_increment"><code class="xref py py-data docutils literal notranslate"><span class="pre">:step-increment</span></code></a> and <a class="reference internal" href="Adjustment.html#Gtk.Adjustment" title="Gtk.Adjustment"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Adjustment</span></code></a> <a class="reference internal" href="Adjustment.html#Gtk.Adjustment.props.page_increment" title="Gtk.Adjustment.props.page_increment"><code class="xref py py-data docutils literal notranslate"><span class="pre">:page-increment</span></code></a>
+fields are added to or subtracted from the <a class="reference internal" href="Adjustment.html#Gtk.Adjustment" title="Gtk.Adjustment"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Adjustment</span></code></a> <a class="reference internal" href="Adjustment.html#Gtk.Adjustment.props.value" title="Gtk.Adjustment.props.value"><code class="xref py py-data docutils literal notranslate"><span class="pre">:value</span></code></a> when the user
+asks to move by a step (using e.g. the cursor arrow keys or, if present, the
+stepper buttons) or by a page (using e.g. the Page Down/Up keys).</p>
+<dl class="docutils">
+<dt>CSS nodes</dt>
+<dd></dd>
+</dl>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>scrollbar[.fine-tune]
+╰── contents
+    ├── [button.up]
+    ├── [button.down]
+    ├── trough
+    │   ╰── slider
+    ├── [button.up]
+    ╰── [button.down]
+</pre></div>
+</div>
+<p><a class="reference internal" href="#Gtk.Scrollbar" title="Gtk.Scrollbar"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Scrollbar</span></code></a> has a main CSS node with name scrollbar and a subnode for its
+contents, with subnodes named trough and slider.</p>
+<p>The main node gets the style class .fine-tune added when the scrollbar is
+in ‘fine-tuning’ mode.</p>
+<p>If steppers are enabled, they are represented by up to four additional
+subnodes with name button. These get the style classes .up and .down to
+indicate in which direction they are moving.</p>
+<p>Other style classes that may be added to scrollbars inside <a class="reference internal" href="ScrolledWindow.html#Gtk.ScrolledWindow" title="Gtk.ScrolledWindow"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ScrolledWindow</span></code></a>
+include the positional classes (.left, .right, .top, .bottom) and style
+classes related to overlay scrolling (.overlay-indicator, .dragging, .hovering).</p>
+<dl class="classmethod">
+<dt id="Gtk.Scrollbar.new">
+<em class="property">classmethod </em><code class="descname">new</code><span class="sig-paren">(</span><em>orientation</em>, <em>adjustment</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkscrollbar.c#L199"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.Scrollbar.new" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>orientation</strong> (<a class="reference internal" href="../enums.html#Gtk.Orientation" title="Gtk.Orientation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Orientation</span></code></a>) – the scrollbar’s orientation.</li>
+<li><strong>adjustment</strong> (<a class="reference internal" href="Adjustment.html#Gtk.Adjustment" title="Gtk.Adjustment"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Adjustment</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – the <a class="reference internal" href="Adjustment.html#Gtk.Adjustment" title="Gtk.Adjustment"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Adjustment</span></code></a> to use, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> to create a new adjustment.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">the new <a class="reference internal" href="#Gtk.Scrollbar" title="Gtk.Scrollbar"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Scrollbar</span></code></a>.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="Widget.html#Gtk.Widget" title="Gtk.Widget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Widget</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Creates a new scrollbar with the given orientation.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.0.</span></p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div> 
+
+</body>
+</html>

@@ -1,0 +1,350 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    NM.DeviceWpan -
+    
+      Classes -
+    
+    NM 1.0
+  </title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/css/pgi.css" type="text/css" />
+  
+
+  
+  <script type="text/javascript">
+
+    function openSidebar(element) {
+        window.location.href = element.href + location.hash;
+        return false;
+    }
+
+    function inIframe() {
+        try {
+            return window.self !== window.top;
+        } catch (e) {
+            return true;
+        }
+    }
+
+    function onLoaded() {
+        if(!inIframe()) {
+            var icons = document.getElementsByClassName('open-sidebar');
+
+            for (var i = 0; i < icons.length; i ++) {
+                icons[i].style.display = 'table-cell';
+            }
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', onLoaded, false);
+
+  </script>
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="NM 1.0 Python API Docs" href="../index.html"/>
+        <link rel="up" title="Classes" href="../classes.html"/>
+        <link rel="next" title="NM.DhcpConfig" href="DhcpConfig.html"/>
+        <link rel="prev" title="NM.DeviceWireGuard" href="DeviceWireGuard.html"/> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+<div class="non-fixed-bar">
+<table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#NM-1.0/classes/DeviceWpan.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">NM 1.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>NM.DeviceWpan</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="DeviceWireGuard.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="DhcpConfig.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">NM.DeviceWpan</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+<div class="fixed-bar">
+  <table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#NM-1.0/classes/DeviceWpan.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">NM 1.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>NM.DeviceWpan</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="DeviceWireGuard.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="DhcpConfig.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">NM.DeviceWpan</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+  <div class="wy-grid-for-nav">
+
+    
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="main">
+            
+  <div class="section" id="nm-devicewpan">
+<h1>NM.DeviceWpan<a class="headerlink" href="#nm-devicewpan" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<svg width="94pt" height="188pt"
+ viewBox="0.00 0.00 94.00 188.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 184)">
+<title>g</title>
+<!-- GObject.Object -->
+<g id="node1" class="node">
+<title>GObject.Object</title>
+<g id="a_node1"><a xlink:href="../../GObject-2.0/classes/Object.html#GObject.Object" xlink:title="GObject.Object">
+<path fill="none" stroke="#75507b" d="M77,-180C77,-180 9,-180 9,-180 6,-180 3,-177 3,-174 3,-174 3,-168 3,-168 3,-165 6,-162 9,-162 9,-162 77,-162 77,-162 80,-162 83,-165 83,-168 83,-168 83,-174 83,-174 83,-177 80,-180 77,-180"/>
+<text text-anchor="middle" x="43" y="-168.7" font-family="inherit" font-size="8.50">GObject.Object</text>
+</a>
+</g>
+</g>
+<!-- NM.Object -->
+<g id="node4" class="node">
+<title>NM.Object</title>
+<g id="a_node4"><a xlink:href="Object.html#NM.Object" xlink:title="NM.Object">
+<path fill="none" stroke="#aaaaaa" d="M67,-126C67,-126 19,-126 19,-126 16,-126 13,-123 13,-120 13,-120 13,-114 13,-114 13,-111 16,-108 19,-108 19,-108 67,-108 67,-108 70,-108 73,-111 73,-114 73,-114 73,-120 73,-120 73,-123 70,-126 67,-126"/>
+<text text-anchor="middle" x="43" y="-114.7" font-family="inherit" font-size="8.50">NM.Object</text>
+</a>
+</g>
+</g>
+<!-- GObject.Object&#45;&gt;NM.Object -->
+<g id="edge1" class="edge">
+<title>GObject.Object&#45;&gt;NM.Object</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M43,-161.88C43,-153.76 43,-141.13 43,-131.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="44.75,-131.24 43,-126.24 41.25,-131.24 44.75,-131.24"/>
+</g>
+<!-- NM.Device -->
+<g id="node2" class="node">
+<title>NM.Device</title>
+<g id="a_node2"><a xlink:href="Device.html#NM.Device" xlink:title="NM.Device">
+<path fill="none" stroke="#aaaaaa" d="M68,-72C68,-72 18,-72 18,-72 15,-72 12,-69 12,-66 12,-66 12,-60 12,-60 12,-57 15,-54 18,-54 18,-54 68,-54 68,-54 71,-54 74,-57 74,-60 74,-60 74,-66 74,-66 74,-69 71,-72 68,-72"/>
+<text text-anchor="middle" x="43" y="-60.7" font-family="inherit" font-size="8.50">NM.Device</text>
+</a>
+</g>
+</g>
+<!-- NM.DeviceWpan -->
+<g id="node3" class="node">
+<title>NM.DeviceWpan</title>
+<g id="a_node3"><a xlink:href="#NM.DeviceWpan" xlink:title="NM.DeviceWpan">
+<path fill="none" stroke="#75507b" d="M80,-18C80,-18 6,-18 6,-18 3,-18 0,-15 0,-12 0,-12 0,-6 0,-6 0,-3 3,0 6,0 6,0 80,0 80,0 83,0 86,-3 86,-6 86,-6 86,-12 86,-12 86,-15 83,-18 80,-18"/>
+<text text-anchor="middle" x="43" y="-6.7" font-family="inherit" font-size="8.50">NM.DeviceWpan</text>
+</a>
+</g>
+</g>
+<!-- NM.Device&#45;&gt;NM.DeviceWpan -->
+<g id="edge2" class="edge">
+<title>NM.Device&#45;&gt;NM.DeviceWpan</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M43,-53.88C43,-45.76 43,-33.13 43,-23.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="44.75,-23.24 43,-18.24 41.25,-23.24 44.75,-23.24"/>
+</g>
+<!-- NM.Object&#45;&gt;NM.Device -->
+<g id="edge3" class="edge">
+<title>NM.Object&#45;&gt;NM.Device</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M43,-107.88C43,-99.76 43,-87.13 43,-77.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="44.75,-77.24 43,-72.24 41.25,-77.24 44.75,-77.24"/>
+</g>
+</g>
+</svg>
+</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Subclasses:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="methods">
+<span id="nm-devicewpan-methods"></span><h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Device.html#nm-device-methods"><span class="std std-ref">NM.Device (53)</span></a>,     <a class="reference internal" href="Object.html#nm-object-methods"><span class="std std-ref">NM.Object (2)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (37)</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Structs:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/ObjectClass.html#gobject-objectclass-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.ObjectClass (5)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="virtual-methods">
+<span id="nm-devicewpan-vfuncs"></span><h2>Virtual Methods<a class="headerlink" href="#virtual-methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-vfuncs" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (7)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="nm-devicewpan-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Device.html#nm-device-props"><span class="std std-ref">NM.Device (31)</span></a>,     <a class="reference internal" href="Object.html#nm-object-props"><span class="std std-ref">NM.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="signals">
+<span id="nm-devicewpan-signals"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Device.html#nm-device-signals"><span class="std std-ref">NM.Device (1)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-signals" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fields">
+<span id="nm-devicewpan-fields"></span><h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Device.html#nm-device-fields"><span class="std std-ref">NM.Device (1)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-fields" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="class-details">
+<h2>Class Details<a class="headerlink" href="#class-details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="NM.DeviceWpan">
+<em class="property">class </em><code class="descclassname">NM.</code><code class="descname">DeviceWpan</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#NM.DeviceWpan" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Bases:</th><td class="field-body"><a class="reference internal" href="Device.html#NM.Device" title="NM.Device"><code class="xref py py-class docutils literal notranslate"><span class="pre">NM.Device</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Abstract:</th><td class="field-body">No</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Structure:</th><td class="field-body"><a class="reference internal" href="DeviceWpanClass.html#NM.DeviceWpanClass" title="NM.DeviceWpanClass"><code class="xref py py-class docutils literal notranslate"><span class="pre">NM.DeviceWpanClass</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div> 
+
+</body>
+</html>

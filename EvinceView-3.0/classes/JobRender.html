@@ -1,0 +1,477 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    EvinceView.JobRender -
+    
+      Classes -
+    
+    EvinceView 3.0
+  </title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/css/pgi.css" type="text/css" />
+  
+
+  
+  <script type="text/javascript">
+
+    function openSidebar(element) {
+        window.location.href = element.href + location.hash;
+        return false;
+    }
+
+    function inIframe() {
+        try {
+            return window.self !== window.top;
+        } catch (e) {
+            return true;
+        }
+    }
+
+    function onLoaded() {
+        if(!inIframe()) {
+            var icons = document.getElementsByClassName('open-sidebar');
+
+            for (var i = 0; i < icons.length; i ++) {
+                icons[i].style.display = 'table-cell';
+            }
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', onLoaded, false);
+
+  </script>
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="EvinceView 3.0 Python API Docs" href="../index.html"/>
+        <link rel="up" title="Classes" href="../classes.html"/>
+        <link rel="next" title="EvinceView.JobSave" href="JobSave.html"/>
+        <link rel="prev" title="EvinceView.JobPrint" href="JobPrint.html"/> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+<div class="non-fixed-bar">
+<table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#EvinceView-3.0/classes/JobRender.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">EvinceView 3.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>EvinceView.JobRender</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="JobPrint.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="JobSave.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">EvinceView.JobRender</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+<div class="fixed-bar">
+  <table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#EvinceView-3.0/classes/JobRender.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">EvinceView 3.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>EvinceView.JobRender</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="JobPrint.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="JobSave.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">EvinceView.JobRender</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+  <div class="wy-grid-for-nav">
+
+    
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="main">
+            
+  <div class="section" id="evinceview-jobrender">
+<h1>EvinceView.JobRender<a class="headerlink" href="#evinceview-jobrender" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<svg width="118pt" height="134pt"
+ viewBox="0.00 0.00 118.00 134.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 130)">
+<title>g</title>
+<!-- EvinceView.Job -->
+<g id="node1" class="node">
+<title>EvinceView.Job</title>
+<g id="a_node1"><a xlink:href="Job.html#EvinceView.Job" xlink:title="EvinceView.Job">
+<path fill="none" stroke="#aaaaaa" d="M89,-72C89,-72 21,-72 21,-72 18,-72 15,-69 15,-66 15,-66 15,-60 15,-60 15,-57 18,-54 21,-54 21,-54 89,-54 89,-54 92,-54 95,-57 95,-60 95,-60 95,-66 95,-66 95,-69 92,-72 89,-72"/>
+<text text-anchor="middle" x="55" y="-60.7" font-family="inherit" font-size="8.50">EvinceView.Job</text>
+</a>
+</g>
+</g>
+<!-- EvinceView.JobRender -->
+<g id="node2" class="node">
+<title>EvinceView.JobRender</title>
+<g id="a_node2"><a xlink:href="#EvinceView.JobRender" xlink:title="EvinceView.JobRender">
+<path fill="none" stroke="#75507b" d="M104,-18C104,-18 6,-18 6,-18 3,-18 0,-15 0,-12 0,-12 0,-6 0,-6 0,-3 3,0 6,0 6,0 104,0 104,0 107,0 110,-3 110,-6 110,-6 110,-12 110,-12 110,-15 107,-18 104,-18"/>
+<text text-anchor="middle" x="55" y="-6.7" font-family="inherit" font-size="8.50">EvinceView.JobRender</text>
+</a>
+</g>
+</g>
+<!-- EvinceView.Job&#45;&gt;EvinceView.JobRender -->
+<g id="edge1" class="edge">
+<title>EvinceView.Job&#45;&gt;EvinceView.JobRender</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M55,-53.88C55,-45.76 55,-33.13 55,-23.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="56.75,-23.24 55,-18.24 53.25,-23.24 56.75,-23.24"/>
+</g>
+<!-- GObject.Object -->
+<g id="node3" class="node">
+<title>GObject.Object</title>
+<g id="a_node3"><a xlink:href="../../GObject-2.0/classes/Object.html#GObject.Object" xlink:title="GObject.Object">
+<path fill="none" stroke="#75507b" d="M89,-126C89,-126 21,-126 21,-126 18,-126 15,-123 15,-120 15,-120 15,-114 15,-114 15,-111 18,-108 21,-108 21,-108 89,-108 89,-108 92,-108 95,-111 95,-114 95,-114 95,-120 95,-120 95,-123 92,-126 89,-126"/>
+<text text-anchor="middle" x="55" y="-114.7" font-family="inherit" font-size="8.50">GObject.Object</text>
+</a>
+</g>
+</g>
+<!-- GObject.Object&#45;&gt;EvinceView.Job -->
+<g id="edge2" class="edge">
+<title>GObject.Object&#45;&gt;EvinceView.Job</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M55,-107.88C55,-99.76 55,-87.13 55,-77.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="56.75,-77.24 55,-72.24 53.25,-77.24 56.75,-77.24"/>
+</g>
+</g>
+</svg>
+</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Subclasses:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="methods">
+<span id="evinceview-jobrender-methods"></span><h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Job.html#evinceview-job-methods"><span class="std std-ref">EvinceView.Job (11)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (37)</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Structs:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/ObjectClass.html#gobject-objectclass-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.ObjectClass (5)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="99%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><em>class</em></td>
+<td><a class="reference internal" href="#EvinceView.JobRender.new" title="EvinceView.JobRender.new"><code class="xref py py-func docutils literal notranslate"><span class="pre">new</span></code></a> (document, page, rotation, scale, width, height)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#EvinceView.JobRender.set_selection_info" title="EvinceView.JobRender.set_selection_info"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_selection_info</span></code></a> (selection_points, selection_style, text, base)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="virtual-methods">
+<span id="evinceview-jobrender-vfuncs"></span><h2>Virtual Methods<a class="headerlink" href="#virtual-methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Job.html#evinceview-job-vfuncs"><span class="std std-ref">EvinceView.Job (3)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-vfuncs" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (7)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="evinceview-jobrender-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<p>None</p>
+</div>
+<div class="section" id="signals">
+<span id="evinceview-jobrender-signals"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Job.html#evinceview-job-signals"><span class="std std-ref">EvinceView.Job (2)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-signals" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fields">
+<span id="evinceview-jobrender-fields"></span><h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Job.html#evinceview-job-fields"><span class="std std-ref">EvinceView.Job (2)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-fields" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="16%" />
+<col width="1%" />
+<col width="1%" />
+<col width="82%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Access</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>base</td>
+<td><a class="reference external" href="../../Gdk-3.0/classes/Color.html#Gdk.Color" title="(in Gdk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gdk.Color</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>include_selection</td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>page</td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>page_ready</td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>parent</td>
+<td><a class="reference internal" href="Job.html#EvinceView.Job" title="EvinceView.Job"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EvinceView.Job</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>rotation</td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>scale</td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">float</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>selection</td>
+<td><a class="reference external" href="https://pycairo.readthedocs.io/en/latest/reference/surfaces.html#cairo.Surface" title="(in Pycairo)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">cairo.Surface</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>selection_points</td>
+<td><a class="reference external" href="../../EvinceDocument-3.0/classes/Rectangle.html#EvinceDocument.Rectangle" title="(in EvinceDocument 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EvinceDocument.Rectangle</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>selection_region</td>
+<td><a class="reference external" href="https://pycairo.readthedocs.io/en/latest/reference/region.html#cairo.Region" title="(in Pycairo)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">cairo.Region</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>selection_style</td>
+<td><a class="reference external" href="../../EvinceDocument-3.0/enums.html#EvinceDocument.SelectionStyle" title="(in EvinceDocument 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EvinceDocument.SelectionStyle</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>surface</td>
+<td><a class="reference external" href="https://pycairo.readthedocs.io/en/latest/reference/surfaces.html#cairo.Surface" title="(in Pycairo)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">cairo.Surface</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>target_height</td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>target_width</td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>text</td>
+<td><a class="reference external" href="../../Gdk-3.0/classes/Color.html#Gdk.Color" title="(in Gdk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gdk.Color</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="class-details">
+<h2>Class Details<a class="headerlink" href="#class-details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="EvinceView.JobRender">
+<em class="property">class </em><code class="descclassname">EvinceView.</code><code class="descname">JobRender</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#EvinceView.JobRender" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Bases:</th><td class="field-body"><a class="reference internal" href="Job.html#EvinceView.Job" title="EvinceView.Job"><code class="xref py py-class docutils literal notranslate"><span class="pre">EvinceView.Job</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Abstract:</th><td class="field-body">No</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Structure:</th><td class="field-body"><a class="reference internal" href="JobRenderClass.html#EvinceView.JobRenderClass" title="EvinceView.JobRenderClass"><code class="xref py py-class docutils literal notranslate"><span class="pre">EvinceView.JobRenderClass</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<dl class="classmethod">
+<dt id="EvinceView.JobRender.new">
+<em class="property">classmethod </em><code class="descname">new</code><span class="sig-paren">(</span><em>document</em>, <em>page</em>, <em>rotation</em>, <em>scale</em>, <em>width</em>, <em>height</em><span class="sig-paren">)</span><a class="headerlink" href="#EvinceView.JobRender.new" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>document</strong> (<a class="reference external" href="../../EvinceDocument-3.0/classes/Document.html#EvinceDocument.Document" title="(in EvinceDocument 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EvinceDocument.Document</span></code></a>) – </li>
+<li><strong>page</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – </li>
+<li><strong>rotation</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – </li>
+<li><strong>scale</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">float</span></code></a>) – </li>
+<li><strong>width</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – </li>
+<li><strong>height</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="Job.html#EvinceView.Job" title="EvinceView.Job"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EvinceView.Job</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="EvinceView.JobRender.set_selection_info">
+<code class="descname">set_selection_info</code><span class="sig-paren">(</span><em>selection_points</em>, <em>selection_style</em>, <em>text</em>, <em>base</em><span class="sig-paren">)</span><a class="headerlink" href="#EvinceView.JobRender.set_selection_info" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>selection_points</strong> (<a class="reference external" href="../../EvinceDocument-3.0/classes/Rectangle.html#EvinceDocument.Rectangle" title="(in EvinceDocument 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EvinceDocument.Rectangle</span></code></a>) – </li>
+<li><strong>selection_style</strong> (<a class="reference external" href="../../EvinceDocument-3.0/enums.html#EvinceDocument.SelectionStyle" title="(in EvinceDocument 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EvinceDocument.SelectionStyle</span></code></a>) – </li>
+<li><strong>text</strong> (<a class="reference external" href="../../Gdk-3.0/classes/Color.html#Gdk.Color" title="(in Gdk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gdk.Color</span></code></a>) – </li>
+<li><strong>base</strong> (<a class="reference external" href="../../Gdk-3.0/classes/Color.html#Gdk.Color" title="(in Gdk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gdk.Color</span></code></a>) – </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div> 
+
+</body>
+</html>

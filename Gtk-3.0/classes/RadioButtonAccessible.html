@@ -1,0 +1,504 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    Gtk.RadioButtonAccessible -
+    
+      Classes -
+    
+    Gtk 3.0
+  </title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/css/pgi.css" type="text/css" />
+  
+
+  
+  <script type="text/javascript">
+
+    function openSidebar(element) {
+        window.location.href = element.href + location.hash;
+        return false;
+    }
+
+    function inIframe() {
+        try {
+            return window.self !== window.top;
+        } catch (e) {
+            return true;
+        }
+    }
+
+    function onLoaded() {
+        if(!inIframe()) {
+            var icons = document.getElementsByClassName('open-sidebar');
+
+            for (var i = 0; i < icons.length; i ++) {
+                icons[i].style.display = 'table-cell';
+            }
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', onLoaded, false);
+
+  </script>
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="Gtk 3.0 Python API Docs" href="../index.html"/>
+        <link rel="up" title="Classes" href="../classes.html"/>
+        <link rel="next" title="Gtk.RadioMenuItem" href="RadioMenuItem.html"/>
+        <link rel="prev" title="Gtk.RadioButton" href="RadioButton.html"/> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+<div class="non-fixed-bar">
+<table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#Gtk-3.0/classes/RadioButtonAccessible.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Gtk 3.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>Gtk.RadioButtonAccessible</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="RadioButton.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="RadioMenuItem.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">Gtk.RadioButtonAccessible</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+<div class="fixed-bar">
+  <table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#Gtk-3.0/classes/RadioButtonAccessible.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Gtk 3.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>Gtk.RadioButtonAccessible</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="RadioButton.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="RadioMenuItem.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">Gtk.RadioButtonAccessible</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+  <div class="wy-grid-for-nav">
+
+    
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="main">
+            
+  <div class="section" id="gtk-radiobuttonaccessible">
+<h1>Gtk.RadioButtonAccessible<a class="headerlink" href="#gtk-radiobuttonaccessible" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<svg width="305pt" height="404pt"
+ viewBox="0.00 0.00 305.00 404.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 400)">
+<title>g</title>
+<!-- Atk.Action -->
+<g id="node1" class="node">
+<title>Atk.Action</title>
+<g id="a_node1"><a xlink:href="../../Atk-1.0/classes/Action.html#Atk.Action" xlink:title="Atk.Action">
+<path fill="none" stroke="#3091d1" d="M54,-234C54,-234 6,-234 6,-234 3,-234 0,-231 0,-228 0,-228 0,-222 0,-222 0,-219 3,-216 6,-216 6,-216 54,-216 54,-216 57,-216 60,-219 60,-222 60,-222 60,-228 60,-228 60,-231 57,-234 54,-234"/>
+<text text-anchor="middle" x="30" y="-222.7" font-family="inherit" font-size="8.50">Atk.Action</text>
+</a>
+</g>
+</g>
+<!-- Gtk.ButtonAccessible -->
+<g id="node8" class="node">
+<title>Gtk.ButtonAccessible</title>
+<g id="a_node8"><a xlink:href="ButtonAccessible.html#Gtk.ButtonAccessible" xlink:title="Gtk.ButtonAccessible">
+<path fill="none" stroke="#75507b" d="M135.5,-126C135.5,-126 40.5,-126 40.5,-126 37.5,-126 34.5,-123 34.5,-120 34.5,-120 34.5,-114 34.5,-114 34.5,-111 37.5,-108 40.5,-108 40.5,-108 135.5,-108 135.5,-108 138.5,-108 141.5,-111 141.5,-114 141.5,-114 141.5,-120 141.5,-120 141.5,-123 138.5,-126 135.5,-126"/>
+<text text-anchor="middle" x="88" y="-114.7" font-family="inherit" font-size="8.50">Gtk.ButtonAccessible</text>
+</a>
+</g>
+</g>
+<!-- Atk.Action&#45;&gt;Gtk.ButtonAccessible -->
+<g id="edge1" class="edge">
+<title>Atk.Action&#45;&gt;Gtk.ButtonAccessible</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M31.33,-215.93C33.6,-203.67 38.97,-179.87 49,-162 55.78,-149.91 66.34,-138.27 74.76,-130"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="76.3,-130.95 78.7,-126.22 73.88,-128.42 76.3,-130.95"/>
+</g>
+<!-- Atk.Component -->
+<g id="node2" class="node">
+<title>Atk.Component</title>
+<g id="a_node2"><a xlink:href="../../Atk-1.0/classes/Component.html#Atk.Component" xlink:title="Atk.Component">
+<path fill="none" stroke="#3091d1" d="M193.5,-288C193.5,-288 122.5,-288 122.5,-288 119.5,-288 116.5,-285 116.5,-282 116.5,-282 116.5,-276 116.5,-276 116.5,-273 119.5,-270 122.5,-270 122.5,-270 193.5,-270 193.5,-270 196.5,-270 199.5,-273 199.5,-276 199.5,-276 199.5,-282 199.5,-282 199.5,-285 196.5,-288 193.5,-288"/>
+<text text-anchor="middle" x="158" y="-276.7" font-family="inherit" font-size="8.50">Atk.Component</text>
+</a>
+</g>
+</g>
+<!-- Gtk.WidgetAccessible -->
+<g id="node12" class="node">
+<title>Gtk.WidgetAccessible</title>
+<g id="a_node12"><a xlink:href="WidgetAccessible.html#Gtk.WidgetAccessible" xlink:title="Gtk.WidgetAccessible">
+<path fill="none" stroke="#75507b" d="M244,-234C244,-234 148,-234 148,-234 145,-234 142,-231 142,-228 142,-228 142,-222 142,-222 142,-219 145,-216 148,-216 148,-216 244,-216 244,-216 247,-216 250,-219 250,-222 250,-222 250,-228 250,-228 250,-231 247,-234 244,-234"/>
+<text text-anchor="middle" x="196" y="-222.7" font-family="inherit" font-size="8.50">Gtk.WidgetAccessible</text>
+</a>
+</g>
+</g>
+<!-- Atk.Component&#45;&gt;Gtk.WidgetAccessible -->
+<g id="edge2" class="edge">
+<title>Atk.Component&#45;&gt;Gtk.WidgetAccessible</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M163.94,-269.88C170.09,-261.45 179.79,-248.18 186.91,-238.44"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="188.44,-239.31 189.98,-234.24 185.62,-237.24 188.44,-239.31"/>
+</g>
+<!-- Atk.Image -->
+<g id="node3" class="node">
+<title>Atk.Image</title>
+<g id="a_node3"><a xlink:href="../../Atk-1.0/classes/Image.html#Atk.Image" xlink:title="Atk.Image">
+<path fill="none" stroke="#3091d1" d="M112,-180C112,-180 64,-180 64,-180 61,-180 58,-177 58,-174 58,-174 58,-168 58,-168 58,-165 61,-162 64,-162 64,-162 112,-162 112,-162 115,-162 118,-165 118,-168 118,-168 118,-174 118,-174 118,-177 115,-180 112,-180"/>
+<text text-anchor="middle" x="88" y="-168.7" font-family="inherit" font-size="8.50">Atk.Image</text>
+</a>
+</g>
+</g>
+<!-- Atk.Image&#45;&gt;Gtk.ButtonAccessible -->
+<g id="edge3" class="edge">
+<title>Atk.Image&#45;&gt;Gtk.ButtonAccessible</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M88,-161.88C88,-153.76 88,-141.13 88,-131.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="89.75,-131.24 88,-126.24 86.25,-131.24 89.75,-131.24"/>
+</g>
+<!-- Atk.Object -->
+<g id="node4" class="node">
+<title>Atk.Object</title>
+<g id="a_node4"><a xlink:href="../../Atk-1.0/classes/Object.html#Atk.Object" xlink:title="Atk.Object">
+<path fill="none" stroke="#75507b" d="M281.5,-342C281.5,-342 232.5,-342 232.5,-342 229.5,-342 226.5,-339 226.5,-336 226.5,-336 226.5,-330 226.5,-330 226.5,-327 229.5,-324 232.5,-324 232.5,-324 281.5,-324 281.5,-324 284.5,-324 287.5,-327 287.5,-330 287.5,-330 287.5,-336 287.5,-336 287.5,-339 284.5,-342 281.5,-342"/>
+<text text-anchor="middle" x="257" y="-330.7" font-family="inherit" font-size="8.50">Atk.Object</text>
+</a>
+</g>
+</g>
+<!-- Gtk.Accessible -->
+<g id="node7" class="node">
+<title>Gtk.Accessible</title>
+<g id="a_node7"><a xlink:href="Accessible.html#Gtk.Accessible" xlink:title="Gtk.Accessible">
+<path fill="none" stroke="#75507b" d="M290.5,-288C290.5,-288 223.5,-288 223.5,-288 220.5,-288 217.5,-285 217.5,-282 217.5,-282 217.5,-276 217.5,-276 217.5,-273 220.5,-270 223.5,-270 223.5,-270 290.5,-270 290.5,-270 293.5,-270 296.5,-273 296.5,-276 296.5,-276 296.5,-282 296.5,-282 296.5,-285 293.5,-288 290.5,-288"/>
+<text text-anchor="middle" x="257" y="-276.7" font-family="inherit" font-size="8.50">Gtk.Accessible</text>
+</a>
+</g>
+</g>
+<!-- Atk.Object&#45;&gt;Gtk.Accessible -->
+<g id="edge4" class="edge">
+<title>Atk.Object&#45;&gt;Gtk.Accessible</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M257,-323.88C257,-315.76 257,-303.13 257,-293.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="258.75,-293.24 257,-288.24 255.25,-293.24 258.75,-293.24"/>
+</g>
+<!-- GObject.GInterface -->
+<g id="node5" class="node">
+<title>GObject.GInterface</title>
+<g id="a_node5"><a xlink:href="../../GObject-2.0/classes/GInterface.html#GObject.GInterface" xlink:title="GObject.GInterface">
+<path fill="none" stroke="#3091d1" d="M131,-342C131,-342 45,-342 45,-342 42,-342 39,-339 39,-336 39,-336 39,-330 39,-330 39,-327 42,-324 45,-324 45,-324 131,-324 131,-324 134,-324 137,-327 137,-330 137,-330 137,-336 137,-336 137,-339 134,-342 131,-342"/>
+<text text-anchor="middle" x="88" y="-330.7" font-family="inherit" font-size="8.50">GObject.GInterface</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Atk.Action -->
+<g id="edge6" class="edge">
+<title>GObject.GInterface&#45;&gt;Atk.Action</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M83.45,-323.68C73.37,-305.26 49.1,-260.91 37.04,-238.88"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="38.47,-237.83 34.53,-234.28 35.39,-239.51 38.47,-237.83"/>
+</g>
+<!-- GObject.GInterface&#45;&gt;Atk.Component -->
+<g id="edge5" class="edge">
+<title>GObject.GInterface&#45;&gt;Atk.Component</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M98.94,-323.88C110.68,-315.15 129.44,-301.22 142.66,-291.4"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="143.94,-292.63 146.91,-288.24 141.85,-289.82 143.94,-292.63"/>
+</g>
+<!-- GObject.GInterface&#45;&gt;Atk.Image -->
+<g id="edge7" class="edge">
+<title>GObject.GInterface&#45;&gt;Atk.Image</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M88,-323.85C88,-297.96 88,-217.47 88,-185.39"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="89.75,-185.33 88,-180.33 86.25,-185.33 89.75,-185.33"/>
+</g>
+<!-- GObject.Object -->
+<g id="node6" class="node">
+<title>GObject.Object</title>
+<g id="a_node6"><a xlink:href="../../GObject-2.0/classes/Object.html#GObject.Object" xlink:title="GObject.Object">
+<path fill="none" stroke="#75507b" d="M291,-396C291,-396 223,-396 223,-396 220,-396 217,-393 217,-390 217,-390 217,-384 217,-384 217,-381 220,-378 223,-378 223,-378 291,-378 291,-378 294,-378 297,-381 297,-384 297,-384 297,-390 297,-390 297,-393 294,-396 291,-396"/>
+<text text-anchor="middle" x="257" y="-384.7" font-family="inherit" font-size="8.50">GObject.Object</text>
+</a>
+</g>
+</g>
+<!-- GObject.Object&#45;&gt;Atk.Object -->
+<g id="edge8" class="edge">
+<title>GObject.Object&#45;&gt;Atk.Object</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M257,-377.88C257,-369.76 257,-357.13 257,-347.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="258.75,-347.24 257,-342.24 255.25,-347.24 258.75,-347.24"/>
+</g>
+<!-- Gtk.Accessible&#45;&gt;Gtk.WidgetAccessible -->
+<g id="edge9" class="edge">
+<title>Gtk.Accessible&#45;&gt;Gtk.WidgetAccessible</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M247.47,-269.88C237.32,-261.23 221.17,-247.46 209.67,-237.66"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="210.61,-236.15 205.67,-234.24 208.34,-238.82 210.61,-236.15"/>
+</g>
+<!-- Gtk.ToggleButtonAccessible -->
+<g id="node11" class="node">
+<title>Gtk.ToggleButtonAccessible</title>
+<g id="a_node11"><a xlink:href="ToggleButtonAccessible.html#Gtk.ToggleButtonAccessible" xlink:title="Gtk.ToggleButtonAccessible">
+<path fill="none" stroke="#75507b" d="M149,-72C149,-72 27,-72 27,-72 24,-72 21,-69 21,-66 21,-66 21,-60 21,-60 21,-57 24,-54 27,-54 27,-54 149,-54 149,-54 152,-54 155,-57 155,-60 155,-60 155,-66 155,-66 155,-69 152,-72 149,-72"/>
+<text text-anchor="middle" x="88" y="-60.7" font-family="inherit" font-size="8.50">Gtk.ToggleButtonAccessible</text>
+</a>
+</g>
+</g>
+<!-- Gtk.ButtonAccessible&#45;&gt;Gtk.ToggleButtonAccessible -->
+<g id="edge10" class="edge">
+<title>Gtk.ButtonAccessible&#45;&gt;Gtk.ToggleButtonAccessible</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M88,-107.88C88,-99.76 88,-87.13 88,-77.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="89.75,-77.24 88,-72.24 86.25,-77.24 89.75,-77.24"/>
+</g>
+<!-- Gtk.ContainerAccessible -->
+<g id="node9" class="node">
+<title>Gtk.ContainerAccessible</title>
+<g id="a_node9"><a xlink:href="ContainerAccessible.html#Gtk.ContainerAccessible" xlink:title="Gtk.ContainerAccessible">
+<path fill="none" stroke="#75507b" d="M250,-180C250,-180 142,-180 142,-180 139,-180 136,-177 136,-174 136,-174 136,-168 136,-168 136,-165 139,-162 142,-162 142,-162 250,-162 250,-162 253,-162 256,-165 256,-168 256,-168 256,-174 256,-174 256,-177 253,-180 250,-180"/>
+<text text-anchor="middle" x="196" y="-168.7" font-family="inherit" font-size="8.50">Gtk.ContainerAccessible</text>
+</a>
+</g>
+</g>
+<!-- Gtk.ContainerAccessible&#45;&gt;Gtk.ButtonAccessible -->
+<g id="edge11" class="edge">
+<title>Gtk.ContainerAccessible&#45;&gt;Gtk.ButtonAccessible</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M179.12,-161.88C160.34,-152.83 129.94,-138.19 109.48,-128.34"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="110.02,-126.66 104.76,-126.07 108.5,-129.81 110.02,-126.66"/>
+</g>
+<!-- Gtk.RadioButtonAccessible -->
+<g id="node10" class="node">
+<title>Gtk.RadioButtonAccessible</title>
+<g id="a_node10"><a xlink:href="#Gtk.RadioButtonAccessible" xlink:title="Gtk.RadioButtonAccessible">
+<path fill="none" stroke="#75507b" d="M147.5,-18C147.5,-18 28.5,-18 28.5,-18 25.5,-18 22.5,-15 22.5,-12 22.5,-12 22.5,-6 22.5,-6 22.5,-3 25.5,0 28.5,0 28.5,0 147.5,0 147.5,0 150.5,0 153.5,-3 153.5,-6 153.5,-6 153.5,-12 153.5,-12 153.5,-15 150.5,-18 147.5,-18"/>
+<text text-anchor="middle" x="88" y="-6.7" font-family="inherit" font-size="8.50">Gtk.RadioButtonAccessible</text>
+</a>
+</g>
+</g>
+<!-- Gtk.ToggleButtonAccessible&#45;&gt;Gtk.RadioButtonAccessible -->
+<g id="edge12" class="edge">
+<title>Gtk.ToggleButtonAccessible&#45;&gt;Gtk.RadioButtonAccessible</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M88,-53.88C88,-45.76 88,-33.13 88,-23.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="89.75,-23.24 88,-18.24 86.25,-23.24 89.75,-23.24"/>
+</g>
+<!-- Gtk.WidgetAccessible&#45;&gt;Gtk.ContainerAccessible -->
+<g id="edge13" class="edge">
+<title>Gtk.WidgetAccessible&#45;&gt;Gtk.ContainerAccessible</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M196,-215.88C196,-207.76 196,-195.13 196,-185.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="197.75,-185.24 196,-180.24 194.25,-185.24 197.75,-185.24"/>
+</g>
+</g>
+</svg>
+</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Subclasses:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="methods">
+<span id="gtk-radiobuttonaccessible-methods"></span><h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Accessible.html#gtk-accessible-methods"><span class="std std-ref">Gtk.Accessible (3)</span></a>,     <a class="reference external" href="../../Atk-1.0/classes/Object.html#atk-object-methods" title="(in Atk 1.0 v1.0)"><span class="xref std std-ref">Atk.Object (25)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (37)</span></a>,     <a class="reference external" href="../../Atk-1.0/classes/Component.html#atk-component-methods" title="(in Atk 1.0 v1.0)"><span class="xref std std-ref">Atk.Component (15)</span></a>,     <a class="reference external" href="../../Atk-1.0/classes/Action.html#atk-action-methods" title="(in Atk 1.0 v1.0)"><span class="xref std std-ref">Atk.Action (7)</span></a>,     <a class="reference external" href="../../Atk-1.0/classes/Image.html#atk-image-methods" title="(in Atk 1.0 v1.0)"><span class="xref std std-ref">Atk.Image (5)</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Structs:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/ObjectClass.html#gobject-objectclass-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.ObjectClass (5)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="virtual-methods">
+<span id="gtk-radiobuttonaccessible-vfuncs"></span><h2>Virtual Methods<a class="headerlink" href="#virtual-methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Accessible.html#gtk-accessible-vfuncs"><span class="std std-ref">Gtk.Accessible (3)</span></a>,     <a class="reference external" href="../../Atk-1.0/classes/Object.html#atk-object-vfuncs" title="(in Atk 1.0 v1.0)"><span class="xref std std-ref">Atk.Object (24)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-vfuncs" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (7)</span></a>,     <a class="reference external" href="../../Atk-1.0/classes/Component.html#atk-component-vfuncs" title="(in Atk 1.0 v1.0)"><span class="xref std std-ref">Atk.Component (16)</span></a>,     <a class="reference external" href="../../Atk-1.0/classes/Action.html#atk-action-vfuncs" title="(in Atk 1.0 v1.0)"><span class="xref std std-ref">Atk.Action (7)</span></a>,     <a class="reference external" href="../../Atk-1.0/classes/Image.html#atk-image-vfuncs" title="(in Atk 1.0 v1.0)"><span class="xref std std-ref">Atk.Image (5)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="gtk-radiobuttonaccessible-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Accessible.html#gtk-accessible-props"><span class="std std-ref">Gtk.Accessible (1)</span></a>,     <a class="reference external" href="../../Atk-1.0/classes/Object.html#atk-object-props" title="(in Atk 1.0 v1.0)"><span class="xref std std-ref">Atk.Object (15)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="signals">
+<span id="gtk-radiobuttonaccessible-signals"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../Atk-1.0/classes/Object.html#atk-object-signals" title="(in Atk 1.0 v1.0)"><span class="xref std std-ref">Atk.Object (6)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-signals" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a>,     <a class="reference external" href="../../Atk-1.0/classes/Component.html#atk-component-signals" title="(in Atk 1.0 v1.0)"><span class="xref std std-ref">Atk.Component (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fields">
+<span id="gtk-radiobuttonaccessible-fields"></span><h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../Atk-1.0/classes/Object.html#atk-object-fields" title="(in Atk 1.0 v1.0)"><span class="xref std std-ref">Atk.Object (6)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-fields" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a>,     <a class="reference external" href="../../Atk-1.0/classes/Component.html#atk-component-fields" title="(in Atk 1.0 v1.0)"><span class="xref std std-ref">Atk.Component (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="16%" />
+<col width="1%" />
+<col width="1%" />
+<col width="82%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Access</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>parent</td>
+<td><a class="reference internal" href="ToggleButtonAccessible.html#Gtk.ToggleButtonAccessible" title="Gtk.ToggleButtonAccessible"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ToggleButtonAccessible</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="class-details">
+<h2>Class Details<a class="headerlink" href="#class-details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Gtk.RadioButtonAccessible">
+<em class="property">class </em><code class="descclassname">Gtk.</code><code class="descname">RadioButtonAccessible</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#Gtk.RadioButtonAccessible" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Bases:</th><td class="field-body"><a class="reference internal" href="ToggleButtonAccessible.html#Gtk.ToggleButtonAccessible" title="Gtk.ToggleButtonAccessible"><code class="xref py py-class docutils literal notranslate"><span class="pre">Gtk.ToggleButtonAccessible</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Abstract:</th><td class="field-body">No</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Structure:</th><td class="field-body"><a class="reference internal" href="RadioButtonAccessibleClass.html#Gtk.RadioButtonAccessibleClass" title="Gtk.RadioButtonAccessibleClass"><code class="xref py py-class docutils literal notranslate"><span class="pre">Gtk.RadioButtonAccessibleClass</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div> 
+
+</body>
+</html>

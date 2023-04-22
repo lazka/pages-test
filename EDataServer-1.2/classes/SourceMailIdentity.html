@@ -1,0 +1,998 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    EDataServer.SourceMailIdentity -
+    
+      Classes -
+    
+    EDataServer 1.2
+  </title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/css/pgi.css" type="text/css" />
+  
+
+  
+  <script type="text/javascript">
+
+    function openSidebar(element) {
+        window.location.href = element.href + location.hash;
+        return false;
+    }
+
+    function inIframe() {
+        try {
+            return window.self !== window.top;
+        } catch (e) {
+            return true;
+        }
+    }
+
+    function onLoaded() {
+        if(!inIframe()) {
+            var icons = document.getElementsByClassName('open-sidebar');
+
+            for (var i = 0; i < icons.length; i ++) {
+                icons[i].style.display = 'table-cell';
+            }
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', onLoaded, false);
+
+  </script>
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="EDataServer 1.2 Python API Docs" href="../index.html"/>
+        <link rel="up" title="Classes" href="../classes.html"/>
+        <link rel="next" title="EDataServer.SourceMailSignature" href="SourceMailSignature.html"/>
+        <link rel="prev" title="EDataServer.SourceMailComposition" href="SourceMailComposition.html"/> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+<div class="non-fixed-bar">
+<table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#EDataServer-1.2/classes/SourceMailIdentity.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">EDataServer 1.2</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>EDataServer.SourceMailIdentity</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="SourceMailComposition.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="SourceMailSignature.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">EDataServer.SourceMailIdentity</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#property-details">Property Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+<div class="fixed-bar">
+  <table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#EDataServer-1.2/classes/SourceMailIdentity.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">EDataServer 1.2</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>EDataServer.SourceMailIdentity</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="SourceMailComposition.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="SourceMailSignature.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">EDataServer.SourceMailIdentity</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#property-details">Property Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+  <div class="wy-grid-for-nav">
+
+    
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="main">
+            
+  <div class="section" id="edataserver-sourcemailidentity">
+<h1>EDataServer.SourceMailIdentity<a class="headerlink" href="#edataserver-sourcemailidentity" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<svg width="158pt" height="134pt"
+ viewBox="0.00 0.00 158.00 134.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 130)">
+<title>g</title>
+<!-- EDataServer.SourceExtension -->
+<g id="node1" class="node">
+<title>EDataServer.SourceExtension</title>
+<g id="a_node1"><a xlink:href="SourceExtension.html#EDataServer.SourceExtension" xlink:title="EDataServer.SourceExtension">
+<path fill="none" stroke="#aaaaaa" d="M140.5,-72C140.5,-72 9.5,-72 9.5,-72 6.5,-72 3.5,-69 3.5,-66 3.5,-66 3.5,-60 3.5,-60 3.5,-57 6.5,-54 9.5,-54 9.5,-54 140.5,-54 140.5,-54 143.5,-54 146.5,-57 146.5,-60 146.5,-60 146.5,-66 146.5,-66 146.5,-69 143.5,-72 140.5,-72"/>
+<text text-anchor="middle" x="75" y="-60.7" font-family="inherit" font-size="8.50">EDataServer.SourceExtension</text>
+</a>
+</g>
+</g>
+<!-- EDataServer.SourceMailIdentity -->
+<g id="node2" class="node">
+<title>EDataServer.SourceMailIdentity</title>
+<g id="a_node2"><a xlink:href="#EDataServer.SourceMailIdentity" xlink:title="EDataServer.SourceMailIdentity">
+<path fill="none" stroke="#75507b" d="M144,-18C144,-18 6,-18 6,-18 3,-18 0,-15 0,-12 0,-12 0,-6 0,-6 0,-3 3,0 6,0 6,0 144,0 144,0 147,0 150,-3 150,-6 150,-6 150,-12 150,-12 150,-15 147,-18 144,-18"/>
+<text text-anchor="middle" x="75" y="-6.7" font-family="inherit" font-size="8.50">EDataServer.SourceMailIdentity</text>
+</a>
+</g>
+</g>
+<!-- EDataServer.SourceExtension&#45;&gt;EDataServer.SourceMailIdentity -->
+<g id="edge1" class="edge">
+<title>EDataServer.SourceExtension&#45;&gt;EDataServer.SourceMailIdentity</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M75,-53.88C75,-45.76 75,-33.13 75,-23.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="76.75,-23.24 75,-18.24 73.25,-23.24 76.75,-23.24"/>
+</g>
+<!-- GObject.Object -->
+<g id="node3" class="node">
+<title>GObject.Object</title>
+<g id="a_node3"><a xlink:href="../../GObject-2.0/classes/Object.html#GObject.Object" xlink:title="GObject.Object">
+<path fill="none" stroke="#75507b" d="M109,-126C109,-126 41,-126 41,-126 38,-126 35,-123 35,-120 35,-120 35,-114 35,-114 35,-111 38,-108 41,-108 41,-108 109,-108 109,-108 112,-108 115,-111 115,-114 115,-114 115,-120 115,-120 115,-123 112,-126 109,-126"/>
+<text text-anchor="middle" x="75" y="-114.7" font-family="inherit" font-size="8.50">GObject.Object</text>
+</a>
+</g>
+</g>
+<!-- GObject.Object&#45;&gt;EDataServer.SourceExtension -->
+<g id="edge2" class="edge">
+<title>GObject.Object&#45;&gt;EDataServer.SourceExtension</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M75,-107.88C75,-99.76 75,-87.13 75,-77.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="76.75,-77.24 75,-72.24 73.25,-77.24 76.75,-77.24"/>
+</g>
+</g>
+</svg>
+</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Subclasses:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="methods">
+<span id="edataserver-sourcemailidentity-methods"></span><h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="SourceExtension.html#edataserver-sourceextension-methods"><span class="std std-ref">EDataServer.SourceExtension (4)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (37)</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Structs:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/ObjectClass.html#gobject-objectclass-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.ObjectClass (5)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="99%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#EDataServer.SourceMailIdentity.dup_address" title="EDataServer.SourceMailIdentity.dup_address"><code class="xref py py-func docutils literal notranslate"><span class="pre">dup_address</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#EDataServer.SourceMailIdentity.dup_aliases" title="EDataServer.SourceMailIdentity.dup_aliases"><code class="xref py py-func docutils literal notranslate"><span class="pre">dup_aliases</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#EDataServer.SourceMailIdentity.dup_name" title="EDataServer.SourceMailIdentity.dup_name"><code class="xref py py-func docutils literal notranslate"><span class="pre">dup_name</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#EDataServer.SourceMailIdentity.dup_organization" title="EDataServer.SourceMailIdentity.dup_organization"><code class="xref py py-func docutils literal notranslate"><span class="pre">dup_organization</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#EDataServer.SourceMailIdentity.dup_reply_to" title="EDataServer.SourceMailIdentity.dup_reply_to"><code class="xref py py-func docutils literal notranslate"><span class="pre">dup_reply_to</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#EDataServer.SourceMailIdentity.dup_signature_uid" title="EDataServer.SourceMailIdentity.dup_signature_uid"><code class="xref py py-func docutils literal notranslate"><span class="pre">dup_signature_uid</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#EDataServer.SourceMailIdentity.get_address" title="EDataServer.SourceMailIdentity.get_address"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_address</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#EDataServer.SourceMailIdentity.get_aliases" title="EDataServer.SourceMailIdentity.get_aliases"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_aliases</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#EDataServer.SourceMailIdentity.get_aliases_as_hash_table" title="EDataServer.SourceMailIdentity.get_aliases_as_hash_table"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_aliases_as_hash_table</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#EDataServer.SourceMailIdentity.get_name" title="EDataServer.SourceMailIdentity.get_name"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_name</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#EDataServer.SourceMailIdentity.get_organization" title="EDataServer.SourceMailIdentity.get_organization"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_organization</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#EDataServer.SourceMailIdentity.get_reply_to" title="EDataServer.SourceMailIdentity.get_reply_to"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_reply_to</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#EDataServer.SourceMailIdentity.get_signature_uid" title="EDataServer.SourceMailIdentity.get_signature_uid"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_signature_uid</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#EDataServer.SourceMailIdentity.set_address" title="EDataServer.SourceMailIdentity.set_address"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_address</span></code></a> (address)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#EDataServer.SourceMailIdentity.set_aliases" title="EDataServer.SourceMailIdentity.set_aliases"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_aliases</span></code></a> (aliases)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#EDataServer.SourceMailIdentity.set_name" title="EDataServer.SourceMailIdentity.set_name"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_name</span></code></a> (name)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#EDataServer.SourceMailIdentity.set_organization" title="EDataServer.SourceMailIdentity.set_organization"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_organization</span></code></a> (organization)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#EDataServer.SourceMailIdentity.set_reply_to" title="EDataServer.SourceMailIdentity.set_reply_to"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_reply_to</span></code></a> (reply_to)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#EDataServer.SourceMailIdentity.set_signature_uid" title="EDataServer.SourceMailIdentity.set_signature_uid"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_signature_uid</span></code></a> (signature_uid)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="virtual-methods">
+<span id="edataserver-sourcemailidentity-vfuncs"></span><h2>Virtual Methods<a class="headerlink" href="#virtual-methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-vfuncs" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (7)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="edataserver-sourcemailidentity-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="SourceExtension.html#edataserver-sourceextension-props"><span class="std std-ref">EDataServer.SourceExtension (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="1%" />
+<col width="1%" />
+<col width="97%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Flags</th>
+<th class="head">Short Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="#EDataServer.SourceMailIdentity.props.address" title="EDataServer.SourceMailIdentity.props.address"><code class="xref py py-data docutils literal notranslate"><span class="pre">address</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+<td>r/w/c/en</td>
+<td>Sender’s email address</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#EDataServer.SourceMailIdentity.props.aliases" title="EDataServer.SourceMailIdentity.props.aliases"><code class="xref py py-data docutils literal notranslate"><span class="pre">aliases</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+<td>r/w/c/en</td>
+<td>Sender’s email address aliases</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#EDataServer.SourceMailIdentity.props.name" title="EDataServer.SourceMailIdentity.props.name"><code class="xref py py-data docutils literal notranslate"><span class="pre">name</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+<td>r/w/c/en</td>
+<td>Sender’s name</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#EDataServer.SourceMailIdentity.props.organization" title="EDataServer.SourceMailIdentity.props.organization"><code class="xref py py-data docutils literal notranslate"><span class="pre">organization</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+<td>r/w/c/en</td>
+<td>Sender’s organization</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#EDataServer.SourceMailIdentity.props.reply_to" title="EDataServer.SourceMailIdentity.props.reply_to"><code class="xref py py-data docutils literal notranslate"><span class="pre">reply-to</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+<td>r/w/c/en</td>
+<td>Sender’s reply-to address</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#EDataServer.SourceMailIdentity.props.signature_uid" title="EDataServer.SourceMailIdentity.props.signature_uid"><code class="xref py py-data docutils literal notranslate"><span class="pre">signature-uid</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+<td>r/w/c/en</td>
+<td><a class="reference internal" href="Source.html#EDataServer.Source" title="EDataServer.Source"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EDataServer.Source</span></code></a> UID of the sender’s signature</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="signals">
+<span id="edataserver-sourcemailidentity-signals"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-signals" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fields">
+<span id="edataserver-sourcemailidentity-fields"></span><h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-fields" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="16%" />
+<col width="1%" />
+<col width="1%" />
+<col width="82%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Access</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>parent</td>
+<td><a class="reference internal" href="SourceExtension.html#EDataServer.SourceExtension" title="EDataServer.SourceExtension"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EDataServer.SourceExtension</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="class-details">
+<h2>Class Details<a class="headerlink" href="#class-details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="EDataServer.SourceMailIdentity">
+<em class="property">class </em><code class="descclassname">EDataServer.</code><code class="descname">SourceMailIdentity</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#EDataServer.SourceMailIdentity" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Bases:</th><td class="field-body"><a class="reference internal" href="SourceExtension.html#EDataServer.SourceExtension" title="EDataServer.SourceExtension"><code class="xref py py-class docutils literal notranslate"><span class="pre">EDataServer.SourceExtension</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Abstract:</th><td class="field-body">No</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Structure:</th><td class="field-body"><a class="reference internal" href="SourceMailIdentityClass.html#EDataServer.SourceMailIdentityClass" title="EDataServer.SourceMailIdentityClass"><code class="xref py py-class docutils literal notranslate"><span class="pre">EDataServer.SourceMailIdentityClass</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Contains only private data that should be read and manipulated using the
+functions below.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.6.</span></p>
+</div>
+<dl class="method">
+<dt id="EDataServer.SourceMailIdentity.dup_address">
+<code class="descname">dup_address</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#EDataServer.SourceMailIdentity.dup_address" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a newly-allocated copy of <a class="reference internal" href="#EDataServer.SourceMailIdentity" title="EDataServer.SourceMailIdentity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EDataServer.SourceMailIdentity</span></code></a> <a class="reference internal" href="#EDataServer.SourceMailIdentity.props.address" title="EDataServer.SourceMailIdentity.props.address"><code class="xref py py-data docutils literal notranslate"><span class="pre">:address</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Thread-safe variation of <a class="reference internal" href="#EDataServer.SourceMailIdentity.get_address" title="EDataServer.SourceMailIdentity.get_address"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EDataServer.SourceMailIdentity.get_address</span></code></a>().
+Use this function when accessing <cite>self</cite> from multiple threads.</p>
+<p>The returned string should be freed with <a class="reference external" href="../../GLib-2.0/functions.html#GLib.free" title="(in GLib 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GLib.free</span></code></a>() when no longer needed.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.6.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="EDataServer.SourceMailIdentity.dup_aliases">
+<code class="descname">dup_aliases</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#EDataServer.SourceMailIdentity.dup_aliases" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a newly-allocated copy of <a class="reference internal" href="#EDataServer.SourceMailIdentity" title="EDataServer.SourceMailIdentity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EDataServer.SourceMailIdentity</span></code></a> <a class="reference internal" href="#EDataServer.SourceMailIdentity.props.aliases" title="EDataServer.SourceMailIdentity.props.aliases"><code class="xref py py-data docutils literal notranslate"><span class="pre">:aliases</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Thread-safe variation of <a class="reference internal" href="#EDataServer.SourceMailIdentity.get_aliases" title="EDataServer.SourceMailIdentity.get_aliases"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EDataServer.SourceMailIdentity.get_aliases</span></code></a>().
+Use this function when accessing <cite>self</cite> from multiple threads.</p>
+<p>The returned string should be freed with <a class="reference external" href="../../GLib-2.0/functions.html#GLib.free" title="(in GLib 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GLib.free</span></code></a>() when no longer needed.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.24.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="EDataServer.SourceMailIdentity.dup_name">
+<code class="descname">dup_name</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#EDataServer.SourceMailIdentity.dup_name" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a newly-allocated copy of <a class="reference internal" href="#EDataServer.SourceMailIdentity" title="EDataServer.SourceMailIdentity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EDataServer.SourceMailIdentity</span></code></a> <a class="reference internal" href="#EDataServer.SourceMailIdentity.props.name" title="EDataServer.SourceMailIdentity.props.name"><code class="xref py py-data docutils literal notranslate"><span class="pre">:name</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Thread-safe variation of <a class="reference internal" href="#EDataServer.SourceMailIdentity.get_name" title="EDataServer.SourceMailIdentity.get_name"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EDataServer.SourceMailIdentity.get_name</span></code></a>().
+Use this function when accessing <cite>self</cite> from multiple threads.</p>
+<p>The returned string should be freed with <a class="reference external" href="../../GLib-2.0/functions.html#GLib.free" title="(in GLib 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GLib.free</span></code></a>() when no longer needed.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.6.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="EDataServer.SourceMailIdentity.dup_organization">
+<code class="descname">dup_organization</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#EDataServer.SourceMailIdentity.dup_organization" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a newly-allocated copy of <a class="reference internal" href="#EDataServer.SourceMailIdentity" title="EDataServer.SourceMailIdentity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EDataServer.SourceMailIdentity</span></code></a> <a class="reference internal" href="#EDataServer.SourceMailIdentity.props.organization" title="EDataServer.SourceMailIdentity.props.organization"><code class="xref py py-data docutils literal notranslate"><span class="pre">:organization</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Thread-safe variation of <a class="reference internal" href="#EDataServer.SourceMailIdentity.dup_organization" title="EDataServer.SourceMailIdentity.dup_organization"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EDataServer.SourceMailIdentity.dup_organization</span></code></a>().
+Use this function when accessing <cite>self</cite> from multiple threads.</p>
+<p>The returned string should be freed with <a class="reference external" href="../../GLib-2.0/functions.html#GLib.free" title="(in GLib 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GLib.free</span></code></a>() when no longer needed.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.6.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="EDataServer.SourceMailIdentity.dup_reply_to">
+<code class="descname">dup_reply_to</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#EDataServer.SourceMailIdentity.dup_reply_to" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a newly-allocated copy of <a class="reference internal" href="#EDataServer.SourceMailIdentity" title="EDataServer.SourceMailIdentity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EDataServer.SourceMailIdentity</span></code></a> <a class="reference internal" href="#EDataServer.SourceMailIdentity.props.reply_to" title="EDataServer.SourceMailIdentity.props.reply_to"><code class="xref py py-data docutils literal notranslate"><span class="pre">:reply-to</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Thread-safe variation of <a class="reference internal" href="#EDataServer.SourceMailIdentity.get_reply_to" title="EDataServer.SourceMailIdentity.get_reply_to"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EDataServer.SourceMailIdentity.get_reply_to</span></code></a>().
+Use this function when accessing <cite>self</cite> from multiple threads.</p>
+<p>The returned string should be freed with <a class="reference external" href="../../GLib-2.0/functions.html#GLib.free" title="(in GLib 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GLib.free</span></code></a>() when no longer needed.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.6.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="EDataServer.SourceMailIdentity.dup_signature_uid">
+<code class="descname">dup_signature_uid</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#EDataServer.SourceMailIdentity.dup_signature_uid" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a newly-allocated copy of <a class="reference internal" href="#EDataServer.SourceMailIdentity" title="EDataServer.SourceMailIdentity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EDataServer.SourceMailIdentity</span></code></a> <a class="reference internal" href="#EDataServer.SourceMailIdentity.props.signature_uid" title="EDataServer.SourceMailIdentity.props.signature_uid"><code class="xref py py-data docutils literal notranslate"><span class="pre">:signature-uid</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Thread-safe variation of <a class="reference internal" href="#EDataServer.SourceMailIdentity.get_signature_uid" title="EDataServer.SourceMailIdentity.get_signature_uid"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EDataServer.SourceMailIdentity.get_signature_uid</span></code></a>().
+Use this function when accessing <cite>self</cite> from multiple threads.</p>
+<p>The returned string should be freed with <a class="reference external" href="../../GLib-2.0/functions.html#GLib.free" title="(in GLib 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GLib.free</span></code></a>() when no longer needed.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.6.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="EDataServer.SourceMailIdentity.get_address">
+<code class="descname">get_address</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#EDataServer.SourceMailIdentity.get_address" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the sender’s email address</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns the email address for this identity from which to send messages.
+This may be an empty string but will never be <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.6.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="EDataServer.SourceMailIdentity.get_aliases">
+<code class="descname">get_aliases</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#EDataServer.SourceMailIdentity.get_aliases" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the sender’s email address aliases</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns the email address aliases for this identity. These are comma-separated
+email addresses which may or may not contain also different name.
+This may be an empty string, but will never be <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>.
+There can be used <a class="reference external" href="../../Camel-1.2/classes/Address.html#Camel.Address.decode" title="(in Camel 1.2 v1.2)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Camel.Address.decode</span></code></a>() on a <a class="reference external" href="../../Camel-1.2/classes/InternetAddress.html#Camel.InternetAddress" title="(in Camel 1.2 v1.2)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Camel.InternetAddress</span></code></a>
+to decode the list of aliases.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.24.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="EDataServer.SourceMailIdentity.get_aliases_as_hash_table">
+<code class="descname">get_aliases_as_hash_table</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#EDataServer.SourceMailIdentity.get_aliases_as_hash_table" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A newly created
+<a class="reference external" href="../../GLib-2.0/classes/HashTable.html#GLib.HashTable" title="(in GLib 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GLib.HashTable</span></code></a> will all the aliases. Returns <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> if there are none set.
+Use <a class="reference external" href="../../GLib-2.0/classes/HashTable.html#GLib.HashTable.destroy" title="(in GLib 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GLib.HashTable.destroy</span></code></a>() to free the returned hash table.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">{<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>: <a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>} or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns a set aliases as a hash table with address as key and
+name as value of the hash table. The name can be sometimes
+empty or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>, thus rather use <a class="reference external" href="../../GLib-2.0/classes/HashTable.html#GLib.HashTable.contains" title="(in GLib 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GLib.HashTable.contains</span></code></a>() when
+checking for particular address. The addresses are
+compared case insensitively. The same addresses with a different
+name are included only once, the last variant of it. Use
+<a class="reference internal" href="#EDataServer.SourceMailIdentity.get_aliases" title="EDataServer.SourceMailIdentity.get_aliases"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EDataServer.SourceMailIdentity.get_aliases</span></code></a>() if you need more fine-grained
+control on the list of aliases.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.24.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="EDataServer.SourceMailIdentity.get_name">
+<code class="descname">get_name</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#EDataServer.SourceMailIdentity.get_name" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the sender’s name</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns the sender’s name for this identity.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.6.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="EDataServer.SourceMailIdentity.get_organization">
+<code class="descname">get_organization</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#EDataServer.SourceMailIdentity.get_organization" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the sender’s organization</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns the sender’s organization for this identity.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.6.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="EDataServer.SourceMailIdentity.get_reply_to">
+<code class="descname">get_reply_to</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#EDataServer.SourceMailIdentity.get_reply_to" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the sender’s reply-to address</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns the email address for this identity to which recipients should
+send replies.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.6.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="EDataServer.SourceMailIdentity.get_signature_uid">
+<code class="descname">get_signature_uid</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#EDataServer.SourceMailIdentity.get_signature_uid" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the sender’s signature ID, or “none”</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns the <a class="reference internal" href="Source.html#EDataServer.Source" title="EDataServer.Source"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EDataServer.Source</span></code></a> <a class="reference internal" href="Source.html#EDataServer.Source.props.uid" title="EDataServer.Source.props.uid"><code class="xref py py-data docutils literal notranslate"><span class="pre">:uid</span></code></a> of an <a class="reference internal" href="Source.html#EDataServer.Source" title="EDataServer.Source"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EDataServer.Source</span></code></a> describing a mail signature.</p>
+<p>If the user does not want to use a signature for this identity, the
+convention is to set the <a class="reference internal" href="#EDataServer.SourceMailIdentity" title="EDataServer.SourceMailIdentity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EDataServer.SourceMailIdentity</span></code></a> <a class="reference internal" href="#EDataServer.SourceMailIdentity.props.signature_uid" title="EDataServer.SourceMailIdentity.props.signature_uid"><code class="xref py py-data docutils literal notranslate"><span class="pre">:signature-uid</span></code></a> property
+to “none”.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.6.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="EDataServer.SourceMailIdentity.set_address">
+<code class="descname">set_address</code><span class="sig-paren">(</span><em>address</em><span class="sig-paren">)</span><a class="headerlink" href="#EDataServer.SourceMailIdentity.set_address" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>address</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – the sender’s email address, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Sets the email address for this identity from which to send messages.</p>
+<p>The internal copy of <cite>address</cite> is automatically stripped of leading and
+trailing whitespace.  If the resulting string is empty, <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> is set
+instead.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.6.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="EDataServer.SourceMailIdentity.set_aliases">
+<code class="descname">set_aliases</code><span class="sig-paren">(</span><em>aliases</em><span class="sig-paren">)</span><a class="headerlink" href="#EDataServer.SourceMailIdentity.set_aliases" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>aliases</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – the sender’s email address aliases, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Sets the email address aliases for this identity. These are comma-separated
+email addresses which may or may not contain also different name.</p>
+<p>The internal copy of <cite>aliases</cite> is automatically stripped of leading and
+trailing whitespace. If the resulting string is empty, <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> is set
+instead.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.24.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="EDataServer.SourceMailIdentity.set_name">
+<code class="descname">set_name</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="headerlink" href="#EDataServer.SourceMailIdentity.set_name" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>name</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – the sender’s name, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Sets the sender’s name for this identity.</p>
+<p>The internal copy of <cite>name</cite> is automatically stripped of leading and
+trailing whitespace.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.6.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="EDataServer.SourceMailIdentity.set_organization">
+<code class="descname">set_organization</code><span class="sig-paren">(</span><em>organization</em><span class="sig-paren">)</span><a class="headerlink" href="#EDataServer.SourceMailIdentity.set_organization" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>organization</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – the sender’s organization, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Sets the sender’s organization for this identity.</p>
+<p>The internal copy of <cite>organization</cite> is automatically stripped of leading
+and trailing whitespace.  If the resulting string is empty, <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> is set
+instead.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.6.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="EDataServer.SourceMailIdentity.set_reply_to">
+<code class="descname">set_reply_to</code><span class="sig-paren">(</span><em>reply_to</em><span class="sig-paren">)</span><a class="headerlink" href="#EDataServer.SourceMailIdentity.set_reply_to" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>reply_to</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – the sender’s reply-to address, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Sets the email address for this identity to which recipients should
+send replies.</p>
+<p>The internal copy of <cite>reply_to</cite> is automatically stripped of leading
+and trailing whitespace.  If the resulting string is empty, <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> is
+set instead.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.6.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="EDataServer.SourceMailIdentity.set_signature_uid">
+<code class="descname">set_signature_uid</code><span class="sig-paren">(</span><em>signature_uid</em><span class="sig-paren">)</span><a class="headerlink" href="#EDataServer.SourceMailIdentity.set_signature_uid" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>signature_uid</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – the sender’s signature ID, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Sets the <a class="reference internal" href="Source.html#EDataServer.Source" title="EDataServer.Source"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EDataServer.Source</span></code></a> <a class="reference internal" href="Source.html#EDataServer.Source.props.uid" title="EDataServer.Source.props.uid"><code class="xref py py-data docutils literal notranslate"><span class="pre">:uid</span></code></a> of an <a class="reference internal" href="Source.html#EDataServer.Source" title="EDataServer.Source"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EDataServer.Source</span></code></a> describing a mail signature.</p>
+<p>If the user does not want to use a signature for this identity, the
+convention is to set the <a class="reference internal" href="#EDataServer.SourceMailIdentity" title="EDataServer.SourceMailIdentity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EDataServer.SourceMailIdentity</span></code></a> <a class="reference internal" href="#EDataServer.SourceMailIdentity.props.signature_uid" title="EDataServer.SourceMailIdentity.props.signature_uid"><code class="xref py py-data docutils literal notranslate"><span class="pre">:signature-uid</span></code></a> property
+to “none”.  In keeping with that convention, the property will be set
+to “none” if <cite>signature</cite> is <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> or an empty string.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.6.</span></p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="property-details">
+<h2>Property Details<a class="headerlink" href="#property-details" title="Permalink to this headline">¶</a></h2>
+<dl class="data">
+<dt id="EDataServer.SourceMailIdentity.props.address">
+<code class="descclassname">EDataServer.SourceMailIdentity.props.</code><code class="descname">address</code><a class="headerlink" href="#EDataServer.SourceMailIdentity.props.address" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">address</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.CONSTRUCT" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CONSTRUCT</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.EXPLICIT_NOTIFY" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EXPLICIT_NOTIFY</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Sender’s email address</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="EDataServer.SourceMailIdentity.props.aliases">
+<code class="descclassname">EDataServer.SourceMailIdentity.props.</code><code class="descname">aliases</code><a class="headerlink" href="#EDataServer.SourceMailIdentity.props.aliases" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">aliases</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.CONSTRUCT" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CONSTRUCT</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.EXPLICIT_NOTIFY" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EXPLICIT_NOTIFY</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Sender’s email address aliases</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="EDataServer.SourceMailIdentity.props.name">
+<code class="descclassname">EDataServer.SourceMailIdentity.props.</code><code class="descname">name</code><a class="headerlink" href="#EDataServer.SourceMailIdentity.props.name" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">name</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.CONSTRUCT" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CONSTRUCT</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.EXPLICIT_NOTIFY" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EXPLICIT_NOTIFY</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Sender’s name</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="EDataServer.SourceMailIdentity.props.organization">
+<code class="descclassname">EDataServer.SourceMailIdentity.props.</code><code class="descname">organization</code><a class="headerlink" href="#EDataServer.SourceMailIdentity.props.organization" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">organization</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.CONSTRUCT" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CONSTRUCT</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.EXPLICIT_NOTIFY" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EXPLICIT_NOTIFY</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Sender’s organization</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="EDataServer.SourceMailIdentity.props.reply_to">
+<code class="descclassname">EDataServer.SourceMailIdentity.props.</code><code class="descname">reply_to</code><a class="headerlink" href="#EDataServer.SourceMailIdentity.props.reply_to" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">reply-to</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.CONSTRUCT" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CONSTRUCT</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.EXPLICIT_NOTIFY" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EXPLICIT_NOTIFY</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Sender’s reply-to address</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="EDataServer.SourceMailIdentity.props.signature_uid">
+<code class="descclassname">EDataServer.SourceMailIdentity.props.</code><code class="descname">signature_uid</code><a class="headerlink" href="#EDataServer.SourceMailIdentity.props.signature_uid" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">signature-uid</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">'none'</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.CONSTRUCT" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CONSTRUCT</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.EXPLICIT_NOTIFY" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EXPLICIT_NOTIFY</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p><a class="reference internal" href="Source.html#EDataServer.Source" title="EDataServer.Source"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EDataServer.Source</span></code></a> UID of the sender’s signature</p>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div> 
+
+</body>
+</html>

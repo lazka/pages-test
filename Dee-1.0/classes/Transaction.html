@@ -1,0 +1,562 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    Dee.Transaction -
+    
+      Classes -
+    
+    Dee 1.0
+  </title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/css/pgi.css" type="text/css" />
+  
+
+  
+  <script type="text/javascript">
+
+    function openSidebar(element) {
+        window.location.href = element.href + location.hash;
+        return false;
+    }
+
+    function inIframe() {
+        try {
+            return window.self !== window.top;
+        } catch (e) {
+            return true;
+        }
+    }
+
+    function onLoaded() {
+        if(!inIframe()) {
+            var icons = document.getElementsByClassName('open-sidebar');
+
+            for (var i = 0; i < icons.length; i ++) {
+                icons[i].style.display = 'table-cell';
+            }
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', onLoaded, false);
+
+  </script>
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="Dee 1.0 Python API Docs" href="../index.html"/>
+        <link rel="up" title="Classes" href="../classes.html"/>
+        <link rel="next" title="Dee.TreeIndex" href="TreeIndex.html"/>
+        <link rel="prev" title="Dee.TextAnalyzer" href="TextAnalyzer.html"/> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+<div class="non-fixed-bar">
+<table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#Dee-1.0/classes/Transaction.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Dee 1.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>Dee.Transaction</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="TextAnalyzer.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="TreeIndex.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">Dee.Transaction</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#property-details">Property Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+<div class="fixed-bar">
+  <table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#Dee-1.0/classes/Transaction.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Dee 1.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>Dee.Transaction</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="TextAnalyzer.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="TreeIndex.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">Dee.Transaction</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#property-details">Property Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+  <div class="wy-grid-for-nav">
+
+    
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="main">
+            
+  <div class="section" id="dee-transaction">
+<h1>Dee.Transaction<a class="headerlink" href="#dee-transaction" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<svg width="272pt" height="188pt"
+ viewBox="0.00 0.00 272.00 188.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 184)">
+<title>g</title>
+<!-- Dee.Model -->
+<g id="node1" class="node">
+<title>Dee.Model</title>
+<g id="a_node1"><a xlink:href="Model.html#Dee.Model" xlink:title="Dee.Model">
+<path fill="none" stroke="#3091d1" d="M56,-126C56,-126 6,-126 6,-126 3,-126 0,-123 0,-120 0,-120 0,-114 0,-114 0,-111 3,-108 6,-108 6,-108 56,-108 56,-108 59,-108 62,-111 62,-114 62,-114 62,-120 62,-120 62,-123 59,-126 56,-126"/>
+<text text-anchor="middle" x="31" y="-114.7" font-family="inherit" font-size="8.50">Dee.Model</text>
+</a>
+</g>
+</g>
+<!-- Dee.SerializableModel -->
+<g id="node3" class="node">
+<title>Dee.SerializableModel</title>
+<g id="a_node3"><a xlink:href="SerializableModel.html#Dee.SerializableModel" xlink:title="Dee.SerializableModel">
+<path fill="none" stroke="#aaaaaa" d="M172.5,-72C172.5,-72 73.5,-72 73.5,-72 70.5,-72 67.5,-69 67.5,-66 67.5,-66 67.5,-60 67.5,-60 67.5,-57 70.5,-54 73.5,-54 73.5,-54 172.5,-54 172.5,-54 175.5,-54 178.5,-57 178.5,-60 178.5,-60 178.5,-66 178.5,-66 178.5,-69 175.5,-72 172.5,-72"/>
+<text text-anchor="middle" x="123" y="-60.7" font-family="inherit" font-size="8.50">Dee.SerializableModel</text>
+</a>
+</g>
+</g>
+<!-- Dee.Model&#45;&gt;Dee.SerializableModel -->
+<g id="edge1" class="edge">
+<title>Dee.Model&#45;&gt;Dee.SerializableModel</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M45.38,-107.88C61.17,-98.95 86.62,-84.56 104.04,-74.72"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="105.23,-76.05 108.73,-72.07 103.51,-73 105.23,-76.05"/>
+</g>
+<!-- Dee.Serializable -->
+<g id="node2" class="node">
+<title>Dee.Serializable</title>
+<g id="a_node2"><a xlink:href="Serializable.html#Dee.Serializable" xlink:title="Dee.Serializable">
+<path fill="none" stroke="#3091d1" d="M160,-126C160,-126 86,-126 86,-126 83,-126 80,-123 80,-120 80,-120 80,-114 80,-114 80,-111 83,-108 86,-108 86,-108 160,-108 160,-108 163,-108 166,-111 166,-114 166,-114 166,-120 166,-120 166,-123 163,-126 160,-126"/>
+<text text-anchor="middle" x="123" y="-114.7" font-family="inherit" font-size="8.50">Dee.Serializable</text>
+</a>
+</g>
+</g>
+<!-- Dee.Serializable&#45;&gt;Dee.SerializableModel -->
+<g id="edge2" class="edge">
+<title>Dee.Serializable&#45;&gt;Dee.SerializableModel</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M123,-107.88C123,-99.76 123,-87.13 123,-77.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="124.75,-77.24 123,-72.24 121.25,-77.24 124.75,-77.24"/>
+</g>
+<!-- Dee.Transaction -->
+<g id="node4" class="node">
+<title>Dee.Transaction</title>
+<g id="a_node4"><a xlink:href="#Dee.Transaction" xlink:title="Dee.Transaction">
+<path fill="none" stroke="#75507b" d="M159.5,-18C159.5,-18 86.5,-18 86.5,-18 83.5,-18 80.5,-15 80.5,-12 80.5,-12 80.5,-6 80.5,-6 80.5,-3 83.5,0 86.5,0 86.5,0 159.5,0 159.5,0 162.5,0 165.5,-3 165.5,-6 165.5,-6 165.5,-12 165.5,-12 165.5,-15 162.5,-18 159.5,-18"/>
+<text text-anchor="middle" x="123" y="-6.7" font-family="inherit" font-size="8.50">Dee.Transaction</text>
+</a>
+</g>
+</g>
+<!-- Dee.SerializableModel&#45;&gt;Dee.Transaction -->
+<g id="edge3" class="edge">
+<title>Dee.SerializableModel&#45;&gt;Dee.Transaction</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M123,-53.88C123,-45.76 123,-33.13 123,-23.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="124.75,-23.24 123,-18.24 121.25,-23.24 124.75,-23.24"/>
+</g>
+<!-- GObject.GInterface -->
+<g id="node5" class="node">
+<title>GObject.GInterface</title>
+<g id="a_node5"><a xlink:href="../../GObject-2.0/classes/GInterface.html#GObject.GInterface" xlink:title="GObject.GInterface">
+<path fill="none" stroke="#3091d1" d="M120,-180C120,-180 34,-180 34,-180 31,-180 28,-177 28,-174 28,-174 28,-168 28,-168 28,-165 31,-162 34,-162 34,-162 120,-162 120,-162 123,-162 126,-165 126,-168 126,-168 126,-174 126,-174 126,-177 123,-180 120,-180"/>
+<text text-anchor="middle" x="77" y="-168.7" font-family="inherit" font-size="8.50">GObject.GInterface</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Dee.Model -->
+<g id="edge4" class="edge">
+<title>GObject.GInterface&#45;&gt;Dee.Model</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M69.81,-161.88C62.3,-153.38 50.41,-139.94 41.77,-130.18"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="42.91,-128.83 38.29,-126.24 40.29,-131.14 42.91,-128.83"/>
+</g>
+<!-- GObject.GInterface&#45;&gt;Dee.Serializable -->
+<g id="edge5" class="edge">
+<title>GObject.GInterface&#45;&gt;Dee.Serializable</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M84.19,-161.88C91.7,-153.38 103.59,-139.94 112.23,-130.18"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="113.71,-131.14 115.71,-126.24 111.09,-128.83 113.71,-131.14"/>
+</g>
+<!-- GObject.Object -->
+<g id="node6" class="node">
+<title>GObject.Object</title>
+<g id="a_node6"><a xlink:href="../../GObject-2.0/classes/Object.html#GObject.Object" xlink:title="GObject.Object">
+<path fill="none" stroke="#75507b" d="M258,-126C258,-126 190,-126 190,-126 187,-126 184,-123 184,-120 184,-120 184,-114 184,-114 184,-111 187,-108 190,-108 190,-108 258,-108 258,-108 261,-108 264,-111 264,-114 264,-114 264,-120 264,-120 264,-123 261,-126 258,-126"/>
+<text text-anchor="middle" x="224" y="-114.7" font-family="inherit" font-size="8.50">GObject.Object</text>
+</a>
+</g>
+</g>
+<!-- GObject.Object&#45;&gt;Dee.SerializableModel -->
+<g id="edge6" class="edge">
+<title>GObject.Object&#45;&gt;Dee.SerializableModel</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M208.22,-107.88C190.73,-98.87 162.46,-84.32 143.33,-74.47"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="143.92,-72.8 138.67,-72.07 142.31,-75.91 143.92,-72.8"/>
+</g>
+</g>
+</svg>
+</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Subclasses:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="methods">
+<span id="dee-transaction-methods"></span><h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="SerializableModel.html#dee-serializablemodel-methods"><span class="std std-ref">Dee.SerializableModel (3)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (37)</span></a>,     <a class="reference internal" href="Model.html#dee-model-methods"><span class="std std-ref">Dee.Model (48)</span></a>,     <a class="reference internal" href="Serializable.html#dee-serializable-methods"><span class="std std-ref">Dee.Serializable (4)</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Structs:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/ObjectClass.html#gobject-objectclass-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.ObjectClass (5)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="99%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><em>class</em></td>
+<td><a class="reference internal" href="#Dee.Transaction.error_quark" title="Dee.Transaction.error_quark"><code class="xref py py-func docutils literal notranslate"><span class="pre">error_quark</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td><em>class</em></td>
+<td><a class="reference internal" href="#Dee.Transaction.new" title="Dee.Transaction.new"><code class="xref py py-func docutils literal notranslate"><span class="pre">new</span></code></a> (target)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Dee.Transaction.commit" title="Dee.Transaction.commit"><code class="xref py py-func docutils literal notranslate"><span class="pre">commit</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Dee.Transaction.get_target" title="Dee.Transaction.get_target"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_target</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Dee.Transaction.is_committed" title="Dee.Transaction.is_committed"><code class="xref py py-func docutils literal notranslate"><span class="pre">is_committed</span></code></a> ()</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="virtual-methods">
+<span id="dee-transaction-vfuncs"></span><h2>Virtual Methods<a class="headerlink" href="#virtual-methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-vfuncs" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (7)</span></a>,     <a class="reference internal" href="Model.html#dee-model-vfuncs"><span class="std std-ref">Dee.Model (50)</span></a>,     <a class="reference internal" href="Serializable.html#dee-serializable-vfuncs"><span class="std std-ref">Dee.Serializable (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="dee-transaction-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="1%" />
+<col width="1%" />
+<col width="97%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Flags</th>
+<th class="head">Short Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="#Dee.Transaction.props.target" title="Dee.Transaction.props.target"><code class="xref py py-data docutils literal notranslate"><span class="pre">target</span></code></a></td>
+<td><a class="reference internal" href="Model.html#Dee.Model" title="Dee.Model"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Dee.Model</span></code></a></td>
+<td>r/w/co</td>
+<td>Target model</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="signals">
+<span id="dee-transaction-signals"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-signals" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a>,     <a class="reference internal" href="Model.html#dee-model-signals"><span class="std std-ref">Dee.Model (5)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fields">
+<span id="dee-transaction-fields"></span><h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-fields" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a>,     <a class="reference internal" href="Model.html#dee-model-fields"><span class="std std-ref">Dee.Model (5)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="16%" />
+<col width="1%" />
+<col width="1%" />
+<col width="82%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Access</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>parent</td>
+<td><a class="reference internal" href="SerializableModel.html#Dee.SerializableModel" title="Dee.SerializableModel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Dee.SerializableModel</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>priv</td>
+<td><a class="reference internal" href="TransactionPrivate.html#Dee.TransactionPrivate" title="Dee.TransactionPrivate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Dee.TransactionPrivate</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="class-details">
+<h2>Class Details<a class="headerlink" href="#class-details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Dee.Transaction">
+<em class="property">class </em><code class="descclassname">Dee.</code><code class="descname">Transaction</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#Dee.Transaction" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Bases:</th><td class="field-body"><a class="reference internal" href="SerializableModel.html#Dee.SerializableModel" title="Dee.SerializableModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">Dee.SerializableModel</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Abstract:</th><td class="field-body">No</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Structure:</th><td class="field-body"><a class="reference internal" href="TransactionClass.html#Dee.TransactionClass" title="Dee.TransactionClass"><code class="xref py py-class docutils literal notranslate"><span class="pre">Dee.TransactionClass</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>All fields in the <a class="reference internal" href="#Dee.Transaction" title="Dee.Transaction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Dee.Transaction</span></code></a> structure are private and should never be
+accessed directly</p>
+<dl class="classmethod">
+<dt id="Dee.Transaction.error_quark">
+<em class="property">classmethod </em><code class="descname">error_quark</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Dee.Transaction.error_quark" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="Dee.Transaction.new">
+<em class="property">classmethod </em><code class="descname">new</code><span class="sig-paren">(</span><em>target</em><span class="sig-paren">)</span><a class="headerlink" href="#Dee.Transaction.new" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>target</strong> (<a class="reference internal" href="Model.html#Dee.Model" title="Dee.Model"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Dee.Model</span></code></a>) – The <a class="reference internal" href="Model.html#Dee.Model" title="Dee.Model"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Dee.Model</span></code></a> the transaction applies against</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">A newly allocated <a class="reference internal" href="#Dee.Transaction" title="Dee.Transaction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Dee.Transaction</span></code></a>. Free with <a class="reference external" href="../../GObject-2.0/classes/Object.html#GObject.Object.unref" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GObject.Object.unref</span></code></a>() when
+done using it - no matter if you call <a class="reference internal" href="#Dee.Transaction.commit" title="Dee.Transaction.commit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Dee.Transaction.commit</span></code></a>() or not.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#Dee.Transaction" title="Dee.Transaction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Dee.Transaction</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Dee.Transaction.commit">
+<code class="descname">commit</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Dee.Transaction.commit" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference external" href="../../GLib-2.0/classes/Error.html#GLib.Error" title="(in GLib 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLib.Error</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if and only if the transaction successfully applies to <a class="reference internal" href="#Dee.Transaction.props.target" title="Dee.Transaction.props.target"><code class="xref py py-data docutils literal notranslate"><span class="pre">:target</span></code></a>.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Apply a transaction to its target model. After this call the transaction
+is invalidated and must be freed with <a class="reference external" href="../../GObject-2.0/classes/Object.html#GObject.Object.unref" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GObject.Object.unref</span></code></a>().</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Dee.Transaction.get_target">
+<code class="descname">get_target</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Dee.Transaction.get_target" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The target model</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="Model.html#Dee.Model" title="Dee.Model"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Dee.Model</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get the target model of a transaction. This is just a convenience method
+for accessing the <a class="reference internal" href="#Dee.Transaction.props.target" title="Dee.Transaction.props.target"><code class="xref py py-data docutils literal notranslate"><span class="pre">:target</span></code></a> property.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Dee.Transaction.is_committed">
+<code class="descname">is_committed</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Dee.Transaction.is_committed" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if and only if <a class="reference internal" href="#Dee.Transaction.commit" title="Dee.Transaction.commit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Dee.Transaction.commit</span></code></a>() has completed
+successfully on the transaction.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Check if a <a class="reference internal" href="#Dee.Transaction" title="Dee.Transaction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Dee.Transaction</span></code></a> has been committed. This method is mainly for
+debugging and testing purposes.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="property-details">
+<h2>Property Details<a class="headerlink" href="#property-details" title="Permalink to this headline">¶</a></h2>
+<dl class="data">
+<dt id="Dee.Transaction.props.target">
+<code class="descclassname">Dee.Transaction.props.</code><code class="descname">target</code><a class="headerlink" href="#Dee.Transaction.props.target" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">target</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="Model.html#Dee.Model" title="Dee.Model"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Dee.Model</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.CONSTRUCT_ONLY" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CONSTRUCT_ONLY</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Target model</p>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div> 
+
+</body>
+</html>

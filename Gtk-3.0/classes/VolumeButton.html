@@ -1,0 +1,653 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    Gtk.VolumeButton -
+    
+      Classes -
+    
+    Gtk 3.0
+  </title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/css/pgi.css" type="text/css" />
+  
+
+  
+  <script type="text/javascript">
+
+    function openSidebar(element) {
+        window.location.href = element.href + location.hash;
+        return false;
+    }
+
+    function inIframe() {
+        try {
+            return window.self !== window.top;
+        } catch (e) {
+            return true;
+        }
+    }
+
+    function onLoaded() {
+        if(!inIframe()) {
+            var icons = document.getElementsByClassName('open-sidebar');
+
+            for (var i = 0; i < icons.length; i ++) {
+                icons[i].style.display = 'table-cell';
+            }
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', onLoaded, false);
+
+  </script>
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="Gtk 3.0 Python API Docs" href="../index.html"/>
+        <link rel="up" title="Classes" href="../classes.html"/>
+        <link rel="next" title="Gtk.Widget" href="Widget.html"/>
+        <link rel="prev" title="Gtk.Viewport" href="Viewport.html"/> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+<div class="non-fixed-bar">
+<table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#Gtk-3.0/classes/VolumeButton.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Gtk 3.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>Gtk.VolumeButton</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="Viewport.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="Widget.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">Gtk.VolumeButton</a><ul>
+<li><a class="reference internal" href="#example">Example</a></li>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#style-properties">Style Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#property-details">Property Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+<div class="fixed-bar">
+  <table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#Gtk-3.0/classes/VolumeButton.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Gtk 3.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>Gtk.VolumeButton</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="Viewport.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="Widget.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">Gtk.VolumeButton</a><ul>
+<li><a class="reference internal" href="#example">Example</a></li>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#style-properties">Style Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#property-details">Property Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+  <div class="wy-grid-for-nav">
+
+    
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="main">
+            
+  <div class="section" id="gtk-volumebutton">
+<h1>Gtk.VolumeButton<a class="headerlink" href="#gtk-volumebutton" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<svg width="522pt" height="404pt"
+ viewBox="0.00 0.00 521.50 404.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 400)">
+<title>g</title>
+<!-- Atk.ImplementorIface -->
+<g id="node1" class="node">
+<title>Atk.ImplementorIface</title>
+<g id="a_node1"><a xlink:href="../../Atk-1.0/classes/ImplementorIface.html#Atk.ImplementorIface" xlink:title="Atk.ImplementorIface">
+<path fill="none" stroke="#3091d1" d="M242,-342C242,-342 146,-342 146,-342 143,-342 140,-339 140,-336 140,-336 140,-330 140,-330 140,-327 143,-324 146,-324 146,-324 242,-324 242,-324 245,-324 248,-327 248,-330 248,-330 248,-336 248,-336 248,-339 245,-342 242,-342"/>
+<text text-anchor="middle" x="194" y="-330.7" font-family="inherit" font-size="8.50">Atk.ImplementorIface</text>
+</a>
+</g>
+</g>
+<!-- Gtk.Widget -->
+<g id="node14" class="node">
+<title>Gtk.Widget</title>
+<g id="a_node14"><a xlink:href="Widget.html#Gtk.Widget" xlink:title="Gtk.Widget">
+<path fill="none" stroke="#aaaaaa" d="M231,-288C231,-288 179,-288 179,-288 176,-288 173,-285 173,-282 173,-282 173,-276 173,-276 173,-273 176,-270 179,-270 179,-270 231,-270 231,-270 234,-270 237,-273 237,-276 237,-276 237,-282 237,-282 237,-285 234,-288 231,-288"/>
+<text text-anchor="middle" x="205" y="-276.7" font-family="inherit" font-size="8.50">Gtk.Widget</text>
+</a>
+</g>
+</g>
+<!-- Atk.ImplementorIface&#45;&gt;Gtk.Widget -->
+<g id="edge1" class="edge">
+<title>Atk.ImplementorIface&#45;&gt;Gtk.Widget</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M195.72,-323.88C197.45,-315.68 200.16,-302.89 202.2,-293.24"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="203.93,-293.49 203.26,-288.24 200.51,-292.77 203.93,-293.49"/>
+</g>
+<!-- GObject.GInterface -->
+<g id="node2" class="node">
+<title>GObject.GInterface</title>
+<g id="a_node2"><a xlink:href="../../GObject-2.0/classes/GInterface.html#GObject.GInterface" xlink:title="GObject.GInterface">
+<path fill="none" stroke="#3091d1" d="M411,-396C411,-396 325,-396 325,-396 322,-396 319,-393 319,-390 319,-390 319,-384 319,-384 319,-381 322,-378 325,-378 325,-378 411,-378 411,-378 414,-378 417,-381 417,-384 417,-384 417,-390 417,-390 417,-393 414,-396 411,-396"/>
+<text text-anchor="middle" x="368" y="-384.7" font-family="inherit" font-size="8.50">GObject.GInterface</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Atk.ImplementorIface -->
+<g id="edge2" class="edge">
+<title>GObject.GInterface&#45;&gt;Atk.ImplementorIface</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M341.19,-377.99C310.16,-368.71 259.07,-353.45 225.99,-343.56"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="226.13,-341.78 220.84,-342.02 225.13,-345.13 226.13,-341.78"/>
+</g>
+<!-- Gtk.Actionable -->
+<g id="node5" class="node">
+<title>Gtk.Actionable</title>
+<g id="a_node5"><a xlink:href="Actionable.html#Gtk.Actionable" xlink:title="Gtk.Actionable">
+<path fill="none" stroke="#3091d1" d="M370.5,-234C370.5,-234 303.5,-234 303.5,-234 300.5,-234 297.5,-231 297.5,-228 297.5,-228 297.5,-222 297.5,-222 297.5,-219 300.5,-216 303.5,-216 303.5,-216 370.5,-216 370.5,-216 373.5,-216 376.5,-219 376.5,-222 376.5,-222 376.5,-228 376.5,-228 376.5,-231 373.5,-234 370.5,-234"/>
+<text text-anchor="middle" x="337" y="-222.7" font-family="inherit" font-size="8.50">Gtk.Actionable</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Gtk.Actionable -->
+<g id="edge4" class="edge">
+<title>GObject.GInterface&#45;&gt;Gtk.Actionable</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M366.42,-377.85C361.4,-351.96 345.81,-271.47 339.59,-239.39"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="341.28,-238.91 338.61,-234.33 337.85,-239.57 341.28,-238.91"/>
+</g>
+<!-- Gtk.Activatable -->
+<g id="node6" class="node">
+<title>Gtk.Activatable</title>
+<g id="a_node6"><a xlink:href="Activatable.html#Gtk.Activatable" xlink:title="Gtk.Activatable">
+<path fill="none" stroke="#3091d1" d="M440,-180C440,-180 370,-180 370,-180 367,-180 364,-177 364,-174 364,-174 364,-168 364,-168 364,-165 367,-162 370,-162 370,-162 440,-162 440,-162 443,-162 446,-165 446,-168 446,-168 446,-174 446,-174 446,-177 443,-180 440,-180"/>
+<text text-anchor="middle" x="405" y="-168.7" font-family="inherit" font-size="8.50">Gtk.Activatable</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Gtk.Activatable -->
+<g id="edge5" class="edge">
+<title>GObject.GInterface&#45;&gt;Gtk.Activatable</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M369.41,-377.87C374.99,-345.56 395.66,-226.02 402.66,-185.52"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="404.47,-185.36 403.59,-180.14 401.02,-184.76 404.47,-185.36"/>
+</g>
+<!-- Gtk.Buildable -->
+<g id="node8" class="node">
+<title>Gtk.Buildable</title>
+<g id="a_node8"><a xlink:href="Buildable.html#Gtk.Buildable" xlink:title="Gtk.Buildable">
+<path fill="none" stroke="#3091d1" d="M334,-342C334,-342 272,-342 272,-342 269,-342 266,-339 266,-336 266,-336 266,-330 266,-330 266,-327 269,-324 272,-324 272,-324 334,-324 334,-324 337,-324 340,-327 340,-330 340,-330 340,-336 340,-336 340,-339 337,-342 334,-342"/>
+<text text-anchor="middle" x="303" y="-330.7" font-family="inherit" font-size="8.50">Gtk.Buildable</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Gtk.Buildable -->
+<g id="edge3" class="edge">
+<title>GObject.GInterface&#45;&gt;Gtk.Buildable</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M357.84,-377.88C346.94,-369.15 329.52,-355.22 317.25,-345.4"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="318.3,-344 313.3,-342.24 316.11,-346.73 318.3,-344"/>
+</g>
+<!-- Gtk.Orientable -->
+<g id="node11" class="node">
+<title>Gtk.Orientable</title>
+<g id="a_node11"><a xlink:href="Orientable.html#Gtk.Orientable" xlink:title="Gtk.Orientable">
+<path fill="none" stroke="#3091d1" d="M507.5,-288C507.5,-288 440.5,-288 440.5,-288 437.5,-288 434.5,-285 434.5,-282 434.5,-282 434.5,-276 434.5,-276 434.5,-273 437.5,-270 440.5,-270 440.5,-270 507.5,-270 507.5,-270 510.5,-270 513.5,-273 513.5,-276 513.5,-276 513.5,-282 513.5,-282 513.5,-285 510.5,-288 507.5,-288"/>
+<text text-anchor="middle" x="474" y="-276.7" font-family="inherit" font-size="8.50">Gtk.Orientable</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Gtk.Orientable -->
+<g id="edge6" class="edge">
+<title>GObject.GInterface&#45;&gt;Gtk.Orientable</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M378.37,-378C389.16,-369.5 406.36,-355.45 420,-342 436.44,-325.79 453.66,-305.32 464.11,-292.44"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="465.61,-293.37 467.39,-288.38 462.88,-291.17 465.61,-293.37"/>
+</g>
+<!-- GObject.InitiallyUnowned -->
+<g id="node3" class="node">
+<title>GObject.InitiallyUnowned</title>
+<g id="a_node3"><a xlink:href="../../GObject-2.0/classes/InitiallyUnowned.html#GObject.InitiallyUnowned" xlink:title="GObject.InitiallyUnowned">
+<path fill="none" stroke="#75507b" d="M116,-342C116,-342 6,-342 6,-342 3,-342 0,-339 0,-336 0,-336 0,-330 0,-330 0,-327 3,-324 6,-324 6,-324 116,-324 116,-324 119,-324 122,-327 122,-330 122,-330 122,-336 122,-336 122,-339 119,-342 116,-342"/>
+<text text-anchor="middle" x="61" y="-330.7" font-family="inherit" font-size="8.50">GObject.InitiallyUnowned</text>
+</a>
+</g>
+</g>
+<!-- GObject.InitiallyUnowned&#45;&gt;Gtk.Widget -->
+<g id="edge7" class="edge">
+<title>GObject.InitiallyUnowned&#45;&gt;Gtk.Widget</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M83.18,-323.99C108.58,-314.82 150.21,-299.79 177.61,-289.89"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="178.44,-291.45 182.55,-288.11 177.26,-288.16 178.44,-291.45"/>
+</g>
+<!-- GObject.Object -->
+<g id="node4" class="node">
+<title>GObject.Object</title>
+<g id="a_node4"><a xlink:href="../../GObject-2.0/classes/Object.html#GObject.Object" xlink:title="GObject.Object">
+<path fill="none" stroke="#75507b" d="M95,-396C95,-396 27,-396 27,-396 24,-396 21,-393 21,-390 21,-390 21,-384 21,-384 21,-381 24,-378 27,-378 27,-378 95,-378 95,-378 98,-378 101,-381 101,-384 101,-384 101,-390 101,-390 101,-393 98,-396 95,-396"/>
+<text text-anchor="middle" x="61" y="-384.7" font-family="inherit" font-size="8.50">GObject.Object</text>
+</a>
+</g>
+</g>
+<!-- GObject.Object&#45;&gt;GObject.InitiallyUnowned -->
+<g id="edge8" class="edge">
+<title>GObject.Object&#45;&gt;GObject.InitiallyUnowned</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M61,-377.88C61,-369.76 61,-357.13 61,-347.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="62.75,-347.24 61,-342.24 59.25,-347.24 62.75,-347.24"/>
+</g>
+<!-- Gtk.Button -->
+<g id="node9" class="node">
+<title>Gtk.Button</title>
+<g id="a_node9"><a xlink:href="Button.html#Gtk.Button" xlink:title="Gtk.Button">
+<path fill="none" stroke="#75507b" d="M396,-126C396,-126 346,-126 346,-126 343,-126 340,-123 340,-120 340,-120 340,-114 340,-114 340,-111 343,-108 346,-108 346,-108 396,-108 396,-108 399,-108 402,-111 402,-114 402,-114 402,-120 402,-120 402,-123 399,-126 396,-126"/>
+<text text-anchor="middle" x="371" y="-114.7" font-family="inherit" font-size="8.50">Gtk.Button</text>
+</a>
+</g>
+</g>
+<!-- Gtk.Actionable&#45;&gt;Gtk.Button -->
+<g id="edge9" class="edge">
+<title>Gtk.Actionable&#45;&gt;Gtk.Button</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M339.16,-215.92C342.38,-204.04 348.74,-181.18 355,-162 358.43,-151.51 362.72,-139.76 366,-131.05"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="367.76,-131.35 367.89,-126.05 364.48,-130.11 367.76,-131.35"/>
+</g>
+<!-- Gtk.Activatable&#45;&gt;Gtk.Button -->
+<g id="edge10" class="edge">
+<title>Gtk.Activatable&#45;&gt;Gtk.Button</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M399.69,-161.88C394.18,-153.45 385.5,-140.18 379.13,-130.44"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="380.59,-129.47 376.39,-126.24 377.66,-131.38 380.59,-129.47"/>
+</g>
+<!-- Gtk.Bin -->
+<g id="node7" class="node">
+<title>Gtk.Bin</title>
+<g id="a_node7"><a xlink:href="Bin.html#Gtk.Bin" xlink:title="Gtk.Bin">
+<path fill="none" stroke="#aaaaaa" d="M283,-180C283,-180 241,-180 241,-180 238,-180 235,-177 235,-174 235,-174 235,-168 235,-168 235,-165 238,-162 241,-162 241,-162 283,-162 283,-162 286,-162 289,-165 289,-168 289,-168 289,-174 289,-174 289,-177 286,-180 283,-180"/>
+<text text-anchor="middle" x="262" y="-168.7" font-family="inherit" font-size="8.50">Gtk.Bin</text>
+</a>
+</g>
+</g>
+<!-- Gtk.Bin&#45;&gt;Gtk.Button -->
+<g id="edge11" class="edge">
+<title>Gtk.Bin&#45;&gt;Gtk.Button</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M279.03,-161.88C297.99,-152.83 328.67,-138.19 349.33,-128.34"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="350.33,-129.8 354.09,-126.07 348.82,-126.64 350.33,-129.8"/>
+</g>
+<!-- Gtk.Buildable&#45;&gt;Gtk.Widget -->
+<g id="edge12" class="edge">
+<title>Gtk.Buildable&#45;&gt;Gtk.Widget</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M287.69,-323.88C270.71,-314.87 243.29,-300.32 224.72,-290.47"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="225.44,-288.87 220.2,-288.07 223.8,-291.96 225.44,-288.87"/>
+</g>
+<!-- Gtk.ScaleButton -->
+<g id="node12" class="node">
+<title>Gtk.ScaleButton</title>
+<g id="a_node12"><a xlink:href="ScaleButton.html#Gtk.ScaleButton" xlink:title="Gtk.ScaleButton">
+<path fill="none" stroke="#75507b" d="M441.5,-72C441.5,-72 368.5,-72 368.5,-72 365.5,-72 362.5,-69 362.5,-66 362.5,-66 362.5,-60 362.5,-60 362.5,-57 365.5,-54 368.5,-54 368.5,-54 441.5,-54 441.5,-54 444.5,-54 447.5,-57 447.5,-60 447.5,-60 447.5,-66 447.5,-66 447.5,-69 444.5,-72 441.5,-72"/>
+<text text-anchor="middle" x="405" y="-60.7" font-family="inherit" font-size="8.50">Gtk.ScaleButton</text>
+</a>
+</g>
+</g>
+<!-- Gtk.Button&#45;&gt;Gtk.ScaleButton -->
+<g id="edge13" class="edge">
+<title>Gtk.Button&#45;&gt;Gtk.ScaleButton</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M376.31,-107.88C381.82,-99.45 390.5,-86.18 396.87,-76.44"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="398.34,-77.38 399.61,-72.24 395.41,-75.47 398.34,-77.38"/>
+</g>
+<!-- Gtk.Container -->
+<g id="node10" class="node">
+<title>Gtk.Container</title>
+<g id="a_node10"><a xlink:href="Container.html#Gtk.Container" xlink:title="Gtk.Container">
+<path fill="none" stroke="#aaaaaa" d="M261,-234C261,-234 197,-234 197,-234 194,-234 191,-231 191,-228 191,-228 191,-222 191,-222 191,-219 194,-216 197,-216 197,-216 261,-216 261,-216 264,-216 267,-219 267,-222 267,-222 267,-228 267,-228 267,-231 264,-234 261,-234"/>
+<text text-anchor="middle" x="229" y="-222.7" font-family="inherit" font-size="8.50">Gtk.Container</text>
+</a>
+</g>
+</g>
+<!-- Gtk.Container&#45;&gt;Gtk.Bin -->
+<g id="edge14" class="edge">
+<title>Gtk.Container&#45;&gt;Gtk.Bin</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M234.16,-215.88C239.45,-207.53 247.77,-194.42 253.94,-184.7"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="255.57,-185.4 256.77,-180.24 252.61,-183.52 255.57,-185.4"/>
+</g>
+<!-- Gtk.Orientable&#45;&gt;Gtk.ScaleButton -->
+<g id="edge15" class="edge">
+<title>Gtk.Orientable&#45;&gt;Gtk.ScaleButton</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M473.54,-269.92C472.25,-250.75 467.85,-201.17 455,-162 444.39,-129.65 424.31,-94.84 413.1,-76.68"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="414.32,-75.33 410.19,-72.01 411.35,-77.18 414.32,-75.33"/>
+</g>
+<!-- Gtk.VolumeButton -->
+<g id="node13" class="node">
+<title>Gtk.VolumeButton</title>
+<g id="a_node13"><a xlink:href="#Gtk.VolumeButton" xlink:title="Gtk.VolumeButton">
+<path fill="none" stroke="#75507b" d="M446,-18C446,-18 364,-18 364,-18 361,-18 358,-15 358,-12 358,-12 358,-6 358,-6 358,-3 361,0 364,0 364,0 446,0 446,0 449,0 452,-3 452,-6 452,-6 452,-12 452,-12 452,-15 449,-18 446,-18"/>
+<text text-anchor="middle" x="405" y="-6.7" font-family="inherit" font-size="8.50">Gtk.VolumeButton</text>
+</a>
+</g>
+</g>
+<!-- Gtk.ScaleButton&#45;&gt;Gtk.VolumeButton -->
+<g id="edge16" class="edge">
+<title>Gtk.ScaleButton&#45;&gt;Gtk.VolumeButton</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M405,-53.88C405,-45.76 405,-33.13 405,-23.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="406.75,-23.24 405,-18.24 403.25,-23.24 406.75,-23.24"/>
+</g>
+<!-- Gtk.Widget&#45;&gt;Gtk.Container -->
+<g id="edge17" class="edge">
+<title>Gtk.Widget&#45;&gt;Gtk.Container</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M208.75,-269.88C212.57,-261.6 218.54,-248.66 223.01,-238.97"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="224.69,-239.51 225.2,-234.24 221.51,-238.05 224.69,-239.51"/>
+</g>
+</g>
+</svg>
+</p>
+<div class="section" id="example">
+<h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
+<img alt="../_images/VolumeButton.png" src="../_images/VolumeButton.png" />
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Subclasses:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="methods">
+<span id="gtk-volumebutton-methods"></span><h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="ScaleButton.html#gtk-scalebutton-methods"><span class="std std-ref">Gtk.ScaleButton (9)</span></a>,     <a class="reference internal" href="Button.html#gtk-button-methods"><span class="std std-ref">Gtk.Button (29)</span></a>,     <a class="reference internal" href="Bin.html#gtk-bin-methods"><span class="std std-ref">Gtk.Bin (1)</span></a>,     <a class="reference internal" href="Container.html#gtk-container-methods"><span class="std std-ref">Gtk.Container (35)</span></a>,     <a class="reference internal" href="Widget.html#gtk-widget-methods"><span class="std std-ref">Gtk.Widget (278)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (37)</span></a>,     <a class="reference internal" href="Buildable.html#gtk-buildable-methods"><span class="std std-ref">Gtk.Buildable (10)</span></a>,     <a class="reference internal" href="Actionable.html#gtk-actionable-methods"><span class="std std-ref">Gtk.Actionable (5)</span></a>,     <a class="reference internal" href="Activatable.html#gtk-activatable-methods"><span class="std std-ref">Gtk.Activatable (6)</span></a>,     <a class="reference internal" href="Orientable.html#gtk-orientable-methods"><span class="std std-ref">Gtk.Orientable (2)</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Structs:</th><td class="field-body"><a class="reference internal" href="ContainerClass.html#gtk-containerclass-methods"><span class="std std-ref">Gtk.ContainerClass (5)</span></a>,     <a class="reference internal" href="WidgetClass.html#gtk-widgetclass-methods"><span class="std std-ref">Gtk.WidgetClass (12)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/ObjectClass.html#gobject-objectclass-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.ObjectClass (5)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="99%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><em>class</em></td>
+<td><a class="reference internal" href="#Gtk.VolumeButton.new" title="Gtk.VolumeButton.new"><code class="xref py py-func docutils literal notranslate"><span class="pre">new</span></code></a> ()</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="virtual-methods">
+<span id="gtk-volumebutton-vfuncs"></span><h2>Virtual Methods<a class="headerlink" href="#virtual-methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="ScaleButton.html#gtk-scalebutton-vfuncs"><span class="std std-ref">Gtk.ScaleButton (1)</span></a>,     <a class="reference internal" href="Button.html#gtk-button-vfuncs"><span class="std std-ref">Gtk.Button (6)</span></a>,     <a class="reference internal" href="Container.html#gtk-container-vfuncs"><span class="std std-ref">Gtk.Container (10)</span></a>,     <a class="reference internal" href="Widget.html#gtk-widget-vfuncs"><span class="std std-ref">Gtk.Widget (82)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-vfuncs" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (7)</span></a>,     <a class="reference internal" href="Buildable.html#gtk-buildable-vfuncs"><span class="std std-ref">Gtk.Buildable (10)</span></a>,     <a class="reference internal" href="Actionable.html#gtk-actionable-vfuncs"><span class="std std-ref">Gtk.Actionable (4)</span></a>,     <a class="reference internal" href="Activatable.html#gtk-activatable-vfuncs"><span class="std std-ref">Gtk.Activatable (2)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="gtk-volumebutton-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="ScaleButton.html#gtk-scalebutton-props"><span class="std std-ref">Gtk.ScaleButton (4)</span></a>,     <a class="reference internal" href="Button.html#gtk-button-props"><span class="std std-ref">Gtk.Button (9)</span></a>,     <a class="reference internal" href="Container.html#gtk-container-props"><span class="std std-ref">Gtk.Container (3)</span></a>,     <a class="reference internal" href="Widget.html#gtk-widget-props"><span class="std std-ref">Gtk.Widget (39)</span></a>,     <a class="reference internal" href="Actionable.html#gtk-actionable-props"><span class="std std-ref">Gtk.Actionable (2)</span></a>,     <a class="reference internal" href="Activatable.html#gtk-activatable-props"><span class="std std-ref">Gtk.Activatable (2)</span></a>,     <a class="reference internal" href="Orientable.html#gtk-orientable-props"><span class="std std-ref">Gtk.Orientable (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="1%" />
+<col width="1%" />
+<col width="97%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Flags</th>
+<th class="head">Short Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="#Gtk.VolumeButton.props.use_symbolic" title="Gtk.VolumeButton.props.use_symbolic"><code class="xref py py-data docutils literal notranslate"><span class="pre">use-symbolic</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+<td>r/w/c/en</td>
+<td>Whether to use symbolic icons</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="style-properties">
+<span id="gtk-volumebutton-style-props"></span><h2>Style Properties<a class="headerlink" href="#style-properties" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Button.html#gtk-button-style-props"><span class="std std-ref">Gtk.Button (7)</span></a>,     <a class="reference internal" href="Widget.html#gtk-widget-style-props"><span class="std std-ref">Gtk.Widget (17)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="signals">
+<span id="gtk-volumebutton-signals"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="ScaleButton.html#gtk-scalebutton-signals"><span class="std std-ref">Gtk.ScaleButton (3)</span></a>,     <a class="reference internal" href="Button.html#gtk-button-signals"><span class="std std-ref">Gtk.Button (6)</span></a>,     <a class="reference internal" href="Container.html#gtk-container-signals"><span class="std std-ref">Gtk.Container (4)</span></a>,     <a class="reference internal" href="Widget.html#gtk-widget-signals"><span class="std std-ref">Gtk.Widget (69)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-signals" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fields">
+<span id="gtk-volumebutton-fields"></span><h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="ScaleButton.html#gtk-scalebutton-fields"><span class="std std-ref">Gtk.ScaleButton (3)</span></a>,     <a class="reference internal" href="Button.html#gtk-button-fields"><span class="std std-ref">Gtk.Button (6)</span></a>,     <a class="reference internal" href="Container.html#gtk-container-fields"><span class="std std-ref">Gtk.Container (4)</span></a>,     <a class="reference internal" href="Widget.html#gtk-widget-fields"><span class="std std-ref">Gtk.Widget (69)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-fields" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="16%" />
+<col width="1%" />
+<col width="1%" />
+<col width="82%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Access</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>parent</td>
+<td><a class="reference internal" href="ScaleButton.html#Gtk.ScaleButton" title="Gtk.ScaleButton"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ScaleButton</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="class-details">
+<h2>Class Details<a class="headerlink" href="#class-details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Gtk.VolumeButton">
+<em class="property">class </em><code class="descclassname">Gtk.</code><code class="descname">VolumeButton</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#Gtk.VolumeButton" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Bases:</th><td class="field-body"><a class="reference internal" href="ScaleButton.html#Gtk.ScaleButton" title="Gtk.ScaleButton"><code class="xref py py-class docutils literal notranslate"><span class="pre">Gtk.ScaleButton</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Abstract:</th><td class="field-body">No</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Structure:</th><td class="field-body"><a class="reference internal" href="VolumeButtonClass.html#Gtk.VolumeButtonClass" title="Gtk.VolumeButtonClass"><code class="xref py py-class docutils literal notranslate"><span class="pre">Gtk.VolumeButtonClass</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p><a class="reference internal" href="#Gtk.VolumeButton" title="Gtk.VolumeButton"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.VolumeButton</span></code></a> is a subclass of <a class="reference internal" href="ScaleButton.html#Gtk.ScaleButton" title="Gtk.ScaleButton"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ScaleButton</span></code></a> that has
+been tailored for use as a volume control widget with suitable
+icons, tooltips and accessible labels.</p>
+<dl class="classmethod">
+<dt id="Gtk.VolumeButton.new">
+<em class="property">classmethod </em><code class="descname">new</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkvolumebutton.c#L204"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.VolumeButton.new" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a new <a class="reference internal" href="#Gtk.VolumeButton" title="Gtk.VolumeButton"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.VolumeButton</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="Widget.html#Gtk.Widget" title="Gtk.Widget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Widget</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Creates a <a class="reference internal" href="#Gtk.VolumeButton" title="Gtk.VolumeButton"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.VolumeButton</span></code></a>, with a range between 0.0 and 1.0, with
+a stepping of 0.02. Volume values can be obtained and modified using
+the functions from <a class="reference internal" href="ScaleButton.html#Gtk.ScaleButton" title="Gtk.ScaleButton"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ScaleButton</span></code></a>.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.12.</span></p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="property-details">
+<h2>Property Details<a class="headerlink" href="#property-details" title="Permalink to this headline">¶</a></h2>
+<dl class="data">
+<dt id="Gtk.VolumeButton.props.use_symbolic">
+<code class="descclassname">Gtk.VolumeButton.props.</code><code class="descname">use_symbolic</code><a class="headerlink" href="#Gtk.VolumeButton.props.use_symbolic" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">use-symbolic</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.CONSTRUCT" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CONSTRUCT</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.EXPLICIT_NOTIFY" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EXPLICIT_NOTIFY</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Whether to use symbolic icons as the icons. Note that
+if the symbolic icons are not available in your installed
+theme, then the normal (potentially colorful) icons will
+be used.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.0.</span></p>
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div> 
+
+</body>
+</html>

@@ -1,0 +1,436 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    ModemManager.GdbusBearerSkeleton -
+    
+      Classes -
+    
+    ModemManager 1.0
+  </title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/css/pgi.css" type="text/css" />
+  
+
+  
+  <script type="text/javascript">
+
+    function openSidebar(element) {
+        window.location.href = element.href + location.hash;
+        return false;
+    }
+
+    function inIframe() {
+        try {
+            return window.self !== window.top;
+        } catch (e) {
+            return true;
+        }
+    }
+
+    function onLoaded() {
+        if(!inIframe()) {
+            var icons = document.getElementsByClassName('open-sidebar');
+
+            for (var i = 0; i < icons.length; i ++) {
+                icons[i].style.display = 'table-cell';
+            }
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', onLoaded, false);
+
+  </script>
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="ModemManager 1.0 Python API Docs" href="../index.html"/>
+        <link rel="up" title="Classes" href="../classes.html"/>
+        <link rel="next" title="ModemManager.GdbusModem3gppProxy" href="GdbusModem3gppProxy.html"/>
+        <link rel="prev" title="ModemManager.GdbusBearerProxy" href="GdbusBearerProxy.html"/> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+<div class="non-fixed-bar">
+<table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#ModemManager-1.0/classes/GdbusBearerSkeleton.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">ModemManager 1.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>ModemManager.GdbusBearerSkeleton</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="GdbusBearerProxy.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="GdbusModem3gppProxy.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">ModemManager.GdbusBearerSkeleton</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+<div class="fixed-bar">
+  <table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#ModemManager-1.0/classes/GdbusBearerSkeleton.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">ModemManager 1.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>ModemManager.GdbusBearerSkeleton</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="GdbusBearerProxy.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="GdbusModem3gppProxy.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">ModemManager.GdbusBearerSkeleton</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+  <div class="wy-grid-for-nav">
+
+    
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="main">
+            
+  <div class="section" id="modemmanager-gdbusbearerskeleton">
+<h1>ModemManager.GdbusBearerSkeleton<a class="headerlink" href="#modemmanager-gdbusbearerskeleton" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<svg width="300pt" height="188pt"
+ viewBox="0.00 0.00 299.50 188.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 184)">
+<title>g</title>
+<!-- GObject.GInterface -->
+<g id="node1" class="node">
+<title>GObject.GInterface</title>
+<g id="a_node1"><a xlink:href="../../GObject-2.0/classes/GInterface.html#GObject.GInterface" xlink:title="GObject.GInterface">
+<path fill="none" stroke="#3091d1" d="M176,-180C176,-180 90,-180 90,-180 87,-180 84,-177 84,-174 84,-174 84,-168 84,-168 84,-165 87,-162 90,-162 90,-162 176,-162 176,-162 179,-162 182,-165 182,-168 182,-168 182,-174 182,-174 182,-177 179,-180 176,-180"/>
+<text text-anchor="middle" x="133" y="-168.7" font-family="inherit" font-size="8.50">GObject.GInterface</text>
+</a>
+</g>
+</g>
+<!-- Gio.DBusInterface -->
+<g id="node3" class="node">
+<title>Gio.DBusInterface</title>
+<g id="a_node3"><a xlink:href="../../Gio-2.0/classes/DBusInterface.html#Gio.DBusInterface" xlink:title="Gio.DBusInterface">
+<path fill="none" stroke="#3091d1" d="M88,-126C88,-126 6,-126 6,-126 3,-126 0,-123 0,-120 0,-120 0,-114 0,-114 0,-111 3,-108 6,-108 6,-108 88,-108 88,-108 91,-108 94,-111 94,-114 94,-114 94,-120 94,-120 94,-123 91,-126 88,-126"/>
+<text text-anchor="middle" x="47" y="-114.7" font-family="inherit" font-size="8.50">Gio.DBusInterface</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Gio.DBusInterface -->
+<g id="edge1" class="edge">
+<title>GObject.GInterface&#45;&gt;Gio.DBusInterface</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M119.56,-161.88C104.79,-152.95 81.01,-138.56 64.72,-128.72"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="65.53,-127.16 60.34,-126.07 63.72,-130.15 65.53,-127.16"/>
+</g>
+<!-- ModemManager.GdbusBearer -->
+<g id="node5" class="node">
+<title>ModemManager.GdbusBearer</title>
+<g id="a_node5"><a xlink:href="GdbusBearer.html#ModemManager.GdbusBearer" xlink:title="ModemManager.GdbusBearer">
+<path fill="none" stroke="#3091d1" d="M285.5,-72C285.5,-72 154.5,-72 154.5,-72 151.5,-72 148.5,-69 148.5,-66 148.5,-66 148.5,-60 148.5,-60 148.5,-57 151.5,-54 154.5,-54 154.5,-54 285.5,-54 285.5,-54 288.5,-54 291.5,-57 291.5,-60 291.5,-60 291.5,-66 291.5,-66 291.5,-69 288.5,-72 285.5,-72"/>
+<text text-anchor="middle" x="220" y="-60.7" font-family="inherit" font-size="8.50">ModemManager.GdbusBearer</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;ModemManager.GdbusBearer -->
+<g id="edge2" class="edge">
+<title>GObject.GInterface&#45;&gt;ModemManager.GdbusBearer</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M152.4,-161.98C167.69,-154.72 188.46,-142.61 201,-126 211.92,-111.54 216.62,-90.74 218.61,-77.3"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="220.38,-77.22 219.3,-72.03 216.91,-76.76 220.38,-77.22"/>
+</g>
+<!-- GObject.Object -->
+<g id="node2" class="node">
+<title>GObject.Object</title>
+<g id="a_node2"><a xlink:href="../../GObject-2.0/classes/Object.html#GObject.Object" xlink:title="GObject.Object">
+<path fill="none" stroke="#75507b" d="M186,-126C186,-126 118,-126 118,-126 115,-126 112,-123 112,-120 112,-120 112,-114 112,-114 112,-111 115,-108 118,-108 118,-108 186,-108 186,-108 189,-108 192,-111 192,-114 192,-114 192,-120 192,-120 192,-123 189,-126 186,-126"/>
+<text text-anchor="middle" x="152" y="-114.7" font-family="inherit" font-size="8.50">GObject.Object</text>
+</a>
+</g>
+</g>
+<!-- Gio.DBusInterfaceSkeleton -->
+<g id="node4" class="node">
+<title>Gio.DBusInterfaceSkeleton</title>
+<g id="a_node4"><a xlink:href="../../Gio-2.0/classes/DBusInterfaceSkeleton.html#Gio.DBusInterfaceSkeleton" xlink:title="Gio.DBusInterfaceSkeleton">
+<path fill="none" stroke="#aaaaaa" d="M124,-72C124,-72 6,-72 6,-72 3,-72 0,-69 0,-66 0,-66 0,-60 0,-60 0,-57 3,-54 6,-54 6,-54 124,-54 124,-54 127,-54 130,-57 130,-60 130,-60 130,-66 130,-66 130,-69 127,-72 124,-72"/>
+<text text-anchor="middle" x="65" y="-60.7" font-family="inherit" font-size="8.50">Gio.DBusInterfaceSkeleton</text>
+</a>
+</g>
+</g>
+<!-- GObject.Object&#45;&gt;Gio.DBusInterfaceSkeleton -->
+<g id="edge3" class="edge">
+<title>GObject.Object&#45;&gt;Gio.DBusInterfaceSkeleton</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M138.41,-107.88C123.47,-98.95 99.41,-84.56 82.93,-74.72"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="83.69,-73.13 78.5,-72.07 81.89,-76.14 83.69,-73.13"/>
+</g>
+<!-- Gio.DBusInterface&#45;&gt;Gio.DBusInterfaceSkeleton -->
+<g id="edge4" class="edge">
+<title>Gio.DBusInterface&#45;&gt;Gio.DBusInterfaceSkeleton</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M49.81,-107.88C52.68,-99.6 57.16,-86.66 60.51,-76.97"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="62.17,-77.54 62.15,-72.24 58.86,-76.39 62.17,-77.54"/>
+</g>
+<!-- ModemManager.GdbusBearerSkeleton -->
+<g id="node6" class="node">
+<title>ModemManager.GdbusBearerSkeleton</title>
+<g id="a_node6"><a xlink:href="#ModemManager.GdbusBearerSkeleton" xlink:title="ModemManager.GdbusBearerSkeleton">
+<path fill="none" stroke="#75507b" d="M225.5,-18C225.5,-18 58.5,-18 58.5,-18 55.5,-18 52.5,-15 52.5,-12 52.5,-12 52.5,-6 52.5,-6 52.5,-3 55.5,0 58.5,0 58.5,0 225.5,0 225.5,0 228.5,0 231.5,-3 231.5,-6 231.5,-6 231.5,-12 231.5,-12 231.5,-15 228.5,-18 225.5,-18"/>
+<text text-anchor="middle" x="142" y="-6.7" font-family="inherit" font-size="8.50">ModemManager.GdbusBearerSkeleton</text>
+</a>
+</g>
+</g>
+<!-- Gio.DBusInterfaceSkeleton&#45;&gt;ModemManager.GdbusBearerSkeleton -->
+<g id="edge5" class="edge">
+<title>Gio.DBusInterfaceSkeleton&#45;&gt;ModemManager.GdbusBearerSkeleton</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M77.03,-53.88C90.14,-45.02 111.19,-30.81 125.76,-20.97"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="126.89,-22.32 130.05,-18.07 124.93,-19.42 126.89,-22.32"/>
+</g>
+<!-- ModemManager.GdbusBearer&#45;&gt;ModemManager.GdbusBearerSkeleton -->
+<g id="edge6" class="edge">
+<title>ModemManager.GdbusBearer&#45;&gt;ModemManager.GdbusBearerSkeleton</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M207.81,-53.88C194.53,-45.02 173.21,-30.81 158.46,-20.97"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="159.23,-19.39 154.1,-18.07 157.29,-22.3 159.23,-19.39"/>
+</g>
+</g>
+</svg>
+</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Subclasses:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="methods">
+<span id="modemmanager-gdbusbearerskeleton-methods"></span><h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../Gio-2.0/classes/DBusInterfaceSkeleton.html#gio-dbusinterfaceskeleton-methods" title="(in Gio 2.0 v2.0)"><span class="xref std std-ref">Gio.DBusInterfaceSkeleton (12)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (37)</span></a>,     <a class="reference external" href="../../Gio-2.0/classes/DBusInterface.html#gio-dbusinterface-methods" title="(in Gio 2.0 v2.0)"><span class="xref std std-ref">Gio.DBusInterface (3)</span></a>,     <a class="reference internal" href="GdbusBearer.html#modemmanager-gdbusbearer-methods"><span class="std std-ref">ModemManager.GdbusBearer (10)</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Structs:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/ObjectClass.html#gobject-objectclass-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.ObjectClass (5)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="99%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><em>class</em></td>
+<td><a class="reference internal" href="#ModemManager.GdbusBearerSkeleton.new" title="ModemManager.GdbusBearerSkeleton.new"><code class="xref py py-func docutils literal notranslate"><span class="pre">new</span></code></a> ()</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="virtual-methods">
+<span id="modemmanager-gdbusbearerskeleton-vfuncs"></span><h2>Virtual Methods<a class="headerlink" href="#virtual-methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../Gio-2.0/classes/DBusInterfaceSkeleton.html#gio-dbusinterfaceskeleton-vfuncs" title="(in Gio 2.0 v2.0)"><span class="xref std std-ref">Gio.DBusInterfaceSkeleton (4)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-vfuncs" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (7)</span></a>,     <a class="reference external" href="../../Gio-2.0/classes/DBusInterface.html#gio-dbusinterface-vfuncs" title="(in Gio 2.0 v2.0)"><span class="xref std std-ref">Gio.DBusInterface (3)</span></a>,     <a class="reference internal" href="GdbusBearer.html#modemmanager-gdbusbearer-vfuncs"><span class="std std-ref">ModemManager.GdbusBearer (2)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="modemmanager-gdbusbearerskeleton-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../Gio-2.0/classes/DBusInterfaceSkeleton.html#gio-dbusinterfaceskeleton-props" title="(in Gio 2.0 v2.0)"><span class="xref std std-ref">Gio.DBusInterfaceSkeleton (1)</span></a>,     <a class="reference internal" href="GdbusBearer.html#modemmanager-gdbusbearer-props"><span class="std std-ref">ModemManager.GdbusBearer (9)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="signals">
+<span id="modemmanager-gdbusbearerskeleton-signals"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../Gio-2.0/classes/DBusInterfaceSkeleton.html#gio-dbusinterfaceskeleton-signals" title="(in Gio 2.0 v2.0)"><span class="xref std std-ref">Gio.DBusInterfaceSkeleton (1)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-signals" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a>,     <a class="reference internal" href="GdbusBearer.html#modemmanager-gdbusbearer-signals"><span class="std std-ref">ModemManager.GdbusBearer (2)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fields">
+<span id="modemmanager-gdbusbearerskeleton-fields"></span><h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../Gio-2.0/classes/DBusInterfaceSkeleton.html#gio-dbusinterfaceskeleton-fields" title="(in Gio 2.0 v2.0)"><span class="xref std std-ref">Gio.DBusInterfaceSkeleton (1)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-fields" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a>,     <a class="reference internal" href="GdbusBearer.html#modemmanager-gdbusbearer-fields"><span class="std std-ref">ModemManager.GdbusBearer (2)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="16%" />
+<col width="1%" />
+<col width="1%" />
+<col width="82%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Access</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>parent_instance</td>
+<td><a class="reference external" href="../../Gio-2.0/classes/DBusInterfaceSkeleton.html#Gio.DBusInterfaceSkeleton" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.DBusInterfaceSkeleton</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="class-details">
+<h2>Class Details<a class="headerlink" href="#class-details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="ModemManager.GdbusBearerSkeleton">
+<em class="property">class </em><code class="descclassname">ModemManager.</code><code class="descname">GdbusBearerSkeleton</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#ModemManager.GdbusBearerSkeleton" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Bases:</th><td class="field-body"><a class="reference external" href="../../Gio-2.0/classes/DBusInterfaceSkeleton.html#Gio.DBusInterfaceSkeleton" title="(in Gio 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Gio.DBusInterfaceSkeleton</span></code></a>,         <a class="reference internal" href="GdbusBearer.html#ModemManager.GdbusBearer" title="ModemManager.GdbusBearer"><code class="xref py py-class docutils literal notranslate"><span class="pre">ModemManager.GdbusBearer</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Abstract:</th><td class="field-body">No</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Structure:</th><td class="field-body"><a class="reference internal" href="GdbusBearerSkeletonClass.html#ModemManager.GdbusBearerSkeletonClass" title="ModemManager.GdbusBearerSkeletonClass"><code class="xref py py-class docutils literal notranslate"><span class="pre">ModemManager.GdbusBearerSkeletonClass</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The <a class="reference internal" href="#ModemManager.GdbusBearerSkeleton" title="ModemManager.GdbusBearerSkeleton"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.GdbusBearerSkeleton</span></code></a> structure contains only private data and should only be accessed using the provided API.</p>
+<dl class="classmethod">
+<dt id="ModemManager.GdbusBearerSkeleton.new">
+<em class="property">classmethod </em><code class="descname">new</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ModemManager.GdbusBearerSkeleton.new" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The skeleton object.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#ModemManager.GdbusBearerSkeleton" title="ModemManager.GdbusBearerSkeleton"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.GdbusBearerSkeleton</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Creates a skeleton object for the D-Bus interface ‘org.freedesktop.ModemManager1.Bearer [gdbus-interface-org-freedesktop-ModemManager1-Bearer.top_of_page]’.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div> 
+
+</body>
+</html>

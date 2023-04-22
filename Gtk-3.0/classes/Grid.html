@@ -1,0 +1,1161 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    Gtk.Grid -
+    
+      Classes -
+    
+    Gtk 3.0
+  </title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/css/pgi.css" type="text/css" />
+  
+
+  
+  <script type="text/javascript">
+
+    function openSidebar(element) {
+        window.location.href = element.href + location.hash;
+        return false;
+    }
+
+    function inIframe() {
+        try {
+            return window.self !== window.top;
+        } catch (e) {
+            return true;
+        }
+    }
+
+    function onLoaded() {
+        if(!inIframe()) {
+            var icons = document.getElementsByClassName('open-sidebar');
+
+            for (var i = 0; i < icons.length; i ++) {
+                icons[i].style.display = 'table-cell';
+            }
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', onLoaded, false);
+
+  </script>
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="Gtk 3.0 Python API Docs" href="../index.html"/>
+        <link rel="up" title="Classes" href="../classes.html"/>
+        <link rel="next" title="Gtk.HBox" href="HBox.html"/>
+        <link rel="prev" title="Gtk.GestureZoom" href="GestureZoom.html"/> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+<div class="non-fixed-bar">
+<table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#Gtk-3.0/classes/Grid.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Gtk 3.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>Gtk.Grid</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="GestureZoom.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="HBox.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">Gtk.Grid</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#child-properties">Child Properties</a></li>
+<li><a class="reference internal" href="#style-properties">Style Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#property-details">Property Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+<div class="fixed-bar">
+  <table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#Gtk-3.0/classes/Grid.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Gtk 3.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>Gtk.Grid</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="GestureZoom.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="HBox.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">Gtk.Grid</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#child-properties">Child Properties</a></li>
+<li><a class="reference internal" href="#style-properties">Style Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#property-details">Property Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+  <div class="wy-grid-for-nav">
+
+    
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="main">
+            
+  <div class="section" id="gtk-grid">
+<h1>Gtk.Grid<a class="headerlink" href="#gtk-grid" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<svg width="374pt" height="242pt"
+ viewBox="0.00 0.00 373.50 242.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 238)">
+<title>g</title>
+<!-- Atk.ImplementorIface -->
+<g id="node1" class="node">
+<title>Atk.ImplementorIface</title>
+<g id="a_node1"><a xlink:href="../../Atk-1.0/classes/ImplementorIface.html#Atk.ImplementorIface" xlink:title="Atk.ImplementorIface">
+<path fill="none" stroke="#3091d1" d="M219.5,-180C219.5,-180 123.5,-180 123.5,-180 120.5,-180 117.5,-177 117.5,-174 117.5,-174 117.5,-168 117.5,-168 117.5,-165 120.5,-162 123.5,-162 123.5,-162 219.5,-162 219.5,-162 222.5,-162 225.5,-165 225.5,-168 225.5,-168 225.5,-174 225.5,-174 225.5,-177 222.5,-180 219.5,-180"/>
+<text text-anchor="middle" x="171.5" y="-168.7" font-family="inherit" font-size="8.50">Atk.ImplementorIface</text>
+</a>
+</g>
+</g>
+<!-- Gtk.Widget -->
+<g id="node9" class="node">
+<title>Gtk.Widget</title>
+<g id="a_node9"><a xlink:href="Widget.html#Gtk.Widget" xlink:title="Gtk.Widget">
+<path fill="none" stroke="#aaaaaa" d="M176.5,-126C176.5,-126 124.5,-126 124.5,-126 121.5,-126 118.5,-123 118.5,-120 118.5,-120 118.5,-114 118.5,-114 118.5,-111 121.5,-108 124.5,-108 124.5,-108 176.5,-108 176.5,-108 179.5,-108 182.5,-111 182.5,-114 182.5,-114 182.5,-120 182.5,-120 182.5,-123 179.5,-126 176.5,-126"/>
+<text text-anchor="middle" x="150.5" y="-114.7" font-family="inherit" font-size="8.50">Gtk.Widget</text>
+</a>
+</g>
+</g>
+<!-- Atk.ImplementorIface&#45;&gt;Gtk.Widget -->
+<g id="edge1" class="edge">
+<title>Atk.ImplementorIface&#45;&gt;Gtk.Widget</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M168.22,-161.88C164.88,-153.6 159.65,-140.66 155.74,-130.97"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="157.32,-130.22 153.83,-126.24 154.08,-131.53 157.32,-130.22"/>
+</g>
+<!-- GObject.GInterface -->
+<g id="node2" class="node">
+<title>GObject.GInterface</title>
+<g id="a_node2"><a xlink:href="../../GObject-2.0/classes/GInterface.html#GObject.GInterface" xlink:title="GObject.GInterface">
+<path fill="none" stroke="#3091d1" d="M105.5,-234C105.5,-234 19.5,-234 19.5,-234 16.5,-234 13.5,-231 13.5,-228 13.5,-228 13.5,-222 13.5,-222 13.5,-219 16.5,-216 19.5,-216 19.5,-216 105.5,-216 105.5,-216 108.5,-216 111.5,-219 111.5,-222 111.5,-222 111.5,-228 111.5,-228 111.5,-231 108.5,-234 105.5,-234"/>
+<text text-anchor="middle" x="62.5" y="-222.7" font-family="inherit" font-size="8.50">GObject.GInterface</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Atk.ImplementorIface -->
+<g id="edge2" class="edge">
+<title>GObject.GInterface&#45;&gt;Atk.ImplementorIface</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M79.53,-215.88C98.49,-206.83 129.17,-192.19 149.83,-182.34"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="150.83,-183.8 154.59,-180.07 149.32,-180.64 150.83,-183.8"/>
+</g>
+<!-- Gtk.Buildable -->
+<g id="node5" class="node">
+<title>Gtk.Buildable</title>
+<g id="a_node5"><a xlink:href="Buildable.html#Gtk.Buildable" xlink:title="Gtk.Buildable">
+<path fill="none" stroke="#3091d1" d="M93.5,-180C93.5,-180 31.5,-180 31.5,-180 28.5,-180 25.5,-177 25.5,-174 25.5,-174 25.5,-168 25.5,-168 25.5,-165 28.5,-162 31.5,-162 31.5,-162 93.5,-162 93.5,-162 96.5,-162 99.5,-165 99.5,-168 99.5,-168 99.5,-174 99.5,-174 99.5,-177 96.5,-180 93.5,-180"/>
+<text text-anchor="middle" x="62.5" y="-168.7" font-family="inherit" font-size="8.50">Gtk.Buildable</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Gtk.Buildable -->
+<g id="edge3" class="edge">
+<title>GObject.GInterface&#45;&gt;Gtk.Buildable</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M62.5,-215.88C62.5,-207.76 62.5,-195.13 62.5,-185.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="64.25,-185.24 62.5,-180.24 60.75,-185.24 64.25,-185.24"/>
+</g>
+<!-- Gtk.Orientable -->
+<g id="node8" class="node">
+<title>Gtk.Orientable</title>
+<g id="a_node8"><a xlink:href="Orientable.html#Gtk.Orientable" xlink:title="Gtk.Orientable">
+<path fill="none" stroke="#3091d1" d="M73,-126C73,-126 6,-126 6,-126 3,-126 0,-123 0,-120 0,-120 0,-114 0,-114 0,-111 3,-108 6,-108 6,-108 73,-108 73,-108 76,-108 79,-111 79,-114 79,-114 79,-120 79,-120 79,-123 76,-126 73,-126"/>
+<text text-anchor="middle" x="39.5" y="-114.7" font-family="inherit" font-size="8.50">Gtk.Orientable</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Gtk.Orientable -->
+<g id="edge4" class="edge">
+<title>GObject.GInterface&#45;&gt;Gtk.Orientable</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M49.16,-215.76C38.08,-208.06 23.1,-195.45 16.5,-180 9.27,-163.08 20.11,-143.03 29.23,-130.42"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="30.86,-131.17 32.48,-126.12 28.06,-129.06 30.86,-131.17"/>
+</g>
+<!-- GObject.InitiallyUnowned -->
+<g id="node3" class="node">
+<title>GObject.InitiallyUnowned</title>
+<g id="a_node3"><a xlink:href="../../GObject-2.0/classes/InitiallyUnowned.html#GObject.InitiallyUnowned" xlink:title="GObject.InitiallyUnowned">
+<path fill="none" stroke="#75507b" d="M359.5,-180C359.5,-180 249.5,-180 249.5,-180 246.5,-180 243.5,-177 243.5,-174 243.5,-174 243.5,-168 243.5,-168 243.5,-165 246.5,-162 249.5,-162 249.5,-162 359.5,-162 359.5,-162 362.5,-162 365.5,-165 365.5,-168 365.5,-168 365.5,-174 365.5,-174 365.5,-177 362.5,-180 359.5,-180"/>
+<text text-anchor="middle" x="304.5" y="-168.7" font-family="inherit" font-size="8.50">GObject.InitiallyUnowned</text>
+</a>
+</g>
+</g>
+<!-- GObject.InitiallyUnowned&#45;&gt;Gtk.Widget -->
+<g id="edge5" class="edge">
+<title>GObject.InitiallyUnowned&#45;&gt;Gtk.Widget</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M280.77,-161.99C253.42,-152.75 208.46,-137.57 179.17,-127.68"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="179.55,-125.96 174.25,-126.02 178.43,-129.28 179.55,-125.96"/>
+</g>
+<!-- GObject.Object -->
+<g id="node4" class="node">
+<title>GObject.Object</title>
+<g id="a_node4"><a xlink:href="../../GObject-2.0/classes/Object.html#GObject.Object" xlink:title="GObject.Object">
+<path fill="none" stroke="#75507b" d="M338.5,-234C338.5,-234 270.5,-234 270.5,-234 267.5,-234 264.5,-231 264.5,-228 264.5,-228 264.5,-222 264.5,-222 264.5,-219 267.5,-216 270.5,-216 270.5,-216 338.5,-216 338.5,-216 341.5,-216 344.5,-219 344.5,-222 344.5,-222 344.5,-228 344.5,-228 344.5,-231 341.5,-234 338.5,-234"/>
+<text text-anchor="middle" x="304.5" y="-222.7" font-family="inherit" font-size="8.50">GObject.Object</text>
+</a>
+</g>
+</g>
+<!-- GObject.Object&#45;&gt;GObject.InitiallyUnowned -->
+<g id="edge6" class="edge">
+<title>GObject.Object&#45;&gt;GObject.InitiallyUnowned</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M304.5,-215.88C304.5,-207.76 304.5,-195.13 304.5,-185.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="306.25,-185.24 304.5,-180.24 302.75,-185.24 306.25,-185.24"/>
+</g>
+<!-- Gtk.Buildable&#45;&gt;Gtk.Widget -->
+<g id="edge7" class="edge">
+<title>Gtk.Buildable&#45;&gt;Gtk.Widget</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M76.25,-161.88C91.36,-152.95 115.7,-138.56 132.36,-128.72"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="133.43,-130.12 136.85,-126.07 131.65,-127.11 133.43,-130.12"/>
+</g>
+<!-- Gtk.Container -->
+<g id="node6" class="node">
+<title>Gtk.Container</title>
+<g id="a_node6"><a xlink:href="Container.html#Gtk.Container" xlink:title="Gtk.Container">
+<path fill="none" stroke="#aaaaaa" d="M155.5,-72C155.5,-72 91.5,-72 91.5,-72 88.5,-72 85.5,-69 85.5,-66 85.5,-66 85.5,-60 85.5,-60 85.5,-57 88.5,-54 91.5,-54 91.5,-54 155.5,-54 155.5,-54 158.5,-54 161.5,-57 161.5,-60 161.5,-60 161.5,-66 161.5,-66 161.5,-69 158.5,-72 155.5,-72"/>
+<text text-anchor="middle" x="123.5" y="-60.7" font-family="inherit" font-size="8.50">Gtk.Container</text>
+</a>
+</g>
+</g>
+<!-- Gtk.Grid -->
+<g id="node7" class="node">
+<title>Gtk.Grid</title>
+<g id="a_node7"><a xlink:href="#Gtk.Grid" xlink:title="Gtk.Grid">
+<path fill="none" stroke="#75507b" d="M105.5,-18C105.5,-18 63.5,-18 63.5,-18 60.5,-18 57.5,-15 57.5,-12 57.5,-12 57.5,-6 57.5,-6 57.5,-3 60.5,0 63.5,0 63.5,0 105.5,0 105.5,0 108.5,0 111.5,-3 111.5,-6 111.5,-6 111.5,-12 111.5,-12 111.5,-15 108.5,-18 105.5,-18"/>
+<text text-anchor="middle" x="84.5" y="-6.7" font-family="inherit" font-size="8.50">Gtk.Grid</text>
+</a>
+</g>
+</g>
+<!-- Gtk.Container&#45;&gt;Gtk.Grid -->
+<g id="edge8" class="edge">
+<title>Gtk.Container&#45;&gt;Gtk.Grid</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M117.41,-53.88C111.09,-45.45 101.14,-32.18 93.83,-22.44"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="95.08,-21.19 90.68,-18.24 92.28,-23.29 95.08,-21.19"/>
+</g>
+<!-- Gtk.Orientable&#45;&gt;Gtk.Grid -->
+<g id="edge9" class="edge">
+<title>Gtk.Orientable&#45;&gt;Gtk.Grid</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M43.03,-107.68C50.82,-89.34 69.52,-45.28 78.92,-23.15"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="80.64,-23.57 80.99,-18.28 77.42,-22.2 80.64,-23.57"/>
+</g>
+<!-- Gtk.Widget&#45;&gt;Gtk.Container -->
+<g id="edge10" class="edge">
+<title>Gtk.Widget&#45;&gt;Gtk.Container</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M146.28,-107.88C141.95,-99.53 135.14,-86.42 130.1,-76.7"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="131.64,-75.87 127.78,-72.24 128.53,-77.48 131.64,-75.87"/>
+</g>
+</g>
+</svg>
+</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Subclasses:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="methods">
+<span id="gtk-grid-methods"></span><h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Container.html#gtk-container-methods"><span class="std std-ref">Gtk.Container (35)</span></a>,     <a class="reference internal" href="Widget.html#gtk-widget-methods"><span class="std std-ref">Gtk.Widget (278)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (37)</span></a>,     <a class="reference internal" href="Buildable.html#gtk-buildable-methods"><span class="std std-ref">Gtk.Buildable (10)</span></a>,     <a class="reference internal" href="Orientable.html#gtk-orientable-methods"><span class="std std-ref">Gtk.Orientable (2)</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Structs:</th><td class="field-body"><a class="reference internal" href="ContainerClass.html#gtk-containerclass-methods"><span class="std std-ref">Gtk.ContainerClass (5)</span></a>,     <a class="reference internal" href="WidgetClass.html#gtk-widgetclass-methods"><span class="std std-ref">Gtk.WidgetClass (12)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/ObjectClass.html#gobject-objectclass-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.ObjectClass (5)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="99%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><em>class</em></td>
+<td><a class="reference internal" href="#Gtk.Grid.new" title="Gtk.Grid.new"><code class="xref py py-func docutils literal notranslate"><span class="pre">new</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.Grid.attach" title="Gtk.Grid.attach"><code class="xref py py-func docutils literal notranslate"><span class="pre">attach</span></code></a> (child, left, top, width, height)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.Grid.attach_next_to" title="Gtk.Grid.attach_next_to"><code class="xref py py-func docutils literal notranslate"><span class="pre">attach_next_to</span></code></a> (child, sibling, side, width, height)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.Grid.get_baseline_row" title="Gtk.Grid.get_baseline_row"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_baseline_row</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.Grid.get_child_at" title="Gtk.Grid.get_child_at"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_child_at</span></code></a> (left, top)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.Grid.get_column_homogeneous" title="Gtk.Grid.get_column_homogeneous"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_column_homogeneous</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.Grid.get_column_spacing" title="Gtk.Grid.get_column_spacing"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_column_spacing</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.Grid.get_row_baseline_position" title="Gtk.Grid.get_row_baseline_position"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_row_baseline_position</span></code></a> (row)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.Grid.get_row_homogeneous" title="Gtk.Grid.get_row_homogeneous"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_row_homogeneous</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.Grid.get_row_spacing" title="Gtk.Grid.get_row_spacing"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_row_spacing</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.Grid.insert_column" title="Gtk.Grid.insert_column"><code class="xref py py-func docutils literal notranslate"><span class="pre">insert_column</span></code></a> (position)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.Grid.insert_next_to" title="Gtk.Grid.insert_next_to"><code class="xref py py-func docutils literal notranslate"><span class="pre">insert_next_to</span></code></a> (sibling, side)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.Grid.insert_row" title="Gtk.Grid.insert_row"><code class="xref py py-func docutils literal notranslate"><span class="pre">insert_row</span></code></a> (position)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.Grid.remove_column" title="Gtk.Grid.remove_column"><code class="xref py py-func docutils literal notranslate"><span class="pre">remove_column</span></code></a> (position)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.Grid.remove_row" title="Gtk.Grid.remove_row"><code class="xref py py-func docutils literal notranslate"><span class="pre">remove_row</span></code></a> (position)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.Grid.set_baseline_row" title="Gtk.Grid.set_baseline_row"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_baseline_row</span></code></a> (row)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.Grid.set_column_homogeneous" title="Gtk.Grid.set_column_homogeneous"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_column_homogeneous</span></code></a> (homogeneous)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.Grid.set_column_spacing" title="Gtk.Grid.set_column_spacing"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_column_spacing</span></code></a> (spacing)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.Grid.set_row_baseline_position" title="Gtk.Grid.set_row_baseline_position"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_row_baseline_position</span></code></a> (row, pos)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.Grid.set_row_homogeneous" title="Gtk.Grid.set_row_homogeneous"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_row_homogeneous</span></code></a> (homogeneous)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.Grid.set_row_spacing" title="Gtk.Grid.set_row_spacing"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_row_spacing</span></code></a> (spacing)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="virtual-methods">
+<span id="gtk-grid-vfuncs"></span><h2>Virtual Methods<a class="headerlink" href="#virtual-methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Container.html#gtk-container-vfuncs"><span class="std std-ref">Gtk.Container (10)</span></a>,     <a class="reference internal" href="Widget.html#gtk-widget-vfuncs"><span class="std std-ref">Gtk.Widget (82)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-vfuncs" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (7)</span></a>,     <a class="reference internal" href="Buildable.html#gtk-buildable-vfuncs"><span class="std std-ref">Gtk.Buildable (10)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="gtk-grid-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Container.html#gtk-container-props"><span class="std std-ref">Gtk.Container (3)</span></a>,     <a class="reference internal" href="Widget.html#gtk-widget-props"><span class="std std-ref">Gtk.Widget (39)</span></a>,     <a class="reference internal" href="Orientable.html#gtk-orientable-props"><span class="std std-ref">Gtk.Orientable (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="1%" />
+<col width="1%" />
+<col width="97%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Flags</th>
+<th class="head">Short Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="#Gtk.Grid.props.baseline_row" title="Gtk.Grid.props.baseline_row"><code class="xref py py-data docutils literal notranslate"><span class="pre">baseline-row</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+<td>r/w/en</td>
+<td>The row to align the to the baseline when valign is <a class="reference internal" href="../enums.html#Gtk.Align.BASELINE" title="Gtk.Align.BASELINE"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Align.BASELINE</span></code></a></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#Gtk.Grid.props.column_homogeneous" title="Gtk.Grid.props.column_homogeneous"><code class="xref py py-data docutils literal notranslate"><span class="pre">column-homogeneous</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+<td>r/w/en</td>
+<td>If <a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a>, the columns are all the same width</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#Gtk.Grid.props.column_spacing" title="Gtk.Grid.props.column_spacing"><code class="xref py py-data docutils literal notranslate"><span class="pre">column-spacing</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+<td>r/w/en</td>
+<td>The amount of space between two consecutive columns</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#Gtk.Grid.props.row_homogeneous" title="Gtk.Grid.props.row_homogeneous"><code class="xref py py-data docutils literal notranslate"><span class="pre">row-homogeneous</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+<td>r/w/en</td>
+<td>If <a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a>, the rows are all the same height</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#Gtk.Grid.props.row_spacing" title="Gtk.Grid.props.row_spacing"><code class="xref py py-data docutils literal notranslate"><span class="pre">row-spacing</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+<td>r/w/en</td>
+<td>The amount of space between two consecutive rows</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="child-properties">
+<span id="gtk-grid-child-props"></span><h2>Child Properties<a class="headerlink" href="#child-properties" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="1%" />
+<col width="1%" />
+<col width="1%" />
+<col width="96%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Default</th>
+<th class="head">Flags</th>
+<th class="head">Short Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">height</span></code></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+<td><code class="docutils literal notranslate"><span class="pre">1</span></code></td>
+<td>r/w</td>
+<td>The number of rows that a child spans</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">left-attach</span></code></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+<td><code class="docutils literal notranslate"><span class="pre">0</span></code></td>
+<td>r/w</td>
+<td>The column number to attach the left side of the child to</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">top-attach</span></code></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+<td><code class="docutils literal notranslate"><span class="pre">0</span></code></td>
+<td>r/w</td>
+<td>The row number to attach the top side of a child widget to</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">width</span></code></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+<td><code class="docutils literal notranslate"><span class="pre">1</span></code></td>
+<td>r/w</td>
+<td>The number of columns that a child spans</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="style-properties">
+<span id="gtk-grid-style-props"></span><h2>Style Properties<a class="headerlink" href="#style-properties" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Widget.html#gtk-widget-style-props"><span class="std std-ref">Gtk.Widget (17)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="signals">
+<span id="gtk-grid-signals"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Container.html#gtk-container-signals"><span class="std std-ref">Gtk.Container (4)</span></a>,     <a class="reference internal" href="Widget.html#gtk-widget-signals"><span class="std std-ref">Gtk.Widget (69)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-signals" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fields">
+<span id="gtk-grid-fields"></span><h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Container.html#gtk-container-fields"><span class="std std-ref">Gtk.Container (4)</span></a>,     <a class="reference internal" href="Widget.html#gtk-widget-fields"><span class="std std-ref">Gtk.Widget (69)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-fields" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="16%" />
+<col width="1%" />
+<col width="1%" />
+<col width="82%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Access</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>container</td>
+<td><a class="reference internal" href="Container.html#Gtk.Container" title="Gtk.Container"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Container</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="class-details">
+<h2>Class Details<a class="headerlink" href="#class-details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Gtk.Grid">
+<em class="property">class </em><code class="descclassname">Gtk.</code><code class="descname">Grid</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#Gtk.Grid" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Bases:</th><td class="field-body"><a class="reference internal" href="Container.html#Gtk.Container" title="Gtk.Container"><code class="xref py py-class docutils literal notranslate"><span class="pre">Gtk.Container</span></code></a>,         <a class="reference internal" href="Orientable.html#Gtk.Orientable" title="Gtk.Orientable"><code class="xref py py-class docutils literal notranslate"><span class="pre">Gtk.Orientable</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Abstract:</th><td class="field-body">No</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Structure:</th><td class="field-body"><a class="reference internal" href="GridClass.html#Gtk.GridClass" title="Gtk.GridClass"><code class="xref py py-class docutils literal notranslate"><span class="pre">Gtk.GridClass</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p><a class="reference internal" href="#Gtk.Grid" title="Gtk.Grid"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Grid</span></code></a> is a container which arranges its child widgets in
+rows and columns, with arbitrary positions and horizontal/vertical spans.</p>
+<p>Children are added using <a class="reference internal" href="#Gtk.Grid.attach" title="Gtk.Grid.attach"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Grid.attach</span></code></a>(). They can span multiple
+rows or columns. It is also possible to add a child next to an
+existing child, using <a class="reference internal" href="#Gtk.Grid.attach_next_to" title="Gtk.Grid.attach_next_to"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Grid.attach_next_to</span></code></a>(). The behaviour of
+<a class="reference internal" href="#Gtk.Grid" title="Gtk.Grid"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Grid</span></code></a> when several children occupy the same grid cell is undefined.</p>
+<p><a class="reference internal" href="#Gtk.Grid" title="Gtk.Grid"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Grid</span></code></a> can be used like a <a class="reference internal" href="Box.html#Gtk.Box" title="Gtk.Box"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Box</span></code></a> by just using <a class="reference internal" href="Container.html#Gtk.Container.add" title="Gtk.Container.add"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Container.add</span></code></a>(),
+which will place children next to each other in the direction determined
+by the <a class="reference internal" href="Orientable.html#Gtk.Orientable" title="Gtk.Orientable"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Orientable</span></code></a> <a class="reference internal" href="Orientable.html#Gtk.Orientable.props.orientation" title="Gtk.Orientable.props.orientation"><code class="xref py py-data docutils literal notranslate"><span class="pre">:orientation</span></code></a> property. However, if all you want is a
+single row or column, then <a class="reference internal" href="Box.html#Gtk.Box" title="Gtk.Box"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Box</span></code></a> is the preferred widget.</p>
+<dl class="docutils">
+<dt>CSS nodes</dt>
+<dd></dd>
+</dl>
+<p><a class="reference internal" href="#Gtk.Grid" title="Gtk.Grid"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Grid</span></code></a> uses a single CSS node with name grid.</p>
+<dl class="classmethod">
+<dt id="Gtk.Grid.new">
+<em class="property">classmethod </em><code class="descname">new</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkgrid.c#L1865"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.Grid.new" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the new <a class="reference internal" href="#Gtk.Grid" title="Gtk.Grid"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Grid</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="Widget.html#Gtk.Widget" title="Gtk.Widget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Widget</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Creates a new grid widget.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.Grid.attach">
+<code class="descname">attach</code><span class="sig-paren">(</span><em>child</em>, <em>left</em>, <em>top</em>, <em>width</em>, <em>height</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkgrid.c#L1891"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.Grid.attach" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>child</strong> (<a class="reference internal" href="Widget.html#Gtk.Widget" title="Gtk.Widget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Widget</span></code></a>) – the widget to add</li>
+<li><strong>left</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – the column number to attach the left side of <cite>child</cite> to</li>
+<li><strong>top</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – the row number to attach the top side of <cite>child</cite> to</li>
+<li><strong>width</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – the number of columns that <cite>child</cite> will span</li>
+<li><strong>height</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – the number of rows that <cite>child</cite> will span</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Adds a widget to the grid.</p>
+<p>The position of <cite>child</cite> is determined by <cite>left</cite> and <cite>top</cite>. The
+number of “cells” that <cite>child</cite> will occupy is determined by
+<cite>width</cite> and <cite>height</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.Grid.attach_next_to">
+<code class="descname">attach_next_to</code><span class="sig-paren">(</span><em>child</em>, <em>sibling</em>, <em>side</em>, <em>width</em>, <em>height</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkgrid.c#L1928"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.Grid.attach_next_to" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>child</strong> (<a class="reference internal" href="Widget.html#Gtk.Widget" title="Gtk.Widget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Widget</span></code></a>) – the widget to add</li>
+<li><strong>sibling</strong> (<a class="reference internal" href="Widget.html#Gtk.Widget" title="Gtk.Widget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Widget</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – the child of <cite>self</cite> that <cite>child</cite> will be placed
+next to, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> to place <cite>child</cite> at the beginning or end</li>
+<li><strong>side</strong> (<a class="reference internal" href="../enums.html#Gtk.PositionType" title="Gtk.PositionType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.PositionType</span></code></a>) – the side of <cite>sibling</cite> that <cite>child</cite> is positioned next to</li>
+<li><strong>width</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – the number of columns that <cite>child</cite> will span</li>
+<li><strong>height</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – the number of rows that <cite>child</cite> will span</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Adds a widget to the grid.</p>
+<p>The widget is placed next to <cite>sibling</cite>, on the side determined by
+<cite>side</cite>. When <cite>sibling</cite> is <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>, the widget is placed in row (for
+left or right placement) or column 0 (for top or bottom placement),
+at the end indicated by <cite>side</cite>.</p>
+<p>Attaching widgets labeled [1], [2], [3] with <cite>sibling</cite> == <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> and
+<cite>side</cite> == <a class="reference internal" href="../enums.html#Gtk.PositionType.LEFT" title="Gtk.PositionType.LEFT"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.PositionType.LEFT</span></code></a> yields a layout of ‘3 [2]’[1].</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.Grid.get_baseline_row">
+<code class="descname">get_baseline_row</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkgrid.c#L2638"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.Grid.get_baseline_row" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the row index defining the global baseline</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns which row defines the global baseline of <cite>self</cite>.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.10.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.Grid.get_child_at">
+<code class="descname">get_child_at</code><span class="sig-paren">(</span><em>left</em>, <em>top</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkgrid.c#L2012"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.Grid.get_child_at" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>left</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – the left edge of the cell</li>
+<li><strong>top</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – the top edge of the cell</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">the child at the given position, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="Widget.html#Gtk.Widget" title="Gtk.Widget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Widget</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Gets the child of <cite>self</cite> whose area covers the grid
+cell whose upper left corner is at <cite>left</cite>, <cite>top</cite>.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.2.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.Grid.get_column_homogeneous">
+<code class="descname">get_column_homogeneous</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkgrid.c#L2378"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.Grid.get_column_homogeneous" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">whether all columns of <cite>self</cite> have the same width.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns whether all columns of <cite>self</cite> have the same width.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.Grid.get_column_spacing">
+<code class="descname">get_column_spacing</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkgrid.c#L2472"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.Grid.get_column_spacing" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the column spacing of <cite>self</cite></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns the amount of space between the columns of <cite>self</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.Grid.get_row_baseline_position">
+<code class="descname">get_row_baseline_position</code><span class="sig-paren">(</span><em>row</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkgrid.c#L2584"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.Grid.get_row_baseline_position" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>row</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – a row index</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the baseline position of <cite>row</cite></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#Gtk.BaselinePosition" title="Gtk.BaselinePosition"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.BaselinePosition</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns the baseline position of <cite>row</cite> as set
+by <a class="reference internal" href="#Gtk.Grid.set_row_baseline_position" title="Gtk.Grid.set_row_baseline_position"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Grid.set_row_baseline_position</span></code></a>() or the default value
+<a class="reference internal" href="../enums.html#Gtk.BaselinePosition.CENTER" title="Gtk.BaselinePosition.CENTER"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.BaselinePosition.CENTER</span></code></a>.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.10.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.Grid.get_row_homogeneous">
+<code class="descname">get_row_homogeneous</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkgrid.c#L2331"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.Grid.get_row_homogeneous" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">whether all rows of <cite>self</cite> have the same height.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns whether all rows of <cite>self</cite> have the same height.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.Grid.get_row_spacing">
+<code class="descname">get_row_spacing</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkgrid.c#L2425"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.Grid.get_row_spacing" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the row spacing of <cite>self</cite></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns the amount of space between the rows of <cite>self</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.Grid.insert_column">
+<code class="descname">insert_column</code><span class="sig-paren">(</span><em>position</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkgrid.c#L2160"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.Grid.insert_column" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>position</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – the position to insert the column at</td>
+</tr>
+</tbody>
+</table>
+<p>Inserts a column at the specified position.</p>
+<p>Children which are attached at or to the right of this position
+are moved one column to the right. Children which span across this
+position are grown to span the new column.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.2.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.Grid.insert_next_to">
+<code class="descname">insert_next_to</code><span class="sig-paren">(</span><em>sibling</em>, <em>side</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkgrid.c#L2265"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.Grid.insert_next_to" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>sibling</strong> (<a class="reference internal" href="Widget.html#Gtk.Widget" title="Gtk.Widget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Widget</span></code></a>) – the child of <cite>self</cite> that the new row or column will be
+placed next to</li>
+<li><strong>side</strong> (<a class="reference internal" href="../enums.html#Gtk.PositionType" title="Gtk.PositionType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.PositionType</span></code></a>) – the side of <cite>sibling</cite> that <cite>child</cite> is positioned next to</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Inserts a row or column at the specified position.</p>
+<p>The new row or column is placed next to <cite>sibling</cite>, on the side
+determined by <cite>side</cite>. If <cite>side</cite> is <a class="reference internal" href="../enums.html#Gtk.PositionType.TOP" title="Gtk.PositionType.TOP"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.PositionType.TOP</span></code></a> or <a class="reference internal" href="../enums.html#Gtk.PositionType.BOTTOM" title="Gtk.PositionType.BOTTOM"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.PositionType.BOTTOM</span></code></a>,
+a row is inserted. If <cite>side</cite> is <a class="reference internal" href="../enums.html#Gtk.PositionType.LEFT" title="Gtk.PositionType.LEFT"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.PositionType.LEFT</span></code></a> of <a class="reference internal" href="../enums.html#Gtk.PositionType.RIGHT" title="Gtk.PositionType.RIGHT"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.PositionType.RIGHT</span></code></a>,
+a column is inserted.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.2.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.Grid.insert_row">
+<code class="descname">insert_row</code><span class="sig-paren">(</span><em>position</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkgrid.c#L2051"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.Grid.insert_row" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>position</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – the position to insert the row at</td>
+</tr>
+</tbody>
+</table>
+<p>Inserts a row at the specified position.</p>
+<p>Children which are attached at or below this position
+are moved one row down. Children which span across this
+position are grown to span the new row.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.2.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.Grid.remove_column">
+<code class="descname">remove_column</code><span class="sig-paren">(</span><em>position</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkgrid.c#L2211"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.Grid.remove_column" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>position</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – the position of the column to remove</td>
+</tr>
+</tbody>
+</table>
+<p>Removes a column from the grid.</p>
+<p>Children that are placed in this column are removed,
+spanning children that overlap this column have their
+width reduced by one, and children after the column
+are moved to the left.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.10.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.Grid.remove_row">
+<code class="descname">remove_row</code><span class="sig-paren">(</span><em>position</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkgrid.c#L2110"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.Grid.remove_row" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>position</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – the position of the row to remove</td>
+</tr>
+</tbody>
+</table>
+<p>Removes a row from the grid.</p>
+<p>Children that are placed in this row are removed,
+spanning children that overlap this row have their
+height reduced by one, and children below the row
+are moved up.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.10.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.Grid.set_baseline_row">
+<code class="descname">set_baseline_row</code><span class="sig-paren">(</span><em>row</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkgrid.c#L2609"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.Grid.set_baseline_row" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>row</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – the row index</td>
+</tr>
+</tbody>
+</table>
+<p>Sets which row defines the global baseline for the entire grid.
+Each row in the grid can have its own local baseline, but only
+one of those is global, meaning it will be the baseline in the
+parent of the <cite>self</cite>.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.10.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.Grid.set_column_homogeneous">
+<code class="descname">set_column_homogeneous</code><span class="sig-paren">(</span><em>homogeneous</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkgrid.c#L2350"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.Grid.set_column_homogeneous" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>homogeneous</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a>) – <a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> to make columns homogeneous</td>
+</tr>
+</tbody>
+</table>
+<p>Sets whether all columns of <cite>self</cite> will have the same width.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.Grid.set_column_spacing">
+<code class="descname">set_column_spacing</code><span class="sig-paren">(</span><em>spacing</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkgrid.c#L2444"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.Grid.set_column_spacing" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>spacing</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – the amount of space to insert between columns</td>
+</tr>
+</tbody>
+</table>
+<p>Sets the amount of space between columns of <cite>self</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.Grid.set_row_baseline_position">
+<code class="descname">set_row_baseline_position</code><span class="sig-paren">(</span><em>row</em>, <em>pos</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkgrid.c#L2552"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.Grid.set_row_baseline_position" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>row</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – a row index</li>
+<li><strong>pos</strong> (<a class="reference internal" href="../enums.html#Gtk.BaselinePosition" title="Gtk.BaselinePosition"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.BaselinePosition</span></code></a>) – a <a class="reference internal" href="../enums.html#Gtk.BaselinePosition" title="Gtk.BaselinePosition"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.BaselinePosition</span></code></a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Sets how the baseline should be positioned on <cite>row</cite> of the
+grid, in case that row is assigned more space than is requested.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.10.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.Grid.set_row_homogeneous">
+<code class="descname">set_row_homogeneous</code><span class="sig-paren">(</span><em>homogeneous</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkgrid.c#L2303"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.Grid.set_row_homogeneous" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>homogeneous</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a>) – <a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> to make rows homogeneous</td>
+</tr>
+</tbody>
+</table>
+<p>Sets whether all rows of <cite>self</cite> will have the same height.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.Grid.set_row_spacing">
+<code class="descname">set_row_spacing</code><span class="sig-paren">(</span><em>spacing</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkgrid.c#L2397"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.Grid.set_row_spacing" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>spacing</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – the amount of space to insert between rows</td>
+</tr>
+</tbody>
+</table>
+<p>Sets the amount of space between rows of <cite>self</cite>.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="property-details">
+<h2>Property Details<a class="headerlink" href="#property-details" title="Permalink to this headline">¶</a></h2>
+<dl class="data">
+<dt id="Gtk.Grid.props.baseline_row">
+<code class="descclassname">Gtk.Grid.props.</code><code class="descname">baseline_row</code><a class="headerlink" href="#Gtk.Grid.props.baseline_row" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">baseline-row</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">0</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.EXPLICIT_NOTIFY" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EXPLICIT_NOTIFY</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The row to align the to the baseline when valign is <a class="reference internal" href="../enums.html#Gtk.Align.BASELINE" title="Gtk.Align.BASELINE"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Align.BASELINE</span></code></a></p>
+</dd></dl>
+
+<dl class="data">
+<dt id="Gtk.Grid.props.column_homogeneous">
+<code class="descclassname">Gtk.Grid.props.</code><code class="descname">column_homogeneous</code><a class="headerlink" href="#Gtk.Grid.props.column_homogeneous" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">column-homogeneous</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.EXPLICIT_NOTIFY" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EXPLICIT_NOTIFY</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>If <a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a>, the columns are all the same width</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="Gtk.Grid.props.column_spacing">
+<code class="descclassname">Gtk.Grid.props.</code><code class="descname">column_spacing</code><a class="headerlink" href="#Gtk.Grid.props.column_spacing" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">column-spacing</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">0</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.EXPLICIT_NOTIFY" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EXPLICIT_NOTIFY</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The amount of space between two consecutive columns</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="Gtk.Grid.props.row_homogeneous">
+<code class="descclassname">Gtk.Grid.props.</code><code class="descname">row_homogeneous</code><a class="headerlink" href="#Gtk.Grid.props.row_homogeneous" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">row-homogeneous</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.EXPLICIT_NOTIFY" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EXPLICIT_NOTIFY</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>If <a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a>, the rows are all the same height</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="Gtk.Grid.props.row_spacing">
+<code class="descclassname">Gtk.Grid.props.</code><code class="descname">row_spacing</code><a class="headerlink" href="#Gtk.Grid.props.row_spacing" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">row-spacing</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">0</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.EXPLICIT_NOTIFY" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EXPLICIT_NOTIFY</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The amount of space between two consecutive rows</p>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div> 
+
+</body>
+</html>

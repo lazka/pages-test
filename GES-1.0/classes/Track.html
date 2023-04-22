@@ -1,0 +1,1141 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    GES.Track -
+    
+      Classes -
+    
+    GES 1.0
+  </title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/css/pgi.css" type="text/css" />
+  
+
+  
+  <script type="text/javascript">
+
+    function openSidebar(element) {
+        window.location.href = element.href + location.hash;
+        return false;
+    }
+
+    function inIframe() {
+        try {
+            return window.self !== window.top;
+        } catch (e) {
+            return true;
+        }
+    }
+
+    function onLoaded() {
+        if(!inIframe()) {
+            var icons = document.getElementsByClassName('open-sidebar');
+
+            for (var i = 0; i < icons.length; i ++) {
+                icons[i].style.display = 'table-cell';
+            }
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', onLoaded, false);
+
+  </script>
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="GES 1.0 Python API Docs" href="../index.html"/>
+        <link rel="up" title="Classes" href="../classes.html"/>
+        <link rel="next" title="GES.TrackElement" href="TrackElement.html"/>
+        <link rel="prev" title="GES.TitleSource" href="TitleSource.html"/> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+<div class="non-fixed-bar">
+<table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#GES-1.0/classes/Track.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">GES 1.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>GES.Track</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="TitleSource.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="TrackElement.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">GES.Track</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#signal-details">Signal Details</a></li>
+<li><a class="reference internal" href="#property-details">Property Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+<div class="fixed-bar">
+  <table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#GES-1.0/classes/Track.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">GES 1.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>GES.Track</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="TitleSource.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="TrackElement.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">GES.Track</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#signal-details">Signal Details</a></li>
+<li><a class="reference internal" href="#property-details">Property Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+  <div class="wy-grid-for-nav">
+
+    
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="main">
+            
+  <div class="section" id="ges-track">
+<h1>GES.Track<a class="headerlink" href="#ges-track" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<svg width="279pt" height="296pt"
+ viewBox="0.00 0.00 278.50 296.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 292)">
+<title>g</title>
+<!-- GES.MetaContainer -->
+<g id="node1" class="node">
+<title>GES.MetaContainer</title>
+<g id="a_node1"><a xlink:href="MetaContainer.html#GES.MetaContainer" xlink:title="GES.MetaContainer">
+<path fill="none" stroke="#3091d1" d="M93,-72C93,-72 6,-72 6,-72 3,-72 0,-69 0,-66 0,-66 0,-60 0,-60 0,-57 3,-54 6,-54 6,-54 93,-54 93,-54 96,-54 99,-57 99,-60 99,-60 99,-66 99,-66 99,-69 96,-72 93,-72"/>
+<text text-anchor="middle" x="49.5" y="-60.7" font-family="inherit" font-size="8.50">GES.MetaContainer</text>
+</a>
+</g>
+</g>
+<!-- GES.Track -->
+<g id="node2" class="node">
+<title>GES.Track</title>
+<g id="a_node2"><a xlink:href="#GES.Track" xlink:title="GES.Track">
+<path fill="none" stroke="#75507b" d="M120,-18C120,-18 73,-18 73,-18 70,-18 67,-15 67,-12 67,-12 67,-6 67,-6 67,-3 70,0 73,0 73,0 120,0 120,0 123,0 126,-3 126,-6 126,-6 126,-12 126,-12 126,-15 123,-18 120,-18"/>
+<text text-anchor="middle" x="96.5" y="-6.7" font-family="inherit" font-size="8.50">GES.Track</text>
+</a>
+</g>
+</g>
+<!-- GES.MetaContainer&#45;&gt;GES.Track -->
+<g id="edge1" class="edge">
+<title>GES.MetaContainer&#45;&gt;GES.Track</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M56.84,-53.88C64.52,-45.38 76.67,-31.94 85.5,-22.18"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="87,-23.12 89.05,-18.24 84.4,-20.78 87,-23.12"/>
+</g>
+<!-- GObject.GInterface -->
+<g id="node3" class="node">
+<title>GObject.GInterface</title>
+<g id="a_node3"><a xlink:href="../../GObject-2.0/classes/GInterface.html#GObject.GInterface" xlink:title="GObject.GInterface">
+<path fill="none" stroke="#3091d1" d="M123.5,-180C123.5,-180 37.5,-180 37.5,-180 34.5,-180 31.5,-177 31.5,-174 31.5,-174 31.5,-168 31.5,-168 31.5,-165 34.5,-162 37.5,-162 37.5,-162 123.5,-162 123.5,-162 126.5,-162 129.5,-165 129.5,-168 129.5,-168 129.5,-174 129.5,-174 129.5,-177 126.5,-180 123.5,-180"/>
+<text text-anchor="middle" x="80.5" y="-168.7" font-family="inherit" font-size="8.50">GObject.GInterface</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;GES.MetaContainer -->
+<g id="edge3" class="edge">
+<title>GObject.GInterface&#45;&gt;GES.MetaContainer</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M78.07,-161.68C72.7,-143.34 59.82,-99.28 53.35,-77.15"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="55,-76.59 51.92,-72.28 51.65,-77.57 55,-76.59"/>
+</g>
+<!-- Gst.ChildProxy -->
+<g id="node7" class="node">
+<title>Gst.ChildProxy</title>
+<g id="a_node7"><a xlink:href="../../Gst-1.0/classes/ChildProxy.html#Gst.ChildProxy" xlink:title="Gst.ChildProxy">
+<path fill="none" stroke="#3091d1" d="M151,-126C151,-126 84,-126 84,-126 81,-126 78,-123 78,-120 78,-120 78,-114 78,-114 78,-111 81,-108 84,-108 84,-108 151,-108 151,-108 154,-108 157,-111 157,-114 157,-114 157,-120 157,-120 157,-123 154,-126 151,-126"/>
+<text text-anchor="middle" x="117.5" y="-114.7" font-family="inherit" font-size="8.50">Gst.ChildProxy</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Gst.ChildProxy -->
+<g id="edge2" class="edge">
+<title>GObject.GInterface&#45;&gt;Gst.ChildProxy</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M86.28,-161.88C92.27,-153.45 101.72,-140.18 108.65,-130.44"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="110.16,-131.33 111.64,-126.24 107.31,-129.3 110.16,-131.33"/>
+</g>
+<!-- GObject.InitiallyUnowned -->
+<g id="node4" class="node">
+<title>GObject.InitiallyUnowned</title>
+<g id="a_node4"><a xlink:href="../../GObject-2.0/classes/InitiallyUnowned.html#GObject.InitiallyUnowned" xlink:title="GObject.InitiallyUnowned">
+<path fill="none" stroke="#75507b" d="M264.5,-234C264.5,-234 154.5,-234 154.5,-234 151.5,-234 148.5,-231 148.5,-228 148.5,-228 148.5,-222 148.5,-222 148.5,-219 151.5,-216 154.5,-216 154.5,-216 264.5,-216 264.5,-216 267.5,-216 270.5,-219 270.5,-222 270.5,-222 270.5,-228 270.5,-228 270.5,-231 267.5,-234 264.5,-234"/>
+<text text-anchor="middle" x="209.5" y="-222.7" font-family="inherit" font-size="8.50">GObject.InitiallyUnowned</text>
+</a>
+</g>
+</g>
+<!-- Gst.Object -->
+<g id="node9" class="node">
+<title>Gst.Object</title>
+<g id="a_node9"><a xlink:href="../../Gst-1.0/classes/Object.html#Gst.Object" xlink:title="Gst.Object">
+<path fill="none" stroke="#aaaaaa" d="M234,-180C234,-180 185,-180 185,-180 182,-180 179,-177 179,-174 179,-174 179,-168 179,-168 179,-165 182,-162 185,-162 185,-162 234,-162 234,-162 237,-162 240,-165 240,-168 240,-168 240,-174 240,-174 240,-177 237,-180 234,-180"/>
+<text text-anchor="middle" x="209.5" y="-168.7" font-family="inherit" font-size="8.50">Gst.Object</text>
+</a>
+</g>
+</g>
+<!-- GObject.InitiallyUnowned&#45;&gt;Gst.Object -->
+<g id="edge4" class="edge">
+<title>GObject.InitiallyUnowned&#45;&gt;Gst.Object</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M209.5,-215.88C209.5,-207.76 209.5,-195.13 209.5,-185.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="211.25,-185.24 209.5,-180.24 207.75,-185.24 211.25,-185.24"/>
+</g>
+<!-- GObject.Object -->
+<g id="node5" class="node">
+<title>GObject.Object</title>
+<g id="a_node5"><a xlink:href="../../GObject-2.0/classes/Object.html#GObject.Object" xlink:title="GObject.Object">
+<path fill="none" stroke="#75507b" d="M243.5,-288C243.5,-288 175.5,-288 175.5,-288 172.5,-288 169.5,-285 169.5,-282 169.5,-282 169.5,-276 169.5,-276 169.5,-273 172.5,-270 175.5,-270 175.5,-270 243.5,-270 243.5,-270 246.5,-270 249.5,-273 249.5,-276 249.5,-276 249.5,-282 249.5,-282 249.5,-285 246.5,-288 243.5,-288"/>
+<text text-anchor="middle" x="209.5" y="-276.7" font-family="inherit" font-size="8.50">GObject.Object</text>
+</a>
+</g>
+</g>
+<!-- GObject.Object&#45;&gt;GObject.InitiallyUnowned -->
+<g id="edge5" class="edge">
+<title>GObject.Object&#45;&gt;GObject.InitiallyUnowned</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M209.5,-269.88C209.5,-261.76 209.5,-249.13 209.5,-239.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="211.25,-239.24 209.5,-234.24 207.75,-239.24 211.25,-239.24"/>
+</g>
+<!-- Gst.Bin -->
+<g id="node6" class="node">
+<title>Gst.Bin</title>
+<g id="a_node6"><a xlink:href="../../Gst-1.0/classes/Bin.html#Gst.Bin" xlink:title="Gst.Bin">
+<path fill="none" stroke="#75507b" d="M165.5,-72C165.5,-72 123.5,-72 123.5,-72 120.5,-72 117.5,-69 117.5,-66 117.5,-66 117.5,-60 117.5,-60 117.5,-57 120.5,-54 123.5,-54 123.5,-54 165.5,-54 165.5,-54 168.5,-54 171.5,-57 171.5,-60 171.5,-60 171.5,-66 171.5,-66 171.5,-69 168.5,-72 165.5,-72"/>
+<text text-anchor="middle" x="144.5" y="-60.7" font-family="inherit" font-size="8.50">Gst.Bin</text>
+</a>
+</g>
+</g>
+<!-- Gst.Bin&#45;&gt;GES.Track -->
+<g id="edge6" class="edge">
+<title>Gst.Bin&#45;&gt;GES.Track</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M137,-53.88C129.09,-45.3 116.53,-31.7 107.5,-21.91"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="108.78,-20.73 104.11,-18.24 106.21,-23.1 108.78,-20.73"/>
+</g>
+<!-- Gst.ChildProxy&#45;&gt;Gst.Bin -->
+<g id="edge7" class="edge">
+<title>Gst.ChildProxy&#45;&gt;Gst.Bin</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M121.72,-107.88C126.05,-99.53 132.86,-86.42 137.9,-76.7"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="139.47,-77.48 140.22,-72.24 136.36,-75.87 139.47,-77.48"/>
+</g>
+<!-- Gst.Element -->
+<g id="node8" class="node">
+<title>Gst.Element</title>
+<g id="a_node8"><a xlink:href="../../Gst-1.0/classes/Element.html#Gst.Element" xlink:title="Gst.Element">
+<path fill="none" stroke="#aaaaaa" d="M237.5,-126C237.5,-126 181.5,-126 181.5,-126 178.5,-126 175.5,-123 175.5,-120 175.5,-120 175.5,-114 175.5,-114 175.5,-111 178.5,-108 181.5,-108 181.5,-108 237.5,-108 237.5,-108 240.5,-108 243.5,-111 243.5,-114 243.5,-114 243.5,-120 243.5,-120 243.5,-123 240.5,-126 237.5,-126"/>
+<text text-anchor="middle" x="209.5" y="-114.7" font-family="inherit" font-size="8.50">Gst.Element</text>
+</a>
+</g>
+</g>
+<!-- Gst.Element&#45;&gt;Gst.Bin -->
+<g id="edge8" class="edge">
+<title>Gst.Element&#45;&gt;Gst.Bin</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M199.34,-107.88C188.44,-99.15 171.02,-85.22 158.75,-75.4"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="159.8,-74 154.8,-72.24 157.61,-76.73 159.8,-74"/>
+</g>
+<!-- Gst.Object&#45;&gt;Gst.Element -->
+<g id="edge9" class="edge">
+<title>Gst.Object&#45;&gt;Gst.Element</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M209.5,-161.88C209.5,-153.76 209.5,-141.13 209.5,-131.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="211.25,-131.24 209.5,-126.24 207.75,-131.24 211.25,-131.24"/>
+</g>
+</g>
+</svg>
+</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Subclasses:</th><td class="field-body"><a class="reference internal" href="AudioTrack.html#GES.AudioTrack" title="GES.AudioTrack"><code class="xref py py-class docutils literal notranslate"><span class="pre">GES.AudioTrack</span></code></a>, <a class="reference internal" href="VideoTrack.html#GES.VideoTrack" title="GES.VideoTrack"><code class="xref py py-class docutils literal notranslate"><span class="pre">GES.VideoTrack</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="methods">
+<span id="ges-track-methods"></span><h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../Gst-1.0/classes/Bin.html#gst-bin-methods" title="(in Gst 1.0 v1.0)"><span class="xref std std-ref">Gst.Bin (18)</span></a>,     <a class="reference external" href="../../Gst-1.0/classes/Element.html#gst-element-methods" title="(in Gst 1.0 v1.0)"><span class="xref std std-ref">Gst.Element (79)</span></a>,     <a class="reference external" href="../../Gst-1.0/classes/Object.html#gst-object-methods" title="(in Gst 1.0 v1.0)"><span class="xref std std-ref">Gst.Object (27)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (37)</span></a>,     <a class="reference external" href="../../Gst-1.0/classes/ChildProxy.html#gst-childproxy-methods" title="(in Gst 1.0 v1.0)"><span class="xref std std-ref">Gst.ChildProxy (8)</span></a>,     <a class="reference internal" href="MetaContainer.html#ges-metacontainer-methods"><span class="std std-ref">GES.MetaContainer (40)</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Structs:</th><td class="field-body"><a class="reference external" href="../../Gst-1.0/classes/ElementClass.html#gst-elementclass-methods" title="(in Gst 1.0 v1.0)"><span class="xref std std-ref">Gst.ElementClass (10)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/ObjectClass.html#gobject-objectclass-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.ObjectClass (5)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="99%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><em>class</em></td>
+<td><a class="reference internal" href="#GES.Track.new" title="GES.Track.new"><code class="xref py py-func docutils literal notranslate"><span class="pre">new</span></code></a> (type, caps)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#GES.Track.add_element" title="GES.Track.add_element"><code class="xref py py-func docutils literal notranslate"><span class="pre">add_element</span></code></a> (object)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#GES.Track.add_element_full" title="GES.Track.add_element_full"><code class="xref py py-func docutils literal notranslate"><span class="pre">add_element_full</span></code></a> (object)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#GES.Track.commit" title="GES.Track.commit"><code class="xref py py-func docutils literal notranslate"><span class="pre">commit</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#GES.Track.get_caps" title="GES.Track.get_caps"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_caps</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#GES.Track.get_elements" title="GES.Track.get_elements"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_elements</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#GES.Track.get_mixing" title="GES.Track.get_mixing"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_mixing</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#GES.Track.get_restriction_caps" title="GES.Track.get_restriction_caps"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_restriction_caps</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#GES.Track.get_timeline" title="GES.Track.get_timeline"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_timeline</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#GES.Track.remove_element" title="GES.Track.remove_element"><code class="xref py py-func docutils literal notranslate"><span class="pre">remove_element</span></code></a> (object)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#GES.Track.remove_element_full" title="GES.Track.remove_element_full"><code class="xref py py-func docutils literal notranslate"><span class="pre">remove_element_full</span></code></a> (object)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#GES.Track.set_mixing" title="GES.Track.set_mixing"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_mixing</span></code></a> (mixing)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#GES.Track.set_restriction_caps" title="GES.Track.set_restriction_caps"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_restriction_caps</span></code></a> (caps)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#GES.Track.set_timeline" title="GES.Track.set_timeline"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_timeline</span></code></a> (timeline)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#GES.Track.update_restriction_caps" title="GES.Track.update_restriction_caps"><code class="xref py py-func docutils literal notranslate"><span class="pre">update_restriction_caps</span></code></a> (caps)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="virtual-methods">
+<span id="ges-track-vfuncs"></span><h2>Virtual Methods<a class="headerlink" href="#virtual-methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../Gst-1.0/classes/Bin.html#gst-bin-vfuncs" title="(in Gst 1.0 v1.0)"><span class="xref std std-ref">Gst.Bin (8)</span></a>,     <a class="reference external" href="../../Gst-1.0/classes/Element.html#gst-element-vfuncs" title="(in Gst 1.0 v1.0)"><span class="xref std std-ref">Gst.Element (16)</span></a>,     <a class="reference external" href="../../Gst-1.0/classes/Object.html#gst-object-vfuncs" title="(in Gst 1.0 v1.0)"><span class="xref std std-ref">Gst.Object (1)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-vfuncs" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (7)</span></a>,     <a class="reference external" href="../../Gst-1.0/classes/ChildProxy.html#gst-childproxy-vfuncs" title="(in Gst 1.0 v1.0)"><span class="xref std std-ref">Gst.ChildProxy (5)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="ges-track-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../Gst-1.0/classes/Bin.html#gst-bin-props" title="(in Gst 1.0 v1.0)"><span class="xref std std-ref">Gst.Bin (2)</span></a>,     <a class="reference external" href="../../Gst-1.0/classes/Object.html#gst-object-props" title="(in Gst 1.0 v1.0)"><span class="xref std std-ref">Gst.Object (2)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="1%" />
+<col width="1%" />
+<col width="97%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Flags</th>
+<th class="head">Short Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="#GES.Track.props.caps" title="GES.Track.props.caps"><code class="xref py py-data docutils literal notranslate"><span class="pre">caps</span></code></a></td>
+<td><a class="reference external" href="../../Gst-1.0/classes/Caps.html#Gst.Caps" title="(in Gst 1.0 v1.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gst.Caps</span></code></a></td>
+<td>r/w/co</td>
+<td>Caps used to choose the output stream</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#GES.Track.props.duration" title="GES.Track.props.duration"><code class="xref py py-data docutils literal notranslate"><span class="pre">duration</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+<td>r</td>
+<td>The current duration of the track</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#GES.Track.props.id" title="GES.Track.props.id"><code class="xref py py-data docutils literal notranslate"><span class="pre">id</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+<td>r/w</td>
+<td>The stream-id of the composition</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#GES.Track.props.mixing" title="GES.Track.props.mixing"><code class="xref py py-data docutils literal notranslate"><span class="pre">mixing</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+<td>r/w/c/en</td>
+<td>Whether layer mixing is activated on the track or not</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#GES.Track.props.restriction_caps" title="GES.Track.props.restriction_caps"><code class="xref py py-data docutils literal notranslate"><span class="pre">restriction-caps</span></code></a></td>
+<td><a class="reference external" href="../../Gst-1.0/classes/Caps.html#Gst.Caps" title="(in Gst 1.0 v1.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gst.Caps</span></code></a></td>
+<td>r/w</td>
+<td>Caps used as a final filter on the output stream</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#GES.Track.props.track_type" title="GES.Track.props.track_type"><code class="xref py py-data docutils literal notranslate"><span class="pre">track-type</span></code></a></td>
+<td><a class="reference internal" href="../flags.html#GES.TrackType" title="GES.TrackType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.TrackType</span></code></a></td>
+<td>r/w/co</td>
+<td>Type of stream the track outputs</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="signals">
+<span id="ges-track-signals"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../Gst-1.0/classes/Bin.html#gst-bin-signals" title="(in Gst 1.0 v1.0)"><span class="xref std std-ref">Gst.Bin (5)</span></a>,     <a class="reference external" href="../../Gst-1.0/classes/Element.html#gst-element-signals" title="(in Gst 1.0 v1.0)"><span class="xref std std-ref">Gst.Element (3)</span></a>,     <a class="reference external" href="../../Gst-1.0/classes/Object.html#gst-object-signals" title="(in Gst 1.0 v1.0)"><span class="xref std std-ref">Gst.Object (1)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-signals" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a>,     <a class="reference external" href="../../Gst-1.0/classes/ChildProxy.html#gst-childproxy-signals" title="(in Gst 1.0 v1.0)"><span class="xref std std-ref">Gst.ChildProxy (2)</span></a>,     <a class="reference internal" href="MetaContainer.html#ges-metacontainer-signals"><span class="std std-ref">GES.MetaContainer (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="30%" />
+<col width="70%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Short Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="#GES.Track.signals.commited" title="GES.Track.signals.commited"><code class="xref py py-func docutils literal notranslate"><span class="pre">commited</span></code></a></td>
+<td>This signal will be emitted once the changes initiated by <a class="reference internal" href="#GES.Track.commit" title="GES.Track.commit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Track.commit</span></code></a>() have been executed in the backend.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#GES.Track.signals.track_element_added" title="GES.Track.signals.track_element_added"><code class="xref py py-func docutils literal notranslate"><span class="pre">track-element-added</span></code></a></td>
+<td>Will be emitted after a track element is added to the track.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#GES.Track.signals.track_element_removed" title="GES.Track.signals.track_element_removed"><code class="xref py py-func docutils literal notranslate"><span class="pre">track-element-removed</span></code></a></td>
+<td>Will be emitted after a track element is removed from the track.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fields">
+<span id="ges-track-fields"></span><h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../Gst-1.0/classes/Bin.html#gst-bin-fields" title="(in Gst 1.0 v1.0)"><span class="xref std std-ref">Gst.Bin (5)</span></a>,     <a class="reference external" href="../../Gst-1.0/classes/Element.html#gst-element-fields" title="(in Gst 1.0 v1.0)"><span class="xref std std-ref">Gst.Element (3)</span></a>,     <a class="reference external" href="../../Gst-1.0/classes/Object.html#gst-object-fields" title="(in Gst 1.0 v1.0)"><span class="xref std std-ref">Gst.Object (1)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-fields" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a>,     <a class="reference external" href="../../Gst-1.0/classes/ChildProxy.html#gst-childproxy-fields" title="(in Gst 1.0 v1.0)"><span class="xref std std-ref">Gst.ChildProxy (2)</span></a>,     <a class="reference internal" href="MetaContainer.html#ges-metacontainer-fields"><span class="std std-ref">GES.MetaContainer (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="16%" />
+<col width="1%" />
+<col width="1%" />
+<col width="82%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Access</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>parent</td>
+<td><a class="reference external" href="../../Gst-1.0/classes/Bin.html#Gst.Bin" title="(in Gst 1.0 v1.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gst.Bin</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>type</td>
+<td><a class="reference internal" href="../flags.html#GES.TrackType" title="GES.TrackType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.TrackType</span></code></a></td>
+<td>r</td>
+<td>The <a class="reference internal" href="#GES.Track" title="GES.Track"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Track</span></code></a> <a class="reference internal" href="#GES.Track.props.track_type" title="GES.Track.props.track_type"><code class="xref py py-data docutils literal notranslate"><span class="pre">:track-type</span></code></a> of the track</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="class-details">
+<h2>Class Details<a class="headerlink" href="#class-details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="GES.Track">
+<em class="property">class </em><code class="descclassname">GES.</code><code class="descname">Track</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#GES.Track" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Bases:</th><td class="field-body"><a class="reference external" href="../../Gst-1.0/classes/Bin.html#Gst.Bin" title="(in Gst 1.0 v1.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Gst.Bin</span></code></a>,         <a class="reference internal" href="MetaContainer.html#GES.MetaContainer" title="GES.MetaContainer"><code class="xref py py-class docutils literal notranslate"><span class="pre">GES.MetaContainer</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Abstract:</th><td class="field-body">No</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Structure:</th><td class="field-body"><a class="reference internal" href="TrackClass.html#GES.TrackClass" title="GES.TrackClass"><code class="xref py py-class docutils literal notranslate"><span class="pre">GES.TrackClass</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>A <a class="reference internal" href="#GES.Track" title="GES.Track"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Track</span></code></a> acts an output source for a <a class="reference internal" href="Timeline.html#GES.Timeline" title="GES.Timeline"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Timeline</span></code></a>. Each one
+essentially provides an additional <a class="reference external" href="../../Gst-1.0/classes/Pad.html#Gst.Pad" title="(in Gst 1.0 v1.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gst.Pad</span></code></a> for the timeline, with
+<a class="reference internal" href="#GES.Track" title="GES.Track"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Track</span></code></a> <a class="reference internal" href="#GES.Track.props.restriction_caps" title="GES.Track.props.restriction_caps"><code class="xref py py-data docutils literal notranslate"><span class="pre">:restriction-caps</span></code></a> capabilities. Internally, a track
+wraps an #nlecomposition filtered by a #capsfilter.</p>
+<p>A track will contain a number of <a class="reference internal" href="TrackElement.html#GES.TrackElement" title="GES.TrackElement"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.TrackElement</span></code></a>-s, and its role is
+to select and activate these elements according to their timings when
+the timeline in played. For example, a track would activate a
+<a class="reference internal" href="Source.html#GES.Source" title="GES.Source"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Source</span></code></a> when its <a class="reference internal" href="TimelineElement.html#GES.TimelineElement" title="GES.TimelineElement"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.TimelineElement</span></code></a> <a class="reference internal" href="TimelineElement.html#GES.TimelineElement.props.start" title="GES.TimelineElement.props.start"><code class="xref py py-data docutils literal notranslate"><span class="pre">:start</span></code></a> is reached by outputting
+its data for its <a class="reference internal" href="TimelineElement.html#GES.TimelineElement" title="GES.TimelineElement"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.TimelineElement</span></code></a> <a class="reference internal" href="TimelineElement.html#GES.TimelineElement.props.duration" title="GES.TimelineElement.props.duration"><code class="xref py py-data docutils literal notranslate"><span class="pre">:duration</span></code></a>. Similarly, a
+<a class="reference internal" href="Operation.html#GES.Operation" title="GES.Operation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Operation</span></code></a> would be activated by applying its effect to the source
+data, starting from its <a class="reference internal" href="TimelineElement.html#GES.TimelineElement" title="GES.TimelineElement"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.TimelineElement</span></code></a> <a class="reference internal" href="TimelineElement.html#GES.TimelineElement.props.start" title="GES.TimelineElement.props.start"><code class="xref py py-data docutils literal notranslate"><span class="pre">:start</span></code></a> time and lasting for
+its <a class="reference internal" href="TimelineElement.html#GES.TimelineElement" title="GES.TimelineElement"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.TimelineElement</span></code></a> <a class="reference internal" href="TimelineElement.html#GES.TimelineElement.props.duration" title="GES.TimelineElement.props.duration"><code class="xref py py-data docutils literal notranslate"><span class="pre">:duration</span></code></a>.</p>
+<p>For most users, it will usually be sufficient to add newly created
+tracks to a timeline, but never directly add an element to a track.
+Whenever a <a class="reference internal" href="Clip.html#GES.Clip" title="GES.Clip"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Clip</span></code></a> is added to a timeline, the clip adds its
+elements to the timeline’s tracks and assumes responsibility for
+updating them.</p>
+<dl class="classmethod">
+<dt id="GES.Track.new">
+<em class="property">classmethod </em><code class="descname">new</code><span class="sig-paren">(</span><em>type</em>, <em>caps</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.freedesktop.org/gstreamer/gst-editing-services/blob/1.18.4/ges/ges-track.c#L882"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#GES.Track.new" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>type</strong> (<a class="reference internal" href="../flags.html#GES.TrackType" title="GES.TrackType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.TrackType</span></code></a>) – The <a class="reference internal" href="#GES.Track" title="GES.Track"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Track</span></code></a> <a class="reference internal" href="#GES.Track.props.track_type" title="GES.Track.props.track_type"><code class="xref py py-data docutils literal notranslate"><span class="pre">:track-type</span></code></a> for the track</li>
+<li><strong>caps</strong> (<a class="reference external" href="../../Gst-1.0/classes/Caps.html#Gst.Caps" title="(in Gst 1.0 v1.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gst.Caps</span></code></a>) – The <a class="reference internal" href="#GES.Track" title="GES.Track"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Track</span></code></a> <a class="reference internal" href="#GES.Track.props.caps" title="GES.Track.props.caps"><code class="xref py py-data docutils literal notranslate"><span class="pre">:caps</span></code></a> for the track</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">A new track.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="#GES.Track" title="GES.Track"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Track</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Creates a new track with the given track-type and caps.</p>
+<p>If <cite>type</cite> is <a class="reference internal" href="../flags.html#GES.TrackType.VIDEO" title="GES.TrackType.VIDEO"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.TrackType.VIDEO</span></code></a>, and <cite>caps</cite> is a subset of
+“video/x-raw(ANY)”, then a <a class="reference internal" href="VideoTrack.html#GES.VideoTrack" title="GES.VideoTrack"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.VideoTrack</span></code></a> is created. This will
+automatically choose a gap creation method suitable for video data. You
+will likely want to set <a class="reference internal" href="#GES.Track" title="GES.Track"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Track</span></code></a> <a class="reference internal" href="#GES.Track.props.restriction_caps" title="GES.Track.props.restriction_caps"><code class="xref py py-data docutils literal notranslate"><span class="pre">:restriction-caps</span></code></a> separately. You may
+prefer to use the <a class="reference internal" href="VideoTrack.html#GES.VideoTrack.new" title="GES.VideoTrack.new"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.VideoTrack.new</span></code></a>() method instead.</p>
+<p>If <cite>type</cite> is <a class="reference internal" href="../flags.html#GES.TrackType.AUDIO" title="GES.TrackType.AUDIO"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.TrackType.AUDIO</span></code></a>, and <cite>caps</cite> is a subset of
+“audio/x-raw(ANY)”, then a <a class="reference internal" href="AudioTrack.html#GES.AudioTrack" title="GES.AudioTrack"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.AudioTrack</span></code></a> is created. This will
+automatically choose a gap creation method suitable for audio data, and
+will set the <a class="reference internal" href="#GES.Track" title="GES.Track"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Track</span></code></a> <a class="reference internal" href="#GES.Track.props.restriction_caps" title="GES.Track.props.restriction_caps"><code class="xref py py-data docutils literal notranslate"><span class="pre">:restriction-caps</span></code></a> to the default for
+<a class="reference internal" href="AudioTrack.html#GES.AudioTrack" title="GES.AudioTrack"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.AudioTrack</span></code></a>. You may prefer to use the <a class="reference internal" href="AudioTrack.html#GES.AudioTrack.new" title="GES.AudioTrack.new"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.AudioTrack.new</span></code></a>() method
+instead.</p>
+<p>Otherwise, a plain <a class="reference internal" href="#GES.Track" title="GES.Track"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Track</span></code></a> is returned. You will likely want to set
+the <a class="reference internal" href="#GES.Track" title="GES.Track"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Track</span></code></a> <a class="reference internal" href="#GES.Track.props.restriction_caps" title="GES.Track.props.restriction_caps"><code class="xref py py-data docutils literal notranslate"><span class="pre">:restriction-caps</span></code></a> and call
+ges_track_set_create_element_for_gap_func() on the returned track.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GES.Track.add_element">
+<code class="descname">add_element</code><span class="sig-paren">(</span><em>object</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.freedesktop.org/gstreamer/gst-editing-services/blob/1.18.4/ges/ges-track.c#L1257"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#GES.Track.add_element" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>object</strong> (<a class="reference internal" href="TrackElement.html#GES.TrackElement" title="GES.TrackElement"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.TrackElement</span></code></a>) – The element to add</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if <cite>object</cite> was successfully added to <cite>self</cite>.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>See <a class="reference internal" href="#GES.Track.add_element" title="GES.Track.add_element"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Track.add_element</span></code></a>(), which also gives an error.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GES.Track.add_element_full">
+<code class="descname">add_element_full</code><span class="sig-paren">(</span><em>object</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.freedesktop.org/gstreamer/gst-editing-services/blob/1.18.4/ges/ges-track.c#L1174"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#GES.Track.add_element_full" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>object</strong> (<a class="reference internal" href="TrackElement.html#GES.TrackElement" title="GES.TrackElement"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.TrackElement</span></code></a>) – The element to add</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference external" href="../../GLib-2.0/classes/Error.html#GLib.Error" title="(in GLib 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLib.Error</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if <cite>object</cite> was successfully added to <cite>self</cite>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Adds the given track element to the track, which takes ownership of the
+element.</p>
+<p>Note that this can fail if it would break a configuration rule of the
+track’s <a class="reference internal" href="Timeline.html#GES.Timeline" title="GES.Timeline"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Timeline</span></code></a>.</p>
+<p>Note that a <a class="reference internal" href="TrackElement.html#GES.TrackElement" title="GES.TrackElement"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.TrackElement</span></code></a> can only be added to one track.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.18.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="GES.Track.commit">
+<code class="descname">commit</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.freedesktop.org/gstreamer/gst-editing-services/blob/1.18.4/ges/ges-track.c#L1403"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#GES.Track.commit" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if pending changes were committed, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a> if nothing
+needed to be committed.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Commits all the pending changes for the elements contained in the
+track.</p>
+<p>When changes are made to the timing or priority of elements within a
+track, they are not directly executed for the underlying
+#nlecomposition and its children. This method will finally execute
+these changes so they are reflected in the data output of the track.</p>
+<p>Any pending changes will be executed in the backend. The
+<a class="reference internal" href="Timeline.html#GES.Timeline" title="GES.Timeline"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Timeline</span></code></a> <a class="reference internal" href="Timeline.html#GES.Timeline.signals.commited" title="GES.Timeline.signals.commited"><code class="xref py py-func docutils literal notranslate"><span class="pre">::commited</span></code></a> signal will be emitted once this has completed.</p>
+<p>Note that <a class="reference internal" href="Timeline.html#GES.Timeline.commit" title="GES.Timeline.commit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Timeline.commit</span></code></a>() will call this method on all of its
+tracks, so you are unlikely to need to use this directly.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GES.Track.get_caps">
+<code class="descname">get_caps</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.freedesktop.org/gstreamer/gst-editing-services/blob/1.18.4/ges/ges-track.c#L1339"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#GES.Track.get_caps" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The caps of <cite>self</cite>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="../../Gst-1.0/classes/Caps.html#Gst.Caps" title="(in Gst 1.0 v1.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gst.Caps</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get the <a class="reference internal" href="#GES.Track" title="GES.Track"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Track</span></code></a> <a class="reference internal" href="#GES.Track.props.caps" title="GES.Track.props.caps"><code class="xref py py-data docutils literal notranslate"><span class="pre">:caps</span></code></a> of the track.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GES.Track.get_elements">
+<code class="descname">get_elements</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.freedesktop.org/gstreamer/gst-editing-services/blob/1.18.4/ges/ges-track.c#L1274"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#GES.Track.get_elements" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A list of
+all the <a class="reference internal" href="TrackElement.html#GES.TrackElement" title="GES.TrackElement"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.TrackElement</span></code></a>-s in <cite>self</cite>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">[<a class="reference internal" href="TrackElement.html#GES.TrackElement" title="GES.TrackElement"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.TrackElement</span></code></a>]</td>
+</tr>
+</tbody>
+</table>
+<p>Gets the track elements contained in the track. The returned list is
+sorted by the element’s <a class="reference internal" href="TimelineElement.html#GES.TimelineElement" title="GES.TimelineElement"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.TimelineElement</span></code></a> <a class="reference internal" href="TimelineElement.html#GES.TimelineElement.props.priority" title="GES.TimelineElement.props.priority"><code class="xref py py-data docutils literal notranslate"><span class="pre">:priority</span></code></a> and
+<a class="reference internal" href="TimelineElement.html#GES.TimelineElement" title="GES.TimelineElement"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.TimelineElement</span></code></a> <a class="reference internal" href="TimelineElement.html#GES.TimelineElement.props.start" title="GES.TimelineElement.props.start"><code class="xref py py-data docutils literal notranslate"><span class="pre">:start</span></code></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GES.Track.get_mixing">
+<code class="descname">get_mixing</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.freedesktop.org/gstreamer/gst-editing-services/blob/1.18.4/ges/ges-track.c#L1374"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#GES.Track.get_mixing" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Whether <cite>self</cite> is mixing.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the <a class="reference internal" href="#GES.Track" title="GES.Track"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Track</span></code></a> <a class="reference internal" href="#GES.Track.props.mixing" title="GES.Track.props.mixing"><code class="xref py py-data docutils literal notranslate"><span class="pre">:mixing</span></code></a> of the track.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GES.Track.get_restriction_caps">
+<code class="descname">get_restriction_caps</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.freedesktop.org/gstreamer/gst-editing-services/blob/1.18.4/ges/ges-track.c#L1451"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#GES.Track.get_restriction_caps" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The restriction-caps of <cite>self</cite>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="../../Gst-1.0/classes/Caps.html#Gst.Caps" title="(in Gst 1.0 v1.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gst.Caps</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the <a class="reference internal" href="#GES.Track" title="GES.Track"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Track</span></code></a> <a class="reference internal" href="#GES.Track.props.restriction_caps" title="GES.Track.props.restriction_caps"><code class="xref py py-data docutils literal notranslate"><span class="pre">:restriction-caps</span></code></a> of the track.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.18.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="GES.Track.get_timeline">
+<code class="descname">get_timeline</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.freedesktop.org/gstreamer/gst-editing-services/blob/1.18.4/ges/ges-track.c#L1357"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#GES.Track.get_timeline" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The timeline that <cite>self</cite> belongs to, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> if
+it does not belong to a timeline.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="Timeline.html#GES.Timeline" title="GES.Timeline"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Timeline</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get the timeline this track belongs to.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GES.Track.remove_element">
+<code class="descname">remove_element</code><span class="sig-paren">(</span><em>object</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.freedesktop.org/gstreamer/gst-editing-services/blob/1.18.4/ges/ges-track.c#L1325"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#GES.Track.remove_element" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>object</strong> (<a class="reference internal" href="TrackElement.html#GES.TrackElement" title="GES.TrackElement"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.TrackElement</span></code></a>) – The element to remove</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if <cite>object</cite> was successfully removed from <cite>self</cite>.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>See <a class="reference internal" href="#GES.Track.remove_element_full" title="GES.Track.remove_element_full"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Track.remove_element_full</span></code></a>(), which also returns an error.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GES.Track.remove_element_full">
+<code class="descname">remove_element_full</code><span class="sig-paren">(</span><em>object</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.freedesktop.org/gstreamer/gst-editing-services/blob/1.18.4/ges/ges-track.c#L1302"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#GES.Track.remove_element_full" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>object</strong> (<a class="reference internal" href="TrackElement.html#GES.TrackElement" title="GES.TrackElement"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.TrackElement</span></code></a>) – The element to remove</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference external" href="../../GLib-2.0/classes/Error.html#GLib.Error" title="(in GLib 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLib.Error</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if <cite>object</cite> was successfully removed from <cite>self</cite>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Removes the given track element from the track, which revokes
+ownership of the element.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.18.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="GES.Track.set_mixing">
+<code class="descname">set_mixing</code><span class="sig-paren">(</span><em>mixing</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.freedesktop.org/gstreamer/gst-editing-services/blob/1.18.4/ges/ges-track.c#L1088"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#GES.Track.set_mixing" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>mixing</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a>) – Whether <cite>self</cite> should be mixing</td>
+</tr>
+</tbody>
+</table>
+<p>Sets the <a class="reference internal" href="#GES.Track" title="GES.Track"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Track</span></code></a> <a class="reference internal" href="#GES.Track.props.mixing" title="GES.Track.props.mixing"><code class="xref py py-data docutils literal notranslate"><span class="pre">:mixing</span></code></a> for the track.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GES.Track.set_restriction_caps">
+<code class="descname">set_restriction_caps</code><span class="sig-paren">(</span><em>caps</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.freedesktop.org/gstreamer/gst-editing-services/blob/1.18.4/ges/ges-track.c#L1002"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#GES.Track.set_restriction_caps" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>caps</strong> (<a class="reference external" href="../../Gst-1.0/classes/Caps.html#Gst.Caps" title="(in Gst 1.0 v1.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gst.Caps</span></code></a>) – The new restriction-caps for <cite>self</cite></td>
+</tr>
+</tbody>
+</table>
+<p>Sets the <a class="reference internal" href="#GES.Track" title="GES.Track"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Track</span></code></a> <a class="reference internal" href="#GES.Track.props.restriction_caps" title="GES.Track.props.restriction_caps"><code class="xref py py-data docutils literal notranslate"><span class="pre">:restriction-caps</span></code></a> for the track.</p>
+<p>**NOTE**: Restriction caps are **not** taken into account when
+using <a class="reference internal" href="Pipeline.html#GES.Pipeline" title="GES.Pipeline"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Pipeline</span></code></a> <a class="reference internal" href="Pipeline.html#GES.Pipeline.props.mode" title="GES.Pipeline.props.mode"><code class="xref py py-data docutils literal notranslate"><span class="pre">:mode</span></code></a>=:obj:<cite>GES.PipelineFlags.SMART_RENDER</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GES.Track.set_timeline">
+<code class="descname">set_timeline</code><span class="sig-paren">(</span><em>timeline</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.freedesktop.org/gstreamer/gst-editing-services/blob/1.18.4/ges/ges-track.c#L939"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#GES.Track.set_timeline" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>timeline</strong> (<a class="reference internal" href="Timeline.html#GES.Timeline" title="GES.Timeline"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Timeline</span></code></a>) – </td>
+</tr>
+</tbody>
+</table>
+<p>Informs the track that it belongs to the given timeline. Calling this
+does not actually add the track to the timeline. For that, you should
+use <a class="reference internal" href="Timeline.html#GES.Timeline.add_track" title="GES.Timeline.add_track"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Timeline.add_track</span></code></a>(), which will also take care of informing
+the track that it belongs to the timeline. As such, there is no need
+for you to call this method.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GES.Track.update_restriction_caps">
+<code class="descname">update_restriction_caps</code><span class="sig-paren">(</span><em>caps</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.freedesktop.org/gstreamer/gst-editing-services/blob/1.18.4/ges/ges-track.c#L1048"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#GES.Track.update_restriction_caps" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>caps</strong> (<a class="reference external" href="../../Gst-1.0/classes/Caps.html#Gst.Caps" title="(in Gst 1.0 v1.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gst.Caps</span></code></a>) – The caps to update the restriction-caps with</td>
+</tr>
+</tbody>
+</table>
+<p>Updates the <a class="reference internal" href="#GES.Track" title="GES.Track"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Track</span></code></a> <a class="reference internal" href="#GES.Track.props.restriction_caps" title="GES.Track.props.restriction_caps"><code class="xref py py-data docutils literal notranslate"><span class="pre">:restriction-caps</span></code></a> of the track using the fields
+found in the given caps. Each of the <a class="reference external" href="../../Gst-1.0/classes/Structure.html#Gst.Structure" title="(in Gst 1.0 v1.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gst.Structure</span></code></a>-s in <cite>caps</cite> is
+compared against the existing structure with the same index in the
+current <a class="reference internal" href="#GES.Track" title="GES.Track"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Track</span></code></a> <a class="reference internal" href="#GES.Track.props.restriction_caps" title="GES.Track.props.restriction_caps"><code class="xref py py-data docutils literal notranslate"><span class="pre">:restriction-caps</span></code></a>. If there is no corresponding
+existing structure at that index, then the new structure is simply
+copied to that index. Otherwise, any fields in the new structure are
+copied into the existing structure. This will replace existing values,
+and may introduce new ones, but any fields ‘missing’ in the new
+structure are left unchanged in the existing structure.</p>
+<p>For example, if the existing <a class="reference internal" href="#GES.Track" title="GES.Track"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Track</span></code></a> <a class="reference internal" href="#GES.Track.props.restriction_caps" title="GES.Track.props.restriction_caps"><code class="xref py py-data docutils literal notranslate"><span class="pre">:restriction-caps</span></code></a> are
+“video/x-raw, width=480, height=360”, and the updating caps is
+“video/x-raw, format=I420, width=500; video/x-bayer, width=400”, then
+the new <a class="reference internal" href="#GES.Track" title="GES.Track"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Track</span></code></a> <a class="reference internal" href="#GES.Track.props.restriction_caps" title="GES.Track.props.restriction_caps"><code class="xref py py-data docutils literal notranslate"><span class="pre">:restriction-caps</span></code></a> after calling this will be
+“video/x-raw, width=500, height=360, format=I420; video/x-bayer,
+width=400”.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="signal-details">
+<h2>Signal Details<a class="headerlink" href="#signal-details" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="GES.Track.signals.commited">
+<code class="descclassname">GES.Track.signals.</code><code class="descname">commited</code><span class="sig-paren">(</span><em>track</em><span class="sig-paren">)</span><a class="headerlink" href="#GES.Track.signals.commited" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Signal Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">commited</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.SignalFlags.RUN_LAST" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RUN_LAST</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>track</strong> (<a class="reference internal" href="#GES.Track" title="GES.Track"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Track</span></code></a>) – The object which received the signal</td>
+</tr>
+</tbody>
+</table>
+<p>This signal will be emitted once the changes initiated by
+<a class="reference internal" href="#GES.Track.commit" title="GES.Track.commit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Track.commit</span></code></a>() have been executed in the backend. In particular,
+this will be emitted whenever the underlying #nlecomposition has been
+committed (see #nlecomposition::commited).</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="GES.Track.signals.track_element_added">
+<code class="descclassname">GES.Track.signals.</code><code class="descname">track_element_added</code><span class="sig-paren">(</span><em>track</em>, <em>effect</em><span class="sig-paren">)</span><a class="headerlink" href="#GES.Track.signals.track_element_added" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Signal Name:</th><td class="field-body"><p class="first"><code class="docutils literal notranslate"><span class="pre">track-element-added</span></code></p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><p class="first"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.SignalFlags.RUN_FIRST" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RUN_FIRST</span></code></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>track</strong> (<a class="reference internal" href="#GES.Track" title="GES.Track"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Track</span></code></a>) – The object which received the signal</li>
+<li><strong>effect</strong> (<a class="reference internal" href="TrackElement.html#GES.TrackElement" title="GES.TrackElement"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.TrackElement</span></code></a>) – The element that was added</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Will be emitted after a track element is added to the track.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="GES.Track.signals.track_element_removed">
+<code class="descclassname">GES.Track.signals.</code><code class="descname">track_element_removed</code><span class="sig-paren">(</span><em>track</em>, <em>effect</em><span class="sig-paren">)</span><a class="headerlink" href="#GES.Track.signals.track_element_removed" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Signal Name:</th><td class="field-body"><p class="first"><code class="docutils literal notranslate"><span class="pre">track-element-removed</span></code></p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><p class="first"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.SignalFlags.RUN_FIRST" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RUN_FIRST</span></code></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>track</strong> (<a class="reference internal" href="#GES.Track" title="GES.Track"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Track</span></code></a>) – The object which received the signal</li>
+<li><strong>effect</strong> (<a class="reference internal" href="TrackElement.html#GES.TrackElement" title="GES.TrackElement"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.TrackElement</span></code></a>) – The element that was removed</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Will be emitted after a track element is removed from the track.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="property-details">
+<h2>Property Details<a class="headerlink" href="#property-details" title="Permalink to this headline">¶</a></h2>
+<dl class="data">
+<dt id="GES.Track.props.caps">
+<code class="descclassname">GES.Track.props.</code><code class="descname">caps</code><a class="headerlink" href="#GES.Track.props.caps" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">caps</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="../../Gst-1.0/classes/Caps.html#Gst.Caps" title="(in Gst 1.0 v1.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gst.Caps</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.CONSTRUCT_ONLY" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CONSTRUCT_ONLY</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The capabilities used to choose the output of the <a class="reference internal" href="#GES.Track" title="GES.Track"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Track</span></code></a>’s
+elements. Internally, this is used to select output streams when
+several may be available, by determining whether its <a class="reference external" href="../../Gst-1.0/classes/Pad.html#Gst.Pad" title="(in Gst 1.0 v1.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gst.Pad</span></code></a> is
+compatible (see #NleObject:caps for #nlecomposition). As such,
+this is used as a weaker indication of the desired output type of the
+track, **before** the <a class="reference internal" href="#GES.Track" title="GES.Track"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Track</span></code></a> <a class="reference internal" href="#GES.Track.props.restriction_caps" title="GES.Track.props.restriction_caps"><code class="xref py py-data docutils literal notranslate"><span class="pre">:restriction-caps</span></code></a> is applied.
+Therefore, this should be set to a *generic* superset of the
+<a class="reference internal" href="#GES.Track" title="GES.Track"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Track</span></code></a> <a class="reference internal" href="#GES.Track.props.restriction_caps" title="GES.Track.props.restriction_caps"><code class="xref py py-data docutils literal notranslate"><span class="pre">:restriction-caps</span></code></a>, such as “video/x-raw(ANY)”. In addition,
+it should match with the track’s <a class="reference internal" href="#GES.Track" title="GES.Track"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Track</span></code></a> <a class="reference internal" href="#GES.Track.props.track_type" title="GES.Track.props.track_type"><code class="xref py py-data docutils literal notranslate"><span class="pre">:track-type</span></code></a>.</p>
+<p>Note that when you set this property, the <a class="reference external" href="../../Gst-1.0/classes/CapsFeatures.html#Gst.CapsFeatures" title="(in Gst 1.0 v1.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gst.CapsFeatures</span></code></a> of all its
+<a class="reference external" href="../../Gst-1.0/classes/Structure.html#Gst.Structure" title="(in Gst 1.0 v1.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gst.Structure</span></code></a>-s will be automatically set to #GST_CAPS_FEATURES_ANY.</p>
+<p>Once a track has been added to a <a class="reference internal" href="Timeline.html#GES.Timeline" title="GES.Timeline"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Timeline</span></code></a>, you should not change
+this.</p>
+<p>Default value: #GST_CAPS_ANY.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GES.Track.props.duration">
+<code class="descclassname">GES.Track.props.</code><code class="descname">duration</code><a class="headerlink" href="#GES.Track.props.duration" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">duration</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">1000000000</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Current duration of the track</p>
+<p>Default value: O</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GES.Track.props.id">
+<code class="descclassname">GES.Track.props.</code><code class="descname">id</code><a class="headerlink" href="#GES.Track.props.id" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">id</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The #nlecomposition:id of the underlying #nlecomposition.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.18.</span></p>
+</div>
+</dd></dl>
+
+<dl class="data">
+<dt id="GES.Track.props.mixing">
+<code class="descclassname">GES.Track.props.</code><code class="descname">mixing</code><a class="headerlink" href="#GES.Track.props.mixing" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">mixing</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.CONSTRUCT" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CONSTRUCT</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.EXPLICIT_NOTIFY" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EXPLICIT_NOTIFY</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Whether the track should support the mixing of <a class="reference internal" href="Layer.html#GES.Layer" title="GES.Layer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Layer</span></code></a> data, such
+as composing the video data of each layer (when part of the video
+data is transparent, the next layer will become visible) or adding
+together the audio data. As such, for audio and video tracks, you’ll
+likely want to keep this set to <a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a>.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GES.Track.props.restriction_caps">
+<code class="descclassname">GES.Track.props.</code><code class="descname">restriction_caps</code><a class="headerlink" href="#GES.Track.props.restriction_caps" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">restriction-caps</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="../../Gst-1.0/classes/Caps.html#Gst.Caps" title="(in Gst 1.0 v1.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gst.Caps</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The capabilities that specifies the final output format of the
+<a class="reference internal" href="#GES.Track" title="GES.Track"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Track</span></code></a>. For example, for a video track, it would specify the
+height, width, framerate and other properties of the stream.</p>
+<p>You may change this property after the track has been added to a
+<a class="reference internal" href="Timeline.html#GES.Timeline" title="GES.Timeline"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Timeline</span></code></a>, but it must remain compatible with the track’s
+<a class="reference internal" href="#GES.Track" title="GES.Track"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Track</span></code></a> <a class="reference internal" href="#GES.Track.props.caps" title="GES.Track.props.caps"><code class="xref py py-data docutils literal notranslate"><span class="pre">:caps</span></code></a>.</p>
+<p>Default value: #GST_CAPS_ANY.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GES.Track.props.track_type">
+<code class="descclassname">GES.Track.props.</code><code class="descname">track_type</code><a class="headerlink" href="#GES.Track.props.track_type" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">track-type</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../flags.html#GES.TrackType" title="GES.TrackType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.TrackType</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference internal" href="../flags.html#GES.TrackType.CUSTOM" title="GES.TrackType.CUSTOM"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.TrackType.CUSTOM</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.CONSTRUCT_ONLY" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CONSTRUCT_ONLY</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The track type of the track. This controls the type of
+<a class="reference internal" href="TrackElement.html#GES.TrackElement" title="GES.TrackElement"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.TrackElement</span></code></a>-s that can be added to the track. This should
+match with the track’s <a class="reference internal" href="#GES.Track" title="GES.Track"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Track</span></code></a> <a class="reference internal" href="#GES.Track.props.caps" title="GES.Track.props.caps"><code class="xref py py-data docutils literal notranslate"><span class="pre">:caps</span></code></a>.</p>
+<p>Once a track has been added to a <a class="reference internal" href="Timeline.html#GES.Timeline" title="GES.Timeline"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GES.Timeline</span></code></a>, you should not change
+this.</p>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div> 
+
+</body>
+</html>

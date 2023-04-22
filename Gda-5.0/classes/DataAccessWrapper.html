@@ -1,0 +1,477 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    Gda.DataAccessWrapper -
+    
+      Classes -
+    
+    Gda 5.0
+  </title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/css/pgi.css" type="text/css" />
+  
+
+  
+  <script type="text/javascript">
+
+    function openSidebar(element) {
+        window.location.href = element.href + location.hash;
+        return false;
+    }
+
+    function inIframe() {
+        try {
+            return window.self !== window.top;
+        } catch (e) {
+            return true;
+        }
+    }
+
+    function onLoaded() {
+        if(!inIframe()) {
+            var icons = document.getElementsByClassName('open-sidebar');
+
+            for (var i = 0; i < icons.length; i ++) {
+                icons[i].style.display = 'table-cell';
+            }
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', onLoaded, false);
+
+  </script>
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="Gda 5.0 Python API Docs" href="../index.html"/>
+        <link rel="up" title="Classes" href="../classes.html"/>
+        <link rel="next" title="Gda.DataComparator" href="DataComparator.html"/>
+        <link rel="prev" title="Gda.ConnectionEvent" href="ConnectionEvent.html"/> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+<div class="non-fixed-bar">
+<table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#Gda-5.0/classes/DataAccessWrapper.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Gda 5.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>Gda.DataAccessWrapper</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="ConnectionEvent.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="DataComparator.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">Gda.DataAccessWrapper</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#property-details">Property Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+<div class="fixed-bar">
+  <table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#Gda-5.0/classes/DataAccessWrapper.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Gda 5.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>Gda.DataAccessWrapper</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="ConnectionEvent.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="DataComparator.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">Gda.DataAccessWrapper</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#property-details">Property Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+  <div class="wy-grid-for-nav">
+
+    
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="main">
+            
+  <div class="section" id="gda-dataaccesswrapper">
+<h1>Gda.DataAccessWrapper<a class="headerlink" href="#gda-dataaccesswrapper" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<svg width="197pt" height="134pt"
+ viewBox="0.00 0.00 197.00 134.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 130)">
+<title>g</title>
+<!-- GObject.GInterface -->
+<g id="node1" class="node">
+<title>GObject.GInterface</title>
+<g id="a_node1"><a xlink:href="../../GObject-2.0/classes/GInterface.html#GObject.GInterface" xlink:title="GObject.GInterface">
+<path fill="none" stroke="#3091d1" d="M92,-126C92,-126 6,-126 6,-126 3,-126 0,-123 0,-120 0,-120 0,-114 0,-114 0,-111 3,-108 6,-108 6,-108 92,-108 92,-108 95,-108 98,-111 98,-114 98,-114 98,-120 98,-120 98,-123 95,-126 92,-126"/>
+<text text-anchor="middle" x="49" y="-114.7" font-family="inherit" font-size="8.50">GObject.GInterface</text>
+</a>
+</g>
+</g>
+<!-- Gda.DataModel -->
+<g id="node4" class="node">
+<title>Gda.DataModel</title>
+<g id="a_node4"><a xlink:href="DataModel.html#Gda.DataModel" xlink:title="Gda.DataModel">
+<path fill="none" stroke="#3091d1" d="M84.5,-72C84.5,-72 13.5,-72 13.5,-72 10.5,-72 7.5,-69 7.5,-66 7.5,-66 7.5,-60 7.5,-60 7.5,-57 10.5,-54 13.5,-54 13.5,-54 84.5,-54 84.5,-54 87.5,-54 90.5,-57 90.5,-60 90.5,-60 90.5,-66 90.5,-66 90.5,-69 87.5,-72 84.5,-72"/>
+<text text-anchor="middle" x="49" y="-60.7" font-family="inherit" font-size="8.50">Gda.DataModel</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Gda.DataModel -->
+<g id="edge1" class="edge">
+<title>GObject.GInterface&#45;&gt;Gda.DataModel</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M49,-107.88C49,-99.76 49,-87.13 49,-77.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="50.75,-77.24 49,-72.24 47.25,-77.24 50.75,-77.24"/>
+</g>
+<!-- GObject.Object -->
+<g id="node2" class="node">
+<title>GObject.Object</title>
+<g id="a_node2"><a xlink:href="../../GObject-2.0/classes/Object.html#GObject.Object" xlink:title="GObject.Object">
+<path fill="none" stroke="#75507b" d="M183,-72C183,-72 115,-72 115,-72 112,-72 109,-69 109,-66 109,-66 109,-60 109,-60 109,-57 112,-54 115,-54 115,-54 183,-54 183,-54 186,-54 189,-57 189,-60 189,-60 189,-66 189,-66 189,-69 186,-72 183,-72"/>
+<text text-anchor="middle" x="149" y="-60.7" font-family="inherit" font-size="8.50">GObject.Object</text>
+</a>
+</g>
+</g>
+<!-- Gda.DataAccessWrapper -->
+<g id="node3" class="node">
+<title>Gda.DataAccessWrapper</title>
+<g id="a_node3"><a xlink:href="#Gda.DataAccessWrapper" xlink:title="Gda.DataAccessWrapper">
+<path fill="none" stroke="#75507b" d="M154.5,-18C154.5,-18 43.5,-18 43.5,-18 40.5,-18 37.5,-15 37.5,-12 37.5,-12 37.5,-6 37.5,-6 37.5,-3 40.5,0 43.5,0 43.5,0 154.5,0 154.5,0 157.5,0 160.5,-3 160.5,-6 160.5,-6 160.5,-12 160.5,-12 160.5,-15 157.5,-18 154.5,-18"/>
+<text text-anchor="middle" x="99" y="-6.7" font-family="inherit" font-size="8.50">Gda.DataAccessWrapper</text>
+</a>
+</g>
+</g>
+<!-- GObject.Object&#45;&gt;Gda.DataAccessWrapper -->
+<g id="edge2" class="edge">
+<title>GObject.Object&#45;&gt;Gda.DataAccessWrapper</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M141.19,-53.88C132.94,-45.3 119.87,-31.7 110.46,-21.91"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="111.65,-20.63 106.92,-18.24 109.13,-23.06 111.65,-20.63"/>
+</g>
+<!-- Gda.DataModel&#45;&gt;Gda.DataAccessWrapper -->
+<g id="edge3" class="edge">
+<title>Gda.DataModel&#45;&gt;Gda.DataAccessWrapper</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M56.81,-53.88C65.06,-45.3 78.13,-31.7 87.54,-21.91"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="88.87,-23.06 91.08,-18.24 86.35,-20.63 88.87,-23.06"/>
+</g>
+</g>
+</svg>
+</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Subclasses:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="methods">
+<span id="gda-dataaccesswrapper-methods"></span><h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (37)</span></a>,     <a class="reference internal" href="DataModel.html#gda-datamodel-methods"><span class="std std-ref">Gda.DataModel (43)</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Structs:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/ObjectClass.html#gobject-objectclass-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.ObjectClass (5)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="99%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><em>class</em></td>
+<td><a class="reference internal" href="#Gda.DataAccessWrapper.new" title="Gda.DataAccessWrapper.new"><code class="xref py py-func docutils literal notranslate"><span class="pre">new</span></code></a> (model)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Gda.DataAccessWrapper.set_mapping" title="Gda.DataAccessWrapper.set_mapping"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_mapping</span></code></a> (mapping)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="virtual-methods">
+<span id="gda-dataaccesswrapper-vfuncs"></span><h2>Virtual Methods<a class="headerlink" href="#virtual-methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-vfuncs" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (7)</span></a>,     <a class="reference internal" href="DataModel.html#gda-datamodel-vfuncs"><span class="std std-ref">Gda.DataModel (27)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="gda-dataaccesswrapper-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="1%" />
+<col width="1%" />
+<col width="97%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Flags</th>
+<th class="head">Short Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="#Gda.DataAccessWrapper.props.model" title="Gda.DataAccessWrapper.props.model"><code class="xref py py-data docutils literal notranslate"><span class="pre">model</span></code></a></td>
+<td><a class="reference internal" href="DataModel.html#Gda.DataModel" title="Gda.DataModel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gda.DataModel</span></code></a></td>
+<td>r/w/co</td>
+<td>Data model being wrapped</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="signals">
+<span id="gda-dataaccesswrapper-signals"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-signals" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a>,     <a class="reference internal" href="DataModel.html#gda-datamodel-signals"><span class="std std-ref">Gda.DataModel (6)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fields">
+<span id="gda-dataaccesswrapper-fields"></span><h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-fields" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a>,     <a class="reference internal" href="DataModel.html#gda-datamodel-fields"><span class="std std-ref">Gda.DataModel (6)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="16%" />
+<col width="1%" />
+<col width="1%" />
+<col width="82%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Access</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>object</td>
+<td><a class="reference external" href="../../GObject-2.0/classes/Object.html#GObject.Object" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GObject.Object</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="class-details">
+<h2>Class Details<a class="headerlink" href="#class-details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Gda.DataAccessWrapper">
+<em class="property">class </em><code class="descclassname">Gda.</code><code class="descname">DataAccessWrapper</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#Gda.DataAccessWrapper" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Bases:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#GObject.Object" title="(in GObject 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GObject.Object</span></code></a>,         <a class="reference internal" href="DataModel.html#Gda.DataModel" title="Gda.DataModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">Gda.DataModel</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Abstract:</th><td class="field-body">No</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Structure:</th><td class="field-body"><a class="reference internal" href="DataAccessWrapperClass.html#Gda.DataAccessWrapperClass" title="Gda.DataAccessWrapperClass"><code class="xref py py-class docutils literal notranslate"><span class="pre">Gda.DataAccessWrapperClass</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<dl class="classmethod">
+<dt id="Gda.DataAccessWrapper.new">
+<em class="property">classmethod </em><code class="descname">new</code><span class="sig-paren">(</span><em>model</em><span class="sig-paren">)</span><a class="headerlink" href="#Gda.DataAccessWrapper.new" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>model</strong> (<a class="reference internal" href="DataModel.html#Gda.DataModel" title="Gda.DataModel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gda.DataModel</span></code></a>) – a <a class="reference internal" href="DataModel.html#Gda.DataModel" title="Gda.DataModel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gda.DataModel</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a pointer to the newly created <a class="reference internal" href="DataModel.html#Gda.DataModel" title="Gda.DataModel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gda.DataModel</span></code></a>.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="DataModel.html#Gda.DataModel" title="Gda.DataModel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gda.DataModel</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Creates a new <a class="reference internal" href="DataModel.html#Gda.DataModel" title="Gda.DataModel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gda.DataModel</span></code></a> object which buffers the rows of <cite>model</cite>. This object is useful
+only if <cite>model</cite> can only be accessed using cursor based method.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gda.DataAccessWrapper.set_mapping">
+<code class="descname">set_mapping</code><span class="sig-paren">(</span><em>mapping</em><span class="sig-paren">)</span><a class="headerlink" href="#Gda.DataAccessWrapper.set_mapping" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>mapping</strong> ([<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>] or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – an array of <a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a> which represents the mapping between <cite>self</cite>’s columns
+and the columns of the wrapped data model</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if the mapping actually changed</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p><cite>self</cite> will report as many columns as <cite>mapping_size</cite>, and for each value at position ‘i’ in <cite>mapping</cite>,
+<cite>self</cite> will report the ‘i’th column, mapped to the wrapped data model column at position mapping[i].
+For example if mapping is {3, 4, 0}, then <cite>self</cite> will report 3 columns, respectively mapped to the 4th,
+5th and 1st columns of the wrapped data model (as column numbers start at 0).</p>
+<p>If <cite>mapping</cite> is <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>, then no mapping is done and <cite>self</cite>’s columns will be the same as the wrapped
+data model.</p>
+<p>If a column in <cite>mapping</cite> does not exist in the wrapped data model, then it is simply ignored (no error
+reported).</p>
+<p>Please note that if <cite>self</cite> has already been used and if the wrapped data model offers a cursor forward
+access mode, then this method will return <a class="reference external" href="http://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a> and no action will be done.</p>
+<p>If the mapping is applied, then any existing iterator will be invalid, and <cite>self</cite> is reset as if it
+had just been created.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 5.2.</span></p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="property-details">
+<h2>Property Details<a class="headerlink" href="#property-details" title="Permalink to this headline">¶</a></h2>
+<dl class="data">
+<dt id="Gda.DataAccessWrapper.props.model">
+<code class="descclassname">Gda.DataAccessWrapper.props.</code><code class="descname">model</code><a class="headerlink" href="#Gda.DataAccessWrapper.props.model" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">model</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="DataModel.html#Gda.DataModel" title="Gda.DataModel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gda.DataModel</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.CONSTRUCT_ONLY" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CONSTRUCT_ONLY</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Data model being wrapped</p>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div> 
+
+</body>
+</html>

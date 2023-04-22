@@ -1,0 +1,1740 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    NM.SettingBridge -
+    
+      Classes -
+    
+    NM 1.0
+  </title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/css/pgi.css" type="text/css" />
+  
+
+  
+  <script type="text/javascript">
+
+    function openSidebar(element) {
+        window.location.href = element.href + location.hash;
+        return false;
+    }
+
+    function inIframe() {
+        try {
+            return window.self !== window.top;
+        } catch (e) {
+            return true;
+        }
+    }
+
+    function onLoaded() {
+        if(!inIframe()) {
+            var icons = document.getElementsByClassName('open-sidebar');
+
+            for (var i = 0; i < icons.length; i ++) {
+                icons[i].style.display = 'table-cell';
+            }
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', onLoaded, false);
+
+  </script>
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="NM 1.0 Python API Docs" href="../index.html"/>
+        <link rel="up" title="Classes" href="../classes.html"/>
+        <link rel="next" title="NM.SettingBridgePort" href="SettingBridgePort.html"/>
+        <link rel="prev" title="NM.SettingBond" href="SettingBond.html"/> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+<div class="non-fixed-bar">
+<table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#NM-1.0/classes/SettingBridge.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">NM 1.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>NM.SettingBridge</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="SettingBond.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="SettingBridgePort.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">NM.SettingBridge</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#property-details">Property Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+<div class="fixed-bar">
+  <table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#NM-1.0/classes/SettingBridge.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">NM 1.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>NM.SettingBridge</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="SettingBond.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="SettingBridgePort.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">NM.SettingBridge</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#property-details">Property Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+  <div class="wy-grid-for-nav">
+
+    
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="main">
+            
+  <div class="section" id="nm-settingbridge">
+<h1>NM.SettingBridge<a class="headerlink" href="#nm-settingbridge" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<svg width="98pt" height="134pt"
+ viewBox="0.00 0.00 98.00 134.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 130)">
+<title>g</title>
+<!-- GObject.Object -->
+<g id="node1" class="node">
+<title>GObject.Object</title>
+<g id="a_node1"><a xlink:href="../../GObject-2.0/classes/Object.html#GObject.Object" xlink:title="GObject.Object">
+<path fill="none" stroke="#75507b" d="M79,-126C79,-126 11,-126 11,-126 8,-126 5,-123 5,-120 5,-120 5,-114 5,-114 5,-111 8,-108 11,-108 11,-108 79,-108 79,-108 82,-108 85,-111 85,-114 85,-114 85,-120 85,-120 85,-123 82,-126 79,-126"/>
+<text text-anchor="middle" x="45" y="-114.7" font-family="inherit" font-size="8.50">GObject.Object</text>
+</a>
+</g>
+</g>
+<!-- NM.Setting -->
+<g id="node2" class="node">
+<title>NM.Setting</title>
+<g id="a_node2"><a xlink:href="Setting.html#NM.Setting" xlink:title="NM.Setting">
+<path fill="none" stroke="#aaaaaa" d="M70,-72C70,-72 20,-72 20,-72 17,-72 14,-69 14,-66 14,-66 14,-60 14,-60 14,-57 17,-54 20,-54 20,-54 70,-54 70,-54 73,-54 76,-57 76,-60 76,-60 76,-66 76,-66 76,-69 73,-72 70,-72"/>
+<text text-anchor="middle" x="45" y="-60.7" font-family="inherit" font-size="8.50">NM.Setting</text>
+</a>
+</g>
+</g>
+<!-- GObject.Object&#45;&gt;NM.Setting -->
+<g id="edge1" class="edge">
+<title>GObject.Object&#45;&gt;NM.Setting</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M45,-107.88C45,-99.76 45,-87.13 45,-77.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="46.75,-77.24 45,-72.24 43.25,-77.24 46.75,-77.24"/>
+</g>
+<!-- NM.SettingBridge -->
+<g id="node3" class="node">
+<title>NM.SettingBridge</title>
+<g id="a_node3"><a xlink:href="#NM.SettingBridge" xlink:title="NM.SettingBridge">
+<path fill="none" stroke="#75507b" d="M84,-18C84,-18 6,-18 6,-18 3,-18 0,-15 0,-12 0,-12 0,-6 0,-6 0,-3 3,0 6,0 6,0 84,0 84,0 87,0 90,-3 90,-6 90,-6 90,-12 90,-12 90,-15 87,-18 84,-18"/>
+<text text-anchor="middle" x="45" y="-6.7" font-family="inherit" font-size="8.50">NM.SettingBridge</text>
+</a>
+</g>
+</g>
+<!-- NM.Setting&#45;&gt;NM.SettingBridge -->
+<g id="edge2" class="edge">
+<title>NM.Setting&#45;&gt;NM.SettingBridge</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M45,-53.88C45,-45.76 45,-33.13 45,-23.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="46.75,-23.24 45,-18.24 43.25,-23.24 46.75,-23.24"/>
+</g>
+</g>
+</svg>
+</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Subclasses:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="methods">
+<span id="nm-settingbridge-methods"></span><h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Setting.html#nm-setting-methods"><span class="std std-ref">NM.Setting (20)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (37)</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Structs:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/ObjectClass.html#gobject-objectclass-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.ObjectClass (5)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="99%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><em>class</em></td>
+<td><a class="reference internal" href="#NM.SettingBridge.new" title="NM.SettingBridge.new"><code class="xref py py-func docutils literal notranslate"><span class="pre">new</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.SettingBridge.add_vlan" title="NM.SettingBridge.add_vlan"><code class="xref py py-func docutils literal notranslate"><span class="pre">add_vlan</span></code></a> (vlan)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.SettingBridge.clear_vlans" title="NM.SettingBridge.clear_vlans"><code class="xref py py-func docutils literal notranslate"><span class="pre">clear_vlans</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.SettingBridge.get_ageing_time" title="NM.SettingBridge.get_ageing_time"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_ageing_time</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.SettingBridge.get_forward_delay" title="NM.SettingBridge.get_forward_delay"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_forward_delay</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.SettingBridge.get_group_address" title="NM.SettingBridge.get_group_address"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_group_address</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.SettingBridge.get_group_forward_mask" title="NM.SettingBridge.get_group_forward_mask"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_group_forward_mask</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.SettingBridge.get_hello_time" title="NM.SettingBridge.get_hello_time"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_hello_time</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.SettingBridge.get_mac_address" title="NM.SettingBridge.get_mac_address"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_mac_address</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.SettingBridge.get_max_age" title="NM.SettingBridge.get_max_age"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_max_age</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.SettingBridge.get_multicast_hash_max" title="NM.SettingBridge.get_multicast_hash_max"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_multicast_hash_max</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.SettingBridge.get_multicast_last_member_count" title="NM.SettingBridge.get_multicast_last_member_count"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_multicast_last_member_count</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.SettingBridge.get_multicast_last_member_interval" title="NM.SettingBridge.get_multicast_last_member_interval"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_multicast_last_member_interval</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.SettingBridge.get_multicast_membership_interval" title="NM.SettingBridge.get_multicast_membership_interval"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_multicast_membership_interval</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.SettingBridge.get_multicast_querier" title="NM.SettingBridge.get_multicast_querier"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_multicast_querier</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.SettingBridge.get_multicast_querier_interval" title="NM.SettingBridge.get_multicast_querier_interval"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_multicast_querier_interval</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.SettingBridge.get_multicast_query_interval" title="NM.SettingBridge.get_multicast_query_interval"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_multicast_query_interval</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.SettingBridge.get_multicast_query_response_interval" title="NM.SettingBridge.get_multicast_query_response_interval"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_multicast_query_response_interval</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.SettingBridge.get_multicast_query_use_ifaddr" title="NM.SettingBridge.get_multicast_query_use_ifaddr"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_multicast_query_use_ifaddr</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.SettingBridge.get_multicast_router" title="NM.SettingBridge.get_multicast_router"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_multicast_router</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.SettingBridge.get_multicast_snooping" title="NM.SettingBridge.get_multicast_snooping"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_multicast_snooping</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.SettingBridge.get_multicast_startup_query_count" title="NM.SettingBridge.get_multicast_startup_query_count"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_multicast_startup_query_count</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.SettingBridge.get_multicast_startup_query_interval" title="NM.SettingBridge.get_multicast_startup_query_interval"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_multicast_startup_query_interval</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.SettingBridge.get_num_vlans" title="NM.SettingBridge.get_num_vlans"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_num_vlans</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.SettingBridge.get_priority" title="NM.SettingBridge.get_priority"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_priority</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.SettingBridge.get_stp" title="NM.SettingBridge.get_stp"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_stp</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.SettingBridge.get_vlan" title="NM.SettingBridge.get_vlan"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_vlan</span></code></a> (idx)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.SettingBridge.get_vlan_default_pvid" title="NM.SettingBridge.get_vlan_default_pvid"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_vlan_default_pvid</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.SettingBridge.get_vlan_filtering" title="NM.SettingBridge.get_vlan_filtering"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_vlan_filtering</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.SettingBridge.get_vlan_protocol" title="NM.SettingBridge.get_vlan_protocol"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_vlan_protocol</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.SettingBridge.get_vlan_stats_enabled" title="NM.SettingBridge.get_vlan_stats_enabled"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_vlan_stats_enabled</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.SettingBridge.remove_vlan" title="NM.SettingBridge.remove_vlan"><code class="xref py py-func docutils literal notranslate"><span class="pre">remove_vlan</span></code></a> (idx)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.SettingBridge.remove_vlan_by_vid" title="NM.SettingBridge.remove_vlan_by_vid"><code class="xref py py-func docutils literal notranslate"><span class="pre">remove_vlan_by_vid</span></code></a> (vid_start, vid_end)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="virtual-methods">
+<span id="nm-settingbridge-vfuncs"></span><h2>Virtual Methods<a class="headerlink" href="#virtual-methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Setting.html#nm-setting-vfuncs"><span class="std std-ref">NM.Setting (7)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-vfuncs" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (7)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="nm-settingbridge-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Setting.html#nm-setting-props"><span class="std std-ref">NM.Setting (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="1%" />
+<col width="1%" />
+<col width="97%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Flags</th>
+<th class="head">Short Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="#NM.SettingBridge.props.ageing_time" title="NM.SettingBridge.props.ageing_time"><code class="xref py py-data docutils literal notranslate"><span class="pre">ageing-time</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+<td>r/w</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#NM.SettingBridge.props.forward_delay" title="NM.SettingBridge.props.forward_delay"><code class="xref py py-data docutils literal notranslate"><span class="pre">forward-delay</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+<td>r/w</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#NM.SettingBridge.props.group_address" title="NM.SettingBridge.props.group_address"><code class="xref py py-data docutils literal notranslate"><span class="pre">group-address</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+<td>r/w</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#NM.SettingBridge.props.group_forward_mask" title="NM.SettingBridge.props.group_forward_mask"><code class="xref py py-data docutils literal notranslate"><span class="pre">group-forward-mask</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+<td>r/w</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#NM.SettingBridge.props.hello_time" title="NM.SettingBridge.props.hello_time"><code class="xref py py-data docutils literal notranslate"><span class="pre">hello-time</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+<td>r/w</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#NM.SettingBridge.props.mac_address" title="NM.SettingBridge.props.mac_address"><code class="xref py py-data docutils literal notranslate"><span class="pre">mac-address</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+<td>r/w</td>
+<td><blockquote class="first last">
+<div><code class="docutils literal notranslate"><span class="pre">deprecated</span></code></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#NM.SettingBridge.props.max_age" title="NM.SettingBridge.props.max_age"><code class="xref py py-data docutils literal notranslate"><span class="pre">max-age</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+<td>r/w</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#NM.SettingBridge.props.multicast_hash_max" title="NM.SettingBridge.props.multicast_hash_max"><code class="xref py py-data docutils literal notranslate"><span class="pre">multicast-hash-max</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+<td>r/w</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#NM.SettingBridge.props.multicast_last_member_count" title="NM.SettingBridge.props.multicast_last_member_count"><code class="xref py py-data docutils literal notranslate"><span class="pre">multicast-last-member-count</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+<td>r/w</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#NM.SettingBridge.props.multicast_last_member_interval" title="NM.SettingBridge.props.multicast_last_member_interval"><code class="xref py py-data docutils literal notranslate"><span class="pre">multicast-last-member-interval</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+<td>r/w</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#NM.SettingBridge.props.multicast_membership_interval" title="NM.SettingBridge.props.multicast_membership_interval"><code class="xref py py-data docutils literal notranslate"><span class="pre">multicast-membership-interval</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+<td>r/w</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#NM.SettingBridge.props.multicast_querier" title="NM.SettingBridge.props.multicast_querier"><code class="xref py py-data docutils literal notranslate"><span class="pre">multicast-querier</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+<td>r/w</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#NM.SettingBridge.props.multicast_querier_interval" title="NM.SettingBridge.props.multicast_querier_interval"><code class="xref py py-data docutils literal notranslate"><span class="pre">multicast-querier-interval</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+<td>r/w</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#NM.SettingBridge.props.multicast_query_interval" title="NM.SettingBridge.props.multicast_query_interval"><code class="xref py py-data docutils literal notranslate"><span class="pre">multicast-query-interval</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+<td>r/w</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#NM.SettingBridge.props.multicast_query_response_interval" title="NM.SettingBridge.props.multicast_query_response_interval"><code class="xref py py-data docutils literal notranslate"><span class="pre">multicast-query-response-interval</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+<td>r/w</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#NM.SettingBridge.props.multicast_query_use_ifaddr" title="NM.SettingBridge.props.multicast_query_use_ifaddr"><code class="xref py py-data docutils literal notranslate"><span class="pre">multicast-query-use-ifaddr</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+<td>r/w</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#NM.SettingBridge.props.multicast_router" title="NM.SettingBridge.props.multicast_router"><code class="xref py py-data docutils literal notranslate"><span class="pre">multicast-router</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+<td>r/w</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#NM.SettingBridge.props.multicast_snooping" title="NM.SettingBridge.props.multicast_snooping"><code class="xref py py-data docutils literal notranslate"><span class="pre">multicast-snooping</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+<td>r/w</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#NM.SettingBridge.props.multicast_startup_query_count" title="NM.SettingBridge.props.multicast_startup_query_count"><code class="xref py py-data docutils literal notranslate"><span class="pre">multicast-startup-query-count</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+<td>r/w</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#NM.SettingBridge.props.multicast_startup_query_interval" title="NM.SettingBridge.props.multicast_startup_query_interval"><code class="xref py py-data docutils literal notranslate"><span class="pre">multicast-startup-query-interval</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+<td>r/w</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#NM.SettingBridge.props.priority" title="NM.SettingBridge.props.priority"><code class="xref py py-data docutils literal notranslate"><span class="pre">priority</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+<td>r/w</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#NM.SettingBridge.props.stp" title="NM.SettingBridge.props.stp"><code class="xref py py-data docutils literal notranslate"><span class="pre">stp</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+<td>r/w</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#NM.SettingBridge.props.vlan_default_pvid" title="NM.SettingBridge.props.vlan_default_pvid"><code class="xref py py-data docutils literal notranslate"><span class="pre">vlan-default-pvid</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+<td>r/w</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#NM.SettingBridge.props.vlan_filtering" title="NM.SettingBridge.props.vlan_filtering"><code class="xref py py-data docutils literal notranslate"><span class="pre">vlan-filtering</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+<td>r/w</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#NM.SettingBridge.props.vlan_protocol" title="NM.SettingBridge.props.vlan_protocol"><code class="xref py py-data docutils literal notranslate"><span class="pre">vlan-protocol</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+<td>r/w</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#NM.SettingBridge.props.vlan_stats_enabled" title="NM.SettingBridge.props.vlan_stats_enabled"><code class="xref py py-data docutils literal notranslate"><span class="pre">vlan-stats-enabled</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+<td>r/w</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#NM.SettingBridge.props.vlans" title="NM.SettingBridge.props.vlans"><code class="xref py py-data docutils literal notranslate"><span class="pre">vlans</span></code></a></td>
+<td><a class="reference external" href="../../GLib-2.0/classes/PtrArray.html#GLib.PtrArray" title="(in GLib 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GLib.PtrArray</span></code></a></td>
+<td>r/w</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="signals">
+<span id="nm-settingbridge-signals"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-signals" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fields">
+<span id="nm-settingbridge-fields"></span><h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-fields" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="class-details">
+<h2>Class Details<a class="headerlink" href="#class-details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="NM.SettingBridge">
+<em class="property">class </em><code class="descclassname">NM.</code><code class="descname">SettingBridge</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#NM.SettingBridge" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Bases:</th><td class="field-body"><a class="reference internal" href="Setting.html#NM.Setting" title="NM.Setting"><code class="xref py py-class docutils literal notranslate"><span class="pre">NM.Setting</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Abstract:</th><td class="field-body">No</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Structure:</th><td class="field-body"><a class="reference internal" href="SettingBridgeClass.html#NM.SettingBridgeClass" title="NM.SettingBridgeClass"><code class="xref py py-class docutils literal notranslate"><span class="pre">NM.SettingBridgeClass</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Bridging Settings</p>
+<dl class="classmethod">
+<dt id="NM.SettingBridge.new">
+<em class="property">classmethod </em><code class="descname">new</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NM.SettingBridge.new" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the new empty <a class="reference internal" href="#NM.SettingBridge" title="NM.SettingBridge"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.SettingBridge</span></code></a> object</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="Setting.html#NM.Setting" title="NM.Setting"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.Setting</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Creates a new <a class="reference internal" href="#NM.SettingBridge" title="NM.SettingBridge"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.SettingBridge</span></code></a> object with default values.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.SettingBridge.add_vlan">
+<code class="descname">add_vlan</code><span class="sig-paren">(</span><em>vlan</em><span class="sig-paren">)</span><a class="headerlink" href="#NM.SettingBridge.add_vlan" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>vlan</strong> (<a class="reference internal" href="BridgeVlan.html#NM.BridgeVlan" title="NM.BridgeVlan"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.BridgeVlan</span></code></a>) – the vlan to add</td>
+</tr>
+</tbody>
+</table>
+<p>Appends a new vlan and associated information to the setting.  The
+given vlan gets sealed and a reference to it is added.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.18.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.SettingBridge.clear_vlans">
+<code class="descname">clear_vlans</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NM.SettingBridge.clear_vlans" title="Permalink to this definition">¶</a></dt>
+<dd><p>Removes all configured VLANs.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.18.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.SettingBridge.get_ageing_time">
+<code class="descname">get_ageing_time</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NM.SettingBridge.get_ageing_time" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the <a class="reference internal" href="#NM.SettingBridge" title="NM.SettingBridge"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.SettingBridge</span></code></a> <a class="reference internal" href="#NM.SettingBridge.props.ageing_time" title="NM.SettingBridge.props.ageing_time"><code class="xref py py-data docutils literal notranslate"><span class="pre">:ageing-time</span></code></a> property of the setting</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.SettingBridge.get_forward_delay">
+<code class="descname">get_forward_delay</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NM.SettingBridge.get_forward_delay" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the <a class="reference internal" href="#NM.SettingBridge" title="NM.SettingBridge"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.SettingBridge</span></code></a> <a class="reference internal" href="#NM.SettingBridge.props.forward_delay" title="NM.SettingBridge.props.forward_delay"><code class="xref py py-data docutils literal notranslate"><span class="pre">:forward-delay</span></code></a> property of the setting</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.SettingBridge.get_group_address">
+<code class="descname">get_group_address</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NM.SettingBridge.get_group_address" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the <a class="reference internal" href="#NM.SettingBridge" title="NM.SettingBridge"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.SettingBridge</span></code></a> <a class="reference internal" href="#NM.SettingBridge.props.group_address" title="NM.SettingBridge.props.group_address"><code class="xref py py-data docutils literal notranslate"><span class="pre">:group-address</span></code></a> property of the setting</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.SettingBridge.get_group_forward_mask">
+<code class="descname">get_group_forward_mask</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NM.SettingBridge.get_group_forward_mask" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the <a class="reference internal" href="#NM.SettingBridge" title="NM.SettingBridge"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.SettingBridge</span></code></a> <a class="reference internal" href="#NM.SettingBridge.props.group_forward_mask" title="NM.SettingBridge.props.group_forward_mask"><code class="xref py py-data docutils literal notranslate"><span class="pre">:group-forward-mask</span></code></a> property of the setting</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.10.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.SettingBridge.get_hello_time">
+<code class="descname">get_hello_time</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NM.SettingBridge.get_hello_time" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the <a class="reference internal" href="#NM.SettingBridge" title="NM.SettingBridge"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.SettingBridge</span></code></a> <a class="reference internal" href="#NM.SettingBridge.props.hello_time" title="NM.SettingBridge.props.hello_time"><code class="xref py py-data docutils literal notranslate"><span class="pre">:hello-time</span></code></a> property of the setting</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.SettingBridge.get_mac_address">
+<code class="descname">get_mac_address</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NM.SettingBridge.get_mac_address" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the <a class="reference internal" href="#NM.SettingBridge" title="NM.SettingBridge"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.SettingBridge</span></code></a> <a class="reference internal" href="#NM.SettingBridge.props.mac_address" title="NM.SettingBridge.props.mac_address"><code class="xref py py-data docutils literal notranslate"><span class="pre">:mac-address</span></code></a> property of the setting</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.SettingBridge.get_max_age">
+<code class="descname">get_max_age</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NM.SettingBridge.get_max_age" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the <a class="reference internal" href="#NM.SettingBridge" title="NM.SettingBridge"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.SettingBridge</span></code></a> <a class="reference internal" href="#NM.SettingBridge.props.max_age" title="NM.SettingBridge.props.max_age"><code class="xref py py-data docutils literal notranslate"><span class="pre">:max-age</span></code></a> property of the setting</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.SettingBridge.get_multicast_hash_max">
+<code class="descname">get_multicast_hash_max</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NM.SettingBridge.get_multicast_hash_max" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the <a class="reference internal" href="#NM.SettingBridge" title="NM.SettingBridge"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.SettingBridge</span></code></a> <a class="reference internal" href="#NM.SettingBridge.props.multicast_hash_max" title="NM.SettingBridge.props.multicast_hash_max"><code class="xref py py-data docutils literal notranslate"><span class="pre">:multicast-hash-max</span></code></a> property of the setting</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.SettingBridge.get_multicast_last_member_count">
+<code class="descname">get_multicast_last_member_count</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NM.SettingBridge.get_multicast_last_member_count" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the <a class="reference internal" href="#NM.SettingBridge" title="NM.SettingBridge"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.SettingBridge</span></code></a> <a class="reference internal" href="#NM.SettingBridge.props.multicast_last_member_count" title="NM.SettingBridge.props.multicast_last_member_count"><code class="xref py py-data docutils literal notranslate"><span class="pre">:multicast-last-member-count</span></code></a> property of the setting</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.SettingBridge.get_multicast_last_member_interval">
+<code class="descname">get_multicast_last_member_interval</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NM.SettingBridge.get_multicast_last_member_interval" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the <a class="reference internal" href="#NM.SettingBridge" title="NM.SettingBridge"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.SettingBridge</span></code></a> <a class="reference internal" href="#NM.SettingBridge.props.multicast_last_member_interval" title="NM.SettingBridge.props.multicast_last_member_interval"><code class="xref py py-data docutils literal notranslate"><span class="pre">:multicast-last-member-interval</span></code></a> property of the setting</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.SettingBridge.get_multicast_membership_interval">
+<code class="descname">get_multicast_membership_interval</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NM.SettingBridge.get_multicast_membership_interval" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the <a class="reference internal" href="#NM.SettingBridge" title="NM.SettingBridge"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.SettingBridge</span></code></a> <a class="reference internal" href="#NM.SettingBridge.props.multicast_membership_interval" title="NM.SettingBridge.props.multicast_membership_interval"><code class="xref py py-data docutils literal notranslate"><span class="pre">:multicast-membership-interval</span></code></a> property of the setting</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.SettingBridge.get_multicast_querier">
+<code class="descname">get_multicast_querier</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NM.SettingBridge.get_multicast_querier" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the <a class="reference internal" href="#NM.SettingBridge" title="NM.SettingBridge"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.SettingBridge</span></code></a> <a class="reference internal" href="#NM.SettingBridge.props.multicast_querier" title="NM.SettingBridge.props.multicast_querier"><code class="xref py py-data docutils literal notranslate"><span class="pre">:multicast-querier</span></code></a> property of the setting</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.SettingBridge.get_multicast_querier_interval">
+<code class="descname">get_multicast_querier_interval</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NM.SettingBridge.get_multicast_querier_interval" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the <a class="reference internal" href="#NM.SettingBridge" title="NM.SettingBridge"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.SettingBridge</span></code></a> <a class="reference internal" href="#NM.SettingBridge.props.multicast_querier_interval" title="NM.SettingBridge.props.multicast_querier_interval"><code class="xref py py-data docutils literal notranslate"><span class="pre">:multicast-querier-interval</span></code></a> property of the setting</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.SettingBridge.get_multicast_query_interval">
+<code class="descname">get_multicast_query_interval</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NM.SettingBridge.get_multicast_query_interval" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the <a class="reference internal" href="#NM.SettingBridge" title="NM.SettingBridge"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.SettingBridge</span></code></a> <a class="reference internal" href="#NM.SettingBridge.props.multicast_query_interval" title="NM.SettingBridge.props.multicast_query_interval"><code class="xref py py-data docutils literal notranslate"><span class="pre">:multicast-query-interval</span></code></a> property of the setting</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.SettingBridge.get_multicast_query_response_interval">
+<code class="descname">get_multicast_query_response_interval</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NM.SettingBridge.get_multicast_query_response_interval" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the <a class="reference internal" href="#NM.SettingBridge" title="NM.SettingBridge"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.SettingBridge</span></code></a> <a class="reference internal" href="#NM.SettingBridge.props.multicast_query_response_interval" title="NM.SettingBridge.props.multicast_query_response_interval"><code class="xref py py-data docutils literal notranslate"><span class="pre">:multicast-query-response-interval</span></code></a> property of the setting</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.SettingBridge.get_multicast_query_use_ifaddr">
+<code class="descname">get_multicast_query_use_ifaddr</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NM.SettingBridge.get_multicast_query_use_ifaddr" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the <a class="reference internal" href="#NM.SettingBridge" title="NM.SettingBridge"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.SettingBridge</span></code></a> <a class="reference internal" href="#NM.SettingBridge.props.multicast_query_use_ifaddr" title="NM.SettingBridge.props.multicast_query_use_ifaddr"><code class="xref py py-data docutils literal notranslate"><span class="pre">:multicast-query-use-ifaddr</span></code></a> property of the setting</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.SettingBridge.get_multicast_router">
+<code class="descname">get_multicast_router</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NM.SettingBridge.get_multicast_router" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the <a class="reference internal" href="#NM.SettingBridge" title="NM.SettingBridge"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.SettingBridge</span></code></a> <a class="reference internal" href="#NM.SettingBridge.props.multicast_router" title="NM.SettingBridge.props.multicast_router"><code class="xref py py-data docutils literal notranslate"><span class="pre">:multicast-router</span></code></a> property of the setting</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.SettingBridge.get_multicast_snooping">
+<code class="descname">get_multicast_snooping</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NM.SettingBridge.get_multicast_snooping" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the <a class="reference internal" href="#NM.SettingBridge" title="NM.SettingBridge"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.SettingBridge</span></code></a> <a class="reference internal" href="#NM.SettingBridge.props.multicast_snooping" title="NM.SettingBridge.props.multicast_snooping"><code class="xref py py-data docutils literal notranslate"><span class="pre">:multicast-snooping</span></code></a> property of the setting</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.2.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.SettingBridge.get_multicast_startup_query_count">
+<code class="descname">get_multicast_startup_query_count</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NM.SettingBridge.get_multicast_startup_query_count" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the <a class="reference internal" href="#NM.SettingBridge" title="NM.SettingBridge"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.SettingBridge</span></code></a> <a class="reference internal" href="#NM.SettingBridge.props.multicast_query_response_interval" title="NM.SettingBridge.props.multicast_query_response_interval"><code class="xref py py-data docutils literal notranslate"><span class="pre">:multicast-query-response-interval</span></code></a> property of the setting</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.SettingBridge.get_multicast_startup_query_interval">
+<code class="descname">get_multicast_startup_query_interval</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NM.SettingBridge.get_multicast_startup_query_interval" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the <a class="reference internal" href="#NM.SettingBridge" title="NM.SettingBridge"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.SettingBridge</span></code></a> <a class="reference internal" href="#NM.SettingBridge.props.multicast_startup_query_interval" title="NM.SettingBridge.props.multicast_startup_query_interval"><code class="xref py py-data docutils literal notranslate"><span class="pre">:multicast-startup-query-interval</span></code></a> property of the setting</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.SettingBridge.get_num_vlans">
+<code class="descname">get_num_vlans</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NM.SettingBridge.get_num_vlans" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the number of VLANs</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.18.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.SettingBridge.get_priority">
+<code class="descname">get_priority</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NM.SettingBridge.get_priority" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the <a class="reference internal" href="#NM.SettingBridge" title="NM.SettingBridge"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.SettingBridge</span></code></a> <a class="reference internal" href="#NM.SettingBridge.props.priority" title="NM.SettingBridge.props.priority"><code class="xref py py-data docutils literal notranslate"><span class="pre">:priority</span></code></a> property of the setting</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.SettingBridge.get_stp">
+<code class="descname">get_stp</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NM.SettingBridge.get_stp" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the <a class="reference internal" href="#NM.SettingBridge" title="NM.SettingBridge"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.SettingBridge</span></code></a> <a class="reference internal" href="#NM.SettingBridge.props.stp" title="NM.SettingBridge.props.stp"><code class="xref py py-data docutils literal notranslate"><span class="pre">:stp</span></code></a> property of the setting</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.SettingBridge.get_vlan">
+<code class="descname">get_vlan</code><span class="sig-paren">(</span><em>idx</em><span class="sig-paren">)</span><a class="headerlink" href="#NM.SettingBridge.get_vlan" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>idx</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – index number of the VLAN to return</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the VLAN at index <cite>idx</cite></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="BridgeVlan.html#NM.BridgeVlan" title="NM.BridgeVlan"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.BridgeVlan</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.18.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.SettingBridge.get_vlan_default_pvid">
+<code class="descname">get_vlan_default_pvid</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NM.SettingBridge.get_vlan_default_pvid" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the <a class="reference internal" href="#NM.SettingBridge" title="NM.SettingBridge"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.SettingBridge</span></code></a> <a class="reference internal" href="#NM.SettingBridge.props.vlan_default_pvid" title="NM.SettingBridge.props.vlan_default_pvid"><code class="xref py py-data docutils literal notranslate"><span class="pre">:vlan-default-pvid</span></code></a> property of the setting</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.18.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.SettingBridge.get_vlan_filtering">
+<code class="descname">get_vlan_filtering</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NM.SettingBridge.get_vlan_filtering" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the <a class="reference internal" href="#NM.SettingBridge" title="NM.SettingBridge"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.SettingBridge</span></code></a> <a class="reference internal" href="#NM.SettingBridge.props.vlan_filtering" title="NM.SettingBridge.props.vlan_filtering"><code class="xref py py-data docutils literal notranslate"><span class="pre">:vlan-filtering</span></code></a> property of the setting</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.18.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.SettingBridge.get_vlan_protocol">
+<code class="descname">get_vlan_protocol</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NM.SettingBridge.get_vlan_protocol" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the <a class="reference internal" href="#NM.SettingBridge" title="NM.SettingBridge"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.SettingBridge</span></code></a> <a class="reference internal" href="#NM.SettingBridge.props.vlan_protocol" title="NM.SettingBridge.props.vlan_protocol"><code class="xref py py-data docutils literal notranslate"><span class="pre">:vlan-protocol</span></code></a> property of the setting</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.SettingBridge.get_vlan_stats_enabled">
+<code class="descname">get_vlan_stats_enabled</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NM.SettingBridge.get_vlan_stats_enabled" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the <a class="reference internal" href="#NM.SettingBridge" title="NM.SettingBridge"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.SettingBridge</span></code></a> <a class="reference internal" href="#NM.SettingBridge.props.vlan_stats_enabled" title="NM.SettingBridge.props.vlan_stats_enabled"><code class="xref py py-data docutils literal notranslate"><span class="pre">:vlan-stats-enabled</span></code></a> property of the setting</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.SettingBridge.remove_vlan">
+<code class="descname">remove_vlan</code><span class="sig-paren">(</span><em>idx</em><span class="sig-paren">)</span><a class="headerlink" href="#NM.SettingBridge.remove_vlan" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>idx</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – index number of the VLAN.</td>
+</tr>
+</tbody>
+</table>
+<p>Removes the vlan at index <cite>idx</cite>.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.18.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.SettingBridge.remove_vlan_by_vid">
+<code class="descname">remove_vlan_by_vid</code><span class="sig-paren">(</span><em>vid_start</em>, <em>vid_end</em><span class="sig-paren">)</span><a class="headerlink" href="#NM.SettingBridge.remove_vlan_by_vid" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>vid_start</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – the vlan start index</li>
+<li><strong>vid_end</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – the vlan end index</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if the vlan was found and removed; <a class="reference external" href="http://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a> otherwise</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Remove the VLAN with range <cite>vid_start</cite> to <cite>vid_end</cite>.
+If <cite>vid_end</cite> is zero, it is assumed to be equal to <cite>vid_start</cite>
+and so the single-id VLAN with id <cite>vid_start</cite> is removed.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.18.</span></p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="property-details">
+<h2>Property Details<a class="headerlink" href="#property-details" title="Permalink to this headline">¶</a></h2>
+<dl class="data">
+<dt id="NM.SettingBridge.props.ageing_time">
+<code class="descclassname">NM.SettingBridge.props.</code><code class="descname">ageing_time</code><a class="headerlink" href="#NM.SettingBridge.props.ageing_time" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">ageing-time</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">300</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The Ethernet MAC address aging time, in seconds.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="NM.SettingBridge.props.forward_delay">
+<code class="descclassname">NM.SettingBridge.props.</code><code class="descname">forward_delay</code><a class="headerlink" href="#NM.SettingBridge.props.forward_delay" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">forward-delay</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">15</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The Spanning Tree Protocol (STP) forwarding delay, in seconds.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="NM.SettingBridge.props.group_address">
+<code class="descclassname">NM.SettingBridge.props.</code><code class="descname">group_address</code><a class="headerlink" href="#NM.SettingBridge.props.group_address" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">group-address</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>If specified, The MAC address of the multicast group this bridge uses for STP.</p>
+<p>The address must be a link-local address in standard Ethernet MAC address format,
+ie an address of the form 01:80:py:data:<cite>:C2&lt;NM.SettingBridge.props.C2&gt;</cite>:00:00:0X, with X in [0, 4..F].
+If not specified the default value is 01:80:py:data:<cite>:C2&lt;NM.SettingBridge.props.C2&gt;</cite>:00:00:00.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.24.</span></p>
+</div>
+</dd></dl>
+
+<dl class="data">
+<dt id="NM.SettingBridge.props.group_forward_mask">
+<code class="descclassname">NM.SettingBridge.props.</code><code class="descname">group_forward_mask</code><a class="headerlink" href="#NM.SettingBridge.props.group_forward_mask" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">group-forward-mask</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">0</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>A mask of group addresses to forward. Usually, group addresses in
+the range from 01:80:py:data:<cite>:C2&lt;NM.SettingBridge.props.C2&gt;</cite>:00:00:00 to 01:80:py:data:<cite>:C2&lt;NM.SettingBridge.props.C2&gt;</cite>:00:00:0F are not
+forwarded according to standards. This property is a mask of 16 bits,
+each corresponding to a group address in that range that must be
+forwarded. The mask can’t have bits 0, 1 or 2 set because they are
+used for STP, MAC pause frames and LACP.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.10.</span></p>
+</div>
+</dd></dl>
+
+<dl class="data">
+<dt id="NM.SettingBridge.props.hello_time">
+<code class="descclassname">NM.SettingBridge.props.</code><code class="descname">hello_time</code><a class="headerlink" href="#NM.SettingBridge.props.hello_time" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">hello-time</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">2</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The Spanning Tree Protocol (STP) hello time, in seconds.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="NM.SettingBridge.props.mac_address">
+<code class="descclassname">NM.SettingBridge.props.</code><code class="descname">mac_address</code><a class="headerlink" href="#NM.SettingBridge.props.mac_address" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">mac-address</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>If specified, the MAC address of bridge. When creating a new bridge, this
+MAC address will be set.</p>
+<p>If this field is left unspecified, the “ethernet.cloned-mac-address” is
+referred instead to generate the initial MAC address. Note that setting
+“ethernet.cloned-mac-address” anyway overwrites the MAC address of
+the bridge later while activating the bridge. Hence, this property
+is deprecated.</p>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 1.12: </span>Use the ethernet.cloned-mac-address property instead.</p>
+</div>
+</dd></dl>
+
+<dl class="data">
+<dt id="NM.SettingBridge.props.max_age">
+<code class="descclassname">NM.SettingBridge.props.</code><code class="descname">max_age</code><a class="headerlink" href="#NM.SettingBridge.props.max_age" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">max-age</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">20</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The Spanning Tree Protocol (STP) maximum message age, in seconds.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="NM.SettingBridge.props.multicast_hash_max">
+<code class="descclassname">NM.SettingBridge.props.</code><code class="descname">multicast_hash_max</code><a class="headerlink" href="#NM.SettingBridge.props.multicast_hash_max" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">multicast-hash-max</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">4096</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Set maximum size of multicast hash table (value must be a power of 2).</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="NM.SettingBridge.props.multicast_last_member_count">
+<code class="descclassname">NM.SettingBridge.props.</code><code class="descname">multicast_last_member_count</code><a class="headerlink" href="#NM.SettingBridge.props.multicast_last_member_count" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">multicast-last-member-count</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">2</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Set the number of queries the bridge will send before
+stopping forwarding a multicast group after a “leave”
+message has been received.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="NM.SettingBridge.props.multicast_last_member_interval">
+<code class="descclassname">NM.SettingBridge.props.</code><code class="descname">multicast_last_member_interval</code><a class="headerlink" href="#NM.SettingBridge.props.multicast_last_member_interval" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">multicast-last-member-interval</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">100</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Set interval (in deciseconds) between queries to find remaining
+members of a group, after a “leave” message is received.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="NM.SettingBridge.props.multicast_membership_interval">
+<code class="descclassname">NM.SettingBridge.props.</code><code class="descname">multicast_membership_interval</code><a class="headerlink" href="#NM.SettingBridge.props.multicast_membership_interval" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">multicast-membership-interval</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">26000</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Set delay (in deciseconds) after which the bridge will
+leave a group, if no membership reports for this
+group are received.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="NM.SettingBridge.props.multicast_querier">
+<code class="descclassname">NM.SettingBridge.props.</code><code class="descname">multicast_querier</code><a class="headerlink" href="#NM.SettingBridge.props.multicast_querier" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">multicast-querier</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Enable or disable sending of multicast queries by the bridge.
+If not specified the option is disabled.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="NM.SettingBridge.props.multicast_querier_interval">
+<code class="descclassname">NM.SettingBridge.props.</code><code class="descname">multicast_querier_interval</code><a class="headerlink" href="#NM.SettingBridge.props.multicast_querier_interval" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">multicast-querier-interval</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">25500</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>If no queries are seen after this delay (in deciseconds) has passed,
+the bridge will start to send its own queries.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="NM.SettingBridge.props.multicast_query_interval">
+<code class="descclassname">NM.SettingBridge.props.</code><code class="descname">multicast_query_interval</code><a class="headerlink" href="#NM.SettingBridge.props.multicast_query_interval" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">multicast-query-interval</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">12500</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Interval (in deciseconds) between queries sent
+by the bridge after the end of the startup phase.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="NM.SettingBridge.props.multicast_query_response_interval">
+<code class="descclassname">NM.SettingBridge.props.</code><code class="descname">multicast_query_response_interval</code><a class="headerlink" href="#NM.SettingBridge.props.multicast_query_response_interval" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">multicast-query-response-interval</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">1000</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Set the Max Response Time/Max Response Delay
+(in deciseconds) for IGMP/MLD queries sent by the bridge.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="NM.SettingBridge.props.multicast_query_use_ifaddr">
+<code class="descclassname">NM.SettingBridge.props.</code><code class="descname">multicast_query_use_ifaddr</code><a class="headerlink" href="#NM.SettingBridge.props.multicast_query_use_ifaddr" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">multicast-query-use-ifaddr</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>If enabled the bridge’s own IP address is used as
+the source address for IGMP queries otherwise
+the default of 0.0.0.0 is used.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="NM.SettingBridge.props.multicast_router">
+<code class="descclassname">NM.SettingBridge.props.</code><code class="descname">multicast_router</code><a class="headerlink" href="#NM.SettingBridge.props.multicast_router" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">multicast-router</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Sets bridge’s multicast router. Multicast-snooping must be enabled
+for this option to work.</p>
+<p>Supported values are: ‘auto’, ‘disabled’, ‘enabled’ to which kernel
+assigns the numbers 1, 0, and 2, respectively.
+If not specified the default value is ‘auto’ (1).</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="NM.SettingBridge.props.multicast_snooping">
+<code class="descclassname">NM.SettingBridge.props.</code><code class="descname">multicast_snooping</code><a class="headerlink" href="#NM.SettingBridge.props.multicast_snooping" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">multicast-snooping</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Controls whether IGMP snooping is enabled for this bridge.
+Note that if snooping was automatically disabled due to hash collisions,
+the system may refuse to enable the feature until the collisions are
+resolved.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.2.</span></p>
+</div>
+</dd></dl>
+
+<dl class="data">
+<dt id="NM.SettingBridge.props.multicast_startup_query_count">
+<code class="descclassname">NM.SettingBridge.props.</code><code class="descname">multicast_startup_query_count</code><a class="headerlink" href="#NM.SettingBridge.props.multicast_startup_query_count" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">multicast-startup-query-count</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">2</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Set the number of IGMP queries to send during startup phase.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="NM.SettingBridge.props.multicast_startup_query_interval">
+<code class="descclassname">NM.SettingBridge.props.</code><code class="descname">multicast_startup_query_interval</code><a class="headerlink" href="#NM.SettingBridge.props.multicast_startup_query_interval" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">multicast-startup-query-interval</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">3125</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Sets the time (in deciseconds) between queries sent out
+at startup to determine membership information.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="NM.SettingBridge.props.priority">
+<code class="descclassname">NM.SettingBridge.props.</code><code class="descname">priority</code><a class="headerlink" href="#NM.SettingBridge.props.priority" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">priority</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">32768</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Sets the Spanning Tree Protocol (STP) priority for this bridge.  Lower
+values are “better”; the lowest priority bridge will be elected the root
+bridge.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="NM.SettingBridge.props.stp">
+<code class="descclassname">NM.SettingBridge.props.</code><code class="descname">stp</code><a class="headerlink" href="#NM.SettingBridge.props.stp" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">stp</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Controls whether Spanning Tree Protocol (STP) is enabled for this bridge.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="NM.SettingBridge.props.vlan_default_pvid">
+<code class="descclassname">NM.SettingBridge.props.</code><code class="descname">vlan_default_pvid</code><a class="headerlink" href="#NM.SettingBridge.props.vlan_default_pvid" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">vlan-default-pvid</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">1</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The default PVID for the ports of the bridge, that is the VLAN id
+assigned to incoming untagged frames.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.18.</span></p>
+</div>
+</dd></dl>
+
+<dl class="data">
+<dt id="NM.SettingBridge.props.vlan_filtering">
+<code class="descclassname">NM.SettingBridge.props.</code><code class="descname">vlan_filtering</code><a class="headerlink" href="#NM.SettingBridge.props.vlan_filtering" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">vlan-filtering</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Control whether VLAN filtering is enabled on the bridge.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.18.</span></p>
+</div>
+</dd></dl>
+
+<dl class="data">
+<dt id="NM.SettingBridge.props.vlan_protocol">
+<code class="descclassname">NM.SettingBridge.props.</code><code class="descname">vlan_protocol</code><a class="headerlink" href="#NM.SettingBridge.props.vlan_protocol" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">vlan-protocol</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>If specified, the protocol used for VLAN filtering.</p>
+<p>Supported values are: ‘802.1Q’, ‘802.1ad’.
+If not specified the default value is ‘802.1Q’.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.24.</span></p>
+</div>
+</dd></dl>
+
+<dl class="data">
+<dt id="NM.SettingBridge.props.vlan_stats_enabled">
+<code class="descclassname">NM.SettingBridge.props.</code><code class="descname">vlan_stats_enabled</code><a class="headerlink" href="#NM.SettingBridge.props.vlan_stats_enabled" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">vlan-stats-enabled</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Controls whether per-VLAN stats accounting is enabled.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="NM.SettingBridge.props.vlans">
+<code class="descclassname">NM.SettingBridge.props.</code><code class="descname">vlans</code><a class="headerlink" href="#NM.SettingBridge.props.vlans" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">vlans</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="../../GLib-2.0/classes/PtrArray.html#GLib.PtrArray" title="(in GLib 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GLib.PtrArray</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Array of bridge VLAN objects. In addition to the VLANs
+specified here, the bridge will also have the default-pvid
+VLAN configured  by the bridge.vlan-default-pvid property.</p>
+<p>In nmcli the VLAN list can be specified with the following
+syntax:</p>
+<p>$vid ‘pvid [untagged]’ [, $vid ‘pvid [untagged]’]…</p>
+<p>where $vid is either a single id between 1 and 4094 or a
+range, represented as a couple of ids separated by a dash.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.18.</span></p>
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div> 
+
+</body>
+</html>

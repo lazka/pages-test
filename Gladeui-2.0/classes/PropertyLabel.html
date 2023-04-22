@@ -1,0 +1,892 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    Gladeui.PropertyLabel -
+    
+      Classes -
+    
+    Gladeui 2.0
+  </title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/css/pgi.css" type="text/css" />
+  
+
+  
+  <script type="text/javascript">
+
+    function openSidebar(element) {
+        window.location.href = element.href + location.hash;
+        return false;
+    }
+
+    function inIframe() {
+        try {
+            return window.self !== window.top;
+        } catch (e) {
+            return true;
+        }
+    }
+
+    function onLoaded() {
+        if(!inIframe()) {
+            var icons = document.getElementsByClassName('open-sidebar');
+
+            for (var i = 0; i < icons.length; i ++) {
+                icons[i].style.display = 'table-cell';
+            }
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', onLoaded, false);
+
+  </script>
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="Gladeui 2.0 Python API Docs" href="../index.html"/>
+        <link rel="up" title="Classes" href="../classes.html"/>
+        <link rel="next" title="Gladeui.PropertyShell" href="PropertyShell.html"/>
+        <link rel="prev" title="Gladeui.Property" href="Property.html"/> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+<div class="non-fixed-bar">
+<table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#Gladeui-2.0/classes/PropertyLabel.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Gladeui 2.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>Gladeui.PropertyLabel</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="Property.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="PropertyShell.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">Gladeui.PropertyLabel</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#style-properties">Style Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#property-details">Property Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+<div class="fixed-bar">
+  <table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#Gladeui-2.0/classes/PropertyLabel.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Gladeui 2.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>Gladeui.PropertyLabel</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="Property.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="PropertyShell.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">Gladeui.PropertyLabel</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#style-properties">Style Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#property-details">Property Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+  <div class="wy-grid-for-nav">
+
+    
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="main">
+            
+  <div class="section" id="gladeui-propertylabel">
+<h1>Gladeui.PropertyLabel<a class="headerlink" href="#gladeui-propertylabel" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<svg width="379pt" height="350pt"
+ viewBox="0.00 0.00 379.00 350.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 346)">
+<title>g</title>
+<!-- Atk.ImplementorIface -->
+<g id="node1" class="node">
+<title>Atk.ImplementorIface</title>
+<g id="a_node1"><a xlink:href="../../Atk-1.0/classes/ImplementorIface.html#Atk.ImplementorIface" xlink:title="Atk.ImplementorIface">
+<path fill="none" stroke="#3091d1" d="M225,-288C225,-288 129,-288 129,-288 126,-288 123,-285 123,-282 123,-282 123,-276 123,-276 123,-273 126,-270 129,-270 129,-270 225,-270 225,-270 228,-270 231,-273 231,-276 231,-276 231,-282 231,-282 231,-285 228,-288 225,-288"/>
+<text text-anchor="middle" x="177" y="-276.7" font-family="inherit" font-size="8.50">Atk.ImplementorIface</text>
+</a>
+</g>
+</g>
+<!-- Gtk.Widget -->
+<g id="node11" class="node">
+<title>Gtk.Widget</title>
+<g id="a_node11"><a xlink:href="../../Gtk-3.0/classes/Widget.html#Gtk.Widget" xlink:title="Gtk.Widget">
+<path fill="none" stroke="#aaaaaa" d="M182,-234C182,-234 130,-234 130,-234 127,-234 124,-231 124,-228 124,-228 124,-222 124,-222 124,-219 127,-216 130,-216 130,-216 182,-216 182,-216 185,-216 188,-219 188,-222 188,-222 188,-228 188,-228 188,-231 185,-234 182,-234"/>
+<text text-anchor="middle" x="156" y="-222.7" font-family="inherit" font-size="8.50">Gtk.Widget</text>
+</a>
+</g>
+</g>
+<!-- Atk.ImplementorIface&#45;&gt;Gtk.Widget -->
+<g id="edge1" class="edge">
+<title>Atk.ImplementorIface&#45;&gt;Gtk.Widget</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M173.72,-269.88C170.38,-261.6 165.15,-248.66 161.24,-238.97"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="162.82,-238.22 159.33,-234.24 159.58,-239.53 162.82,-238.22"/>
+</g>
+<!-- GObject.GInterface -->
+<g id="node2" class="node">
+<title>GObject.GInterface</title>
+<g id="a_node2"><a xlink:href="../../GObject-2.0/classes/GInterface.html#GObject.GInterface" xlink:title="GObject.GInterface">
+<path fill="none" stroke="#3091d1" d="M111,-342C111,-342 25,-342 25,-342 22,-342 19,-339 19,-336 19,-336 19,-330 19,-330 19,-327 22,-324 25,-324 25,-324 111,-324 111,-324 114,-324 117,-327 117,-330 117,-330 117,-336 117,-336 117,-339 114,-342 111,-342"/>
+<text text-anchor="middle" x="68" y="-330.7" font-family="inherit" font-size="8.50">GObject.GInterface</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Atk.ImplementorIface -->
+<g id="edge2" class="edge">
+<title>GObject.GInterface&#45;&gt;Atk.ImplementorIface</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M85.03,-323.88C103.99,-314.83 134.67,-300.19 155.33,-290.34"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="156.33,-291.8 160.09,-288.07 154.82,-288.64 156.33,-291.8"/>
+</g>
+<!-- Gladeui.Editable -->
+<g id="node5" class="node">
+<title>Gladeui.Editable</title>
+<g id="a_node5"><a xlink:href="Editable.html#Gladeui.Editable" xlink:title="Gladeui.Editable">
+<path fill="none" stroke="#3091d1" d="M80,-234C80,-234 6,-234 6,-234 3,-234 0,-231 0,-228 0,-228 0,-222 0,-222 0,-219 3,-216 6,-216 6,-216 80,-216 80,-216 83,-216 86,-219 86,-222 86,-222 86,-228 86,-228 86,-231 83,-234 80,-234"/>
+<text text-anchor="middle" x="43" y="-222.7" font-family="inherit" font-size="8.50">Gladeui.Editable</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Gladeui.Editable -->
+<g id="edge4" class="edge">
+<title>GObject.GInterface&#45;&gt;Gladeui.Editable</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M54.66,-323.76C43.58,-316.06 28.6,-303.45 22,-288 14.84,-271.25 24.88,-251.16 33.39,-238.49"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="34.98,-239.27 36.42,-234.17 32.12,-237.26 34.98,-239.27"/>
+</g>
+<!-- Gtk.Buildable -->
+<g id="node8" class="node">
+<title>Gtk.Buildable</title>
+<g id="a_node8"><a xlink:href="../../Gtk-3.0/classes/Buildable.html#Gtk.Buildable" xlink:title="Gtk.Buildable">
+<path fill="none" stroke="#3091d1" d="M99,-288C99,-288 37,-288 37,-288 34,-288 31,-285 31,-282 31,-282 31,-276 31,-276 31,-273 34,-270 37,-270 37,-270 99,-270 99,-270 102,-270 105,-273 105,-276 105,-276 105,-282 105,-282 105,-285 102,-288 99,-288"/>
+<text text-anchor="middle" x="68" y="-276.7" font-family="inherit" font-size="8.50">Gtk.Buildable</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Gtk.Buildable -->
+<g id="edge3" class="edge">
+<title>GObject.GInterface&#45;&gt;Gtk.Buildable</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M68,-323.88C68,-315.76 68,-303.13 68,-293.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="69.75,-293.24 68,-288.24 66.25,-293.24 69.75,-293.24"/>
+</g>
+<!-- GObject.InitiallyUnowned -->
+<g id="node3" class="node">
+<title>GObject.InitiallyUnowned</title>
+<g id="a_node3"><a xlink:href="../../GObject-2.0/classes/InitiallyUnowned.html#GObject.InitiallyUnowned" xlink:title="GObject.InitiallyUnowned">
+<path fill="none" stroke="#75507b" d="M365,-288C365,-288 255,-288 255,-288 252,-288 249,-285 249,-282 249,-282 249,-276 249,-276 249,-273 252,-270 255,-270 255,-270 365,-270 365,-270 368,-270 371,-273 371,-276 371,-276 371,-282 371,-282 371,-285 368,-288 365,-288"/>
+<text text-anchor="middle" x="310" y="-276.7" font-family="inherit" font-size="8.50">GObject.InitiallyUnowned</text>
+</a>
+</g>
+</g>
+<!-- GObject.InitiallyUnowned&#45;&gt;Gtk.Widget -->
+<g id="edge5" class="edge">
+<title>GObject.InitiallyUnowned&#45;&gt;Gtk.Widget</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M286.27,-269.99C258.92,-260.75 213.96,-245.57 184.67,-235.68"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="185.05,-233.96 179.75,-234.02 183.93,-237.28 185.05,-233.96"/>
+</g>
+<!-- GObject.Object -->
+<g id="node4" class="node">
+<title>GObject.Object</title>
+<g id="a_node4"><a xlink:href="../../GObject-2.0/classes/Object.html#GObject.Object" xlink:title="GObject.Object">
+<path fill="none" stroke="#75507b" d="M344,-342C344,-342 276,-342 276,-342 273,-342 270,-339 270,-336 270,-336 270,-330 270,-330 270,-327 273,-324 276,-324 276,-324 344,-324 344,-324 347,-324 350,-327 350,-330 350,-330 350,-336 350,-336 350,-339 347,-342 344,-342"/>
+<text text-anchor="middle" x="310" y="-330.7" font-family="inherit" font-size="8.50">GObject.Object</text>
+</a>
+</g>
+</g>
+<!-- GObject.Object&#45;&gt;GObject.InitiallyUnowned -->
+<g id="edge6" class="edge">
+<title>GObject.Object&#45;&gt;GObject.InitiallyUnowned</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M310,-323.88C310,-315.76 310,-303.13 310,-293.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="311.75,-293.24 310,-288.24 308.25,-293.24 311.75,-293.24"/>
+</g>
+<!-- Gladeui.PropertyLabel -->
+<g id="node6" class="node">
+<title>Gladeui.PropertyLabel</title>
+<g id="a_node6"><a xlink:href="#Gladeui.PropertyLabel" xlink:title="Gladeui.PropertyLabel">
+<path fill="none" stroke="#75507b" d="M138,-18C138,-18 40,-18 40,-18 37,-18 34,-15 34,-12 34,-12 34,-6 34,-6 34,-3 37,0 40,0 40,0 138,0 138,0 141,0 144,-3 144,-6 144,-6 144,-12 144,-12 144,-15 141,-18 138,-18"/>
+<text text-anchor="middle" x="89" y="-6.7" font-family="inherit" font-size="8.50">Gladeui.PropertyLabel</text>
+</a>
+</g>
+</g>
+<!-- Gladeui.Editable&#45;&gt;Gladeui.PropertyLabel -->
+<g id="edge7" class="edge">
+<title>Gladeui.Editable&#45;&gt;Gladeui.PropertyLabel</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M44.75,-215.87C51.69,-183.56 77.39,-64.02 86.09,-23.52"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="87.91,-23.39 87.25,-18.14 84.49,-22.66 87.91,-23.39"/>
+</g>
+<!-- Gtk.Bin -->
+<g id="node7" class="node">
+<title>Gtk.Bin</title>
+<g id="a_node7"><a xlink:href="../../Gtk-3.0/classes/Bin.html#Gtk.Bin" xlink:title="Gtk.Bin">
+<path fill="none" stroke="#aaaaaa" d="M162,-126C162,-126 120,-126 120,-126 117,-126 114,-123 114,-120 114,-120 114,-114 114,-114 114,-111 117,-108 120,-108 120,-108 162,-108 162,-108 165,-108 168,-111 168,-114 168,-114 168,-120 168,-120 168,-123 165,-126 162,-126"/>
+<text text-anchor="middle" x="141" y="-114.7" font-family="inherit" font-size="8.50">Gtk.Bin</text>
+</a>
+</g>
+</g>
+<!-- Gtk.EventBox -->
+<g id="node10" class="node">
+<title>Gtk.EventBox</title>
+<g id="a_node10"><a xlink:href="../../Gtk-3.0/classes/EventBox.html#Gtk.EventBox" xlink:title="Gtk.EventBox">
+<path fill="none" stroke="#75507b" d="M160.5,-72C160.5,-72 97.5,-72 97.5,-72 94.5,-72 91.5,-69 91.5,-66 91.5,-66 91.5,-60 91.5,-60 91.5,-57 94.5,-54 97.5,-54 97.5,-54 160.5,-54 160.5,-54 163.5,-54 166.5,-57 166.5,-60 166.5,-60 166.5,-66 166.5,-66 166.5,-69 163.5,-72 160.5,-72"/>
+<text text-anchor="middle" x="129" y="-60.7" font-family="inherit" font-size="8.50">Gtk.EventBox</text>
+</a>
+</g>
+</g>
+<!-- Gtk.Bin&#45;&gt;Gtk.EventBox -->
+<g id="edge8" class="edge">
+<title>Gtk.Bin&#45;&gt;Gtk.EventBox</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M139.12,-107.88C137.23,-99.68 134.28,-86.89 132.05,-77.24"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="133.73,-76.72 130.9,-72.24 130.32,-77.51 133.73,-76.72"/>
+</g>
+<!-- Gtk.Buildable&#45;&gt;Gtk.Widget -->
+<g id="edge9" class="edge">
+<title>Gtk.Buildable&#45;&gt;Gtk.Widget</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M81.75,-269.88C96.86,-260.95 121.2,-246.56 137.86,-236.72"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="138.93,-238.12 142.35,-234.07 137.15,-235.11 138.93,-238.12"/>
+</g>
+<!-- Gtk.Container -->
+<g id="node9" class="node">
+<title>Gtk.Container</title>
+<g id="a_node9"><a xlink:href="../../Gtk-3.0/classes/Container.html#Gtk.Container" xlink:title="Gtk.Container">
+<path fill="none" stroke="#aaaaaa" d="M176,-180C176,-180 112,-180 112,-180 109,-180 106,-177 106,-174 106,-174 106,-168 106,-168 106,-165 109,-162 112,-162 112,-162 176,-162 176,-162 179,-162 182,-165 182,-168 182,-168 182,-174 182,-174 182,-177 179,-180 176,-180"/>
+<text text-anchor="middle" x="144" y="-168.7" font-family="inherit" font-size="8.50">Gtk.Container</text>
+</a>
+</g>
+</g>
+<!-- Gtk.Container&#45;&gt;Gtk.Bin -->
+<g id="edge10" class="edge">
+<title>Gtk.Container&#45;&gt;Gtk.Bin</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M143.53,-161.88C143.06,-153.68 142.32,-140.89 141.76,-131.24"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="143.51,-131.13 141.48,-126.24 140.02,-131.33 143.51,-131.13"/>
+</g>
+<!-- Gtk.EventBox&#45;&gt;Gladeui.PropertyLabel -->
+<g id="edge11" class="edge">
+<title>Gtk.EventBox&#45;&gt;Gladeui.PropertyLabel</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M122.75,-53.88C116.27,-45.45 106.06,-32.18 98.57,-22.44"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="99.77,-21.14 95.34,-18.24 97,-23.27 99.77,-21.14"/>
+</g>
+<!-- Gtk.Widget&#45;&gt;Gtk.Container -->
+<g id="edge12" class="edge">
+<title>Gtk.Widget&#45;&gt;Gtk.Container</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M154.12,-215.88C152.23,-207.68 149.28,-194.89 147.05,-185.24"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="148.73,-184.72 145.9,-180.24 145.32,-185.51 148.73,-184.72"/>
+</g>
+</g>
+</svg>
+</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Subclasses:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="methods">
+<span id="gladeui-propertylabel-methods"></span><h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../Gtk-3.0/classes/EventBox.html#gtk-eventbox-methods" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.EventBox (5)</span></a>,     <a class="reference external" href="../../Gtk-3.0/classes/Bin.html#gtk-bin-methods" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.Bin (1)</span></a>,     <a class="reference external" href="../../Gtk-3.0/classes/Container.html#gtk-container-methods" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.Container (35)</span></a>,     <a class="reference external" href="../../Gtk-3.0/classes/Widget.html#gtk-widget-methods" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.Widget (278)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (37)</span></a>,     <a class="reference external" href="../../Gtk-3.0/classes/Buildable.html#gtk-buildable-methods" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.Buildable (10)</span></a>,     <a class="reference internal" href="Editable.html#gladeui-editable-methods"><span class="std std-ref">Gladeui.Editable (6)</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Structs:</th><td class="field-body"><a class="reference external" href="../../Gtk-3.0/classes/ContainerClass.html#gtk-containerclass-methods" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.ContainerClass (5)</span></a>,     <a class="reference external" href="../../Gtk-3.0/classes/WidgetClass.html#gtk-widgetclass-methods" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.WidgetClass (12)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/ObjectClass.html#gobject-objectclass-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.ObjectClass (5)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="99%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><em>class</em></td>
+<td><a class="reference internal" href="#Gladeui.PropertyLabel.new" title="Gladeui.PropertyLabel.new"><code class="xref py py-func docutils literal notranslate"><span class="pre">new</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Gladeui.PropertyLabel.get_append_colon" title="Gladeui.PropertyLabel.get_append_colon"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_append_colon</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Gladeui.PropertyLabel.get_custom_text" title="Gladeui.PropertyLabel.get_custom_text"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_custom_text</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Gladeui.PropertyLabel.get_custom_tooltip" title="Gladeui.PropertyLabel.get_custom_tooltip"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_custom_tooltip</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Gladeui.PropertyLabel.get_packing" title="Gladeui.PropertyLabel.get_packing"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_packing</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Gladeui.PropertyLabel.get_property" title="Gladeui.PropertyLabel.get_property"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_property</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Gladeui.PropertyLabel.get_property_name" title="Gladeui.PropertyLabel.get_property_name"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_property_name</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Gladeui.PropertyLabel.set_append_colon" title="Gladeui.PropertyLabel.set_append_colon"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_append_colon</span></code></a> (append_colon)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Gladeui.PropertyLabel.set_custom_text" title="Gladeui.PropertyLabel.set_custom_text"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_custom_text</span></code></a> (custom_text)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Gladeui.PropertyLabel.set_custom_tooltip" title="Gladeui.PropertyLabel.set_custom_tooltip"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_custom_tooltip</span></code></a> (custom_tooltip)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Gladeui.PropertyLabel.set_packing" title="Gladeui.PropertyLabel.set_packing"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_packing</span></code></a> (packing)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Gladeui.PropertyLabel.set_property" title="Gladeui.PropertyLabel.set_property"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_property</span></code></a> (property)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Gladeui.PropertyLabel.set_property_name" title="Gladeui.PropertyLabel.set_property_name"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_property_name</span></code></a> (property_name)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="virtual-methods">
+<span id="gladeui-propertylabel-vfuncs"></span><h2>Virtual Methods<a class="headerlink" href="#virtual-methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../Gtk-3.0/classes/Container.html#gtk-container-vfuncs" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.Container (10)</span></a>,     <a class="reference external" href="../../Gtk-3.0/classes/Widget.html#gtk-widget-vfuncs" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.Widget (82)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-vfuncs" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (7)</span></a>,     <a class="reference external" href="../../Gtk-3.0/classes/Buildable.html#gtk-buildable-vfuncs" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.Buildable (10)</span></a>,     <a class="reference internal" href="Editable.html#gladeui-editable-vfuncs"><span class="std std-ref">Gladeui.Editable (2)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="gladeui-propertylabel-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../Gtk-3.0/classes/EventBox.html#gtk-eventbox-props" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.EventBox (2)</span></a>,     <a class="reference external" href="../../Gtk-3.0/classes/Container.html#gtk-container-props" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.Container (3)</span></a>,     <a class="reference external" href="../../Gtk-3.0/classes/Widget.html#gtk-widget-props" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.Widget (39)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="1%" />
+<col width="1%" />
+<col width="97%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Flags</th>
+<th class="head">Short Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="#Gladeui.PropertyLabel.props.append_colon" title="Gladeui.PropertyLabel.props.append_colon"><code class="xref py py-data docutils literal notranslate"><span class="pre">append-colon</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+<td>r/w</td>
+<td>Whether to append a colon ‘:’ to the property name</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#Gladeui.PropertyLabel.props.custom_text" title="Gladeui.PropertyLabel.props.custom_text"><code class="xref py py-data docutils literal notranslate"><span class="pre">custom-text</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+<td>r/w</td>
+<td>Custom text to override the property name</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#Gladeui.PropertyLabel.props.custom_tooltip" title="Gladeui.PropertyLabel.props.custom_tooltip"><code class="xref py py-data docutils literal notranslate"><span class="pre">custom-tooltip</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+<td>r/w</td>
+<td>Custom tooltip to override the property description</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#Gladeui.PropertyLabel.props.packing" title="Gladeui.PropertyLabel.props.packing"><code class="xref py py-data docutils literal notranslate"><span class="pre">packing</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+<td>r/w</td>
+<td>Whether the property to load is a packing property or not</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#Gladeui.PropertyLabel.props.property" title="Gladeui.PropertyLabel.props.property"><code class="xref py py-data docutils literal notranslate"><span class="pre">property</span></code></a></td>
+<td><a class="reference internal" href="Property.html#Gladeui.Property" title="Gladeui.Property"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gladeui.Property</span></code></a></td>
+<td>r/w</td>
+<td>The <a class="reference internal" href="Property.html#Gladeui.Property" title="Gladeui.Property"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gladeui.Property</span></code></a> to display a label for</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#Gladeui.PropertyLabel.props.property_name" title="Gladeui.PropertyLabel.props.property_name"><code class="xref py py-data docutils literal notranslate"><span class="pre">property-name</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+<td>r/w</td>
+<td>The property name to use when loading by widget</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="style-properties">
+<span id="gladeui-propertylabel-style-props"></span><h2>Style Properties<a class="headerlink" href="#style-properties" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../Gtk-3.0/classes/Widget.html#gtk-widget-style-props" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.Widget (17)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="signals">
+<span id="gladeui-propertylabel-signals"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../Gtk-3.0/classes/Container.html#gtk-container-signals" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.Container (4)</span></a>,     <a class="reference external" href="../../Gtk-3.0/classes/Widget.html#gtk-widget-signals" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.Widget (69)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-signals" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fields">
+<span id="gladeui-propertylabel-fields"></span><h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../Gtk-3.0/classes/Container.html#gtk-container-fields" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.Container (4)</span></a>,     <a class="reference external" href="../../Gtk-3.0/classes/Widget.html#gtk-widget-fields" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.Widget (69)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-fields" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="16%" />
+<col width="1%" />
+<col width="1%" />
+<col width="82%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Access</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>box</td>
+<td><a class="reference external" href="../../Gtk-3.0/classes/EventBox.html#Gtk.EventBox" title="(in Gtk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.EventBox</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="class-details">
+<h2>Class Details<a class="headerlink" href="#class-details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Gladeui.PropertyLabel">
+<em class="property">class </em><code class="descclassname">Gladeui.</code><code class="descname">PropertyLabel</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#Gladeui.PropertyLabel" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Bases:</th><td class="field-body"><a class="reference external" href="../../Gtk-3.0/classes/EventBox.html#Gtk.EventBox" title="(in Gtk 3.0 v3.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Gtk.EventBox</span></code></a>,         <a class="reference internal" href="Editable.html#Gladeui.Editable" title="Gladeui.Editable"><code class="xref py py-class docutils literal notranslate"><span class="pre">Gladeui.Editable</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Abstract:</th><td class="field-body">No</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Structure:</th><td class="field-body"><a class="reference internal" href="PropertyLabelClass.html#Gladeui.PropertyLabelClass" title="Gladeui.PropertyLabelClass"><code class="xref py py-class docutils literal notranslate"><span class="pre">Gladeui.PropertyLabelClass</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<dl class="classmethod">
+<dt id="Gladeui.PropertyLabel.new">
+<em class="property">classmethod </em><code class="descname">new</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Gladeui.PropertyLabel.new" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="../../Gtk-3.0/classes/Widget.html#Gtk.Widget" title="(in Gtk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Widget</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gladeui.PropertyLabel.get_append_colon">
+<code class="descname">get_append_colon</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Gladeui.PropertyLabel.get_append_colon" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gladeui.PropertyLabel.get_custom_text">
+<code class="descname">get_custom_text</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Gladeui.PropertyLabel.get_custom_text" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gladeui.PropertyLabel.get_custom_tooltip">
+<code class="descname">get_custom_tooltip</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Gladeui.PropertyLabel.get_custom_tooltip" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gladeui.PropertyLabel.get_packing">
+<code class="descname">get_packing</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Gladeui.PropertyLabel.get_packing" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gladeui.PropertyLabel.get_property">
+<code class="descname">get_property</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Gladeui.PropertyLabel.get_property" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A <a class="reference internal" href="Property.html#Gladeui.Property" title="Gladeui.Property"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gladeui.Property</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="Property.html#Gladeui.Property" title="Gladeui.Property"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gladeui.Property</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gladeui.PropertyLabel.get_property_name">
+<code class="descname">get_property_name</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Gladeui.PropertyLabel.get_property_name" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gladeui.PropertyLabel.set_append_colon">
+<code class="descname">set_append_colon</code><span class="sig-paren">(</span><em>append_colon</em><span class="sig-paren">)</span><a class="headerlink" href="#Gladeui.PropertyLabel.set_append_colon" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>append_colon</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a>) – </td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gladeui.PropertyLabel.set_custom_text">
+<code class="descname">set_custom_text</code><span class="sig-paren">(</span><em>custom_text</em><span class="sig-paren">)</span><a class="headerlink" href="#Gladeui.PropertyLabel.set_custom_text" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>custom_text</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – </td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gladeui.PropertyLabel.set_custom_tooltip">
+<code class="descname">set_custom_tooltip</code><span class="sig-paren">(</span><em>custom_tooltip</em><span class="sig-paren">)</span><a class="headerlink" href="#Gladeui.PropertyLabel.set_custom_tooltip" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>custom_tooltip</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – </td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gladeui.PropertyLabel.set_packing">
+<code class="descname">set_packing</code><span class="sig-paren">(</span><em>packing</em><span class="sig-paren">)</span><a class="headerlink" href="#Gladeui.PropertyLabel.set_packing" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>packing</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a>) – </td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gladeui.PropertyLabel.set_property">
+<code class="descname">set_property</code><span class="sig-paren">(</span><em>property</em><span class="sig-paren">)</span><a class="headerlink" href="#Gladeui.PropertyLabel.set_property" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>property</strong> (<a class="reference internal" href="Property.html#Gladeui.Property" title="Gladeui.Property"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gladeui.Property</span></code></a>) – </td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gladeui.PropertyLabel.set_property_name">
+<code class="descname">set_property_name</code><span class="sig-paren">(</span><em>property_name</em><span class="sig-paren">)</span><a class="headerlink" href="#Gladeui.PropertyLabel.set_property_name" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>property_name</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – </td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="property-details">
+<h2>Property Details<a class="headerlink" href="#property-details" title="Permalink to this headline">¶</a></h2>
+<dl class="data">
+<dt id="Gladeui.PropertyLabel.props.append_colon">
+<code class="descclassname">Gladeui.PropertyLabel.props.</code><code class="descname">append_colon</code><a class="headerlink" href="#Gladeui.PropertyLabel.props.append_colon" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">append-colon</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Whether to append a colon ‘:’ to the property name</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="Gladeui.PropertyLabel.props.custom_text">
+<code class="descclassname">Gladeui.PropertyLabel.props.</code><code class="descname">custom_text</code><a class="headerlink" href="#Gladeui.PropertyLabel.props.custom_text" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">custom-text</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Custom text to override the property name</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="Gladeui.PropertyLabel.props.custom_tooltip">
+<code class="descclassname">Gladeui.PropertyLabel.props.</code><code class="descname">custom_tooltip</code><a class="headerlink" href="#Gladeui.PropertyLabel.props.custom_tooltip" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">custom-tooltip</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Custom tooltip to override the property description</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="Gladeui.PropertyLabel.props.packing">
+<code class="descclassname">Gladeui.PropertyLabel.props.</code><code class="descname">packing</code><a class="headerlink" href="#Gladeui.PropertyLabel.props.packing" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">packing</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Whether the property to load is a packing property or not</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="Gladeui.PropertyLabel.props.property">
+<code class="descclassname">Gladeui.PropertyLabel.props.</code><code class="descname">property</code><a class="headerlink" href="#Gladeui.PropertyLabel.props.property" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">property</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="Property.html#Gladeui.Property" title="Gladeui.Property"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gladeui.Property</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The <a class="reference internal" href="Property.html#Gladeui.Property" title="Gladeui.Property"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gladeui.Property</span></code></a> to display a label for</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="Gladeui.PropertyLabel.props.property_name">
+<code class="descclassname">Gladeui.PropertyLabel.props.</code><code class="descname">property_name</code><a class="headerlink" href="#Gladeui.PropertyLabel.props.property_name" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">property-name</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The property name to use when loading by widget</p>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div> 
+
+</body>
+</html>

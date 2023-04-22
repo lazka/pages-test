@@ -1,0 +1,899 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    RB.PlaylistSource -
+    
+      Classes -
+    
+    RB 3.0
+  </title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/css/pgi.css" type="text/css" />
+  
+
+  
+  <script type="text/javascript">
+
+    function openSidebar(element) {
+        window.location.href = element.href + location.hash;
+        return false;
+    }
+
+    function inIframe() {
+        try {
+            return window.self !== window.top;
+        } catch (e) {
+            return true;
+        }
+    }
+
+    function onLoaded() {
+        if(!inIframe()) {
+            var icons = document.getElementsByClassName('open-sidebar');
+
+            for (var i = 0; i < icons.length; i ++) {
+                icons[i].style.display = 'table-cell';
+            }
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', onLoaded, false);
+
+  </script>
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="RB 3.0 Python API Docs" href="../index.html"/>
+        <link rel="up" title="Classes" href="../classes.html"/>
+        <link rel="next" title="RB.PodcastManager" href="PodcastManager.html"/>
+        <link rel="prev" title="RB.PlaylistManager" href="PlaylistManager.html"/> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+<div class="non-fixed-bar">
+<table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#RB-3.0/classes/PlaylistSource.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">RB 3.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>RB.PlaylistSource</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="PlaylistManager.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="PodcastManager.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">RB.PlaylistSource</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#child-properties">Child Properties</a></li>
+<li><a class="reference internal" href="#style-properties">Style Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#property-details">Property Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+<div class="fixed-bar">
+  <table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#RB-3.0/classes/PlaylistSource.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">RB 3.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>RB.PlaylistSource</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="PlaylistManager.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="PodcastManager.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">RB.PlaylistSource</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#child-properties">Child Properties</a></li>
+<li><a class="reference internal" href="#style-properties">Style Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#property-details">Property Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+  <div class="wy-grid-for-nav">
+
+    
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="main">
+            
+  <div class="section" id="rb-playlistsource">
+<h1>RB.PlaylistSource<a class="headerlink" href="#rb-playlistsource" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<svg width="374pt" height="404pt"
+ viewBox="0.00 0.00 373.50 404.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 400)">
+<title>g</title>
+<!-- Atk.ImplementorIface -->
+<g id="node1" class="node">
+<title>Atk.ImplementorIface</title>
+<g id="a_node1"><a xlink:href="../../Atk-1.0/classes/ImplementorIface.html#Atk.ImplementorIface" xlink:title="Atk.ImplementorIface">
+<path fill="none" stroke="#3091d1" d="M219.5,-342C219.5,-342 123.5,-342 123.5,-342 120.5,-342 117.5,-339 117.5,-336 117.5,-336 117.5,-330 117.5,-330 117.5,-327 120.5,-324 123.5,-324 123.5,-324 219.5,-324 219.5,-324 222.5,-324 225.5,-327 225.5,-330 225.5,-330 225.5,-336 225.5,-336 225.5,-339 222.5,-342 219.5,-342"/>
+<text text-anchor="middle" x="171.5" y="-330.7" font-family="inherit" font-size="8.50">Atk.ImplementorIface</text>
+</a>
+</g>
+</g>
+<!-- Gtk.Widget -->
+<g id="node9" class="node">
+<title>Gtk.Widget</title>
+<g id="a_node9"><a xlink:href="../../Gtk-3.0/classes/Widget.html#Gtk.Widget" xlink:title="Gtk.Widget">
+<path fill="none" stroke="#aaaaaa" d="M176.5,-288C176.5,-288 124.5,-288 124.5,-288 121.5,-288 118.5,-285 118.5,-282 118.5,-282 118.5,-276 118.5,-276 118.5,-273 121.5,-270 124.5,-270 124.5,-270 176.5,-270 176.5,-270 179.5,-270 182.5,-273 182.5,-276 182.5,-276 182.5,-282 182.5,-282 182.5,-285 179.5,-288 176.5,-288"/>
+<text text-anchor="middle" x="150.5" y="-276.7" font-family="inherit" font-size="8.50">Gtk.Widget</text>
+</a>
+</g>
+</g>
+<!-- Atk.ImplementorIface&#45;&gt;Gtk.Widget -->
+<g id="edge1" class="edge">
+<title>Atk.ImplementorIface&#45;&gt;Gtk.Widget</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M168.22,-323.88C164.88,-315.6 159.65,-302.66 155.74,-292.97"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="157.32,-292.22 153.83,-288.24 154.08,-293.53 157.32,-292.22"/>
+</g>
+<!-- GObject.GInterface -->
+<g id="node2" class="node">
+<title>GObject.GInterface</title>
+<g id="a_node2"><a xlink:href="../../GObject-2.0/classes/GInterface.html#GObject.GInterface" xlink:title="GObject.GInterface">
+<path fill="none" stroke="#3091d1" d="M105.5,-396C105.5,-396 19.5,-396 19.5,-396 16.5,-396 13.5,-393 13.5,-390 13.5,-390 13.5,-384 13.5,-384 13.5,-381 16.5,-378 19.5,-378 19.5,-378 105.5,-378 105.5,-378 108.5,-378 111.5,-381 111.5,-384 111.5,-384 111.5,-390 111.5,-390 111.5,-393 108.5,-396 105.5,-396"/>
+<text text-anchor="middle" x="62.5" y="-384.7" font-family="inherit" font-size="8.50">GObject.GInterface</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Atk.ImplementorIface -->
+<g id="edge2" class="edge">
+<title>GObject.GInterface&#45;&gt;Atk.ImplementorIface</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M79.53,-377.88C98.49,-368.83 129.17,-354.19 149.83,-344.34"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="150.83,-345.8 154.59,-342.07 149.32,-342.64 150.83,-345.8"/>
+</g>
+<!-- Gtk.Buildable -->
+<g id="node6" class="node">
+<title>Gtk.Buildable</title>
+<g id="a_node6"><a xlink:href="../../Gtk-3.0/classes/Buildable.html#Gtk.Buildable" xlink:title="Gtk.Buildable">
+<path fill="none" stroke="#3091d1" d="M93.5,-342C93.5,-342 31.5,-342 31.5,-342 28.5,-342 25.5,-339 25.5,-336 25.5,-336 25.5,-330 25.5,-330 25.5,-327 28.5,-324 31.5,-324 31.5,-324 93.5,-324 93.5,-324 96.5,-324 99.5,-327 99.5,-330 99.5,-330 99.5,-336 99.5,-336 99.5,-339 96.5,-342 93.5,-342"/>
+<text text-anchor="middle" x="62.5" y="-330.7" font-family="inherit" font-size="8.50">Gtk.Buildable</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Gtk.Buildable -->
+<g id="edge3" class="edge">
+<title>GObject.GInterface&#45;&gt;Gtk.Buildable</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M62.5,-377.88C62.5,-369.76 62.5,-357.13 62.5,-347.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="64.25,-347.24 62.5,-342.24 60.75,-347.24 64.25,-347.24"/>
+</g>
+<!-- Gtk.Orientable -->
+<g id="node8" class="node">
+<title>Gtk.Orientable</title>
+<g id="a_node8"><a xlink:href="../../Gtk-3.0/classes/Orientable.html#Gtk.Orientable" xlink:title="Gtk.Orientable">
+<path fill="none" stroke="#3091d1" d="M73,-288C73,-288 6,-288 6,-288 3,-288 0,-285 0,-282 0,-282 0,-276 0,-276 0,-273 3,-270 6,-270 6,-270 73,-270 73,-270 76,-270 79,-273 79,-276 79,-276 79,-282 79,-282 79,-285 76,-288 73,-288"/>
+<text text-anchor="middle" x="39.5" y="-276.7" font-family="inherit" font-size="8.50">Gtk.Orientable</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Gtk.Orientable -->
+<g id="edge4" class="edge">
+<title>GObject.GInterface&#45;&gt;Gtk.Orientable</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M49.16,-377.76C38.08,-370.06 23.1,-357.45 16.5,-342 9.27,-325.08 20.11,-305.03 29.23,-292.42"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="30.86,-293.17 32.48,-288.12 28.06,-291.06 30.86,-293.17"/>
+</g>
+<!-- GObject.InitiallyUnowned -->
+<g id="node3" class="node">
+<title>GObject.InitiallyUnowned</title>
+<g id="a_node3"><a xlink:href="../../GObject-2.0/classes/InitiallyUnowned.html#GObject.InitiallyUnowned" xlink:title="GObject.InitiallyUnowned">
+<path fill="none" stroke="#75507b" d="M359.5,-342C359.5,-342 249.5,-342 249.5,-342 246.5,-342 243.5,-339 243.5,-336 243.5,-336 243.5,-330 243.5,-330 243.5,-327 246.5,-324 249.5,-324 249.5,-324 359.5,-324 359.5,-324 362.5,-324 365.5,-327 365.5,-330 365.5,-330 365.5,-336 365.5,-336 365.5,-339 362.5,-342 359.5,-342"/>
+<text text-anchor="middle" x="304.5" y="-330.7" font-family="inherit" font-size="8.50">GObject.InitiallyUnowned</text>
+</a>
+</g>
+</g>
+<!-- GObject.InitiallyUnowned&#45;&gt;Gtk.Widget -->
+<g id="edge5" class="edge">
+<title>GObject.InitiallyUnowned&#45;&gt;Gtk.Widget</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M280.77,-323.99C253.42,-314.75 208.46,-299.57 179.17,-289.68"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="179.55,-287.96 174.25,-288.02 178.43,-291.28 179.55,-287.96"/>
+</g>
+<!-- GObject.Object -->
+<g id="node4" class="node">
+<title>GObject.Object</title>
+<g id="a_node4"><a xlink:href="../../GObject-2.0/classes/Object.html#GObject.Object" xlink:title="GObject.Object">
+<path fill="none" stroke="#75507b" d="M338.5,-396C338.5,-396 270.5,-396 270.5,-396 267.5,-396 264.5,-393 264.5,-390 264.5,-390 264.5,-384 264.5,-384 264.5,-381 267.5,-378 270.5,-378 270.5,-378 338.5,-378 338.5,-378 341.5,-378 344.5,-381 344.5,-384 344.5,-384 344.5,-390 344.5,-390 344.5,-393 341.5,-396 338.5,-396"/>
+<text text-anchor="middle" x="304.5" y="-384.7" font-family="inherit" font-size="8.50">GObject.Object</text>
+</a>
+</g>
+</g>
+<!-- GObject.Object&#45;&gt;GObject.InitiallyUnowned -->
+<g id="edge6" class="edge">
+<title>GObject.Object&#45;&gt;GObject.InitiallyUnowned</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M304.5,-377.88C304.5,-369.76 304.5,-357.13 304.5,-347.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="306.25,-347.24 304.5,-342.24 302.75,-347.24 306.25,-347.24"/>
+</g>
+<!-- Gtk.Box -->
+<g id="node5" class="node">
+<title>Gtk.Box</title>
+<g id="a_node5"><a xlink:href="../../Gtk-3.0/classes/Box.html#Gtk.Box" xlink:title="Gtk.Box">
+<path fill="none" stroke="#75507b" d="M105.5,-180C105.5,-180 63.5,-180 63.5,-180 60.5,-180 57.5,-177 57.5,-174 57.5,-174 57.5,-168 57.5,-168 57.5,-165 60.5,-162 63.5,-162 63.5,-162 105.5,-162 105.5,-162 108.5,-162 111.5,-165 111.5,-168 111.5,-168 111.5,-174 111.5,-174 111.5,-177 108.5,-180 105.5,-180"/>
+<text text-anchor="middle" x="84.5" y="-168.7" font-family="inherit" font-size="8.50">Gtk.Box</text>
+</a>
+</g>
+</g>
+<!-- RB.DisplayPage -->
+<g id="node10" class="node">
+<title>RB.DisplayPage</title>
+<g id="a_node10"><a xlink:href="DisplayPage.html#RB.DisplayPage" xlink:title="RB.DisplayPage">
+<path fill="none" stroke="#aaaaaa" d="M120,-126C120,-126 49,-126 49,-126 46,-126 43,-123 43,-120 43,-120 43,-114 43,-114 43,-111 46,-108 49,-108 49,-108 120,-108 120,-108 123,-108 126,-111 126,-114 126,-114 126,-120 126,-120 126,-123 123,-126 120,-126"/>
+<text text-anchor="middle" x="84.5" y="-114.7" font-family="inherit" font-size="8.50">RB.DisplayPage</text>
+</a>
+</g>
+</g>
+<!-- Gtk.Box&#45;&gt;RB.DisplayPage -->
+<g id="edge7" class="edge">
+<title>Gtk.Box&#45;&gt;RB.DisplayPage</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M84.5,-161.88C84.5,-153.76 84.5,-141.13 84.5,-131.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="86.25,-131.24 84.5,-126.24 82.75,-131.24 86.25,-131.24"/>
+</g>
+<!-- Gtk.Buildable&#45;&gt;Gtk.Widget -->
+<g id="edge8" class="edge">
+<title>Gtk.Buildable&#45;&gt;Gtk.Widget</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M76.25,-323.88C91.36,-314.95 115.7,-300.56 132.36,-290.72"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="133.43,-292.12 136.85,-288.07 131.65,-289.11 133.43,-292.12"/>
+</g>
+<!-- Gtk.Container -->
+<g id="node7" class="node">
+<title>Gtk.Container</title>
+<g id="a_node7"><a xlink:href="../../Gtk-3.0/classes/Container.html#Gtk.Container" xlink:title="Gtk.Container">
+<path fill="none" stroke="#aaaaaa" d="M155.5,-234C155.5,-234 91.5,-234 91.5,-234 88.5,-234 85.5,-231 85.5,-228 85.5,-228 85.5,-222 85.5,-222 85.5,-219 88.5,-216 91.5,-216 91.5,-216 155.5,-216 155.5,-216 158.5,-216 161.5,-219 161.5,-222 161.5,-222 161.5,-228 161.5,-228 161.5,-231 158.5,-234 155.5,-234"/>
+<text text-anchor="middle" x="123.5" y="-222.7" font-family="inherit" font-size="8.50">Gtk.Container</text>
+</a>
+</g>
+</g>
+<!-- Gtk.Container&#45;&gt;Gtk.Box -->
+<g id="edge9" class="edge">
+<title>Gtk.Container&#45;&gt;Gtk.Box</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M117.41,-215.88C111.09,-207.45 101.14,-194.18 93.83,-184.44"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="95.08,-183.19 90.68,-180.24 92.28,-185.29 95.08,-183.19"/>
+</g>
+<!-- Gtk.Orientable&#45;&gt;Gtk.Box -->
+<g id="edge10" class="edge">
+<title>Gtk.Orientable&#45;&gt;Gtk.Box</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M43.03,-269.68C50.82,-251.34 69.52,-207.28 78.92,-185.15"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="80.64,-185.57 80.99,-180.28 77.42,-184.2 80.64,-185.57"/>
+</g>
+<!-- Gtk.Widget&#45;&gt;Gtk.Container -->
+<g id="edge11" class="edge">
+<title>Gtk.Widget&#45;&gt;Gtk.Container</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M146.28,-269.88C141.95,-261.53 135.14,-248.42 130.1,-238.7"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="131.64,-237.87 127.78,-234.24 128.53,-239.48 131.64,-237.87"/>
+</g>
+<!-- RB.Source -->
+<g id="node12" class="node">
+<title>RB.Source</title>
+<g id="a_node12"><a xlink:href="Source.html#RB.Source" xlink:title="RB.Source">
+<path fill="none" stroke="#aaaaaa" d="M108.5,-72C108.5,-72 60.5,-72 60.5,-72 57.5,-72 54.5,-69 54.5,-66 54.5,-66 54.5,-60 54.5,-60 54.5,-57 57.5,-54 60.5,-54 60.5,-54 108.5,-54 108.5,-54 111.5,-54 114.5,-57 114.5,-60 114.5,-60 114.5,-66 114.5,-66 114.5,-69 111.5,-72 108.5,-72"/>
+<text text-anchor="middle" x="84.5" y="-60.7" font-family="inherit" font-size="8.50">RB.Source</text>
+</a>
+</g>
+</g>
+<!-- RB.DisplayPage&#45;&gt;RB.Source -->
+<g id="edge12" class="edge">
+<title>RB.DisplayPage&#45;&gt;RB.Source</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M84.5,-107.88C84.5,-99.76 84.5,-87.13 84.5,-77.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="86.25,-77.24 84.5,-72.24 82.75,-77.24 86.25,-77.24"/>
+</g>
+<!-- RB.PlaylistSource -->
+<g id="node11" class="node">
+<title>RB.PlaylistSource</title>
+<g id="a_node11"><a xlink:href="#RB.PlaylistSource" xlink:title="RB.PlaylistSource">
+<path fill="none" stroke="#aaaaaa" d="M123.5,-18C123.5,-18 45.5,-18 45.5,-18 42.5,-18 39.5,-15 39.5,-12 39.5,-12 39.5,-6 39.5,-6 39.5,-3 42.5,0 45.5,0 45.5,0 123.5,0 123.5,0 126.5,0 129.5,-3 129.5,-6 129.5,-6 129.5,-12 129.5,-12 129.5,-15 126.5,-18 123.5,-18"/>
+<text text-anchor="middle" x="84.5" y="-6.7" font-family="inherit" font-size="8.50">RB.PlaylistSource</text>
+</a>
+</g>
+</g>
+<!-- RB.Source&#45;&gt;RB.PlaylistSource -->
+<g id="edge13" class="edge">
+<title>RB.Source&#45;&gt;RB.PlaylistSource</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M84.5,-53.88C84.5,-45.76 84.5,-33.13 84.5,-23.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="86.25,-23.24 84.5,-18.24 82.75,-23.24 86.25,-23.24"/>
+</g>
+</g>
+</svg>
+</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Subclasses:</th><td class="field-body"><a class="reference internal" href="AutoPlaylistSource.html#RB.AutoPlaylistSource" title="RB.AutoPlaylistSource"><code class="xref py py-class docutils literal notranslate"><span class="pre">RB.AutoPlaylistSource</span></code></a>, <a class="reference internal" href="StaticPlaylistSource.html#RB.StaticPlaylistSource" title="RB.StaticPlaylistSource"><code class="xref py py-class docutils literal notranslate"><span class="pre">RB.StaticPlaylistSource</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="methods">
+<span id="rb-playlistsource-methods"></span><h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Source.html#rb-source-methods"><span class="std std-ref">RB.Source (33)</span></a>,     <a class="reference internal" href="DisplayPage.html#rb-displaypage-methods"><span class="std std-ref">RB.DisplayPage (12)</span></a>,     <a class="reference external" href="../../Gtk-3.0/classes/Box.html#gtk-box-methods" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.Box (14)</span></a>,     <a class="reference external" href="../../Gtk-3.0/classes/Container.html#gtk-container-methods" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.Container (35)</span></a>,     <a class="reference external" href="../../Gtk-3.0/classes/Widget.html#gtk-widget-methods" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.Widget (278)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (37)</span></a>,     <a class="reference external" href="../../Gtk-3.0/classes/Buildable.html#gtk-buildable-methods" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.Buildable (10)</span></a>,     <a class="reference external" href="../../Gtk-3.0/classes/Orientable.html#gtk-orientable-methods" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.Orientable (2)</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Structs:</th><td class="field-body"><a class="reference external" href="../../Gtk-3.0/classes/ContainerClass.html#gtk-containerclass-methods" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.ContainerClass (5)</span></a>,     <a class="reference external" href="../../Gtk-3.0/classes/WidgetClass.html#gtk-widgetclass-methods" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.WidgetClass (12)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/ObjectClass.html#gobject-objectclass-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.ObjectClass (5)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="99%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><em>class</em></td>
+<td><a class="reference internal" href="#RB.PlaylistSource.new_from_xml" title="RB.PlaylistSource.new_from_xml"><code class="xref py py-func docutils literal notranslate"><span class="pre">new_from_xml</span></code></a> (shell, node)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#RB.PlaylistSource.add_to_map" title="RB.PlaylistSource.add_to_map"><code class="xref py py-func docutils literal notranslate"><span class="pre">add_to_map</span></code></a> (location)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#RB.PlaylistSource.get_db" title="RB.PlaylistSource.get_db"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_db</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#RB.PlaylistSource.get_query_model" title="RB.PlaylistSource.get_query_model"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_query_model</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#RB.PlaylistSource.location_in_map" title="RB.PlaylistSource.location_in_map"><code class="xref py py-func docutils literal notranslate"><span class="pre">location_in_map</span></code></a> (location)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#RB.PlaylistSource.mark_dirty" title="RB.PlaylistSource.mark_dirty"><code class="xref py py-func docutils literal notranslate"><span class="pre">mark_dirty</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#RB.PlaylistSource.save_playlist" title="RB.PlaylistSource.save_playlist"><code class="xref py py-func docutils literal notranslate"><span class="pre">save_playlist</span></code></a> (uri, export_type)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#RB.PlaylistSource.save_to_xml" title="RB.PlaylistSource.save_to_xml"><code class="xref py py-func docutils literal notranslate"><span class="pre">save_to_xml</span></code></a> (parent_node)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#RB.PlaylistSource.set_query_model" title="RB.PlaylistSource.set_query_model"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_query_model</span></code></a> (model)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#RB.PlaylistSource.setup_entry_view" title="RB.PlaylistSource.setup_entry_view"><code class="xref py py-func docutils literal notranslate"><span class="pre">setup_entry_view</span></code></a> (entry_view)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="virtual-methods">
+<span id="rb-playlistsource-vfuncs"></span><h2>Virtual Methods<a class="headerlink" href="#virtual-methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Source.html#rb-source-vfuncs"><span class="std std-ref">RB.Source (27)</span></a>,     <a class="reference internal" href="DisplayPage.html#rb-displaypage-vfuncs"><span class="std std-ref">RB.DisplayPage (12)</span></a>,     <a class="reference external" href="../../Gtk-3.0/classes/Container.html#gtk-container-vfuncs" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.Container (10)</span></a>,     <a class="reference external" href="../../Gtk-3.0/classes/Widget.html#gtk-widget-vfuncs" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.Widget (82)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-vfuncs" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (7)</span></a>,     <a class="reference external" href="../../Gtk-3.0/classes/Buildable.html#gtk-buildable-vfuncs" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.Buildable (10)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="99%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#RB.PlaylistSource.do_mark_dirty" title="RB.PlaylistSource.do_mark_dirty"><code class="xref py py-func docutils literal notranslate"><span class="pre">do_mark_dirty</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#RB.PlaylistSource.do_save_contents_to_xml" title="RB.PlaylistSource.do_save_contents_to_xml"><code class="xref py py-func docutils literal notranslate"><span class="pre">do_save_contents_to_xml</span></code></a> (node)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#RB.PlaylistSource.do_show_entry_view_popup" title="RB.PlaylistSource.do_show_entry_view_popup"><code class="xref py py-func docutils literal notranslate"><span class="pre">do_show_entry_view_popup</span></code></a> (view, over_entry)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="rb-playlistsource-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Source.html#rb-source-props"><span class="std std-ref">RB.Source (10)</span></a>,     <a class="reference internal" href="DisplayPage.html#rb-displaypage-props"><span class="std std-ref">RB.DisplayPage (5)</span></a>,     <a class="reference external" href="../../Gtk-3.0/classes/Box.html#gtk-box-props" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.Box (3)</span></a>,     <a class="reference external" href="../../Gtk-3.0/classes/Container.html#gtk-container-props" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.Container (3)</span></a>,     <a class="reference external" href="../../Gtk-3.0/classes/Widget.html#gtk-widget-props" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.Widget (39)</span></a>,     <a class="reference external" href="../../Gtk-3.0/classes/Orientable.html#gtk-orientable-props" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.Orientable (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="1%" />
+<col width="1%" />
+<col width="97%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Flags</th>
+<th class="head">Short Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="#RB.PlaylistSource.props.db" title="RB.PlaylistSource.props.db"><code class="xref py py-data docutils literal notranslate"><span class="pre">db</span></code></a></td>
+<td><a class="reference internal" href="RhythmDB.html#RB.RhythmDB" title="RB.RhythmDB"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.RhythmDB</span></code></a></td>
+<td>r</td>
+<td>rhythmdb instance</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#RB.PlaylistSource.props.dirty" title="RB.PlaylistSource.props.dirty"><code class="xref py py-data docutils literal notranslate"><span class="pre">dirty</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+<td>r</td>
+<td>whether this playlist should be saved</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#RB.PlaylistSource.props.is_local" title="RB.PlaylistSource.props.is_local"><code class="xref py py-data docutils literal notranslate"><span class="pre">is-local</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+<td>r/w/co</td>
+<td>whether this playlist is attached to the local library</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="child-properties">
+<span id="rb-playlistsource-child-props"></span><h2>Child Properties<a class="headerlink" href="#child-properties" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../Gtk-3.0/classes/Box.html#gtk-box-child-props" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.Box (5)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="style-properties">
+<span id="rb-playlistsource-style-props"></span><h2>Style Properties<a class="headerlink" href="#style-properties" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../Gtk-3.0/classes/Widget.html#gtk-widget-style-props" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.Widget (17)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="signals">
+<span id="rb-playlistsource-signals"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Source.html#rb-source-signals"><span class="std std-ref">RB.Source (3)</span></a>,     <a class="reference internal" href="DisplayPage.html#rb-displaypage-signals"><span class="std std-ref">RB.DisplayPage (2)</span></a>,     <a class="reference external" href="../../Gtk-3.0/classes/Container.html#gtk-container-signals" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.Container (4)</span></a>,     <a class="reference external" href="../../Gtk-3.0/classes/Widget.html#gtk-widget-signals" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.Widget (69)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-signals" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fields">
+<span id="rb-playlistsource-fields"></span><h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Source.html#rb-source-fields"><span class="std std-ref">RB.Source (3)</span></a>,     <a class="reference internal" href="DisplayPage.html#rb-displaypage-fields"><span class="std std-ref">RB.DisplayPage (2)</span></a>,     <a class="reference external" href="../../Gtk-3.0/classes/Container.html#gtk-container-fields" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.Container (4)</span></a>,     <a class="reference external" href="../../Gtk-3.0/classes/Widget.html#gtk-widget-fields" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.Widget (69)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-fields" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="16%" />
+<col width="1%" />
+<col width="1%" />
+<col width="82%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Access</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>parent</td>
+<td><a class="reference internal" href="Source.html#RB.Source" title="RB.Source"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.Source</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="class-details">
+<h2>Class Details<a class="headerlink" href="#class-details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="RB.PlaylistSource">
+<em class="property">class </em><code class="descclassname">RB.</code><code class="descname">PlaylistSource</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#RB.PlaylistSource" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Bases:</th><td class="field-body"><a class="reference internal" href="Source.html#RB.Source" title="RB.Source"><code class="xref py py-class docutils literal notranslate"><span class="pre">RB.Source</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Abstract:</th><td class="field-body">Yes</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Structure:</th><td class="field-body"><a class="reference internal" href="PlaylistSourceClass.html#RB.PlaylistSourceClass" title="RB.PlaylistSourceClass"><code class="xref py py-class docutils literal notranslate"><span class="pre">RB.PlaylistSourceClass</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<dl class="classmethod">
+<dt id="RB.PlaylistSource.new_from_xml">
+<em class="property">classmethod </em><code class="descname">new_from_xml</code><span class="sig-paren">(</span><em>shell</em>, <em>node</em><span class="sig-paren">)</span><a class="headerlink" href="#RB.PlaylistSource.new_from_xml" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>shell</strong> (<a class="reference internal" href="Shell.html#RB.Shell" title="RB.Shell"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.Shell</span></code></a>) – the <a class="reference internal" href="Shell.html#RB.Shell" title="RB.Shell"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.Shell</span></code></a> instance</li>
+<li><strong>node</strong> (<a class="reference external" href="../../libxml2-2.0/classes/NodePtr.html#libxml2.NodePtr" title="(in libxml2 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">libxml2.NodePtr</span></code></a>) – libxml node containing the playlist</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">the playlist</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="Source.html#RB.Source" title="RB.Source"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.Source</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Constructs a playlist source instance from the XML serialized
+format.  This function knows about all the playlist types that
+can be saved to disk, and it hands off the XML node to the
+appropriate constructor based on the ‘type’ attribute of
+the root node of the playlist.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RB.PlaylistSource.add_to_map">
+<code class="descname">add_to_map</code><span class="sig-paren">(</span><em>location</em><span class="sig-paren">)</span><a class="headerlink" href="#RB.PlaylistSource.add_to_map" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>location</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – a URI to add</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if the URI was added to the entry map,
+<a class="reference external" href="http://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a> if it was already there.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Adds a URI to the playlist’s entry map.  This is useful when the
+URI is being added to the database, but no entry exists for it yet.
+When the entry is created, it will be added to the query model.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RB.PlaylistSource.get_db">
+<code class="descname">get_db</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#RB.PlaylistSource.get_db" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the <a class="reference internal" href="RhythmDB.html#RB.RhythmDB" title="RB.RhythmDB"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.RhythmDB</span></code></a> instance</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="RhythmDB.html#RB.RhythmDB" title="RB.RhythmDB"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.RhythmDB</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns the <a class="reference internal" href="RhythmDB.html#RB.RhythmDB" title="RB.RhythmDB"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.RhythmDB</span></code></a> instance.  The caller must not
+unref the object once finished with it.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RB.PlaylistSource.get_query_model">
+<code class="descname">get_query_model</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#RB.PlaylistSource.get_query_model" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the current <a class="reference internal" href="RhythmDBQueryModel.html#RB.RhythmDBQueryModel" title="RB.RhythmDBQueryModel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.RhythmDBQueryModel</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="RhythmDBQueryModel.html#RB.RhythmDBQueryModel" title="RB.RhythmDBQueryModel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.RhythmDBQueryModel</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns the current <a class="reference internal" href="RhythmDBQueryModel.html#RB.RhythmDBQueryModel" title="RB.RhythmDBQueryModel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.RhythmDBQueryModel</span></code></a> for the playlist.
+The caller must not unref the object once finished with it.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RB.PlaylistSource.location_in_map">
+<code class="descname">location_in_map</code><span class="sig-paren">(</span><em>location</em><span class="sig-paren">)</span><a class="headerlink" href="#RB.PlaylistSource.location_in_map" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>location</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – a URI to check</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if the URI is present</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns <a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if the specified URI is in the playlist entry map</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RB.PlaylistSource.mark_dirty">
+<code class="descname">mark_dirty</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#RB.PlaylistSource.mark_dirty" title="Permalink to this definition">¶</a></dt>
+<dd><p>Marks the playlist dirty.  This generally means that the playlist
+will be saved to disk fairly soon, but the exact meaning can vary
+between playlist types.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RB.PlaylistSource.save_playlist">
+<code class="descname">save_playlist</code><span class="sig-paren">(</span><em>uri</em>, <em>export_type</em><span class="sig-paren">)</span><a class="headerlink" href="#RB.PlaylistSource.save_playlist" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>uri</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – destination URI</li>
+<li><strong>export_type</strong> (<a class="reference internal" href="../enums.html#RB.PlaylistExportType" title="RB.PlaylistExportType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.PlaylistExportType</span></code></a>) – format to save in</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Saves the playlist to an external file in a standard
+format (M3U, PLS, or XSPF).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RB.PlaylistSource.save_to_xml">
+<code class="descname">save_to_xml</code><span class="sig-paren">(</span><em>parent_node</em><span class="sig-paren">)</span><a class="headerlink" href="#RB.PlaylistSource.save_to_xml" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>parent_node</strong> (<a class="reference external" href="../../libxml2-2.0/classes/NodePtr.html#libxml2.NodePtr" title="(in libxml2 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">libxml2.NodePtr</span></code></a>) – libxml node below which to save the playlist</td>
+</tr>
+</tbody>
+</table>
+<p>Converts the playlist to XML format, below the specified
+parent node.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RB.PlaylistSource.set_query_model">
+<code class="descname">set_query_model</code><span class="sig-paren">(</span><em>model</em><span class="sig-paren">)</span><a class="headerlink" href="#RB.PlaylistSource.set_query_model" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>model</strong> (<a class="reference internal" href="RhythmDBQueryModel.html#RB.RhythmDBQueryModel" title="RB.RhythmDBQueryModel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.RhythmDBQueryModel</span></code></a>) – the new <a class="reference internal" href="RhythmDBQueryModel.html#RB.RhythmDBQueryModel" title="RB.RhythmDBQueryModel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.RhythmDBQueryModel</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Sets a new query model for the playlist.  This updates the
+entry view to use the new query model and also updates the
+source query-model property.</p>
+<p>This needs to be called when the playlist subclass
+creates a new query model.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RB.PlaylistSource.setup_entry_view">
+<code class="descname">setup_entry_view</code><span class="sig-paren">(</span><em>entry_view</em><span class="sig-paren">)</span><a class="headerlink" href="#RB.PlaylistSource.setup_entry_view" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>entry_view</strong> (<a class="reference internal" href="EntryView.html#RB.EntryView" title="RB.EntryView"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.EntryView</span></code></a>) – the new <a class="reference internal" href="EntryView.html#RB.EntryView" title="RB.EntryView"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.EntryView</span></code></a> to set up</td>
+</tr>
+</tbody>
+</table>
+<p>Connects signal handlers and sets up drag and drop support for
+an entry view to be used by a playlist source.  This only needs
+to be called if the playlist subclass is creating a new entry view.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RB.PlaylistSource.do_mark_dirty">
+<code class="descname">do_mark_dirty</code><span class="sig-paren">(</span><span class="sig-paren">)</span><em class="property"> virtual</em><a class="headerlink" href="#RB.PlaylistSource.do_mark_dirty" title="Permalink to this definition">¶</a></dt>
+<dd><p>Marks the playlist dirty.  This generally means that the playlist
+will be saved to disk fairly soon, but the exact meaning can vary
+between playlist types.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RB.PlaylistSource.do_save_contents_to_xml">
+<code class="descname">do_save_contents_to_xml</code><span class="sig-paren">(</span><em>node</em><span class="sig-paren">)</span><em class="property"> virtual</em><a class="headerlink" href="#RB.PlaylistSource.do_save_contents_to_xml" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>node</strong> (<a class="reference external" href="../../libxml2-2.0/classes/NodePtr.html#libxml2.NodePtr" title="(in libxml2 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">libxml2.NodePtr</span></code></a>) – </td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="RB.PlaylistSource.do_show_entry_view_popup">
+<code class="descname">do_show_entry_view_popup</code><span class="sig-paren">(</span><em>view</em>, <em>over_entry</em><span class="sig-paren">)</span><em class="property"> virtual</em><a class="headerlink" href="#RB.PlaylistSource.do_show_entry_view_popup" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>view</strong> (<a class="reference internal" href="EntryView.html#RB.EntryView" title="RB.EntryView"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.EntryView</span></code></a>) – </li>
+<li><strong>over_entry</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a>) – </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="property-details">
+<h2>Property Details<a class="headerlink" href="#property-details" title="Permalink to this headline">¶</a></h2>
+<dl class="data">
+<dt id="RB.PlaylistSource.props.db">
+<code class="descclassname">RB.PlaylistSource.props.</code><code class="descname">db</code><a class="headerlink" href="#RB.PlaylistSource.props.db" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">db</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="RhythmDB.html#RB.RhythmDB" title="RB.RhythmDB"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.RhythmDB</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The <a class="reference internal" href="RhythmDB.html#RB.RhythmDB" title="RB.RhythmDB"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.RhythmDB</span></code></a> instance</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="RB.PlaylistSource.props.dirty">
+<code class="descclassname">RB.PlaylistSource.props.</code><code class="descname">dirty</code><a class="headerlink" href="#RB.PlaylistSource.props.dirty" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">dirty</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Whether the playlist has been changed since it was last saved
+to disk.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="RB.PlaylistSource.props.is_local">
+<code class="descclassname">RB.PlaylistSource.props.</code><code class="descname">is_local</code><a class="headerlink" href="#RB.PlaylistSource.props.is_local" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">is-local</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.CONSTRUCT_ONLY" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CONSTRUCT_ONLY</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Whether the playlist is attached to the local library.
+Remote DAAP playlists, for example, are not local.</p>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div> 
+
+</body>
+</html>

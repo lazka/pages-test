@@ -1,0 +1,672 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    Dee.FilterModel -
+    
+      Classes -
+    
+    Dee 1.0
+  </title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/css/pgi.css" type="text/css" />
+  
+
+  
+  <script type="text/javascript">
+
+    function openSidebar(element) {
+        window.location.href = element.href + location.hash;
+        return false;
+    }
+
+    function inIframe() {
+        try {
+            return window.self !== window.top;
+        } catch (e) {
+            return true;
+        }
+    }
+
+    function onLoaded() {
+        if(!inIframe()) {
+            var icons = document.getElementsByClassName('open-sidebar');
+
+            for (var i = 0; i < icons.length; i ++) {
+                icons[i].style.display = 'table-cell';
+            }
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', onLoaded, false);
+
+  </script>
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="Dee 1.0 Python API Docs" href="../index.html"/>
+        <link rel="up" title="Classes" href="../classes.html"/>
+        <link rel="next" title="Dee.GListResultSet" href="GListResultSet.html"/>
+        <link rel="prev" title="Dee.FileResourceManager" href="FileResourceManager.html"/> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+<div class="non-fixed-bar">
+<table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#Dee-1.0/classes/FilterModel.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Dee 1.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>Dee.FilterModel</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="FileResourceManager.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="GListResultSet.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">Dee.FilterModel</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#property-details">Property Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+<div class="fixed-bar">
+  <table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#Dee-1.0/classes/FilterModel.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Dee 1.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>Dee.FilterModel</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="FileResourceManager.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="GListResultSet.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">Dee.FilterModel</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#property-details">Property Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+  <div class="wy-grid-for-nav">
+
+    
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="main">
+            
+  <div class="section" id="dee-filtermodel">
+<h1>Dee.FilterModel<a class="headerlink" href="#dee-filtermodel" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<svg width="272pt" height="242pt"
+ viewBox="0.00 0.00 272.00 242.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 238)">
+<title>g</title>
+<!-- Dee.FilterModel -->
+<g id="node1" class="node">
+<title>Dee.FilterModel</title>
+<g id="a_node1"><a xlink:href="#Dee.FilterModel" xlink:title="Dee.FilterModel">
+<path fill="none" stroke="#75507b" d="M158.5,-18C158.5,-18 87.5,-18 87.5,-18 84.5,-18 81.5,-15 81.5,-12 81.5,-12 81.5,-6 81.5,-6 81.5,-3 84.5,0 87.5,0 87.5,0 158.5,0 158.5,0 161.5,0 164.5,-3 164.5,-6 164.5,-6 164.5,-12 164.5,-12 164.5,-15 161.5,-18 158.5,-18"/>
+<text text-anchor="middle" x="123" y="-6.7" font-family="inherit" font-size="8.50">Dee.FilterModel</text>
+</a>
+</g>
+</g>
+<!-- Dee.Model -->
+<g id="node2" class="node">
+<title>Dee.Model</title>
+<g id="a_node2"><a xlink:href="Model.html#Dee.Model" xlink:title="Dee.Model">
+<path fill="none" stroke="#3091d1" d="M56,-180C56,-180 6,-180 6,-180 3,-180 0,-177 0,-174 0,-174 0,-168 0,-168 0,-165 3,-162 6,-162 6,-162 56,-162 56,-162 59,-162 62,-165 62,-168 62,-168 62,-174 62,-174 62,-177 59,-180 56,-180"/>
+<text text-anchor="middle" x="31" y="-168.7" font-family="inherit" font-size="8.50">Dee.Model</text>
+</a>
+</g>
+</g>
+<!-- Dee.SerializableModel -->
+<g id="node5" class="node">
+<title>Dee.SerializableModel</title>
+<g id="a_node5"><a xlink:href="SerializableModel.html#Dee.SerializableModel" xlink:title="Dee.SerializableModel">
+<path fill="none" stroke="#aaaaaa" d="M172.5,-126C172.5,-126 73.5,-126 73.5,-126 70.5,-126 67.5,-123 67.5,-120 67.5,-120 67.5,-114 67.5,-114 67.5,-111 70.5,-108 73.5,-108 73.5,-108 172.5,-108 172.5,-108 175.5,-108 178.5,-111 178.5,-114 178.5,-114 178.5,-120 178.5,-120 178.5,-123 175.5,-126 172.5,-126"/>
+<text text-anchor="middle" x="123" y="-114.7" font-family="inherit" font-size="8.50">Dee.SerializableModel</text>
+</a>
+</g>
+</g>
+<!-- Dee.Model&#45;&gt;Dee.SerializableModel -->
+<g id="edge1" class="edge">
+<title>Dee.Model&#45;&gt;Dee.SerializableModel</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M45.38,-161.88C61.17,-152.95 86.62,-138.56 104.04,-128.72"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="105.23,-130.05 108.73,-126.07 103.51,-127 105.23,-130.05"/>
+</g>
+<!-- Dee.ProxyModel -->
+<g id="node3" class="node">
+<title>Dee.ProxyModel</title>
+<g id="a_node3"><a xlink:href="ProxyModel.html#Dee.ProxyModel" xlink:title="Dee.ProxyModel">
+<path fill="none" stroke="#75507b" d="M160,-72C160,-72 86,-72 86,-72 83,-72 80,-69 80,-66 80,-66 80,-60 80,-60 80,-57 83,-54 86,-54 86,-54 160,-54 160,-54 163,-54 166,-57 166,-60 166,-60 166,-66 166,-66 166,-69 163,-72 160,-72"/>
+<text text-anchor="middle" x="123" y="-60.7" font-family="inherit" font-size="8.50">Dee.ProxyModel</text>
+</a>
+</g>
+</g>
+<!-- Dee.ProxyModel&#45;&gt;Dee.FilterModel -->
+<g id="edge2" class="edge">
+<title>Dee.ProxyModel&#45;&gt;Dee.FilterModel</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M123,-53.88C123,-45.76 123,-33.13 123,-23.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="124.75,-23.24 123,-18.24 121.25,-23.24 124.75,-23.24"/>
+</g>
+<!-- Dee.Serializable -->
+<g id="node4" class="node">
+<title>Dee.Serializable</title>
+<g id="a_node4"><a xlink:href="Serializable.html#Dee.Serializable" xlink:title="Dee.Serializable">
+<path fill="none" stroke="#3091d1" d="M160,-180C160,-180 86,-180 86,-180 83,-180 80,-177 80,-174 80,-174 80,-168 80,-168 80,-165 83,-162 86,-162 86,-162 160,-162 160,-162 163,-162 166,-165 166,-168 166,-168 166,-174 166,-174 166,-177 163,-180 160,-180"/>
+<text text-anchor="middle" x="123" y="-168.7" font-family="inherit" font-size="8.50">Dee.Serializable</text>
+</a>
+</g>
+</g>
+<!-- Dee.Serializable&#45;&gt;Dee.SerializableModel -->
+<g id="edge3" class="edge">
+<title>Dee.Serializable&#45;&gt;Dee.SerializableModel</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M123,-161.88C123,-153.76 123,-141.13 123,-131.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="124.75,-131.24 123,-126.24 121.25,-131.24 124.75,-131.24"/>
+</g>
+<!-- Dee.SerializableModel&#45;&gt;Dee.ProxyModel -->
+<g id="edge4" class="edge">
+<title>Dee.SerializableModel&#45;&gt;Dee.ProxyModel</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M123,-107.88C123,-99.76 123,-87.13 123,-77.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="124.75,-77.24 123,-72.24 121.25,-77.24 124.75,-77.24"/>
+</g>
+<!-- GObject.GInterface -->
+<g id="node6" class="node">
+<title>GObject.GInterface</title>
+<g id="a_node6"><a xlink:href="../../GObject-2.0/classes/GInterface.html#GObject.GInterface" xlink:title="GObject.GInterface">
+<path fill="none" stroke="#3091d1" d="M120,-234C120,-234 34,-234 34,-234 31,-234 28,-231 28,-228 28,-228 28,-222 28,-222 28,-219 31,-216 34,-216 34,-216 120,-216 120,-216 123,-216 126,-219 126,-222 126,-222 126,-228 126,-228 126,-231 123,-234 120,-234"/>
+<text text-anchor="middle" x="77" y="-222.7" font-family="inherit" font-size="8.50">GObject.GInterface</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Dee.Model -->
+<g id="edge5" class="edge">
+<title>GObject.GInterface&#45;&gt;Dee.Model</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M69.81,-215.88C62.3,-207.38 50.41,-193.94 41.77,-184.18"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="42.91,-182.83 38.29,-180.24 40.29,-185.14 42.91,-182.83"/>
+</g>
+<!-- GObject.GInterface&#45;&gt;Dee.Serializable -->
+<g id="edge6" class="edge">
+<title>GObject.GInterface&#45;&gt;Dee.Serializable</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M84.19,-215.88C91.7,-207.38 103.59,-193.94 112.23,-184.18"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="113.71,-185.14 115.71,-180.24 111.09,-182.83 113.71,-185.14"/>
+</g>
+<!-- GObject.Object -->
+<g id="node7" class="node">
+<title>GObject.Object</title>
+<g id="a_node7"><a xlink:href="../../GObject-2.0/classes/Object.html#GObject.Object" xlink:title="GObject.Object">
+<path fill="none" stroke="#75507b" d="M258,-180C258,-180 190,-180 190,-180 187,-180 184,-177 184,-174 184,-174 184,-168 184,-168 184,-165 187,-162 190,-162 190,-162 258,-162 258,-162 261,-162 264,-165 264,-168 264,-168 264,-174 264,-174 264,-177 261,-180 258,-180"/>
+<text text-anchor="middle" x="224" y="-168.7" font-family="inherit" font-size="8.50">GObject.Object</text>
+</a>
+</g>
+</g>
+<!-- GObject.Object&#45;&gt;Dee.SerializableModel -->
+<g id="edge7" class="edge">
+<title>GObject.Object&#45;&gt;Dee.SerializableModel</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M208.22,-161.88C190.73,-152.87 162.46,-138.32 143.33,-128.47"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="143.92,-126.8 138.67,-126.07 142.31,-129.91 143.92,-126.8"/>
+</g>
+</g>
+</svg>
+</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Subclasses:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="methods">
+<span id="dee-filtermodel-methods"></span><h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="SerializableModel.html#dee-serializablemodel-methods"><span class="std std-ref">Dee.SerializableModel (3)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (37)</span></a>,     <a class="reference internal" href="Model.html#dee-model-methods"><span class="std std-ref">Dee.Model (48)</span></a>,     <a class="reference internal" href="Serializable.html#dee-serializable-methods"><span class="std std-ref">Dee.Serializable (4)</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Structs:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/ObjectClass.html#gobject-objectclass-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.ObjectClass (5)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="99%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><em>class</em></td>
+<td><a class="reference internal" href="#Dee.FilterModel.new" title="Dee.FilterModel.new"><code class="xref py py-func docutils literal notranslate"><span class="pre">new</span></code></a> (orig_model, filter)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Dee.FilterModel.append_iter" title="Dee.FilterModel.append_iter"><code class="xref py py-func docutils literal notranslate"><span class="pre">append_iter</span></code></a> (iter)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Dee.FilterModel.contains" title="Dee.FilterModel.contains"><code class="xref py py-func docutils literal notranslate"><span class="pre">contains</span></code></a> (iter)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Dee.FilterModel.insert_iter" title="Dee.FilterModel.insert_iter"><code class="xref py py-func docutils literal notranslate"><span class="pre">insert_iter</span></code></a> (iter, pos)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Dee.FilterModel.insert_iter_before" title="Dee.FilterModel.insert_iter_before"><code class="xref py py-func docutils literal notranslate"><span class="pre">insert_iter_before</span></code></a> (iter, pos)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Dee.FilterModel.insert_iter_with_original_order" title="Dee.FilterModel.insert_iter_with_original_order"><code class="xref py py-func docutils literal notranslate"><span class="pre">insert_iter_with_original_order</span></code></a> (iter)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Dee.FilterModel.prepend_iter" title="Dee.FilterModel.prepend_iter"><code class="xref py py-func docutils literal notranslate"><span class="pre">prepend_iter</span></code></a> (iter)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="virtual-methods">
+<span id="dee-filtermodel-vfuncs"></span><h2>Virtual Methods<a class="headerlink" href="#virtual-methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-vfuncs" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (7)</span></a>,     <a class="reference internal" href="Model.html#dee-model-vfuncs"><span class="std std-ref">Dee.Model (50)</span></a>,     <a class="reference internal" href="Serializable.html#dee-serializable-vfuncs"><span class="std std-ref">Dee.Serializable (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="dee-filtermodel-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="ProxyModel.html#dee-proxymodel-props"><span class="std std-ref">Dee.ProxyModel (3)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="1%" />
+<col width="1%" />
+<col width="97%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Flags</th>
+<th class="head">Short Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="#Dee.FilterModel.props.filter" title="Dee.FilterModel.props.filter"><code class="xref py py-data docutils literal notranslate"><span class="pre">filter</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+<td>r/w/co</td>
+<td>Filtering rules applied to the original model</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="signals">
+<span id="dee-filtermodel-signals"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-signals" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a>,     <a class="reference internal" href="Model.html#dee-model-signals"><span class="std std-ref">Dee.Model (5)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fields">
+<span id="dee-filtermodel-fields"></span><h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-fields" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a>,     <a class="reference internal" href="Model.html#dee-model-fields"><span class="std std-ref">Dee.Model (5)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="16%" />
+<col width="1%" />
+<col width="1%" />
+<col width="82%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Access</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>parent</td>
+<td><a class="reference internal" href="ProxyModel.html#Dee.ProxyModel" title="Dee.ProxyModel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Dee.ProxyModel</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>priv</td>
+<td><a class="reference internal" href="FilterModelPrivate.html#Dee.FilterModelPrivate" title="Dee.FilterModelPrivate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Dee.FilterModelPrivate</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="class-details">
+<h2>Class Details<a class="headerlink" href="#class-details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Dee.FilterModel">
+<em class="property">class </em><code class="descclassname">Dee.</code><code class="descname">FilterModel</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#Dee.FilterModel" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Bases:</th><td class="field-body"><a class="reference internal" href="ProxyModel.html#Dee.ProxyModel" title="Dee.ProxyModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">Dee.ProxyModel</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Abstract:</th><td class="field-body">No</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Structure:</th><td class="field-body"><a class="reference internal" href="FilterModelClass.html#Dee.FilterModelClass" title="Dee.FilterModelClass"><code class="xref py py-class docutils literal notranslate"><span class="pre">Dee.FilterModelClass</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>All fields in the <a class="reference internal" href="#Dee.FilterModel" title="Dee.FilterModel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Dee.FilterModel</span></code></a> structure are private and should never be
+accessed directly</p>
+<dl class="classmethod">
+<dt id="Dee.FilterModel.new">
+<em class="property">classmethod </em><code class="descname">new</code><span class="sig-paren">(</span><em>orig_model</em>, <em>filter</em><span class="sig-paren">)</span><a class="headerlink" href="#Dee.FilterModel.new" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>orig_model</strong> (<a class="reference internal" href="Model.html#Dee.Model" title="Dee.Model"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Dee.Model</span></code></a>) – The back end model. This will be set as the
+<a class="reference internal" href="ProxyModel.html#Dee.ProxyModel" title="Dee.ProxyModel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Dee.ProxyModel</span></code></a> <a class="reference internal" href="ProxyModel.html#Dee.ProxyModel.props.back_end" title="Dee.ProxyModel.props.back_end"><code class="xref py py-data docutils literal notranslate"><span class="pre">:back-end</span></code></a> property</li>
+<li><strong>filter</strong> (<a class="reference internal" href="Filter.html#Dee.Filter" title="Dee.Filter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Dee.Filter</span></code></a>) – Structure containing the logic used to create the filter model.
+The filter model will create it’s own copy of <cite>filter</cite> so unless
+<cite>filter</cite> is allocated statically or on the stack you need to free it
+after calling this method.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">A newly allocated <a class="reference internal" href="#Dee.FilterModel" title="Dee.FilterModel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Dee.FilterModel</span></code></a>. Free with <a class="reference external" href="../../GObject-2.0/classes/Object.html#GObject.Object.unref" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GObject.Object.unref</span></code></a>().</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="#Dee.FilterModel" title="Dee.FilterModel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Dee.FilterModel</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Dee.FilterModel.append_iter">
+<code class="descname">append_iter</code><span class="sig-paren">(</span><em>iter</em><span class="sig-paren">)</span><a class="headerlink" href="#Dee.FilterModel.append_iter" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>iter</strong> (<a class="reference internal" href="ModelIter.html#Dee.ModelIter" title="Dee.ModelIter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Dee.ModelIter</span></code></a>) – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Always returns <cite>iter</cite></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="ModelIter.html#Dee.ModelIter" title="Dee.ModelIter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Dee.ModelIter</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Includes <cite>iter</cite> from the back end model in the filtered model, appending
+it to the end of the filtered rows.</p>
+<p>This method is usually called when implementing <a class="reference internal" href="../callbacks.html#Dee.FilterMapFunc" title="Dee.FilterMapFunc"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Dee.FilterMapFunc</span></code></a> or
+<a class="reference internal" href="../callbacks.html#Dee.FilterMapNotify" title="Dee.FilterMapNotify"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Dee.FilterMapNotify</span></code></a> methods.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Dee.FilterModel.contains">
+<code class="descname">contains</code><span class="sig-paren">(</span><em>iter</em><span class="sig-paren">)</span><a class="headerlink" href="#Dee.FilterModel.contains" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>iter</strong> (<a class="reference internal" href="ModelIter.html#Dee.ModelIter" title="Dee.ModelIter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Dee.ModelIter</span></code></a>) – The <a class="reference internal" href="ModelIter.html#Dee.ModelIter" title="Dee.ModelIter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Dee.ModelIter</span></code></a> to check</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if and only if <cite>iter</cite> is contained in <cite>self</cite>.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Check if <cite>iter</cite> from the back end model is mapped in <cite>self</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Dee.FilterModel.insert_iter">
+<code class="descname">insert_iter</code><span class="sig-paren">(</span><em>iter</em>, <em>pos</em><span class="sig-paren">)</span><a class="headerlink" href="#Dee.FilterModel.insert_iter" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>iter</strong> (<a class="reference internal" href="ModelIter.html#Dee.ModelIter" title="Dee.ModelIter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Dee.ModelIter</span></code></a>) – </li>
+<li><strong>pos</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Always returns <cite>iter</cite></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="ModelIter.html#Dee.ModelIter" title="Dee.ModelIter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Dee.ModelIter</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Includes <cite>iter</cite> from the back end model in the filtered model, inserting it at
+<cite>pos</cite> pushing other rows down.</p>
+<p>This method is usually called when implementing <a class="reference internal" href="../callbacks.html#Dee.FilterMapFunc" title="Dee.FilterMapFunc"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Dee.FilterMapFunc</span></code></a> or
+<a class="reference internal" href="../callbacks.html#Dee.FilterMapNotify" title="Dee.FilterMapNotify"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Dee.FilterMapNotify</span></code></a> methods.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Dee.FilterModel.insert_iter_before">
+<code class="descname">insert_iter_before</code><span class="sig-paren">(</span><em>iter</em>, <em>pos</em><span class="sig-paren">)</span><a class="headerlink" href="#Dee.FilterModel.insert_iter_before" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>iter</strong> (<a class="reference internal" href="ModelIter.html#Dee.ModelIter" title="Dee.ModelIter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Dee.ModelIter</span></code></a>) – </li>
+<li><strong>pos</strong> (<a class="reference internal" href="ModelIter.html#Dee.ModelIter" title="Dee.ModelIter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Dee.ModelIter</span></code></a>) – </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Always returns <cite>iter</cite></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="ModelIter.html#Dee.ModelIter" title="Dee.ModelIter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Dee.ModelIter</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Includes <cite>iter</cite> from the back end model in the filtered model, inserting it at
+the position before <cite>pos</cite> pushing other rows down.</p>
+<p>This method is usually called when implementing <a class="reference internal" href="../callbacks.html#Dee.FilterMapFunc" title="Dee.FilterMapFunc"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Dee.FilterMapFunc</span></code></a> or
+<a class="reference internal" href="../callbacks.html#Dee.FilterMapNotify" title="Dee.FilterMapNotify"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Dee.FilterMapNotify</span></code></a> methods.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Dee.FilterModel.insert_iter_with_original_order">
+<code class="descname">insert_iter_with_original_order</code><span class="sig-paren">(</span><em>iter</em><span class="sig-paren">)</span><a class="headerlink" href="#Dee.FilterModel.insert_iter_with_original_order" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>iter</strong> (<a class="reference internal" href="ModelIter.html#Dee.ModelIter" title="Dee.ModelIter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Dee.ModelIter</span></code></a>) – Iterator</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Always returns <cite>iter</cite></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="ModelIter.html#Dee.ModelIter" title="Dee.ModelIter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Dee.ModelIter</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Inserts <cite>iter</cite> in <cite>self</cite> in a way that is consistent with the ordering of the
+rows in the original <a class="reference internal" href="Model.html#Dee.Model" title="Dee.Model"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Dee.Model</span></code></a> behind <cite>self</cite>. THis method assumes that <cite>self</cite>
+is already ordered this way. If that’s not the case then this method has
+undefined behaviour.</p>
+<p>This method is mainly intended as a helper for <a class="reference internal" href="../callbacks.html#Dee.FilterMapNotify" title="Dee.FilterMapNotify"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Dee.FilterMapNotify</span></code></a> functions
+of <a class="reference internal" href="Filter.html#Dee.Filter" title="Dee.Filter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Dee.Filter</span></code></a> implementations that creates filter models sorted in
+accordance with the original models.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Dee.FilterModel.prepend_iter">
+<code class="descname">prepend_iter</code><span class="sig-paren">(</span><em>iter</em><span class="sig-paren">)</span><a class="headerlink" href="#Dee.FilterModel.prepend_iter" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>iter</strong> (<a class="reference internal" href="ModelIter.html#Dee.ModelIter" title="Dee.ModelIter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Dee.ModelIter</span></code></a>) – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Always returns <cite>iter</cite></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="ModelIter.html#Dee.ModelIter" title="Dee.ModelIter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Dee.ModelIter</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Includes <cite>iter</cite> from the back end model in the filtered model, prepending
+it to the beginning of the filtered rows.</p>
+<p>This method is usually called when implementing <a class="reference internal" href="../callbacks.html#Dee.FilterMapFunc" title="Dee.FilterMapFunc"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Dee.FilterMapFunc</span></code></a> or
+<a class="reference internal" href="../callbacks.html#Dee.FilterMapNotify" title="Dee.FilterMapNotify"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Dee.FilterMapNotify</span></code></a> methods.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="property-details">
+<h2>Property Details<a class="headerlink" href="#property-details" title="Permalink to this headline">¶</a></h2>
+<dl class="data">
+<dt id="Dee.FilterModel.props.filter">
+<code class="descclassname">Dee.FilterModel.props.</code><code class="descname">filter</code><a class="headerlink" href="#Dee.FilterModel.props.filter" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">filter</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.CONSTRUCT_ONLY" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CONSTRUCT_ONLY</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Property holding the <a class="reference internal" href="Filter.html#Dee.Filter" title="Dee.Filter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Dee.Filter</span></code></a> used to filter the model
+defined in the <a class="reference internal" href="#Dee.FilterModel" title="Dee.FilterModel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Dee.FilterModel</span></code></a> <code class="xref py py-data docutils literal notranslate"><span class="pre">:back-end</span></code> property.</p>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div> 
+
+</body>
+</html>

@@ -1,0 +1,1057 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    AppStream.Release -
+    
+      Classes -
+    
+    AppStream 1.0
+  </title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/css/pgi.css" type="text/css" />
+  
+
+  
+  <script type="text/javascript">
+
+    function openSidebar(element) {
+        window.location.href = element.href + location.hash;
+        return false;
+    }
+
+    function inIframe() {
+        try {
+            return window.self !== window.top;
+        } catch (e) {
+            return true;
+        }
+    }
+
+    function onLoaded() {
+        if(!inIframe()) {
+            var icons = document.getElementsByClassName('open-sidebar');
+
+            for (var i = 0; i < icons.length; i ++) {
+                icons[i].style.display = 'table-cell';
+            }
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', onLoaded, false);
+
+  </script>
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="AppStream 1.0 Python API Docs" href="../index.html"/>
+        <link rel="up" title="Classes" href="../classes.html"/>
+        <link rel="next" title="AppStream.Review" href="Review.html"/>
+        <link rel="prev" title="AppStream.Relation" href="Relation.html"/> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+<div class="non-fixed-bar">
+<table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#AppStream-1.0/classes/Release.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">AppStream 1.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>AppStream.Release</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="Relation.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="Review.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">AppStream.Release</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+<div class="fixed-bar">
+  <table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#AppStream-1.0/classes/Release.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">AppStream 1.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>AppStream.Release</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="Relation.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="Review.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">AppStream.Release</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+  <div class="wy-grid-for-nav">
+
+    
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="main">
+            
+  <div class="section" id="appstream-release">
+<h1>AppStream.Release<a class="headerlink" href="#appstream-release" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<svg width="107pt" height="80pt"
+ viewBox="0.00 0.00 107.00 80.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 76)">
+<title>g</title>
+<!-- AppStream.Release -->
+<g id="node1" class="node">
+<title>AppStream.Release</title>
+<g id="a_node1"><a xlink:href="#AppStream.Release" xlink:title="AppStream.Release">
+<path fill="none" stroke="#75507b" d="M93,-18C93,-18 6,-18 6,-18 3,-18 0,-15 0,-12 0,-12 0,-6 0,-6 0,-3 3,0 6,0 6,0 93,0 93,0 96,0 99,-3 99,-6 99,-6 99,-12 99,-12 99,-15 96,-18 93,-18"/>
+<text text-anchor="middle" x="49.5" y="-6.7" font-family="inherit" font-size="8.50">AppStream.Release</text>
+</a>
+</g>
+</g>
+<!-- GObject.Object -->
+<g id="node2" class="node">
+<title>GObject.Object</title>
+<g id="a_node2"><a xlink:href="../../GObject-2.0/classes/Object.html#GObject.Object" xlink:title="GObject.Object">
+<path fill="none" stroke="#75507b" d="M83.5,-72C83.5,-72 15.5,-72 15.5,-72 12.5,-72 9.5,-69 9.5,-66 9.5,-66 9.5,-60 9.5,-60 9.5,-57 12.5,-54 15.5,-54 15.5,-54 83.5,-54 83.5,-54 86.5,-54 89.5,-57 89.5,-60 89.5,-60 89.5,-66 89.5,-66 89.5,-69 86.5,-72 83.5,-72"/>
+<text text-anchor="middle" x="49.5" y="-60.7" font-family="inherit" font-size="8.50">GObject.Object</text>
+</a>
+</g>
+</g>
+<!-- GObject.Object&#45;&gt;AppStream.Release -->
+<g id="edge1" class="edge">
+<title>GObject.Object&#45;&gt;AppStream.Release</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M49.5,-53.88C49.5,-45.76 49.5,-33.13 49.5,-23.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="51.25,-23.24 49.5,-18.24 47.75,-23.24 51.25,-23.24"/>
+</g>
+</g>
+</svg>
+</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Subclasses:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="methods">
+<span id="appstream-release-methods"></span><h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (37)</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Structs:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/ObjectClass.html#gobject-objectclass-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.ObjectClass (5)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="99%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><em>class</em></td>
+<td><a class="reference internal" href="#AppStream.Release.new" title="AppStream.Release.new"><code class="xref py py-func docutils literal notranslate"><span class="pre">new</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#AppStream.Release.add_artifact" title="AppStream.Release.add_artifact"><code class="xref py py-func docutils literal notranslate"><span class="pre">add_artifact</span></code></a> (artifact)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#AppStream.Release.add_checksum" title="AppStream.Release.add_checksum"><code class="xref py py-func docutils literal notranslate"><span class="pre">add_checksum</span></code></a> (cs)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#AppStream.Release.add_issue" title="AppStream.Release.add_issue"><code class="xref py py-func docutils literal notranslate"><span class="pre">add_issue</span></code></a> (issue)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#AppStream.Release.add_location" title="AppStream.Release.add_location"><code class="xref py py-func docutils literal notranslate"><span class="pre">add_location</span></code></a> (location)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#AppStream.Release.get_active_locale" title="AppStream.Release.get_active_locale"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_active_locale</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#AppStream.Release.get_artifacts" title="AppStream.Release.get_artifacts"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_artifacts</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#AppStream.Release.get_checksum" title="AppStream.Release.get_checksum"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_checksum</span></code></a> (kind)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#AppStream.Release.get_checksums" title="AppStream.Release.get_checksums"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_checksums</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#AppStream.Release.get_date" title="AppStream.Release.get_date"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_date</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#AppStream.Release.get_date_eol" title="AppStream.Release.get_date_eol"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_date_eol</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#AppStream.Release.get_description" title="AppStream.Release.get_description"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_description</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#AppStream.Release.get_issues" title="AppStream.Release.get_issues"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_issues</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#AppStream.Release.get_kind" title="AppStream.Release.get_kind"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_kind</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#AppStream.Release.get_locations" title="AppStream.Release.get_locations"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_locations</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#AppStream.Release.get_size" title="AppStream.Release.get_size"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_size</span></code></a> (kind)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#AppStream.Release.get_timestamp" title="AppStream.Release.get_timestamp"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_timestamp</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#AppStream.Release.get_timestamp_eol" title="AppStream.Release.get_timestamp_eol"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_timestamp_eol</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#AppStream.Release.get_urgency" title="AppStream.Release.get_urgency"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_urgency</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#AppStream.Release.get_url" title="AppStream.Release.get_url"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_url</span></code></a> (url_kind)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#AppStream.Release.get_version" title="AppStream.Release.get_version"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_version</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#AppStream.Release.set_active_locale" title="AppStream.Release.set_active_locale"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_active_locale</span></code></a> (locale)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#AppStream.Release.set_date" title="AppStream.Release.set_date"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_date</span></code></a> (date)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#AppStream.Release.set_date_eol" title="AppStream.Release.set_date_eol"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_date_eol</span></code></a> (date)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#AppStream.Release.set_description" title="AppStream.Release.set_description"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_description</span></code></a> (description, locale)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#AppStream.Release.set_kind" title="AppStream.Release.set_kind"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_kind</span></code></a> (kind)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#AppStream.Release.set_size" title="AppStream.Release.set_size"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_size</span></code></a> (size, kind)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#AppStream.Release.set_timestamp" title="AppStream.Release.set_timestamp"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_timestamp</span></code></a> (timestamp)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#AppStream.Release.set_timestamp_eol" title="AppStream.Release.set_timestamp_eol"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_timestamp_eol</span></code></a> (timestamp)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#AppStream.Release.set_urgency" title="AppStream.Release.set_urgency"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_urgency</span></code></a> (urgency)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#AppStream.Release.set_url" title="AppStream.Release.set_url"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_url</span></code></a> (url_kind, url)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#AppStream.Release.set_version" title="AppStream.Release.set_version"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_version</span></code></a> (version)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#AppStream.Release.vercmp" title="AppStream.Release.vercmp"><code class="xref py py-func docutils literal notranslate"><span class="pre">vercmp</span></code></a> (rel2)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="virtual-methods">
+<span id="appstream-release-vfuncs"></span><h2>Virtual Methods<a class="headerlink" href="#virtual-methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-vfuncs" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (7)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="appstream-release-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<p>None</p>
+</div>
+<div class="section" id="signals">
+<span id="appstream-release-signals"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-signals" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fields">
+<span id="appstream-release-fields"></span><h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-fields" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="16%" />
+<col width="1%" />
+<col width="1%" />
+<col width="82%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Access</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>parent_instance</td>
+<td><a class="reference external" href="../../GObject-2.0/classes/Object.html#GObject.Object" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GObject.Object</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="class-details">
+<h2>Class Details<a class="headerlink" href="#class-details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="AppStream.Release">
+<em class="property">class </em><code class="descclassname">AppStream.</code><code class="descname">Release</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#AppStream.Release" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Bases:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#GObject.Object" title="(in GObject 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GObject.Object</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Abstract:</th><td class="field-body">No</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Structure:</th><td class="field-body"><a class="reference internal" href="ReleaseClass.html#AppStream.ReleaseClass" title="AppStream.ReleaseClass"><code class="xref py py-class docutils literal notranslate"><span class="pre">AppStream.ReleaseClass</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<dl class="classmethod">
+<dt id="AppStream.Release.new">
+<em class="property">classmethod </em><code class="descname">new</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#AppStream.Release.new" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a <a class="reference internal" href="#AppStream.Release" title="AppStream.Release"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AppStream.Release</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#AppStream.Release" title="AppStream.Release"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AppStream.Release</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Creates a new <a class="reference internal" href="#AppStream.Release" title="AppStream.Release"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AppStream.Release</span></code></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="AppStream.Release.add_artifact">
+<code class="descname">add_artifact</code><span class="sig-paren">(</span><em>artifact</em><span class="sig-paren">)</span><a class="headerlink" href="#AppStream.Release.add_artifact" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>artifact</strong> (<a class="reference internal" href="Artifact.html#AppStream.Artifact" title="AppStream.Artifact"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AppStream.Artifact</span></code></a>) – The <a class="reference internal" href="Artifact.html#AppStream.Artifact" title="AppStream.Artifact"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AppStream.Artifact</span></code></a>.</td>
+</tr>
+</tbody>
+</table>
+<p>Add an artifact (binary / source download) for this release.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.12.6.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="AppStream.Release.add_checksum">
+<code class="descname">add_checksum</code><span class="sig-paren">(</span><em>cs</em><span class="sig-paren">)</span><a class="headerlink" href="#AppStream.Release.add_checksum" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>cs</strong> (<a class="reference internal" href="Checksum.html#AppStream.Checksum" title="AppStream.Checksum"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AppStream.Checksum</span></code></a>) – The <a class="reference internal" href="Checksum.html#AppStream.Checksum" title="AppStream.Checksum"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AppStream.Checksum</span></code></a>.</td>
+</tr>
+</tbody>
+</table>
+<p>Add a checksum for the file associated with this release.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.8.2.</span></p>
+</div>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version ???: </span>Use the <a class="reference internal" href="Artifact.html#AppStream.Artifact" title="AppStream.Artifact"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AppStream.Artifact</span></code></a> directly to obtain this information.</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="AppStream.Release.add_issue">
+<code class="descname">add_issue</code><span class="sig-paren">(</span><em>issue</em><span class="sig-paren">)</span><a class="headerlink" href="#AppStream.Release.add_issue" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>issue</strong> (<a class="reference internal" href="Issue.html#AppStream.Issue" title="AppStream.Issue"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AppStream.Issue</span></code></a>) – The <a class="reference internal" href="Issue.html#AppStream.Issue" title="AppStream.Issue"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AppStream.Issue</span></code></a>.</td>
+</tr>
+</tbody>
+</table>
+<p>Add information about a (resolved) issue to this release.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.12.9.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="AppStream.Release.add_location">
+<code class="descname">add_location</code><span class="sig-paren">(</span><em>location</em><span class="sig-paren">)</span><a class="headerlink" href="#AppStream.Release.add_location" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>location</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – An URL of the download location</td>
+</tr>
+</tbody>
+</table>
+<p>Adds a release location.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.8.1.</span></p>
+</div>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version ???: </span>Use the <a class="reference internal" href="Artifact.html#AppStream.Artifact" title="AppStream.Artifact"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AppStream.Artifact</span></code></a> directly to obtain this information.</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="AppStream.Release.get_active_locale">
+<code class="descname">get_active_locale</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#AppStream.Release.get_active_locale" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get the current active locale, which
+is used to get localized messages.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="AppStream.Release.get_artifacts">
+<code class="descname">get_artifacts</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#AppStream.Release.get_artifacts" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">an array of <a class="reference internal" href="Artifact.html#AppStream.Artifact" title="AppStream.Artifact"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AppStream.Artifact</span></code></a> objects.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">[<a class="reference internal" href="Artifact.html#AppStream.Artifact" title="AppStream.Artifact"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AppStream.Artifact</span></code></a>]</td>
+</tr>
+</tbody>
+</table>
+<p>Get a list of all downloadable artifacts that are associated with
+this release.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.12.6.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="AppStream.Release.get_checksum">
+<code class="descname">get_checksum</code><span class="sig-paren">(</span><em>kind</em><span class="sig-paren">)</span><a class="headerlink" href="#AppStream.Release.get_checksum" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>kind</strong> (<a class="reference internal" href="../enums.html#AppStream.ChecksumKind" title="AppStream.ChecksumKind"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AppStream.ChecksumKind</span></code></a>) – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">an <a class="reference internal" href="Checksum.html#AppStream.Checksum" title="AppStream.Checksum"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AppStream.Checksum</span></code></a>, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> for not set or invalid</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="Checksum.html#AppStream.Checksum" title="AppStream.Checksum"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AppStream.Checksum</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the release checksum</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.8.2.</span></p>
+</div>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version ???: </span>Use the <a class="reference internal" href="Artifact.html#AppStream.Artifact" title="AppStream.Artifact"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AppStream.Artifact</span></code></a> directly to obtain this information.</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="AppStream.Release.get_checksums">
+<code class="descname">get_checksums</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#AppStream.Release.get_checksums" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">an array of <a class="reference internal" href="Checksum.html#AppStream.Checksum" title="AppStream.Checksum"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AppStream.Checksum</span></code></a> objects.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">[<a class="reference internal" href="Checksum.html#AppStream.Checksum" title="AppStream.Checksum"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AppStream.Checksum</span></code></a>]</td>
+</tr>
+</tbody>
+</table>
+<p>Get a list of all checksums we have for this release.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.10.</span></p>
+</div>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version ???: </span>Use the <a class="reference internal" href="Artifact.html#AppStream.Artifact" title="AppStream.Artifact"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AppStream.Artifact</span></code></a> directly to obtain this information.</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="AppStream.Release.get_date">
+<code class="descname">get_date</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#AppStream.Release.get_date" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The date in ISO8601 format.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the release date.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.12.5.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="AppStream.Release.get_date_eol">
+<code class="descname">get_date_eol</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#AppStream.Release.get_date_eol" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The EOL date in ISO8601 format.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the end-of-life date for this release.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.12.5.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="AppStream.Release.get_description">
+<code class="descname">get_description</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#AppStream.Release.get_description" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">markup, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> for not set or invalid</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the release description markup for a given locale.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="AppStream.Release.get_issues">
+<code class="descname">get_issues</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#AppStream.Release.get_issues" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">an array of <a class="reference internal" href="Issue.html#AppStream.Issue" title="AppStream.Issue"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AppStream.Issue</span></code></a> objects.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">[<a class="reference internal" href="Issue.html#AppStream.Issue" title="AppStream.Issue"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AppStream.Issue</span></code></a>]</td>
+</tr>
+</tbody>
+</table>
+<p>Get a list of all issues resolved by this release.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.12.9.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="AppStream.Release.get_kind">
+<code class="descname">get_kind</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#AppStream.Release.get_kind" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#AppStream.ReleaseKind" title="AppStream.ReleaseKind"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AppStream.ReleaseKind</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the type of the release.
+(development or stable release)</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.12.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="AppStream.Release.get_locations">
+<code class="descname">get_locations</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#AppStream.Release.get_locations" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">list of locations</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">[<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>]</td>
+</tr>
+</tbody>
+</table>
+<p>Gets the release locations, typically URLs.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.8.1.</span></p>
+</div>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version ???: </span>Use the <a class="reference internal" href="Artifact.html#AppStream.Artifact" title="AppStream.Artifact"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AppStream.Artifact</span></code></a> directly to obtain this information.</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="AppStream.Release.get_size">
+<code class="descname">get_size</code><span class="sig-paren">(</span><em>kind</em><span class="sig-paren">)</span><a class="headerlink" href="#AppStream.Release.get_size" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>kind</strong> (<a class="reference internal" href="../enums.html#AppStream.SizeKind" title="AppStream.SizeKind"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AppStream.SizeKind</span></code></a>) – a <a class="reference internal" href="../enums.html#AppStream.SizeKind" title="AppStream.SizeKind"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AppStream.SizeKind</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The size of the given kind of this release.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the release size.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.8.6.</span></p>
+</div>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version ???: </span>Use the <a class="reference internal" href="Artifact.html#AppStream.Artifact" title="AppStream.Artifact"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AppStream.Artifact</span></code></a> directly to obtain this information.</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="AppStream.Release.get_timestamp">
+<code class="descname">get_timestamp</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#AppStream.Release.get_timestamp" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">timestamp, or 0 for unset</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the release timestamp.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="AppStream.Release.get_timestamp_eol">
+<code class="descname">get_timestamp_eol</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#AppStream.Release.get_timestamp_eol" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">UNIX timestamp, or 0 for unset or invalid.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the UNIX timestamp for the date when this
+release is out of support (end-of-life).</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.12.5.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="AppStream.Release.get_urgency">
+<code class="descname">get_urgency</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#AppStream.Release.get_urgency" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference internal" href="../enums.html#AppStream.UrgencyKind" title="AppStream.UrgencyKind"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AppStream.UrgencyKind</span></code></a>, or <a class="reference internal" href="../enums.html#AppStream.UrgencyKind.UNKNOWN" title="AppStream.UrgencyKind.UNKNOWN"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AppStream.UrgencyKind.UNKNOWN</span></code></a> for not set</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#AppStream.UrgencyKind" title="AppStream.UrgencyKind"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AppStream.UrgencyKind</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the urgency of the release
+(showing how important it is to update to a more recent release)</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.6.5.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="AppStream.Release.get_url">
+<code class="descname">get_url</code><span class="sig-paren">(</span><em>url_kind</em><span class="sig-paren">)</span><a class="headerlink" href="#AppStream.Release.get_url" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>url_kind</strong> (<a class="reference internal" href="../enums.html#AppStream.ReleaseUrlKind" title="AppStream.ReleaseUrlKind"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AppStream.ReleaseUrlKind</span></code></a>) – the URL kind, e.g. <a class="reference internal" href="../enums.html#AppStream.ReleaseUrlKind.DETAILS" title="AppStream.ReleaseUrlKind.DETAILS"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AppStream.ReleaseUrlKind.DETAILS</span></code></a>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">string, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> if unset</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets an URL.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.12.5.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="AppStream.Release.get_version">
+<code class="descname">get_version</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#AppStream.Release.get_version" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">string, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> for not set or invalid</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the release version.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="AppStream.Release.set_active_locale">
+<code class="descname">set_active_locale</code><span class="sig-paren">(</span><em>locale</em><span class="sig-paren">)</span><a class="headerlink" href="#AppStream.Release.set_active_locale" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>locale</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – </td>
+</tr>
+</tbody>
+</table>
+<p>Set the current active locale, which
+is used to get localized messages.
+If the <a class="reference internal" href="Component.html#AppStream.Component" title="AppStream.Component"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AppStream.Component</span></code></a> linking this <a class="reference internal" href="#AppStream.Release" title="AppStream.Release"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AppStream.Release</span></code></a> was fetched
+from a localized database, usually only
+one locale is available.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="AppStream.Release.set_date">
+<code class="descname">set_date</code><span class="sig-paren">(</span><em>date</em><span class="sig-paren">)</span><a class="headerlink" href="#AppStream.Release.set_date" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>date</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – the date in ISO8601 format.</td>
+</tr>
+</tbody>
+</table>
+<p>Sets the release date.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.12.5.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="AppStream.Release.set_date_eol">
+<code class="descname">set_date_eol</code><span class="sig-paren">(</span><em>date</em><span class="sig-paren">)</span><a class="headerlink" href="#AppStream.Release.set_date_eol" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>date</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – the EOL date in ISO8601 format.</td>
+</tr>
+</tbody>
+</table>
+<p>Sets the end-of-life date for this release.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.12.5.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="AppStream.Release.set_description">
+<code class="descname">set_description</code><span class="sig-paren">(</span><em>description</em>, <em>locale</em><span class="sig-paren">)</span><a class="headerlink" href="#AppStream.Release.set_description" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>description</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – the description markup.</li>
+<li><strong>locale</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Sets the description release markup.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="AppStream.Release.set_kind">
+<code class="descname">set_kind</code><span class="sig-paren">(</span><em>kind</em><span class="sig-paren">)</span><a class="headerlink" href="#AppStream.Release.set_kind" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>kind</strong> (<a class="reference internal" href="../enums.html#AppStream.ReleaseKind" title="AppStream.ReleaseKind"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AppStream.ReleaseKind</span></code></a>) – the <a class="reference internal" href="../enums.html#AppStream.ReleaseKind" title="AppStream.ReleaseKind"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AppStream.ReleaseKind</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Sets the release kind to distinguish between end-user ready
+stable releases and development prereleases..</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.12.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="AppStream.Release.set_size">
+<code class="descname">set_size</code><span class="sig-paren">(</span><em>size</em>, <em>kind</em><span class="sig-paren">)</span><a class="headerlink" href="#AppStream.Release.set_size" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>size</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – a size in bytes, or 0 for unknown</li>
+<li><strong>kind</strong> (<a class="reference internal" href="../enums.html#AppStream.SizeKind" title="AppStream.SizeKind"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AppStream.SizeKind</span></code></a>) – a <a class="reference internal" href="../enums.html#AppStream.SizeKind" title="AppStream.SizeKind"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AppStream.SizeKind</span></code></a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Sets the release size for the given kind.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.8.6.</span></p>
+</div>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version ???: </span>Use the <a class="reference internal" href="Artifact.html#AppStream.Artifact" title="AppStream.Artifact"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AppStream.Artifact</span></code></a> directly to obtain this information.</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="AppStream.Release.set_timestamp">
+<code class="descname">set_timestamp</code><span class="sig-paren">(</span><em>timestamp</em><span class="sig-paren">)</span><a class="headerlink" href="#AppStream.Release.set_timestamp" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>timestamp</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – the timestamp value.</td>
+</tr>
+</tbody>
+</table>
+<p>Sets the release timestamp.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="AppStream.Release.set_timestamp_eol">
+<code class="descname">set_timestamp_eol</code><span class="sig-paren">(</span><em>timestamp</em><span class="sig-paren">)</span><a class="headerlink" href="#AppStream.Release.set_timestamp_eol" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>timestamp</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – the timestamp value.</td>
+</tr>
+</tbody>
+</table>
+<p>Sets the UNIX timestamp for the date when this
+release is out of support (end-of-life).</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.12.5.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="AppStream.Release.set_urgency">
+<code class="descname">set_urgency</code><span class="sig-paren">(</span><em>urgency</em><span class="sig-paren">)</span><a class="headerlink" href="#AppStream.Release.set_urgency" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>urgency</strong> (<a class="reference internal" href="../enums.html#AppStream.UrgencyKind" title="AppStream.UrgencyKind"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AppStream.UrgencyKind</span></code></a>) – the urgency of this release/update (as <a class="reference internal" href="../enums.html#AppStream.UrgencyKind" title="AppStream.UrgencyKind"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AppStream.UrgencyKind</span></code></a>)</td>
+</tr>
+</tbody>
+</table>
+<p>Sets the release urgency.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.6.5.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="AppStream.Release.set_url">
+<code class="descname">set_url</code><span class="sig-paren">(</span><em>url_kind</em>, <em>url</em><span class="sig-paren">)</span><a class="headerlink" href="#AppStream.Release.set_url" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>url_kind</strong> (<a class="reference internal" href="../enums.html#AppStream.ReleaseUrlKind" title="AppStream.ReleaseUrlKind"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AppStream.ReleaseUrlKind</span></code></a>) – the URL kind, e.g. <a class="reference internal" href="../enums.html#AppStream.ReleaseUrlKind.DETAILS" title="AppStream.ReleaseUrlKind.DETAILS"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AppStream.ReleaseUrlKind.DETAILS</span></code></a></li>
+<li><strong>url</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – the full URL.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Sets an URL for this release.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.12.5.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="AppStream.Release.set_version">
+<code class="descname">set_version</code><span class="sig-paren">(</span><em>version</em><span class="sig-paren">)</span><a class="headerlink" href="#AppStream.Release.set_version" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>version</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – the version string.</td>
+</tr>
+</tbody>
+</table>
+<p>Sets the release version.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="AppStream.Release.vercmp">
+<code class="descname">vercmp</code><span class="sig-paren">(</span><em>rel2</em><span class="sig-paren">)</span><a class="headerlink" href="#AppStream.Release.vercmp" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>rel2</strong> (<a class="reference internal" href="#AppStream.Release" title="AppStream.Release"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AppStream.Release</span></code></a>) – an <a class="reference internal" href="#AppStream.Release" title="AppStream.Release"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AppStream.Release</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">1 if <cite>self</cite> version is higher than <cite>rel2</cite>, 0 if versions are equal, -1 if <cite>rel2</cite> version is higher than <cite>self</cite>.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Compare the version numbers of two releases.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div> 
+
+</body>
+</html>

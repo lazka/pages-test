@@ -1,0 +1,468 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    NM.DeviceOlpcMesh -
+    
+      Classes -
+    
+    NM 1.0
+  </title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/css/pgi.css" type="text/css" />
+  
+
+  
+  <script type="text/javascript">
+
+    function openSidebar(element) {
+        window.location.href = element.href + location.hash;
+        return false;
+    }
+
+    function inIframe() {
+        try {
+            return window.self !== window.top;
+        } catch (e) {
+            return true;
+        }
+    }
+
+    function onLoaded() {
+        if(!inIframe()) {
+            var icons = document.getElementsByClassName('open-sidebar');
+
+            for (var i = 0; i < icons.length; i ++) {
+                icons[i].style.display = 'table-cell';
+            }
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', onLoaded, false);
+
+  </script>
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="NM 1.0 Python API Docs" href="../index.html"/>
+        <link rel="up" title="Classes" href="../classes.html"/>
+        <link rel="next" title="NM.DeviceOvsBridge" href="DeviceOvsBridge.html"/>
+        <link rel="prev" title="NM.DeviceModem" href="DeviceModem.html"/> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+<div class="non-fixed-bar">
+<table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#NM-1.0/classes/DeviceOlpcMesh.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">NM 1.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>NM.DeviceOlpcMesh</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="DeviceModem.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="DeviceOvsBridge.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">NM.DeviceOlpcMesh</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#property-details">Property Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+<div class="fixed-bar">
+  <table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#NM-1.0/classes/DeviceOlpcMesh.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">NM 1.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>NM.DeviceOlpcMesh</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="DeviceModem.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="DeviceOvsBridge.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">NM.DeviceOlpcMesh</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#property-details">Property Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+  <div class="wy-grid-for-nav">
+
+    
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="main">
+            
+  <div class="section" id="nm-deviceolpcmesh">
+<h1>NM.DeviceOlpcMesh<a class="headerlink" href="#nm-deviceolpcmesh" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<svg width="112pt" height="188pt"
+ viewBox="0.00 0.00 112.00 188.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 184)">
+<title>g</title>
+<!-- GObject.Object -->
+<g id="node1" class="node">
+<title>GObject.Object</title>
+<g id="a_node1"><a xlink:href="../../GObject-2.0/classes/Object.html#GObject.Object" xlink:title="GObject.Object">
+<path fill="none" stroke="#75507b" d="M86,-180C86,-180 18,-180 18,-180 15,-180 12,-177 12,-174 12,-174 12,-168 12,-168 12,-165 15,-162 18,-162 18,-162 86,-162 86,-162 89,-162 92,-165 92,-168 92,-168 92,-174 92,-174 92,-177 89,-180 86,-180"/>
+<text text-anchor="middle" x="52" y="-168.7" font-family="inherit" font-size="8.50">GObject.Object</text>
+</a>
+</g>
+</g>
+<!-- NM.Object -->
+<g id="node4" class="node">
+<title>NM.Object</title>
+<g id="a_node4"><a xlink:href="Object.html#NM.Object" xlink:title="NM.Object">
+<path fill="none" stroke="#aaaaaa" d="M76,-126C76,-126 28,-126 28,-126 25,-126 22,-123 22,-120 22,-120 22,-114 22,-114 22,-111 25,-108 28,-108 28,-108 76,-108 76,-108 79,-108 82,-111 82,-114 82,-114 82,-120 82,-120 82,-123 79,-126 76,-126"/>
+<text text-anchor="middle" x="52" y="-114.7" font-family="inherit" font-size="8.50">NM.Object</text>
+</a>
+</g>
+</g>
+<!-- GObject.Object&#45;&gt;NM.Object -->
+<g id="edge1" class="edge">
+<title>GObject.Object&#45;&gt;NM.Object</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M52,-161.88C52,-153.76 52,-141.13 52,-131.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="53.75,-131.24 52,-126.24 50.25,-131.24 53.75,-131.24"/>
+</g>
+<!-- NM.Device -->
+<g id="node2" class="node">
+<title>NM.Device</title>
+<g id="a_node2"><a xlink:href="Device.html#NM.Device" xlink:title="NM.Device">
+<path fill="none" stroke="#aaaaaa" d="M77,-72C77,-72 27,-72 27,-72 24,-72 21,-69 21,-66 21,-66 21,-60 21,-60 21,-57 24,-54 27,-54 27,-54 77,-54 77,-54 80,-54 83,-57 83,-60 83,-60 83,-66 83,-66 83,-69 80,-72 77,-72"/>
+<text text-anchor="middle" x="52" y="-60.7" font-family="inherit" font-size="8.50">NM.Device</text>
+</a>
+</g>
+</g>
+<!-- NM.DeviceOlpcMesh -->
+<g id="node3" class="node">
+<title>NM.DeviceOlpcMesh</title>
+<g id="a_node3"><a xlink:href="#NM.DeviceOlpcMesh" xlink:title="NM.DeviceOlpcMesh">
+<path fill="none" stroke="#75507b" d="M98,-18C98,-18 6,-18 6,-18 3,-18 0,-15 0,-12 0,-12 0,-6 0,-6 0,-3 3,0 6,0 6,0 98,0 98,0 101,0 104,-3 104,-6 104,-6 104,-12 104,-12 104,-15 101,-18 98,-18"/>
+<text text-anchor="middle" x="52" y="-6.7" font-family="inherit" font-size="8.50">NM.DeviceOlpcMesh</text>
+</a>
+</g>
+</g>
+<!-- NM.Device&#45;&gt;NM.DeviceOlpcMesh -->
+<g id="edge2" class="edge">
+<title>NM.Device&#45;&gt;NM.DeviceOlpcMesh</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M52,-53.88C52,-45.76 52,-33.13 52,-23.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="53.75,-23.24 52,-18.24 50.25,-23.24 53.75,-23.24"/>
+</g>
+<!-- NM.Object&#45;&gt;NM.Device -->
+<g id="edge3" class="edge">
+<title>NM.Object&#45;&gt;NM.Device</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M52,-107.88C52,-99.76 52,-87.13 52,-77.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="53.75,-77.24 52,-72.24 50.25,-77.24 53.75,-77.24"/>
+</g>
+</g>
+</svg>
+</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Subclasses:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="methods">
+<span id="nm-deviceolpcmesh-methods"></span><h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Device.html#nm-device-methods"><span class="std std-ref">NM.Device (53)</span></a>,     <a class="reference internal" href="Object.html#nm-object-methods"><span class="std std-ref">NM.Object (2)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (37)</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Structs:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/ObjectClass.html#gobject-objectclass-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.ObjectClass (5)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="99%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.DeviceOlpcMesh.get_active_channel" title="NM.DeviceOlpcMesh.get_active_channel"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_active_channel</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.DeviceOlpcMesh.get_companion" title="NM.DeviceOlpcMesh.get_companion"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_companion</span></code></a> ()</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="virtual-methods">
+<span id="nm-deviceolpcmesh-vfuncs"></span><h2>Virtual Methods<a class="headerlink" href="#virtual-methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-vfuncs" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (7)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="nm-deviceolpcmesh-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Device.html#nm-device-props"><span class="std std-ref">NM.Device (31)</span></a>,     <a class="reference internal" href="Object.html#nm-object-props"><span class="std std-ref">NM.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="1%" />
+<col width="1%" />
+<col width="97%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Flags</th>
+<th class="head">Short Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="#NM.DeviceOlpcMesh.props.active_channel" title="NM.DeviceOlpcMesh.props.active_channel"><code class="xref py py-data docutils literal notranslate"><span class="pre">active-channel</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#NM.DeviceOlpcMesh.props.companion" title="NM.DeviceOlpcMesh.props.companion"><code class="xref py py-data docutils literal notranslate"><span class="pre">companion</span></code></a></td>
+<td><a class="reference internal" href="DeviceWifi.html#NM.DeviceWifi" title="NM.DeviceWifi"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.DeviceWifi</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="signals">
+<span id="nm-deviceolpcmesh-signals"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Device.html#nm-device-signals"><span class="std std-ref">NM.Device (1)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-signals" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fields">
+<span id="nm-deviceolpcmesh-fields"></span><h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Device.html#nm-device-fields"><span class="std std-ref">NM.Device (1)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-fields" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="class-details">
+<h2>Class Details<a class="headerlink" href="#class-details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="NM.DeviceOlpcMesh">
+<em class="property">class </em><code class="descclassname">NM.</code><code class="descname">DeviceOlpcMesh</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#NM.DeviceOlpcMesh" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Bases:</th><td class="field-body"><a class="reference internal" href="Device.html#NM.Device" title="NM.Device"><code class="xref py py-class docutils literal notranslate"><span class="pre">NM.Device</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Abstract:</th><td class="field-body">No</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Structure:</th><td class="field-body"><a class="reference internal" href="DeviceOlpcMeshClass.html#NM.DeviceOlpcMeshClass" title="NM.DeviceOlpcMeshClass"><code class="xref py py-class docutils literal notranslate"><span class="pre">NM.DeviceOlpcMeshClass</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="NM.DeviceOlpcMesh.get_active_channel">
+<code class="descname">get_active_channel</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NM.DeviceOlpcMesh.get_active_channel" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">active channel of the device</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns the active channel of the <a class="reference internal" href="#NM.DeviceOlpcMesh" title="NM.DeviceOlpcMesh"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.DeviceOlpcMesh</span></code></a> device.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.DeviceOlpcMesh.get_companion">
+<code class="descname">get_companion</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NM.DeviceOlpcMesh.get_companion" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the companion of the device of <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="DeviceWifi.html#NM.DeviceWifi" title="NM.DeviceWifi"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.DeviceWifi</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the companion device of the <a class="reference internal" href="#NM.DeviceOlpcMesh" title="NM.DeviceOlpcMesh"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.DeviceOlpcMesh</span></code></a>.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="property-details">
+<h2>Property Details<a class="headerlink" href="#property-details" title="Permalink to this headline">¶</a></h2>
+<dl class="data">
+<dt id="NM.DeviceOlpcMesh.props.active_channel">
+<code class="descclassname">NM.DeviceOlpcMesh.props.</code><code class="descname">active_channel</code><a class="headerlink" href="#NM.DeviceOlpcMesh.props.active_channel" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">active-channel</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">0</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The device’s active channel.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="NM.DeviceOlpcMesh.props.companion">
+<code class="descclassname">NM.DeviceOlpcMesh.props.</code><code class="descname">companion</code><a class="headerlink" href="#NM.DeviceOlpcMesh.props.companion" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">companion</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="DeviceWifi.html#NM.DeviceWifi" title="NM.DeviceWifi"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.DeviceWifi</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The companion device.</p>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div> 
+
+</body>
+</html>

@@ -1,0 +1,489 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    Poppler.AnnotText -
+    
+      Classes -
+    
+    Poppler 0.18
+  </title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/css/pgi.css" type="text/css" />
+  
+
+  
+  <script type="text/javascript">
+
+    function openSidebar(element) {
+        window.location.href = element.href + location.hash;
+        return false;
+    }
+
+    function inIframe() {
+        try {
+            return window.self !== window.top;
+        } catch (e) {
+            return true;
+        }
+    }
+
+    function onLoaded() {
+        if(!inIframe()) {
+            var icons = document.getElementsByClassName('open-sidebar');
+
+            for (var i = 0; i < icons.length; i ++) {
+                icons[i].style.display = 'table-cell';
+            }
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', onLoaded, false);
+
+  </script>
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="Poppler 0.18 Python API Docs" href="../index.html"/>
+        <link rel="up" title="Classes" href="../classes.html"/>
+        <link rel="next" title="Poppler.AnnotTextMarkup" href="AnnotTextMarkup.html"/>
+        <link rel="prev" title="Poppler.AnnotSquare" href="AnnotSquare.html"/> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+<div class="non-fixed-bar">
+<table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#Poppler-0.18/classes/AnnotText.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Poppler 0.18</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>Poppler.AnnotText</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="AnnotSquare.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="AnnotTextMarkup.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">Poppler.AnnotText</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+<div class="fixed-bar">
+  <table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#Poppler-0.18/classes/AnnotText.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Poppler 0.18</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>Poppler.AnnotText</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="AnnotSquare.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="AnnotTextMarkup.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">Poppler.AnnotText</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+  <div class="wy-grid-for-nav">
+
+    
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="main">
+            
+  <div class="section" id="poppler-annottext">
+<h1>Poppler.AnnotText<a class="headerlink" href="#poppler-annottext" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<svg width="115pt" height="188pt"
+ viewBox="0.00 0.00 115.00 188.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 184)">
+<title>g</title>
+<!-- GObject.Object -->
+<g id="node1" class="node">
+<title>GObject.Object</title>
+<g id="a_node1"><a xlink:href="../../GObject-2.0/classes/Object.html#GObject.Object" xlink:title="GObject.Object">
+<path fill="none" stroke="#75507b" d="M87.5,-180C87.5,-180 19.5,-180 19.5,-180 16.5,-180 13.5,-177 13.5,-174 13.5,-174 13.5,-168 13.5,-168 13.5,-165 16.5,-162 19.5,-162 19.5,-162 87.5,-162 87.5,-162 90.5,-162 93.5,-165 93.5,-168 93.5,-168 93.5,-174 93.5,-174 93.5,-177 90.5,-180 87.5,-180"/>
+<text text-anchor="middle" x="53.5" y="-168.7" font-family="inherit" font-size="8.50">GObject.Object</text>
+</a>
+</g>
+</g>
+<!-- Poppler.Annot -->
+<g id="node2" class="node">
+<title>Poppler.Annot</title>
+<g id="a_node2"><a xlink:href="Annot.html#Poppler.Annot" xlink:title="Poppler.Annot">
+<path fill="none" stroke="#75507b" d="M85,-126C85,-126 22,-126 22,-126 19,-126 16,-123 16,-120 16,-120 16,-114 16,-114 16,-111 19,-108 22,-108 22,-108 85,-108 85,-108 88,-108 91,-111 91,-114 91,-114 91,-120 91,-120 91,-123 88,-126 85,-126"/>
+<text text-anchor="middle" x="53.5" y="-114.7" font-family="inherit" font-size="8.50">Poppler.Annot</text>
+</a>
+</g>
+</g>
+<!-- GObject.Object&#45;&gt;Poppler.Annot -->
+<g id="edge1" class="edge">
+<title>GObject.Object&#45;&gt;Poppler.Annot</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M53.5,-161.88C53.5,-153.76 53.5,-141.13 53.5,-131.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="55.25,-131.24 53.5,-126.24 51.75,-131.24 55.25,-131.24"/>
+</g>
+<!-- Poppler.AnnotMarkup -->
+<g id="node3" class="node">
+<title>Poppler.AnnotMarkup</title>
+<g id="a_node3"><a xlink:href="AnnotMarkup.html#Poppler.AnnotMarkup" xlink:title="Poppler.AnnotMarkup">
+<path fill="none" stroke="#75507b" d="M101,-72C101,-72 6,-72 6,-72 3,-72 0,-69 0,-66 0,-66 0,-60 0,-60 0,-57 3,-54 6,-54 6,-54 101,-54 101,-54 104,-54 107,-57 107,-60 107,-60 107,-66 107,-66 107,-69 104,-72 101,-72"/>
+<text text-anchor="middle" x="53.5" y="-60.7" font-family="inherit" font-size="8.50">Poppler.AnnotMarkup</text>
+</a>
+</g>
+</g>
+<!-- Poppler.Annot&#45;&gt;Poppler.AnnotMarkup -->
+<g id="edge2" class="edge">
+<title>Poppler.Annot&#45;&gt;Poppler.AnnotMarkup</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M53.5,-107.88C53.5,-99.76 53.5,-87.13 53.5,-77.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="55.25,-77.24 53.5,-72.24 51.75,-77.24 55.25,-77.24"/>
+</g>
+<!-- Poppler.AnnotText -->
+<g id="node4" class="node">
+<title>Poppler.AnnotText</title>
+<g id="a_node4"><a xlink:href="#Poppler.AnnotText" xlink:title="Poppler.AnnotText">
+<path fill="none" stroke="#75507b" d="M93.5,-18C93.5,-18 13.5,-18 13.5,-18 10.5,-18 7.5,-15 7.5,-12 7.5,-12 7.5,-6 7.5,-6 7.5,-3 10.5,0 13.5,0 13.5,0 93.5,0 93.5,0 96.5,0 99.5,-3 99.5,-6 99.5,-6 99.5,-12 99.5,-12 99.5,-15 96.5,-18 93.5,-18"/>
+<text text-anchor="middle" x="53.5" y="-6.7" font-family="inherit" font-size="8.50">Poppler.AnnotText</text>
+</a>
+</g>
+</g>
+<!-- Poppler.AnnotMarkup&#45;&gt;Poppler.AnnotText -->
+<g id="edge3" class="edge">
+<title>Poppler.AnnotMarkup&#45;&gt;Poppler.AnnotText</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M53.5,-53.88C53.5,-45.76 53.5,-33.13 53.5,-23.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="55.25,-23.24 53.5,-18.24 51.75,-23.24 55.25,-23.24"/>
+</g>
+</g>
+</svg>
+</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Subclasses:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="methods">
+<span id="poppler-annottext-methods"></span><h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="AnnotMarkup.html#poppler-annotmarkup-methods"><span class="std std-ref">Poppler.AnnotMarkup (14)</span></a>,     <a class="reference internal" href="Annot.html#poppler-annot-methods"><span class="std std-ref">Poppler.Annot (12)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (37)</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Structs:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/ObjectClass.html#gobject-objectclass-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.ObjectClass (5)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="99%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><em>class</em></td>
+<td><a class="reference internal" href="#Poppler.AnnotText.new" title="Poppler.AnnotText.new"><code class="xref py py-func docutils literal notranslate"><span class="pre">new</span></code></a> (doc, rect)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Poppler.AnnotText.get_icon" title="Poppler.AnnotText.get_icon"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_icon</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Poppler.AnnotText.get_is_open" title="Poppler.AnnotText.get_is_open"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_is_open</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Poppler.AnnotText.get_state" title="Poppler.AnnotText.get_state"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_state</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Poppler.AnnotText.set_icon" title="Poppler.AnnotText.set_icon"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_icon</span></code></a> (icon)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Poppler.AnnotText.set_is_open" title="Poppler.AnnotText.set_is_open"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_is_open</span></code></a> (is_open)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="virtual-methods">
+<span id="poppler-annottext-vfuncs"></span><h2>Virtual Methods<a class="headerlink" href="#virtual-methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-vfuncs" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (7)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="poppler-annottext-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<p>None</p>
+</div>
+<div class="section" id="signals">
+<span id="poppler-annottext-signals"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-signals" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fields">
+<span id="poppler-annottext-fields"></span><h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-fields" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="class-details">
+<h2>Class Details<a class="headerlink" href="#class-details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Poppler.AnnotText">
+<em class="property">class </em><code class="descclassname">Poppler.</code><code class="descname">AnnotText</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#Poppler.AnnotText" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Bases:</th><td class="field-body"><a class="reference internal" href="AnnotMarkup.html#Poppler.AnnotMarkup" title="Poppler.AnnotMarkup"><code class="xref py py-class docutils literal notranslate"><span class="pre">Poppler.AnnotMarkup</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Abstract:</th><td class="field-body">No</td>
+</tr>
+</tbody>
+</table>
+<dl class="classmethod">
+<dt id="Poppler.AnnotText.new">
+<em class="property">classmethod </em><code class="descname">new</code><span class="sig-paren">(</span><em>doc</em>, <em>rect</em><span class="sig-paren">)</span><a class="headerlink" href="#Poppler.AnnotText.new" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>doc</strong> (<a class="reference internal" href="Document.html#Poppler.Document" title="Poppler.Document"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Poppler.Document</span></code></a>) – a <a class="reference internal" href="Document.html#Poppler.Document" title="Poppler.Document"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Poppler.Document</span></code></a></li>
+<li><strong>rect</strong> (<a class="reference internal" href="Rectangle.html#Poppler.Rectangle" title="Poppler.Rectangle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Poppler.Rectangle</span></code></a>) – a <a class="reference internal" href="Rectangle.html#Poppler.Rectangle" title="Poppler.Rectangle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Poppler.Rectangle</span></code></a></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">A newly created <a class="reference internal" href="#Poppler.AnnotText" title="Poppler.AnnotText"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Poppler.AnnotText</span></code></a> annotation</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="Annot.html#Poppler.Annot" title="Poppler.Annot"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Poppler.Annot</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Creates a new Text annotation that will be
+located on <cite>rect</cite> when added to a page. See
+<a class="reference internal" href="Page.html#Poppler.Page.add_annot" title="Poppler.Page.add_annot"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Poppler.Page.add_annot</span></code></a>()</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.16.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Poppler.AnnotText.get_icon">
+<code class="descname">get_icon</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Poppler.AnnotText.get_icon" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a new allocated string containing the icon name</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets name of the icon of <cite>self</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Poppler.AnnotText.get_is_open">
+<code class="descname">get_is_open</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Poppler.AnnotText.get_is_open" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the state of <cite>self</cite>. <a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if it’s open, <a class="reference external" href="http://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a> in
+other case.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Retrieves the state of <cite>self</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Poppler.AnnotText.get_state">
+<code class="descname">get_state</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Poppler.AnnotText.get_state" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference internal" href="../enums.html#Poppler.AnnotTextState" title="Poppler.AnnotTextState"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Poppler.AnnotTextState</span></code></a> of <cite>self</cite>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#Poppler.AnnotTextState" title="Poppler.AnnotTextState"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Poppler.AnnotTextState</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Retrieves the state of <cite>self</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Poppler.AnnotText.set_icon">
+<code class="descname">set_icon</code><span class="sig-paren">(</span><em>icon</em><span class="sig-paren">)</span><a class="headerlink" href="#Poppler.AnnotText.set_icon" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>icon</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – the name of an icon</td>
+</tr>
+</tbody>
+</table>
+<p>Sets the icon of <cite>self</cite>. The following predefined
+icons are currently supported:</p>
+<p><a class="reference internal" href="../constants.html#Poppler.ANNOT_TEXT_ICON_NOTE" title="Poppler.ANNOT_TEXT_ICON_NOTE"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Poppler.ANNOT_TEXT_ICON_NOTE</span></code></a></p>
+<p><a class="reference internal" href="../constants.html#Poppler.ANNOT_TEXT_ICON_COMMENT" title="Poppler.ANNOT_TEXT_ICON_COMMENT"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Poppler.ANNOT_TEXT_ICON_COMMENT</span></code></a></p>
+<p><a class="reference internal" href="../constants.html#Poppler.ANNOT_TEXT_ICON_KEY" title="Poppler.ANNOT_TEXT_ICON_KEY"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Poppler.ANNOT_TEXT_ICON_KEY</span></code></a></p>
+<p><a class="reference internal" href="../constants.html#Poppler.ANNOT_TEXT_ICON_HELP" title="Poppler.ANNOT_TEXT_ICON_HELP"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Poppler.ANNOT_TEXT_ICON_HELP</span></code></a></p>
+<p><a class="reference internal" href="../constants.html#Poppler.ANNOT_TEXT_ICON_NEW_PARAGRAPH" title="Poppler.ANNOT_TEXT_ICON_NEW_PARAGRAPH"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Poppler.ANNOT_TEXT_ICON_NEW_PARAGRAPH</span></code></a></p>
+<p><a class="reference internal" href="../constants.html#Poppler.ANNOT_TEXT_ICON_PARAGRAPH" title="Poppler.ANNOT_TEXT_ICON_PARAGRAPH"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Poppler.ANNOT_TEXT_ICON_PARAGRAPH</span></code></a></p>
+<p><a class="reference internal" href="../constants.html#Poppler.ANNOT_TEXT_ICON_INSERT" title="Poppler.ANNOT_TEXT_ICON_INSERT"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Poppler.ANNOT_TEXT_ICON_INSERT</span></code></a></p>
+<p><a class="reference internal" href="../constants.html#Poppler.ANNOT_TEXT_ICON_CROSS" title="Poppler.ANNOT_TEXT_ICON_CROSS"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Poppler.ANNOT_TEXT_ICON_CROSS</span></code></a></p>
+<p><a class="reference internal" href="../constants.html#Poppler.ANNOT_TEXT_ICON_CIRCLE" title="Poppler.ANNOT_TEXT_ICON_CIRCLE"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Poppler.ANNOT_TEXT_ICON_CIRCLE</span></code></a></p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.16.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Poppler.AnnotText.set_is_open">
+<code class="descname">set_is_open</code><span class="sig-paren">(</span><em>is_open</em><span class="sig-paren">)</span><a class="headerlink" href="#Poppler.AnnotText.set_is_open" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>is_open</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a>) – whether annotation should initially be displayed open</td>
+</tr>
+</tbody>
+</table>
+<p>Sets whether <cite>self</cite> should initially be displayed open</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.16.</span></p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div> 
+
+</body>
+</html>

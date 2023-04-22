@@ -1,0 +1,1764 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    Gtk.FlowBox -
+    
+      Classes -
+    
+    Gtk 3.0
+  </title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/css/pgi.css" type="text/css" />
+  
+
+  
+  <script type="text/javascript">
+
+    function openSidebar(element) {
+        window.location.href = element.href + location.hash;
+        return false;
+    }
+
+    function inIframe() {
+        try {
+            return window.self !== window.top;
+        } catch (e) {
+            return true;
+        }
+    }
+
+    function onLoaded() {
+        if(!inIframe()) {
+            var icons = document.getElementsByClassName('open-sidebar');
+
+            for (var i = 0; i < icons.length; i ++) {
+                icons[i].style.display = 'table-cell';
+            }
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', onLoaded, false);
+
+  </script>
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="Gtk 3.0 Python API Docs" href="../index.html"/>
+        <link rel="up" title="Classes" href="../classes.html"/>
+        <link rel="next" title="Gtk.FlowBoxAccessible" href="FlowBoxAccessible.html"/>
+        <link rel="prev" title="Gtk.Fixed" href="Fixed.html"/> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+<div class="non-fixed-bar">
+<table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#Gtk-3.0/classes/FlowBox.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Gtk 3.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>Gtk.FlowBox</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="Fixed.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="FlowBoxAccessible.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">Gtk.FlowBox</a><ul>
+<li><a class="reference internal" href="#example">Example</a></li>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#style-properties">Style Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#signal-details">Signal Details</a></li>
+<li><a class="reference internal" href="#property-details">Property Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+<div class="fixed-bar">
+  <table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#Gtk-3.0/classes/FlowBox.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Gtk 3.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>Gtk.FlowBox</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="Fixed.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="FlowBoxAccessible.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">Gtk.FlowBox</a><ul>
+<li><a class="reference internal" href="#example">Example</a></li>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#style-properties">Style Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#signal-details">Signal Details</a></li>
+<li><a class="reference internal" href="#property-details">Property Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+  <div class="wy-grid-for-nav">
+
+    
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="main">
+            
+  <div class="section" id="gtk-flowbox">
+<h1>Gtk.FlowBox<a class="headerlink" href="#gtk-flowbox" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<svg width="374pt" height="242pt"
+ viewBox="0.00 0.00 373.50 242.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 238)">
+<title>g</title>
+<!-- Atk.ImplementorIface -->
+<g id="node1" class="node">
+<title>Atk.ImplementorIface</title>
+<g id="a_node1"><a xlink:href="../../Atk-1.0/classes/ImplementorIface.html#Atk.ImplementorIface" xlink:title="Atk.ImplementorIface">
+<path fill="none" stroke="#3091d1" d="M219.5,-180C219.5,-180 123.5,-180 123.5,-180 120.5,-180 117.5,-177 117.5,-174 117.5,-174 117.5,-168 117.5,-168 117.5,-165 120.5,-162 123.5,-162 123.5,-162 219.5,-162 219.5,-162 222.5,-162 225.5,-165 225.5,-168 225.5,-168 225.5,-174 225.5,-174 225.5,-177 222.5,-180 219.5,-180"/>
+<text text-anchor="middle" x="171.5" y="-168.7" font-family="inherit" font-size="8.50">Atk.ImplementorIface</text>
+</a>
+</g>
+</g>
+<!-- Gtk.Widget -->
+<g id="node9" class="node">
+<title>Gtk.Widget</title>
+<g id="a_node9"><a xlink:href="Widget.html#Gtk.Widget" xlink:title="Gtk.Widget">
+<path fill="none" stroke="#aaaaaa" d="M176.5,-126C176.5,-126 124.5,-126 124.5,-126 121.5,-126 118.5,-123 118.5,-120 118.5,-120 118.5,-114 118.5,-114 118.5,-111 121.5,-108 124.5,-108 124.5,-108 176.5,-108 176.5,-108 179.5,-108 182.5,-111 182.5,-114 182.5,-114 182.5,-120 182.5,-120 182.5,-123 179.5,-126 176.5,-126"/>
+<text text-anchor="middle" x="150.5" y="-114.7" font-family="inherit" font-size="8.50">Gtk.Widget</text>
+</a>
+</g>
+</g>
+<!-- Atk.ImplementorIface&#45;&gt;Gtk.Widget -->
+<g id="edge1" class="edge">
+<title>Atk.ImplementorIface&#45;&gt;Gtk.Widget</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M168.22,-161.88C164.88,-153.6 159.65,-140.66 155.74,-130.97"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="157.32,-130.22 153.83,-126.24 154.08,-131.53 157.32,-130.22"/>
+</g>
+<!-- GObject.GInterface -->
+<g id="node2" class="node">
+<title>GObject.GInterface</title>
+<g id="a_node2"><a xlink:href="../../GObject-2.0/classes/GInterface.html#GObject.GInterface" xlink:title="GObject.GInterface">
+<path fill="none" stroke="#3091d1" d="M105.5,-234C105.5,-234 19.5,-234 19.5,-234 16.5,-234 13.5,-231 13.5,-228 13.5,-228 13.5,-222 13.5,-222 13.5,-219 16.5,-216 19.5,-216 19.5,-216 105.5,-216 105.5,-216 108.5,-216 111.5,-219 111.5,-222 111.5,-222 111.5,-228 111.5,-228 111.5,-231 108.5,-234 105.5,-234"/>
+<text text-anchor="middle" x="62.5" y="-222.7" font-family="inherit" font-size="8.50">GObject.GInterface</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Atk.ImplementorIface -->
+<g id="edge2" class="edge">
+<title>GObject.GInterface&#45;&gt;Atk.ImplementorIface</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M79.53,-215.88C98.49,-206.83 129.17,-192.19 149.83,-182.34"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="150.83,-183.8 154.59,-180.07 149.32,-180.64 150.83,-183.8"/>
+</g>
+<!-- Gtk.Buildable -->
+<g id="node5" class="node">
+<title>Gtk.Buildable</title>
+<g id="a_node5"><a xlink:href="Buildable.html#Gtk.Buildable" xlink:title="Gtk.Buildable">
+<path fill="none" stroke="#3091d1" d="M93.5,-180C93.5,-180 31.5,-180 31.5,-180 28.5,-180 25.5,-177 25.5,-174 25.5,-174 25.5,-168 25.5,-168 25.5,-165 28.5,-162 31.5,-162 31.5,-162 93.5,-162 93.5,-162 96.5,-162 99.5,-165 99.5,-168 99.5,-168 99.5,-174 99.5,-174 99.5,-177 96.5,-180 93.5,-180"/>
+<text text-anchor="middle" x="62.5" y="-168.7" font-family="inherit" font-size="8.50">Gtk.Buildable</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Gtk.Buildable -->
+<g id="edge3" class="edge">
+<title>GObject.GInterface&#45;&gt;Gtk.Buildable</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M62.5,-215.88C62.5,-207.76 62.5,-195.13 62.5,-185.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="64.25,-185.24 62.5,-180.24 60.75,-185.24 64.25,-185.24"/>
+</g>
+<!-- Gtk.Orientable -->
+<g id="node8" class="node">
+<title>Gtk.Orientable</title>
+<g id="a_node8"><a xlink:href="Orientable.html#Gtk.Orientable" xlink:title="Gtk.Orientable">
+<path fill="none" stroke="#3091d1" d="M73,-126C73,-126 6,-126 6,-126 3,-126 0,-123 0,-120 0,-120 0,-114 0,-114 0,-111 3,-108 6,-108 6,-108 73,-108 73,-108 76,-108 79,-111 79,-114 79,-114 79,-120 79,-120 79,-123 76,-126 73,-126"/>
+<text text-anchor="middle" x="39.5" y="-114.7" font-family="inherit" font-size="8.50">Gtk.Orientable</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Gtk.Orientable -->
+<g id="edge4" class="edge">
+<title>GObject.GInterface&#45;&gt;Gtk.Orientable</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M49.16,-215.76C38.08,-208.06 23.1,-195.45 16.5,-180 9.27,-163.08 20.11,-143.03 29.23,-130.42"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="30.86,-131.17 32.48,-126.12 28.06,-129.06 30.86,-131.17"/>
+</g>
+<!-- GObject.InitiallyUnowned -->
+<g id="node3" class="node">
+<title>GObject.InitiallyUnowned</title>
+<g id="a_node3"><a xlink:href="../../GObject-2.0/classes/InitiallyUnowned.html#GObject.InitiallyUnowned" xlink:title="GObject.InitiallyUnowned">
+<path fill="none" stroke="#75507b" d="M359.5,-180C359.5,-180 249.5,-180 249.5,-180 246.5,-180 243.5,-177 243.5,-174 243.5,-174 243.5,-168 243.5,-168 243.5,-165 246.5,-162 249.5,-162 249.5,-162 359.5,-162 359.5,-162 362.5,-162 365.5,-165 365.5,-168 365.5,-168 365.5,-174 365.5,-174 365.5,-177 362.5,-180 359.5,-180"/>
+<text text-anchor="middle" x="304.5" y="-168.7" font-family="inherit" font-size="8.50">GObject.InitiallyUnowned</text>
+</a>
+</g>
+</g>
+<!-- GObject.InitiallyUnowned&#45;&gt;Gtk.Widget -->
+<g id="edge5" class="edge">
+<title>GObject.InitiallyUnowned&#45;&gt;Gtk.Widget</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M280.77,-161.99C253.42,-152.75 208.46,-137.57 179.17,-127.68"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="179.55,-125.96 174.25,-126.02 178.43,-129.28 179.55,-125.96"/>
+</g>
+<!-- GObject.Object -->
+<g id="node4" class="node">
+<title>GObject.Object</title>
+<g id="a_node4"><a xlink:href="../../GObject-2.0/classes/Object.html#GObject.Object" xlink:title="GObject.Object">
+<path fill="none" stroke="#75507b" d="M338.5,-234C338.5,-234 270.5,-234 270.5,-234 267.5,-234 264.5,-231 264.5,-228 264.5,-228 264.5,-222 264.5,-222 264.5,-219 267.5,-216 270.5,-216 270.5,-216 338.5,-216 338.5,-216 341.5,-216 344.5,-219 344.5,-222 344.5,-222 344.5,-228 344.5,-228 344.5,-231 341.5,-234 338.5,-234"/>
+<text text-anchor="middle" x="304.5" y="-222.7" font-family="inherit" font-size="8.50">GObject.Object</text>
+</a>
+</g>
+</g>
+<!-- GObject.Object&#45;&gt;GObject.InitiallyUnowned -->
+<g id="edge6" class="edge">
+<title>GObject.Object&#45;&gt;GObject.InitiallyUnowned</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M304.5,-215.88C304.5,-207.76 304.5,-195.13 304.5,-185.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="306.25,-185.24 304.5,-180.24 302.75,-185.24 306.25,-185.24"/>
+</g>
+<!-- Gtk.Buildable&#45;&gt;Gtk.Widget -->
+<g id="edge7" class="edge">
+<title>Gtk.Buildable&#45;&gt;Gtk.Widget</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M76.25,-161.88C91.36,-152.95 115.7,-138.56 132.36,-128.72"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="133.43,-130.12 136.85,-126.07 131.65,-127.11 133.43,-130.12"/>
+</g>
+<!-- Gtk.Container -->
+<g id="node6" class="node">
+<title>Gtk.Container</title>
+<g id="a_node6"><a xlink:href="Container.html#Gtk.Container" xlink:title="Gtk.Container">
+<path fill="none" stroke="#aaaaaa" d="M155.5,-72C155.5,-72 91.5,-72 91.5,-72 88.5,-72 85.5,-69 85.5,-66 85.5,-66 85.5,-60 85.5,-60 85.5,-57 88.5,-54 91.5,-54 91.5,-54 155.5,-54 155.5,-54 158.5,-54 161.5,-57 161.5,-60 161.5,-60 161.5,-66 161.5,-66 161.5,-69 158.5,-72 155.5,-72"/>
+<text text-anchor="middle" x="123.5" y="-60.7" font-family="inherit" font-size="8.50">Gtk.Container</text>
+</a>
+</g>
+</g>
+<!-- Gtk.FlowBox -->
+<g id="node7" class="node">
+<title>Gtk.FlowBox</title>
+<g id="a_node7"><a xlink:href="#Gtk.FlowBox" xlink:title="Gtk.FlowBox">
+<path fill="none" stroke="#75507b" d="M114,-18C114,-18 55,-18 55,-18 52,-18 49,-15 49,-12 49,-12 49,-6 49,-6 49,-3 52,0 55,0 55,0 114,0 114,0 117,0 120,-3 120,-6 120,-6 120,-12 120,-12 120,-15 117,-18 114,-18"/>
+<text text-anchor="middle" x="84.5" y="-6.7" font-family="inherit" font-size="8.50">Gtk.FlowBox</text>
+</a>
+</g>
+</g>
+<!-- Gtk.Container&#45;&gt;Gtk.FlowBox -->
+<g id="edge8" class="edge">
+<title>Gtk.Container&#45;&gt;Gtk.FlowBox</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M117.41,-53.88C111.09,-45.45 101.14,-32.18 93.83,-22.44"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="95.08,-21.19 90.68,-18.24 92.28,-23.29 95.08,-21.19"/>
+</g>
+<!-- Gtk.Orientable&#45;&gt;Gtk.FlowBox -->
+<g id="edge9" class="edge">
+<title>Gtk.Orientable&#45;&gt;Gtk.FlowBox</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M43.03,-107.68C50.82,-89.34 69.52,-45.28 78.92,-23.15"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="80.64,-23.57 80.99,-18.28 77.42,-22.2 80.64,-23.57"/>
+</g>
+<!-- Gtk.Widget&#45;&gt;Gtk.Container -->
+<g id="edge10" class="edge">
+<title>Gtk.Widget&#45;&gt;Gtk.Container</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M146.28,-107.88C141.95,-99.53 135.14,-86.42 130.1,-76.7"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="131.64,-75.87 127.78,-72.24 128.53,-77.48 131.64,-75.87"/>
+</g>
+</g>
+</svg>
+</p>
+<div class="section" id="example">
+<h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
+<img alt="../_images/FlowBox.png" src="../_images/FlowBox.png" />
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Subclasses:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="methods">
+<span id="gtk-flowbox-methods"></span><h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Container.html#gtk-container-methods"><span class="std std-ref">Gtk.Container (35)</span></a>,     <a class="reference internal" href="Widget.html#gtk-widget-methods"><span class="std std-ref">Gtk.Widget (278)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (37)</span></a>,     <a class="reference internal" href="Buildable.html#gtk-buildable-methods"><span class="std std-ref">Gtk.Buildable (10)</span></a>,     <a class="reference internal" href="Orientable.html#gtk-orientable-methods"><span class="std std-ref">Gtk.Orientable (2)</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Structs:</th><td class="field-body"><a class="reference internal" href="ContainerClass.html#gtk-containerclass-methods"><span class="std std-ref">Gtk.ContainerClass (5)</span></a>,     <a class="reference internal" href="WidgetClass.html#gtk-widgetclass-methods"><span class="std std-ref">Gtk.WidgetClass (12)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/ObjectClass.html#gobject-objectclass-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.ObjectClass (5)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="99%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><em>class</em></td>
+<td><a class="reference internal" href="#Gtk.FlowBox.new" title="Gtk.FlowBox.new"><code class="xref py py-func docutils literal notranslate"><span class="pre">new</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.FlowBox.bind_model" title="Gtk.FlowBox.bind_model"><code class="xref py py-func docutils literal notranslate"><span class="pre">bind_model</span></code></a> (model, create_widget_func, *user_data)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.FlowBox.get_activate_on_single_click" title="Gtk.FlowBox.get_activate_on_single_click"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_activate_on_single_click</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.FlowBox.get_child_at_index" title="Gtk.FlowBox.get_child_at_index"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_child_at_index</span></code></a> (idx)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.FlowBox.get_child_at_pos" title="Gtk.FlowBox.get_child_at_pos"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_child_at_pos</span></code></a> (x, y)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.FlowBox.get_column_spacing" title="Gtk.FlowBox.get_column_spacing"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_column_spacing</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.FlowBox.get_homogeneous" title="Gtk.FlowBox.get_homogeneous"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_homogeneous</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.FlowBox.get_max_children_per_line" title="Gtk.FlowBox.get_max_children_per_line"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_max_children_per_line</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.FlowBox.get_min_children_per_line" title="Gtk.FlowBox.get_min_children_per_line"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_min_children_per_line</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.FlowBox.get_row_spacing" title="Gtk.FlowBox.get_row_spacing"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_row_spacing</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.FlowBox.get_selected_children" title="Gtk.FlowBox.get_selected_children"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_selected_children</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.FlowBox.get_selection_mode" title="Gtk.FlowBox.get_selection_mode"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_selection_mode</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.FlowBox.insert" title="Gtk.FlowBox.insert"><code class="xref py py-func docutils literal notranslate"><span class="pre">insert</span></code></a> (widget, position)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.FlowBox.invalidate_filter" title="Gtk.FlowBox.invalidate_filter"><code class="xref py py-func docutils literal notranslate"><span class="pre">invalidate_filter</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.FlowBox.invalidate_sort" title="Gtk.FlowBox.invalidate_sort"><code class="xref py py-func docutils literal notranslate"><span class="pre">invalidate_sort</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.FlowBox.select_all" title="Gtk.FlowBox.select_all"><code class="xref py py-func docutils literal notranslate"><span class="pre">select_all</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.FlowBox.select_child" title="Gtk.FlowBox.select_child"><code class="xref py py-func docutils literal notranslate"><span class="pre">select_child</span></code></a> (child)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.FlowBox.selected_foreach" title="Gtk.FlowBox.selected_foreach"><code class="xref py py-func docutils literal notranslate"><span class="pre">selected_foreach</span></code></a> (func, *data)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.FlowBox.set_activate_on_single_click" title="Gtk.FlowBox.set_activate_on_single_click"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_activate_on_single_click</span></code></a> (single)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.FlowBox.set_column_spacing" title="Gtk.FlowBox.set_column_spacing"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_column_spacing</span></code></a> (spacing)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.FlowBox.set_filter_func" title="Gtk.FlowBox.set_filter_func"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_filter_func</span></code></a> (filter_func, *user_data)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.FlowBox.set_hadjustment" title="Gtk.FlowBox.set_hadjustment"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_hadjustment</span></code></a> (adjustment)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.FlowBox.set_homogeneous" title="Gtk.FlowBox.set_homogeneous"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_homogeneous</span></code></a> (homogeneous)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.FlowBox.set_max_children_per_line" title="Gtk.FlowBox.set_max_children_per_line"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_max_children_per_line</span></code></a> (n_children)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.FlowBox.set_min_children_per_line" title="Gtk.FlowBox.set_min_children_per_line"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_min_children_per_line</span></code></a> (n_children)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.FlowBox.set_row_spacing" title="Gtk.FlowBox.set_row_spacing"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_row_spacing</span></code></a> (spacing)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.FlowBox.set_selection_mode" title="Gtk.FlowBox.set_selection_mode"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_selection_mode</span></code></a> (mode)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.FlowBox.set_sort_func" title="Gtk.FlowBox.set_sort_func"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_sort_func</span></code></a> (sort_func, *user_data)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.FlowBox.set_vadjustment" title="Gtk.FlowBox.set_vadjustment"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_vadjustment</span></code></a> (adjustment)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.FlowBox.unselect_all" title="Gtk.FlowBox.unselect_all"><code class="xref py py-func docutils literal notranslate"><span class="pre">unselect_all</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.FlowBox.unselect_child" title="Gtk.FlowBox.unselect_child"><code class="xref py py-func docutils literal notranslate"><span class="pre">unselect_child</span></code></a> (child)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="virtual-methods">
+<span id="gtk-flowbox-vfuncs"></span><h2>Virtual Methods<a class="headerlink" href="#virtual-methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Container.html#gtk-container-vfuncs"><span class="std std-ref">Gtk.Container (10)</span></a>,     <a class="reference internal" href="Widget.html#gtk-widget-vfuncs"><span class="std std-ref">Gtk.Widget (82)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-vfuncs" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (7)</span></a>,     <a class="reference internal" href="Buildable.html#gtk-buildable-vfuncs"><span class="std std-ref">Gtk.Buildable (10)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="99%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.FlowBox.do_activate_cursor_child" title="Gtk.FlowBox.do_activate_cursor_child"><code class="xref py py-func docutils literal notranslate"><span class="pre">do_activate_cursor_child</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.FlowBox.do_child_activated" title="Gtk.FlowBox.do_child_activated"><code class="xref py py-func docutils literal notranslate"><span class="pre">do_child_activated</span></code></a> (child)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.FlowBox.do_move_cursor" title="Gtk.FlowBox.do_move_cursor"><code class="xref py py-func docutils literal notranslate"><span class="pre">do_move_cursor</span></code></a> (step, count)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.FlowBox.do_select_all" title="Gtk.FlowBox.do_select_all"><code class="xref py py-func docutils literal notranslate"><span class="pre">do_select_all</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.FlowBox.do_selected_children_changed" title="Gtk.FlowBox.do_selected_children_changed"><code class="xref py py-func docutils literal notranslate"><span class="pre">do_selected_children_changed</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.FlowBox.do_toggle_cursor_child" title="Gtk.FlowBox.do_toggle_cursor_child"><code class="xref py py-func docutils literal notranslate"><span class="pre">do_toggle_cursor_child</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.FlowBox.do_unselect_all" title="Gtk.FlowBox.do_unselect_all"><code class="xref py py-func docutils literal notranslate"><span class="pre">do_unselect_all</span></code></a> ()</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="gtk-flowbox-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Container.html#gtk-container-props"><span class="std std-ref">Gtk.Container (3)</span></a>,     <a class="reference internal" href="Widget.html#gtk-widget-props"><span class="std std-ref">Gtk.Widget (39)</span></a>,     <a class="reference internal" href="Orientable.html#gtk-orientable-props"><span class="std std-ref">Gtk.Orientable (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="1%" />
+<col width="1%" />
+<col width="97%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Flags</th>
+<th class="head">Short Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="#Gtk.FlowBox.props.activate_on_single_click" title="Gtk.FlowBox.props.activate_on_single_click"><code class="xref py py-data docutils literal notranslate"><span class="pre">activate-on-single-click</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+<td>r/w/en</td>
+<td>Activate row on a single click</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#Gtk.FlowBox.props.column_spacing" title="Gtk.FlowBox.props.column_spacing"><code class="xref py py-data docutils literal notranslate"><span class="pre">column-spacing</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+<td>r/w/en</td>
+<td>The amount of horizontal space between two children</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#Gtk.FlowBox.props.homogeneous" title="Gtk.FlowBox.props.homogeneous"><code class="xref py py-data docutils literal notranslate"><span class="pre">homogeneous</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+<td>r/w/en</td>
+<td>Whether the children should all be the same size</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#Gtk.FlowBox.props.max_children_per_line" title="Gtk.FlowBox.props.max_children_per_line"><code class="xref py py-data docutils literal notranslate"><span class="pre">max-children-per-line</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+<td>r/w/en</td>
+<td>The maximum amount of children to request space for consecutively in the given orientation.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#Gtk.FlowBox.props.min_children_per_line" title="Gtk.FlowBox.props.min_children_per_line"><code class="xref py py-data docutils literal notranslate"><span class="pre">min-children-per-line</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+<td>r/w/en</td>
+<td>The minimum number of children to allocate consecutively in the given orientation.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#Gtk.FlowBox.props.row_spacing" title="Gtk.FlowBox.props.row_spacing"><code class="xref py py-data docutils literal notranslate"><span class="pre">row-spacing</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+<td>r/w/en</td>
+<td>The amount of vertical space between two children</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#Gtk.FlowBox.props.selection_mode" title="Gtk.FlowBox.props.selection_mode"><code class="xref py py-data docutils literal notranslate"><span class="pre">selection-mode</span></code></a></td>
+<td><a class="reference internal" href="../enums.html#Gtk.SelectionMode" title="Gtk.SelectionMode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.SelectionMode</span></code></a></td>
+<td>r/w/en</td>
+<td>The selection mode</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="style-properties">
+<span id="gtk-flowbox-style-props"></span><h2>Style Properties<a class="headerlink" href="#style-properties" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Widget.html#gtk-widget-style-props"><span class="std std-ref">Gtk.Widget (17)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="signals">
+<span id="gtk-flowbox-signals"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Container.html#gtk-container-signals"><span class="std std-ref">Gtk.Container (4)</span></a>,     <a class="reference internal" href="Widget.html#gtk-widget-signals"><span class="std std-ref">Gtk.Widget (69)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-signals" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="30%" />
+<col width="70%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Short Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="#Gtk.FlowBox.signals.activate_cursor_child" title="Gtk.FlowBox.signals.activate_cursor_child"><code class="xref py py-func docutils literal notranslate"><span class="pre">activate-cursor-child</span></code></a></td>
+<td>The <a class="reference internal" href="#Gtk.FlowBox.signals.activate_cursor_child" title="Gtk.FlowBox.signals.activate_cursor_child"><code class="xref py py-func docutils literal notranslate"><span class="pre">::activate-cursor-child</span></code></a> signal is a <a class="reference internal" href="BindingSignal.html#Gtk.BindingSignal" title="Gtk.BindingSignal"><code class="xref py py-obj docutils literal notranslate"><span class="pre">keybinding</span> <span class="pre">signal</span></code></a> which gets emitted when the user activates the <cite>box</cite>.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#Gtk.FlowBox.signals.child_activated" title="Gtk.FlowBox.signals.child_activated"><code class="xref py py-func docutils literal notranslate"><span class="pre">child-activated</span></code></a></td>
+<td>The <a class="reference internal" href="#Gtk.FlowBox.signals.child_activated" title="Gtk.FlowBox.signals.child_activated"><code class="xref py py-func docutils literal notranslate"><span class="pre">::child-activated</span></code></a> signal is emitted when a child has been activated by the user.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#Gtk.FlowBox.signals.move_cursor" title="Gtk.FlowBox.signals.move_cursor"><code class="xref py py-func docutils literal notranslate"><span class="pre">move-cursor</span></code></a></td>
+<td>The <a class="reference internal" href="#Gtk.FlowBox.signals.move_cursor" title="Gtk.FlowBox.signals.move_cursor"><code class="xref py py-func docutils literal notranslate"><span class="pre">::move-cursor</span></code></a> signal is a <a class="reference internal" href="BindingSignal.html#Gtk.BindingSignal" title="Gtk.BindingSignal"><code class="xref py py-obj docutils literal notranslate"><span class="pre">keybinding</span> <span class="pre">signal</span></code></a> which gets emitted when the user initiates a cursor movement.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#Gtk.FlowBox.signals.select_all" title="Gtk.FlowBox.signals.select_all"><code class="xref py py-func docutils literal notranslate"><span class="pre">select-all</span></code></a></td>
+<td>The <a class="reference internal" href="#Gtk.FlowBox.signals.select_all" title="Gtk.FlowBox.signals.select_all"><code class="xref py py-func docutils literal notranslate"><span class="pre">::select-all</span></code></a> signal is a <a class="reference internal" href="BindingSignal.html#Gtk.BindingSignal" title="Gtk.BindingSignal"><code class="xref py py-obj docutils literal notranslate"><span class="pre">keybinding</span> <span class="pre">signal</span></code></a> which gets emitted to select all children of the box, if the selection mode permits it.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#Gtk.FlowBox.signals.selected_children_changed" title="Gtk.FlowBox.signals.selected_children_changed"><code class="xref py py-func docutils literal notranslate"><span class="pre">selected-children-changed</span></code></a></td>
+<td>The <a class="reference internal" href="#Gtk.FlowBox.signals.selected_children_changed" title="Gtk.FlowBox.signals.selected_children_changed"><code class="xref py py-func docutils literal notranslate"><span class="pre">::selected-children-changed</span></code></a> signal is emitted when the set of selected children changes.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#Gtk.FlowBox.signals.toggle_cursor_child" title="Gtk.FlowBox.signals.toggle_cursor_child"><code class="xref py py-func docutils literal notranslate"><span class="pre">toggle-cursor-child</span></code></a></td>
+<td>The <a class="reference internal" href="#Gtk.FlowBox.signals.toggle_cursor_child" title="Gtk.FlowBox.signals.toggle_cursor_child"><code class="xref py py-func docutils literal notranslate"><span class="pre">::toggle-cursor-child</span></code></a> signal is a <a class="reference internal" href="BindingSignal.html#Gtk.BindingSignal" title="Gtk.BindingSignal"><code class="xref py py-obj docutils literal notranslate"><span class="pre">keybinding</span> <span class="pre">signal</span></code></a> which toggles the selection of the child that has the focus.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#Gtk.FlowBox.signals.unselect_all" title="Gtk.FlowBox.signals.unselect_all"><code class="xref py py-func docutils literal notranslate"><span class="pre">unselect-all</span></code></a></td>
+<td>The <a class="reference internal" href="#Gtk.FlowBox.signals.unselect_all" title="Gtk.FlowBox.signals.unselect_all"><code class="xref py py-func docutils literal notranslate"><span class="pre">::unselect-all</span></code></a> signal is a <a class="reference internal" href="BindingSignal.html#Gtk.BindingSignal" title="Gtk.BindingSignal"><code class="xref py py-obj docutils literal notranslate"><span class="pre">keybinding</span> <span class="pre">signal</span></code></a> which gets emitted to unselect all children of the box, if the selection mode permits it.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fields">
+<span id="gtk-flowbox-fields"></span><h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Container.html#gtk-container-fields"><span class="std std-ref">Gtk.Container (4)</span></a>,     <a class="reference internal" href="Widget.html#gtk-widget-fields"><span class="std std-ref">Gtk.Widget (69)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-fields" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="16%" />
+<col width="1%" />
+<col width="1%" />
+<col width="82%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Access</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>container</td>
+<td><a class="reference internal" href="Container.html#Gtk.Container" title="Gtk.Container"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Container</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="class-details">
+<h2>Class Details<a class="headerlink" href="#class-details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Gtk.FlowBox">
+<em class="property">class </em><code class="descclassname">Gtk.</code><code class="descname">FlowBox</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#Gtk.FlowBox" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Bases:</th><td class="field-body"><a class="reference internal" href="Container.html#Gtk.Container" title="Gtk.Container"><code class="xref py py-class docutils literal notranslate"><span class="pre">Gtk.Container</span></code></a>,         <a class="reference internal" href="Orientable.html#Gtk.Orientable" title="Gtk.Orientable"><code class="xref py py-class docutils literal notranslate"><span class="pre">Gtk.Orientable</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Abstract:</th><td class="field-body">No</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Structure:</th><td class="field-body"><a class="reference internal" href="FlowBoxClass.html#Gtk.FlowBoxClass" title="Gtk.FlowBoxClass"><code class="xref py py-class docutils literal notranslate"><span class="pre">Gtk.FlowBoxClass</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>A <a class="reference internal" href="#Gtk.FlowBox" title="Gtk.FlowBox"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.FlowBox</span></code></a> positions child widgets in sequence according to its
+orientation.</p>
+<p>For instance, with the horizontal orientation, the widgets will be
+arranged from left to right, starting a new row under the previous
+row when necessary. Reducing the width in this case will require more
+rows, so a larger height will be requested.</p>
+<p>Likewise, with the vertical orientation, the widgets will be arranged
+from top to bottom, starting a new column to the right when necessary.
+Reducing the height will require more columns, so a larger width will
+be requested.</p>
+<p>The size request of a <a class="reference internal" href="#Gtk.FlowBox" title="Gtk.FlowBox"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.FlowBox</span></code></a> alone may not be what you expect; if you
+need to be able to shrink it along both axes and dynamically reflow its
+children, you may have to wrap it in a <a class="reference internal" href="ScrolledWindow.html#Gtk.ScrolledWindow" title="Gtk.ScrolledWindow"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ScrolledWindow</span></code></a> to enable that.</p>
+<p>The children of a <a class="reference internal" href="#Gtk.FlowBox" title="Gtk.FlowBox"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.FlowBox</span></code></a> can be dynamically sorted and filtered.</p>
+<p>Although a <a class="reference internal" href="#Gtk.FlowBox" title="Gtk.FlowBox"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.FlowBox</span></code></a> must have only <a class="reference internal" href="FlowBoxChild.html#Gtk.FlowBoxChild" title="Gtk.FlowBoxChild"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.FlowBoxChild</span></code></a> children,
+you can add any kind of widget to it via <a class="reference internal" href="Container.html#Gtk.Container.add" title="Gtk.Container.add"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Container.add</span></code></a>(), and
+a <a class="reference internal" href="FlowBoxChild.html#Gtk.FlowBoxChild" title="Gtk.FlowBoxChild"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.FlowBoxChild</span></code></a> widget will automatically be inserted between
+the box and the widget.</p>
+<p>Also see <a class="reference internal" href="ListBox.html#Gtk.ListBox" title="Gtk.ListBox"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ListBox</span></code></a>.</p>
+<p><a class="reference internal" href="#Gtk.FlowBox" title="Gtk.FlowBox"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.FlowBox</span></code></a> was added in GTK+ 3.12.</p>
+<dl class="docutils">
+<dt>CSS nodes</dt>
+<dd></dd>
+</dl>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>flowbox
+├── flowboxchild
+│   ╰── &lt;child&gt;
+├── flowboxchild
+│   ╰── &lt;child&gt;
+┊
+╰── [rubberband]
+</pre></div>
+</div>
+<p><a class="reference internal" href="#Gtk.FlowBox" title="Gtk.FlowBox"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.FlowBox</span></code></a> uses a single CSS node with name flowbox. <a class="reference internal" href="FlowBoxChild.html#Gtk.FlowBoxChild" title="Gtk.FlowBoxChild"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.FlowBoxChild</span></code></a>
+uses a single CSS node with name flowboxchild.
+For rubberband selection, a subnode with name rubberband is used.</p>
+<dl class="classmethod">
+<dt id="Gtk.FlowBox.new">
+<em class="property">classmethod </em><code class="descname">new</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkflowbox.c#L4222"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.FlowBox.new" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a new <a class="reference internal" href="#Gtk.FlowBox" title="Gtk.FlowBox"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.FlowBox</span></code></a> container</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="Widget.html#Gtk.Widget" title="Gtk.Widget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Widget</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Creates a <a class="reference internal" href="#Gtk.FlowBox" title="Gtk.FlowBox"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.FlowBox</span></code></a>.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.12.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.FlowBox.bind_model">
+<code class="descname">bind_model</code><span class="sig-paren">(</span><em>model</em>, <em>create_widget_func</em>, <em>*user_data</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkflowbox.c#L4490"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.FlowBox.bind_model" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>model</strong> (<a class="reference external" href="../../Gio-2.0/classes/ListModel.html#Gio.ListModel" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.ListModel</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – the <a class="reference external" href="../../Gio-2.0/classes/ListModel.html#Gio.ListModel" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.ListModel</span></code></a> to be bound to <cite>self</cite></li>
+<li><strong>create_widget_func</strong> (<a class="reference internal" href="../callbacks.html#Gtk.FlowBoxCreateWidgetFunc" title="Gtk.FlowBoxCreateWidgetFunc"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.FlowBoxCreateWidgetFunc</span></code></a>) – a function that creates widgets for items</li>
+<li><strong>user_data</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">object</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – user data passed to <cite>create_widget_func</cite></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Binds <cite>model</cite> to <cite>self</cite>.</p>
+<p>If <cite>self</cite> was already bound to a model, that previous binding is
+destroyed.</p>
+<p>The contents of <cite>self</cite> are cleared and then filled with widgets that
+represent items from <cite>model</cite>. <cite>self</cite> is updated whenever <cite>model</cite> changes.
+If <cite>model</cite> is <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>, <cite>self</cite> is left empty.</p>
+<p>It is undefined to add or remove widgets directly (for example, with
+<a class="reference internal" href="#Gtk.FlowBox.insert" title="Gtk.FlowBox.insert"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.FlowBox.insert</span></code></a>() or <a class="reference internal" href="Container.html#Gtk.Container.add" title="Gtk.Container.add"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Container.add</span></code></a>()) while <cite>self</cite> is bound to a
+model.</p>
+<p>Note that using a model is incompatible with the filtering and sorting
+functionality in <a class="reference internal" href="#Gtk.FlowBox" title="Gtk.FlowBox"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.FlowBox</span></code></a>. When using a model, filtering and sorting
+should be implemented by the model.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.18.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.FlowBox.get_activate_on_single_click">
+<code class="descname">get_activate_on_single_click</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkflowbox.c#L4787"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.FlowBox.get_activate_on_single_click" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if children are activated on single click,
+<a class="reference external" href="http://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a> otherwise</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns whether children activate on single clicks.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.12.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.FlowBox.get_child_at_index">
+<code class="descname">get_child_at_index</code><span class="sig-paren">(</span><em>idx</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkflowbox.c#L4322"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.FlowBox.get_child_at_index" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>idx</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – the position of the child</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the child widget, which will
+always be a <a class="reference internal" href="FlowBoxChild.html#Gtk.FlowBoxChild" title="Gtk.FlowBoxChild"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.FlowBoxChild</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> in case no child widget
+with the given index exists.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="FlowBoxChild.html#Gtk.FlowBoxChild" title="Gtk.FlowBoxChild"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.FlowBoxChild</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the nth child in the <cite>self</cite>.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.12.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.FlowBox.get_child_at_pos">
+<code class="descname">get_child_at_pos</code><span class="sig-paren">(</span><em>x</em>, <em>y</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkflowbox.c#L4352"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.FlowBox.get_child_at_pos" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>x</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – the x coordinate of the child</li>
+<li><strong>y</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – the y coordinate of the child</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">the child widget, which will
+always be a <a class="reference internal" href="FlowBoxChild.html#Gtk.FlowBoxChild" title="Gtk.FlowBoxChild"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.FlowBoxChild</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> in case no child widget
+exists for the given x and y coordinates.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="FlowBoxChild.html#Gtk.FlowBoxChild" title="Gtk.FlowBoxChild"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.FlowBoxChild</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Gets the child in the (<cite>x</cite>, <cite>y</cite>) position.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.22.6.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.FlowBox.get_column_spacing">
+<code class="descname">get_column_spacing</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkflowbox.c#L4652"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.FlowBox.get_column_spacing" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the horizontal spacing</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the horizontal spacing.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.12.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.FlowBox.get_homogeneous">
+<code class="descname">get_homogeneous</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkflowbox.c#L4537"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.FlowBox.get_homogeneous" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if the box is homogeneous.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns whether the box is homogeneous (all children are the
+same size). See <a class="reference internal" href="Box.html#Gtk.Box.set_homogeneous" title="Gtk.Box.set_homogeneous"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Box.set_homogeneous</span></code></a>().</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.12.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.FlowBox.get_max_children_per_line">
+<code class="descname">get_max_children_per_line</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkflowbox.c#L4743"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.FlowBox.get_max_children_per_line" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the maximum number of children per line</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the maximum number of children per line.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.12.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.FlowBox.get_min_children_per_line">
+<code class="descname">get_min_children_per_line</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkflowbox.c#L4695"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.FlowBox.get_min_children_per_line" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the minimum number of children per line</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the minimum number of children per line.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.12.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.FlowBox.get_row_spacing">
+<code class="descname">get_row_spacing</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkflowbox.c#L4609"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.FlowBox.get_row_spacing" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the vertical spacing</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the vertical spacing.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.12.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.FlowBox.get_selected_children">
+<code class="descname">get_selected_children</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkflowbox.c#L4809"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.FlowBox.get_selected_children" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A <a class="reference external" href="../../GLib-2.0/classes/List.html#GLib.List" title="(in GLib 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GLib.List</span></code></a> containing the <a class="reference internal" href="Widget.html#Gtk.Widget" title="Gtk.Widget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Widget</span></code></a> for each selected child.
+Free with g_list_free() when done.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">[<a class="reference internal" href="FlowBoxChild.html#Gtk.FlowBoxChild" title="Gtk.FlowBoxChild"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.FlowBoxChild</span></code></a>]</td>
+</tr>
+</tbody>
+</table>
+<p>Creates a list of all selected children.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.12.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.FlowBox.get_selection_mode">
+<code class="descname">get_selection_mode</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkflowbox.c#L5010"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.FlowBox.get_selection_mode" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the <a class="reference internal" href="../enums.html#Gtk.SelectionMode" title="Gtk.SelectionMode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.SelectionMode</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#Gtk.SelectionMode" title="Gtk.SelectionMode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.SelectionMode</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the selection mode of <cite>self</cite>.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.12.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.FlowBox.insert">
+<code class="descname">insert</code><span class="sig-paren">(</span><em>widget</em>, <em>position</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkflowbox.c#L4266"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.FlowBox.insert" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>widget</strong> (<a class="reference internal" href="Widget.html#Gtk.Widget" title="Gtk.Widget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Widget</span></code></a>) – the <a class="reference internal" href="Widget.html#Gtk.Widget" title="Gtk.Widget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Widget</span></code></a> to add</li>
+<li><strong>position</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – the position to insert <cite>child</cite> in</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Inserts the <cite>widget</cite> into <cite>self</cite> at <cite>position</cite>.</p>
+<p>If a sort function is set, the widget will actually be inserted
+at the calculated position and this function has the same effect
+as <a class="reference internal" href="Container.html#Gtk.Container.add" title="Gtk.Container.add"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Container.add</span></code></a>().</p>
+<p>If <cite>position</cite> is -1, or larger than the total number of children
+in the <cite>self</cite>, then the <cite>widget</cite> will be appended to the end.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.12.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.FlowBox.invalidate_filter">
+<code class="descname">invalidate_filter</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkflowbox.c#L5094"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.FlowBox.invalidate_filter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Updates the filtering for all children.</p>
+<p>Call this function when the result of the filter
+function on the <cite>self</cite> is changed due ot an external
+factor. For instance, this would be used if the
+filter function just looked for a specific search
+term, and the entry with the string has changed.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.12.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.FlowBox.invalidate_sort">
+<code class="descname">invalidate_sort</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkflowbox.c#L5207"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.FlowBox.invalidate_sort" title="Permalink to this definition">¶</a></dt>
+<dd><p>Updates the sorting for all children.</p>
+<p>Call this when the result of the sort function on
+<cite>self</cite> is changed due to an external factor.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.12.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.FlowBox.select_all">
+<code class="descname">select_all</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkflowbox.c#L4879"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.FlowBox.select_all" title="Permalink to this definition">¶</a></dt>
+<dd><p>Select all children of <cite>self</cite>, if the selection
+mode allows it.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.12.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.FlowBox.select_child">
+<code class="descname">select_child</code><span class="sig-paren">(</span><em>child</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkflowbox.c#L4841"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.FlowBox.select_child" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>child</strong> (<a class="reference internal" href="FlowBoxChild.html#Gtk.FlowBoxChild" title="Gtk.FlowBoxChild"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.FlowBoxChild</span></code></a>) – a child of <cite>self</cite></td>
+</tr>
+</tbody>
+</table>
+<p>Selects a single child of <cite>self</cite>, if the selection
+mode allows it.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.12.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.FlowBox.selected_foreach">
+<code class="descname">selected_foreach</code><span class="sig-paren">(</span><em>func</em>, <em>*data</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkflowbox.c#L4946"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.FlowBox.selected_foreach" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>func</strong> (<a class="reference internal" href="../callbacks.html#Gtk.FlowBoxForeachFunc" title="Gtk.FlowBoxForeachFunc"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.FlowBoxForeachFunc</span></code></a>) – the function to call for each selected child</li>
+<li><strong>data</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">object</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – user data to pass to the function</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Calls a function for each selected child.</p>
+<p>Note that the selection cannot be modified from within
+this function.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.12.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.FlowBox.set_activate_on_single_click">
+<code class="descname">set_activate_on_single_click</code><span class="sig-paren">(</span><em>single</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkflowbox.c#L4762"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.FlowBox.set_activate_on_single_click" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>single</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a>) – <a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> to emit child-activated on a single click</td>
+</tr>
+</tbody>
+</table>
+<p>If <cite>single</cite> is <a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a>, children will be activated when you click
+on them, otherwise you need to double-click.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.12.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.FlowBox.set_column_spacing">
+<code class="descname">set_column_spacing</code><span class="sig-paren">(</span><em>spacing</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkflowbox.c#L4628"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.FlowBox.set_column_spacing" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>spacing</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – the spacing to use</td>
+</tr>
+</tbody>
+</table>
+<p>Sets the horizontal space to add between children.
+See the <a class="reference internal" href="#Gtk.FlowBox" title="Gtk.FlowBox"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.FlowBox</span></code></a> <a class="reference internal" href="#Gtk.FlowBox.props.column_spacing" title="Gtk.FlowBox.props.column_spacing"><code class="xref py py-data docutils literal notranslate"><span class="pre">:column-spacing</span></code></a> property.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.12.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.FlowBox.set_filter_func">
+<code class="descname">set_filter_func</code><span class="sig-paren">(</span><em>filter_func</em>, <em>*user_data</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkflowbox.c#L5059"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.FlowBox.set_filter_func" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>filter_func</strong> (<a class="reference internal" href="../callbacks.html#Gtk.FlowBoxFilterFunc" title="Gtk.FlowBoxFilterFunc"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.FlowBoxFilterFunc</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – callback that
+lets you filter which children to show</li>
+<li><strong>user_data</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">object</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – user data passed to <cite>filter_func</cite></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>By setting a filter function on the <cite>self</cite> one can decide dynamically
+which of the children to show. For instance, to implement a search
+function that only shows the children matching the search terms.</p>
+<p>The <cite>filter_func</cite> will be called for each child after the call, and
+it will continue to be called each time a child changes (via
+<a class="reference internal" href="FlowBoxChild.html#Gtk.FlowBoxChild.changed" title="Gtk.FlowBoxChild.changed"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.FlowBoxChild.changed</span></code></a>()) or when <a class="reference internal" href="#Gtk.FlowBox.invalidate_filter" title="Gtk.FlowBox.invalidate_filter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.FlowBox.invalidate_filter</span></code></a>()
+is called.</p>
+<p>Note that using a filter function is incompatible with using a model
+(see <a class="reference internal" href="#Gtk.FlowBox.bind_model" title="Gtk.FlowBox.bind_model"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.FlowBox.bind_model</span></code></a>()).</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.12.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.FlowBox.set_hadjustment">
+<code class="descname">set_hadjustment</code><span class="sig-paren">(</span><em>adjustment</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkflowbox.c#L4395"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.FlowBox.set_hadjustment" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>adjustment</strong> (<a class="reference internal" href="Adjustment.html#Gtk.Adjustment" title="Gtk.Adjustment"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Adjustment</span></code></a>) – an adjustment which should be adjusted
+when the focus is moved among the descendents of <cite>container</cite></td>
+</tr>
+</tbody>
+</table>
+<p>Hooks up an adjustment to focus handling in <cite>self</cite>.
+The adjustment is also used for autoscrolling during
+rubberband selection. See <a class="reference internal" href="ScrolledWindow.html#Gtk.ScrolledWindow.get_hadjustment" title="Gtk.ScrolledWindow.get_hadjustment"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ScrolledWindow.get_hadjustment</span></code></a>()
+for a typical way of obtaining the adjustment, and
+<a class="reference internal" href="#Gtk.FlowBox.set_vadjustment" title="Gtk.FlowBox.set_vadjustment"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.FlowBox.set_vadjustment</span></code></a>()for setting the vertical
+adjustment.</p>
+<p>The adjustments have to be in pixel units and in the same
+coordinate system as the allocation for immediate children
+of the box.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.12.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.FlowBox.set_homogeneous">
+<code class="descname">set_homogeneous</code><span class="sig-paren">(</span><em>homogeneous</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkflowbox.c#L4558"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.FlowBox.set_homogeneous" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>homogeneous</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a>) – <a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> to create equal allotments,
+<a class="reference external" href="http://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a> for variable allotments</td>
+</tr>
+</tbody>
+</table>
+<p>Sets the <a class="reference internal" href="#Gtk.FlowBox" title="Gtk.FlowBox"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.FlowBox</span></code></a> <a class="reference internal" href="#Gtk.FlowBox.props.homogeneous" title="Gtk.FlowBox.props.homogeneous"><code class="xref py py-data docutils literal notranslate"><span class="pre">:homogeneous</span></code></a> property of <cite>self</cite>, controlling
+whether or not all children of <cite>self</cite> are given equal space
+in the box.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.12.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.FlowBox.set_max_children_per_line">
+<code class="descname">set_max_children_per_line</code><span class="sig-paren">(</span><em>n_children</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkflowbox.c#L4718"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.FlowBox.set_max_children_per_line" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>n_children</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – the maximum number of children per line</td>
+</tr>
+</tbody>
+</table>
+<p>Sets the maximum number of children to request and
+allocate space for in <cite>self</cite>’s orientation.</p>
+<p>Setting the maximum number of children per line
+limits the overall natural size request to be no more
+than <cite>n_children</cite> children long in the given orientation.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.12.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.FlowBox.set_min_children_per_line">
+<code class="descname">set_min_children_per_line</code><span class="sig-paren">(</span><em>n_children</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkflowbox.c#L4671"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.FlowBox.set_min_children_per_line" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>n_children</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – the minimum number of children per line</td>
+</tr>
+</tbody>
+</table>
+<p>Sets the minimum number of children to line up
+in <cite>self</cite>’s orientation before flowing.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.12.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.FlowBox.set_row_spacing">
+<code class="descname">set_row_spacing</code><span class="sig-paren">(</span><em>spacing</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkflowbox.c#L4585"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.FlowBox.set_row_spacing" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>spacing</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – the spacing to use</td>
+</tr>
+</tbody>
+</table>
+<p>Sets the vertical space to add between children.
+See the <a class="reference internal" href="#Gtk.FlowBox" title="Gtk.FlowBox"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.FlowBox</span></code></a> <a class="reference internal" href="#Gtk.FlowBox.props.row_spacing" title="Gtk.FlowBox.props.row_spacing"><code class="xref py py-data docutils literal notranslate"><span class="pre">:row-spacing</span></code></a> property.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.12.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.FlowBox.set_selection_mode">
+<code class="descname">set_selection_mode</code><span class="sig-paren">(</span><em>mode</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkflowbox.c#L4975"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.FlowBox.set_selection_mode" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>mode</strong> (<a class="reference internal" href="../enums.html#Gtk.SelectionMode" title="Gtk.SelectionMode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.SelectionMode</span></code></a>) – the new selection mode</td>
+</tr>
+</tbody>
+</table>
+<p>Sets how selection works in <cite>self</cite>.
+See <a class="reference internal" href="../enums.html#Gtk.SelectionMode" title="Gtk.SelectionMode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.SelectionMode</span></code></a> for details.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.12.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.FlowBox.set_sort_func">
+<code class="descname">set_sort_func</code><span class="sig-paren">(</span><em>sort_func</em>, <em>*user_data</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkflowbox.c#L5144"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.FlowBox.set_sort_func" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>sort_func</strong> (<a class="reference internal" href="../callbacks.html#Gtk.FlowBoxSortFunc" title="Gtk.FlowBoxSortFunc"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.FlowBoxSortFunc</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – the sort function</li>
+<li><strong>user_data</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">object</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – user data passed to <cite>sort_func</cite></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>By setting a sort function on the <cite>self</cite>, one can dynamically
+reorder the children of the box, based on the contents of
+the children.</p>
+<p>The <cite>sort_func</cite> will be called for each child after the call,
+and will continue to be called each time a child changes (via
+<a class="reference internal" href="FlowBoxChild.html#Gtk.FlowBoxChild.changed" title="Gtk.FlowBoxChild.changed"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.FlowBoxChild.changed</span></code></a>()) and when <a class="reference internal" href="#Gtk.FlowBox.invalidate_sort" title="Gtk.FlowBox.invalidate_sort"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.FlowBox.invalidate_sort</span></code></a>()
+is called.</p>
+<p>Note that using a sort function is incompatible with using a model
+(see <a class="reference internal" href="#Gtk.FlowBox.bind_model" title="Gtk.FlowBox.bind_model"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.FlowBox.bind_model</span></code></a>()).</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.12.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.FlowBox.set_vadjustment">
+<code class="descname">set_vadjustment</code><span class="sig-paren">(</span><em>adjustment</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkflowbox.c#L4432"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.FlowBox.set_vadjustment" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>adjustment</strong> (<a class="reference internal" href="Adjustment.html#Gtk.Adjustment" title="Gtk.Adjustment"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Adjustment</span></code></a>) – an adjustment which should be adjusted
+when the focus is moved among the descendents of <cite>container</cite></td>
+</tr>
+</tbody>
+</table>
+<p>Hooks up an adjustment to focus handling in <cite>self</cite>.
+The adjustment is also used for autoscrolling during
+rubberband selection. See <a class="reference internal" href="ScrolledWindow.html#Gtk.ScrolledWindow.get_vadjustment" title="Gtk.ScrolledWindow.get_vadjustment"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ScrolledWindow.get_vadjustment</span></code></a>()
+for a typical way of obtaining the adjustment, and
+<a class="reference internal" href="#Gtk.FlowBox.set_hadjustment" title="Gtk.FlowBox.set_hadjustment"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.FlowBox.set_hadjustment</span></code></a>()for setting the horizontal
+adjustment.</p>
+<p>The adjustments have to be in pixel units and in the same
+coordinate system as the allocation for immediate children
+of the box.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.12.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.FlowBox.unselect_all">
+<code class="descname">unselect_all</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkflowbox.c#L4903"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.FlowBox.unselect_all" title="Permalink to this definition">¶</a></dt>
+<dd><p>Unselect all children of <cite>self</cite>, if the selection
+mode allows it.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.12.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.FlowBox.unselect_child">
+<code class="descname">unselect_child</code><span class="sig-paren">(</span><em>child</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkflowbox.c#L4861"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.FlowBox.unselect_child" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>child</strong> (<a class="reference internal" href="FlowBoxChild.html#Gtk.FlowBoxChild" title="Gtk.FlowBoxChild"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.FlowBoxChild</span></code></a>) – a child of <cite>self</cite></td>
+</tr>
+</tbody>
+</table>
+<p>Unselects a single child of <cite>self</cite>, if the selection
+mode allows it.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.12.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.FlowBox.do_activate_cursor_child">
+<code class="descname">do_activate_cursor_child</code><span class="sig-paren">(</span><span class="sig-paren">)</span><em class="property"> virtual</em><a class="headerlink" href="#Gtk.FlowBox.do_activate_cursor_child" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Gtk.FlowBox.do_child_activated">
+<code class="descname">do_child_activated</code><span class="sig-paren">(</span><em>child</em><span class="sig-paren">)</span><em class="property"> virtual</em><a class="headerlink" href="#Gtk.FlowBox.do_child_activated" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>child</strong> (<a class="reference internal" href="FlowBoxChild.html#Gtk.FlowBoxChild" title="Gtk.FlowBoxChild"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.FlowBoxChild</span></code></a>) – </td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.FlowBox.do_move_cursor">
+<code class="descname">do_move_cursor</code><span class="sig-paren">(</span><em>step</em>, <em>count</em><span class="sig-paren">)</span><em class="property"> virtual</em><a class="headerlink" href="#Gtk.FlowBox.do_move_cursor" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>step</strong> (<a class="reference internal" href="../enums.html#Gtk.MovementStep" title="Gtk.MovementStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.MovementStep</span></code></a>) – </li>
+<li><strong>count</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.FlowBox.do_select_all">
+<code class="descname">do_select_all</code><span class="sig-paren">(</span><span class="sig-paren">)</span><em class="property"> virtual</em><a class="headerlink" href="#Gtk.FlowBox.do_select_all" title="Permalink to this definition">¶</a></dt>
+<dd><p>Select all children of <cite>box</cite>, if the selection
+mode allows it.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.12.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.FlowBox.do_selected_children_changed">
+<code class="descname">do_selected_children_changed</code><span class="sig-paren">(</span><span class="sig-paren">)</span><em class="property"> virtual</em><a class="headerlink" href="#Gtk.FlowBox.do_selected_children_changed" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Gtk.FlowBox.do_toggle_cursor_child">
+<code class="descname">do_toggle_cursor_child</code><span class="sig-paren">(</span><span class="sig-paren">)</span><em class="property"> virtual</em><a class="headerlink" href="#Gtk.FlowBox.do_toggle_cursor_child" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Gtk.FlowBox.do_unselect_all">
+<code class="descname">do_unselect_all</code><span class="sig-paren">(</span><span class="sig-paren">)</span><em class="property"> virtual</em><a class="headerlink" href="#Gtk.FlowBox.do_unselect_all" title="Permalink to this definition">¶</a></dt>
+<dd><p>Unselect all children of <cite>box</cite>, if the selection
+mode allows it.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.12.</span></p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="signal-details">
+<h2>Signal Details<a class="headerlink" href="#signal-details" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="Gtk.FlowBox.signals.activate_cursor_child">
+<code class="descclassname">Gtk.FlowBox.signals.</code><code class="descname">activate_cursor_child</code><span class="sig-paren">(</span><em>flow_box</em><span class="sig-paren">)</span><a class="headerlink" href="#Gtk.FlowBox.signals.activate_cursor_child" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Signal Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">activate-cursor-child</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.SignalFlags.RUN_LAST" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RUN_LAST</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.SignalFlags.ACTION" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ACTION</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>flow_box</strong> (<a class="reference internal" href="#Gtk.FlowBox" title="Gtk.FlowBox"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.FlowBox</span></code></a>) – The object which received the signal</td>
+</tr>
+</tbody>
+</table>
+<p>The <a class="reference internal" href="#Gtk.FlowBox.signals.activate_cursor_child" title="Gtk.FlowBox.signals.activate_cursor_child"><code class="xref py py-func docutils literal notranslate"><span class="pre">::activate-cursor-child</span></code></a> signal is a
+<a class="reference internal" href="BindingSignal.html#Gtk.BindingSignal" title="Gtk.BindingSignal"><code class="xref py py-obj docutils literal notranslate"><span class="pre">keybinding</span> <span class="pre">signal</span></code></a>
+which gets emitted when the user activates the <cite>box</cite>.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gtk.FlowBox.signals.child_activated">
+<code class="descclassname">Gtk.FlowBox.signals.</code><code class="descname">child_activated</code><span class="sig-paren">(</span><em>flow_box</em>, <em>child</em><span class="sig-paren">)</span><a class="headerlink" href="#Gtk.FlowBox.signals.child_activated" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Signal Name:</th><td class="field-body"><p class="first"><code class="docutils literal notranslate"><span class="pre">child-activated</span></code></p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><p class="first"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.SignalFlags.RUN_LAST" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RUN_LAST</span></code></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>flow_box</strong> (<a class="reference internal" href="#Gtk.FlowBox" title="Gtk.FlowBox"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.FlowBox</span></code></a>) – The object which received the signal</li>
+<li><strong>child</strong> (<a class="reference internal" href="FlowBoxChild.html#Gtk.FlowBoxChild" title="Gtk.FlowBoxChild"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.FlowBoxChild</span></code></a>) – the child that is activated</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>The <a class="reference internal" href="#Gtk.FlowBox.signals.child_activated" title="Gtk.FlowBox.signals.child_activated"><code class="xref py py-func docutils literal notranslate"><span class="pre">::child-activated</span></code></a> signal is emitted when a child has been
+activated by the user.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gtk.FlowBox.signals.move_cursor">
+<code class="descclassname">Gtk.FlowBox.signals.</code><code class="descname">move_cursor</code><span class="sig-paren">(</span><em>flow_box</em>, <em>step</em>, <em>count</em><span class="sig-paren">)</span><a class="headerlink" href="#Gtk.FlowBox.signals.move_cursor" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Signal Name:</th><td class="field-body"><p class="first"><code class="docutils literal notranslate"><span class="pre">move-cursor</span></code></p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><p class="first"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.SignalFlags.RUN_LAST" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RUN_LAST</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.SignalFlags.ACTION" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ACTION</span></code></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>flow_box</strong> (<a class="reference internal" href="#Gtk.FlowBox" title="Gtk.FlowBox"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.FlowBox</span></code></a>) – The object which received the signal</li>
+<li><strong>step</strong> (<a class="reference internal" href="../enums.html#Gtk.MovementStep" title="Gtk.MovementStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.MovementStep</span></code></a>) – the granularity fo the move, as a <a class="reference internal" href="../enums.html#Gtk.MovementStep" title="Gtk.MovementStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.MovementStep</span></code></a></li>
+<li><strong>count</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – the number of <cite>step</cite> units to move</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> to stop other handlers from being invoked for the event.
+<a class="reference external" href="http://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a> to propagate the event further.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>The <a class="reference internal" href="#Gtk.FlowBox.signals.move_cursor" title="Gtk.FlowBox.signals.move_cursor"><code class="xref py py-func docutils literal notranslate"><span class="pre">::move-cursor</span></code></a> signal is a
+<a class="reference internal" href="BindingSignal.html#Gtk.BindingSignal" title="Gtk.BindingSignal"><code class="xref py py-obj docutils literal notranslate"><span class="pre">keybinding</span> <span class="pre">signal</span></code></a>
+which gets emitted when the user initiates a cursor movement.</p>
+<p>Applications should not connect to it, but may emit it with
+g_signal_emit_by_name() if they need to control the cursor
+programmatically.</p>
+<p>The default bindings for this signal come in two variants,
+the variant with the Shift modifier extends the selection,
+the variant without the Shift modifer does not.
+There are too many key combinations to list them all here.</p>
+<ul class="simple">
+<li>Arrow keys move by individual children</li>
+<li>Home/End keys move to the ends of the box</li>
+<li>PageUp/PageDown keys move vertically by pages</li>
+</ul>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gtk.FlowBox.signals.select_all">
+<code class="descclassname">Gtk.FlowBox.signals.</code><code class="descname">select_all</code><span class="sig-paren">(</span><em>flow_box</em><span class="sig-paren">)</span><a class="headerlink" href="#Gtk.FlowBox.signals.select_all" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Signal Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">select-all</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.SignalFlags.RUN_LAST" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RUN_LAST</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.SignalFlags.ACTION" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ACTION</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>flow_box</strong> (<a class="reference internal" href="#Gtk.FlowBox" title="Gtk.FlowBox"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.FlowBox</span></code></a>) – The object which received the signal</td>
+</tr>
+</tbody>
+</table>
+<p>The <a class="reference internal" href="#Gtk.FlowBox.signals.select_all" title="Gtk.FlowBox.signals.select_all"><code class="xref py py-func docutils literal notranslate"><span class="pre">::select-all</span></code></a> signal is a
+<a class="reference internal" href="BindingSignal.html#Gtk.BindingSignal" title="Gtk.BindingSignal"><code class="xref py py-obj docutils literal notranslate"><span class="pre">keybinding</span> <span class="pre">signal</span></code></a>
+which gets emitted to select all children of the box, if
+the selection mode permits it.</p>
+<p>The default bindings for this signal is Ctrl-a.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gtk.FlowBox.signals.selected_children_changed">
+<code class="descclassname">Gtk.FlowBox.signals.</code><code class="descname">selected_children_changed</code><span class="sig-paren">(</span><em>flow_box</em><span class="sig-paren">)</span><a class="headerlink" href="#Gtk.FlowBox.signals.selected_children_changed" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Signal Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">selected-children-changed</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.SignalFlags.RUN_FIRST" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RUN_FIRST</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>flow_box</strong> (<a class="reference internal" href="#Gtk.FlowBox" title="Gtk.FlowBox"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.FlowBox</span></code></a>) – The object which received the signal</td>
+</tr>
+</tbody>
+</table>
+<p>The <a class="reference internal" href="#Gtk.FlowBox.signals.selected_children_changed" title="Gtk.FlowBox.signals.selected_children_changed"><code class="xref py py-func docutils literal notranslate"><span class="pre">::selected-children-changed</span></code></a> signal is emitted when the
+set of selected children changes.</p>
+<p>Use <a class="reference internal" href="#Gtk.FlowBox.selected_foreach" title="Gtk.FlowBox.selected_foreach"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.FlowBox.selected_foreach</span></code></a>() or
+<a class="reference internal" href="#Gtk.FlowBox.get_selected_children" title="Gtk.FlowBox.get_selected_children"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.FlowBox.get_selected_children</span></code></a>() to obtain the
+selected children.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gtk.FlowBox.signals.toggle_cursor_child">
+<code class="descclassname">Gtk.FlowBox.signals.</code><code class="descname">toggle_cursor_child</code><span class="sig-paren">(</span><em>flow_box</em><span class="sig-paren">)</span><a class="headerlink" href="#Gtk.FlowBox.signals.toggle_cursor_child" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Signal Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">toggle-cursor-child</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.SignalFlags.RUN_LAST" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RUN_LAST</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.SignalFlags.ACTION" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ACTION</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>flow_box</strong> (<a class="reference internal" href="#Gtk.FlowBox" title="Gtk.FlowBox"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.FlowBox</span></code></a>) – The object which received the signal</td>
+</tr>
+</tbody>
+</table>
+<p>The <a class="reference internal" href="#Gtk.FlowBox.signals.toggle_cursor_child" title="Gtk.FlowBox.signals.toggle_cursor_child"><code class="xref py py-func docutils literal notranslate"><span class="pre">::toggle-cursor-child</span></code></a> signal is a
+<a class="reference internal" href="BindingSignal.html#Gtk.BindingSignal" title="Gtk.BindingSignal"><code class="xref py py-obj docutils literal notranslate"><span class="pre">keybinding</span> <span class="pre">signal</span></code></a>
+which toggles the selection of the child that has the focus.</p>
+<p>The default binding for this signal is Ctrl-Space.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gtk.FlowBox.signals.unselect_all">
+<code class="descclassname">Gtk.FlowBox.signals.</code><code class="descname">unselect_all</code><span class="sig-paren">(</span><em>flow_box</em><span class="sig-paren">)</span><a class="headerlink" href="#Gtk.FlowBox.signals.unselect_all" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Signal Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">unselect-all</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.SignalFlags.RUN_LAST" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RUN_LAST</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.SignalFlags.ACTION" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ACTION</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>flow_box</strong> (<a class="reference internal" href="#Gtk.FlowBox" title="Gtk.FlowBox"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.FlowBox</span></code></a>) – The object which received the signal</td>
+</tr>
+</tbody>
+</table>
+<p>The <a class="reference internal" href="#Gtk.FlowBox.signals.unselect_all" title="Gtk.FlowBox.signals.unselect_all"><code class="xref py py-func docutils literal notranslate"><span class="pre">::unselect-all</span></code></a> signal is a
+<a class="reference internal" href="BindingSignal.html#Gtk.BindingSignal" title="Gtk.BindingSignal"><code class="xref py py-obj docutils literal notranslate"><span class="pre">keybinding</span> <span class="pre">signal</span></code></a>
+which gets emitted to unselect all children of the box, if
+the selection mode permits it.</p>
+<p>The default bindings for this signal is Ctrl-Shift-a.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="property-details">
+<h2>Property Details<a class="headerlink" href="#property-details" title="Permalink to this headline">¶</a></h2>
+<dl class="data">
+<dt id="Gtk.FlowBox.props.activate_on_single_click">
+<code class="descclassname">Gtk.FlowBox.props.</code><code class="descname">activate_on_single_click</code><a class="headerlink" href="#Gtk.FlowBox.props.activate_on_single_click" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">activate-on-single-click</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.EXPLICIT_NOTIFY" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EXPLICIT_NOTIFY</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Determines whether children can be activated with a single
+click, or require a double-click.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="Gtk.FlowBox.props.column_spacing">
+<code class="descclassname">Gtk.FlowBox.props.</code><code class="descname">column_spacing</code><a class="headerlink" href="#Gtk.FlowBox.props.column_spacing" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">column-spacing</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">0</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.EXPLICIT_NOTIFY" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EXPLICIT_NOTIFY</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The amount of horizontal space between two children.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="Gtk.FlowBox.props.homogeneous">
+<code class="descclassname">Gtk.FlowBox.props.</code><code class="descname">homogeneous</code><a class="headerlink" href="#Gtk.FlowBox.props.homogeneous" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">homogeneous</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.EXPLICIT_NOTIFY" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EXPLICIT_NOTIFY</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Determines whether all children should be allocated the
+same size.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="Gtk.FlowBox.props.max_children_per_line">
+<code class="descclassname">Gtk.FlowBox.props.</code><code class="descname">max_children_per_line</code><a class="headerlink" href="#Gtk.FlowBox.props.max_children_per_line" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">max-children-per-line</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">7</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.EXPLICIT_NOTIFY" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EXPLICIT_NOTIFY</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The maximum amount of children to request space for consecutively
+in the given orientation.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="Gtk.FlowBox.props.min_children_per_line">
+<code class="descclassname">Gtk.FlowBox.props.</code><code class="descname">min_children_per_line</code><a class="headerlink" href="#Gtk.FlowBox.props.min_children_per_line" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">min-children-per-line</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">0</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.EXPLICIT_NOTIFY" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EXPLICIT_NOTIFY</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The minimum number of children to allocate consecutively
+in the given orientation.</p>
+<p>Setting the minimum children per line ensures
+that a reasonably small height will be requested
+for the overall minimum width of the box.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="Gtk.FlowBox.props.row_spacing">
+<code class="descclassname">Gtk.FlowBox.props.</code><code class="descname">row_spacing</code><a class="headerlink" href="#Gtk.FlowBox.props.row_spacing" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">row-spacing</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">0</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.EXPLICIT_NOTIFY" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EXPLICIT_NOTIFY</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The amount of vertical space between two children.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="Gtk.FlowBox.props.selection_mode">
+<code class="descclassname">Gtk.FlowBox.props.</code><code class="descname">selection_mode</code><a class="headerlink" href="#Gtk.FlowBox.props.selection_mode" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">selection-mode</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../enums.html#Gtk.SelectionMode" title="Gtk.SelectionMode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.SelectionMode</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference internal" href="../enums.html#Gtk.SelectionMode.SINGLE" title="Gtk.SelectionMode.SINGLE"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.SelectionMode.SINGLE</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.EXPLICIT_NOTIFY" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EXPLICIT_NOTIFY</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The selection mode used by the flow  box.</p>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div> 
+
+</body>
+</html>

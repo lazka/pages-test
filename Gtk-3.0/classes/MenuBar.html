@@ -1,0 +1,733 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    Gtk.MenuBar -
+    
+      Classes -
+    
+    Gtk 3.0
+  </title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/css/pgi.css" type="text/css" />
+  
+
+  
+  <script type="text/javascript">
+
+    function openSidebar(element) {
+        window.location.href = element.href + location.hash;
+        return false;
+    }
+
+    function inIframe() {
+        try {
+            return window.self !== window.top;
+        } catch (e) {
+            return true;
+        }
+    }
+
+    function onLoaded() {
+        if(!inIframe()) {
+            var icons = document.getElementsByClassName('open-sidebar');
+
+            for (var i = 0; i < icons.length; i ++) {
+                icons[i].style.display = 'table-cell';
+            }
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', onLoaded, false);
+
+  </script>
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="Gtk 3.0 Python API Docs" href="../index.html"/>
+        <link rel="up" title="Classes" href="../classes.html"/>
+        <link rel="next" title="Gtk.MenuButton" href="MenuButton.html"/>
+        <link rel="prev" title="Gtk.MenuAccessible" href="MenuAccessible.html"/> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+<div class="non-fixed-bar">
+<table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#Gtk-3.0/classes/MenuBar.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Gtk 3.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>Gtk.MenuBar</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="MenuAccessible.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="MenuButton.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">Gtk.MenuBar</a><ul>
+<li><a class="reference internal" href="#example">Example</a></li>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#style-properties">Style Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#property-details">Property Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+<div class="fixed-bar">
+  <table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#Gtk-3.0/classes/MenuBar.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Gtk 3.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>Gtk.MenuBar</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="MenuAccessible.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="MenuButton.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">Gtk.MenuBar</a><ul>
+<li><a class="reference internal" href="#example">Example</a></li>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#style-properties">Style Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#property-details">Property Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+  <div class="wy-grid-for-nav">
+
+    
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="main">
+            
+  <div class="section" id="gtk-menubar">
+<h1>Gtk.MenuBar<a class="headerlink" href="#gtk-menubar" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<svg width="348pt" height="296pt"
+ viewBox="0.00 0.00 348.00 296.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 292)">
+<title>g</title>
+<!-- Atk.ImplementorIface -->
+<g id="node1" class="node">
+<title>Atk.ImplementorIface</title>
+<g id="a_node1"><a xlink:href="../../Atk-1.0/classes/ImplementorIface.html#Atk.ImplementorIface" xlink:title="Atk.ImplementorIface">
+<path fill="none" stroke="#3091d1" d="M242,-234C242,-234 146,-234 146,-234 143,-234 140,-231 140,-228 140,-228 140,-222 140,-222 140,-219 143,-216 146,-216 146,-216 242,-216 242,-216 245,-216 248,-219 248,-222 248,-222 248,-228 248,-228 248,-231 245,-234 242,-234"/>
+<text text-anchor="middle" x="194" y="-222.7" font-family="inherit" font-size="8.50">Atk.ImplementorIface</text>
+</a>
+</g>
+</g>
+<!-- Gtk.Widget -->
+<g id="node9" class="node">
+<title>Gtk.Widget</title>
+<g id="a_node9"><a xlink:href="Widget.html#Gtk.Widget" xlink:title="Gtk.Widget">
+<path fill="none" stroke="#aaaaaa" d="M220,-180C220,-180 168,-180 168,-180 165,-180 162,-177 162,-174 162,-174 162,-168 162,-168 162,-165 165,-162 168,-162 168,-162 220,-162 220,-162 223,-162 226,-165 226,-168 226,-168 226,-174 226,-174 226,-177 223,-180 220,-180"/>
+<text text-anchor="middle" x="194" y="-168.7" font-family="inherit" font-size="8.50">Gtk.Widget</text>
+</a>
+</g>
+</g>
+<!-- Atk.ImplementorIface&#45;&gt;Gtk.Widget -->
+<g id="edge1" class="edge">
+<title>Atk.ImplementorIface&#45;&gt;Gtk.Widget</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M194,-215.88C194,-207.76 194,-195.13 194,-185.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="195.75,-185.24 194,-180.24 192.25,-185.24 195.75,-185.24"/>
+</g>
+<!-- GObject.GInterface -->
+<g id="node2" class="node">
+<title>GObject.GInterface</title>
+<g id="a_node2"><a xlink:href="../../GObject-2.0/classes/GInterface.html#GObject.GInterface" xlink:title="GObject.GInterface">
+<path fill="none" stroke="#3091d1" d="M291,-288C291,-288 205,-288 205,-288 202,-288 199,-285 199,-282 199,-282 199,-276 199,-276 199,-273 202,-270 205,-270 205,-270 291,-270 291,-270 294,-270 297,-273 297,-276 297,-276 297,-282 297,-282 297,-285 294,-288 291,-288"/>
+<text text-anchor="middle" x="248" y="-276.7" font-family="inherit" font-size="8.50">GObject.GInterface</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Atk.ImplementorIface -->
+<g id="edge2" class="edge">
+<title>GObject.GInterface&#45;&gt;Atk.ImplementorIface</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M239.56,-269.88C230.66,-261.3 216.54,-247.7 206.37,-237.91"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="207.37,-236.45 202.56,-234.24 204.94,-238.97 207.37,-236.45"/>
+</g>
+<!-- Gtk.Buildable -->
+<g id="node5" class="node">
+<title>Gtk.Buildable</title>
+<g id="a_node5"><a xlink:href="Buildable.html#Gtk.Buildable" xlink:title="Gtk.Buildable">
+<path fill="none" stroke="#3091d1" d="M334,-234C334,-234 272,-234 272,-234 269,-234 266,-231 266,-228 266,-228 266,-222 266,-222 266,-219 269,-216 272,-216 272,-216 334,-216 334,-216 337,-216 340,-219 340,-222 340,-222 340,-228 340,-228 340,-231 337,-234 334,-234"/>
+<text text-anchor="middle" x="303" y="-222.7" font-family="inherit" font-size="8.50">Gtk.Buildable</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Gtk.Buildable -->
+<g id="edge3" class="edge">
+<title>GObject.GInterface&#45;&gt;Gtk.Buildable</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M256.59,-269.88C265.66,-261.3 280.05,-247.7 290.4,-237.91"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="291.85,-238.95 294.29,-234.24 289.45,-236.4 291.85,-238.95"/>
+</g>
+<!-- GObject.InitiallyUnowned -->
+<g id="node3" class="node">
+<title>GObject.InitiallyUnowned</title>
+<g id="a_node3"><a xlink:href="../../GObject-2.0/classes/InitiallyUnowned.html#GObject.InitiallyUnowned" xlink:title="GObject.InitiallyUnowned">
+<path fill="none" stroke="#75507b" d="M116,-234C116,-234 6,-234 6,-234 3,-234 0,-231 0,-228 0,-228 0,-222 0,-222 0,-219 3,-216 6,-216 6,-216 116,-216 116,-216 119,-216 122,-219 122,-222 122,-222 122,-228 122,-228 122,-231 119,-234 116,-234"/>
+<text text-anchor="middle" x="61" y="-222.7" font-family="inherit" font-size="8.50">GObject.InitiallyUnowned</text>
+</a>
+</g>
+</g>
+<!-- GObject.InitiallyUnowned&#45;&gt;Gtk.Widget -->
+<g id="edge4" class="edge">
+<title>GObject.InitiallyUnowned&#45;&gt;Gtk.Widget</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M81.49,-215.99C104.85,-206.85 143.08,-191.91 168.39,-182.01"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="169.25,-183.56 173.27,-180.11 167.97,-180.3 169.25,-183.56"/>
+</g>
+<!-- GObject.Object -->
+<g id="node4" class="node">
+<title>GObject.Object</title>
+<g id="a_node4"><a xlink:href="../../GObject-2.0/classes/Object.html#GObject.Object" xlink:title="GObject.Object">
+<path fill="none" stroke="#75507b" d="M95,-288C95,-288 27,-288 27,-288 24,-288 21,-285 21,-282 21,-282 21,-276 21,-276 21,-273 24,-270 27,-270 27,-270 95,-270 95,-270 98,-270 101,-273 101,-276 101,-276 101,-282 101,-282 101,-285 98,-288 95,-288"/>
+<text text-anchor="middle" x="61" y="-276.7" font-family="inherit" font-size="8.50">GObject.Object</text>
+</a>
+</g>
+</g>
+<!-- GObject.Object&#45;&gt;GObject.InitiallyUnowned -->
+<g id="edge5" class="edge">
+<title>GObject.Object&#45;&gt;GObject.InitiallyUnowned</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M61,-269.88C61,-261.76 61,-249.13 61,-239.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="62.75,-239.24 61,-234.24 59.25,-239.24 62.75,-239.24"/>
+</g>
+<!-- Gtk.Buildable&#45;&gt;Gtk.Widget -->
+<g id="edge6" class="edge">
+<title>Gtk.Buildable&#45;&gt;Gtk.Widget</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M285.97,-215.88C267.01,-206.83 236.33,-192.19 215.67,-182.34"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="216.18,-180.64 210.91,-180.07 214.67,-183.8 216.18,-180.64"/>
+</g>
+<!-- Gtk.Container -->
+<g id="node6" class="node">
+<title>Gtk.Container</title>
+<g id="a_node6"><a xlink:href="Container.html#Gtk.Container" xlink:title="Gtk.Container">
+<path fill="none" stroke="#aaaaaa" d="M226,-126C226,-126 162,-126 162,-126 159,-126 156,-123 156,-120 156,-120 156,-114 156,-114 156,-111 159,-108 162,-108 162,-108 226,-108 226,-108 229,-108 232,-111 232,-114 232,-114 232,-120 232,-120 232,-123 229,-126 226,-126"/>
+<text text-anchor="middle" x="194" y="-114.7" font-family="inherit" font-size="8.50">Gtk.Container</text>
+</a>
+</g>
+</g>
+<!-- Gtk.MenuShell -->
+<g id="node8" class="node">
+<title>Gtk.MenuShell</title>
+<g id="a_node8"><a xlink:href="MenuShell.html#Gtk.MenuShell" xlink:title="Gtk.MenuShell">
+<path fill="none" stroke="#aaaaaa" d="M227,-72C227,-72 161,-72 161,-72 158,-72 155,-69 155,-66 155,-66 155,-60 155,-60 155,-57 158,-54 161,-54 161,-54 227,-54 227,-54 230,-54 233,-57 233,-60 233,-60 233,-66 233,-66 233,-69 230,-72 227,-72"/>
+<text text-anchor="middle" x="194" y="-60.7" font-family="inherit" font-size="8.50">Gtk.MenuShell</text>
+</a>
+</g>
+</g>
+<!-- Gtk.Container&#45;&gt;Gtk.MenuShell -->
+<g id="edge7" class="edge">
+<title>Gtk.Container&#45;&gt;Gtk.MenuShell</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M194,-107.88C194,-99.76 194,-87.13 194,-77.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="195.75,-77.24 194,-72.24 192.25,-77.24 195.75,-77.24"/>
+</g>
+<!-- Gtk.MenuBar -->
+<g id="node7" class="node">
+<title>Gtk.MenuBar</title>
+<g id="a_node7"><a xlink:href="#Gtk.MenuBar" xlink:title="Gtk.MenuBar">
+<path fill="none" stroke="#75507b" d="M224.5,-18C224.5,-18 163.5,-18 163.5,-18 160.5,-18 157.5,-15 157.5,-12 157.5,-12 157.5,-6 157.5,-6 157.5,-3 160.5,0 163.5,0 163.5,0 224.5,0 224.5,0 227.5,0 230.5,-3 230.5,-6 230.5,-6 230.5,-12 230.5,-12 230.5,-15 227.5,-18 224.5,-18"/>
+<text text-anchor="middle" x="194" y="-6.7" font-family="inherit" font-size="8.50">Gtk.MenuBar</text>
+</a>
+</g>
+</g>
+<!-- Gtk.MenuShell&#45;&gt;Gtk.MenuBar -->
+<g id="edge8" class="edge">
+<title>Gtk.MenuShell&#45;&gt;Gtk.MenuBar</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M194,-53.88C194,-45.76 194,-33.13 194,-23.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="195.75,-23.24 194,-18.24 192.25,-23.24 195.75,-23.24"/>
+</g>
+<!-- Gtk.Widget&#45;&gt;Gtk.Container -->
+<g id="edge9" class="edge">
+<title>Gtk.Widget&#45;&gt;Gtk.Container</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M194,-161.88C194,-153.76 194,-141.13 194,-131.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="195.75,-131.24 194,-126.24 192.25,-131.24 195.75,-131.24"/>
+</g>
+</g>
+</svg>
+</p>
+<div class="section" id="example">
+<h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
+<img alt="../_images/MenuBar.png" src="../_images/MenuBar.png" />
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Subclasses:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="methods">
+<span id="gtk-menubar-methods"></span><h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="MenuShell.html#gtk-menushell-methods"><span class="std std-ref">Gtk.MenuShell (14)</span></a>,     <a class="reference internal" href="Container.html#gtk-container-methods"><span class="std std-ref">Gtk.Container (35)</span></a>,     <a class="reference internal" href="Widget.html#gtk-widget-methods"><span class="std std-ref">Gtk.Widget (278)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (37)</span></a>,     <a class="reference internal" href="Buildable.html#gtk-buildable-methods"><span class="std std-ref">Gtk.Buildable (10)</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Structs:</th><td class="field-body"><a class="reference internal" href="ContainerClass.html#gtk-containerclass-methods"><span class="std std-ref">Gtk.ContainerClass (5)</span></a>,     <a class="reference internal" href="WidgetClass.html#gtk-widgetclass-methods"><span class="std std-ref">Gtk.WidgetClass (12)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/ObjectClass.html#gobject-objectclass-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.ObjectClass (5)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="99%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><em>class</em></td>
+<td><a class="reference internal" href="#Gtk.MenuBar.new" title="Gtk.MenuBar.new"><code class="xref py py-func docutils literal notranslate"><span class="pre">new</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td><em>class</em></td>
+<td><a class="reference internal" href="#Gtk.MenuBar.new_from_model" title="Gtk.MenuBar.new_from_model"><code class="xref py py-func docutils literal notranslate"><span class="pre">new_from_model</span></code></a> (model)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.MenuBar.get_child_pack_direction" title="Gtk.MenuBar.get_child_pack_direction"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_child_pack_direction</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.MenuBar.get_pack_direction" title="Gtk.MenuBar.get_pack_direction"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_pack_direction</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.MenuBar.set_child_pack_direction" title="Gtk.MenuBar.set_child_pack_direction"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_child_pack_direction</span></code></a> (child_pack_dir)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Gtk.MenuBar.set_pack_direction" title="Gtk.MenuBar.set_pack_direction"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_pack_direction</span></code></a> (pack_dir)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="virtual-methods">
+<span id="gtk-menubar-vfuncs"></span><h2>Virtual Methods<a class="headerlink" href="#virtual-methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="MenuShell.html#gtk-menushell-vfuncs"><span class="std std-ref">Gtk.MenuShell (9)</span></a>,     <a class="reference internal" href="Container.html#gtk-container-vfuncs"><span class="std std-ref">Gtk.Container (10)</span></a>,     <a class="reference internal" href="Widget.html#gtk-widget-vfuncs"><span class="std std-ref">Gtk.Widget (82)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-vfuncs" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (7)</span></a>,     <a class="reference internal" href="Buildable.html#gtk-buildable-vfuncs"><span class="std std-ref">Gtk.Buildable (10)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="gtk-menubar-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="MenuShell.html#gtk-menushell-props"><span class="std std-ref">Gtk.MenuShell (1)</span></a>,     <a class="reference internal" href="Container.html#gtk-container-props"><span class="std std-ref">Gtk.Container (3)</span></a>,     <a class="reference internal" href="Widget.html#gtk-widget-props"><span class="std std-ref">Gtk.Widget (39)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="1%" />
+<col width="1%" />
+<col width="97%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Flags</th>
+<th class="head">Short Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="#Gtk.MenuBar.props.child_pack_direction" title="Gtk.MenuBar.props.child_pack_direction"><code class="xref py py-data docutils literal notranslate"><span class="pre">child-pack-direction</span></code></a></td>
+<td><a class="reference internal" href="../enums.html#Gtk.PackDirection" title="Gtk.PackDirection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.PackDirection</span></code></a></td>
+<td>r/w/en</td>
+<td>The child pack direction of the menubar</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#Gtk.MenuBar.props.pack_direction" title="Gtk.MenuBar.props.pack_direction"><code class="xref py py-data docutils literal notranslate"><span class="pre">pack-direction</span></code></a></td>
+<td><a class="reference internal" href="../enums.html#Gtk.PackDirection" title="Gtk.PackDirection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.PackDirection</span></code></a></td>
+<td>r/w/en</td>
+<td>The pack direction of the menubar</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="style-properties">
+<span id="gtk-menubar-style-props"></span><h2>Style Properties<a class="headerlink" href="#style-properties" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Widget.html#gtk-widget-style-props"><span class="std std-ref">Gtk.Widget (17)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="1%" />
+<col width="1%" />
+<col width="1%" />
+<col width="96%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Default</th>
+<th class="head">Flags</th>
+<th class="head">Short Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">internal-padding</span></code></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+<td><code class="docutils literal notranslate"><span class="pre">0</span></code></td>
+<td>d/r</td>
+<td>Amount of border space between the menubar shadow and the menu items <code class="docutils literal notranslate"><span class="pre">deprecated</span></code></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">shadow-type</span></code></td>
+<td><a class="reference internal" href="../enums.html#Gtk.ShadowType" title="Gtk.ShadowType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ShadowType</span></code></a></td>
+<td><a class="reference internal" href="../enums.html#Gtk.ShadowType.OUT" title="Gtk.ShadowType.OUT"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ShadowType.OUT</span></code></a></td>
+<td>d/r</td>
+<td>Style of bevel around the menubar <code class="docutils literal notranslate"><span class="pre">deprecated</span></code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="signals">
+<span id="gtk-menubar-signals"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="MenuShell.html#gtk-menushell-signals"><span class="std std-ref">Gtk.MenuShell (8)</span></a>,     <a class="reference internal" href="Container.html#gtk-container-signals"><span class="std std-ref">Gtk.Container (4)</span></a>,     <a class="reference internal" href="Widget.html#gtk-widget-signals"><span class="std std-ref">Gtk.Widget (69)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-signals" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fields">
+<span id="gtk-menubar-fields"></span><h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="MenuShell.html#gtk-menushell-fields"><span class="std std-ref">Gtk.MenuShell (8)</span></a>,     <a class="reference internal" href="Container.html#gtk-container-fields"><span class="std std-ref">Gtk.Container (4)</span></a>,     <a class="reference internal" href="Widget.html#gtk-widget-fields"><span class="std std-ref">Gtk.Widget (69)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-fields" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="16%" />
+<col width="1%" />
+<col width="1%" />
+<col width="82%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Access</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>menu_shell</td>
+<td><a class="reference internal" href="MenuShell.html#Gtk.MenuShell" title="Gtk.MenuShell"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.MenuShell</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="class-details">
+<h2>Class Details<a class="headerlink" href="#class-details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Gtk.MenuBar">
+<em class="property">class </em><code class="descclassname">Gtk.</code><code class="descname">MenuBar</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#Gtk.MenuBar" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Bases:</th><td class="field-body"><a class="reference internal" href="MenuShell.html#Gtk.MenuShell" title="Gtk.MenuShell"><code class="xref py py-class docutils literal notranslate"><span class="pre">Gtk.MenuShell</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Abstract:</th><td class="field-body">No</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Structure:</th><td class="field-body"><a class="reference internal" href="MenuBarClass.html#Gtk.MenuBarClass" title="Gtk.MenuBarClass"><code class="xref py py-class docutils literal notranslate"><span class="pre">Gtk.MenuBarClass</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The <a class="reference internal" href="#Gtk.MenuBar" title="Gtk.MenuBar"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.MenuBar</span></code></a> is a subclass of <a class="reference internal" href="MenuShell.html#Gtk.MenuShell" title="Gtk.MenuShell"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.MenuShell</span></code></a> which contains one or
+more <a class="reference internal" href="MenuItem.html#Gtk.MenuItem" title="Gtk.MenuItem"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.MenuItems</span></code></a>. The result is a standard menu bar which can hold
+many menu items.</p>
+<dl class="docutils">
+<dt>CSS nodes</dt>
+<dd></dd>
+</dl>
+<p><a class="reference internal" href="#Gtk.MenuBar" title="Gtk.MenuBar"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.MenuBar</span></code></a> has a single CSS node with name menubar.</p>
+<dl class="classmethod">
+<dt id="Gtk.MenuBar.new">
+<em class="property">classmethod </em><code class="descname">new</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkmenubar.c#L309"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.MenuBar.new" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the new menu bar, as a <a class="reference internal" href="Widget.html#Gtk.Widget" title="Gtk.Widget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Widget</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="Widget.html#Gtk.Widget" title="Gtk.Widget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Widget</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Creates a new <a class="reference internal" href="#Gtk.MenuBar" title="Gtk.MenuBar"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.MenuBar</span></code></a></p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="Gtk.MenuBar.new_from_model">
+<em class="property">classmethod </em><code class="descname">new_from_model</code><span class="sig-paren">(</span><em>model</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkmenubar.c#L999"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.MenuBar.new_from_model" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>model</strong> (<a class="reference external" href="../../Gio-2.0/classes/MenuModel.html#Gio.MenuModel" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.MenuModel</span></code></a>) – a <a class="reference external" href="../../Gio-2.0/classes/MenuModel.html#Gio.MenuModel" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.MenuModel</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a new <a class="reference internal" href="#Gtk.MenuBar" title="Gtk.MenuBar"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.MenuBar</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="Widget.html#Gtk.Widget" title="Gtk.Widget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Widget</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Creates a new <a class="reference internal" href="#Gtk.MenuBar" title="Gtk.MenuBar"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.MenuBar</span></code></a> and populates it with menu items
+and submenus according to <cite>model</cite>.</p>
+<p>The created menu items are connected to actions found in the
+<a class="reference internal" href="ApplicationWindow.html#Gtk.ApplicationWindow" title="Gtk.ApplicationWindow"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ApplicationWindow</span></code></a> to which the menu bar belongs - typically
+by means of being contained within the <a class="reference internal" href="ApplicationWindow.html#Gtk.ApplicationWindow" title="Gtk.ApplicationWindow"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.ApplicationWindows</span></code></a>
+widget hierarchy.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.4.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.MenuBar.get_child_pack_direction">
+<code class="descname">get_child_pack_direction</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkmenubar.c#L941"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.MenuBar.get_child_pack_direction" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the child pack direction</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#Gtk.PackDirection" title="Gtk.PackDirection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.PackDirection</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Retrieves the current child pack direction of the menubar.
+See <a class="reference internal" href="#Gtk.MenuBar.set_child_pack_direction" title="Gtk.MenuBar.set_child_pack_direction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.MenuBar.set_child_pack_direction</span></code></a>().</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.8.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.MenuBar.get_pack_direction">
+<code class="descname">get_pack_direction</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkmenubar.c#L888"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.MenuBar.get_pack_direction" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the pack direction</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#Gtk.PackDirection" title="Gtk.PackDirection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.PackDirection</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Retrieves the current pack direction of the menubar.
+See <a class="reference internal" href="#Gtk.MenuBar.set_pack_direction" title="Gtk.MenuBar.set_pack_direction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.MenuBar.set_pack_direction</span></code></a>().</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.8.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.MenuBar.set_child_pack_direction">
+<code class="descname">set_child_pack_direction</code><span class="sig-paren">(</span><em>child_pack_dir</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkmenubar.c#L960"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.MenuBar.set_child_pack_direction" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>child_pack_dir</strong> (<a class="reference internal" href="../enums.html#Gtk.PackDirection" title="Gtk.PackDirection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.PackDirection</span></code></a>) – a new <a class="reference internal" href="../enums.html#Gtk.PackDirection" title="Gtk.PackDirection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.PackDirection</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Sets how widgets should be packed inside the children of a menubar.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.8.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.MenuBar.set_pack_direction">
+<code class="descname">set_pack_direction</code><span class="sig-paren">(</span><em>pack_dir</em><span class="sig-paren">)</span><a class="reference external" href="https://gitlab.gnome.org/GNOME/gtk/blob/3.24.24/gtk/gtkmenubar.c#L907"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gtk.MenuBar.set_pack_direction" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>pack_dir</strong> (<a class="reference internal" href="../enums.html#Gtk.PackDirection" title="Gtk.PackDirection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.PackDirection</span></code></a>) – a new <a class="reference internal" href="../enums.html#Gtk.PackDirection" title="Gtk.PackDirection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.PackDirection</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Sets how items should be packed inside a menubar.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.8.</span></p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="property-details">
+<h2>Property Details<a class="headerlink" href="#property-details" title="Permalink to this headline">¶</a></h2>
+<dl class="data">
+<dt id="Gtk.MenuBar.props.child_pack_direction">
+<code class="descclassname">Gtk.MenuBar.props.</code><code class="descname">child_pack_direction</code><a class="headerlink" href="#Gtk.MenuBar.props.child_pack_direction" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">child-pack-direction</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../enums.html#Gtk.PackDirection" title="Gtk.PackDirection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.PackDirection</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference internal" href="../enums.html#Gtk.PackDirection.LTR" title="Gtk.PackDirection.LTR"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.PackDirection.LTR</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.EXPLICIT_NOTIFY" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EXPLICIT_NOTIFY</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The child pack direction of the menubar. It determines how
+the widgets contained in child menuitems are arranged.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.8.</span></p>
+</div>
+</dd></dl>
+
+<dl class="data">
+<dt id="Gtk.MenuBar.props.pack_direction">
+<code class="descclassname">Gtk.MenuBar.props.</code><code class="descname">pack_direction</code><a class="headerlink" href="#Gtk.MenuBar.props.pack_direction" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">pack-direction</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../enums.html#Gtk.PackDirection" title="Gtk.PackDirection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.PackDirection</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference internal" href="../enums.html#Gtk.PackDirection.LTR" title="Gtk.PackDirection.LTR"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.PackDirection.LTR</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.EXPLICIT_NOTIFY" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EXPLICIT_NOTIFY</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The pack direction of the menubar. It determines how
+menuitems are arranged in the menubar.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.8.</span></p>
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div> 
+
+</body>
+</html>

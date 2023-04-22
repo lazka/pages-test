@@ -1,0 +1,658 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    Anjuta.VcsStatusTreeView -
+    
+      Classes -
+    
+    Anjuta 3.0
+  </title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/css/pgi.css" type="text/css" />
+  
+
+  
+  <script type="text/javascript">
+
+    function openSidebar(element) {
+        window.location.href = element.href + location.hash;
+        return false;
+    }
+
+    function inIframe() {
+        try {
+            return window.self !== window.top;
+        } catch (e) {
+            return true;
+        }
+    }
+
+    function onLoaded() {
+        if(!inIframe()) {
+            var icons = document.getElementsByClassName('open-sidebar');
+
+            for (var i = 0; i < icons.length; i ++) {
+                icons[i].style.display = 'table-cell';
+            }
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', onLoaded, false);
+
+  </script>
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="Anjuta 3.0 Python API Docs" href="../index.html"/>
+        <link rel="up" title="Classes" href="../classes.html"/>
+        <link rel="next" title="Hierarchy" href="../hierarchy.html"/>
+        <link rel="prev" title="Anjuta.UI" href="UI.html"/> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+<div class="non-fixed-bar">
+<table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#Anjuta-3.0/classes/VcsStatusTreeView.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Anjuta 3.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>Anjuta.VcsStatusTreeView</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="UI.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="../hierarchy.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">Anjuta.VcsStatusTreeView</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#style-properties">Style Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#property-details">Property Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+<div class="fixed-bar">
+  <table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#Anjuta-3.0/classes/VcsStatusTreeView.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Anjuta 3.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>Anjuta.VcsStatusTreeView</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="UI.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="../hierarchy.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">Anjuta.VcsStatusTreeView</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#style-properties">Style Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#property-details">Property Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+  <div class="wy-grid-for-nav">
+
+    
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="main">
+            
+  <div class="section" id="anjuta-vcsstatustreeview">
+<h1>Anjuta.VcsStatusTreeView<a class="headerlink" href="#anjuta-vcsstatustreeview" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<svg width="371pt" height="296pt"
+ viewBox="0.00 0.00 370.50 296.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 292)">
+<title>g</title>
+<!-- Anjuta.VcsStatusTreeView -->
+<g id="node1" class="node">
+<title>Anjuta.VcsStatusTreeView</title>
+<g id="a_node1"><a xlink:href="#Anjuta.VcsStatusTreeView" xlink:title="Anjuta.VcsStatusTreeView">
+<path fill="none" stroke="#75507b" d="M146,-18C146,-18 33,-18 33,-18 30,-18 27,-15 27,-12 27,-12 27,-6 27,-6 27,-3 30,0 33,0 33,0 146,0 146,0 149,0 152,-3 152,-6 152,-6 152,-12 152,-12 152,-15 149,-18 146,-18"/>
+<text text-anchor="middle" x="89.5" y="-6.7" font-family="inherit" font-size="8.50">Anjuta.VcsStatusTreeView</text>
+</a>
+</g>
+</g>
+<!-- Atk.ImplementorIface -->
+<g id="node2" class="node">
+<title>Atk.ImplementorIface</title>
+<g id="a_node2"><a xlink:href="../../Atk-1.0/classes/ImplementorIface.html#Atk.ImplementorIface" xlink:title="Atk.ImplementorIface">
+<path fill="none" stroke="#3091d1" d="M216.5,-234C216.5,-234 120.5,-234 120.5,-234 117.5,-234 114.5,-231 114.5,-228 114.5,-228 114.5,-222 114.5,-222 114.5,-219 117.5,-216 120.5,-216 120.5,-216 216.5,-216 216.5,-216 219.5,-216 222.5,-219 222.5,-222 222.5,-222 222.5,-228 222.5,-228 222.5,-231 219.5,-234 216.5,-234"/>
+<text text-anchor="middle" x="168.5" y="-222.7" font-family="inherit" font-size="8.50">Atk.ImplementorIface</text>
+</a>
+</g>
+</g>
+<!-- Gtk.Widget -->
+<g id="node10" class="node">
+<title>Gtk.Widget</title>
+<g id="a_node10"><a xlink:href="../../Gtk-3.0/classes/Widget.html#Gtk.Widget" xlink:title="Gtk.Widget">
+<path fill="none" stroke="#aaaaaa" d="M172.5,-180C172.5,-180 120.5,-180 120.5,-180 117.5,-180 114.5,-177 114.5,-174 114.5,-174 114.5,-168 114.5,-168 114.5,-165 117.5,-162 120.5,-162 120.5,-162 172.5,-162 172.5,-162 175.5,-162 178.5,-165 178.5,-168 178.5,-168 178.5,-174 178.5,-174 178.5,-177 175.5,-180 172.5,-180"/>
+<text text-anchor="middle" x="146.5" y="-168.7" font-family="inherit" font-size="8.50">Gtk.Widget</text>
+</a>
+</g>
+</g>
+<!-- Atk.ImplementorIface&#45;&gt;Gtk.Widget -->
+<g id="edge1" class="edge">
+<title>Atk.ImplementorIface&#45;&gt;Gtk.Widget</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M165.06,-215.88C161.56,-207.6 156.09,-194.66 151.99,-184.97"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="153.55,-184.16 149.99,-180.24 150.32,-185.53 153.55,-184.16"/>
+</g>
+<!-- GObject.GInterface -->
+<g id="node3" class="node">
+<title>GObject.GInterface</title>
+<g id="a_node3"><a xlink:href="../../GObject-2.0/classes/GInterface.html#GObject.GInterface" xlink:title="GObject.GInterface">
+<path fill="none" stroke="#3091d1" d="M102.5,-288C102.5,-288 16.5,-288 16.5,-288 13.5,-288 10.5,-285 10.5,-282 10.5,-282 10.5,-276 10.5,-276 10.5,-273 13.5,-270 16.5,-270 16.5,-270 102.5,-270 102.5,-270 105.5,-270 108.5,-273 108.5,-276 108.5,-276 108.5,-282 108.5,-282 108.5,-285 105.5,-288 102.5,-288"/>
+<text text-anchor="middle" x="59.5" y="-276.7" font-family="inherit" font-size="8.50">GObject.GInterface</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Atk.ImplementorIface -->
+<g id="edge2" class="edge">
+<title>GObject.GInterface&#45;&gt;Atk.ImplementorIface</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M76.53,-269.88C95.49,-260.83 126.17,-246.19 146.83,-236.34"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="147.83,-237.8 151.59,-234.07 146.32,-234.64 147.83,-237.8"/>
+</g>
+<!-- Gtk.Buildable -->
+<g id="node6" class="node">
+<title>Gtk.Buildable</title>
+<g id="a_node6"><a xlink:href="../../Gtk-3.0/classes/Buildable.html#Gtk.Buildable" xlink:title="Gtk.Buildable">
+<path fill="none" stroke="#3091d1" d="M90.5,-234C90.5,-234 28.5,-234 28.5,-234 25.5,-234 22.5,-231 22.5,-228 22.5,-228 22.5,-222 22.5,-222 22.5,-219 25.5,-216 28.5,-216 28.5,-216 90.5,-216 90.5,-216 93.5,-216 96.5,-219 96.5,-222 96.5,-222 96.5,-228 96.5,-228 96.5,-231 93.5,-234 90.5,-234"/>
+<text text-anchor="middle" x="59.5" y="-222.7" font-family="inherit" font-size="8.50">Gtk.Buildable</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Gtk.Buildable -->
+<g id="edge3" class="edge">
+<title>GObject.GInterface&#45;&gt;Gtk.Buildable</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M59.5,-269.88C59.5,-261.76 59.5,-249.13 59.5,-239.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="61.25,-239.24 59.5,-234.24 57.75,-239.24 61.25,-239.24"/>
+</g>
+<!-- Gtk.Scrollable -->
+<g id="node8" class="node">
+<title>Gtk.Scrollable</title>
+<g id="a_node8"><a xlink:href="../../Gtk-3.0/classes/Scrollable.html#Gtk.Scrollable" xlink:title="Gtk.Scrollable">
+<path fill="none" stroke="#3091d1" d="M69,-180C69,-180 6,-180 6,-180 3,-180 0,-177 0,-174 0,-174 0,-168 0,-168 0,-165 3,-162 6,-162 6,-162 69,-162 69,-162 72,-162 75,-165 75,-168 75,-168 75,-174 75,-174 75,-177 72,-180 69,-180"/>
+<text text-anchor="middle" x="37.5" y="-168.7" font-family="inherit" font-size="8.50">Gtk.Scrollable</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Gtk.Scrollable -->
+<g id="edge4" class="edge">
+<title>GObject.GInterface&#45;&gt;Gtk.Scrollable</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M46.16,-269.76C35.08,-262.06 20.1,-249.45 13.5,-234 6.17,-216.84 17.68,-196.62 27.15,-184.05"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="28.54,-185.11 30.25,-180.1 25.79,-182.95 28.54,-185.11"/>
+</g>
+<!-- GObject.InitiallyUnowned -->
+<g id="node4" class="node">
+<title>GObject.InitiallyUnowned</title>
+<g id="a_node4"><a xlink:href="../../GObject-2.0/classes/InitiallyUnowned.html#GObject.InitiallyUnowned" xlink:title="GObject.InitiallyUnowned">
+<path fill="none" stroke="#75507b" d="M356.5,-234C356.5,-234 246.5,-234 246.5,-234 243.5,-234 240.5,-231 240.5,-228 240.5,-228 240.5,-222 240.5,-222 240.5,-219 243.5,-216 246.5,-216 246.5,-216 356.5,-216 356.5,-216 359.5,-216 362.5,-219 362.5,-222 362.5,-222 362.5,-228 362.5,-228 362.5,-231 359.5,-234 356.5,-234"/>
+<text text-anchor="middle" x="301.5" y="-222.7" font-family="inherit" font-size="8.50">GObject.InitiallyUnowned</text>
+</a>
+</g>
+</g>
+<!-- GObject.InitiallyUnowned&#45;&gt;Gtk.Widget -->
+<g id="edge5" class="edge">
+<title>GObject.InitiallyUnowned&#45;&gt;Gtk.Widget</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M277.62,-215.99C250.09,-206.75 204.84,-191.57 175.36,-181.68"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="175.7,-179.95 170.41,-180.02 174.59,-183.27 175.7,-179.95"/>
+</g>
+<!-- GObject.Object -->
+<g id="node5" class="node">
+<title>GObject.Object</title>
+<g id="a_node5"><a xlink:href="../../GObject-2.0/classes/Object.html#GObject.Object" xlink:title="GObject.Object">
+<path fill="none" stroke="#75507b" d="M335.5,-288C335.5,-288 267.5,-288 267.5,-288 264.5,-288 261.5,-285 261.5,-282 261.5,-282 261.5,-276 261.5,-276 261.5,-273 264.5,-270 267.5,-270 267.5,-270 335.5,-270 335.5,-270 338.5,-270 341.5,-273 341.5,-276 341.5,-276 341.5,-282 341.5,-282 341.5,-285 338.5,-288 335.5,-288"/>
+<text text-anchor="middle" x="301.5" y="-276.7" font-family="inherit" font-size="8.50">GObject.Object</text>
+</a>
+</g>
+</g>
+<!-- GObject.Object&#45;&gt;GObject.InitiallyUnowned -->
+<g id="edge6" class="edge">
+<title>GObject.Object&#45;&gt;GObject.InitiallyUnowned</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M301.5,-269.88C301.5,-261.76 301.5,-249.13 301.5,-239.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="303.25,-239.24 301.5,-234.24 299.75,-239.24 303.25,-239.24"/>
+</g>
+<!-- Gtk.Buildable&#45;&gt;Gtk.Widget -->
+<g id="edge7" class="edge">
+<title>Gtk.Buildable&#45;&gt;Gtk.Widget</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M73.09,-215.88C88.03,-206.95 112.09,-192.56 128.57,-182.72"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="129.61,-184.14 133,-180.07 127.81,-181.13 129.61,-184.14"/>
+</g>
+<!-- Gtk.Container -->
+<g id="node7" class="node">
+<title>Gtk.Container</title>
+<g id="a_node7"><a xlink:href="../../Gtk-3.0/classes/Container.html#Gtk.Container" xlink:title="Gtk.Container">
+<path fill="none" stroke="#aaaaaa" d="M162.5,-126C162.5,-126 98.5,-126 98.5,-126 95.5,-126 92.5,-123 92.5,-120 92.5,-120 92.5,-114 92.5,-114 92.5,-111 95.5,-108 98.5,-108 98.5,-108 162.5,-108 162.5,-108 165.5,-108 168.5,-111 168.5,-114 168.5,-114 168.5,-120 168.5,-120 168.5,-123 165.5,-126 162.5,-126"/>
+<text text-anchor="middle" x="130.5" y="-114.7" font-family="inherit" font-size="8.50">Gtk.Container</text>
+</a>
+</g>
+</g>
+<!-- Gtk.TreeView -->
+<g id="node9" class="node">
+<title>Gtk.TreeView</title>
+<g id="a_node9"><a xlink:href="../../Gtk-3.0/classes/TreeView.html#Gtk.TreeView" xlink:title="Gtk.TreeView">
+<path fill="none" stroke="#75507b" d="M119.5,-72C119.5,-72 59.5,-72 59.5,-72 56.5,-72 53.5,-69 53.5,-66 53.5,-66 53.5,-60 53.5,-60 53.5,-57 56.5,-54 59.5,-54 59.5,-54 119.5,-54 119.5,-54 122.5,-54 125.5,-57 125.5,-60 125.5,-60 125.5,-66 125.5,-66 125.5,-69 122.5,-72 119.5,-72"/>
+<text text-anchor="middle" x="89.5" y="-60.7" font-family="inherit" font-size="8.50">Gtk.TreeView</text>
+</a>
+</g>
+</g>
+<!-- Gtk.Container&#45;&gt;Gtk.TreeView -->
+<g id="edge8" class="edge">
+<title>Gtk.Container&#45;&gt;Gtk.TreeView</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M124.09,-107.88C117.39,-99.38 106.8,-85.94 99.1,-76.18"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="100.47,-75.08 96,-72.24 97.72,-77.25 100.47,-75.08"/>
+</g>
+<!-- Gtk.Scrollable&#45;&gt;Gtk.TreeView -->
+<g id="edge9" class="edge">
+<title>Gtk.Scrollable&#45;&gt;Gtk.TreeView</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M41.58,-161.68C50.62,-143.26 72.37,-98.91 83.18,-76.88"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="84.81,-77.54 85.44,-72.28 81.67,-76 84.81,-77.54"/>
+</g>
+<!-- Gtk.TreeView&#45;&gt;Anjuta.VcsStatusTreeView -->
+<g id="edge10" class="edge">
+<title>Gtk.TreeView&#45;&gt;Anjuta.VcsStatusTreeView</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M89.5,-53.88C89.5,-45.76 89.5,-33.13 89.5,-23.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="91.25,-23.24 89.5,-18.24 87.75,-23.24 91.25,-23.24"/>
+</g>
+<!-- Gtk.Widget&#45;&gt;Gtk.Container -->
+<g id="edge11" class="edge">
+<title>Gtk.Widget&#45;&gt;Gtk.Container</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M144,-161.88C141.48,-153.68 137.54,-140.89 134.57,-131.24"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="136.18,-130.5 133.04,-126.24 132.83,-131.53 136.18,-130.5"/>
+</g>
+</g>
+</svg>
+</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Subclasses:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="methods">
+<span id="anjuta-vcsstatustreeview-methods"></span><h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../Gtk-3.0/classes/TreeView.html#gtk-treeview-methods" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.TreeView (98)</span></a>,     <a class="reference external" href="../../Gtk-3.0/classes/Container.html#gtk-container-methods" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.Container (35)</span></a>,     <a class="reference external" href="../../Gtk-3.0/classes/Widget.html#gtk-widget-methods" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.Widget (278)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (37)</span></a>,     <a class="reference external" href="../../Gtk-3.0/classes/Buildable.html#gtk-buildable-methods" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.Buildable (10)</span></a>,     <a class="reference external" href="../../Gtk-3.0/classes/Scrollable.html#gtk-scrollable-methods" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.Scrollable (9)</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Structs:</th><td class="field-body"><a class="reference external" href="../../Gtk-3.0/classes/ContainerClass.html#gtk-containerclass-methods" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.ContainerClass (5)</span></a>,     <a class="reference external" href="../../Gtk-3.0/classes/WidgetClass.html#gtk-widgetclass-methods" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.WidgetClass (12)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/ObjectClass.html#gobject-objectclass-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.ObjectClass (5)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="99%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><em>class</em></td>
+<td><a class="reference internal" href="#Anjuta.VcsStatusTreeView.new" title="Anjuta.VcsStatusTreeView.new"><code class="xref py py-func docutils literal notranslate"><span class="pre">new</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Anjuta.VcsStatusTreeView.add" title="Anjuta.VcsStatusTreeView.add"><code class="xref py py-func docutils literal notranslate"><span class="pre">add</span></code></a> (path, status, selected)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Anjuta.VcsStatusTreeView.destroy" title="Anjuta.VcsStatusTreeView.destroy"><code class="xref py py-func docutils literal notranslate"><span class="pre">destroy</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Anjuta.VcsStatusTreeView.select_all" title="Anjuta.VcsStatusTreeView.select_all"><code class="xref py py-func docutils literal notranslate"><span class="pre">select_all</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Anjuta.VcsStatusTreeView.unselect_all" title="Anjuta.VcsStatusTreeView.unselect_all"><code class="xref py py-func docutils literal notranslate"><span class="pre">unselect_all</span></code></a> ()</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="virtual-methods">
+<span id="anjuta-vcsstatustreeview-vfuncs"></span><h2>Virtual Methods<a class="headerlink" href="#virtual-methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../Gtk-3.0/classes/TreeView.html#gtk-treeview-vfuncs" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.TreeView (15)</span></a>,     <a class="reference external" href="../../Gtk-3.0/classes/Container.html#gtk-container-vfuncs" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.Container (10)</span></a>,     <a class="reference external" href="../../Gtk-3.0/classes/Widget.html#gtk-widget-vfuncs" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.Widget (82)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-vfuncs" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (7)</span></a>,     <a class="reference external" href="../../Gtk-3.0/classes/Buildable.html#gtk-buildable-vfuncs" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.Buildable (10)</span></a>,     <a class="reference external" href="../../Gtk-3.0/classes/Scrollable.html#gtk-scrollable-vfuncs" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.Scrollable (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="anjuta-vcsstatustreeview-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../Gtk-3.0/classes/TreeView.html#gtk-treeview-props" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.TreeView (18)</span></a>,     <a class="reference external" href="../../Gtk-3.0/classes/Container.html#gtk-container-props" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.Container (3)</span></a>,     <a class="reference external" href="../../Gtk-3.0/classes/Widget.html#gtk-widget-props" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.Widget (39)</span></a>,     <a class="reference external" href="../../Gtk-3.0/classes/Scrollable.html#gtk-scrollable-props" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.Scrollable (4)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="1%" />
+<col width="1%" />
+<col width="97%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Flags</th>
+<th class="head">Short Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="#Anjuta.VcsStatusTreeView.props.conflicted_selectable" title="Anjuta.VcsStatusTreeView.props.conflicted_selectable"><code class="xref py py-data docutils literal notranslate"><span class="pre">conflicted-selectable</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+<td>r/w/co</td>
+<td>Allow/disallow the user to select Conflicted status items.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#Anjuta.VcsStatusTreeView.props.show_status" title="Anjuta.VcsStatusTreeView.props.show_status"><code class="xref py py-data docutils literal notranslate"><span class="pre">show-status</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+<td>r/w</td>
+<td>Show or hide status description</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#Anjuta.VcsStatusTreeView.props.status_codes" title="Anjuta.VcsStatusTreeView.props.status_codes"><code class="xref py py-data docutils literal notranslate"><span class="pre">status-codes</span></code></a></td>
+<td><a class="reference internal" href="../flags.html#Anjuta.VcsStatus" title="Anjuta.VcsStatus"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Anjuta.VcsStatus</span></code></a></td>
+<td>r/w/co</td>
+<td>Control which status codes are shown in the list.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="style-properties">
+<span id="anjuta-vcsstatustreeview-style-props"></span><h2>Style Properties<a class="headerlink" href="#style-properties" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../Gtk-3.0/classes/TreeView.html#gtk-treeview-style-props" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.TreeView (11)</span></a>,     <a class="reference external" href="../../Gtk-3.0/classes/Widget.html#gtk-widget-style-props" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.Widget (17)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="signals">
+<span id="anjuta-vcsstatustreeview-signals"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../Gtk-3.0/classes/TreeView.html#gtk-treeview-signals" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.TreeView (15)</span></a>,     <a class="reference external" href="../../Gtk-3.0/classes/Container.html#gtk-container-signals" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.Container (4)</span></a>,     <a class="reference external" href="../../Gtk-3.0/classes/Widget.html#gtk-widget-signals" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.Widget (69)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-signals" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fields">
+<span id="anjuta-vcsstatustreeview-fields"></span><h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../Gtk-3.0/classes/TreeView.html#gtk-treeview-fields" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.TreeView (15)</span></a>,     <a class="reference external" href="../../Gtk-3.0/classes/Container.html#gtk-container-fields" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.Container (4)</span></a>,     <a class="reference external" href="../../Gtk-3.0/classes/Widget.html#gtk-widget-fields" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.Widget (69)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-fields" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="16%" />
+<col width="1%" />
+<col width="1%" />
+<col width="82%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Access</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>parent_instance</td>
+<td><a class="reference external" href="../../Gtk-3.0/classes/TreeView.html#Gtk.TreeView" title="(in Gtk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.TreeView</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>priv</td>
+<td><a class="reference internal" href="VcsStatusTreeViewPriv.html#Anjuta.VcsStatusTreeViewPriv" title="Anjuta.VcsStatusTreeViewPriv"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Anjuta.VcsStatusTreeViewPriv</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="class-details">
+<h2>Class Details<a class="headerlink" href="#class-details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Anjuta.VcsStatusTreeView">
+<em class="property">class </em><code class="descclassname">Anjuta.</code><code class="descname">VcsStatusTreeView</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#Anjuta.VcsStatusTreeView" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Bases:</th><td class="field-body"><a class="reference external" href="../../Gtk-3.0/classes/TreeView.html#Gtk.TreeView" title="(in Gtk 3.0 v3.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Gtk.TreeView</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Abstract:</th><td class="field-body">No</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Structure:</th><td class="field-body"><a class="reference internal" href="VcsStatusTreeViewClass.html#Anjuta.VcsStatusTreeViewClass" title="Anjuta.VcsStatusTreeViewClass"><code class="xref py py-class docutils literal notranslate"><span class="pre">Anjuta.VcsStatusTreeViewClass</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<dl class="classmethod">
+<dt id="Anjuta.VcsStatusTreeView.new">
+<em class="property">classmethod </em><code class="descname">new</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Anjuta.VcsStatusTreeView.new" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="../../Gtk-3.0/classes/Widget.html#Gtk.Widget" title="(in Gtk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.Widget</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Anjuta.VcsStatusTreeView.add">
+<code class="descname">add</code><span class="sig-paren">(</span><em>path</em>, <em>status</em>, <em>selected</em><span class="sig-paren">)</span><a class="headerlink" href="#Anjuta.VcsStatusTreeView.add" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>path</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – </li>
+<li><strong>status</strong> (<a class="reference internal" href="../flags.html#Anjuta.VcsStatus" title="Anjuta.VcsStatus"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Anjuta.VcsStatus</span></code></a>) – </li>
+<li><strong>selected</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a>) – </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Anjuta.VcsStatusTreeView.destroy">
+<code class="descname">destroy</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Anjuta.VcsStatusTreeView.destroy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Anjuta.VcsStatusTreeView.select_all">
+<code class="descname">select_all</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Anjuta.VcsStatusTreeView.select_all" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Anjuta.VcsStatusTreeView.unselect_all">
+<code class="descname">unselect_all</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Anjuta.VcsStatusTreeView.unselect_all" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="property-details">
+<h2>Property Details<a class="headerlink" href="#property-details" title="Permalink to this headline">¶</a></h2>
+<dl class="data">
+<dt id="Anjuta.VcsStatusTreeView.props.conflicted_selectable">
+<code class="descclassname">Anjuta.VcsStatusTreeView.props.</code><code class="descname">conflicted_selectable</code><a class="headerlink" href="#Anjuta.VcsStatusTreeView.props.conflicted_selectable" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">conflicted-selectable</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.CONSTRUCT_ONLY" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CONSTRUCT_ONLY</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Allow/disallow the user to select Conflicted status items.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="Anjuta.VcsStatusTreeView.props.show_status">
+<code class="descclassname">Anjuta.VcsStatusTreeView.props.</code><code class="descname">show_status</code><a class="headerlink" href="#Anjuta.VcsStatusTreeView.props.show_status" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">show-status</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Show or hide status description</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="Anjuta.VcsStatusTreeView.props.status_codes">
+<code class="descclassname">Anjuta.VcsStatusTreeView.props.</code><code class="descname">status_codes</code><a class="headerlink" href="#Anjuta.VcsStatusTreeView.props.status_codes" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">status-codes</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../flags.html#Anjuta.VcsStatus" title="Anjuta.VcsStatus"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Anjuta.VcsStatus</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference internal" href="../flags.html#Anjuta.VcsStatus.MODIFIED" title="Anjuta.VcsStatus.MODIFIED"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Anjuta.VcsStatus.MODIFIED</span></code></a> | <a class="reference internal" href="../flags.html#Anjuta.VcsStatus.ADDED" title="Anjuta.VcsStatus.ADDED"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Anjuta.VcsStatus.ADDED</span></code></a> | <a class="reference internal" href="../flags.html#Anjuta.VcsStatus.DELETED" title="Anjuta.VcsStatus.DELETED"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Anjuta.VcsStatus.DELETED</span></code></a> | <a class="reference internal" href="../flags.html#Anjuta.VcsStatus.CONFLICTED" title="Anjuta.VcsStatus.CONFLICTED"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Anjuta.VcsStatus.CONFLICTED</span></code></a> | <a class="reference internal" href="../flags.html#Anjuta.VcsStatus.ALL" title="Anjuta.VcsStatus.ALL"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Anjuta.VcsStatus.ALL</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.CONSTRUCT_ONLY" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CONSTRUCT_ONLY</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Control which status codes are shown in the list.</p>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div> 
+
+</body>
+</html>

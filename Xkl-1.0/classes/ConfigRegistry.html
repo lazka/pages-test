@@ -1,0 +1,783 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    Xkl.ConfigRegistry -
+    
+      Classes -
+    
+    Xkl 1.0
+  </title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/css/pgi.css" type="text/css" />
+  
+
+  
+  <script type="text/javascript">
+
+    function openSidebar(element) {
+        window.location.href = element.href + location.hash;
+        return false;
+    }
+
+    function inIframe() {
+        try {
+            return window.self !== window.top;
+        } catch (e) {
+            return true;
+        }
+    }
+
+    function onLoaded() {
+        if(!inIframe()) {
+            var icons = document.getElementsByClassName('open-sidebar');
+
+            for (var i = 0; i < icons.length; i ++) {
+                icons[i].style.display = 'table-cell';
+            }
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', onLoaded, false);
+
+  </script>
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="Xkl 1.0 Python API Docs" href="../index.html"/>
+        <link rel="up" title="Classes" href="../classes.html"/>
+        <link rel="next" title="Xkl.Engine" href="Engine.html"/>
+        <link rel="prev" title="Xkl.ConfigRec" href="ConfigRec.html"/> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+<div class="non-fixed-bar">
+<table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#Xkl-1.0/classes/ConfigRegistry.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Xkl 1.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>Xkl.ConfigRegistry</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="ConfigRec.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="Engine.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">Xkl.ConfigRegistry</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#property-details">Property Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+<div class="fixed-bar">
+  <table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#Xkl-1.0/classes/ConfigRegistry.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Xkl 1.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>Xkl.ConfigRegistry</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="ConfigRec.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="Engine.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">Xkl.ConfigRegistry</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#property-details">Property Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+  <div class="wy-grid-for-nav">
+
+    
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="main">
+            
+  <div class="section" id="xkl-configregistry">
+<h1>Xkl.ConfigRegistry<a class="headerlink" href="#xkl-configregistry" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<svg width="103pt" height="80pt"
+ viewBox="0.00 0.00 103.00 80.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 76)">
+<title>g</title>
+<!-- GObject.Object -->
+<g id="node1" class="node">
+<title>GObject.Object</title>
+<g id="a_node1"><a xlink:href="../../GObject-2.0/classes/Object.html#GObject.Object" xlink:title="GObject.Object">
+<path fill="none" stroke="#75507b" d="M81.5,-72C81.5,-72 13.5,-72 13.5,-72 10.5,-72 7.5,-69 7.5,-66 7.5,-66 7.5,-60 7.5,-60 7.5,-57 10.5,-54 13.5,-54 13.5,-54 81.5,-54 81.5,-54 84.5,-54 87.5,-57 87.5,-60 87.5,-60 87.5,-66 87.5,-66 87.5,-69 84.5,-72 81.5,-72"/>
+<text text-anchor="middle" x="47.5" y="-60.7" font-family="inherit" font-size="8.50">GObject.Object</text>
+</a>
+</g>
+</g>
+<!-- Xkl.ConfigRegistry -->
+<g id="node2" class="node">
+<title>Xkl.ConfigRegistry</title>
+<g id="a_node2"><a xlink:href="#Xkl.ConfigRegistry" xlink:title="Xkl.ConfigRegistry">
+<path fill="none" stroke="#75507b" d="M89,-18C89,-18 6,-18 6,-18 3,-18 0,-15 0,-12 0,-12 0,-6 0,-6 0,-3 3,0 6,0 6,0 89,0 89,0 92,0 95,-3 95,-6 95,-6 95,-12 95,-12 95,-15 92,-18 89,-18"/>
+<text text-anchor="middle" x="47.5" y="-6.7" font-family="inherit" font-size="8.50">Xkl.ConfigRegistry</text>
+</a>
+</g>
+</g>
+<!-- GObject.Object&#45;&gt;Xkl.ConfigRegistry -->
+<g id="edge1" class="edge">
+<title>GObject.Object&#45;&gt;Xkl.ConfigRegistry</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M47.5,-53.88C47.5,-45.76 47.5,-33.13 47.5,-23.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="49.25,-23.24 47.5,-18.24 45.75,-23.24 49.25,-23.24"/>
+</g>
+</g>
+</svg>
+</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Subclasses:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="methods">
+<span id="xkl-configregistry-methods"></span><h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (37)</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Structs:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/ObjectClass.html#gobject-objectclass-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.ObjectClass (5)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="99%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><em>class</em></td>
+<td><a class="reference internal" href="#Xkl.ConfigRegistry.get_instance" title="Xkl.ConfigRegistry.get_instance"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_instance</span></code></a> (engine)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Xkl.ConfigRegistry.find_layout" title="Xkl.ConfigRegistry.find_layout"><code class="xref py py-func docutils literal notranslate"><span class="pre">find_layout</span></code></a> (item)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Xkl.ConfigRegistry.find_model" title="Xkl.ConfigRegistry.find_model"><code class="xref py py-func docutils literal notranslate"><span class="pre">find_model</span></code></a> (item)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Xkl.ConfigRegistry.find_option" title="Xkl.ConfigRegistry.find_option"><code class="xref py py-func docutils literal notranslate"><span class="pre">find_option</span></code></a> (option_group_name, item)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Xkl.ConfigRegistry.find_option_group" title="Xkl.ConfigRegistry.find_option_group"><code class="xref py py-func docutils literal notranslate"><span class="pre">find_option_group</span></code></a> (item)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Xkl.ConfigRegistry.find_variant" title="Xkl.ConfigRegistry.find_variant"><code class="xref py py-func docutils literal notranslate"><span class="pre">find_variant</span></code></a> (layout_name, item)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Xkl.ConfigRegistry.foreach_country" title="Xkl.ConfigRegistry.foreach_country"><code class="xref py py-func docutils literal notranslate"><span class="pre">foreach_country</span></code></a> (func, *data)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Xkl.ConfigRegistry.foreach_country_variant" title="Xkl.ConfigRegistry.foreach_country_variant"><code class="xref py py-func docutils literal notranslate"><span class="pre">foreach_country_variant</span></code></a> (country_code, func, *data)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Xkl.ConfigRegistry.foreach_language" title="Xkl.ConfigRegistry.foreach_language"><code class="xref py py-func docutils literal notranslate"><span class="pre">foreach_language</span></code></a> (func, *data)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Xkl.ConfigRegistry.foreach_language_variant" title="Xkl.ConfigRegistry.foreach_language_variant"><code class="xref py py-func docutils literal notranslate"><span class="pre">foreach_language_variant</span></code></a> (language_code, func, *data)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Xkl.ConfigRegistry.foreach_layout" title="Xkl.ConfigRegistry.foreach_layout"><code class="xref py py-func docutils literal notranslate"><span class="pre">foreach_layout</span></code></a> (func, *data)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Xkl.ConfigRegistry.foreach_layout_variant" title="Xkl.ConfigRegistry.foreach_layout_variant"><code class="xref py py-func docutils literal notranslate"><span class="pre">foreach_layout_variant</span></code></a> (layout_name, func, *data)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Xkl.ConfigRegistry.foreach_model" title="Xkl.ConfigRegistry.foreach_model"><code class="xref py py-func docutils literal notranslate"><span class="pre">foreach_model</span></code></a> (func, *data)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Xkl.ConfigRegistry.foreach_option" title="Xkl.ConfigRegistry.foreach_option"><code class="xref py py-func docutils literal notranslate"><span class="pre">foreach_option</span></code></a> (option_group_name, func, *data)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Xkl.ConfigRegistry.foreach_option_group" title="Xkl.ConfigRegistry.foreach_option_group"><code class="xref py py-func docutils literal notranslate"><span class="pre">foreach_option_group</span></code></a> (func, *data)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Xkl.ConfigRegistry.load" title="Xkl.ConfigRegistry.load"><code class="xref py py-func docutils literal notranslate"><span class="pre">load</span></code></a> (if_extras_needed)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Xkl.ConfigRegistry.search_by_pattern" title="Xkl.ConfigRegistry.search_by_pattern"><code class="xref py py-func docutils literal notranslate"><span class="pre">search_by_pattern</span></code></a> (pattern, func, *data)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="virtual-methods">
+<span id="xkl-configregistry-vfuncs"></span><h2>Virtual Methods<a class="headerlink" href="#virtual-methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-vfuncs" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (7)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="xkl-configregistry-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="1%" />
+<col width="1%" />
+<col width="97%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Flags</th>
+<th class="head">Short Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="#Xkl.ConfigRegistry.props.engine" title="Xkl.ConfigRegistry.props.engine"><code class="xref py py-data docutils literal notranslate"><span class="pre">engine</span></code></a></td>
+<td><a class="reference internal" href="Engine.html#Xkl.Engine" title="Xkl.Engine"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Xkl.Engine</span></code></a></td>
+<td>r/w/co</td>
+<td><a class="reference internal" href="Engine.html#Xkl.Engine" title="Xkl.Engine"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Xkl.Engine</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="signals">
+<span id="xkl-configregistry-signals"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-signals" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fields">
+<span id="xkl-configregistry-fields"></span><h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-fields" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="16%" />
+<col width="1%" />
+<col width="1%" />
+<col width="82%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Access</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>parent</td>
+<td><a class="reference external" href="../../GObject-2.0/classes/Object.html#GObject.Object" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GObject.Object</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="class-details">
+<h2>Class Details<a class="headerlink" href="#class-details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Xkl.ConfigRegistry">
+<em class="property">class </em><code class="descclassname">Xkl.</code><code class="descname">ConfigRegistry</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#Xkl.ConfigRegistry" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Bases:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#GObject.Object" title="(in GObject 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GObject.Object</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Abstract:</th><td class="field-body">No</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Structure:</th><td class="field-body"><a class="reference internal" href="ConfigRegistryClass.html#Xkl.ConfigRegistryClass" title="Xkl.ConfigRegistryClass"><code class="xref py py-class docutils literal notranslate"><span class="pre">Xkl.ConfigRegistryClass</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<dl class="classmethod">
+<dt id="Xkl.ConfigRegistry.get_instance">
+<em class="property">classmethod </em><code class="descname">get_instance</code><span class="sig-paren">(</span><em>engine</em><span class="sig-paren">)</span><a class="headerlink" href="#Xkl.ConfigRegistry.get_instance" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>engine</strong> (<a class="reference internal" href="Engine.html#Xkl.Engine" title="Xkl.Engine"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Xkl.Engine</span></code></a>) – the engine to use for accessing X in all the operations
+(like accessing root window properties etc)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">new instance</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#Xkl.ConfigRegistry" title="Xkl.ConfigRegistry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Xkl.ConfigRegistry</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Create new XklConfig</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Xkl.ConfigRegistry.find_layout">
+<code class="descname">find_layout</code><span class="sig-paren">(</span><em>item</em><span class="sig-paren">)</span><a class="headerlink" href="#Xkl.ConfigRegistry.find_layout" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>item</strong> (<a class="reference internal" href="ConfigItem.html#Xkl.ConfigItem" title="Xkl.ConfigItem"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Xkl.ConfigItem</span></code></a>) – pointer to a <a class="reference internal" href="ConfigItem.html#Xkl.ConfigItem" title="Xkl.ConfigItem"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Xkl.ConfigItem</span></code></a> containing the name of the
+keyboard layout. On successfull return, the descriptions are filled.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if appropriate element was found and loaded</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Loads a keyboard layout information from the XML configuration registry.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Xkl.ConfigRegistry.find_model">
+<code class="descname">find_model</code><span class="sig-paren">(</span><em>item</em><span class="sig-paren">)</span><a class="headerlink" href="#Xkl.ConfigRegistry.find_model" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>item</strong> (<a class="reference internal" href="ConfigItem.html#Xkl.ConfigItem" title="Xkl.ConfigItem"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Xkl.ConfigItem</span></code></a>) – pointer to a <a class="reference internal" href="ConfigItem.html#Xkl.ConfigItem" title="Xkl.ConfigItem"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Xkl.ConfigItem</span></code></a> containing the name of the
+keyboard model. On successfull return, the descriptions are filled.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if appropriate element was found and loaded</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Loads a keyboard model information from the XML configuration registry.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Xkl.ConfigRegistry.find_option">
+<code class="descname">find_option</code><span class="sig-paren">(</span><em>option_group_name</em>, <em>item</em><span class="sig-paren">)</span><a class="headerlink" href="#Xkl.ConfigRegistry.find_option" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>option_group_name</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – name of the option group</li>
+<li><strong>item</strong> (<a class="reference internal" href="ConfigItem.html#Xkl.ConfigItem" title="Xkl.ConfigItem"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Xkl.ConfigItem</span></code></a>) – pointer to a <a class="reference internal" href="ConfigItem.html#Xkl.ConfigItem" title="Xkl.ConfigItem"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Xkl.ConfigItem</span></code></a> containing the name of the
+keyboard option. On successfull return, the descriptions are filled.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if appropriate element was found and loaded</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Loads a keyboard option information from the XML configuration
+registry.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Xkl.ConfigRegistry.find_option_group">
+<code class="descname">find_option_group</code><span class="sig-paren">(</span><em>item</em><span class="sig-paren">)</span><a class="headerlink" href="#Xkl.ConfigRegistry.find_option_group" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>item</strong> (<a class="reference internal" href="ConfigItem.html#Xkl.ConfigItem" title="Xkl.ConfigItem"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Xkl.ConfigItem</span></code></a>) – pointer to a <a class="reference internal" href="ConfigItem.html#Xkl.ConfigItem" title="Xkl.ConfigItem"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Xkl.ConfigItem</span></code></a> containing the name of the
+keyboard option group. On successfull return, the descriptions are filled.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if appropriate element was found and loaded</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Loads a keyboard option group information from the XML configuration
+registry.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Xkl.ConfigRegistry.find_variant">
+<code class="descname">find_variant</code><span class="sig-paren">(</span><em>layout_name</em>, <em>item</em><span class="sig-paren">)</span><a class="headerlink" href="#Xkl.ConfigRegistry.find_variant" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>layout_name</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – name of the parent layout</li>
+<li><strong>item</strong> (<a class="reference internal" href="ConfigItem.html#Xkl.ConfigItem" title="Xkl.ConfigItem"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Xkl.ConfigItem</span></code></a>) – pointer to a <a class="reference internal" href="ConfigItem.html#Xkl.ConfigItem" title="Xkl.ConfigItem"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Xkl.ConfigItem</span></code></a> containing the name of the
+keyboard layout variant. On successfull return, the descriptions are filled.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if appropriate element was found and loaded</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Loads a keyboard layout variant information from the XML configuration
+registry.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Xkl.ConfigRegistry.foreach_country">
+<code class="descname">foreach_country</code><span class="sig-paren">(</span><em>func</em>, <em>*data</em><span class="sig-paren">)</span><a class="headerlink" href="#Xkl.ConfigRegistry.foreach_country" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>func</strong> (<a class="reference internal" href="../callbacks.html#Xkl.ConfigItemProcessFunc" title="Xkl.ConfigItemProcessFunc"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Xkl.ConfigItemProcessFunc</span></code></a>) – callback to call for every ISO 3166 country code</li>
+<li><strong>data</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">object</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – anything which can be stored into the pointer</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Enumerates countries for which layouts are available,
+from the XML configuration registry</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Xkl.ConfigRegistry.foreach_country_variant">
+<code class="descname">foreach_country_variant</code><span class="sig-paren">(</span><em>country_code</em>, <em>func</em>, <em>*data</em><span class="sig-paren">)</span><a class="headerlink" href="#Xkl.ConfigRegistry.foreach_country_variant" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>country_code</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – country ISO code for which variants will be listed</li>
+<li><strong>func</strong> (<a class="reference internal" href="../callbacks.html#Xkl.TwoConfigItemsProcessFunc" title="Xkl.TwoConfigItemsProcessFunc"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Xkl.TwoConfigItemsProcessFunc</span></code></a>) – callback to call for every country variant</li>
+<li><strong>data</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">object</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – anything which can be stored into the pointer</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Enumerates keyboard layout variants for the country,
+from the XML configuration registry</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Xkl.ConfigRegistry.foreach_language">
+<code class="descname">foreach_language</code><span class="sig-paren">(</span><em>func</em>, <em>*data</em><span class="sig-paren">)</span><a class="headerlink" href="#Xkl.ConfigRegistry.foreach_language" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>func</strong> (<a class="reference internal" href="../callbacks.html#Xkl.ConfigItemProcessFunc" title="Xkl.ConfigItemProcessFunc"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Xkl.ConfigItemProcessFunc</span></code></a>) – callback to call for every ISO 639-2 country code</li>
+<li><strong>data</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">object</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – anything which can be stored into the pointer</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Enumerates languages for which layouts are available,
+from the XML configuration registry</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Xkl.ConfigRegistry.foreach_language_variant">
+<code class="descname">foreach_language_variant</code><span class="sig-paren">(</span><em>language_code</em>, <em>func</em>, <em>*data</em><span class="sig-paren">)</span><a class="headerlink" href="#Xkl.ConfigRegistry.foreach_language_variant" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>language_code</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – language ISO code for which variants will be listed</li>
+<li><strong>func</strong> (<a class="reference internal" href="../callbacks.html#Xkl.TwoConfigItemsProcessFunc" title="Xkl.TwoConfigItemsProcessFunc"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Xkl.TwoConfigItemsProcessFunc</span></code></a>) – callback to call for every country variant</li>
+<li><strong>data</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">object</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – anything which can be stored into the pointer</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Enumerates keyboard layout variants for the language,
+from the XML configuration registry</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Xkl.ConfigRegistry.foreach_layout">
+<code class="descname">foreach_layout</code><span class="sig-paren">(</span><em>func</em>, <em>*data</em><span class="sig-paren">)</span><a class="headerlink" href="#Xkl.ConfigRegistry.foreach_layout" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>func</strong> (<a class="reference internal" href="../callbacks.html#Xkl.ConfigItemProcessFunc" title="Xkl.ConfigItemProcessFunc"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Xkl.ConfigItemProcessFunc</span></code></a>) – callback to call for every layout</li>
+<li><strong>data</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">object</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – anything which can be stored into the pointer</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Enumerates keyboard layouts from the XML configuration registry</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Xkl.ConfigRegistry.foreach_layout_variant">
+<code class="descname">foreach_layout_variant</code><span class="sig-paren">(</span><em>layout_name</em>, <em>func</em>, <em>*data</em><span class="sig-paren">)</span><a class="headerlink" href="#Xkl.ConfigRegistry.foreach_layout_variant" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>layout_name</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – layout name for which variants will be listed</li>
+<li><strong>func</strong> (<a class="reference internal" href="../callbacks.html#Xkl.ConfigItemProcessFunc" title="Xkl.ConfigItemProcessFunc"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Xkl.ConfigItemProcessFunc</span></code></a>) – callback to call for every layout variant</li>
+<li><strong>data</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">object</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – anything which can be stored into the pointer</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Enumerates keyboard layout variants from the XML configuration registry</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Xkl.ConfigRegistry.foreach_model">
+<code class="descname">foreach_model</code><span class="sig-paren">(</span><em>func</em>, <em>*data</em><span class="sig-paren">)</span><a class="headerlink" href="#Xkl.ConfigRegistry.foreach_model" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>func</strong> (<a class="reference internal" href="../callbacks.html#Xkl.ConfigItemProcessFunc" title="Xkl.ConfigItemProcessFunc"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Xkl.ConfigItemProcessFunc</span></code></a>) – callback to call for every model</li>
+<li><strong>data</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">object</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – anything which can be stored into the pointer</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Enumerates keyboard models from the XML configuration registry</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Xkl.ConfigRegistry.foreach_option">
+<code class="descname">foreach_option</code><span class="sig-paren">(</span><em>option_group_name</em>, <em>func</em>, <em>*data</em><span class="sig-paren">)</span><a class="headerlink" href="#Xkl.ConfigRegistry.foreach_option" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>option_group_name</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – option group name for which variants
+will be listed</li>
+<li><strong>func</strong> (<a class="reference internal" href="../callbacks.html#Xkl.ConfigItemProcessFunc" title="Xkl.ConfigItemProcessFunc"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Xkl.ConfigItemProcessFunc</span></code></a>) – callback to call for every option</li>
+<li><strong>data</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">object</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – anything which can be stored into the pointer</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Enumerates keyboard options from the XML configuration registry</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Xkl.ConfigRegistry.foreach_option_group">
+<code class="descname">foreach_option_group</code><span class="sig-paren">(</span><em>func</em>, <em>*data</em><span class="sig-paren">)</span><a class="headerlink" href="#Xkl.ConfigRegistry.foreach_option_group" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>func</strong> (<a class="reference internal" href="../callbacks.html#Xkl.ConfigItemProcessFunc" title="Xkl.ConfigItemProcessFunc"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Xkl.ConfigItemProcessFunc</span></code></a>) – callback to call for every option group</li>
+<li><strong>data</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">object</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – anything which can be stored into the pointer</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Enumerates keyboard option groups from the XML configuration registry</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Xkl.ConfigRegistry.load">
+<code class="descname">load</code><span class="sig-paren">(</span><em>if_extras_needed</em><span class="sig-paren">)</span><a class="headerlink" href="#Xkl.ConfigRegistry.load" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>if_extras_needed</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a>) – whether exotic materials (layouts, options)
+should be loaded as well</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> on success</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Loads XML configuration registry. The name is taken from X server
+(for XKB/libxkbfile, from the root window property)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Xkl.ConfigRegistry.search_by_pattern">
+<code class="descname">search_by_pattern</code><span class="sig-paren">(</span><em>pattern</em>, <em>func</em>, <em>*data</em><span class="sig-paren">)</span><a class="headerlink" href="#Xkl.ConfigRegistry.search_by_pattern" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>pattern</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – pattern to search for (<a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> means “all”)</li>
+<li><strong>func</strong> (<a class="reference internal" href="../callbacks.html#Xkl.TwoConfigItemsProcessFunc" title="Xkl.TwoConfigItemsProcessFunc"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Xkl.TwoConfigItemsProcessFunc</span></code></a>) – callback to call for every matching layout/variant</li>
+<li><strong>data</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">object</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – anything which can be stored into the pointer</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Enumerates keyboard layout/variants that match the pattern.
+The layout/variant is considered as matching if one of the following
+is true:</p>
+<p>Country description (from the country list or name) contains pattern as substring</p>
+<p>Language description (from the language list or name) contains pattern as substring</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="property-details">
+<h2>Property Details<a class="headerlink" href="#property-details" title="Permalink to this headline">¶</a></h2>
+<dl class="data">
+<dt id="Xkl.ConfigRegistry.props.engine">
+<code class="descclassname">Xkl.ConfigRegistry.props.</code><code class="descname">engine</code><a class="headerlink" href="#Xkl.ConfigRegistry.props.engine" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">engine</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="Engine.html#Xkl.Engine" title="Xkl.Engine"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Xkl.Engine</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.CONSTRUCT_ONLY" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CONSTRUCT_ONLY</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p><a class="reference internal" href="Engine.html#Xkl.Engine" title="Xkl.Engine"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Xkl.Engine</span></code></a></p>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div> 
+
+</body>
+</html>

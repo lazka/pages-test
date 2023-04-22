@@ -1,0 +1,508 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    Gdm.RemoteGreeterProxy -
+    
+      Classes -
+    
+    Gdm 1.0
+  </title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/css/pgi.css" type="text/css" />
+  
+
+  
+  <script type="text/javascript">
+
+    function openSidebar(element) {
+        window.location.href = element.href + location.hash;
+        return false;
+    }
+
+    function inIframe() {
+        try {
+            return window.self !== window.top;
+        } catch (e) {
+            return true;
+        }
+    }
+
+    function onLoaded() {
+        if(!inIframe()) {
+            var icons = document.getElementsByClassName('open-sidebar');
+
+            for (var i = 0; i < icons.length; i ++) {
+                icons[i].style.display = 'table-cell';
+            }
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', onLoaded, false);
+
+  </script>
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="Gdm 1.0 Python API Docs" href="../index.html"/>
+        <link rel="up" title="Classes" href="../classes.html"/>
+        <link rel="next" title="Gdm.RemoteGreeterSkeleton" href="RemoteGreeterSkeleton.html"/>
+        <link rel="prev" title="Gdm.ManagerSkeleton" href="ManagerSkeleton.html"/> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+<div class="non-fixed-bar">
+<table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#Gdm-1.0/classes/RemoteGreeterProxy.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Gdm 1.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>Gdm.RemoteGreeterProxy</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="ManagerSkeleton.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="RemoteGreeterSkeleton.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">Gdm.RemoteGreeterProxy</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+<div class="fixed-bar">
+  <table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#Gdm-1.0/classes/RemoteGreeterProxy.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Gdm 1.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>Gdm.RemoteGreeterProxy</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="ManagerSkeleton.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="RemoteGreeterSkeleton.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">Gdm.RemoteGreeterProxy</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+  <div class="wy-grid-for-nav">
+
+    
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="main">
+            
+  <div class="section" id="gdm-remotegreeterproxy">
+<h1>Gdm.RemoteGreeterProxy<a class="headerlink" href="#gdm-remotegreeterproxy" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<svg width="435pt" height="188pt"
+ viewBox="0.00 0.00 435.00 188.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 184)">
+<title>g</title>
+<!-- GObject.GInterface -->
+<g id="node1" class="node">
+<title>GObject.GInterface</title>
+<g id="a_node1"><a xlink:href="../../GObject-2.0/classes/GInterface.html#GObject.GInterface" xlink:title="GObject.GInterface">
+<path fill="none" stroke="#3091d1" d="M186,-180C186,-180 100,-180 100,-180 97,-180 94,-177 94,-174 94,-174 94,-168 94,-168 94,-165 97,-162 100,-162 100,-162 186,-162 186,-162 189,-162 192,-165 192,-168 192,-168 192,-174 192,-174 192,-177 189,-180 186,-180"/>
+<text text-anchor="middle" x="143" y="-168.7" font-family="inherit" font-size="8.50">GObject.GInterface</text>
+</a>
+</g>
+</g>
+<!-- Gdm.RemoteGreeter -->
+<g id="node3" class="node">
+<title>Gdm.RemoteGreeter</title>
+<g id="a_node3"><a xlink:href="RemoteGreeter.html#Gdm.RemoteGreeter" xlink:title="Gdm.RemoteGreeter">
+<path fill="none" stroke="#3091d1" d="M98,-72C98,-72 6,-72 6,-72 3,-72 0,-69 0,-66 0,-66 0,-60 0,-60 0,-57 3,-54 6,-54 6,-54 98,-54 98,-54 101,-54 104,-57 104,-60 104,-60 104,-66 104,-66 104,-69 101,-72 98,-72"/>
+<text text-anchor="middle" x="52" y="-60.7" font-family="inherit" font-size="8.50">Gdm.RemoteGreeter</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Gdm.RemoteGreeter -->
+<g id="edge4" class="edge">
+<title>GObject.GInterface&#45;&gt;Gdm.RemoteGreeter</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M93.87,-162.83C71.68,-156.87 47.47,-145.96 34,-126 23.75,-110.81 33.94,-89.73 42.64,-76.48"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="44.11,-77.42 45.5,-72.31 41.23,-75.44 44.11,-77.42"/>
+</g>
+<!-- Gio.AsyncInitable -->
+<g id="node5" class="node">
+<title>Gio.AsyncInitable</title>
+<g id="a_node5"><a xlink:href="../../Gio-2.0/classes/AsyncInitable.html#Gio.AsyncInitable" xlink:title="Gio.AsyncInitable">
+<path fill="none" stroke="#3091d1" d="M127,-126C127,-126 49,-126 49,-126 46,-126 43,-123 43,-120 43,-120 43,-114 43,-114 43,-111 46,-108 49,-108 49,-108 127,-108 127,-108 130,-108 133,-111 133,-114 133,-114 133,-120 133,-120 133,-123 130,-126 127,-126"/>
+<text text-anchor="middle" x="88" y="-114.7" font-family="inherit" font-size="8.50">Gio.AsyncInitable</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Gio.AsyncInitable -->
+<g id="edge1" class="edge">
+<title>GObject.GInterface&#45;&gt;Gio.AsyncInitable</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M134.41,-161.88C125.34,-153.3 110.95,-139.7 100.6,-129.91"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="101.55,-128.4 96.71,-126.24 99.15,-130.95 101.55,-128.4"/>
+</g>
+<!-- Gio.DBusInterface -->
+<g id="node6" class="node">
+<title>Gio.DBusInterface</title>
+<g id="a_node6"><a xlink:href="../../Gio-2.0/classes/DBusInterface.html#Gio.DBusInterface" xlink:title="Gio.DBusInterface">
+<path fill="none" stroke="#3091d1" d="M239,-126C239,-126 157,-126 157,-126 154,-126 151,-123 151,-120 151,-120 151,-114 151,-114 151,-111 154,-108 157,-108 157,-108 239,-108 239,-108 242,-108 245,-111 245,-114 245,-114 245,-120 245,-120 245,-123 242,-126 239,-126"/>
+<text text-anchor="middle" x="198" y="-114.7" font-family="inherit" font-size="8.50">Gio.DBusInterface</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Gio.DBusInterface -->
+<g id="edge2" class="edge">
+<title>GObject.GInterface&#45;&gt;Gio.DBusInterface</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M151.59,-161.88C160.66,-153.3 175.05,-139.7 185.4,-129.91"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="186.85,-130.95 189.29,-126.24 184.45,-128.4 186.85,-130.95"/>
+</g>
+<!-- Gio.Initable -->
+<g id="node8" class="node">
+<title>Gio.Initable</title>
+<g id="a_node8"><a xlink:href="../../Gio-2.0/classes/Initable.html#Gio.Initable" xlink:title="Gio.Initable">
+<path fill="none" stroke="#3091d1" d="M322.5,-126C322.5,-126 269.5,-126 269.5,-126 266.5,-126 263.5,-123 263.5,-120 263.5,-120 263.5,-114 263.5,-114 263.5,-111 266.5,-108 269.5,-108 269.5,-108 322.5,-108 322.5,-108 325.5,-108 328.5,-111 328.5,-114 328.5,-114 328.5,-120 328.5,-120 328.5,-123 325.5,-126 322.5,-126"/>
+<text text-anchor="middle" x="296" y="-114.7" font-family="inherit" font-size="8.50">Gio.Initable</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Gio.Initable -->
+<g id="edge3" class="edge">
+<title>GObject.GInterface&#45;&gt;Gio.Initable</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M166.57,-161.99C193.75,-152.75 238.41,-137.57 267.51,-127.68"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="268.23,-129.29 272.4,-126.02 267.11,-125.97 268.23,-129.29"/>
+</g>
+<!-- GObject.Object -->
+<g id="node2" class="node">
+<title>GObject.Object</title>
+<g id="a_node2"><a xlink:href="../../GObject-2.0/classes/Object.html#GObject.Object" xlink:title="GObject.Object">
+<path fill="none" stroke="#75507b" d="M421,-126C421,-126 353,-126 353,-126 350,-126 347,-123 347,-120 347,-120 347,-114 347,-114 347,-111 350,-108 353,-108 353,-108 421,-108 421,-108 424,-108 427,-111 427,-114 427,-114 427,-120 427,-120 427,-123 424,-126 421,-126"/>
+<text text-anchor="middle" x="387" y="-114.7" font-family="inherit" font-size="8.50">GObject.Object</text>
+</a>
+</g>
+</g>
+<!-- Gio.DBusProxy -->
+<g id="node7" class="node">
+<title>Gio.DBusProxy</title>
+<g id="a_node7"><a xlink:href="../../Gio-2.0/classes/DBusProxy.html#Gio.DBusProxy" xlink:title="Gio.DBusProxy">
+<path fill="none" stroke="#75507b" d="M232,-72C232,-72 164,-72 164,-72 161,-72 158,-69 158,-66 158,-66 158,-60 158,-60 158,-57 161,-54 164,-54 164,-54 232,-54 232,-54 235,-54 238,-57 238,-60 238,-60 238,-66 238,-66 238,-69 235,-72 232,-72"/>
+<text text-anchor="middle" x="198" y="-60.7" font-family="inherit" font-size="8.50">Gio.DBusProxy</text>
+</a>
+</g>
+</g>
+<!-- GObject.Object&#45;&gt;Gio.DBusProxy -->
+<g id="edge5" class="edge">
+<title>GObject.Object&#45;&gt;Gio.DBusProxy</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M357.88,-107.99C324.03,-98.68 268.22,-83.32 232.3,-73.44"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="232.44,-71.66 227.15,-72.02 231.51,-75.03 232.44,-71.66"/>
+</g>
+<!-- Gdm.RemoteGreeterProxy -->
+<g id="node4" class="node">
+<title>Gdm.RemoteGreeterProxy</title>
+<g id="a_node4"><a xlink:href="#Gdm.RemoteGreeterProxy" xlink:title="Gdm.RemoteGreeterProxy">
+<path fill="none" stroke="#75507b" d="M165,-18C165,-18 49,-18 49,-18 46,-18 43,-15 43,-12 43,-12 43,-6 43,-6 43,-3 46,0 49,0 49,0 165,0 165,0 168,0 171,-3 171,-6 171,-6 171,-12 171,-12 171,-15 168,-18 165,-18"/>
+<text text-anchor="middle" x="107" y="-6.7" font-family="inherit" font-size="8.50">Gdm.RemoteGreeterProxy</text>
+</a>
+</g>
+</g>
+<!-- Gdm.RemoteGreeter&#45;&gt;Gdm.RemoteGreeterProxy -->
+<g id="edge6" class="edge">
+<title>Gdm.RemoteGreeter&#45;&gt;Gdm.RemoteGreeterProxy</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M60.59,-53.88C69.66,-45.3 84.05,-31.7 94.4,-21.91"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="95.85,-22.95 98.29,-18.24 93.45,-20.4 95.85,-22.95"/>
+</g>
+<!-- Gio.AsyncInitable&#45;&gt;Gio.DBusProxy -->
+<g id="edge7" class="edge">
+<title>Gio.AsyncInitable&#45;&gt;Gio.DBusProxy</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M105.19,-107.88C124.4,-98.79 155.54,-84.07 176.39,-74.22"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="177.16,-75.79 180.93,-72.07 175.66,-72.62 177.16,-75.79"/>
+</g>
+<!-- Gio.DBusInterface&#45;&gt;Gio.DBusProxy -->
+<g id="edge8" class="edge">
+<title>Gio.DBusInterface&#45;&gt;Gio.DBusProxy</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M198,-107.88C198,-99.76 198,-87.13 198,-77.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="199.75,-77.24 198,-72.24 196.25,-77.24 199.75,-77.24"/>
+</g>
+<!-- Gio.DBusProxy&#45;&gt;Gdm.RemoteGreeterProxy -->
+<g id="edge9" class="edge">
+<title>Gio.DBusProxy&#45;&gt;Gdm.RemoteGreeterProxy</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M183.78,-53.88C168.15,-44.95 142.99,-30.56 125.75,-20.72"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="126.33,-19.03 121.12,-18.07 124.59,-22.07 126.33,-19.03"/>
+</g>
+<!-- Gio.Initable&#45;&gt;Gio.DBusProxy -->
+<g id="edge10" class="edge">
+<title>Gio.Initable&#45;&gt;Gio.DBusProxy</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M280.69,-107.88C263.71,-98.87 236.29,-84.32 217.72,-74.47"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="218.44,-72.87 213.2,-72.07 216.8,-75.96 218.44,-72.87"/>
+</g>
+</g>
+</svg>
+</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Subclasses:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="methods">
+<span id="gdm-remotegreeterproxy-methods"></span><h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../Gio-2.0/classes/DBusProxy.html#gio-dbusproxy-methods" title="(in Gio 2.0 v2.0)"><span class="xref std std-ref">Gio.DBusProxy (25)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (37)</span></a>,     <a class="reference external" href="../../Gio-2.0/classes/AsyncInitable.html#gio-asyncinitable-methods" title="(in Gio 2.0 v2.0)"><span class="xref std std-ref">Gio.AsyncInitable (4)</span></a>,     <a class="reference external" href="../../Gio-2.0/classes/DBusInterface.html#gio-dbusinterface-methods" title="(in Gio 2.0 v2.0)"><span class="xref std std-ref">Gio.DBusInterface (3)</span></a>,     <a class="reference external" href="../../Gio-2.0/classes/Initable.html#gio-initable-methods" title="(in Gio 2.0 v2.0)"><span class="xref std std-ref">Gio.Initable (2)</span></a>,     <a class="reference internal" href="RemoteGreeter.html#gdm-remotegreeter-methods"><span class="std std-ref">Gdm.RemoteGreeter (6)</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Structs:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/ObjectClass.html#gobject-objectclass-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.ObjectClass (5)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="99%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><em>class</em></td>
+<td><a class="reference internal" href="#Gdm.RemoteGreeterProxy.new" title="Gdm.RemoteGreeterProxy.new"><code class="xref py py-func docutils literal notranslate"><span class="pre">new</span></code></a> (connection, flags, name, object_path, cancellable, callback, *user_data)</td>
+</tr>
+<tr class="row-even"><td><em>class</em></td>
+<td><a class="reference internal" href="#Gdm.RemoteGreeterProxy.new_for_bus" title="Gdm.RemoteGreeterProxy.new_for_bus"><code class="xref py py-func docutils literal notranslate"><span class="pre">new_for_bus</span></code></a> (bus_type, flags, name, object_path, cancellable, callback, *user_data)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="virtual-methods">
+<span id="gdm-remotegreeterproxy-vfuncs"></span><h2>Virtual Methods<a class="headerlink" href="#virtual-methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../Gio-2.0/classes/DBusProxy.html#gio-dbusproxy-vfuncs" title="(in Gio 2.0 v2.0)"><span class="xref std std-ref">Gio.DBusProxy (2)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-vfuncs" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (7)</span></a>,     <a class="reference external" href="../../Gio-2.0/classes/AsyncInitable.html#gio-asyncinitable-vfuncs" title="(in Gio 2.0 v2.0)"><span class="xref std std-ref">Gio.AsyncInitable (2)</span></a>,     <a class="reference external" href="../../Gio-2.0/classes/DBusInterface.html#gio-dbusinterface-vfuncs" title="(in Gio 2.0 v2.0)"><span class="xref std std-ref">Gio.DBusInterface (3)</span></a>,     <a class="reference external" href="../../Gio-2.0/classes/Initable.html#gio-initable-vfuncs" title="(in Gio 2.0 v2.0)"><span class="xref std std-ref">Gio.Initable (1)</span></a>,     <a class="reference internal" href="RemoteGreeter.html#gdm-remotegreeter-vfuncs"><span class="std std-ref">Gdm.RemoteGreeter (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="gdm-remotegreeterproxy-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../Gio-2.0/classes/DBusProxy.html#gio-dbusproxy-props" title="(in Gio 2.0 v2.0)"><span class="xref std std-ref">Gio.DBusProxy (9)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="signals">
+<span id="gdm-remotegreeterproxy-signals"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../Gio-2.0/classes/DBusProxy.html#gio-dbusproxy-signals" title="(in Gio 2.0 v2.0)"><span class="xref std std-ref">Gio.DBusProxy (2)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-signals" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a>,     <a class="reference internal" href="RemoteGreeter.html#gdm-remotegreeter-signals"><span class="std std-ref">Gdm.RemoteGreeter (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fields">
+<span id="gdm-remotegreeterproxy-fields"></span><h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../Gio-2.0/classes/DBusProxy.html#gio-dbusproxy-fields" title="(in Gio 2.0 v2.0)"><span class="xref std std-ref">Gio.DBusProxy (2)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-fields" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a>,     <a class="reference internal" href="RemoteGreeter.html#gdm-remotegreeter-fields"><span class="std std-ref">Gdm.RemoteGreeter (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="16%" />
+<col width="1%" />
+<col width="1%" />
+<col width="82%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Access</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>parent_instance</td>
+<td><a class="reference external" href="../../Gio-2.0/classes/DBusProxy.html#Gio.DBusProxy" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.DBusProxy</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="class-details">
+<h2>Class Details<a class="headerlink" href="#class-details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Gdm.RemoteGreeterProxy">
+<em class="property">class </em><code class="descclassname">Gdm.</code><code class="descname">RemoteGreeterProxy</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#Gdm.RemoteGreeterProxy" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Bases:</th><td class="field-body"><a class="reference external" href="../../Gio-2.0/classes/DBusProxy.html#Gio.DBusProxy" title="(in Gio 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Gio.DBusProxy</span></code></a>,         <a class="reference internal" href="RemoteGreeter.html#Gdm.RemoteGreeter" title="Gdm.RemoteGreeter"><code class="xref py py-class docutils literal notranslate"><span class="pre">Gdm.RemoteGreeter</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Abstract:</th><td class="field-body">No</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Structure:</th><td class="field-body"><a class="reference internal" href="RemoteGreeterProxyClass.html#Gdm.RemoteGreeterProxyClass" title="Gdm.RemoteGreeterProxyClass"><code class="xref py py-class docutils literal notranslate"><span class="pre">Gdm.RemoteGreeterProxyClass</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<dl class="classmethod">
+<dt id="Gdm.RemoteGreeterProxy.new">
+<em class="property">classmethod </em><code class="descname">new</code><span class="sig-paren">(</span><em>connection</em>, <em>flags</em>, <em>name</em>, <em>object_path</em>, <em>cancellable</em>, <em>callback</em>, <em>*user_data</em><span class="sig-paren">)</span><a class="headerlink" href="#Gdm.RemoteGreeterProxy.new" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>connection</strong> (<a class="reference external" href="../../Gio-2.0/classes/DBusConnection.html#Gio.DBusConnection" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.DBusConnection</span></code></a>) – </li>
+<li><strong>flags</strong> (<a class="reference external" href="../../Gio-2.0/flags.html#Gio.DBusProxyFlags" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.DBusProxyFlags</span></code></a>) – </li>
+<li><strong>name</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – </li>
+<li><strong>object_path</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – </li>
+<li><strong>cancellable</strong> (<a class="reference external" href="../../Gio-2.0/classes/Cancellable.html#Gio.Cancellable" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Cancellable</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – </li>
+<li><strong>callback</strong> (<a class="reference external" href="../../Gio-2.0/callbacks.html#Gio.AsyncReadyCallback" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AsyncReadyCallback</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – </li>
+<li><strong>user_data</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">object</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="Gdm.RemoteGreeterProxy.new_for_bus">
+<em class="property">classmethod </em><code class="descname">new_for_bus</code><span class="sig-paren">(</span><em>bus_type</em>, <em>flags</em>, <em>name</em>, <em>object_path</em>, <em>cancellable</em>, <em>callback</em>, <em>*user_data</em><span class="sig-paren">)</span><a class="headerlink" href="#Gdm.RemoteGreeterProxy.new_for_bus" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>bus_type</strong> (<a class="reference external" href="../../Gio-2.0/enums.html#Gio.BusType" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.BusType</span></code></a>) – </li>
+<li><strong>flags</strong> (<a class="reference external" href="../../Gio-2.0/flags.html#Gio.DBusProxyFlags" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.DBusProxyFlags</span></code></a>) – </li>
+<li><strong>name</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – </li>
+<li><strong>object_path</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – </li>
+<li><strong>cancellable</strong> (<a class="reference external" href="../../Gio-2.0/classes/Cancellable.html#Gio.Cancellable" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Cancellable</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – </li>
+<li><strong>callback</strong> (<a class="reference external" href="../../Gio-2.0/callbacks.html#Gio.AsyncReadyCallback" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AsyncReadyCallback</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – </li>
+<li><strong>user_data</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">object</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div> 
+
+</body>
+</html>

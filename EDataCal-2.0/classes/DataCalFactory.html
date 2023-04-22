@@ -1,0 +1,457 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    EDataCal.DataCalFactory -
+    
+      Classes -
+    
+    EDataCal 2.0
+  </title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/css/pgi.css" type="text/css" />
+  
+
+  
+  <script type="text/javascript">
+
+    function openSidebar(element) {
+        window.location.href = element.href + location.hash;
+        return false;
+    }
+
+    function inIframe() {
+        try {
+            return window.self !== window.top;
+        } catch (e) {
+            return true;
+        }
+    }
+
+    function onLoaded() {
+        if(!inIframe()) {
+            var icons = document.getElementsByClassName('open-sidebar');
+
+            for (var i = 0; i < icons.length; i ++) {
+                icons[i].style.display = 'table-cell';
+            }
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', onLoaded, false);
+
+  </script>
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="EDataCal 2.0 Python API Docs" href="../index.html"/>
+        <link rel="up" title="Classes" href="../classes.html"/>
+        <link rel="next" title="EDataCal.DataCalView" href="DataCalView.html"/>
+        <link rel="prev" title="EDataCal.DataCal" href="DataCal.html"/> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+<div class="non-fixed-bar">
+<table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#EDataCal-2.0/classes/DataCalFactory.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">EDataCal 2.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>EDataCal.DataCalFactory</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="DataCal.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="DataCalView.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">EDataCal.DataCalFactory</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+<div class="fixed-bar">
+  <table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#EDataCal-2.0/classes/DataCalFactory.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">EDataCal 2.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>EDataCal.DataCalFactory</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="DataCal.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="DataCalView.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">EDataCal.DataCalFactory</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+  <div class="wy-grid-for-nav">
+
+    
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="main">
+            
+  <div class="section" id="edatacal-datacalfactory">
+<h1>EDataCal.DataCalFactory<a class="headerlink" href="#edatacal-datacalfactory" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<svg width="283pt" height="242pt"
+ viewBox="0.00 0.00 282.50 242.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 238)">
+<title>g</title>
+<!-- EBackend.DBusServer -->
+<g id="node1" class="node">
+<title>EBackend.DBusServer</title>
+<g id="a_node1"><a xlink:href="../../EBackend-1.2/classes/DBusServer.html#EBackend.DBusServer" xlink:title="EBackend.DBusServer">
+<path fill="none" stroke="#aaaaaa" d="M185,-126C185,-126 85,-126 85,-126 82,-126 79,-123 79,-120 79,-120 79,-114 79,-114 79,-111 82,-108 85,-108 85,-108 185,-108 185,-108 188,-108 191,-111 191,-114 191,-114 191,-120 191,-120 191,-123 188,-126 185,-126"/>
+<text text-anchor="middle" x="135" y="-114.7" font-family="inherit" font-size="8.50">EBackend.DBusServer</text>
+</a>
+</g>
+</g>
+<!-- EBackend.DataFactory -->
+<g id="node2" class="node">
+<title>EBackend.DataFactory</title>
+<g id="a_node2"><a xlink:href="../../EBackend-1.2/classes/DataFactory.html#EBackend.DataFactory" xlink:title="EBackend.DataFactory">
+<path fill="none" stroke="#75507b" d="M238,-72C238,-72 138,-72 138,-72 135,-72 132,-69 132,-66 132,-66 132,-60 132,-60 132,-57 135,-54 138,-54 138,-54 238,-54 238,-54 241,-54 244,-57 244,-60 244,-60 244,-66 244,-66 244,-69 241,-72 238,-72"/>
+<text text-anchor="middle" x="188" y="-60.7" font-family="inherit" font-size="8.50">EBackend.DataFactory</text>
+</a>
+</g>
+</g>
+<!-- EBackend.DBusServer&#45;&gt;EBackend.DataFactory -->
+<g id="edge1" class="edge">
+<title>EBackend.DBusServer&#45;&gt;EBackend.DataFactory</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M143.28,-107.88C152.02,-99.3 165.88,-85.7 175.86,-75.91"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="177.26,-76.99 179.6,-72.24 174.81,-74.49 177.26,-76.99"/>
+</g>
+<!-- EDataCal.DataCalFactory -->
+<g id="node3" class="node">
+<title>EDataCal.DataCalFactory</title>
+<g id="a_node3"><a xlink:href="#EDataCal.DataCalFactory" xlink:title="EDataCal.DataCalFactory">
+<path fill="none" stroke="#75507b" d="M243.5,-18C243.5,-18 132.5,-18 132.5,-18 129.5,-18 126.5,-15 126.5,-12 126.5,-12 126.5,-6 126.5,-6 126.5,-3 129.5,0 132.5,0 132.5,0 243.5,0 243.5,0 246.5,0 249.5,-3 249.5,-6 249.5,-6 249.5,-12 249.5,-12 249.5,-15 246.5,-18 243.5,-18"/>
+<text text-anchor="middle" x="188" y="-6.7" font-family="inherit" font-size="8.50">EDataCal.DataCalFactory</text>
+</a>
+</g>
+</g>
+<!-- EBackend.DataFactory&#45;&gt;EDataCal.DataCalFactory -->
+<g id="edge2" class="edge">
+<title>EBackend.DataFactory&#45;&gt;EDataCal.DataCalFactory</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M188,-53.88C188,-45.76 188,-33.13 188,-23.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="189.75,-23.24 188,-18.24 186.25,-23.24 189.75,-23.24"/>
+</g>
+<!-- EDataServer.Extensible -->
+<g id="node4" class="node">
+<title>EDataServer.Extensible</title>
+<g id="a_node4"><a xlink:href="../../EDataServer-1.2/classes/Extensible.html#EDataServer.Extensible" xlink:title="EDataServer.Extensible">
+<path fill="none" stroke="#3091d1" d="M110,-180C110,-180 6,-180 6,-180 3,-180 0,-177 0,-174 0,-174 0,-168 0,-168 0,-165 3,-162 6,-162 6,-162 110,-162 110,-162 113,-162 116,-165 116,-168 116,-168 116,-174 116,-174 116,-177 113,-180 110,-180"/>
+<text text-anchor="middle" x="58" y="-168.7" font-family="inherit" font-size="8.50">EDataServer.Extensible</text>
+</a>
+</g>
+</g>
+<!-- EDataServer.Extensible&#45;&gt;EBackend.DBusServer -->
+<g id="edge3" class="edge">
+<title>EDataServer.Extensible&#45;&gt;EBackend.DBusServer</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M70.03,-161.88C83.14,-153.02 104.19,-138.81 118.76,-128.97"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="119.89,-130.32 123.05,-126.07 117.93,-127.42 119.89,-130.32"/>
+</g>
+<!-- GObject.GInterface -->
+<g id="node5" class="node">
+<title>GObject.GInterface</title>
+<g id="a_node5"><a xlink:href="../../GObject-2.0/classes/GInterface.html#GObject.GInterface" xlink:title="GObject.GInterface">
+<path fill="none" stroke="#3091d1" d="M193,-234C193,-234 107,-234 107,-234 104,-234 101,-231 101,-228 101,-228 101,-222 101,-222 101,-219 104,-216 107,-216 107,-216 193,-216 193,-216 196,-216 199,-219 199,-222 199,-222 199,-228 199,-228 199,-231 196,-234 193,-234"/>
+<text text-anchor="middle" x="150" y="-222.7" font-family="inherit" font-size="8.50">GObject.GInterface</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;EDataServer.Extensible -->
+<g id="edge4" class="edge">
+<title>GObject.GInterface&#45;&gt;EDataServer.Extensible</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M135.62,-215.88C119.83,-206.95 94.38,-192.56 76.96,-182.72"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="77.49,-181 72.27,-180.07 75.77,-184.05 77.49,-181"/>
+</g>
+<!-- Gio.Initable -->
+<g id="node7" class="node">
+<title>Gio.Initable</title>
+<g id="a_node7"><a xlink:href="../../Gio-2.0/classes/Initable.html#Gio.Initable" xlink:title="Gio.Initable">
+<path fill="none" stroke="#3091d1" d="M268.5,-126C268.5,-126 215.5,-126 215.5,-126 212.5,-126 209.5,-123 209.5,-120 209.5,-120 209.5,-114 209.5,-114 209.5,-111 212.5,-108 215.5,-108 215.5,-108 268.5,-108 268.5,-108 271.5,-108 274.5,-111 274.5,-114 274.5,-114 274.5,-120 274.5,-120 274.5,-123 271.5,-126 268.5,-126"/>
+<text text-anchor="middle" x="242" y="-114.7" font-family="inherit" font-size="8.50">Gio.Initable</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Gio.Initable -->
+<g id="edge5" class="edge">
+<title>GObject.GInterface&#45;&gt;Gio.Initable</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M171.82,-215.9C188.13,-208.78 209.8,-196.91 223,-180 234.15,-165.71 238.79,-144.87 240.7,-131.37"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="242.48,-131.26 241.36,-126.08 239.01,-130.82 242.48,-131.26"/>
+</g>
+<!-- GObject.Object -->
+<g id="node6" class="node">
+<title>GObject.Object</title>
+<g id="a_node6"><a xlink:href="../../GObject-2.0/classes/Object.html#GObject.Object" xlink:title="GObject.Object">
+<path fill="none" stroke="#75507b" d="M208,-180C208,-180 140,-180 140,-180 137,-180 134,-177 134,-174 134,-174 134,-168 134,-168 134,-165 137,-162 140,-162 140,-162 208,-162 208,-162 211,-162 214,-165 214,-168 214,-168 214,-174 214,-174 214,-177 211,-180 208,-180"/>
+<text text-anchor="middle" x="174" y="-168.7" font-family="inherit" font-size="8.50">GObject.Object</text>
+</a>
+</g>
+</g>
+<!-- GObject.Object&#45;&gt;EBackend.DBusServer -->
+<g id="edge6" class="edge">
+<title>GObject.Object&#45;&gt;EBackend.DBusServer</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M167.91,-161.88C161.59,-153.45 151.64,-140.18 144.33,-130.44"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="145.58,-129.19 141.18,-126.24 142.78,-131.29 145.58,-129.19"/>
+</g>
+<!-- Gio.Initable&#45;&gt;EBackend.DataFactory -->
+<g id="edge7" class="edge">
+<title>Gio.Initable&#45;&gt;EBackend.DataFactory</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M233.56,-107.88C224.66,-99.3 210.54,-85.7 200.37,-75.91"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="201.37,-74.45 196.56,-72.24 198.94,-76.97 201.37,-74.45"/>
+</g>
+</g>
+</svg>
+</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Subclasses:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="methods">
+<span id="edatacal-datacalfactory-methods"></span><h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../EBackend-1.2/classes/DataFactory.html#ebackend-datafactory-methods" title="(in EBackend 1.2 v1.2)"><span class="xref std std-ref">EBackend.DataFactory (12)</span></a>,     <a class="reference external" href="../../EBackend-1.2/classes/DBusServer.html#ebackend-dbusserver-methods" title="(in EBackend 1.2 v1.2)"><span class="xref std std-ref">EBackend.DBusServer (5)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (37)</span></a>,     <a class="reference external" href="../../EDataServer-1.2/classes/Extensible.html#edataserver-extensible-methods" title="(in EDataServer 1.2 v1.2)"><span class="xref std std-ref">EDataServer.Extensible (2)</span></a>,     <a class="reference external" href="../../Gio-2.0/classes/Initable.html#gio-initable-methods" title="(in Gio 2.0 v2.0)"><span class="xref std std-ref">Gio.Initable (2)</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Structs:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/ObjectClass.html#gobject-objectclass-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.ObjectClass (5)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="99%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><em>class</em></td>
+<td><a class="reference internal" href="#EDataCal.DataCalFactory.new" title="EDataCal.DataCalFactory.new"><code class="xref py py-func docutils literal notranslate"><span class="pre">new</span></code></a> (backend_per_process, cancellable)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="virtual-methods">
+<span id="edatacal-datacalfactory-vfuncs"></span><h2>Virtual Methods<a class="headerlink" href="#virtual-methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../EBackend-1.2/classes/DataFactory.html#ebackend-datafactory-vfuncs" title="(in EBackend 1.2 v1.2)"><span class="xref std std-ref">EBackend.DataFactory (3)</span></a>,     <a class="reference external" href="../../EBackend-1.2/classes/DBusServer.html#ebackend-dbusserver-vfuncs" title="(in EBackend 1.2 v1.2)"><span class="xref std std-ref">EBackend.DBusServer (5)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-vfuncs" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (7)</span></a>,     <a class="reference external" href="../../Gio-2.0/classes/Initable.html#gio-initable-vfuncs" title="(in Gio 2.0 v2.0)"><span class="xref std std-ref">Gio.Initable (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="edatacal-datacalfactory-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../EBackend-1.2/classes/DataFactory.html#ebackend-datafactory-props" title="(in EBackend 1.2 v1.2)"><span class="xref std std-ref">EBackend.DataFactory (3)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="signals">
+<span id="edatacal-datacalfactory-signals"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../EBackend-1.2/classes/DBusServer.html#ebackend-dbusserver-signals" title="(in EBackend 1.2 v1.2)"><span class="xref std std-ref">EBackend.DBusServer (5)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-signals" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fields">
+<span id="edatacal-datacalfactory-fields"></span><h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../EBackend-1.2/classes/DBusServer.html#ebackend-dbusserver-fields" title="(in EBackend 1.2 v1.2)"><span class="xref std std-ref">EBackend.DBusServer (5)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-fields" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="16%" />
+<col width="1%" />
+<col width="1%" />
+<col width="82%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Access</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>parent</td>
+<td><a class="reference external" href="../../EBackend-1.2/classes/DataFactory.html#EBackend.DataFactory" title="(in EBackend 1.2 v1.2)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EBackend.DataFactory</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="class-details">
+<h2>Class Details<a class="headerlink" href="#class-details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="EDataCal.DataCalFactory">
+<em class="property">class </em><code class="descclassname">EDataCal.</code><code class="descname">DataCalFactory</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#EDataCal.DataCalFactory" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Bases:</th><td class="field-body"><a class="reference external" href="../../EBackend-1.2/classes/DataFactory.html#EBackend.DataFactory" title="(in EBackend 1.2 v1.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">EBackend.DataFactory</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Abstract:</th><td class="field-body">No</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Structure:</th><td class="field-body"><a class="reference internal" href="DataCalFactoryClass.html#EDataCal.DataCalFactoryClass" title="EDataCal.DataCalFactoryClass"><code class="xref py py-class docutils literal notranslate"><span class="pre">EDataCal.DataCalFactoryClass</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<dl class="classmethod">
+<dt id="EDataCal.DataCalFactory.new">
+<em class="property">classmethod </em><code class="descname">new</code><span class="sig-paren">(</span><em>backend_per_process</em>, <em>cancellable</em><span class="sig-paren">)</span><a class="headerlink" href="#EDataCal.DataCalFactory.new" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>backend_per_process</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – </li>
+<li><strong>cancellable</strong> (<a class="reference external" href="../../Gio-2.0/classes/Cancellable.html#Gio.Cancellable" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Cancellable</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first"><a class="reference external" href="../../GLib-2.0/classes/Error.html#GLib.Error" title="(in GLib 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLib.Error</span></code></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="../../EBackend-1.2/classes/DBusServer.html#EBackend.DBusServer" title="(in EBackend 1.2 v1.2)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EBackend.DBusServer</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div> 
+
+</body>
+</html>

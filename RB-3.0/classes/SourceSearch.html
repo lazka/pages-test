@@ -1,0 +1,565 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    RB.SourceSearch -
+    
+      Classes -
+    
+    RB 3.0
+  </title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/css/pgi.css" type="text/css" />
+  
+
+  
+  <script type="text/javascript">
+
+    function openSidebar(element) {
+        window.location.href = element.href + location.hash;
+        return false;
+    }
+
+    function inIframe() {
+        try {
+            return window.self !== window.top;
+        } catch (e) {
+            return true;
+        }
+    }
+
+    function onLoaded() {
+        if(!inIframe()) {
+            var icons = document.getElementsByClassName('open-sidebar');
+
+            for (var i = 0; i < icons.length; i ++) {
+                icons[i].style.display = 'table-cell';
+            }
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', onLoaded, false);
+
+  </script>
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="RB 3.0 Python API Docs" href="../index.html"/>
+        <link rel="up" title="Classes" href="../classes.html"/>
+        <link rel="next" title="RB.SourceSearchBasic" href="SourceSearchBasic.html"/>
+        <link rel="prev" title="RB.Source" href="Source.html"/> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+<div class="non-fixed-bar">
+<table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#RB-3.0/classes/SourceSearch.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">RB 3.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>RB.SourceSearch</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="Source.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="SourceSearchBasic.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">RB.SourceSearch</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+<div class="fixed-bar">
+  <table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#RB-3.0/classes/SourceSearch.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">RB 3.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>RB.SourceSearch</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="Source.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="SourceSearchBasic.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">RB.SourceSearch</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+  <div class="wy-grid-for-nav">
+
+    
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="main">
+            
+  <div class="section" id="rb-sourcesearch">
+<h1>RB.SourceSearch<a class="headerlink" href="#rb-sourcesearch" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<svg width="97pt" height="80pt"
+ viewBox="0.00 0.00 97.00 80.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 76)">
+<title>g</title>
+<!-- GObject.Object -->
+<g id="node1" class="node">
+<title>GObject.Object</title>
+<g id="a_node1"><a xlink:href="../../GObject-2.0/classes/Object.html#GObject.Object" xlink:title="GObject.Object">
+<path fill="none" stroke="#75507b" d="M78.5,-72C78.5,-72 10.5,-72 10.5,-72 7.5,-72 4.5,-69 4.5,-66 4.5,-66 4.5,-60 4.5,-60 4.5,-57 7.5,-54 10.5,-54 10.5,-54 78.5,-54 78.5,-54 81.5,-54 84.5,-57 84.5,-60 84.5,-60 84.5,-66 84.5,-66 84.5,-69 81.5,-72 78.5,-72"/>
+<text text-anchor="middle" x="44.5" y="-60.7" font-family="inherit" font-size="8.50">GObject.Object</text>
+</a>
+</g>
+</g>
+<!-- RB.SourceSearch -->
+<g id="node2" class="node">
+<title>RB.SourceSearch</title>
+<g id="a_node2"><a xlink:href="#RB.SourceSearch" xlink:title="RB.SourceSearch">
+<path fill="none" stroke="#75507b" d="M83,-18C83,-18 6,-18 6,-18 3,-18 0,-15 0,-12 0,-12 0,-6 0,-6 0,-3 3,0 6,0 6,0 83,0 83,0 86,0 89,-3 89,-6 89,-6 89,-12 89,-12 89,-15 86,-18 83,-18"/>
+<text text-anchor="middle" x="44.5" y="-6.7" font-family="inherit" font-size="8.50">RB.SourceSearch</text>
+</a>
+</g>
+</g>
+<!-- GObject.Object&#45;&gt;RB.SourceSearch -->
+<g id="edge1" class="edge">
+<title>GObject.Object&#45;&gt;RB.SourceSearch</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M44.5,-53.88C44.5,-45.76 44.5,-33.13 44.5,-23.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="46.25,-23.24 44.5,-18.24 42.75,-23.24 46.25,-23.24"/>
+</g>
+</g>
+</svg>
+</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Subclasses:</th><td class="field-body"><a class="reference internal" href="SourceSearchBasic.html#RB.SourceSearchBasic" title="RB.SourceSearchBasic"><code class="xref py py-class docutils literal notranslate"><span class="pre">RB.SourceSearchBasic</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="methods">
+<span id="rb-sourcesearch-methods"></span><h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (37)</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Structs:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/ObjectClass.html#gobject-objectclass-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.ObjectClass (5)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="99%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><em>class</em></td>
+<td><a class="reference internal" href="#RB.SourceSearch.add_to_menu" title="RB.SourceSearch.add_to_menu"><code class="xref py py-func docutils literal notranslate"><span class="pre">add_to_menu</span></code></a> (menu, action_namespace, action, name)</td>
+</tr>
+<tr class="row-even"><td><em>class</em></td>
+<td><a class="reference internal" href="#RB.SourceSearch.get_by_name" title="RB.SourceSearch.get_by_name"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_by_name</span></code></a> (name)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#RB.SourceSearch.create_query" title="RB.SourceSearch.create_query"><code class="xref py py-func docutils literal notranslate"><span class="pre">create_query</span></code></a> (db, search_text)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#RB.SourceSearch.get_description" title="RB.SourceSearch.get_description"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_description</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#RB.SourceSearch.is_subset" title="RB.SourceSearch.is_subset"><code class="xref py py-func docutils literal notranslate"><span class="pre">is_subset</span></code></a> (current, next)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#RB.SourceSearch.register" title="RB.SourceSearch.register"><code class="xref py py-func docutils literal notranslate"><span class="pre">register</span></code></a> (name)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="virtual-methods">
+<span id="rb-sourcesearch-vfuncs"></span><h2>Virtual Methods<a class="headerlink" href="#virtual-methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-vfuncs" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (7)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="99%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#RB.SourceSearch.do_create_query" title="RB.SourceSearch.do_create_query"><code class="xref py py-func docutils literal notranslate"><span class="pre">do_create_query</span></code></a> (db, search_text)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#RB.SourceSearch.do_get_description" title="RB.SourceSearch.do_get_description"><code class="xref py py-func docutils literal notranslate"><span class="pre">do_get_description</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#RB.SourceSearch.do_is_subset" title="RB.SourceSearch.do_is_subset"><code class="xref py py-func docutils literal notranslate"><span class="pre">do_is_subset</span></code></a> (current, next)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="rb-sourcesearch-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<p>None</p>
+</div>
+<div class="section" id="signals">
+<span id="rb-sourcesearch-signals"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-signals" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fields">
+<span id="rb-sourcesearch-fields"></span><h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-fields" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="16%" />
+<col width="1%" />
+<col width="1%" />
+<col width="82%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Access</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>parent</td>
+<td><a class="reference external" href="../../GObject-2.0/classes/Object.html#GObject.Object" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GObject.Object</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="class-details">
+<h2>Class Details<a class="headerlink" href="#class-details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="RB.SourceSearch">
+<em class="property">class </em><code class="descclassname">RB.</code><code class="descname">SourceSearch</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#RB.SourceSearch" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Bases:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#GObject.Object" title="(in GObject 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GObject.Object</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Abstract:</th><td class="field-body">No</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Structure:</th><td class="field-body"><a class="reference internal" href="SourceSearchClass.html#RB.SourceSearchClass" title="RB.SourceSearchClass"><code class="xref py py-class docutils literal notranslate"><span class="pre">RB.SourceSearchClass</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<dl class="classmethod">
+<dt id="RB.SourceSearch.add_to_menu">
+<em class="property">classmethod </em><code class="descname">add_to_menu</code><span class="sig-paren">(</span><em>menu</em>, <em>action_namespace</em>, <em>action</em>, <em>name</em><span class="sig-paren">)</span><a class="headerlink" href="#RB.SourceSearch.add_to_menu" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>menu</strong> (<a class="reference external" href="../../Gio-2.0/classes/Menu.html#Gio.Menu" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Menu</span></code></a>) – <a class="reference external" href="../../Gio-2.0/classes/Menu.html#Gio.Menu" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Menu</span></code></a> instance to populate</li>
+<li><strong>action_namespace</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – muxer namespace for the action (“app” or “win”)</li>
+<li><strong>action</strong> (<a class="reference external" href="../../Gio-2.0/classes/Action.html#Gio.Action" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Action</span></code></a>) – search action to attach the menu item to</li>
+<li><strong>name</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – name of the search instance to add</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Adds a registered search instance to a search menu.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="RB.SourceSearch.get_by_name">
+<em class="property">classmethod </em><code class="descname">get_by_name</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="headerlink" href="#RB.SourceSearch.get_by_name" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>name</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – name to look up</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">search instance, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> if not found</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#RB.SourceSearch" title="RB.SourceSearch"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.SourceSearch</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Finds the registered search instance with the specified name</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RB.SourceSearch.create_query">
+<code class="descname">create_query</code><span class="sig-paren">(</span><em>db</em>, <em>search_text</em><span class="sig-paren">)</span><a class="headerlink" href="#RB.SourceSearch.create_query" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>db</strong> (<a class="reference internal" href="RhythmDB.html#RB.RhythmDB" title="RB.RhythmDB"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.RhythmDB</span></code></a>) – the <a class="reference internal" href="RhythmDB.html#RB.RhythmDB" title="RB.RhythmDB"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.RhythmDB</span></code></a></li>
+<li><strong>search_text</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – the search text</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">#RhythmDBQuery for the source to use</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="../../GLib-2.0/classes/PtrArray.html#GLib.PtrArray" title="(in GLib 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GLib.PtrArray</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Creates a #RhythmDBQuery from the user’s search text.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RB.SourceSearch.get_description">
+<code class="descname">get_description</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#RB.SourceSearch.get_description" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">description string</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns a description of the search suitable for displaying in a menu</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RB.SourceSearch.is_subset">
+<code class="descname">is_subset</code><span class="sig-paren">(</span><em>current</em>, <em>next</em><span class="sig-paren">)</span><a class="headerlink" href="#RB.SourceSearch.is_subset" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>current</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – the current search text (or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> if the current search was done with a different
+search implementation and so cannot be considered)</li>
+<li><strong>next</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – the new search text</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> iff the new search text will match a subset of those matched by the current search.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Determines whether the new search text will result in a
+subset of entries matched by the previous search.  This is
+used to optimise the search query.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RB.SourceSearch.register">
+<code class="descname">register</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="headerlink" href="#RB.SourceSearch.register" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>name</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – name to register</td>
+</tr>
+</tbody>
+</table>
+<p>Registers a named search instance that can be used in menus and
+search action states.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RB.SourceSearch.do_create_query">
+<code class="descname">do_create_query</code><span class="sig-paren">(</span><em>db</em>, <em>search_text</em><span class="sig-paren">)</span><em class="property"> virtual</em><a class="headerlink" href="#RB.SourceSearch.do_create_query" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>db</strong> (<a class="reference internal" href="RhythmDB.html#RB.RhythmDB" title="RB.RhythmDB"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.RhythmDB</span></code></a>) – the <a class="reference internal" href="RhythmDB.html#RB.RhythmDB" title="RB.RhythmDB"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.RhythmDB</span></code></a></li>
+<li><strong>search_text</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – the search text</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">#RhythmDBQuery for the source to use</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="../../GLib-2.0/classes/PtrArray.html#GLib.PtrArray" title="(in GLib 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GLib.PtrArray</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Creates a #RhythmDBQuery from the user’s search text.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RB.SourceSearch.do_get_description">
+<code class="descname">do_get_description</code><span class="sig-paren">(</span><span class="sig-paren">)</span><em class="property"> virtual</em><a class="headerlink" href="#RB.SourceSearch.do_get_description" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">description string</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns a description of the search suitable for displaying in a menu</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RB.SourceSearch.do_is_subset">
+<code class="descname">do_is_subset</code><span class="sig-paren">(</span><em>current</em>, <em>next</em><span class="sig-paren">)</span><em class="property"> virtual</em><a class="headerlink" href="#RB.SourceSearch.do_is_subset" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>current</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – the current search text (or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> if the current search was done with a different
+search implementation and so cannot be considered)</li>
+<li><strong>next</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – the new search text</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> iff the new search text will match a subset of those matched by the current search.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Determines whether the new search text will result in a
+subset of entries matched by the previous search.  This is
+used to optimise the search query.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div> 
+
+</body>
+</html>

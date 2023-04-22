@@ -1,0 +1,799 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    GOffice.Style -
+    
+      Classes -
+    
+    GOffice 0.10
+  </title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/css/pgi.css" type="text/css" />
+  
+
+  
+  <script type="text/javascript">
+
+    function openSidebar(element) {
+        window.location.href = element.href + location.hash;
+        return false;
+    }
+
+    function inIframe() {
+        try {
+            return window.self !== window.top;
+        } catch (e) {
+            return true;
+        }
+    }
+
+    function onLoaded() {
+        if(!inIframe()) {
+            var icons = document.getElementsByClassName('open-sidebar');
+
+            for (var i = 0; i < icons.length; i ++) {
+                icons[i].style.display = 'table-cell';
+            }
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', onLoaded, false);
+
+  </script>
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="GOffice 0.10 Python API Docs" href="../index.html"/>
+        <link rel="up" title="Classes" href="../classes.html"/>
+        <link rel="next" title="GOffice.Svg" href="Svg.html"/>
+        <link rel="prev" title="GOffice.Spectre" href="Spectre.html"/> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+<div class="non-fixed-bar">
+<table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#GOffice-0.10/classes/Style.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">GOffice 0.10</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>GOffice.Style</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="Spectre.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="Svg.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">GOffice.Style</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+<div class="fixed-bar">
+  <table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#GOffice-0.10/classes/Style.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">GOffice 0.10</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>GOffice.Style</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="Spectre.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="Svg.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">GOffice.Style</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+  <div class="wy-grid-for-nav">
+
+    
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="main">
+            
+  <div class="section" id="goffice-style">
+<h1>GOffice.Style<a class="headerlink" href="#goffice-style" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<svg width="195pt" height="134pt"
+ viewBox="0.00 0.00 195.00 134.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 130)">
+<title>g</title>
+<!-- GObject.GInterface -->
+<g id="node1" class="node">
+<title>GObject.GInterface</title>
+<g id="a_node1"><a xlink:href="../../GObject-2.0/classes/GInterface.html#GObject.GInterface" xlink:title="GObject.GInterface">
+<path fill="none" stroke="#3091d1" d="M92,-126C92,-126 6,-126 6,-126 3,-126 0,-123 0,-120 0,-120 0,-114 0,-114 0,-111 3,-108 6,-108 6,-108 92,-108 92,-108 95,-108 98,-111 98,-114 98,-114 98,-120 98,-120 98,-123 95,-126 92,-126"/>
+<text text-anchor="middle" x="49" y="-114.7" font-family="inherit" font-size="8.50">GObject.GInterface</text>
+</a>
+</g>
+</g>
+<!-- GOffice.Persist -->
+<g id="node3" class="node">
+<title>GOffice.Persist</title>
+<g id="a_node3"><a xlink:href="Persist.html#GOffice.Persist" xlink:title="GOffice.Persist">
+<path fill="none" stroke="#3091d1" d="M82.5,-72C82.5,-72 15.5,-72 15.5,-72 12.5,-72 9.5,-69 9.5,-66 9.5,-66 9.5,-60 9.5,-60 9.5,-57 12.5,-54 15.5,-54 15.5,-54 82.5,-54 82.5,-54 85.5,-54 88.5,-57 88.5,-60 88.5,-60 88.5,-66 88.5,-66 88.5,-69 85.5,-72 82.5,-72"/>
+<text text-anchor="middle" x="49" y="-60.7" font-family="inherit" font-size="8.50">GOffice.Persist</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;GOffice.Persist -->
+<g id="edge1" class="edge">
+<title>GObject.GInterface&#45;&gt;GOffice.Persist</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M49,-107.88C49,-99.76 49,-87.13 49,-77.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="50.75,-77.24 49,-72.24 47.25,-77.24 50.75,-77.24"/>
+</g>
+<!-- GObject.Object -->
+<g id="node2" class="node">
+<title>GObject.Object</title>
+<g id="a_node2"><a xlink:href="../../GObject-2.0/classes/Object.html#GObject.Object" xlink:title="GObject.Object">
+<path fill="none" stroke="#75507b" d="M181,-72C181,-72 113,-72 113,-72 110,-72 107,-69 107,-66 107,-66 107,-60 107,-60 107,-57 110,-54 113,-54 113,-54 181,-54 181,-54 184,-54 187,-57 187,-60 187,-60 187,-66 187,-66 187,-69 184,-72 181,-72"/>
+<text text-anchor="middle" x="147" y="-60.7" font-family="inherit" font-size="8.50">GObject.Object</text>
+</a>
+</g>
+</g>
+<!-- GOffice.Style -->
+<g id="node4" class="node">
+<title>GOffice.Style</title>
+<g id="a_node4"><a xlink:href="#GOffice.Style" xlink:title="GOffice.Style">
+<path fill="none" stroke="#75507b" d="M128,-18C128,-18 68,-18 68,-18 65,-18 62,-15 62,-12 62,-12 62,-6 62,-6 62,-3 65,0 68,0 68,0 128,0 128,0 131,0 134,-3 134,-6 134,-6 134,-12 134,-12 134,-15 131,-18 128,-18"/>
+<text text-anchor="middle" x="98" y="-6.7" font-family="inherit" font-size="8.50">GOffice.Style</text>
+</a>
+</g>
+</g>
+<!-- GObject.Object&#45;&gt;GOffice.Style -->
+<g id="edge2" class="edge">
+<title>GObject.Object&#45;&gt;GOffice.Style</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M139.34,-53.88C131.26,-45.3 118.45,-31.7 109.23,-21.91"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="110.47,-20.68 105.76,-18.24 107.92,-23.08 110.47,-20.68"/>
+</g>
+<!-- GOffice.Persist&#45;&gt;GOffice.Style -->
+<g id="edge3" class="edge">
+<title>GOffice.Persist&#45;&gt;GOffice.Style</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M56.66,-53.88C64.74,-45.3 77.55,-31.7 86.77,-21.91"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="88.08,-23.08 90.24,-18.24 85.53,-20.68 88.08,-23.08"/>
+</g>
+</g>
+</svg>
+</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Subclasses:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="methods">
+<span id="goffice-style-methods"></span><h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (37)</span></a>,     <a class="reference internal" href="Persist.html#goffice-persist-methods"><span class="std std-ref">GOffice.Persist (2)</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Structs:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/ObjectClass.html#gobject-objectclass-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.ObjectClass (5)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="99%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><em>class</em></td>
+<td><a class="reference internal" href="#GOffice.Style.context_from_selector" title="GOffice.Style.context_from_selector"><code class="xref py py-func docutils literal notranslate"><span class="pre">context_from_selector</span></code></a> (parent, selector)</td>
+</tr>
+<tr class="row-even"><td><em>class</em></td>
+<td><a class="reference internal" href="#GOffice.Style.new" title="GOffice.Style.new"><code class="xref py py-func docutils literal notranslate"><span class="pre">new</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#GOffice.Style.apply_theme" title="GOffice.Style.apply_theme"><code class="xref py py-func docutils literal notranslate"><span class="pre">apply_theme</span></code></a> (src, fields)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#GOffice.Style.assign" title="GOffice.Style.assign"><code class="xref py py-func docutils literal notranslate"><span class="pre">assign</span></code></a> (src)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#GOffice.Style.clear_auto" title="GOffice.Style.clear_auto"><code class="xref py py-func docutils literal notranslate"><span class="pre">clear_auto</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#GOffice.Style.dup" title="GOffice.Style.dup"><code class="xref py py-func docutils literal notranslate"><span class="pre">dup</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#GOffice.Style.fill" title="GOffice.Style.fill"><code class="xref py py-func docutils literal notranslate"><span class="pre">fill</span></code></a> (cr, preserve)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#GOffice.Style.force_auto" title="GOffice.Style.force_auto"><code class="xref py py-func docutils literal notranslate"><span class="pre">force_auto</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#GOffice.Style.get_editor" title="GOffice.Style.get_editor"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_editor</span></code></a> (default_style, cc, object_with_style)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#GOffice.Style.get_marker" title="GOffice.Style.get_marker"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_marker</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#GOffice.Style.is_auto" title="GOffice.Style.is_auto"><code class="xref py py-func docutils literal notranslate"><span class="pre">is_auto</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#GOffice.Style.is_different_size" title="GOffice.Style.is_different_size"><code class="xref py py-func docutils literal notranslate"><span class="pre">is_different_size</span></code></a> (b)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#GOffice.Style.is_fill_visible" title="GOffice.Style.is_fill_visible"><code class="xref py py-func docutils literal notranslate"><span class="pre">is_fill_visible</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#GOffice.Style.is_line_visible" title="GOffice.Style.is_line_visible"><code class="xref py py-func docutils literal notranslate"><span class="pre">is_line_visible</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#GOffice.Style.is_marker_visible" title="GOffice.Style.is_marker_visible"><code class="xref py py-func docutils literal notranslate"><span class="pre">is_marker_visible</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#GOffice.Style.is_outline_visible" title="GOffice.Style.is_outline_visible"><code class="xref py py-func docutils literal notranslate"><span class="pre">is_outline_visible</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#GOffice.Style.populate_editor" title="GOffice.Style.populate_editor"><code class="xref py py-func docutils literal notranslate"><span class="pre">populate_editor</span></code></a> (editor, default_style, cc, object_with_style, watch_for_external_change)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#GOffice.Style.set_cairo_line" title="GOffice.Style.set_cairo_line"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_cairo_line</span></code></a> (cr)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#GOffice.Style.set_fill_brightness" title="GOffice.Style.set_fill_brightness"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_fill_brightness</span></code></a> (brightness)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#GOffice.Style.set_font" title="GOffice.Style.set_font"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_font</span></code></a> (font)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#GOffice.Style.set_font_desc" title="GOffice.Style.set_font_desc"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_font_desc</span></code></a> (desc)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#GOffice.Style.set_marker" title="GOffice.Style.set_marker"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_marker</span></code></a> (marker)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#GOffice.Style.set_text_angle" title="GOffice.Style.set_text_angle"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_text_angle</span></code></a> (angle)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="virtual-methods">
+<span id="goffice-style-vfuncs"></span><h2>Virtual Methods<a class="headerlink" href="#virtual-methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-vfuncs" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (7)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="goffice-style-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<p>None</p>
+</div>
+<div class="section" id="signals">
+<span id="goffice-style-signals"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-signals" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fields">
+<span id="goffice-style-fields"></span><h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-fields" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="16%" />
+<col width="1%" />
+<col width="1%" />
+<col width="82%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Access</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>base</td>
+<td><a class="reference external" href="../../GObject-2.0/classes/Object.html#GObject.Object" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GObject.Object</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>disable_theming</td>
+<td><a class="reference internal" href="../flags.html#GOffice.StyleFlag" title="GOffice.StyleFlag"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GOffice.StyleFlag</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>interesting_fields</td>
+<td><a class="reference internal" href="../flags.html#GOffice.StyleFlag" title="GOffice.StyleFlag"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GOffice.StyleFlag</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>line</td>
+<td><a class="reference internal" href="StyleLine.html#GOffice.StyleLine" title="GOffice.StyleLine"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GOffice.StyleLine</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>marker</td>
+<td><a class="reference internal" href="StyleMark.html#GOffice.StyleMark" title="GOffice.StyleMark"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GOffice.StyleMark</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="class-details">
+<h2>Class Details<a class="headerlink" href="#class-details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="GOffice.Style">
+<em class="property">class </em><code class="descclassname">GOffice.</code><code class="descname">Style</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#GOffice.Style" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Bases:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#GObject.Object" title="(in GObject 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GObject.Object</span></code></a>,         <a class="reference internal" href="Persist.html#GOffice.Persist" title="GOffice.Persist"><code class="xref py py-class docutils literal notranslate"><span class="pre">GOffice.Persist</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Abstract:</th><td class="field-body">No</td>
+</tr>
+</tbody>
+</table>
+<dl class="classmethod">
+<dt id="GOffice.Style.context_from_selector">
+<em class="property">classmethod </em><code class="descname">context_from_selector</code><span class="sig-paren">(</span><em>parent</em>, <em>selector</em><span class="sig-paren">)</span><a class="headerlink" href="#GOffice.Style.context_from_selector" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>parent</strong> (<a class="reference external" href="../../Gtk-3.0/classes/StyleContext.html#Gtk.StyleContext" title="(in Gtk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.StyleContext</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – style context for container</li>
+<li><strong>selector</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – a css selector</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">a new style context.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="../../Gtk-3.0/classes/StyleContext.html#Gtk.StyleContext" title="(in Gtk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.StyleContext</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="GOffice.Style.new">
+<em class="property">classmethod </em><code class="descname">new</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#GOffice.Style.new" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#GOffice.Style" title="GOffice.Style"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GOffice.Style</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="GOffice.Style.apply_theme">
+<code class="descname">apply_theme</code><span class="sig-paren">(</span><em>src</em>, <em>fields</em><span class="sig-paren">)</span><a class="headerlink" href="#GOffice.Style.apply_theme" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>src</strong> (<a class="reference internal" href="#GOffice.Style" title="GOffice.Style"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GOffice.Style</span></code></a>) – <a class="reference internal" href="#GOffice.Style" title="GOffice.Style"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GOffice.Style</span></code></a></li>
+<li><strong>fields</strong> (<a class="reference internal" href="../flags.html#GOffice.StyleFlag" title="GOffice.StyleFlag"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GOffice.StyleFlag</span></code></a>) – the fields to which the copy should be limited</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Merge the attributes from <cite>src</cite> onto the elements of <cite>self</cite> that were not user
+assigned (is_auto)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GOffice.Style.assign">
+<code class="descname">assign</code><span class="sig-paren">(</span><em>src</em><span class="sig-paren">)</span><a class="headerlink" href="#GOffice.Style.assign" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>src</strong> (<a class="reference internal" href="#GOffice.Style" title="GOffice.Style"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GOffice.Style</span></code></a>) – </td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="GOffice.Style.clear_auto">
+<code class="descname">clear_auto</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#GOffice.Style.clear_auto" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets all auto fields in <cite>self</cite> to <a class="reference external" href="http://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GOffice.Style.dup">
+<code class="descname">dup</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#GOffice.Style.dup" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a new <a class="reference internal" href="#GOffice.Style" title="GOffice.Style"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GOffice.Style</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#GOffice.Style" title="GOffice.Style"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GOffice.Style</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Duplicates <cite>self</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GOffice.Style.fill">
+<code class="descname">fill</code><span class="sig-paren">(</span><em>cr</em>, <em>preserve</em><span class="sig-paren">)</span><a class="headerlink" href="#GOffice.Style.fill" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>cr</strong> (<a class="reference external" href="https://pycairo.readthedocs.io/en/latest/reference/context.html#cairo.Context" title="(in Pycairo)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">cairo.Context</span></code></a>) – </li>
+<li><strong>preserve</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a>) – </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="GOffice.Style.force_auto">
+<code class="descname">force_auto</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#GOffice.Style.force_auto" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets all auto fields in <cite>self</cite> to <a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GOffice.Style.get_editor">
+<code class="descname">get_editor</code><span class="sig-paren">(</span><em>default_style</em>, <em>cc</em>, <em>object_with_style</em><span class="sig-paren">)</span><a class="headerlink" href="#GOffice.Style.get_editor" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>default_style</strong> (<a class="reference internal" href="#GOffice.Style" title="GOffice.Style"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GOffice.Style</span></code></a>) – the style used as default</li>
+<li><strong>cc</strong> (<a class="reference internal" href="CmdContext.html#GOffice.CmdContext" title="GOffice.CmdContext"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GOffice.CmdContext</span></code></a>) – <a class="reference internal" href="CmdContext.html#GOffice.CmdContext" title="GOffice.CmdContext"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GOffice.CmdContext</span></code></a></li>
+<li><strong>object_with_style</strong> (<a class="reference external" href="../../GObject-2.0/classes/Object.html#GObject.Object" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GObject.Object</span></code></a>) – the object owning the style</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">the style editor</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">object</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Builds the widget used to edit the style.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GOffice.Style.get_marker">
+<code class="descname">get_marker</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#GOffice.Style.get_marker" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the style <a class="reference internal" href="Marker.html#GOffice.Marker" title="GOffice.Marker"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GOffice.Marker</span></code></a>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="Marker.html#GOffice.Marker" title="GOffice.Marker"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GOffice.Marker</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Accessor for <cite>self</cite><code class="xref py py-func docutils literal notranslate"><span class="pre">::marker</span></code>, without referencing it.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GOffice.Style.is_auto">
+<code class="descname">is_auto</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#GOffice.Style.is_auto" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="GOffice.Style.is_different_size">
+<code class="descname">is_different_size</code><span class="sig-paren">(</span><em>b</em><span class="sig-paren">)</span><a class="headerlink" href="#GOffice.Style.is_different_size" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>b</strong> (<a class="reference internal" href="#GOffice.Style" title="GOffice.Style"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GOffice.Style</span></code></a>) – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="GOffice.Style.is_fill_visible">
+<code class="descname">is_fill_visible</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#GOffice.Style.is_fill_visible" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="GOffice.Style.is_line_visible">
+<code class="descname">is_line_visible</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#GOffice.Style.is_line_visible" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="GOffice.Style.is_marker_visible">
+<code class="descname">is_marker_visible</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#GOffice.Style.is_marker_visible" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="GOffice.Style.is_outline_visible">
+<code class="descname">is_outline_visible</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#GOffice.Style.is_outline_visible" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="GOffice.Style.populate_editor">
+<code class="descname">populate_editor</code><span class="sig-paren">(</span><em>editor</em>, <em>default_style</em>, <em>cc</em>, <em>object_with_style</em>, <em>watch_for_external_change</em><span class="sig-paren">)</span><a class="headerlink" href="#GOffice.Style.populate_editor" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>editor</strong> (<a class="reference internal" href="Editor.html#GOffice.Editor" title="GOffice.Editor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GOffice.Editor</span></code></a>) – </li>
+<li><strong>default_style</strong> (<a class="reference internal" href="#GOffice.Style" title="GOffice.Style"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GOffice.Style</span></code></a>) – </li>
+<li><strong>cc</strong> (<a class="reference internal" href="CmdContext.html#GOffice.CmdContext" title="GOffice.CmdContext"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GOffice.CmdContext</span></code></a>) – </li>
+<li><strong>object_with_style</strong> (<a class="reference external" href="../../GObject-2.0/classes/Object.html#GObject.Object" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GObject.Object</span></code></a>) – </li>
+<li><strong>watch_for_external_change</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a>) – </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="GOffice.Style.set_cairo_line">
+<code class="descname">set_cairo_line</code><span class="sig-paren">(</span><em>cr</em><span class="sig-paren">)</span><a class="headerlink" href="#GOffice.Style.set_cairo_line" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>cr</strong> (<a class="reference external" href="https://pycairo.readthedocs.io/en/latest/reference/context.html#cairo.Context" title="(in Pycairo)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">cairo.Context</span></code></a>) – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="GOffice.Style.set_fill_brightness">
+<code class="descname">set_fill_brightness</code><span class="sig-paren">(</span><em>brightness</em><span class="sig-paren">)</span><a class="headerlink" href="#GOffice.Style.set_fill_brightness" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>brightness</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">float</span></code></a>) – </td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="GOffice.Style.set_font">
+<code class="descname">set_font</code><span class="sig-paren">(</span><em>font</em><span class="sig-paren">)</span><a class="headerlink" href="#GOffice.Style.set_font" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>font</strong> (<a class="reference internal" href="Font.html#GOffice.Font" title="GOffice.Font"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GOffice.Font</span></code></a>) – new <code class="xref py py-obj docutils literal notranslate"><span class="pre">GOffice.font</span></code></td>
+</tr>
+</tbody>
+</table>
+<p>Set text <code class="xref py py-obj docutils literal notranslate"><span class="pre">GOffice.font</span></code> used by the style.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GOffice.Style.set_font_desc">
+<code class="descname">set_font_desc</code><span class="sig-paren">(</span><em>desc</em><span class="sig-paren">)</span><a class="headerlink" href="#GOffice.Style.set_font_desc" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>desc</strong> (<a class="reference external" href="../../Pango-1.0/classes/FontDescription.html#Pango.FontDescription" title="(in Pango 1.0 v1.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Pango.FontDescription</span></code></a>) – new <code class="xref py py-obj docutils literal notranslate"><span class="pre">GOffice.font</span></code> description to use</td>
+</tr>
+</tbody>
+</table>
+<p>Set text <code class="xref py py-obj docutils literal notranslate"><span class="pre">GOffice.font</span></code> used by the style.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GOffice.Style.set_marker">
+<code class="descname">set_marker</code><span class="sig-paren">(</span><em>marker</em><span class="sig-paren">)</span><a class="headerlink" href="#GOffice.Style.set_marker" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>marker</strong> (<a class="reference internal" href="Marker.html#GOffice.Marker" title="GOffice.Marker"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GOffice.Marker</span></code></a>) – <a class="reference internal" href="Marker.html#GOffice.Marker" title="GOffice.Marker"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GOffice.Marker</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Absorb a reference to <cite>marker</cite> and assign it to <cite>self</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GOffice.Style.set_text_angle">
+<code class="descname">set_text_angle</code><span class="sig-paren">(</span><em>angle</em><span class="sig-paren">)</span><a class="headerlink" href="#GOffice.Style.set_text_angle" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>angle</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">float</span></code></a>) – text rotation in degrees</td>
+</tr>
+</tbody>
+</table>
+<p>Set text rotation angle in degrees. Valid values are in the range
+[-180.0° , 180.0°].</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div> 
+
+</body>
+</html>

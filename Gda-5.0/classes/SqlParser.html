@@ -1,0 +1,641 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    Gda.SqlParser -
+    
+      Classes -
+    
+    Gda 5.0
+  </title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/css/pgi.css" type="text/css" />
+  
+
+  
+  <script type="text/javascript">
+
+    function openSidebar(element) {
+        window.location.href = element.href + location.hash;
+        return false;
+    }
+
+    function inIframe() {
+        try {
+            return window.self !== window.top;
+        } catch (e) {
+            return true;
+        }
+    }
+
+    function onLoaded() {
+        if(!inIframe()) {
+            var icons = document.getElementsByClassName('open-sidebar');
+
+            for (var i = 0; i < icons.length; i ++) {
+                icons[i].style.display = 'table-cell';
+            }
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', onLoaded, false);
+
+  </script>
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="Gda 5.0 Python API Docs" href="../index.html"/>
+        <link rel="up" title="Classes" href="../classes.html"/>
+        <link rel="next" title="Gda.Statement" href="Statement.html"/>
+        <link rel="prev" title="Gda.SqlBuilder" href="SqlBuilder.html"/> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+<div class="non-fixed-bar">
+<table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#Gda-5.0/classes/SqlParser.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Gda 5.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>Gda.SqlParser</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="SqlBuilder.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="Statement.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">Gda.SqlParser</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#property-details">Property Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+<div class="fixed-bar">
+  <table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#Gda-5.0/classes/SqlParser.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Gda 5.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>Gda.SqlParser</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="SqlBuilder.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="Statement.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">Gda.SqlParser</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#property-details">Property Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+  <div class="wy-grid-for-nav">
+
+    
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="main">
+            
+  <div class="section" id="gda-sqlparser">
+<h1>Gda.SqlParser<a class="headerlink" href="#gda-sqlparser" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<svg width="192pt" height="134pt"
+ viewBox="0.00 0.00 192.00 134.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 130)">
+<title>g</title>
+<!-- GObject.GInterface -->
+<g id="node1" class="node">
+<title>GObject.GInterface</title>
+<g id="a_node1"><a xlink:href="../../GObject-2.0/classes/GInterface.html#GObject.GInterface" xlink:title="GObject.GInterface">
+<path fill="none" stroke="#3091d1" d="M92,-126C92,-126 6,-126 6,-126 3,-126 0,-123 0,-120 0,-120 0,-114 0,-114 0,-111 3,-108 6,-108 6,-108 92,-108 92,-108 95,-108 98,-111 98,-114 98,-114 98,-120 98,-120 98,-123 95,-126 92,-126"/>
+<text text-anchor="middle" x="49" y="-114.7" font-family="inherit" font-size="8.50">GObject.GInterface</text>
+</a>
+</g>
+</g>
+<!-- Gda.Lockable -->
+<g id="node3" class="node">
+<title>Gda.Lockable</title>
+<g id="a_node3"><a xlink:href="Lockable.html#Gda.Lockable" xlink:title="Gda.Lockable">
+<path fill="none" stroke="#3091d1" d="M80,-72C80,-72 18,-72 18,-72 15,-72 12,-69 12,-66 12,-66 12,-60 12,-60 12,-57 15,-54 18,-54 18,-54 80,-54 80,-54 83,-54 86,-57 86,-60 86,-60 86,-66 86,-66 86,-69 83,-72 80,-72"/>
+<text text-anchor="middle" x="49" y="-60.7" font-family="inherit" font-size="8.50">Gda.Lockable</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Gda.Lockable -->
+<g id="edge1" class="edge">
+<title>GObject.GInterface&#45;&gt;Gda.Lockable</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M49,-107.88C49,-99.76 49,-87.13 49,-77.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="50.75,-77.24 49,-72.24 47.25,-77.24 50.75,-77.24"/>
+</g>
+<!-- GObject.Object -->
+<g id="node2" class="node">
+<title>GObject.Object</title>
+<g id="a_node2"><a xlink:href="../../GObject-2.0/classes/Object.html#GObject.Object" xlink:title="GObject.Object">
+<path fill="none" stroke="#75507b" d="M178,-72C178,-72 110,-72 110,-72 107,-72 104,-69 104,-66 104,-66 104,-60 104,-60 104,-57 107,-54 110,-54 110,-54 178,-54 178,-54 181,-54 184,-57 184,-60 184,-60 184,-66 184,-66 184,-69 181,-72 178,-72"/>
+<text text-anchor="middle" x="144" y="-60.7" font-family="inherit" font-size="8.50">GObject.Object</text>
+</a>
+</g>
+</g>
+<!-- Gda.SqlParser -->
+<g id="node4" class="node">
+<title>Gda.SqlParser</title>
+<g id="a_node4"><a xlink:href="#Gda.SqlParser" xlink:title="Gda.SqlParser">
+<path fill="none" stroke="#75507b" d="M128.5,-18C128.5,-18 63.5,-18 63.5,-18 60.5,-18 57.5,-15 57.5,-12 57.5,-12 57.5,-6 57.5,-6 57.5,-3 60.5,0 63.5,0 63.5,0 128.5,0 128.5,0 131.5,0 134.5,-3 134.5,-6 134.5,-6 134.5,-12 134.5,-12 134.5,-15 131.5,-18 128.5,-18"/>
+<text text-anchor="middle" x="96" y="-6.7" font-family="inherit" font-size="8.50">Gda.SqlParser</text>
+</a>
+</g>
+</g>
+<!-- GObject.Object&#45;&gt;Gda.SqlParser -->
+<g id="edge2" class="edge">
+<title>GObject.Object&#45;&gt;Gda.SqlParser</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M136.5,-53.88C128.59,-45.3 116.03,-31.7 107,-21.91"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="108.28,-20.73 103.61,-18.24 105.71,-23.1 108.28,-20.73"/>
+</g>
+<!-- Gda.Lockable&#45;&gt;Gda.SqlParser -->
+<g id="edge3" class="edge">
+<title>Gda.Lockable&#45;&gt;Gda.SqlParser</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M56.34,-53.88C64.02,-45.38 76.17,-31.94 85,-22.18"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="86.5,-23.12 88.55,-18.24 83.9,-20.78 86.5,-23.12"/>
+</g>
+</g>
+</svg>
+</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Subclasses:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="methods">
+<span id="gda-sqlparser-methods"></span><h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (37)</span></a>,     <a class="reference internal" href="Lockable.html#gda-lockable-methods"><span class="std std-ref">Gda.Lockable (3)</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Structs:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/ObjectClass.html#gobject-objectclass-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.ObjectClass (5)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="99%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><em>class</em></td>
+<td><a class="reference internal" href="#Gda.SqlParser.error_quark" title="Gda.SqlParser.error_quark"><code class="xref py py-func docutils literal notranslate"><span class="pre">error_quark</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td><em>class</em></td>
+<td><a class="reference internal" href="#Gda.SqlParser.new" title="Gda.SqlParser.new"><code class="xref py py-func docutils literal notranslate"><span class="pre">new</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Gda.SqlParser.parse_file_as_batch" title="Gda.SqlParser.parse_file_as_batch"><code class="xref py py-func docutils literal notranslate"><span class="pre">parse_file_as_batch</span></code></a> (filename)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Gda.SqlParser.parse_string" title="Gda.SqlParser.parse_string"><code class="xref py py-func docutils literal notranslate"><span class="pre">parse_string</span></code></a> (sql)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Gda.SqlParser.parse_string_as_batch" title="Gda.SqlParser.parse_string_as_batch"><code class="xref py py-func docutils literal notranslate"><span class="pre">parse_string_as_batch</span></code></a> (sql)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Gda.SqlParser.set_overflow_error" title="Gda.SqlParser.set_overflow_error"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_overflow_error</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Gda.SqlParser.set_syntax_error" title="Gda.SqlParser.set_syntax_error"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_syntax_error</span></code></a> ()</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="virtual-methods">
+<span id="gda-sqlparser-vfuncs"></span><h2>Virtual Methods<a class="headerlink" href="#virtual-methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-vfuncs" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (7)</span></a>,     <a class="reference internal" href="Lockable.html#gda-lockable-vfuncs"><span class="std std-ref">Gda.Lockable (3)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="gda-sqlparser-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="1%" />
+<col width="1%" />
+<col width="97%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Flags</th>
+<th class="head">Short Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="#Gda.SqlParser.props.column_error" title="Gda.SqlParser.props.column_error"><code class="xref py py-data docutils literal notranslate"><span class="pre">column-error</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#Gda.SqlParser.props.line_error" title="Gda.SqlParser.props.line_error"><code class="xref py py-data docutils literal notranslate"><span class="pre">line-error</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#Gda.SqlParser.props.mode" title="Gda.SqlParser.props.mode"><code class="xref py py-data docutils literal notranslate"><span class="pre">mode</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+<td>r/w</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#Gda.SqlParser.props.tokenizer_flavour" title="Gda.SqlParser.props.tokenizer_flavour"><code class="xref py py-data docutils literal notranslate"><span class="pre">tokenizer-flavour</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+<td>r/w</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="signals">
+<span id="gda-sqlparser-signals"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-signals" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fields">
+<span id="gda-sqlparser-fields"></span><h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-fields" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="16%" />
+<col width="1%" />
+<col width="1%" />
+<col width="82%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Access</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>object</td>
+<td><a class="reference external" href="../../GObject-2.0/classes/Object.html#GObject.Object" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GObject.Object</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="class-details">
+<h2>Class Details<a class="headerlink" href="#class-details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Gda.SqlParser">
+<em class="property">class </em><code class="descclassname">Gda.</code><code class="descname">SqlParser</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#Gda.SqlParser" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Bases:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#GObject.Object" title="(in GObject 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GObject.Object</span></code></a>,         <a class="reference internal" href="Lockable.html#Gda.Lockable" title="Gda.Lockable"><code class="xref py py-class docutils literal notranslate"><span class="pre">Gda.Lockable</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Abstract:</th><td class="field-body">No</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Structure:</th><td class="field-body"><a class="reference internal" href="SqlParserClass.html#Gda.SqlParserClass" title="Gda.SqlParserClass"><code class="xref py py-class docutils literal notranslate"><span class="pre">Gda.SqlParserClass</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<dl class="classmethod">
+<dt id="Gda.SqlParser.error_quark">
+<em class="property">classmethod </em><code class="descname">error_quark</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Gda.SqlParser.error_quark" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="Gda.SqlParser.new">
+<em class="property">classmethod </em><code class="descname">new</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Gda.SqlParser.new" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the new object</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#Gda.SqlParser" title="Gda.SqlParser"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gda.SqlParser</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Creates a new <a class="reference internal" href="#Gda.SqlParser" title="Gda.SqlParser"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gda.SqlParser</span></code></a> object</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gda.SqlParser.parse_file_as_batch">
+<code class="descname">parse_file_as_batch</code><span class="sig-paren">(</span><em>filename</em><span class="sig-paren">)</span><a class="headerlink" href="#Gda.SqlParser.parse_file_as_batch" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>filename</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – name of the file to parse</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference external" href="../../GLib-2.0/classes/Error.html#GLib.Error" title="(in GLib 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLib.Error</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a new <a class="reference internal" href="Batch.html#Gda.Batch" title="Gda.Batch"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gda.Batch</span></code></a> object, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> if an error occurred</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="Batch.html#Gda.Batch" title="Gda.Batch"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gda.Batch</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Parse <cite>filename</cite>’s contents and creates a <a class="reference internal" href="Batch.html#Gda.Batch" title="Gda.Batch"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gda.Batch</span></code></a> object which contains all the
+<a class="reference internal" href="Statement.html#Gda.Statement" title="Gda.Statement"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gda.Statement</span></code></a> objects created while parsing (one object per SQL statement).</p>
+<p><cite>filename</cite>’s contents are parsed and <a class="reference internal" href="Statement.html#Gda.Statement" title="Gda.Statement"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gda.Statement</span></code></a> objects are created as long as no error is found. If an error is found
+at some point, then the parsing stops, <cite>error</cite> may be set and <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> is returned</p>
+<p>if <cite>sql</cite> is <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>, then the returned <a class="reference internal" href="Batch.html#Gda.Batch" title="Gda.Batch"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gda.Batch</span></code></a> object will contain no statement.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gda.SqlParser.parse_string">
+<code class="descname">parse_string</code><span class="sig-paren">(</span><em>sql</em><span class="sig-paren">)</span><a class="headerlink" href="#Gda.SqlParser.parse_string" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>sql</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – the SQL string to parse</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference external" href="../../GLib-2.0/classes/Error.html#GLib.Error" title="(in GLib 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLib.Error</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a new <a class="reference internal" href="Statement.html#Gda.Statement" title="Gda.Statement"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gda.Statement</span></code></a> object, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> if an error occurred<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">remain:</th><td class="field-body">location to store a pointer to remaining part of <cite>sql</cite> in case <cite>sql</cite> has multiple statement, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">(<a class="reference internal" href="Statement.html#Gda.Statement" title="Gda.Statement"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gda.Statement</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>, <strong>remain</strong>: <a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>)</td>
+</tr>
+</tbody>
+</table>
+<p>Parses <cite>sql</cite> and creates a <a class="reference internal" href="Statement.html#Gda.Statement" title="Gda.Statement"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gda.Statement</span></code></a> statement from the first SQL statement contained in <cite>sql</cite>: if <cite>sql</cite>
+contains more than one statement, then the remaining part of the string is not parsed at all, and <cite>remain</cite> (if
+not <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) will point at the first non parsed character.</p>
+<p>To include variables in the <cite>sql</cite> string, see the</p>
+<p>‘GdaSqlParser’s object description [GdaSqlParser.description]’.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gda.SqlParser.parse_string_as_batch">
+<code class="descname">parse_string_as_batch</code><span class="sig-paren">(</span><em>sql</em><span class="sig-paren">)</span><a class="headerlink" href="#Gda.SqlParser.parse_string_as_batch" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>sql</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – the SQL string to parse</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference external" href="../../GLib-2.0/classes/Error.html#GLib.Error" title="(in GLib 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLib.Error</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a new <a class="reference internal" href="Batch.html#Gda.Batch" title="Gda.Batch"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gda.Batch</span></code></a> object, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> if an error occurred<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">remain:</th><td class="field-body">location to store a pointer to remaining part of <cite>sql</cite> in case an error occurred while parsing <cite>sql</cite>, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">(<a class="reference internal" href="Batch.html#Gda.Batch" title="Gda.Batch"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gda.Batch</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>, <strong>remain</strong>: <a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>)</td>
+</tr>
+</tbody>
+</table>
+<p>Parse <cite>sql</cite> and creates a <a class="reference internal" href="Batch.html#Gda.Batch" title="Gda.Batch"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gda.Batch</span></code></a> object which contains all the <a class="reference internal" href="Statement.html#Gda.Statement" title="Gda.Statement"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gda.Statement</span></code></a> objects created while parsing (one object
+per SQL statement). Empty statements (composed of spaces only) do not appear in the resulting object.</p>
+<p><cite>sql</cite> is parsed and <a class="reference internal" href="Statement.html#Gda.Statement" title="Gda.Statement"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gda.Statement</span></code></a> objects are created as long as no error is found in <cite>sql</cite>. If an error is found
+at some point, then the parsing stops and <cite>remain</cite> may contain a non <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> pointer, <cite>error</cite> may be set, and <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>
+is returned.</p>
+<p>if <cite>sql</cite> is <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>, then the returned <a class="reference internal" href="Batch.html#Gda.Batch" title="Gda.Batch"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gda.Batch</span></code></a> object will contain no statement.</p>
+<p>To include variables in the <cite>sql</cite> string, see the</p>
+<p>‘GdaSqlParser’s object description [GdaSqlParser.description]’.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gda.SqlParser.set_overflow_error">
+<code class="descname">set_overflow_error</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Gda.SqlParser.set_overflow_error" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Gda.SqlParser.set_syntax_error">
+<code class="descname">set_syntax_error</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Gda.SqlParser.set_syntax_error" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="property-details">
+<h2>Property Details<a class="headerlink" href="#property-details" title="Permalink to this headline">¶</a></h2>
+<dl class="data">
+<dt id="Gda.SqlParser.props.column_error">
+<code class="descclassname">Gda.SqlParser.props.</code><code class="descname">column_error</code><a class="headerlink" href="#Gda.SqlParser.props.column_error" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">column-error</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">0</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="data">
+<dt id="Gda.SqlParser.props.line_error">
+<code class="descclassname">Gda.SqlParser.props.</code><code class="descname">line_error</code><a class="headerlink" href="#Gda.SqlParser.props.line_error" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">line-error</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">0</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="data">
+<dt id="Gda.SqlParser.props.mode">
+<code class="descclassname">Gda.SqlParser.props.</code><code class="descname">mode</code><a class="headerlink" href="#Gda.SqlParser.props.mode" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">mode</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">0</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="data">
+<dt id="Gda.SqlParser.props.tokenizer_flavour">
+<code class="descclassname">Gda.SqlParser.props.</code><code class="descname">tokenizer_flavour</code><a class="headerlink" href="#Gda.SqlParser.props.tokenizer_flavour" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">tokenizer-flavour</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">0</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div> 
+
+</body>
+</html>

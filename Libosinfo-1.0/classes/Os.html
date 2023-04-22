@@ -1,0 +1,1263 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    Libosinfo.Os -
+    
+      Classes -
+    
+    Libosinfo 1.0
+  </title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/css/pgi.css" type="text/css" />
+  
+
+  
+  <script type="text/javascript">
+
+    function openSidebar(element) {
+        window.location.href = element.href + location.hash;
+        return false;
+    }
+
+    function inIframe() {
+        try {
+            return window.self !== window.top;
+        } catch (e) {
+            return true;
+        }
+    }
+
+    function onLoaded() {
+        if(!inIframe()) {
+            var icons = document.getElementsByClassName('open-sidebar');
+
+            for (var i = 0; i < icons.length; i ++) {
+                icons[i].style.display = 'table-cell';
+            }
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', onLoaded, false);
+
+  </script>
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="Libosinfo 1.0 Python API Docs" href="../index.html"/>
+        <link rel="up" title="Classes" href="../classes.html"/>
+        <link rel="next" title="Libosinfo.OsList" href="OsList.html"/>
+        <link rel="prev" title="Libosinfo.MediaList" href="MediaList.html"/> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+<div class="non-fixed-bar">
+<table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#Libosinfo-1.0/classes/Os.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Libosinfo 1.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>Libosinfo.Os</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="MediaList.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="OsList.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">Libosinfo.Os</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#property-details">Property Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+<div class="fixed-bar">
+  <table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#Libosinfo-1.0/classes/Os.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Libosinfo 1.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>Libosinfo.Os</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="MediaList.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="OsList.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">Libosinfo.Os</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#property-details">Property Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+  <div class="wy-grid-for-nav">
+
+    
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="main">
+            
+  <div class="section" id="libosinfo-os">
+<h1>Libosinfo.Os<a class="headerlink" href="#libosinfo-os" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<svg width="97pt" height="188pt"
+ viewBox="0.00 0.00 97.00 188.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 184)">
+<title>g</title>
+<!-- GObject.Object -->
+<g id="node1" class="node">
+<title>GObject.Object</title>
+<g id="a_node1"><a xlink:href="../../GObject-2.0/classes/Object.html#GObject.Object" xlink:title="GObject.Object">
+<path fill="none" stroke="#75507b" d="M78.5,-180C78.5,-180 10.5,-180 10.5,-180 7.5,-180 4.5,-177 4.5,-174 4.5,-174 4.5,-168 4.5,-168 4.5,-165 7.5,-162 10.5,-162 10.5,-162 78.5,-162 78.5,-162 81.5,-162 84.5,-165 84.5,-168 84.5,-168 84.5,-174 84.5,-174 84.5,-177 81.5,-180 78.5,-180"/>
+<text text-anchor="middle" x="44.5" y="-168.7" font-family="inherit" font-size="8.50">GObject.Object</text>
+</a>
+</g>
+</g>
+<!-- Libosinfo.Entity -->
+<g id="node2" class="node">
+<title>Libosinfo.Entity</title>
+<g id="a_node2"><a xlink:href="Entity.html#Libosinfo.Entity" xlink:title="Libosinfo.Entity">
+<path fill="none" stroke="#aaaaaa" d="M79,-126C79,-126 10,-126 10,-126 7,-126 4,-123 4,-120 4,-120 4,-114 4,-114 4,-111 7,-108 10,-108 10,-108 79,-108 79,-108 82,-108 85,-111 85,-114 85,-114 85,-120 85,-120 85,-123 82,-126 79,-126"/>
+<text text-anchor="middle" x="44.5" y="-114.7" font-family="inherit" font-size="8.50">Libosinfo.Entity</text>
+</a>
+</g>
+</g>
+<!-- GObject.Object&#45;&gt;Libosinfo.Entity -->
+<g id="edge1" class="edge">
+<title>GObject.Object&#45;&gt;Libosinfo.Entity</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M44.5,-161.88C44.5,-153.76 44.5,-141.13 44.5,-131.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="46.25,-131.24 44.5,-126.24 42.75,-131.24 46.25,-131.24"/>
+</g>
+<!-- Libosinfo.Product -->
+<g id="node4" class="node">
+<title>Libosinfo.Product</title>
+<g id="a_node4"><a xlink:href="Product.html#Libosinfo.Product" xlink:title="Libosinfo.Product">
+<path fill="none" stroke="#aaaaaa" d="M83,-72C83,-72 6,-72 6,-72 3,-72 0,-69 0,-66 0,-66 0,-60 0,-60 0,-57 3,-54 6,-54 6,-54 83,-54 83,-54 86,-54 89,-57 89,-60 89,-60 89,-66 89,-66 89,-69 86,-72 83,-72"/>
+<text text-anchor="middle" x="44.5" y="-60.7" font-family="inherit" font-size="8.50">Libosinfo.Product</text>
+</a>
+</g>
+</g>
+<!-- Libosinfo.Entity&#45;&gt;Libosinfo.Product -->
+<g id="edge2" class="edge">
+<title>Libosinfo.Entity&#45;&gt;Libosinfo.Product</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M44.5,-107.88C44.5,-99.76 44.5,-87.13 44.5,-77.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="46.25,-77.24 44.5,-72.24 42.75,-77.24 46.25,-77.24"/>
+</g>
+<!-- Libosinfo.Os -->
+<g id="node3" class="node">
+<title>Libosinfo.Os</title>
+<g id="a_node3"><a xlink:href="#Libosinfo.Os" xlink:title="Libosinfo.Os">
+<path fill="none" stroke="#75507b" d="M72.5,-18C72.5,-18 16.5,-18 16.5,-18 13.5,-18 10.5,-15 10.5,-12 10.5,-12 10.5,-6 10.5,-6 10.5,-3 13.5,0 16.5,0 16.5,0 72.5,0 72.5,0 75.5,0 78.5,-3 78.5,-6 78.5,-6 78.5,-12 78.5,-12 78.5,-15 75.5,-18 72.5,-18"/>
+<text text-anchor="middle" x="44.5" y="-6.7" font-family="inherit" font-size="8.50">Libosinfo.Os</text>
+</a>
+</g>
+</g>
+<!-- Libosinfo.Product&#45;&gt;Libosinfo.Os -->
+<g id="edge3" class="edge">
+<title>Libosinfo.Product&#45;&gt;Libosinfo.Os</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M44.5,-53.88C44.5,-45.76 44.5,-33.13 44.5,-23.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="46.25,-23.24 44.5,-18.24 42.75,-23.24 46.25,-23.24"/>
+</g>
+</g>
+</svg>
+</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Subclasses:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="methods">
+<span id="libosinfo-os-methods"></span><h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Product.html#libosinfo-product-methods"><span class="std std-ref">Libosinfo.Product (13)</span></a>,     <a class="reference internal" href="Entity.html#libosinfo-entity-methods"><span class="std std-ref">Libosinfo.Entity (15)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (37)</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Structs:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/ObjectClass.html#gobject-objectclass-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.ObjectClass (5)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="99%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><em>class</em></td>
+<td><a class="reference internal" href="#Libosinfo.Os.new" title="Libosinfo.Os.new"><code class="xref py py-func docutils literal notranslate"><span class="pre">new</span></code></a> (id)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Libosinfo.Os.add_device" title="Libosinfo.Os.add_device"><code class="xref py py-func docutils literal notranslate"><span class="pre">add_device</span></code></a> (dev)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Libosinfo.Os.add_device_driver" title="Libosinfo.Os.add_device_driver"><code class="xref py py-func docutils literal notranslate"><span class="pre">add_device_driver</span></code></a> (driver)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Libosinfo.Os.add_firmware" title="Libosinfo.Os.add_firmware"><code class="xref py py-func docutils literal notranslate"><span class="pre">add_firmware</span></code></a> (firmware)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Libosinfo.Os.add_image" title="Libosinfo.Os.add_image"><code class="xref py py-func docutils literal notranslate"><span class="pre">add_image</span></code></a> (image)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Libosinfo.Os.add_install_script" title="Libosinfo.Os.add_install_script"><code class="xref py py-func docutils literal notranslate"><span class="pre">add_install_script</span></code></a> (script)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Libosinfo.Os.add_maximum_resources" title="Libosinfo.Os.add_maximum_resources"><code class="xref py py-func docutils literal notranslate"><span class="pre">add_maximum_resources</span></code></a> (resources)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Libosinfo.Os.add_media" title="Libosinfo.Os.add_media"><code class="xref py py-func docutils literal notranslate"><span class="pre">add_media</span></code></a> (media)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Libosinfo.Os.add_minimum_resources" title="Libosinfo.Os.add_minimum_resources"><code class="xref py py-func docutils literal notranslate"><span class="pre">add_minimum_resources</span></code></a> (resources)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Libosinfo.Os.add_network_install_resources" title="Libosinfo.Os.add_network_install_resources"><code class="xref py py-func docutils literal notranslate"><span class="pre">add_network_install_resources</span></code></a> (resources)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Libosinfo.Os.add_recommended_resources" title="Libosinfo.Os.add_recommended_resources"><code class="xref py py-func docutils literal notranslate"><span class="pre">add_recommended_resources</span></code></a> (resources)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Libosinfo.Os.add_tree" title="Libosinfo.Os.add_tree"><code class="xref py py-func docutils literal notranslate"><span class="pre">add_tree</span></code></a> (tree)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Libosinfo.Os.add_variant" title="Libosinfo.Os.add_variant"><code class="xref py py-func docutils literal notranslate"><span class="pre">add_variant</span></code></a> (variant)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Libosinfo.Os.find_install_script" title="Libosinfo.Os.find_install_script"><code class="xref py py-func docutils literal notranslate"><span class="pre">find_install_script</span></code></a> (profile)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Libosinfo.Os.get_all_device_links" title="Libosinfo.Os.get_all_device_links"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_all_device_links</span></code></a> (filter)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Libosinfo.Os.get_all_devices" title="Libosinfo.Os.get_all_devices"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_all_devices</span></code></a> (filter)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Libosinfo.Os.get_cloud_image_username" title="Libosinfo.Os.get_cloud_image_username"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_cloud_image_username</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Libosinfo.Os.get_device_drivers" title="Libosinfo.Os.get_device_drivers"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_device_drivers</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Libosinfo.Os.get_device_drivers_prioritized" title="Libosinfo.Os.get_device_drivers_prioritized"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_device_drivers_prioritized</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Libosinfo.Os.get_device_links" title="Libosinfo.Os.get_device_links"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_device_links</span></code></a> (filter)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Libosinfo.Os.get_devices" title="Libosinfo.Os.get_devices"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_devices</span></code></a> (filter)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Libosinfo.Os.get_devices_by_property" title="Libosinfo.Os.get_devices_by_property"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_devices_by_property</span></code></a> (property, value, inherited)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Libosinfo.Os.get_distro" title="Libosinfo.Os.get_distro"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_distro</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Libosinfo.Os.get_family" title="Libosinfo.Os.get_family"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_family</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Libosinfo.Os.get_firmware_list" title="Libosinfo.Os.get_firmware_list"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_firmware_list</span></code></a> (filter)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Libosinfo.Os.get_image_list" title="Libosinfo.Os.get_image_list"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_image_list</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Libosinfo.Os.get_install_script_list" title="Libosinfo.Os.get_install_script_list"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_install_script_list</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Libosinfo.Os.get_kernel_url_argument" title="Libosinfo.Os.get_kernel_url_argument"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_kernel_url_argument</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Libosinfo.Os.get_maximum_resources" title="Libosinfo.Os.get_maximum_resources"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_maximum_resources</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Libosinfo.Os.get_media_list" title="Libosinfo.Os.get_media_list"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_media_list</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Libosinfo.Os.get_minimum_resources" title="Libosinfo.Os.get_minimum_resources"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_minimum_resources</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Libosinfo.Os.get_network_install_resources" title="Libosinfo.Os.get_network_install_resources"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_network_install_resources</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Libosinfo.Os.get_recommended_resources" title="Libosinfo.Os.get_recommended_resources"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_recommended_resources</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Libosinfo.Os.get_release_status" title="Libosinfo.Os.get_release_status"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_release_status</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Libosinfo.Os.get_tree_list" title="Libosinfo.Os.get_tree_list"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_tree_list</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Libosinfo.Os.get_variant_list" title="Libosinfo.Os.get_variant_list"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_variant_list</span></code></a> ()</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="virtual-methods">
+<span id="libosinfo-os-vfuncs"></span><h2>Virtual Methods<a class="headerlink" href="#virtual-methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-vfuncs" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (7)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="libosinfo-os-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Product.html#libosinfo-product-props"><span class="std std-ref">Libosinfo.Product (6)</span></a>,     <a class="reference internal" href="Entity.html#libosinfo-entity-props"><span class="std std-ref">Libosinfo.Entity (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="1%" />
+<col width="1%" />
+<col width="97%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Flags</th>
+<th class="head">Short Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="#Libosinfo.Os.props.cloud_image_username" title="Libosinfo.Os.props.cloud_image_username"><code class="xref py py-data docutils literal notranslate"><span class="pre">cloud-image-username</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+<td>r</td>
+<td>Cloud image username</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#Libosinfo.Os.props.distro" title="Libosinfo.Os.props.distro"><code class="xref py py-data docutils literal notranslate"><span class="pre">distro</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+<td>r</td>
+<td>Generic Distro</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#Libosinfo.Os.props.family" title="Libosinfo.Os.props.family"><code class="xref py py-data docutils literal notranslate"><span class="pre">family</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+<td>r</td>
+<td>Generic Family</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#Libosinfo.Os.props.kernel_url_argument" title="Libosinfo.Os.props.kernel_url_argument"><code class="xref py py-data docutils literal notranslate"><span class="pre">kernel-url-argument</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+<td>r</td>
+<td>Kernel URL Argument</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="signals">
+<span id="libosinfo-os-signals"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-signals" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fields">
+<span id="libosinfo-os-fields"></span><h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-fields" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="16%" />
+<col width="1%" />
+<col width="1%" />
+<col width="82%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Access</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>parent_instance</td>
+<td><a class="reference internal" href="Product.html#Libosinfo.Product" title="Libosinfo.Product"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.Product</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="class-details">
+<h2>Class Details<a class="headerlink" href="#class-details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Libosinfo.Os">
+<em class="property">class </em><code class="descclassname">Libosinfo.</code><code class="descname">Os</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#Libosinfo.Os" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Bases:</th><td class="field-body"><a class="reference internal" href="Product.html#Libosinfo.Product" title="Libosinfo.Product"><code class="xref py py-class docutils literal notranslate"><span class="pre">Libosinfo.Product</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Abstract:</th><td class="field-body">No</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Structure:</th><td class="field-body"><a class="reference internal" href="OsClass.html#Libosinfo.OsClass" title="Libosinfo.OsClass"><code class="xref py py-class docutils literal notranslate"><span class="pre">Libosinfo.OsClass</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<dl class="classmethod">
+<dt id="Libosinfo.Os.new">
+<em class="property">classmethod </em><code class="descname">new</code><span class="sig-paren">(</span><em>id</em><span class="sig-paren">)</span><a class="headerlink" href="#Libosinfo.Os.new" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>id</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – a unique identifier</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a new operating system entity</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#Libosinfo.Os" title="Libosinfo.Os"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.Os</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Create a new operating system entity</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Libosinfo.Os.add_device">
+<code class="descname">add_device</code><span class="sig-paren">(</span><em>dev</em><span class="sig-paren">)</span><a class="headerlink" href="#Libosinfo.Os.add_device" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>dev</strong> (<a class="reference internal" href="Device.html#Libosinfo.Device" title="Libosinfo.Device"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.Device</span></code></a>) – the device to associate with</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the device association</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="DeviceLink.html#Libosinfo.DeviceLink" title="Libosinfo.DeviceLink"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.DeviceLink</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Associated a device with an operating system.  The
+returned <a class="reference internal" href="DeviceLink.html#Libosinfo.DeviceLink" title="Libosinfo.DeviceLink"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.DeviceLink</span></code></a> can be used to record
+extra metadata against the link</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Libosinfo.Os.add_device_driver">
+<code class="descname">add_device_driver</code><span class="sig-paren">(</span><em>driver</em><span class="sig-paren">)</span><a class="headerlink" href="#Libosinfo.Os.add_device_driver" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>driver</strong> (<a class="reference internal" href="DeviceDriver.html#Libosinfo.DeviceDriver" title="Libosinfo.DeviceDriver"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.DeviceDriver</span></code></a>) – the device driver to add</td>
+</tr>
+</tbody>
+</table>
+<p>Adds <cite>driver</cite> to the list of device drivers of operating system <cite>self</cite>.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.2.2.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Libosinfo.Os.add_firmware">
+<code class="descname">add_firmware</code><span class="sig-paren">(</span><em>firmware</em><span class="sig-paren">)</span><a class="headerlink" href="#Libosinfo.Os.add_firmware" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>firmware</strong> (<a class="reference internal" href="Firmware.html#Libosinfo.Firmware" title="Libosinfo.Firmware"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.Firmware</span></code></a>) – </td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Libosinfo.Os.add_image">
+<code class="descname">add_image</code><span class="sig-paren">(</span><em>image</em><span class="sig-paren">)</span><a class="headerlink" href="#Libosinfo.Os.add_image" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>image</strong> (<a class="reference internal" href="Image.html#Libosinfo.Image" title="Libosinfo.Image"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.Image</span></code></a>) – the image to add</td>
+</tr>
+</tbody>
+</table>
+<p>Adds an installed image <cite>image</cite> to operating system <cite>self</cite>.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.3.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Libosinfo.Os.add_install_script">
+<code class="descname">add_install_script</code><span class="sig-paren">(</span><em>script</em><span class="sig-paren">)</span><a class="headerlink" href="#Libosinfo.Os.add_install_script" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>script</strong> (<a class="reference internal" href="InstallScript.html#Libosinfo.InstallScript" title="Libosinfo.InstallScript"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.InstallScript</span></code></a>) – the install script to add</td>
+</tr>
+</tbody>
+</table>
+<p>Adds <cite>script</cite> to the list of scripts of operating system <cite>self</cite>.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.2.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Libosinfo.Os.add_maximum_resources">
+<code class="descname">add_maximum_resources</code><span class="sig-paren">(</span><em>resources</em><span class="sig-paren">)</span><a class="headerlink" href="#Libosinfo.Os.add_maximum_resources" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>resources</strong> (<a class="reference internal" href="Resources.html#Libosinfo.Resources" title="Libosinfo.Resources"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.Resources</span></code></a>) – the resources to add</td>
+</tr>
+</tbody>
+</table>
+<p>Adds <cite>resources</cite> to list of maximum resources of operating system <cite>self</cite>.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.3.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Libosinfo.Os.add_media">
+<code class="descname">add_media</code><span class="sig-paren">(</span><em>media</em><span class="sig-paren">)</span><a class="headerlink" href="#Libosinfo.Os.add_media" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>media</strong> (<a class="reference internal" href="Media.html#Libosinfo.Media" title="Libosinfo.Media"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.Media</span></code></a>) – the media to add</td>
+</tr>
+</tbody>
+</table>
+<p>Adds installation media <cite>media</cite> to operating system <cite>self</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Libosinfo.Os.add_minimum_resources">
+<code class="descname">add_minimum_resources</code><span class="sig-paren">(</span><em>resources</em><span class="sig-paren">)</span><a class="headerlink" href="#Libosinfo.Os.add_minimum_resources" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>resources</strong> (<a class="reference internal" href="Resources.html#Libosinfo.Resources" title="Libosinfo.Resources"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.Resources</span></code></a>) – the resources to add</td>
+</tr>
+</tbody>
+</table>
+<p>Adds <cite>resources</cite> to list of minimum resources of operating system <cite>self</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Libosinfo.Os.add_network_install_resources">
+<code class="descname">add_network_install_resources</code><span class="sig-paren">(</span><em>resources</em><span class="sig-paren">)</span><a class="headerlink" href="#Libosinfo.Os.add_network_install_resources" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>resources</strong> (<a class="reference internal" href="Resources.html#Libosinfo.Resources" title="Libosinfo.Resources"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.Resources</span></code></a>) – the resources to add</td>
+</tr>
+</tbody>
+</table>
+<p>Adds <cite>resources</cite> to list of resources needed for network installing an
+operating system <cite>self</cite>.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.3.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Libosinfo.Os.add_recommended_resources">
+<code class="descname">add_recommended_resources</code><span class="sig-paren">(</span><em>resources</em><span class="sig-paren">)</span><a class="headerlink" href="#Libosinfo.Os.add_recommended_resources" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>resources</strong> (<a class="reference internal" href="Resources.html#Libosinfo.Resources" title="Libosinfo.Resources"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.Resources</span></code></a>) – the resources to add</td>
+</tr>
+</tbody>
+</table>
+<p>Adds <cite>resources</cite> to list of recommended resources of operating system <cite>self</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Libosinfo.Os.add_tree">
+<code class="descname">add_tree</code><span class="sig-paren">(</span><em>tree</em><span class="sig-paren">)</span><a class="headerlink" href="#Libosinfo.Os.add_tree" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>tree</strong> (<a class="reference internal" href="Tree.html#Libosinfo.Tree" title="Libosinfo.Tree"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.Tree</span></code></a>) – the tree to add</td>
+</tr>
+</tbody>
+</table>
+<p>Adds installation tree <cite>tree</cite> to operating system <cite>self</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Libosinfo.Os.add_variant">
+<code class="descname">add_variant</code><span class="sig-paren">(</span><em>variant</em><span class="sig-paren">)</span><a class="headerlink" href="#Libosinfo.Os.add_variant" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>variant</strong> (<a class="reference internal" href="OsVariant.html#Libosinfo.OsVariant" title="Libosinfo.OsVariant"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.OsVariant</span></code></a>) – the variant to add</td>
+</tr>
+</tbody>
+</table>
+<p>Adds a variant <cite>variant</cite> to operating system <cite>self</cite>.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.2.9.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Libosinfo.Os.find_install_script">
+<code class="descname">find_install_script</code><span class="sig-paren">(</span><em>profile</em><span class="sig-paren">)</span><a class="headerlink" href="#Libosinfo.Os.find_install_script" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>profile</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – the install script profile that must be either
+<a class="reference internal" href="../constants.html#Libosinfo.INSTALL_SCRIPT_PROFILE_DESKTOP" title="Libosinfo.INSTALL_SCRIPT_PROFILE_DESKTOP"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.INSTALL_SCRIPT_PROFILE_DESKTOP</span></code></a> or <a class="reference internal" href="../constants.html#Libosinfo.INSTALL_SCRIPT_PROFILE_JEOS" title="Libosinfo.INSTALL_SCRIPT_PROFILE_JEOS"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.INSTALL_SCRIPT_PROFILE_JEOS</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">A new <a class="reference internal" href="InstallScript.html#Libosinfo.InstallScript" title="Libosinfo.InstallScript"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.InstallScript</span></code></a> for the <cite>self</cite> <cite>profile</cite></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="InstallScript.html#Libosinfo.InstallScript" title="Libosinfo.InstallScript"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.InstallScript</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.2.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Libosinfo.Os.get_all_device_links">
+<code class="descname">get_all_device_links</code><span class="sig-paren">(</span><em>filter</em><span class="sig-paren">)</span><a class="headerlink" href="#Libosinfo.Os.get_all_device_links" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>filter</strong> (<a class="reference internal" href="Filter.html#Libosinfo.Filter" title="Libosinfo.Filter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.Filter</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – an optional device property filter</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">A list of <a class="reference internal" href="DeviceLink.html#Libosinfo.DeviceLink" title="Libosinfo.DeviceLink"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.DeviceLink</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="DeviceLinkList.html#Libosinfo.DeviceLinkList" title="Libosinfo.DeviceLinkList"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.DeviceLinkList</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get all devicelinks matching a given filter but unlike
+<a class="reference internal" href="#Libosinfo.Os.get_device_links" title="Libosinfo.Os.get_device_links"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.Os.get_device_links</span></code></a> this function also retrieves devices from all
+derived and cloned operating systems.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.3.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Libosinfo.Os.get_all_devices">
+<code class="descname">get_all_devices</code><span class="sig-paren">(</span><em>filter</em><span class="sig-paren">)</span><a class="headerlink" href="#Libosinfo.Os.get_all_devices" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>filter</strong> (<a class="reference internal" href="Filter.html#Libosinfo.Filter" title="Libosinfo.Filter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.Filter</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – an optional device property filter</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">A list of devices</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="DeviceList.html#Libosinfo.DeviceList" title="Libosinfo.DeviceList"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.DeviceList</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get all devices matching a given filter but unlike <a class="reference internal" href="#Libosinfo.Os.get_devices" title="Libosinfo.Os.get_devices"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.Os.get_devices</span></code></a>
+this function also retrieves devices from all derived and cloned operating
+systems.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.0.5.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Libosinfo.Os.get_cloud_image_username">
+<code class="descname">get_cloud_image_username</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Libosinfo.Os.get_cloud_image_username" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">ther username, if present. Otherwise, <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the username expected to be passed to the cloud image when performing
+installation.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Libosinfo.Os.get_device_drivers">
+<code class="descname">get_device_drivers</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Libosinfo.Os.get_device_drivers" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A list of device drivers</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="DeviceDriverList.html#Libosinfo.DeviceDriverList" title="Libosinfo.DeviceDriverList"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.DeviceDriverList</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets list of all available device drivers for OS <cite>self</cite>.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.2.2.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Libosinfo.Os.get_device_drivers_prioritized">
+<code class="descname">get_device_drivers_prioritized</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Libosinfo.Os.get_device_drivers_prioritized" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A list of device drivers</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="DeviceDriverList.html#Libosinfo.DeviceDriverList" title="Libosinfo.DeviceDriverList"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.DeviceDriverList</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets list of the highest priority device drivers for OS <cite>self</cite>.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.7.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Libosinfo.Os.get_device_links">
+<code class="descname">get_device_links</code><span class="sig-paren">(</span><em>filter</em><span class="sig-paren">)</span><a class="headerlink" href="#Libosinfo.Os.get_device_links" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>filter</strong> (<a class="reference internal" href="Filter.html#Libosinfo.Filter" title="Libosinfo.Filter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.Filter</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – an optional device property filter</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">A list of device links</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="DeviceLinkList.html#Libosinfo.DeviceLinkList" title="Libosinfo.DeviceLinkList"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.DeviceLinkList</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get all devices matching a given filter. The filter
+matches against the links, not the devices.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Libosinfo.Os.get_devices">
+<code class="descname">get_devices</code><span class="sig-paren">(</span><em>filter</em><span class="sig-paren">)</span><a class="headerlink" href="#Libosinfo.Os.get_devices" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>filter</strong> (<a class="reference internal" href="Filter.html#Libosinfo.Filter" title="Libosinfo.Filter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.Filter</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – an optional device property filter</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">A list of devices</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="DeviceList.html#Libosinfo.DeviceList" title="Libosinfo.DeviceList"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.DeviceList</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get all devices matching a given filter</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Libosinfo.Os.get_devices_by_property">
+<code class="descname">get_devices_by_property</code><span class="sig-paren">(</span><em>property</em>, <em>value</em>, <em>inherited</em><span class="sig-paren">)</span><a class="headerlink" href="#Libosinfo.Os.get_devices_by_property" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>property</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – the property of interest</li>
+<li><strong>value</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – the required value of property <cite>property</cite></li>
+<li><strong>inherited</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a>) – Should devices from inherited and cloned OSs be included in the
+search.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">The found devices</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="DeviceList.html#Libosinfo.DeviceList" title="Libosinfo.DeviceList"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.DeviceList</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>A utility function that gets devices found from the list of devices
+<cite>self</cite> supports, for which the value of <cite>property</cite> is <cite>value</cite>.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.0.6.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Libosinfo.Os.get_distro">
+<code class="descname">get_distro</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Libosinfo.Os.get_distro" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the distro of this os</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Retrieves the generic family the OS <cite>self</cite> belongs to, for example fedora,
+ubuntu, windows, solaris, freebsd etc.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Libosinfo.Os.get_family">
+<code class="descname">get_family</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Libosinfo.Os.get_family" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the family of this os</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Retrieves the generic family the OS <cite>self</cite> belongs to, based upon its kernel,
+for example linux, winnt, solaris, freebsd etc.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Libosinfo.Os.get_firmware_list">
+<code class="descname">get_firmware_list</code><span class="sig-paren">(</span><em>filter</em><span class="sig-paren">)</span><a class="headerlink" href="#Libosinfo.Os.get_firmware_list" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>filter</strong> (<a class="reference internal" href="Filter.html#Libosinfo.Filter" title="Libosinfo.Filter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.Filter</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – an optional firmware property filter</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">A list of firmwares</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="FirmwareList.html#Libosinfo.FirmwareList" title="Libosinfo.FirmwareList"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.FirmwareList</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get all firmwares matching a given filter</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.7.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Libosinfo.Os.get_image_list">
+<code class="descname">get_image_list</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Libosinfo.Os.get_image_list" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A list of images</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="ImageList.html#Libosinfo.ImageList" title="Libosinfo.ImageList"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.ImageList</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get all installed images associated with operating system <cite>self</cite>.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.3.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Libosinfo.Os.get_install_script_list">
+<code class="descname">get_install_script_list</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Libosinfo.Os.get_install_script_list" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a list of the install scripts for the specified os</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="InstallScriptList.html#Libosinfo.InstallScriptList" title="Libosinfo.InstallScriptList"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.InstallScriptList</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.2.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Libosinfo.Os.get_kernel_url_argument">
+<code class="descname">get_kernel_url_argument</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Libosinfo.Os.get_kernel_url_argument" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the kernel url argument, if present. Otherwise,
+<a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the argument expected to be passed to the kernel command line when
+performing a tree based installation.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Libosinfo.Os.get_maximum_resources">
+<code class="descname">get_maximum_resources</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Libosinfo.Os.get_maximum_resources" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A list of resources</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="ResourcesList.html#Libosinfo.ResourcesList" title="Libosinfo.ResourcesList"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.ResourcesList</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get the list of maximum resources for the operating system <cite>self</cite>.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.3.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Libosinfo.Os.get_media_list">
+<code class="descname">get_media_list</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Libosinfo.Os.get_media_list" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A list of medias</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="MediaList.html#Libosinfo.MediaList" title="Libosinfo.MediaList"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.MediaList</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get all installation medias associated with operating system <cite>self</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Libosinfo.Os.get_minimum_resources">
+<code class="descname">get_minimum_resources</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Libosinfo.Os.get_minimum_resources" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A list of resources</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="ResourcesList.html#Libosinfo.ResourcesList" title="Libosinfo.ResourcesList"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.ResourcesList</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get the list of minimum required resources for the operating system <cite>self</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Libosinfo.Os.get_network_install_resources">
+<code class="descname">get_network_install_resources</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Libosinfo.Os.get_network_install_resources" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A list of resources</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="ResourcesList.html#Libosinfo.ResourcesList" title="Libosinfo.ResourcesList"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.ResourcesList</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get the list of resources needed for network installing an operating system
+<cite>self</cite>.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.3.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Libosinfo.Os.get_recommended_resources">
+<code class="descname">get_recommended_resources</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Libosinfo.Os.get_recommended_resources" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A list of resources</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="ResourcesList.html#Libosinfo.ResourcesList" title="Libosinfo.ResourcesList"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.ResourcesList</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get the list of recommended resources for the operating system <cite>self</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Libosinfo.Os.get_release_status">
+<code class="descname">get_release_status</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Libosinfo.Os.get_release_status" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">release status of <cite>self</cite>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#Libosinfo.ReleaseStatus" title="Libosinfo.ReleaseStatus"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.ReleaseStatus</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Use this to determine the release status of the <cite>self</cite>.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.2.9.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Libosinfo.Os.get_tree_list">
+<code class="descname">get_tree_list</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Libosinfo.Os.get_tree_list" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A list of trees</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="TreeList.html#Libosinfo.TreeList" title="Libosinfo.TreeList"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.TreeList</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get all installation trees associated with operating system <cite>self</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Libosinfo.Os.get_variant_list">
+<code class="descname">get_variant_list</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Libosinfo.Os.get_variant_list" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A list of variants</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="OsVariantList.html#Libosinfo.OsVariantList" title="Libosinfo.OsVariantList"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Libosinfo.OsVariantList</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets all known variants of operating system <cite>self</cite>.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.2.9.</span></p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="property-details">
+<h2>Property Details<a class="headerlink" href="#property-details" title="Permalink to this headline">¶</a></h2>
+<dl class="data">
+<dt id="Libosinfo.Os.props.cloud_image_username">
+<code class="descclassname">Libosinfo.Os.props.</code><code class="descname">cloud_image_username</code><a class="headerlink" href="#Libosinfo.Os.props.cloud_image_username" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">cloud-image-username</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The username to be passed to the cloud-init program.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.Os.props.distro">
+<code class="descclassname">Libosinfo.Os.props.</code><code class="descname">distro</code><a class="headerlink" href="#Libosinfo.Os.props.distro" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">distro</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The generic distro this OS belongs to, for example fedora, windows,
+solaris, freebsd etc.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.Os.props.family">
+<code class="descclassname">Libosinfo.Os.props.</code><code class="descname">family</code><a class="headerlink" href="#Libosinfo.Os.props.family" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">family</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The generic family this OS belongs to, based upon its kernel,
+for example linux, winnt, solaris, freebsd etc.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.Os.props.kernel_url_argument">
+<code class="descclassname">Libosinfo.Os.props.</code><code class="descname">kernel_url_argument</code><a class="headerlink" href="#Libosinfo.Os.props.kernel_url_argument" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">kernel-url-argument</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The argument to be passed to kernel command line when performing a
+tree based installation of this OS.</p>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div> 
+
+</body>
+</html>

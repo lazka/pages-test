@@ -1,0 +1,791 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    ModemManager.ModemFirmware -
+    
+      Classes -
+    
+    ModemManager 1.0
+  </title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/css/pgi.css" type="text/css" />
+  
+
+  
+  <script type="text/javascript">
+
+    function openSidebar(element) {
+        window.location.href = element.href + location.hash;
+        return false;
+    }
+
+    function inIframe() {
+        try {
+            return window.self !== window.top;
+        } catch (e) {
+            return true;
+        }
+    }
+
+    function onLoaded() {
+        if(!inIframe()) {
+            var icons = document.getElementsByClassName('open-sidebar');
+
+            for (var i = 0; i < icons.length; i ++) {
+                icons[i].style.display = 'table-cell';
+            }
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', onLoaded, false);
+
+  </script>
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="ModemManager 1.0 Python API Docs" href="../index.html"/>
+        <link rel="up" title="Classes" href="../classes.html"/>
+        <link rel="next" title="ModemManager.ModemLocation" href="ModemLocation.html"/>
+        <link rel="prev" title="ModemManager.ModemCdma" href="ModemCdma.html"/> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+<div class="non-fixed-bar">
+<table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#ModemManager-1.0/classes/ModemFirmware.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">ModemManager 1.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>ModemManager.ModemFirmware</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="ModemCdma.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="ModemLocation.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">ModemManager.ModemFirmware</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+<div class="fixed-bar">
+  <table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#ModemManager-1.0/classes/ModemFirmware.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">ModemManager 1.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>ModemManager.ModemFirmware</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="ModemCdma.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="ModemLocation.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">ModemManager.ModemFirmware</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+  <div class="wy-grid-for-nav">
+
+    
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="main">
+            
+  <div class="section" id="modemmanager-modemfirmware">
+<h1>ModemManager.ModemFirmware<a class="headerlink" href="#modemmanager-modemfirmware" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<svg width="509pt" height="242pt"
+ viewBox="0.00 0.00 508.50 242.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 238)">
+<title>g</title>
+<!-- GObject.GInterface -->
+<g id="node1" class="node">
+<title>GObject.GInterface</title>
+<g id="a_node1"><a xlink:href="../../GObject-2.0/classes/GInterface.html#GObject.GInterface" xlink:title="GObject.GInterface">
+<path fill="none" stroke="#3091d1" d="M247,-234C247,-234 161,-234 161,-234 158,-234 155,-231 155,-228 155,-228 155,-222 155,-222 155,-219 158,-216 161,-216 161,-216 247,-216 247,-216 250,-216 253,-219 253,-222 253,-222 253,-228 253,-228 253,-231 250,-234 247,-234"/>
+<text text-anchor="middle" x="204" y="-222.7" font-family="inherit" font-size="8.50">GObject.GInterface</text>
+</a>
+</g>
+</g>
+<!-- Gio.AsyncInitable -->
+<g id="node3" class="node">
+<title>Gio.AsyncInitable</title>
+<g id="a_node3"><a xlink:href="../../Gio-2.0/classes/AsyncInitable.html#Gio.AsyncInitable" xlink:title="Gio.AsyncInitable">
+<path fill="none" stroke="#3091d1" d="M84,-180C84,-180 6,-180 6,-180 3,-180 0,-177 0,-174 0,-174 0,-168 0,-168 0,-165 3,-162 6,-162 6,-162 84,-162 84,-162 87,-162 90,-165 90,-168 90,-168 90,-174 90,-174 90,-177 87,-180 84,-180"/>
+<text text-anchor="middle" x="45" y="-168.7" font-family="inherit" font-size="8.50">Gio.AsyncInitable</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Gio.AsyncInitable -->
+<g id="edge1" class="edge">
+<title>GObject.GInterface&#45;&gt;Gio.AsyncInitable</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M179.5,-215.99C151.26,-206.75 104.85,-191.57 74.6,-181.68"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="74.82,-179.91 69.52,-180.02 73.73,-183.24 74.82,-179.91"/>
+</g>
+<!-- Gio.DBusInterface -->
+<g id="node4" class="node">
+<title>Gio.DBusInterface</title>
+<g id="a_node4"><a xlink:href="../../Gio-2.0/classes/DBusInterface.html#Gio.DBusInterface" xlink:title="Gio.DBusInterface">
+<path fill="none" stroke="#3091d1" d="M196,-180C196,-180 114,-180 114,-180 111,-180 108,-177 108,-174 108,-174 108,-168 108,-168 108,-165 111,-162 114,-162 114,-162 196,-162 196,-162 199,-162 202,-165 202,-168 202,-168 202,-174 202,-174 202,-177 199,-180 196,-180"/>
+<text text-anchor="middle" x="155" y="-168.7" font-family="inherit" font-size="8.50">Gio.DBusInterface</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Gio.DBusInterface -->
+<g id="edge2" class="edge">
+<title>GObject.GInterface&#45;&gt;Gio.DBusInterface</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M196.34,-215.88C188.26,-207.3 175.45,-193.7 166.23,-183.91"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="167.47,-182.68 162.76,-180.24 164.92,-185.08 167.47,-182.68"/>
+</g>
+<!-- Gio.Initable -->
+<g id="node6" class="node">
+<title>Gio.Initable</title>
+<g id="a_node6"><a xlink:href="../../Gio-2.0/classes/Initable.html#Gio.Initable" xlink:title="Gio.Initable">
+<path fill="none" stroke="#3091d1" d="M279.5,-180C279.5,-180 226.5,-180 226.5,-180 223.5,-180 220.5,-177 220.5,-174 220.5,-174 220.5,-168 220.5,-168 220.5,-165 223.5,-162 226.5,-162 226.5,-162 279.5,-162 279.5,-162 282.5,-162 285.5,-165 285.5,-168 285.5,-168 285.5,-174 285.5,-174 285.5,-177 282.5,-180 279.5,-180"/>
+<text text-anchor="middle" x="253" y="-168.7" font-family="inherit" font-size="8.50">Gio.Initable</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Gio.Initable -->
+<g id="edge3" class="edge">
+<title>GObject.GInterface&#45;&gt;Gio.Initable</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M211.66,-215.88C219.74,-207.3 232.55,-193.7 241.77,-183.91"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="243.08,-185.08 245.24,-180.24 240.53,-182.68 243.08,-185.08"/>
+</g>
+<!-- ModemManager.GdbusModemFirmware -->
+<g id="node7" class="node">
+<title>ModemManager.GdbusModemFirmware</title>
+<g id="a_node7"><a xlink:href="GdbusModemFirmware.html#ModemManager.GdbusModemFirmware" xlink:title="ModemManager.GdbusModemFirmware">
+<path fill="none" stroke="#3091d1" d="M494.5,-126C494.5,-126 321.5,-126 321.5,-126 318.5,-126 315.5,-123 315.5,-120 315.5,-120 315.5,-114 315.5,-114 315.5,-111 318.5,-108 321.5,-108 321.5,-108 494.5,-108 494.5,-108 497.5,-108 500.5,-111 500.5,-114 500.5,-114 500.5,-120 500.5,-120 500.5,-123 497.5,-126 494.5,-126"/>
+<text text-anchor="middle" x="408" y="-114.7" font-family="inherit" font-size="8.50">ModemManager.GdbusModemFirmware</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;ModemManager.GdbusModemFirmware -->
+<g id="edge4" class="edge">
+<title>GObject.GInterface&#45;&gt;ModemManager.GdbusModemFirmware</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M253.44,-218.39C302.65,-211.81 373.56,-199.27 393,-180 405.91,-167.2 408.43,-145.31 408.58,-131.26"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="410.33,-131.1 408.53,-126.12 406.83,-131.14 410.33,-131.1"/>
+</g>
+<!-- GObject.Object -->
+<g id="node2" class="node">
+<title>GObject.Object</title>
+<g id="a_node2"><a xlink:href="../../GObject-2.0/classes/Object.html#GObject.Object" xlink:title="GObject.Object">
+<path fill="none" stroke="#75507b" d="M378,-180C378,-180 310,-180 310,-180 307,-180 304,-177 304,-174 304,-174 304,-168 304,-168 304,-165 307,-162 310,-162 310,-162 378,-162 378,-162 381,-162 384,-165 384,-168 384,-168 384,-174 384,-174 384,-177 381,-180 378,-180"/>
+<text text-anchor="middle" x="344" y="-168.7" font-family="inherit" font-size="8.50">GObject.Object</text>
+</a>
+</g>
+</g>
+<!-- Gio.DBusProxy -->
+<g id="node5" class="node">
+<title>Gio.DBusProxy</title>
+<g id="a_node5"><a xlink:href="../../Gio-2.0/classes/DBusProxy.html#Gio.DBusProxy" xlink:title="Gio.DBusProxy">
+<path fill="none" stroke="#75507b" d="M287,-126C287,-126 219,-126 219,-126 216,-126 213,-123 213,-120 213,-120 213,-114 213,-114 213,-111 216,-108 219,-108 219,-108 287,-108 287,-108 290,-108 293,-111 293,-114 293,-114 293,-120 293,-120 293,-123 290,-126 287,-126"/>
+<text text-anchor="middle" x="253" y="-114.7" font-family="inherit" font-size="8.50">Gio.DBusProxy</text>
+</a>
+</g>
+</g>
+<!-- GObject.Object&#45;&gt;Gio.DBusProxy -->
+<g id="edge5" class="edge">
+<title>GObject.Object&#45;&gt;Gio.DBusProxy</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M329.78,-161.88C314.15,-152.95 288.99,-138.56 271.75,-128.72"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="272.33,-127.03 267.12,-126.07 270.59,-130.07 272.33,-127.03"/>
+</g>
+<!-- Gio.AsyncInitable&#45;&gt;Gio.DBusProxy -->
+<g id="edge6" class="edge">
+<title>Gio.AsyncInitable&#45;&gt;Gio.DBusProxy</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M77.04,-161.99C114.45,-152.64 176.22,-137.19 215.74,-127.32"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="216.49,-128.93 220.92,-126.02 215.64,-125.54 216.49,-128.93"/>
+</g>
+<!-- Gio.DBusInterface&#45;&gt;Gio.DBusProxy -->
+<g id="edge7" class="edge">
+<title>Gio.DBusInterface&#45;&gt;Gio.DBusProxy</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M170.31,-161.88C187.29,-152.87 214.71,-138.32 233.28,-128.47"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="234.2,-129.96 237.8,-126.07 232.56,-126.87 234.2,-129.96"/>
+</g>
+<!-- ModemManager.GdbusModemFirmwareProxy -->
+<g id="node8" class="node">
+<title>ModemManager.GdbusModemFirmwareProxy</title>
+<g id="a_node8"><a xlink:href="GdbusModemFirmwareProxy.html#ModemManager.GdbusModemFirmwareProxy" xlink:title="ModemManager.GdbusModemFirmwareProxy">
+<path fill="none" stroke="#75507b" d="M426.5,-72C426.5,-72 229.5,-72 229.5,-72 226.5,-72 223.5,-69 223.5,-66 223.5,-66 223.5,-60 223.5,-60 223.5,-57 226.5,-54 229.5,-54 229.5,-54 426.5,-54 426.5,-54 429.5,-54 432.5,-57 432.5,-60 432.5,-60 432.5,-66 432.5,-66 432.5,-69 429.5,-72 426.5,-72"/>
+<text text-anchor="middle" x="328" y="-60.7" font-family="inherit" font-size="8.50">ModemManager.GdbusModemFirmwareProxy</text>
+</a>
+</g>
+</g>
+<!-- Gio.DBusProxy&#45;&gt;ModemManager.GdbusModemFirmwareProxy -->
+<g id="edge8" class="edge">
+<title>Gio.DBusProxy&#45;&gt;ModemManager.GdbusModemFirmwareProxy</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M264.72,-107.88C277.41,-99.07 297.75,-84.98 311.93,-75.14"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="313,-76.53 316.12,-72.24 311.01,-73.65 313,-76.53"/>
+</g>
+<!-- Gio.Initable&#45;&gt;Gio.DBusProxy -->
+<g id="edge9" class="edge">
+<title>Gio.Initable&#45;&gt;Gio.DBusProxy</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M253,-161.88C253,-153.76 253,-141.13 253,-131.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="254.75,-131.24 253,-126.24 251.25,-131.24 254.75,-131.24"/>
+</g>
+<!-- ModemManager.GdbusModemFirmware&#45;&gt;ModemManager.GdbusModemFirmwareProxy -->
+<g id="edge10" class="edge">
+<title>ModemManager.GdbusModemFirmware&#45;&gt;ModemManager.GdbusModemFirmwareProxy</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M395.5,-107.88C381.88,-99.02 360.01,-84.81 344.88,-74.97"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="345.56,-73.33 340.41,-72.07 343.65,-76.26 345.56,-73.33"/>
+</g>
+<!-- ModemManager.ModemFirmware -->
+<g id="node9" class="node">
+<title>ModemManager.ModemFirmware</title>
+<g id="a_node9"><a xlink:href="#ModemManager.ModemFirmware" xlink:title="ModemManager.ModemFirmware">
+<path fill="none" stroke="#75507b" d="M401,-18C401,-18 255,-18 255,-18 252,-18 249,-15 249,-12 249,-12 249,-6 249,-6 249,-3 252,0 255,0 255,0 401,0 401,0 404,0 407,-3 407,-6 407,-6 407,-12 407,-12 407,-15 404,-18 401,-18"/>
+<text text-anchor="middle" x="328" y="-6.7" font-family="inherit" font-size="8.50">ModemManager.ModemFirmware</text>
+</a>
+</g>
+</g>
+<!-- ModemManager.GdbusModemFirmwareProxy&#45;&gt;ModemManager.ModemFirmware -->
+<g id="edge11" class="edge">
+<title>ModemManager.GdbusModemFirmwareProxy&#45;&gt;ModemManager.ModemFirmware</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M328,-53.88C328,-45.76 328,-33.13 328,-23.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="329.75,-23.24 328,-18.24 326.25,-23.24 329.75,-23.24"/>
+</g>
+</g>
+</svg>
+</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Subclasses:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="methods">
+<span id="modemmanager-modemfirmware-methods"></span><h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="GdbusModemFirmwareProxy.html#modemmanager-gdbusmodemfirmwareproxy-methods"><span class="std std-ref">ModemManager.GdbusModemFirmwareProxy (6)</span></a>,     <a class="reference external" href="../../Gio-2.0/classes/DBusProxy.html#gio-dbusproxy-methods" title="(in Gio 2.0 v2.0)"><span class="xref std std-ref">Gio.DBusProxy (25)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (37)</span></a>,     <a class="reference external" href="../../Gio-2.0/classes/AsyncInitable.html#gio-asyncinitable-methods" title="(in Gio 2.0 v2.0)"><span class="xref std std-ref">Gio.AsyncInitable (4)</span></a>,     <a class="reference external" href="../../Gio-2.0/classes/DBusInterface.html#gio-dbusinterface-methods" title="(in Gio 2.0 v2.0)"><span class="xref std std-ref">Gio.DBusInterface (3)</span></a>,     <a class="reference external" href="../../Gio-2.0/classes/Initable.html#gio-initable-methods" title="(in Gio 2.0 v2.0)"><span class="xref std std-ref">Gio.Initable (2)</span></a>,     <a class="reference internal" href="GdbusModemFirmware.html#modemmanager-gdbusmodemfirmware-methods"><span class="std std-ref">ModemManager.GdbusModemFirmware (10)</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Structs:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/ObjectClass.html#gobject-objectclass-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.ObjectClass (5)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="99%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#ModemManager.ModemFirmware.dup_path" title="ModemManager.ModemFirmware.dup_path"><code class="xref py py-func docutils literal notranslate"><span class="pre">dup_path</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#ModemManager.ModemFirmware.get_path" title="ModemManager.ModemFirmware.get_path"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_path</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#ModemManager.ModemFirmware.get_update_settings" title="ModemManager.ModemFirmware.get_update_settings"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_update_settings</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#ModemManager.ModemFirmware.list" title="ModemManager.ModemFirmware.list"><code class="xref py py-func docutils literal notranslate"><span class="pre">list</span></code></a> (cancellable, callback, *user_data)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#ModemManager.ModemFirmware.list_finish" title="ModemManager.ModemFirmware.list_finish"><code class="xref py py-func docutils literal notranslate"><span class="pre">list_finish</span></code></a> (res)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#ModemManager.ModemFirmware.list_sync" title="ModemManager.ModemFirmware.list_sync"><code class="xref py py-func docutils literal notranslate"><span class="pre">list_sync</span></code></a> (cancellable)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#ModemManager.ModemFirmware.peek_update_settings" title="ModemManager.ModemFirmware.peek_update_settings"><code class="xref py py-func docutils literal notranslate"><span class="pre">peek_update_settings</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#ModemManager.ModemFirmware.select" title="ModemManager.ModemFirmware.select"><code class="xref py py-func docutils literal notranslate"><span class="pre">select</span></code></a> (unique_id, cancellable, callback, *user_data)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#ModemManager.ModemFirmware.select_finish" title="ModemManager.ModemFirmware.select_finish"><code class="xref py py-func docutils literal notranslate"><span class="pre">select_finish</span></code></a> (res)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#ModemManager.ModemFirmware.select_sync" title="ModemManager.ModemFirmware.select_sync"><code class="xref py py-func docutils literal notranslate"><span class="pre">select_sync</span></code></a> (unique_id, cancellable)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="virtual-methods">
+<span id="modemmanager-modemfirmware-vfuncs"></span><h2>Virtual Methods<a class="headerlink" href="#virtual-methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../Gio-2.0/classes/DBusProxy.html#gio-dbusproxy-vfuncs" title="(in Gio 2.0 v2.0)"><span class="xref std std-ref">Gio.DBusProxy (2)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-vfuncs" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (7)</span></a>,     <a class="reference external" href="../../Gio-2.0/classes/AsyncInitable.html#gio-asyncinitable-vfuncs" title="(in Gio 2.0 v2.0)"><span class="xref std std-ref">Gio.AsyncInitable (2)</span></a>,     <a class="reference external" href="../../Gio-2.0/classes/DBusInterface.html#gio-dbusinterface-vfuncs" title="(in Gio 2.0 v2.0)"><span class="xref std std-ref">Gio.DBusInterface (3)</span></a>,     <a class="reference external" href="../../Gio-2.0/classes/Initable.html#gio-initable-vfuncs" title="(in Gio 2.0 v2.0)"><span class="xref std std-ref">Gio.Initable (1)</span></a>,     <a class="reference internal" href="GdbusModemFirmware.html#modemmanager-gdbusmodemfirmware-vfuncs"><span class="std std-ref">ModemManager.GdbusModemFirmware (2)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="modemmanager-modemfirmware-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../Gio-2.0/classes/DBusProxy.html#gio-dbusproxy-props" title="(in Gio 2.0 v2.0)"><span class="xref std std-ref">Gio.DBusProxy (9)</span></a>,     <a class="reference internal" href="GdbusModemFirmware.html#modemmanager-gdbusmodemfirmware-props"><span class="std std-ref">ModemManager.GdbusModemFirmware (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="signals">
+<span id="modemmanager-modemfirmware-signals"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../Gio-2.0/classes/DBusProxy.html#gio-dbusproxy-signals" title="(in Gio 2.0 v2.0)"><span class="xref std std-ref">Gio.DBusProxy (2)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-signals" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a>,     <a class="reference internal" href="GdbusModemFirmware.html#modemmanager-gdbusmodemfirmware-signals"><span class="std std-ref">ModemManager.GdbusModemFirmware (2)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fields">
+<span id="modemmanager-modemfirmware-fields"></span><h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../Gio-2.0/classes/DBusProxy.html#gio-dbusproxy-fields" title="(in Gio 2.0 v2.0)"><span class="xref std std-ref">Gio.DBusProxy (2)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-fields" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a>,     <a class="reference internal" href="GdbusModemFirmware.html#modemmanager-gdbusmodemfirmware-fields"><span class="std std-ref">ModemManager.GdbusModemFirmware (2)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="16%" />
+<col width="1%" />
+<col width="1%" />
+<col width="82%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Access</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>parent</td>
+<td><a class="reference internal" href="GdbusModemFirmwareProxy.html#ModemManager.GdbusModemFirmwareProxy" title="ModemManager.GdbusModemFirmwareProxy"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.GdbusModemFirmwareProxy</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="class-details">
+<h2>Class Details<a class="headerlink" href="#class-details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="ModemManager.ModemFirmware">
+<em class="property">class </em><code class="descclassname">ModemManager.</code><code class="descname">ModemFirmware</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#ModemManager.ModemFirmware" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Bases:</th><td class="field-body"><a class="reference internal" href="GdbusModemFirmwareProxy.html#ModemManager.GdbusModemFirmwareProxy" title="ModemManager.GdbusModemFirmwareProxy"><code class="xref py py-class docutils literal notranslate"><span class="pre">ModemManager.GdbusModemFirmwareProxy</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Abstract:</th><td class="field-body">No</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Structure:</th><td class="field-body"><a class="reference internal" href="ModemFirmwareClass.html#ModemManager.ModemFirmwareClass" title="ModemManager.ModemFirmwareClass"><code class="xref py py-class docutils literal notranslate"><span class="pre">ModemManager.ModemFirmwareClass</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The <a class="reference internal" href="#ModemManager.ModemFirmware" title="ModemManager.ModemFirmware"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.ModemFirmware</span></code></a> structure contains private data and should only be accessed
+using the provided API.</p>
+<dl class="method">
+<dt id="ModemManager.ModemFirmware.dup_path">
+<code class="descname">dup_path</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ModemManager.ModemFirmware.dup_path" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The DBus path of the <a class="reference internal" href="Object.html#ModemManager.Object" title="ModemManager.Object"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.Object</span></code></a>. The returned value
+should be freed with <a class="reference external" href="../../GLib-2.0/functions.html#GLib.free" title="(in GLib 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GLib.free</span></code></a>().</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets a copy of the DBus path of the <a class="reference internal" href="Object.html#ModemManager.Object" title="ModemManager.Object"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.Object</span></code></a> object which implements this
+interface.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ModemManager.ModemFirmware.get_path">
+<code class="descname">get_path</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ModemManager.ModemFirmware.get_path" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The DBus path of the <a class="reference internal" href="Object.html#ModemManager.Object" title="ModemManager.Object"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.Object</span></code></a> object.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the DBus path of the <a class="reference internal" href="Object.html#ModemManager.Object" title="ModemManager.Object"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.Object</span></code></a> which implements this interface.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ModemManager.ModemFirmware.get_update_settings">
+<code class="descname">get_update_settings</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ModemManager.ModemFirmware.get_update_settings" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A <a class="reference internal" href="FirmwareUpdateSettings.html#ModemManager.FirmwareUpdateSettings" title="ModemManager.FirmwareUpdateSettings"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.FirmwareUpdateSettings</span></code></a> that must be freed with
+<a class="reference external" href="../../GObject-2.0/classes/Object.html#GObject.Object.unref" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GObject.Object.unref</span></code></a>() or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> if unknown.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="FirmwareUpdateSettings.html#ModemManager.FirmwareUpdateSettings" title="ModemManager.FirmwareUpdateSettings"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.FirmwareUpdateSettings</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets a <a class="reference internal" href="FirmwareUpdateSettings.html#ModemManager.FirmwareUpdateSettings" title="ModemManager.FirmwareUpdateSettings"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.FirmwareUpdateSettings</span></code></a> object specifying the expected update
+settings.</p>
+<p>The values reported by <cite>self</cite> are not updated when the values in the
+interface change. Instead, the client is expected to call
+<a class="reference internal" href="#ModemManager.ModemFirmware.get_update_settings" title="ModemManager.ModemFirmware.get_update_settings"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.ModemFirmware.get_update_settings</span></code></a>() again to get a new
+<a class="reference internal" href="FirmwareUpdateSettings.html#ModemManager.FirmwareUpdateSettings" title="ModemManager.FirmwareUpdateSettings"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.FirmwareUpdateSettings</span></code></a> with the new values.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.10.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ModemManager.ModemFirmware.list">
+<code class="descname">list</code><span class="sig-paren">(</span><em>cancellable</em>, <em>callback</em>, <em>*user_data</em><span class="sig-paren">)</span><a class="headerlink" href="#ModemManager.ModemFirmware.list" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>cancellable</strong> (<a class="reference external" href="../../Gio-2.0/classes/Cancellable.html#Gio.Cancellable" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Cancellable</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – A <a class="reference external" href="../../Gio-2.0/classes/Cancellable.html#Gio.Cancellable" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Cancellable</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>.</li>
+<li><strong>callback</strong> (<a class="reference external" href="../../Gio-2.0/callbacks.html#Gio.AsyncReadyCallback" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AsyncReadyCallback</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – A <a class="reference external" href="../../Gio-2.0/callbacks.html#Gio.AsyncReadyCallback" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AsyncReadyCallback</span></code></a> to call when the request is satisfied or
+<a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>.</li>
+<li><strong>user_data</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">object</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – User data to pass to <cite>callback</cite>.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Asynchronously gets the list of available firmware images.</p>
+<p>When the operation is finished, <cite>callback</cite> will be invoked in the</p>
+<p><a class="reference external" href="../../GLib-2.0/classes/MainContext.html#GLib.MainContext.push_thread_default" title="(in GLib 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">thread-default</span> <span class="pre">main</span> <span class="pre">loop</span></code></a>
+of the thread you are calling this method from. You can then call
+<a class="reference internal" href="#ModemManager.ModemFirmware.list_finish" title="ModemManager.ModemFirmware.list_finish"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.ModemFirmware.list_finish</span></code></a>() to get the result of the operation.</p>
+<p>See <a class="reference internal" href="#ModemManager.ModemFirmware.list_sync" title="ModemManager.ModemFirmware.list_sync"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.ModemFirmware.list_sync</span></code></a>() for the synchronous, blocking version of
+this method.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ModemManager.ModemFirmware.list_finish">
+<code class="descname">list_finish</code><span class="sig-paren">(</span><em>res</em><span class="sig-paren">)</span><a class="headerlink" href="#ModemManager.ModemFirmware.list_finish" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>res</strong> (<a class="reference external" href="../../Gio-2.0/classes/AsyncResult.html#Gio.AsyncResult" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AsyncResult</span></code></a>) – The <a class="reference external" href="../../Gio-2.0/classes/AsyncResult.html#Gio.AsyncResult" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AsyncResult</span></code></a> obtained from the <a class="reference external" href="../../Gio-2.0/callbacks.html#Gio.AsyncReadyCallback" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AsyncReadyCallback</span></code></a> passed to
+<a class="reference internal" href="#ModemManager.ModemFirmware.list" title="ModemManager.ModemFirmware.list"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.ModemFirmware.list</span></code></a>().</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference external" href="../../GLib-2.0/classes/Error.html#GLib.Error" title="(in GLib 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLib.Error</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if the list was correctly retrieved, <a class="reference external" href="http://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a> if <cite>error</cite> is set.<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">selected:</th><td class="field-body">The selected firmware slot, or
+<a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> if no slot is selected (such as if all slots are empty, or no slots
+exist). The returned value should be freed with <a class="reference external" href="../../GObject-2.0/classes/Object.html#GObject.Object.unref" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GObject.Object.unref</span></code></a>().</td>
+</tr>
+<tr class="field-even field"><th class="field-name">installed:</th><td class="field-body">A list of <a class="reference internal" href="FirmwareProperties.html#ModemManager.FirmwareProperties" title="ModemManager.FirmwareProperties"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.FirmwareProperties</span></code></a> objects specifying the installed images. The
+returned value should be freed with g_list_free_full() using
+<a class="reference external" href="../../GObject-2.0/classes/Object.html#GObject.Object.unref" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GObject.Object.unref</span></code></a>() as <a class="reference external" href="../../GLib-2.0/callbacks.html#GLib.DestroyNotify" title="(in GLib 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GLib.DestroyNotify</span></code></a>.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">(<a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a>, <strong>selected</strong>: <a class="reference internal" href="FirmwareProperties.html#ModemManager.FirmwareProperties" title="ModemManager.FirmwareProperties"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.FirmwareProperties</span></code></a>, <strong>installed</strong>: [<a class="reference internal" href="FirmwareProperties.html#ModemManager.FirmwareProperties" title="ModemManager.FirmwareProperties"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.FirmwareProperties</span></code></a>])</td>
+</tr>
+</tbody>
+</table>
+<p>Finishes an operation started with <a class="reference internal" href="#ModemManager.ModemFirmware.list" title="ModemManager.ModemFirmware.list"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.ModemFirmware.list</span></code></a>().</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ModemManager.ModemFirmware.list_sync">
+<code class="descname">list_sync</code><span class="sig-paren">(</span><em>cancellable</em><span class="sig-paren">)</span><a class="headerlink" href="#ModemManager.ModemFirmware.list_sync" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>cancellable</strong> (<a class="reference external" href="../../Gio-2.0/classes/Cancellable.html#Gio.Cancellable" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Cancellable</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – A <a class="reference external" href="../../Gio-2.0/classes/Cancellable.html#Gio.Cancellable" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Cancellable</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference external" href="../../GLib-2.0/classes/Error.html#GLib.Error" title="(in GLib 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLib.Error</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if the list was correctly retrieved, <a class="reference external" href="http://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a> if <cite>error</cite> is set.<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">selected:</th><td class="field-body">The selected firmware slot,
+or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> if no slot is selected (such as if all slots are empty, or no slots
+exist). The returned value should be freed with <a class="reference external" href="../../GObject-2.0/classes/Object.html#GObject.Object.unref" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GObject.Object.unref</span></code></a>().</td>
+</tr>
+<tr class="field-even field"><th class="field-name">installed:</th><td class="field-body">A list of <a class="reference internal" href="FirmwareProperties.html#ModemManager.FirmwareProperties" title="ModemManager.FirmwareProperties"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.FirmwareProperties</span></code></a> objects specifying the installed images. The
+returned value should be freed with g_list_free_full() using
+<a class="reference external" href="../../GObject-2.0/classes/Object.html#GObject.Object.unref" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GObject.Object.unref</span></code></a>() as <a class="reference external" href="../../GLib-2.0/callbacks.html#GLib.DestroyNotify" title="(in GLib 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GLib.DestroyNotify</span></code></a>.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">(<a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a>, <strong>selected</strong>: <a class="reference internal" href="FirmwareProperties.html#ModemManager.FirmwareProperties" title="ModemManager.FirmwareProperties"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.FirmwareProperties</span></code></a>, <strong>installed</strong>: [<a class="reference internal" href="FirmwareProperties.html#ModemManager.FirmwareProperties" title="ModemManager.FirmwareProperties"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.FirmwareProperties</span></code></a>])</td>
+</tr>
+</tbody>
+</table>
+<p>Synchronously gets the list of available firmware images.</p>
+<p>The calling thread is blocked until a reply is received. See
+<a class="reference internal" href="#ModemManager.ModemFirmware.list" title="ModemManager.ModemFirmware.list"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.ModemFirmware.list</span></code></a>() for the asynchronous version of this method.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ModemManager.ModemFirmware.peek_update_settings">
+<code class="descname">peek_update_settings</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ModemManager.ModemFirmware.peek_update_settings" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A <a class="reference internal" href="FirmwareUpdateSettings.html#ModemManager.FirmwareUpdateSettings" title="ModemManager.FirmwareUpdateSettings"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.FirmwareUpdateSettings</span></code></a>. Do not free the
+returned value, it belongs to <cite>self</cite>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="FirmwareUpdateSettings.html#ModemManager.FirmwareUpdateSettings" title="ModemManager.FirmwareUpdateSettings"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.FirmwareUpdateSettings</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets a <a class="reference internal" href="FirmwareUpdateSettings.html#ModemManager.FirmwareUpdateSettings" title="ModemManager.FirmwareUpdateSettings"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.FirmwareUpdateSettings</span></code></a> object specifying the expected update
+settings.</p>
+<p>The returned value is only valid until the property changes so
+it is only safe to use this function on the thread where
+<cite>self</cite> was constructed. Use <a class="reference internal" href="#ModemManager.ModemFirmware.get_update_settings" title="ModemManager.ModemFirmware.get_update_settings"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.ModemFirmware.get_update_settings</span></code></a>() if on
+another thread.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.10.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ModemManager.ModemFirmware.select">
+<code class="descname">select</code><span class="sig-paren">(</span><em>unique_id</em>, <em>cancellable</em>, <em>callback</em>, <em>*user_data</em><span class="sig-paren">)</span><a class="headerlink" href="#ModemManager.ModemFirmware.select" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>unique_id</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – Unique ID of the firmware image to select.</li>
+<li><strong>cancellable</strong> (<a class="reference external" href="../../Gio-2.0/classes/Cancellable.html#Gio.Cancellable" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Cancellable</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – A <a class="reference external" href="../../Gio-2.0/classes/Cancellable.html#Gio.Cancellable" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Cancellable</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>.</li>
+<li><strong>callback</strong> (<a class="reference external" href="../../Gio-2.0/callbacks.html#Gio.AsyncReadyCallback" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AsyncReadyCallback</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – A <a class="reference external" href="../../Gio-2.0/callbacks.html#Gio.AsyncReadyCallback" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AsyncReadyCallback</span></code></a> to call when the request is satisfied or
+<a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>.</li>
+<li><strong>user_data</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">object</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – User data to pass to <cite>callback</cite>.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Asynchronously selects a firmware image to boot.</p>
+<p>The modem will possibly disappear once this action is run, as it
+needs to reboot in order to select the new image.
+When the operation is finished, <cite>callback</cite> will be invoked in the</p>
+<p><a class="reference external" href="../../GLib-2.0/classes/MainContext.html#GLib.MainContext.push_thread_default" title="(in GLib 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">thread-default</span> <span class="pre">main</span> <span class="pre">loop</span></code></a>
+of the thread you are calling this method from. You can then call
+<a class="reference internal" href="#ModemManager.ModemFirmware.select_finish" title="ModemManager.ModemFirmware.select_finish"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.ModemFirmware.select_finish</span></code></a>() to get the result of the operation.</p>
+<p>See <a class="reference internal" href="#ModemManager.ModemFirmware.select_sync" title="ModemManager.ModemFirmware.select_sync"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.ModemFirmware.select_sync</span></code></a>() for the synchronous, blocking version of
+this method.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ModemManager.ModemFirmware.select_finish">
+<code class="descname">select_finish</code><span class="sig-paren">(</span><em>res</em><span class="sig-paren">)</span><a class="headerlink" href="#ModemManager.ModemFirmware.select_finish" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>res</strong> (<a class="reference external" href="../../Gio-2.0/classes/AsyncResult.html#Gio.AsyncResult" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AsyncResult</span></code></a>) – The <a class="reference external" href="../../Gio-2.0/classes/AsyncResult.html#Gio.AsyncResult" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AsyncResult</span></code></a> obtained from the <a class="reference external" href="../../Gio-2.0/callbacks.html#Gio.AsyncReadyCallback" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.AsyncReadyCallback</span></code></a> passed to
+<a class="reference internal" href="#ModemManager.ModemFirmware.select" title="ModemManager.ModemFirmware.select"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.ModemFirmware.select</span></code></a>().</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference external" href="../../GLib-2.0/classes/Error.html#GLib.Error" title="(in GLib 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLib.Error</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if the selection was successful, <a class="reference external" href="http://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a> if <cite>error</cite> is set.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Finishes an operation started with <a class="reference internal" href="#ModemManager.ModemFirmware.select" title="ModemManager.ModemFirmware.select"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.ModemFirmware.select</span></code></a>().</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ModemManager.ModemFirmware.select_sync">
+<code class="descname">select_sync</code><span class="sig-paren">(</span><em>unique_id</em>, <em>cancellable</em><span class="sig-paren">)</span><a class="headerlink" href="#ModemManager.ModemFirmware.select_sync" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>unique_id</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – Unique ID of the firmware image to select.</li>
+<li><strong>cancellable</strong> (<a class="reference external" href="../../Gio-2.0/classes/Cancellable.html#Gio.Cancellable" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Cancellable</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – A <a class="reference external" href="../../Gio-2.0/classes/Cancellable.html#Gio.Cancellable" title="(in Gio 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gio.Cancellable</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first"><a class="reference external" href="../../GLib-2.0/classes/Error.html#GLib.Error" title="(in GLib 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLib.Error</span></code></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if the selection was successful, <a class="reference external" href="http://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a> if <cite>error</cite> is set.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Synchronously selects a firmware image to boot.</p>
+<p>The modem will possibly disappear once this action is run, as it
+needs to reboot in order to select the new image.
+The calling thread is blocked until a reply is received. See
+<a class="reference internal" href="#ModemManager.ModemFirmware.select" title="ModemManager.ModemFirmware.select"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModemManager.ModemFirmware.select</span></code></a>() for the asynchronous version of this method.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.0.</span></p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div> 
+
+</body>
+</html>

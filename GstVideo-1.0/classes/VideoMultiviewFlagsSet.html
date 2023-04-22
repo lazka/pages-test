@@ -1,0 +1,277 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    GstVideo.VideoMultiviewFlagsSet -
+    
+      Classes -
+    
+    GstVideo 1.0
+  </title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/css/pgi.css" type="text/css" />
+  
+
+  
+  <script type="text/javascript">
+
+    function openSidebar(element) {
+        window.location.href = element.href + location.hash;
+        return false;
+    }
+
+    function inIframe() {
+        try {
+            return window.self !== window.top;
+        } catch (e) {
+            return true;
+        }
+    }
+
+    function onLoaded() {
+        if(!inIframe()) {
+            var icons = document.getElementsByClassName('open-sidebar');
+
+            for (var i = 0; i < icons.length; i ++) {
+                icons[i].style.display = 'table-cell';
+            }
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', onLoaded, false);
+
+  </script>
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="GstVideo 1.0 Python API Docs" href="../index.html"/>
+        <link rel="up" title="Classes" href="../classes.html"/>
+        <link rel="next" title="GstVideo.VideoSink" href="VideoSink.html"/>
+        <link rel="prev" title="GstVideo.VideoFilter" href="VideoFilter.html"/> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+<div class="non-fixed-bar">
+<table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#GstVideo-1.0/classes/VideoMultiviewFlagsSet.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">GstVideo 1.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>GstVideo.VideoMultiviewFlagsSet</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="VideoFilter.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="VideoSink.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">GstVideo.VideoMultiviewFlagsSet</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+<div class="fixed-bar">
+  <table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#GstVideo-1.0/classes/VideoMultiviewFlagsSet.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">GstVideo 1.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>GstVideo.VideoMultiviewFlagsSet</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="VideoFilter.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="VideoSink.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">GstVideo.VideoMultiviewFlagsSet</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+  <div class="wy-grid-for-nav">
+
+    
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="main">
+            
+  <div class="section" id="gstvideo-videomultiviewflagsset">
+<h1>GstVideo.VideoMultiviewFlagsSet<a class="headerlink" href="#gstvideo-videomultiviewflagsset" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<svg width="166pt" height="80pt"
+ viewBox="0.00 0.00 166.00 80.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 76)">
+<title>g</title>
+<!-- Gst.FlagSet -->
+<g id="node1" class="node">
+<title>Gst.FlagSet</title>
+<g id="a_node1"><a xlink:href="../../Gst-1.0/classes/FlagSet.html#Gst.FlagSet" xlink:title="Gst.FlagSet">
+<path fill="none" stroke="#75507b" d="M105.5,-72C105.5,-72 52.5,-72 52.5,-72 49.5,-72 46.5,-69 46.5,-66 46.5,-66 46.5,-60 46.5,-60 46.5,-57 49.5,-54 52.5,-54 52.5,-54 105.5,-54 105.5,-54 108.5,-54 111.5,-57 111.5,-60 111.5,-60 111.5,-66 111.5,-66 111.5,-69 108.5,-72 105.5,-72"/>
+<text text-anchor="middle" x="79" y="-60.7" font-family="inherit" font-size="8.50">Gst.FlagSet</text>
+</a>
+</g>
+</g>
+<!-- GstVideo.VideoMultiviewFlagsSet -->
+<g id="node2" class="node">
+<title>GstVideo.VideoMultiviewFlagsSet</title>
+<g id="a_node2"><a xlink:href="#GstVideo.VideoMultiviewFlagsSet" xlink:title="GstVideo.VideoMultiviewFlagsSet">
+<path fill="none" stroke="#75507b" d="M152,-18C152,-18 6,-18 6,-18 3,-18 0,-15 0,-12 0,-12 0,-6 0,-6 0,-3 3,0 6,0 6,0 152,0 152,0 155,0 158,-3 158,-6 158,-6 158,-12 158,-12 158,-15 155,-18 152,-18"/>
+<text text-anchor="middle" x="79" y="-6.7" font-family="inherit" font-size="8.50">GstVideo.VideoMultiviewFlagsSet</text>
+</a>
+</g>
+</g>
+<!-- Gst.FlagSet&#45;&gt;GstVideo.VideoMultiviewFlagsSet -->
+<g id="edge1" class="edge">
+<title>Gst.FlagSet&#45;&gt;GstVideo.VideoMultiviewFlagsSet</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M79,-53.88C79,-45.76 79,-33.13 79,-23.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="80.75,-23.24 79,-18.24 77.25,-23.24 80.75,-23.24"/>
+</g>
+</g>
+</svg>
+</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Subclasses:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="methods">
+<span id="gstvideo-videomultiviewflagsset-methods"></span><h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../Gst-1.0/classes/FlagSet.html#gst-flagset-methods" title="(in Gst 1.0 v1.0)"><span class="xref std std-ref">Gst.FlagSet (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="virtual-methods">
+<span id="gstvideo-videomultiviewflagsset-vfuncs"></span><h2>Virtual Methods<a class="headerlink" href="#virtual-methods" title="Permalink to this headline">¶</a></h2>
+<p>None</p>
+</div>
+<div class="section" id="fields">
+<span id="gstvideo-videomultiviewflagsset-fields"></span><h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<p>None</p>
+</div>
+<div class="section" id="class-details">
+<h2>Class Details<a class="headerlink" href="#class-details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="GstVideo.VideoMultiviewFlagsSet">
+<em class="property">class </em><code class="descclassname">GstVideo.</code><code class="descname">VideoMultiviewFlagsSet</code><a class="headerlink" href="#GstVideo.VideoMultiviewFlagsSet" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Bases:</th><td class="field-body"><a class="reference external" href="../../Gst-1.0/classes/FlagSet.html#Gst.FlagSet" title="(in Gst 1.0 v1.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Gst.FlagSet</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Abstract:</th><td class="field-body">No</td>
+</tr>
+</tbody>
+</table>
+<p>See <a class="reference internal" href="../flags.html#GstVideo.VideoMultiviewFlags" title="GstVideo.VideoMultiviewFlags"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GstVideo.VideoMultiviewFlags</span></code></a>.</p>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div> 
+
+</body>
+</html>

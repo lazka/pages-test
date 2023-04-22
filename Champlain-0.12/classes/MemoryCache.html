@@ -1,0 +1,534 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    Champlain.MemoryCache -
+    
+      Classes -
+    
+    Champlain 0.12
+  </title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/css/pgi.css" type="text/css" />
+  
+
+  
+  <script type="text/javascript">
+
+    function openSidebar(element) {
+        window.location.href = element.href + location.hash;
+        return false;
+    }
+
+    function inIframe() {
+        try {
+            return window.self !== window.top;
+        } catch (e) {
+            return true;
+        }
+    }
+
+    function onLoaded() {
+        if(!inIframe()) {
+            var icons = document.getElementsByClassName('open-sidebar');
+
+            for (var i = 0; i < icons.length; i ++) {
+                icons[i].style.display = 'table-cell';
+            }
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', onLoaded, false);
+
+  </script>
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="Champlain 0.12 Python API Docs" href="../index.html"/>
+        <link rel="up" title="Classes" href="../classes.html"/>
+        <link rel="next" title="Champlain.NetworkBboxTileSource" href="NetworkBboxTileSource.html"/>
+        <link rel="prev" title="Champlain.MarkerLayer" href="MarkerLayer.html"/> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+<div class="non-fixed-bar">
+<table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#Champlain-0.12/classes/MemoryCache.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Champlain 0.12</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>Champlain.MemoryCache</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="MarkerLayer.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="NetworkBboxTileSource.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">Champlain.MemoryCache</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#property-details">Property Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+<div class="fixed-bar">
+  <table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#Champlain-0.12/classes/MemoryCache.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Champlain 0.12</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>Champlain.MemoryCache</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="MarkerLayer.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="NetworkBboxTileSource.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">Champlain.MemoryCache</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#property-details">Property Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+  <div class="wy-grid-for-nav">
+
+    
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="main">
+            
+  <div class="section" id="champlain-memorycache">
+<h1>Champlain.MemoryCache<a class="headerlink" href="#champlain-memorycache" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<svg width="134pt" height="242pt"
+ viewBox="0.00 0.00 134.00 242.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 238)">
+<title>g</title>
+<!-- Champlain.MapSource -->
+<g id="node1" class="node">
+<title>Champlain.MapSource</title>
+<g id="a_node1"><a xlink:href="MapSource.html#Champlain.MapSource" xlink:title="Champlain.MapSource">
+<path fill="none" stroke="#aaaaaa" d="M112.5,-126C112.5,-126 13.5,-126 13.5,-126 10.5,-126 7.5,-123 7.5,-120 7.5,-120 7.5,-114 7.5,-114 7.5,-111 10.5,-108 13.5,-108 13.5,-108 112.5,-108 112.5,-108 115.5,-108 118.5,-111 118.5,-114 118.5,-114 118.5,-120 118.5,-120 118.5,-123 115.5,-126 112.5,-126"/>
+<text text-anchor="middle" x="63" y="-114.7" font-family="inherit" font-size="8.50">Champlain.MapSource</text>
+</a>
+</g>
+</g>
+<!-- Champlain.TileCache -->
+<g id="node3" class="node">
+<title>Champlain.TileCache</title>
+<g id="a_node3"><a xlink:href="TileCache.html#Champlain.TileCache" xlink:title="Champlain.TileCache">
+<path fill="none" stroke="#aaaaaa" d="M110,-72C110,-72 16,-72 16,-72 13,-72 10,-69 10,-66 10,-66 10,-60 10,-60 10,-57 13,-54 16,-54 16,-54 110,-54 110,-54 113,-54 116,-57 116,-60 116,-60 116,-66 116,-66 116,-69 113,-72 110,-72"/>
+<text text-anchor="middle" x="63" y="-60.7" font-family="inherit" font-size="8.50">Champlain.TileCache</text>
+</a>
+</g>
+</g>
+<!-- Champlain.MapSource&#45;&gt;Champlain.TileCache -->
+<g id="edge1" class="edge">
+<title>Champlain.MapSource&#45;&gt;Champlain.TileCache</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M63,-107.88C63,-99.76 63,-87.13 63,-77.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="64.75,-77.24 63,-72.24 61.25,-77.24 64.75,-77.24"/>
+</g>
+<!-- Champlain.MemoryCache -->
+<g id="node2" class="node">
+<title>Champlain.MemoryCache</title>
+<g id="a_node2"><a xlink:href="#Champlain.MemoryCache" xlink:title="Champlain.MemoryCache">
+<path fill="none" stroke="#75507b" d="M120,-18C120,-18 6,-18 6,-18 3,-18 0,-15 0,-12 0,-12 0,-6 0,-6 0,-3 3,0 6,0 6,0 120,0 120,0 123,0 126,-3 126,-6 126,-6 126,-12 126,-12 126,-15 123,-18 120,-18"/>
+<text text-anchor="middle" x="63" y="-6.7" font-family="inherit" font-size="8.50">Champlain.MemoryCache</text>
+</a>
+</g>
+</g>
+<!-- Champlain.TileCache&#45;&gt;Champlain.MemoryCache -->
+<g id="edge2" class="edge">
+<title>Champlain.TileCache&#45;&gt;Champlain.MemoryCache</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M63,-53.88C63,-45.76 63,-33.13 63,-23.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="64.75,-23.24 63,-18.24 61.25,-23.24 64.75,-23.24"/>
+</g>
+<!-- GObject.InitiallyUnowned -->
+<g id="node4" class="node">
+<title>GObject.InitiallyUnowned</title>
+<g id="a_node4"><a xlink:href="../../GObject-2.0/classes/InitiallyUnowned.html#GObject.InitiallyUnowned" xlink:title="GObject.InitiallyUnowned">
+<path fill="none" stroke="#75507b" d="M118,-180C118,-180 8,-180 8,-180 5,-180 2,-177 2,-174 2,-174 2,-168 2,-168 2,-165 5,-162 8,-162 8,-162 118,-162 118,-162 121,-162 124,-165 124,-168 124,-168 124,-174 124,-174 124,-177 121,-180 118,-180"/>
+<text text-anchor="middle" x="63" y="-168.7" font-family="inherit" font-size="8.50">GObject.InitiallyUnowned</text>
+</a>
+</g>
+</g>
+<!-- GObject.InitiallyUnowned&#45;&gt;Champlain.MapSource -->
+<g id="edge3" class="edge">
+<title>GObject.InitiallyUnowned&#45;&gt;Champlain.MapSource</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M63,-161.88C63,-153.76 63,-141.13 63,-131.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="64.75,-131.24 63,-126.24 61.25,-131.24 64.75,-131.24"/>
+</g>
+<!-- GObject.Object -->
+<g id="node5" class="node">
+<title>GObject.Object</title>
+<g id="a_node5"><a xlink:href="../../GObject-2.0/classes/Object.html#GObject.Object" xlink:title="GObject.Object">
+<path fill="none" stroke="#75507b" d="M97,-234C97,-234 29,-234 29,-234 26,-234 23,-231 23,-228 23,-228 23,-222 23,-222 23,-219 26,-216 29,-216 29,-216 97,-216 97,-216 100,-216 103,-219 103,-222 103,-222 103,-228 103,-228 103,-231 100,-234 97,-234"/>
+<text text-anchor="middle" x="63" y="-222.7" font-family="inherit" font-size="8.50">GObject.Object</text>
+</a>
+</g>
+</g>
+<!-- GObject.Object&#45;&gt;GObject.InitiallyUnowned -->
+<g id="edge4" class="edge">
+<title>GObject.Object&#45;&gt;GObject.InitiallyUnowned</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M63,-215.88C63,-207.76 63,-195.13 63,-185.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="64.75,-185.24 63,-180.24 61.25,-185.24 64.75,-185.24"/>
+</g>
+</g>
+</svg>
+</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Subclasses:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="methods">
+<span id="champlain-memorycache-methods"></span><h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="TileCache.html#champlain-tilecache-methods"><span class="std std-ref">Champlain.TileCache (3)</span></a>,     <a class="reference internal" href="MapSource.html#champlain-mapsource-methods"><span class="std std-ref">Champlain.MapSource (20)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (37)</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Structs:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/ObjectClass.html#gobject-objectclass-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.ObjectClass (5)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="99%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><em>class</em></td>
+<td><a class="reference internal" href="#Champlain.MemoryCache.new_full" title="Champlain.MemoryCache.new_full"><code class="xref py py-func docutils literal notranslate"><span class="pre">new_full</span></code></a> (size_limit, renderer)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Champlain.MemoryCache.clean" title="Champlain.MemoryCache.clean"><code class="xref py py-func docutils literal notranslate"><span class="pre">clean</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Champlain.MemoryCache.get_size_limit" title="Champlain.MemoryCache.get_size_limit"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_size_limit</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Champlain.MemoryCache.set_size_limit" title="Champlain.MemoryCache.set_size_limit"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_size_limit</span></code></a> (size_limit)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="virtual-methods">
+<span id="champlain-memorycache-vfuncs"></span><h2>Virtual Methods<a class="headerlink" href="#virtual-methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="TileCache.html#champlain-tilecache-vfuncs"><span class="std std-ref">Champlain.TileCache (3)</span></a>,     <a class="reference internal" href="MapSource.html#champlain-mapsource-vfuncs"><span class="std std-ref">Champlain.MapSource (9)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-vfuncs" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (7)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="champlain-memorycache-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="MapSource.html#champlain-mapsource-props"><span class="std std-ref">Champlain.MapSource (2)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="1%" />
+<col width="1%" />
+<col width="97%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Flags</th>
+<th class="head">Short Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="#Champlain.MemoryCache.props.size_limit" title="Champlain.MemoryCache.props.size_limit"><code class="xref py py-data docutils literal notranslate"><span class="pre">size-limit</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+<td>r/w/c</td>
+<td>Maximal number of stored tiles</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="signals">
+<span id="champlain-memorycache-signals"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-signals" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fields">
+<span id="champlain-memorycache-fields"></span><h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-fields" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="16%" />
+<col width="1%" />
+<col width="1%" />
+<col width="82%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Access</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>parent_instance</td>
+<td><a class="reference internal" href="TileCache.html#Champlain.TileCache" title="Champlain.TileCache"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Champlain.TileCache</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="class-details">
+<h2>Class Details<a class="headerlink" href="#class-details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Champlain.MemoryCache">
+<em class="property">class </em><code class="descclassname">Champlain.</code><code class="descname">MemoryCache</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#Champlain.MemoryCache" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Bases:</th><td class="field-body"><a class="reference internal" href="TileCache.html#Champlain.TileCache" title="Champlain.TileCache"><code class="xref py py-class docutils literal notranslate"><span class="pre">Champlain.TileCache</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Abstract:</th><td class="field-body">No</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Structure:</th><td class="field-body"><a class="reference internal" href="MemoryCacheClass.html#Champlain.MemoryCacheClass" title="Champlain.MemoryCacheClass"><code class="xref py py-class docutils literal notranslate"><span class="pre">Champlain.MemoryCacheClass</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The <a class="reference internal" href="#Champlain.MemoryCache" title="Champlain.MemoryCache"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Champlain.MemoryCache</span></code></a> structure contains only private data
+and should be accessed using the provided API</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.8.</span></p>
+</div>
+<dl class="classmethod">
+<dt id="Champlain.MemoryCache.new_full">
+<em class="property">classmethod </em><code class="descname">new_full</code><span class="sig-paren">(</span><em>size_limit</em>, <em>renderer</em><span class="sig-paren">)</span><a class="headerlink" href="#Champlain.MemoryCache.new_full" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>size_limit</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – maximum number of tiles stored in the cache</li>
+<li><strong>renderer</strong> (<a class="reference internal" href="Renderer.html#Champlain.Renderer" title="Champlain.Renderer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Champlain.Renderer</span></code></a>) – the <a class="reference internal" href="Renderer.html#Champlain.Renderer" title="Champlain.Renderer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Champlain.Renderer</span></code></a> used for tiles rendering</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">a constructed <a class="reference internal" href="#Champlain.MemoryCache" title="Champlain.MemoryCache"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Champlain.MemoryCache</span></code></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="#Champlain.MemoryCache" title="Champlain.MemoryCache"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Champlain.MemoryCache</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Constructor of <a class="reference internal" href="#Champlain.MemoryCache" title="Champlain.MemoryCache"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Champlain.MemoryCache</span></code></a>.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.8.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Champlain.MemoryCache.clean">
+<code class="descname">clean</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Champlain.MemoryCache.clean" title="Permalink to this definition">¶</a></dt>
+<dd><p>Cleans the contents of the cache.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.8.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Champlain.MemoryCache.get_size_limit">
+<code class="descname">get_size_limit</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Champlain.MemoryCache.get_size_limit" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">maximum number of stored tiles</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the maximum number of tiles stored in the cache.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.8.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Champlain.MemoryCache.set_size_limit">
+<code class="descname">set_size_limit</code><span class="sig-paren">(</span><em>size_limit</em><span class="sig-paren">)</span><a class="headerlink" href="#Champlain.MemoryCache.set_size_limit" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>size_limit</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – maximum number of tiles stored in the cache</td>
+</tr>
+</tbody>
+</table>
+<p>Sets the maximum number of tiles stored in the cache.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.8.</span></p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="property-details">
+<h2>Property Details<a class="headerlink" href="#property-details" title="Permalink to this headline">¶</a></h2>
+<dl class="data">
+<dt id="Champlain.MemoryCache.props.size_limit">
+<code class="descclassname">Champlain.MemoryCache.props.</code><code class="descname">size_limit</code><a class="headerlink" href="#Champlain.MemoryCache.props.size_limit" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">size-limit</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">100</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.CONSTRUCT" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CONSTRUCT</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The maximum number of tiles that are stored in the cache.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.8.</span></p>
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div> 
+
+</body>
+</html>

@@ -1,0 +1,1622 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    Atspi.Accessible -
+    
+      Classes -
+    
+    Atspi 2.0
+  </title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/css/pgi.css" type="text/css" />
+  
+
+  
+  <script type="text/javascript">
+
+    function openSidebar(element) {
+        window.location.href = element.href + location.hash;
+        return false;
+    }
+
+    function inIframe() {
+        try {
+            return window.self !== window.top;
+        } catch (e) {
+            return true;
+        }
+    }
+
+    function onLoaded() {
+        if(!inIframe()) {
+            var icons = document.getElementsByClassName('open-sidebar');
+
+            for (var i = 0; i < icons.length; i ++) {
+                icons[i].style.display = 'table-cell';
+            }
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', onLoaded, false);
+
+  </script>
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="Atspi 2.0 Python API Docs" href="../index.html"/>
+        <link rel="up" title="Classes" href="../classes.html"/>
+        <link rel="next" title="Atspi.Application" href="Application.html"/>
+        <link rel="prev" title="Classes" href="../classes.html"/> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+<div class="non-fixed-bar">
+<table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#Atspi-2.0/classes/Accessible.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Atspi 2.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>Atspi.Accessible</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="../classes.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="Application.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">Atspi.Accessible</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#signal-details">Signal Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+<div class="fixed-bar">
+  <table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#Atspi-2.0/classes/Accessible.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Atspi 2.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>Atspi.Accessible</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="../classes.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="Application.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">Atspi.Accessible</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#signal-details">Signal Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+  <div class="wy-grid-for-nav">
+
+    
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="main">
+            
+  <div class="section" id="atspi-accessible">
+<h1>Atspi.Accessible<a class="headerlink" href="#atspi-accessible" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<svg width="1204pt" height="134pt"
+ viewBox="0.00 0.00 1203.50 134.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 130)">
+<title>g</title>
+<!-- Atspi.Accessible -->
+<g id="node1" class="node">
+<title>Atspi.Accessible</title>
+<g id="a_node1"><a xlink:href="#Atspi.Accessible" xlink:title="Atspi.Accessible">
+<path fill="none" stroke="#75507b" d="M676,-18C676,-18 603,-18 603,-18 600,-18 597,-15 597,-12 597,-12 597,-6 597,-6 597,-3 600,0 603,0 603,0 676,0 676,0 679,0 682,-3 682,-6 682,-6 682,-12 682,-12 682,-15 679,-18 676,-18"/>
+<text text-anchor="middle" x="639.5" y="-6.7" font-family="inherit" font-size="8.50">Atspi.Accessible</text>
+</a>
+</g>
+</g>
+<!-- Atspi.Action -->
+<g id="node2" class="node">
+<title>Atspi.Action</title>
+<g id="a_node2"><a xlink:href="Action.html#Atspi.Action" xlink:title="Atspi.Action">
+<path fill="none" stroke="#3091d1" d="M61,-72C61,-72 6,-72 6,-72 3,-72 0,-69 0,-66 0,-66 0,-60 0,-60 0,-57 3,-54 6,-54 6,-54 61,-54 61,-54 64,-54 67,-57 67,-60 67,-60 67,-66 67,-66 67,-69 64,-72 61,-72"/>
+<text text-anchor="middle" x="33.5" y="-60.7" font-family="inherit" font-size="8.50">Atspi.Action</text>
+</a>
+</g>
+</g>
+<!-- Atspi.Action&#45;&gt;Atspi.Accessible -->
+<g id="edge1" class="edge">
+<title>Atspi.Action&#45;&gt;Atspi.Accessible</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M67.25,-55.37C70.37,-54.86 73.49,-54.4 76.5,-54 266.53,-28.97 494.66,-16.51 591.87,-12.02"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="592.05,-13.76 596.96,-11.78 591.89,-10.26 592.05,-13.76"/>
+</g>
+<!-- Atspi.Collection -->
+<g id="node3" class="node">
+<title>Atspi.Collection</title>
+<g id="a_node3"><a xlink:href="Collection.html#Atspi.Collection" xlink:title="Atspi.Collection">
+<path fill="none" stroke="#3091d1" d="M161.5,-72C161.5,-72 91.5,-72 91.5,-72 88.5,-72 85.5,-69 85.5,-66 85.5,-66 85.5,-60 85.5,-60 85.5,-57 88.5,-54 91.5,-54 91.5,-54 161.5,-54 161.5,-54 164.5,-54 167.5,-57 167.5,-60 167.5,-60 167.5,-66 167.5,-66 167.5,-69 164.5,-72 161.5,-72"/>
+<text text-anchor="middle" x="126.5" y="-60.7" font-family="inherit" font-size="8.50">Atspi.Collection</text>
+</a>
+</g>
+</g>
+<!-- Atspi.Collection&#45;&gt;Atspi.Accessible -->
+<g id="edge2" class="edge">
+<title>Atspi.Collection&#45;&gt;Atspi.Accessible</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M167.67,-55.2C170.66,-54.77 173.62,-54.37 176.5,-54 327.72,-34.74 507.72,-19.96 591.8,-13.52"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="592.1,-15.25 596.95,-13.13 591.83,-11.76 592.1,-15.25"/>
+</g>
+<!-- Atspi.Component -->
+<g id="node4" class="node">
+<title>Atspi.Component</title>
+<g id="a_node4"><a xlink:href="Component.html#Atspi.Component" xlink:title="Atspi.Component">
+<path fill="none" stroke="#3091d1" d="M269,-72C269,-72 192,-72 192,-72 189,-72 186,-69 186,-66 186,-66 186,-60 186,-60 186,-57 189,-54 192,-54 192,-54 269,-54 269,-54 272,-54 275,-57 275,-60 275,-60 275,-66 275,-66 275,-69 272,-72 269,-72"/>
+<text text-anchor="middle" x="230.5" y="-60.7" font-family="inherit" font-size="8.50">Atspi.Component</text>
+</a>
+</g>
+</g>
+<!-- Atspi.Component&#45;&gt;Atspi.Accessible -->
+<g id="edge3" class="edge">
+<title>Atspi.Component&#45;&gt;Atspi.Accessible</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M275.02,-55.19C277.89,-54.78 280.73,-54.38 283.5,-54 393.69,-38.88 523.4,-23.44 591.77,-15.49"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="592.22,-17.2 596.98,-14.88 591.81,-13.72 592.22,-17.2"/>
+</g>
+<!-- Atspi.Document -->
+<g id="node5" class="node">
+<title>Atspi.Document</title>
+<g id="a_node5"><a xlink:href="Document.html#Atspi.Document" xlink:title="Atspi.Document">
+<path fill="none" stroke="#3091d1" d="M370.5,-72C370.5,-72 298.5,-72 298.5,-72 295.5,-72 292.5,-69 292.5,-66 292.5,-66 292.5,-60 292.5,-60 292.5,-57 295.5,-54 298.5,-54 298.5,-54 370.5,-54 370.5,-54 373.5,-54 376.5,-57 376.5,-60 376.5,-60 376.5,-66 376.5,-66 376.5,-69 373.5,-72 370.5,-72"/>
+<text text-anchor="middle" x="334.5" y="-60.7" font-family="inherit" font-size="8.50">Atspi.Document</text>
+</a>
+</g>
+</g>
+<!-- Atspi.Document&#45;&gt;Atspi.Accessible -->
+<g id="edge4" class="edge">
+<title>Atspi.Document&#45;&gt;Atspi.Accessible</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M376.59,-54.82C432.9,-45.22 532.51,-28.24 591.62,-18.16"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="592.23,-19.83 596.86,-17.27 591.64,-16.38 592.23,-19.83"/>
+</g>
+<!-- Atspi.EditableText -->
+<g id="node6" class="node">
+<title>Atspi.EditableText</title>
+<g id="a_node6"><a xlink:href="EditableText.html#Atspi.EditableText" xlink:title="Atspi.EditableText">
+<path fill="none" stroke="#3091d1" d="M480.5,-72C480.5,-72 400.5,-72 400.5,-72 397.5,-72 394.5,-69 394.5,-66 394.5,-66 394.5,-60 394.5,-60 394.5,-57 397.5,-54 400.5,-54 400.5,-54 480.5,-54 480.5,-54 483.5,-54 486.5,-57 486.5,-60 486.5,-60 486.5,-66 486.5,-66 486.5,-69 483.5,-72 480.5,-72"/>
+<text text-anchor="middle" x="440.5" y="-60.7" font-family="inherit" font-size="8.50">Atspi.EditableText</text>
+</a>
+</g>
+</g>
+<!-- Atspi.EditableText&#45;&gt;Atspi.Accessible -->
+<g id="edge5" class="edge">
+<title>Atspi.EditableText&#45;&gt;Atspi.Accessible</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M471.16,-53.99C506.95,-44.64 566.04,-29.19 603.85,-19.32"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="604.41,-20.98 608.81,-18.02 603.53,-17.59 604.41,-20.98"/>
+</g>
+<!-- Atspi.Hypertext -->
+<g id="node7" class="node">
+<title>Atspi.Hypertext</title>
+<g id="a_node7"><a xlink:href="Hypertext.html#Atspi.Hypertext" xlink:title="Atspi.Hypertext">
+<path fill="none" stroke="#3091d1" d="M582,-72C582,-72 511,-72 511,-72 508,-72 505,-69 505,-66 505,-66 505,-60 505,-60 505,-57 508,-54 511,-54 511,-54 582,-54 582,-54 585,-54 588,-57 588,-60 588,-60 588,-66 588,-66 588,-69 585,-72 582,-72"/>
+<text text-anchor="middle" x="546.5" y="-60.7" font-family="inherit" font-size="8.50">Atspi.Hypertext</text>
+</a>
+</g>
+</g>
+<!-- Atspi.Hypertext&#45;&gt;Atspi.Accessible -->
+<g id="edge6" class="edge">
+<title>Atspi.Hypertext&#45;&gt;Atspi.Accessible</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M561.03,-53.88C577,-44.95 602.72,-30.56 620.33,-20.72"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="621.56,-22.04 625.07,-18.07 619.85,-18.98 621.56,-22.04"/>
+</g>
+<!-- Atspi.Image -->
+<g id="node8" class="node">
+<title>Atspi.Image</title>
+<g id="a_node8"><a xlink:href="Image.html#Atspi.Image" xlink:title="Atspi.Image">
+<path fill="none" stroke="#3091d1" d="M667,-72C667,-72 612,-72 612,-72 609,-72 606,-69 606,-66 606,-66 606,-60 606,-60 606,-57 609,-54 612,-54 612,-54 667,-54 667,-54 670,-54 673,-57 673,-60 673,-60 673,-66 673,-66 673,-69 670,-72 667,-72"/>
+<text text-anchor="middle" x="639.5" y="-60.7" font-family="inherit" font-size="8.50">Atspi.Image</text>
+</a>
+</g>
+</g>
+<!-- Atspi.Image&#45;&gt;Atspi.Accessible -->
+<g id="edge7" class="edge">
+<title>Atspi.Image&#45;&gt;Atspi.Accessible</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M639.5,-53.88C639.5,-45.76 639.5,-33.13 639.5,-23.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="641.25,-23.24 639.5,-18.24 637.75,-23.24 641.25,-23.24"/>
+</g>
+<!-- Atspi.Object -->
+<g id="node9" class="node">
+<title>Atspi.Object</title>
+<g id="a_node9"><a xlink:href="Object.html#Atspi.Object" xlink:title="Atspi.Object">
+<path fill="none" stroke="#75507b" d="M1183.5,-72C1183.5,-72 1127.5,-72 1127.5,-72 1124.5,-72 1121.5,-69 1121.5,-66 1121.5,-66 1121.5,-60 1121.5,-60 1121.5,-57 1124.5,-54 1127.5,-54 1127.5,-54 1183.5,-54 1183.5,-54 1186.5,-54 1189.5,-57 1189.5,-60 1189.5,-60 1189.5,-66 1189.5,-66 1189.5,-69 1186.5,-72 1183.5,-72"/>
+<text text-anchor="middle" x="1155.5" y="-60.7" font-family="inherit" font-size="8.50">Atspi.Object</text>
+</a>
+</g>
+</g>
+<!-- Atspi.Object&#45;&gt;Atspi.Accessible -->
+<g id="edge8" class="edge">
+<title>Atspi.Object&#45;&gt;Atspi.Accessible</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M1121.28,-55.34C1118.31,-54.85 1115.36,-54.4 1112.5,-54 957.68,-32.44 772.84,-18.69 687.29,-13"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="687.15,-11.24 682.05,-12.65 686.92,-14.73 687.15,-11.24"/>
+</g>
+<!-- Atspi.Selection -->
+<g id="node10" class="node">
+<title>Atspi.Selection</title>
+<g id="a_node10"><a xlink:href="Selection.html#Atspi.Selection" xlink:title="Atspi.Selection">
+<path fill="none" stroke="#3091d1" d="M764,-72C764,-72 697,-72 697,-72 694,-72 691,-69 691,-66 691,-66 691,-60 691,-60 691,-57 694,-54 697,-54 697,-54 764,-54 764,-54 767,-54 770,-57 770,-60 770,-60 770,-66 770,-66 770,-69 767,-72 764,-72"/>
+<text text-anchor="middle" x="730.5" y="-60.7" font-family="inherit" font-size="8.50">Atspi.Selection</text>
+</a>
+</g>
+</g>
+<!-- Atspi.Selection&#45;&gt;Atspi.Accessible -->
+<g id="edge9" class="edge">
+<title>Atspi.Selection&#45;&gt;Atspi.Accessible</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M716.28,-53.88C700.65,-44.95 675.49,-30.56 658.25,-20.72"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="658.83,-19.03 653.62,-18.07 657.09,-22.07 658.83,-19.03"/>
+</g>
+<!-- Atspi.Table -->
+<g id="node11" class="node">
+<title>Atspi.Table</title>
+<g id="a_node11"><a xlink:href="Table.html#Atspi.Table" xlink:title="Atspi.Table">
+<path fill="none" stroke="#3091d1" d="M843.5,-72C843.5,-72 793.5,-72 793.5,-72 790.5,-72 787.5,-69 787.5,-66 787.5,-66 787.5,-60 787.5,-60 787.5,-57 790.5,-54 793.5,-54 793.5,-54 843.5,-54 843.5,-54 846.5,-54 849.5,-57 849.5,-60 849.5,-60 849.5,-66 849.5,-66 849.5,-69 846.5,-72 843.5,-72"/>
+<text text-anchor="middle" x="818.5" y="-60.7" font-family="inherit" font-size="8.50">Atspi.Table</text>
+</a>
+</g>
+</g>
+<!-- Atspi.Table&#45;&gt;Atspi.Accessible -->
+<g id="edge10" class="edge">
+<title>Atspi.Table&#45;&gt;Atspi.Accessible</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M790.92,-53.99C758.86,-44.68 706.01,-29.32 671.99,-19.44"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="672.4,-17.73 667.11,-18.02 671.42,-21.1 672.4,-17.73"/>
+</g>
+<!-- Atspi.TableCell -->
+<g id="node12" class="node">
+<title>Atspi.TableCell</title>
+<g id="a_node12"><a xlink:href="TableCell.html#Atspi.TableCell" xlink:title="Atspi.TableCell">
+<path fill="none" stroke="#3091d1" d="M939.5,-72C939.5,-72 873.5,-72 873.5,-72 870.5,-72 867.5,-69 867.5,-66 867.5,-66 867.5,-60 867.5,-60 867.5,-57 870.5,-54 873.5,-54 873.5,-54 939.5,-54 939.5,-54 942.5,-54 945.5,-57 945.5,-60 945.5,-60 945.5,-66 945.5,-66 945.5,-69 942.5,-72 939.5,-72"/>
+<text text-anchor="middle" x="906.5" y="-60.7" font-family="inherit" font-size="8.50">Atspi.TableCell</text>
+</a>
+</g>
+</g>
+<!-- Atspi.TableCell&#45;&gt;Atspi.Accessible -->
+<g id="edge11" class="edge">
+<title>Atspi.TableCell&#45;&gt;Atspi.Accessible</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M867.39,-54.38C819.22,-45 737.47,-29.08 686.1,-19.07"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="686.15,-17.3 680.91,-18.07 685.49,-20.74 686.15,-17.3"/>
+</g>
+<!-- Atspi.Text -->
+<g id="node13" class="node">
+<title>Atspi.Text</title>
+<g id="a_node13"><a xlink:href="Text.html#Atspi.Text" xlink:title="Atspi.Text">
+<path fill="none" stroke="#3091d1" d="M1015.5,-72C1015.5,-72 969.5,-72 969.5,-72 966.5,-72 963.5,-69 963.5,-66 963.5,-66 963.5,-60 963.5,-60 963.5,-57 966.5,-54 969.5,-54 969.5,-54 1015.5,-54 1015.5,-54 1018.5,-54 1021.5,-57 1021.5,-60 1021.5,-60 1021.5,-66 1021.5,-66 1021.5,-69 1018.5,-72 1015.5,-72"/>
+<text text-anchor="middle" x="992.5" y="-60.7" font-family="inherit" font-size="8.50">Atspi.Text</text>
+</a>
+</g>
+</g>
+<!-- Atspi.Text&#45;&gt;Atspi.Accessible -->
+<g id="edge12" class="edge">
+<title>Atspi.Text&#45;&gt;Atspi.Accessible</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M963.49,-55.68C960.46,-55.08 957.42,-54.51 954.5,-54 860.2,-37.51 749.15,-23.17 687.29,-15.64"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="687.36,-13.88 682.19,-15.02 686.94,-17.36 687.36,-13.88"/>
+</g>
+<!-- Atspi.Value -->
+<g id="node14" class="node">
+<title>Atspi.Value</title>
+<g id="a_node14"><a xlink:href="Value.html#Atspi.Value" xlink:title="Atspi.Value">
+<path fill="none" stroke="#3091d1" d="M1097.5,-72C1097.5,-72 1045.5,-72 1045.5,-72 1042.5,-72 1039.5,-69 1039.5,-66 1039.5,-66 1039.5,-60 1039.5,-60 1039.5,-57 1042.5,-54 1045.5,-54 1045.5,-54 1097.5,-54 1097.5,-54 1100.5,-54 1103.5,-57 1103.5,-60 1103.5,-60 1103.5,-66 1103.5,-66 1103.5,-69 1100.5,-72 1097.5,-72"/>
+<text text-anchor="middle" x="1071.5" y="-60.7" font-family="inherit" font-size="8.50">Atspi.Value</text>
+</a>
+</g>
+</g>
+<!-- Atspi.Value&#45;&gt;Atspi.Accessible -->
+<g id="edge13" class="edge">
+<title>Atspi.Value&#45;&gt;Atspi.Accessible</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M1039.31,-55.47C1036.34,-54.94 1033.37,-54.44 1030.5,-54 907.36,-35.09 761.24,-20.79 687.37,-14.13"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="687.31,-12.37 682.17,-13.67 687,-15.86 687.31,-12.37"/>
+</g>
+<!-- GObject.GInterface -->
+<g id="node15" class="node">
+<title>GObject.GInterface</title>
+<g id="a_node15"><a xlink:href="../../GObject-2.0/classes/GInterface.html#GObject.GInterface" xlink:title="GObject.GInterface">
+<path fill="none" stroke="#3091d1" d="M636.5,-126C636.5,-126 550.5,-126 550.5,-126 547.5,-126 544.5,-123 544.5,-120 544.5,-120 544.5,-114 544.5,-114 544.5,-111 547.5,-108 550.5,-108 550.5,-108 636.5,-108 636.5,-108 639.5,-108 642.5,-111 642.5,-114 642.5,-114 642.5,-120 642.5,-120 642.5,-123 639.5,-126 636.5,-126"/>
+<text text-anchor="middle" x="593.5" y="-114.7" font-family="inherit" font-size="8.50">GObject.GInterface</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Atspi.Action -->
+<g id="edge14" class="edge">
+<title>GObject.GInterface&#45;&gt;Atspi.Action</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M544.5,-113.45C452.48,-108.31 247.67,-95.15 76.5,-72 75.09,-71.81 73.65,-71.6 72.21,-71.39"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="72.46,-69.65 67.25,-70.61 71.92,-73.11 72.46,-69.65"/>
+</g>
+<!-- GObject.GInterface&#45;&gt;Atspi.Collection -->
+<g id="edge15" class="edge">
+<title>GObject.GInterface&#45;&gt;Atspi.Collection</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M544.29,-111.67C466.19,-104.6 309.1,-89.59 176.5,-72 175.24,-71.83 173.97,-71.66 172.68,-71.48"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="172.87,-69.74 167.68,-70.77 172.38,-73.21 172.87,-69.74"/>
+</g>
+<!-- GObject.GInterface&#45;&gt;Atspi.Component -->
+<g id="edge16" class="edge">
+<title>GObject.GInterface&#45;&gt;Atspi.Component</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M544.35,-109.16C483.21,-100.62 375.61,-85.49 283.5,-72 282.38,-71.84 281.24,-71.67 280.1,-71.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="280.23,-69.75 275.03,-70.75 279.72,-73.21 280.23,-69.75"/>
+</g>
+<!-- GObject.GInterface&#45;&gt;Atspi.Document -->
+<g id="edge17" class="edge">
+<title>GObject.GInterface&#45;&gt;Atspi.Document</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M553.6,-107.99C506.54,-98.54 428.53,-82.88 379.4,-73.02"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="379.69,-71.29 374.45,-72.02 379,-74.72 379.69,-71.29"/>
+</g>
+<!-- GObject.GInterface&#45;&gt;Atspi.EditableText -->
+<g id="edge18" class="edge">
+<title>GObject.GInterface&#45;&gt;Atspi.EditableText</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M569.93,-107.99C542.75,-98.75 498.09,-83.57 468.99,-73.68"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="469.39,-71.97 464.1,-72.02 468.27,-75.29 469.39,-71.97"/>
+</g>
+<!-- GObject.GInterface&#45;&gt;Atspi.Hypertext -->
+<g id="edge19" class="edge">
+<title>GObject.GInterface&#45;&gt;Atspi.Hypertext</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M586.16,-107.88C578.48,-99.38 566.33,-85.94 557.5,-76.18"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="558.6,-74.78 553.95,-72.24 556,-77.12 558.6,-74.78"/>
+</g>
+<!-- GObject.GInterface&#45;&gt;Atspi.Image -->
+<g id="edge20" class="edge">
+<title>GObject.GInterface&#45;&gt;Atspi.Image</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M600.69,-107.88C608.2,-99.38 620.09,-85.94 628.73,-76.18"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="630.21,-77.14 632.21,-72.24 627.59,-74.83 630.21,-77.14"/>
+</g>
+<!-- GObject.GInterface&#45;&gt;Atspi.Selection -->
+<g id="edge21" class="edge">
+<title>GObject.GInterface&#45;&gt;Atspi.Selection</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M614.61,-107.99C638.77,-98.82 678.37,-83.79 704.44,-73.89"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="705.09,-75.52 709.14,-72.11 703.85,-72.24 705.09,-75.52"/>
+</g>
+<!-- GObject.GInterface&#45;&gt;Atspi.Table -->
+<g id="edge22" class="edge">
+<title>GObject.GInterface&#45;&gt;Atspi.Table</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M628.16,-107.99C669.98,-98.33 739.93,-82.16 782.39,-72.35"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="782.94,-74.01 787.42,-71.18 782.16,-70.6 782.94,-74.01"/>
+</g>
+<!-- GObject.GInterface&#45;&gt;Atspi.TableCell -->
+<g id="edge23" class="edge">
+<title>GObject.GInterface&#45;&gt;Atspi.TableCell</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M641.86,-107.98C694.98,-99.17 782.82,-84.59 858.5,-72 859.78,-71.79 861.07,-71.57 862.38,-71.35"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="862.82,-73.05 867.47,-70.51 862.25,-69.6 862.82,-73.05"/>
+</g>
+<!-- GObject.GInterface&#45;&gt;Atspi.Text -->
+<g id="edge24" class="edge">
+<title>GObject.GInterface&#45;&gt;Atspi.Text</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M642.74,-111.36C712.41,-104.48 843.63,-90.39 954.5,-72 955.63,-71.81 956.79,-71.61 957.95,-71.41"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="958.49,-73.09 963.09,-70.45 957.85,-69.64 958.49,-73.09"/>
+</g>
+<!-- GObject.GInterface&#45;&gt;Atspi.Value -->
+<g id="edge25" class="edge">
+<title>GObject.GInterface&#45;&gt;Atspi.Value</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M642.51,-112.55C723.53,-106.51 890.38,-92.68 1030.5,-72 1031.76,-71.81 1033.03,-71.62 1034.32,-71.41"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="1034.68,-73.12 1039.32,-70.57 1034.1,-69.67 1034.68,-73.12"/>
+</g>
+<!-- GObject.Object -->
+<g id="node16" class="node">
+<title>GObject.Object</title>
+<g id="a_node16"><a xlink:href="../../GObject-2.0/classes/Object.html#GObject.Object" xlink:title="GObject.Object">
+<path fill="none" stroke="#75507b" d="M1189.5,-126C1189.5,-126 1121.5,-126 1121.5,-126 1118.5,-126 1115.5,-123 1115.5,-120 1115.5,-120 1115.5,-114 1115.5,-114 1115.5,-111 1118.5,-108 1121.5,-108 1121.5,-108 1189.5,-108 1189.5,-108 1192.5,-108 1195.5,-111 1195.5,-114 1195.5,-114 1195.5,-120 1195.5,-120 1195.5,-123 1192.5,-126 1189.5,-126"/>
+<text text-anchor="middle" x="1155.5" y="-114.7" font-family="inherit" font-size="8.50">GObject.Object</text>
+</a>
+</g>
+</g>
+<!-- GObject.Object&#45;&gt;Atspi.Object -->
+<g id="edge26" class="edge">
+<title>GObject.Object&#45;&gt;Atspi.Object</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M1155.5,-107.88C1155.5,-99.76 1155.5,-87.13 1155.5,-77.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="1157.25,-77.24 1155.5,-72.24 1153.75,-77.24 1157.25,-77.24"/>
+</g>
+</g>
+</svg>
+</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Subclasses:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="methods">
+<span id="atspi-accessible-methods"></span><h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (37)</span></a>,     <a class="reference internal" href="Action.html#atspi-action-methods"><span class="std std-ref">Atspi.Action (6)</span></a>,     <a class="reference internal" href="Collection.html#atspi-collection-methods"><span class="std std-ref">Atspi.Collection (5)</span></a>,     <a class="reference internal" href="Component.html#atspi-component-methods"><span class="std std-ref">Atspi.Component (14)</span></a>,     <a class="reference internal" href="Document.html#atspi-document-methods"><span class="std std-ref">Atspi.Document (5)</span></a>,     <a class="reference internal" href="EditableText.html#atspi-editabletext-methods"><span class="std std-ref">Atspi.EditableText (6)</span></a>,     <a class="reference internal" href="Hypertext.html#atspi-hypertext-methods"><span class="std std-ref">Atspi.Hypertext (3)</span></a>,     <a class="reference internal" href="Image.html#atspi-image-methods"><span class="std std-ref">Atspi.Image (5)</span></a>,     <a class="reference internal" href="Selection.html#atspi-selection-methods"><span class="std std-ref">Atspi.Selection (8)</span></a>,     <a class="reference internal" href="Table.html#atspi-table-methods"><span class="std std-ref">Atspi.Table (26)</span></a>,     <a class="reference internal" href="TableCell.html#atspi-tablecell-methods"><span class="std std-ref">Atspi.TableCell (8)</span></a>,     <a class="reference internal" href="Text.html#atspi-text-methods"><span class="std std-ref">Atspi.Text (24)</span></a>,     <a class="reference internal" href="Value.html#atspi-value-methods"><span class="std std-ref">Atspi.Value (5)</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Structs:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/ObjectClass.html#gobject-objectclass-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.ObjectClass (5)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="99%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Atspi.Accessible.clear_cache" title="Atspi.Accessible.clear_cache"><code class="xref py py-func docutils literal notranslate"><span class="pre">clear_cache</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Atspi.Accessible.get_accessible_id" title="Atspi.Accessible.get_accessible_id"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_accessible_id</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Atspi.Accessible.get_action_iface" title="Atspi.Accessible.get_action_iface"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_action_iface</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Atspi.Accessible.get_application" title="Atspi.Accessible.get_application"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_application</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Atspi.Accessible.get_atspi_version" title="Atspi.Accessible.get_atspi_version"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_atspi_version</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Atspi.Accessible.get_attributes" title="Atspi.Accessible.get_attributes"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_attributes</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Atspi.Accessible.get_attributes_as_array" title="Atspi.Accessible.get_attributes_as_array"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_attributes_as_array</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Atspi.Accessible.get_child_at_index" title="Atspi.Accessible.get_child_at_index"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_child_at_index</span></code></a> (child_index)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Atspi.Accessible.get_child_count" title="Atspi.Accessible.get_child_count"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_child_count</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Atspi.Accessible.get_collection_iface" title="Atspi.Accessible.get_collection_iface"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_collection_iface</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Atspi.Accessible.get_component_iface" title="Atspi.Accessible.get_component_iface"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_component_iface</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Atspi.Accessible.get_description" title="Atspi.Accessible.get_description"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_description</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Atspi.Accessible.get_document_iface" title="Atspi.Accessible.get_document_iface"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_document_iface</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Atspi.Accessible.get_editable_text_iface" title="Atspi.Accessible.get_editable_text_iface"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_editable_text_iface</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Atspi.Accessible.get_hyperlink" title="Atspi.Accessible.get_hyperlink"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_hyperlink</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Atspi.Accessible.get_hypertext_iface" title="Atspi.Accessible.get_hypertext_iface"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_hypertext_iface</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Atspi.Accessible.get_id" title="Atspi.Accessible.get_id"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_id</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Atspi.Accessible.get_image_iface" title="Atspi.Accessible.get_image_iface"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_image_iface</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Atspi.Accessible.get_index_in_parent" title="Atspi.Accessible.get_index_in_parent"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_index_in_parent</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Atspi.Accessible.get_interfaces" title="Atspi.Accessible.get_interfaces"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_interfaces</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Atspi.Accessible.get_localized_role_name" title="Atspi.Accessible.get_localized_role_name"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_localized_role_name</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Atspi.Accessible.get_name" title="Atspi.Accessible.get_name"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_name</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Atspi.Accessible.get_object_locale" title="Atspi.Accessible.get_object_locale"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_object_locale</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Atspi.Accessible.get_parent" title="Atspi.Accessible.get_parent"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_parent</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Atspi.Accessible.get_process_id" title="Atspi.Accessible.get_process_id"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_process_id</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Atspi.Accessible.get_relation_set" title="Atspi.Accessible.get_relation_set"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_relation_set</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Atspi.Accessible.get_role" title="Atspi.Accessible.get_role"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_role</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Atspi.Accessible.get_role_name" title="Atspi.Accessible.get_role_name"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_role_name</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Atspi.Accessible.get_selection_iface" title="Atspi.Accessible.get_selection_iface"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_selection_iface</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Atspi.Accessible.get_state_set" title="Atspi.Accessible.get_state_set"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_state_set</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Atspi.Accessible.get_table_cell" title="Atspi.Accessible.get_table_cell"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_table_cell</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Atspi.Accessible.get_table_iface" title="Atspi.Accessible.get_table_iface"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_table_iface</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Atspi.Accessible.get_text_iface" title="Atspi.Accessible.get_text_iface"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_text_iface</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Atspi.Accessible.get_toolkit_name" title="Atspi.Accessible.get_toolkit_name"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_toolkit_name</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Atspi.Accessible.get_toolkit_version" title="Atspi.Accessible.get_toolkit_version"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_toolkit_version</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Atspi.Accessible.get_value_iface" title="Atspi.Accessible.get_value_iface"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_value_iface</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Atspi.Accessible.set_cache_mask" title="Atspi.Accessible.set_cache_mask"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_cache_mask</span></code></a> (mask)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="virtual-methods">
+<span id="atspi-accessible-vfuncs"></span><h2>Virtual Methods<a class="headerlink" href="#virtual-methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-vfuncs" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (7)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="99%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#Atspi.Accessible.do_mode_changed" title="Atspi.Accessible.do_mode_changed"><code class="xref py py-func docutils literal notranslate"><span class="pre">do_mode_changed</span></code></a> (enabled)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#Atspi.Accessible.do_region_changed" title="Atspi.Accessible.do_region_changed"><code class="xref py py-func docutils literal notranslate"><span class="pre">do_region_changed</span></code></a> (current_offset, last_offset)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="atspi-accessible-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<p>None</p>
+</div>
+<div class="section" id="signals">
+<span id="atspi-accessible-signals"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-signals" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="30%" />
+<col width="70%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Short Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="#Atspi.Accessible.signals.mode_changed" title="Atspi.Accessible.signals.mode_changed"><code class="xref py py-func docutils literal notranslate"><span class="pre">mode-changed</span></code></a></td>
+<td>The signal “mode-changed” is emitted by a screen reader to indicate that its mode has changed.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#Atspi.Accessible.signals.region_changed" title="Atspi.Accessible.signals.region_changed"><code class="xref py py-func docutils literal notranslate"><span class="pre">region-changed</span></code></a></td>
+<td>The signal “region-changed” is emitted by a screen reader to indicate that it is now reading or tracking a new object, or, a new piece of text within an object.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fields">
+<span id="atspi-accessible-fields"></span><h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-fields" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="16%" />
+<col width="1%" />
+<col width="1%" />
+<col width="82%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Access</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>accessible_parent</td>
+<td><a class="reference internal" href="#Atspi.Accessible" title="Atspi.Accessible"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Accessible</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>attributes</td>
+<td>{<a class="reference external" href="http://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">object</span></code></a>: <a class="reference external" href="http://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">object</span></code></a>}</td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>cached_properties</td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>children</td>
+<td>[<a class="reference external" href="http://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">object</span></code></a>]</td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>description</td>
+<td><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>interfaces</td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>name</td>
+<td><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>parent</td>
+<td><a class="reference internal" href="Object.html#Atspi.Object" title="Atspi.Object"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Object</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>role</td>
+<td><a class="reference internal" href="../enums.html#Atspi.Role" title="Atspi.Role"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Role</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>states</td>
+<td><a class="reference internal" href="StateSet.html#Atspi.StateSet" title="Atspi.StateSet"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.StateSet</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="class-details">
+<h2>Class Details<a class="headerlink" href="#class-details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Atspi.Accessible">
+<em class="property">class </em><code class="descclassname">Atspi.</code><code class="descname">Accessible</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#Atspi.Accessible" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Bases:</th><td class="field-body"><a class="reference internal" href="Object.html#Atspi.Object" title="Atspi.Object"><code class="xref py py-class docutils literal notranslate"><span class="pre">Atspi.Object</span></code></a>,         <a class="reference internal" href="Action.html#Atspi.Action" title="Atspi.Action"><code class="xref py py-class docutils literal notranslate"><span class="pre">Atspi.Action</span></code></a>,         <a class="reference internal" href="Collection.html#Atspi.Collection" title="Atspi.Collection"><code class="xref py py-class docutils literal notranslate"><span class="pre">Atspi.Collection</span></code></a>,         <a class="reference internal" href="Component.html#Atspi.Component" title="Atspi.Component"><code class="xref py py-class docutils literal notranslate"><span class="pre">Atspi.Component</span></code></a>,         <a class="reference internal" href="Document.html#Atspi.Document" title="Atspi.Document"><code class="xref py py-class docutils literal notranslate"><span class="pre">Atspi.Document</span></code></a>,         <a class="reference internal" href="EditableText.html#Atspi.EditableText" title="Atspi.EditableText"><code class="xref py py-class docutils literal notranslate"><span class="pre">Atspi.EditableText</span></code></a>,         <a class="reference internal" href="Hypertext.html#Atspi.Hypertext" title="Atspi.Hypertext"><code class="xref py py-class docutils literal notranslate"><span class="pre">Atspi.Hypertext</span></code></a>,         <a class="reference internal" href="Image.html#Atspi.Image" title="Atspi.Image"><code class="xref py py-class docutils literal notranslate"><span class="pre">Atspi.Image</span></code></a>,         <a class="reference internal" href="Selection.html#Atspi.Selection" title="Atspi.Selection"><code class="xref py py-class docutils literal notranslate"><span class="pre">Atspi.Selection</span></code></a>,         <a class="reference internal" href="Table.html#Atspi.Table" title="Atspi.Table"><code class="xref py py-class docutils literal notranslate"><span class="pre">Atspi.Table</span></code></a>,         <a class="reference internal" href="TableCell.html#Atspi.TableCell" title="Atspi.TableCell"><code class="xref py py-class docutils literal notranslate"><span class="pre">Atspi.TableCell</span></code></a>,         <a class="reference internal" href="Text.html#Atspi.Text" title="Atspi.Text"><code class="xref py py-class docutils literal notranslate"><span class="pre">Atspi.Text</span></code></a>,         <a class="reference internal" href="Value.html#Atspi.Value" title="Atspi.Value"><code class="xref py py-class docutils literal notranslate"><span class="pre">Atspi.Value</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Abstract:</th><td class="field-body">No</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Structure:</th><td class="field-body"><a class="reference internal" href="AccessibleClass.html#Atspi.AccessibleClass" title="Atspi.AccessibleClass"><code class="xref py py-class docutils literal notranslate"><span class="pre">Atspi.AccessibleClass</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="Atspi.Accessible.clear_cache">
+<code class="descname">clear_cache</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Atspi.Accessible.clear_cache" title="Permalink to this definition">¶</a></dt>
+<dd><p>Clears the cached information for the given accessible and all of its
+descendants.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Atspi.Accessible.get_accessible_id">
+<code class="descname">get_accessible_id</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Atspi.Accessible.get_accessible_id" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference external" href="../../GLib-2.0/classes/Error.html#GLib.Error" title="(in GLib 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLib.Error</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a character string representing the accessible id of the
+<a class="reference internal" href="#Atspi.Accessible" title="Atspi.Accessible"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Accessible</span></code></a> object or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> on exception.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the accessible id of the accessible.  This is not meant to be presented
+to the user, but to be an id which is stable over application development.
+Typically, this is the gtkbuilder id.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.34.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Atspi.Accessible.get_action_iface">
+<code class="descname">get_action_iface</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Atspi.Accessible.get_action_iface" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a pointer to an <a class="reference internal" href="Action.html#Atspi.Action" title="Atspi.Action"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Action</span></code></a> interface
+instance, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> if <cite>self</cite> does not implement <a class="reference internal" href="Action.html#Atspi.Action" title="Atspi.Action"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Action</span></code></a>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="Action.html#Atspi.Action" title="Atspi.Action"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Action</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the <a class="reference internal" href="Action.html#Atspi.Action" title="Atspi.Action"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Action</span></code></a> interface for an <a class="reference internal" href="#Atspi.Accessible" title="Atspi.Accessible"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Accessible</span></code></a>.</p>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 2.10: </span>Use <a class="reference internal" href="#Atspi.Accessible.get_action_iface" title="Atspi.Accessible.get_action_iface"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Accessible.get_action_iface</span></code></a> instead.</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Atspi.Accessible.get_application">
+<code class="descname">get_application</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Atspi.Accessible.get_application" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference external" href="../../GLib-2.0/classes/Error.html#GLib.Error" title="(in GLib 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLib.Error</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the containing <a class="reference internal" href="Application.html#Atspi.Application" title="Atspi.Application"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Application</span></code></a> instance for
+this object.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#Atspi.Accessible" title="Atspi.Accessible"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Accessible</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the containing <a class="reference internal" href="Application.html#Atspi.Application" title="Atspi.Application"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Application</span></code></a> for an object.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Atspi.Accessible.get_atspi_version">
+<code class="descname">get_atspi_version</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Atspi.Accessible.get_atspi_version" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference external" href="../../GLib-2.0/classes/Error.html#GLib.Error" title="(in GLib 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLib.Error</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a UTF-8 string indicating the AT-SPI version for the <a class="reference internal" href="#Atspi.Accessible" title="Atspi.Accessible"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Accessible</span></code></a> object or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> on exception.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the AT-SPI IPC specification version supported by the application
+pointed to by the <a class="reference internal" href="#Atspi.Accessible" title="Atspi.Accessible"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Accessible</span></code></a> object.
+Only works on application root objects.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Atspi.Accessible.get_attributes">
+<code class="descname">get_attributes</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Atspi.Accessible.get_attributes" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference external" href="../../GLib-2.0/classes/Error.html#GLib.Error" title="(in GLib 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLib.Error</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The name-value-pair
+attributes assigned to this object.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">{<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>: <a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>}</td>
+</tr>
+</tbody>
+</table>
+<p>Gets the #AttributeSet representing any assigned
+name-value pair attributes or annotations for this object.
+For typographic, textual, or textually-semantic attributes, see
+<a class="reference internal" href="Text.html#Atspi.Text.get_text_attributes" title="Atspi.Text.get_text_attributes"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Text.get_text_attributes</span></code></a> instead.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Atspi.Accessible.get_attributes_as_array">
+<code class="descname">get_attributes_as_array</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Atspi.Accessible.get_attributes_as_array" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference external" href="../../GLib-2.0/classes/Error.html#GLib.Error" title="(in GLib 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLib.Error</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The name-value-pair
+attributes assigned to this object.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">[<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>]</td>
+</tr>
+</tbody>
+</table>
+<p>Gets a <a class="reference external" href="../../GLib-2.0/classes/Array.html#GLib.Array" title="(in GLib 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GLib.Array</span></code></a> representing any assigned
+name-value pair attributes or annotations for this object.
+For typographic, textual, or textually-semantic attributes, see
+atspi_text_get_attributes_as_array instead.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Atspi.Accessible.get_child_at_index">
+<code class="descname">get_child_at_index</code><span class="sig-paren">(</span><em>child_index</em><span class="sig-paren">)</span><a class="headerlink" href="#Atspi.Accessible.get_child_at_index" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>child_index</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – a #long indicating which child is specified.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference external" href="../../GLib-2.0/classes/Error.html#GLib.Error" title="(in GLib 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLib.Error</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a pointer to the <a class="reference internal" href="#Atspi.Accessible" title="Atspi.Accessible"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Accessible</span></code></a> child object at
+index <cite>child_index</cite> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> on exception.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#Atspi.Accessible" title="Atspi.Accessible"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Accessible</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the <a class="reference internal" href="#Atspi.Accessible" title="Atspi.Accessible"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Accessible</span></code></a> child of an <a class="reference internal" href="#Atspi.Accessible" title="Atspi.Accessible"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Accessible</span></code></a> object at a given index.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Atspi.Accessible.get_child_count">
+<code class="descname">get_child_count</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Atspi.Accessible.get_child_count" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference external" href="../../GLib-2.0/classes/Error.html#GLib.Error" title="(in GLib 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLib.Error</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a #long indicating the number of <a class="reference internal" href="#Atspi.Accessible" title="Atspi.Accessible"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Accessible</span></code></a> children
+contained by an <a class="reference internal" href="#Atspi.Accessible" title="Atspi.Accessible"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Accessible</span></code></a> object or -1 on exception.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the number of children contained by an <a class="reference internal" href="#Atspi.Accessible" title="Atspi.Accessible"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Accessible</span></code></a> object.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Atspi.Accessible.get_collection_iface">
+<code class="descname">get_collection_iface</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Atspi.Accessible.get_collection_iface" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a pointer to an <a class="reference internal" href="Collection.html#Atspi.Collection" title="Atspi.Collection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Collection</span></code></a> interface
+instance, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> if <cite>self</cite> does not implement <a class="reference internal" href="Collection.html#Atspi.Collection" title="Atspi.Collection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Collection</span></code></a>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="Collection.html#Atspi.Collection" title="Atspi.Collection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Collection</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the <a class="reference internal" href="Collection.html#Atspi.Collection" title="Atspi.Collection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Collection</span></code></a> interface for an <a class="reference internal" href="#Atspi.Accessible" title="Atspi.Accessible"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Accessible</span></code></a>.</p>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 2.10: </span>Use <a class="reference internal" href="#Atspi.Accessible.get_collection_iface" title="Atspi.Accessible.get_collection_iface"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Accessible.get_collection_iface</span></code></a> instead.</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Atspi.Accessible.get_component_iface">
+<code class="descname">get_component_iface</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Atspi.Accessible.get_component_iface" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a pointer to an <a class="reference internal" href="Component.html#Atspi.Component" title="Atspi.Component"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Component</span></code></a> interface
+instance, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> if <cite>self</cite> does not implement <a class="reference internal" href="Component.html#Atspi.Component" title="Atspi.Component"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Component</span></code></a>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="Component.html#Atspi.Component" title="Atspi.Component"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Component</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the <a class="reference internal" href="Component.html#Atspi.Component" title="Atspi.Component"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Component</span></code></a> interface for an <a class="reference internal" href="#Atspi.Accessible" title="Atspi.Accessible"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Accessible</span></code></a>.</p>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 2.10: </span>Use <a class="reference internal" href="#Atspi.Accessible.get_component_iface" title="Atspi.Accessible.get_component_iface"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Accessible.get_component_iface</span></code></a> instead.</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Atspi.Accessible.get_description">
+<code class="descname">get_description</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Atspi.Accessible.get_description" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference external" href="../../GLib-2.0/classes/Error.html#GLib.Error" title="(in GLib 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLib.Error</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a UTF-8 string describing the <a class="reference internal" href="#Atspi.Accessible" title="Atspi.Accessible"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Accessible</span></code></a> object
+or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> on exception.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the description of an <a class="reference internal" href="#Atspi.Accessible" title="Atspi.Accessible"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Accessible</span></code></a> object.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Atspi.Accessible.get_document_iface">
+<code class="descname">get_document_iface</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Atspi.Accessible.get_document_iface" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a pointer to an <a class="reference internal" href="Document.html#Atspi.Document" title="Atspi.Document"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Document</span></code></a> interface
+instance, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> if <cite>self</cite> does not implement <a class="reference internal" href="Document.html#Atspi.Document" title="Atspi.Document"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Document</span></code></a>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="Document.html#Atspi.Document" title="Atspi.Document"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Document</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the <a class="reference internal" href="Document.html#Atspi.Document" title="Atspi.Document"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Document</span></code></a> interface for an <a class="reference internal" href="#Atspi.Accessible" title="Atspi.Accessible"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Accessible</span></code></a>.</p>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 2.10: </span>Use <a class="reference internal" href="#Atspi.Accessible.get_document_iface" title="Atspi.Accessible.get_document_iface"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Accessible.get_document_iface</span></code></a> instead.</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Atspi.Accessible.get_editable_text_iface">
+<code class="descname">get_editable_text_iface</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Atspi.Accessible.get_editable_text_iface" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a pointer to an <a class="reference internal" href="EditableText.html#Atspi.EditableText" title="Atspi.EditableText"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.EditableText</span></code></a> interface
+instance, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> if <cite>self</cite> does not implement <a class="reference internal" href="EditableText.html#Atspi.EditableText" title="Atspi.EditableText"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.EditableText</span></code></a>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="EditableText.html#Atspi.EditableText" title="Atspi.EditableText"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.EditableText</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the <a class="reference internal" href="EditableText.html#Atspi.EditableText" title="Atspi.EditableText"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.EditableText</span></code></a> interface for an <a class="reference internal" href="#Atspi.Accessible" title="Atspi.Accessible"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Accessible</span></code></a>.</p>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 2.10: </span>Use <a class="reference internal" href="#Atspi.Accessible.get_editable_text_iface" title="Atspi.Accessible.get_editable_text_iface"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Accessible.get_editable_text_iface</span></code></a> instead.</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Atspi.Accessible.get_hyperlink">
+<code class="descname">get_hyperlink</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Atspi.Accessible.get_hyperlink" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the <a class="reference internal" href="Hyperlink.html#Atspi.Hyperlink" title="Atspi.Hyperlink"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Hyperlink</span></code></a> object associated with
+the given <a class="reference internal" href="#Atspi.Accessible" title="Atspi.Accessible"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Accessible</span></code></a>, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> if not supported.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="Hyperlink.html#Atspi.Hyperlink" title="Atspi.Hyperlink"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Hyperlink</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the <a class="reference internal" href="Hyperlink.html#Atspi.Hyperlink" title="Atspi.Hyperlink"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Hyperlink</span></code></a> interface for an <a class="reference internal" href="#Atspi.Accessible" title="Atspi.Accessible"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Accessible</span></code></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Atspi.Accessible.get_hypertext_iface">
+<code class="descname">get_hypertext_iface</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Atspi.Accessible.get_hypertext_iface" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a pointer to an <a class="reference internal" href="Hypertext.html#Atspi.Hypertext" title="Atspi.Hypertext"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Hypertext</span></code></a> interface
+instance, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> if <cite>self</cite> does not implement <a class="reference internal" href="Hypertext.html#Atspi.Hypertext" title="Atspi.Hypertext"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Hypertext</span></code></a>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="Hypertext.html#Atspi.Hypertext" title="Atspi.Hypertext"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Hypertext</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the <a class="reference internal" href="Hypertext.html#Atspi.Hypertext" title="Atspi.Hypertext"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Hypertext</span></code></a> interface for an <a class="reference internal" href="#Atspi.Accessible" title="Atspi.Accessible"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Accessible</span></code></a>.</p>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 2.10: </span>Use <a class="reference internal" href="#Atspi.Accessible.get_hypertext_iface" title="Atspi.Accessible.get_hypertext_iface"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Accessible.get_hypertext_iface</span></code></a> instead.</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Atspi.Accessible.get_id">
+<code class="descname">get_id</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Atspi.Accessible.get_id" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference external" href="../../GLib-2.0/classes/Error.html#GLib.Error" title="(in GLib 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLib.Error</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a positive <a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a> indicating the id for the <a class="reference internal" href="#Atspi.Accessible" title="Atspi.Accessible"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Accessible</span></code></a> object
+or -1 on exception.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the application id for a <a class="reference internal" href="#Atspi.Accessible" title="Atspi.Accessible"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Accessible</span></code></a> object.
+Only works on application root objects.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Atspi.Accessible.get_image_iface">
+<code class="descname">get_image_iface</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Atspi.Accessible.get_image_iface" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a pointer to an <a class="reference internal" href="Image.html#Atspi.Image" title="Atspi.Image"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Image</span></code></a> interface instance, or
+<a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> if <cite>self</cite> does not implement <a class="reference internal" href="Image.html#Atspi.Image" title="Atspi.Image"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Image</span></code></a>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="Image.html#Atspi.Image" title="Atspi.Image"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Image</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the <a class="reference internal" href="Image.html#Atspi.Image" title="Atspi.Image"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Image</span></code></a> interface for an <a class="reference internal" href="#Atspi.Accessible" title="Atspi.Accessible"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Accessible</span></code></a>.</p>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 2.10: </span>Use <a class="reference internal" href="#Atspi.Accessible.get_image_iface" title="Atspi.Accessible.get_image_iface"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Accessible.get_image_iface</span></code></a> instead.</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Atspi.Accessible.get_index_in_parent">
+<code class="descname">get_index_in_parent</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Atspi.Accessible.get_index_in_parent" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference external" href="../../GLib-2.0/classes/Error.html#GLib.Error" title="(in GLib 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLib.Error</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a <a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a> indicating the index of the <a class="reference internal" href="#Atspi.Accessible" title="Atspi.Accessible"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Accessible</span></code></a> object
+in its parent,
+or -1 if <cite>self</cite> has no containing parent or on exception.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the index of an <a class="reference internal" href="#Atspi.Accessible" title="Atspi.Accessible"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Accessible</span></code></a> object within its parent’s
+<a class="reference internal" href="#Atspi.Accessible" title="Atspi.Accessible"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Accessible</span></code></a> children list.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Atspi.Accessible.get_interfaces">
+<code class="descname">get_interfaces</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Atspi.Accessible.get_interfaces" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A <a class="reference external" href="../../GLib-2.0/classes/Array.html#GLib.Array" title="(in GLib 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GLib.Array</span></code></a> of strings
+describing the interfaces supported by the object.  Interfaces are
+denoted in short-hand (i.e. “Component”, “Text” etc.).</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">[<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>]</td>
+</tr>
+</tbody>
+</table>
+<p>A set of pointers to all interfaces supported by an <a class="reference internal" href="#Atspi.Accessible" title="Atspi.Accessible"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Accessible</span></code></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Atspi.Accessible.get_localized_role_name">
+<code class="descname">get_localized_role_name</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Atspi.Accessible.get_localized_role_name" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference external" href="../../GLib-2.0/classes/Error.html#GLib.Error" title="(in GLib 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLib.Error</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a localized, UTF-8 string specifying the type of UI role played
+by an <a class="reference internal" href="#Atspi.Accessible" title="Atspi.Accessible"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Accessible</span></code></a> object.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets a UTF-8 string corresponding to the name of the role played by an
+object, translated to the current locale.
+This method will return useful values for roles that fall outside the
+enumeration used in atspi_accessible_getRole ().</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Atspi.Accessible.get_name">
+<code class="descname">get_name</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Atspi.Accessible.get_name" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference external" href="../../GLib-2.0/classes/Error.html#GLib.Error" title="(in GLib 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLib.Error</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a UTF-8 string indicating the name of the <a class="reference internal" href="#Atspi.Accessible" title="Atspi.Accessible"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Accessible</span></code></a> object
+or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> on exception.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the name of an <a class="reference internal" href="#Atspi.Accessible" title="Atspi.Accessible"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Accessible</span></code></a> object.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Atspi.Accessible.get_object_locale">
+<code class="descname">get_object_locale</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Atspi.Accessible.get_object_locale" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference external" href="../../GLib-2.0/classes/Error.html#GLib.Error" title="(in GLib 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLib.Error</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Atspi.Accessible.get_parent">
+<code class="descname">get_parent</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Atspi.Accessible.get_parent" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference external" href="../../GLib-2.0/classes/Error.html#GLib.Error" title="(in GLib 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLib.Error</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a pointer to the
+<a class="reference internal" href="#Atspi.Accessible" title="Atspi.Accessible"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Accessible</span></code></a> object which contains the given
+<a class="reference internal" href="#Atspi.Accessible" title="Atspi.Accessible"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Accessible</span></code></a> instance, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> if the <cite>self</cite> has no
+parent container.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#Atspi.Accessible" title="Atspi.Accessible"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Accessible</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets an <a class="reference internal" href="#Atspi.Accessible" title="Atspi.Accessible"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Accessible</span></code></a> object’s parent container.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Atspi.Accessible.get_process_id">
+<code class="descname">get_process_id</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Atspi.Accessible.get_process_id" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference external" href="../../GLib-2.0/classes/Error.html#GLib.Error" title="(in GLib 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLib.Error</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The process ID or undetermined value if <cite>error</cite> is set.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns the process id associated with the given accessible.  Mainly
+added for debugging; it is a shortcut to explicitly querying the
+accessible’s app-&gt;bus_name and then calling GetConnectionUnixProcessID.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Atspi.Accessible.get_relation_set">
+<code class="descname">get_relation_set</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Atspi.Accessible.get_relation_set" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference external" href="../../GLib-2.0/classes/Error.html#GLib.Error" title="(in GLib 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLib.Error</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a <a class="reference external" href="../../GLib-2.0/classes/Array.html#GLib.Array" title="(in GLib 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GLib.Array</span></code></a> of
+<a class="reference internal" href="Relation.html#Atspi.Relation" title="Atspi.Relation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Relation</span></code></a> pointers or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> on exception.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">[<a class="reference internal" href="Relation.html#Atspi.Relation" title="Atspi.Relation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Relation</span></code></a>]</td>
+</tr>
+</tbody>
+</table>
+<p>Gets the set of <a class="reference internal" href="Relation.html#Atspi.Relation" title="Atspi.Relation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Relation</span></code></a> objects which describes this <a class="reference internal" href="#Atspi.Accessible" title="Atspi.Accessible"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Accessible</span></code></a> object’s
+relationships with other <a class="reference internal" href="#Atspi.Accessible" title="Atspi.Accessible"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Accessible</span></code></a> objects.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Atspi.Accessible.get_role">
+<code class="descname">get_role</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Atspi.Accessible.get_role" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference external" href="../../GLib-2.0/classes/Error.html#GLib.Error" title="(in GLib 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLib.Error</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the <a class="reference internal" href="../enums.html#Atspi.Role" title="Atspi.Role"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Role</span></code></a> of an <a class="reference internal" href="#Atspi.Accessible" title="Atspi.Accessible"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Accessible</span></code></a> object.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#Atspi.Role" title="Atspi.Role"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Role</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the UI role played by an <a class="reference internal" href="#Atspi.Accessible" title="Atspi.Accessible"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Accessible</span></code></a> object.
+This role’s name can be obtained via <a class="reference internal" href="#Atspi.Accessible.get_role_name" title="Atspi.Accessible.get_role_name"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Accessible.get_role_name</span></code></a> ().</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Atspi.Accessible.get_role_name">
+<code class="descname">get_role_name</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Atspi.Accessible.get_role_name" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference external" href="../../GLib-2.0/classes/Error.html#GLib.Error" title="(in GLib 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLib.Error</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a UTF-8 string specifying the type of UI role played by an
+<a class="reference internal" href="#Atspi.Accessible" title="Atspi.Accessible"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Accessible</span></code></a> object.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets a UTF-8 string corresponding to the name of the role played by an object.
+This method will return useful values for roles that fall outside the
+enumeration used in <a class="reference internal" href="#Atspi.Accessible.get_role" title="Atspi.Accessible.get_role"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Accessible.get_role</span></code></a> ().</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Atspi.Accessible.get_selection_iface">
+<code class="descname">get_selection_iface</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Atspi.Accessible.get_selection_iface" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a pointer to an <a class="reference internal" href="Selection.html#Atspi.Selection" title="Atspi.Selection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Selection</span></code></a> interface
+instance, or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> if <cite>self</cite> does not implement <a class="reference internal" href="Selection.html#Atspi.Selection" title="Atspi.Selection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Selection</span></code></a>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="Selection.html#Atspi.Selection" title="Atspi.Selection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Selection</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the <a class="reference internal" href="Selection.html#Atspi.Selection" title="Atspi.Selection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Selection</span></code></a> interface for an <a class="reference internal" href="#Atspi.Accessible" title="Atspi.Accessible"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Accessible</span></code></a>.</p>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 2.10: </span>Use <a class="reference internal" href="#Atspi.Accessible.get_selection_iface" title="Atspi.Accessible.get_selection_iface"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Accessible.get_selection_iface</span></code></a> instead.</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Atspi.Accessible.get_state_set">
+<code class="descname">get_state_set</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Atspi.Accessible.get_state_set" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a pointer to an <a class="reference internal" href="StateSet.html#Atspi.StateSet" title="Atspi.StateSet"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.StateSet</span></code></a> representing an
+object’s current state set.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="StateSet.html#Atspi.StateSet" title="Atspi.StateSet"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.StateSet</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the states currently held by an object.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Atspi.Accessible.get_table_cell">
+<code class="descname">get_table_cell</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Atspi.Accessible.get_table_cell" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a pointer to an <a class="reference internal" href="TableCell.html#Atspi.TableCell" title="Atspi.TableCell"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.TableCell</span></code></a> interface instance,
+or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> if <cite>self</cite> does not implement <a class="reference internal" href="Table.html#Atspi.Table" title="Atspi.Table"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Table</span></code></a>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="TableCell.html#Atspi.TableCell" title="Atspi.TableCell"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.TableCell</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the <a class="reference internal" href="TableCell.html#Atspi.TableCell" title="Atspi.TableCell"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.TableCell</span></code></a> interface for an <a class="reference internal" href="#Atspi.Accessible" title="Atspi.Accessible"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Accessible</span></code></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Atspi.Accessible.get_table_iface">
+<code class="descname">get_table_iface</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Atspi.Accessible.get_table_iface" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a pointer to an <a class="reference internal" href="Table.html#Atspi.Table" title="Atspi.Table"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Table</span></code></a> interface instance, or
+<a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> if <cite>self</cite> does not implement <a class="reference internal" href="Table.html#Atspi.Table" title="Atspi.Table"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Table</span></code></a>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="Table.html#Atspi.Table" title="Atspi.Table"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Table</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the <a class="reference internal" href="Table.html#Atspi.Table" title="Atspi.Table"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Table</span></code></a> interface for an <a class="reference internal" href="#Atspi.Accessible" title="Atspi.Accessible"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Accessible</span></code></a>.</p>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 2.10: </span>Use <a class="reference internal" href="#Atspi.Accessible.get_table_iface" title="Atspi.Accessible.get_table_iface"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Accessible.get_table_iface</span></code></a> instead.</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Atspi.Accessible.get_text_iface">
+<code class="descname">get_text_iface</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Atspi.Accessible.get_text_iface" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a pointer to an <a class="reference internal" href="Text.html#Atspi.Text" title="Atspi.Text"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Text</span></code></a> interface instance, or
+<a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> if <cite>self</cite> does not implement <a class="reference internal" href="Text.html#Atspi.Text" title="Atspi.Text"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Text</span></code></a>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="Text.html#Atspi.Text" title="Atspi.Text"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Text</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the <a class="reference internal" href="Table.html#Atspi.Table" title="Atspi.Table"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Table</span></code></a> interface for an <a class="reference internal" href="#Atspi.Accessible" title="Atspi.Accessible"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Accessible</span></code></a>.</p>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 2.10: </span>Use <a class="reference internal" href="#Atspi.Accessible.get_text_iface" title="Atspi.Accessible.get_text_iface"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Accessible.get_text_iface</span></code></a> instead.</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Atspi.Accessible.get_toolkit_name">
+<code class="descname">get_toolkit_name</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Atspi.Accessible.get_toolkit_name" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference external" href="../../GLib-2.0/classes/Error.html#GLib.Error" title="(in GLib 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLib.Error</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a UTF-8 string indicating the toolkit name for the <a class="reference internal" href="#Atspi.Accessible" title="Atspi.Accessible"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Accessible</span></code></a> object or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> on exception.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the toolkit name for an <a class="reference internal" href="#Atspi.Accessible" title="Atspi.Accessible"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Accessible</span></code></a> object.
+Only works on application root objects.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Atspi.Accessible.get_toolkit_version">
+<code class="descname">get_toolkit_version</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Atspi.Accessible.get_toolkit_version" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference external" href="../../GLib-2.0/classes/Error.html#GLib.Error" title="(in GLib 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLib.Error</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a UTF-8 string indicating the toolkit version for the <a class="reference internal" href="#Atspi.Accessible" title="Atspi.Accessible"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Accessible</span></code></a> object or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> on exception.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the toolkit version for an <a class="reference internal" href="#Atspi.Accessible" title="Atspi.Accessible"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Accessible</span></code></a> object.
+Only works on application root objects.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Atspi.Accessible.get_value_iface">
+<code class="descname">get_value_iface</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Atspi.Accessible.get_value_iface" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a pointer to an <a class="reference internal" href="Value.html#Atspi.Value" title="Atspi.Value"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Value</span></code></a> interface instance, or
+<a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> if <cite>self</cite> does not implement <a class="reference internal" href="Value.html#Atspi.Value" title="Atspi.Value"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Value</span></code></a>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="Value.html#Atspi.Value" title="Atspi.Value"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Value</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the <a class="reference internal" href="Table.html#Atspi.Table" title="Atspi.Table"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Table</span></code></a> interface for an <a class="reference internal" href="#Atspi.Accessible" title="Atspi.Accessible"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Accessible</span></code></a>.</p>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 2.10: </span>Use <a class="reference internal" href="#Atspi.Accessible.get_value_iface" title="Atspi.Accessible.get_value_iface"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Accessible.get_value_iface</span></code></a> instead.</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Atspi.Accessible.set_cache_mask">
+<code class="descname">set_cache_mask</code><span class="sig-paren">(</span><em>mask</em><span class="sig-paren">)</span><a class="headerlink" href="#Atspi.Accessible.set_cache_mask" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>mask</strong> (<a class="reference internal" href="../flags.html#Atspi.Cache" title="Atspi.Cache"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Cache</span></code></a>) – An <a class="reference internal" href="../flags.html#Atspi.Cache" title="Atspi.Cache"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Cache</span></code></a> specifying a bit mask of the types of data to cache.</td>
+</tr>
+</tbody>
+</table>
+<p>Sets the type of data to cache for accessibles.
+If this is not set for an application or is reset to <a class="reference internal" href="../flags.html#Atspi.Cache.UNDEFINED" title="Atspi.Cache.UNDEFINED"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Cache.UNDEFINED</span></code></a>,
+then the desktop’s cache flag will be used.
+If the desktop’s cache flag is also undefined, then all possible data will
+be cached.
+This function is intended to work around bugs in toolkits where the proper
+events are not raised / to aid in testing for such bugs.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Atspi.Accessible.do_mode_changed">
+<code class="descname">do_mode_changed</code><span class="sig-paren">(</span><em>enabled</em><span class="sig-paren">)</span><em class="property"> virtual</em><a class="headerlink" href="#Atspi.Accessible.do_mode_changed" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>enabled</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a>) – </td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Atspi.Accessible.do_region_changed">
+<code class="descname">do_region_changed</code><span class="sig-paren">(</span><em>current_offset</em>, <em>last_offset</em><span class="sig-paren">)</span><em class="property"> virtual</em><a class="headerlink" href="#Atspi.Accessible.do_region_changed" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>current_offset</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – </li>
+<li><strong>last_offset</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="signal-details">
+<h2>Signal Details<a class="headerlink" href="#signal-details" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="Atspi.Accessible.signals.mode_changed">
+<code class="descclassname">Atspi.Accessible.signals.</code><code class="descname">mode_changed</code><span class="sig-paren">(</span><em>accessible</em>, <em>arg1</em>, <em>why</em><span class="sig-paren">)</span><a class="headerlink" href="#Atspi.Accessible.signals.mode_changed" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Signal Name:</th><td class="field-body"><p class="first"><code class="docutils literal notranslate"><span class="pre">mode-changed</span></code></p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><p class="first"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.SignalFlags.RUN_LAST" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RUN_LAST</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.SignalFlags.DETAILED" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DETAILED</span></code></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>accessible</strong> (<a class="reference internal" href="#Atspi.Accessible" title="Atspi.Accessible"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Accessible</span></code></a>) – The object which received the signal</li>
+<li><strong>arg1</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – a boolean specifying whether the mode is being toggled on or off.</li>
+<li><strong>why</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – an optional string explaining why the mode changed.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>The signal “mode-changed” is emitted by a screen reader to indicate
+that its mode has changed. This signal supports the following details:
+focus-tracking
+flat-review
+mouse-review
+say-all
+caret-tracking</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Atspi.Accessible.signals.region_changed">
+<code class="descclassname">Atspi.Accessible.signals.</code><code class="descname">region_changed</code><span class="sig-paren">(</span><em>accessible</em>, <em>arg1</em>, <em>arg2</em><span class="sig-paren">)</span><a class="headerlink" href="#Atspi.Accessible.signals.region_changed" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Signal Name:</th><td class="field-body"><p class="first"><code class="docutils literal notranslate"><span class="pre">region-changed</span></code></p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><p class="first"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.SignalFlags.RUN_LAST" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RUN_LAST</span></code></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>accessible</strong> (<a class="reference internal" href="#Atspi.Accessible" title="Atspi.Accessible"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Atspi.Accessible</span></code></a>) – The object which received the signal</li>
+<li><strong>arg1</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – an integer specifying the current offset of the text being read,
+if the object is textual.</li>
+<li><strong>arg2</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – an integer specifying the ending offset of the text being read,
+if the object is textual.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>The signal “region-changed” is emitted by a screen reader to indicate
+that it is now reading or tracking a new object, or, a new piece of
+text within an object. This allows a magnifier to gain the information
+needed to highlight the object that the screen reader is reading.</p>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div> 
+
+</body>
+</html>

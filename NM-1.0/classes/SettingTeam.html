@@ -1,0 +1,1393 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    NM.SettingTeam -
+    
+      Classes -
+    
+    NM 1.0
+  </title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/css/pgi.css" type="text/css" />
+  
+
+  
+  <script type="text/javascript">
+
+    function openSidebar(element) {
+        window.location.href = element.href + location.hash;
+        return false;
+    }
+
+    function inIframe() {
+        try {
+            return window.self !== window.top;
+        } catch (e) {
+            return true;
+        }
+    }
+
+    function onLoaded() {
+        if(!inIframe()) {
+            var icons = document.getElementsByClassName('open-sidebar');
+
+            for (var i = 0; i < icons.length; i ++) {
+                icons[i].style.display = 'table-cell';
+            }
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', onLoaded, false);
+
+  </script>
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="NM 1.0 Python API Docs" href="../index.html"/>
+        <link rel="up" title="Classes" href="../classes.html"/>
+        <link rel="next" title="NM.SettingTeamPort" href="SettingTeamPort.html"/>
+        <link rel="prev" title="NM.SettingTCConfig" href="SettingTCConfig.html"/> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+<div class="non-fixed-bar">
+<table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#NM-1.0/classes/SettingTeam.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">NM 1.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>NM.SettingTeam</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="SettingTCConfig.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="SettingTeamPort.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">NM.SettingTeam</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#property-details">Property Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+<div class="fixed-bar">
+  <table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#NM-1.0/classes/SettingTeam.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">NM 1.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>NM.SettingTeam</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="SettingTCConfig.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="SettingTeamPort.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">NM.SettingTeam</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#property-details">Property Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+  <div class="wy-grid-for-nav">
+
+    
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="main">
+            
+  <div class="section" id="nm-settingteam">
+<h1>NM.SettingTeam<a class="headerlink" href="#nm-settingteam" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<svg width="93pt" height="134pt"
+ viewBox="0.00 0.00 93.00 134.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 130)">
+<title>g</title>
+<!-- GObject.Object -->
+<g id="node1" class="node">
+<title>GObject.Object</title>
+<g id="a_node1"><a xlink:href="../../GObject-2.0/classes/Object.html#GObject.Object" xlink:title="GObject.Object">
+<path fill="none" stroke="#75507b" d="M76.5,-126C76.5,-126 8.5,-126 8.5,-126 5.5,-126 2.5,-123 2.5,-120 2.5,-120 2.5,-114 2.5,-114 2.5,-111 5.5,-108 8.5,-108 8.5,-108 76.5,-108 76.5,-108 79.5,-108 82.5,-111 82.5,-114 82.5,-114 82.5,-120 82.5,-120 82.5,-123 79.5,-126 76.5,-126"/>
+<text text-anchor="middle" x="42.5" y="-114.7" font-family="inherit" font-size="8.50">GObject.Object</text>
+</a>
+</g>
+</g>
+<!-- NM.Setting -->
+<g id="node2" class="node">
+<title>NM.Setting</title>
+<g id="a_node2"><a xlink:href="Setting.html#NM.Setting" xlink:title="NM.Setting">
+<path fill="none" stroke="#aaaaaa" d="M67.5,-72C67.5,-72 17.5,-72 17.5,-72 14.5,-72 11.5,-69 11.5,-66 11.5,-66 11.5,-60 11.5,-60 11.5,-57 14.5,-54 17.5,-54 17.5,-54 67.5,-54 67.5,-54 70.5,-54 73.5,-57 73.5,-60 73.5,-60 73.5,-66 73.5,-66 73.5,-69 70.5,-72 67.5,-72"/>
+<text text-anchor="middle" x="42.5" y="-60.7" font-family="inherit" font-size="8.50">NM.Setting</text>
+</a>
+</g>
+</g>
+<!-- GObject.Object&#45;&gt;NM.Setting -->
+<g id="edge1" class="edge">
+<title>GObject.Object&#45;&gt;NM.Setting</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M42.5,-107.88C42.5,-99.76 42.5,-87.13 42.5,-77.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="44.25,-77.24 42.5,-72.24 40.75,-77.24 44.25,-77.24"/>
+</g>
+<!-- NM.SettingTeam -->
+<g id="node3" class="node">
+<title>NM.SettingTeam</title>
+<g id="a_node3"><a xlink:href="#NM.SettingTeam" xlink:title="NM.SettingTeam">
+<path fill="none" stroke="#75507b" d="M79,-18C79,-18 6,-18 6,-18 3,-18 0,-15 0,-12 0,-12 0,-6 0,-6 0,-3 3,0 6,0 6,0 79,0 79,0 82,0 85,-3 85,-6 85,-6 85,-12 85,-12 85,-15 82,-18 79,-18"/>
+<text text-anchor="middle" x="42.5" y="-6.7" font-family="inherit" font-size="8.50">NM.SettingTeam</text>
+</a>
+</g>
+</g>
+<!-- NM.Setting&#45;&gt;NM.SettingTeam -->
+<g id="edge2" class="edge">
+<title>NM.Setting&#45;&gt;NM.SettingTeam</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M42.5,-53.88C42.5,-45.76 42.5,-33.13 42.5,-23.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="44.25,-23.24 42.5,-18.24 40.75,-23.24 44.25,-23.24"/>
+</g>
+</g>
+</svg>
+</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Subclasses:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="methods">
+<span id="nm-settingteam-methods"></span><h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Setting.html#nm-setting-methods"><span class="std std-ref">NM.Setting (20)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (37)</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Structs:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/ObjectClass.html#gobject-objectclass-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.ObjectClass (5)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="99%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><em>class</em></td>
+<td><a class="reference internal" href="#NM.SettingTeam.new" title="NM.SettingTeam.new"><code class="xref py py-func docutils literal notranslate"><span class="pre">new</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.SettingTeam.add_link_watcher" title="NM.SettingTeam.add_link_watcher"><code class="xref py py-func docutils literal notranslate"><span class="pre">add_link_watcher</span></code></a> (link_watcher)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.SettingTeam.add_runner_tx_hash" title="NM.SettingTeam.add_runner_tx_hash"><code class="xref py py-func docutils literal notranslate"><span class="pre">add_runner_tx_hash</span></code></a> (txhash)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.SettingTeam.clear_link_watchers" title="NM.SettingTeam.clear_link_watchers"><code class="xref py py-func docutils literal notranslate"><span class="pre">clear_link_watchers</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.SettingTeam.get_config" title="NM.SettingTeam.get_config"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_config</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.SettingTeam.get_link_watcher" title="NM.SettingTeam.get_link_watcher"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_link_watcher</span></code></a> (idx)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.SettingTeam.get_mcast_rejoin_count" title="NM.SettingTeam.get_mcast_rejoin_count"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_mcast_rejoin_count</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.SettingTeam.get_mcast_rejoin_interval" title="NM.SettingTeam.get_mcast_rejoin_interval"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_mcast_rejoin_interval</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.SettingTeam.get_notify_peers_count" title="NM.SettingTeam.get_notify_peers_count"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_notify_peers_count</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.SettingTeam.get_notify_peers_interval" title="NM.SettingTeam.get_notify_peers_interval"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_notify_peers_interval</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.SettingTeam.get_num_link_watchers" title="NM.SettingTeam.get_num_link_watchers"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_num_link_watchers</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.SettingTeam.get_num_runner_tx_hash" title="NM.SettingTeam.get_num_runner_tx_hash"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_num_runner_tx_hash</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.SettingTeam.get_runner" title="NM.SettingTeam.get_runner"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_runner</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.SettingTeam.get_runner_active" title="NM.SettingTeam.get_runner_active"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_runner_active</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.SettingTeam.get_runner_agg_select_policy" title="NM.SettingTeam.get_runner_agg_select_policy"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_runner_agg_select_policy</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.SettingTeam.get_runner_fast_rate" title="NM.SettingTeam.get_runner_fast_rate"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_runner_fast_rate</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.SettingTeam.get_runner_hwaddr_policy" title="NM.SettingTeam.get_runner_hwaddr_policy"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_runner_hwaddr_policy</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.SettingTeam.get_runner_min_ports" title="NM.SettingTeam.get_runner_min_ports"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_runner_min_ports</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.SettingTeam.get_runner_sys_prio" title="NM.SettingTeam.get_runner_sys_prio"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_runner_sys_prio</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.SettingTeam.get_runner_tx_balancer" title="NM.SettingTeam.get_runner_tx_balancer"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_runner_tx_balancer</span></code></a> ()</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.SettingTeam.get_runner_tx_balancer_interval" title="NM.SettingTeam.get_runner_tx_balancer_interval"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_runner_tx_balancer_interval</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.SettingTeam.get_runner_tx_hash" title="NM.SettingTeam.get_runner_tx_hash"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_runner_tx_hash</span></code></a> (idx)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.SettingTeam.remove_link_watcher" title="NM.SettingTeam.remove_link_watcher"><code class="xref py py-func docutils literal notranslate"><span class="pre">remove_link_watcher</span></code></a> (idx)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.SettingTeam.remove_link_watcher_by_value" title="NM.SettingTeam.remove_link_watcher_by_value"><code class="xref py py-func docutils literal notranslate"><span class="pre">remove_link_watcher_by_value</span></code></a> (link_watcher)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.SettingTeam.remove_runner_tx_hash" title="NM.SettingTeam.remove_runner_tx_hash"><code class="xref py py-func docutils literal notranslate"><span class="pre">remove_runner_tx_hash</span></code></a> (idx)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#NM.SettingTeam.remove_runner_tx_hash_by_value" title="NM.SettingTeam.remove_runner_tx_hash_by_value"><code class="xref py py-func docutils literal notranslate"><span class="pre">remove_runner_tx_hash_by_value</span></code></a> (txhash)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="virtual-methods">
+<span id="nm-settingteam-vfuncs"></span><h2>Virtual Methods<a class="headerlink" href="#virtual-methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Setting.html#nm-setting-vfuncs"><span class="std std-ref">NM.Setting (7)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-vfuncs" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (7)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="nm-settingteam-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Setting.html#nm-setting-props"><span class="std std-ref">NM.Setting (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="1%" />
+<col width="1%" />
+<col width="97%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Flags</th>
+<th class="head">Short Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="#NM.SettingTeam.props.config" title="NM.SettingTeam.props.config"><code class="xref py py-data docutils literal notranslate"><span class="pre">config</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+<td>r/w</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#NM.SettingTeam.props.link_watchers" title="NM.SettingTeam.props.link_watchers"><code class="xref py py-data docutils literal notranslate"><span class="pre">link-watchers</span></code></a></td>
+<td><a class="reference external" href="../../GLib-2.0/classes/PtrArray.html#GLib.PtrArray" title="(in GLib 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GLib.PtrArray</span></code></a></td>
+<td>r/w</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#NM.SettingTeam.props.mcast_rejoin_count" title="NM.SettingTeam.props.mcast_rejoin_count"><code class="xref py py-data docutils literal notranslate"><span class="pre">mcast-rejoin-count</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+<td>r/w</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#NM.SettingTeam.props.mcast_rejoin_interval" title="NM.SettingTeam.props.mcast_rejoin_interval"><code class="xref py py-data docutils literal notranslate"><span class="pre">mcast-rejoin-interval</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+<td>r/w</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#NM.SettingTeam.props.notify_peers_count" title="NM.SettingTeam.props.notify_peers_count"><code class="xref py py-data docutils literal notranslate"><span class="pre">notify-peers-count</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+<td>r/w</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#NM.SettingTeam.props.notify_peers_interval" title="NM.SettingTeam.props.notify_peers_interval"><code class="xref py py-data docutils literal notranslate"><span class="pre">notify-peers-interval</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+<td>r/w</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#NM.SettingTeam.props.runner" title="NM.SettingTeam.props.runner"><code class="xref py py-data docutils literal notranslate"><span class="pre">runner</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+<td>r/w</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#NM.SettingTeam.props.runner_active" title="NM.SettingTeam.props.runner_active"><code class="xref py py-data docutils literal notranslate"><span class="pre">runner-active</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+<td>r/w</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#NM.SettingTeam.props.runner_agg_select_policy" title="NM.SettingTeam.props.runner_agg_select_policy"><code class="xref py py-data docutils literal notranslate"><span class="pre">runner-agg-select-policy</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+<td>r/w</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#NM.SettingTeam.props.runner_fast_rate" title="NM.SettingTeam.props.runner_fast_rate"><code class="xref py py-data docutils literal notranslate"><span class="pre">runner-fast-rate</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+<td>r/w</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#NM.SettingTeam.props.runner_hwaddr_policy" title="NM.SettingTeam.props.runner_hwaddr_policy"><code class="xref py py-data docutils literal notranslate"><span class="pre">runner-hwaddr-policy</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+<td>r/w</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#NM.SettingTeam.props.runner_min_ports" title="NM.SettingTeam.props.runner_min_ports"><code class="xref py py-data docutils literal notranslate"><span class="pre">runner-min-ports</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+<td>r/w</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#NM.SettingTeam.props.runner_sys_prio" title="NM.SettingTeam.props.runner_sys_prio"><code class="xref py py-data docutils literal notranslate"><span class="pre">runner-sys-prio</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+<td>r/w</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#NM.SettingTeam.props.runner_tx_balancer" title="NM.SettingTeam.props.runner_tx_balancer"><code class="xref py py-data docutils literal notranslate"><span class="pre">runner-tx-balancer</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+<td>r/w</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#NM.SettingTeam.props.runner_tx_balancer_interval" title="NM.SettingTeam.props.runner_tx_balancer_interval"><code class="xref py py-data docutils literal notranslate"><span class="pre">runner-tx-balancer-interval</span></code></a></td>
+<td><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+<td>r/w</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#NM.SettingTeam.props.runner_tx_hash" title="NM.SettingTeam.props.runner_tx_hash"><code class="xref py py-data docutils literal notranslate"><span class="pre">runner-tx-hash</span></code></a></td>
+<td>[<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>]</td>
+<td>r/w</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="signals">
+<span id="nm-settingteam-signals"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-signals" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fields">
+<span id="nm-settingteam-fields"></span><h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-fields" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="16%" />
+<col width="1%" />
+<col width="1%" />
+<col width="82%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Access</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>parent</td>
+<td><a class="reference internal" href="Setting.html#NM.Setting" title="NM.Setting"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.Setting</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="class-details">
+<h2>Class Details<a class="headerlink" href="#class-details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="NM.SettingTeam">
+<em class="property">class </em><code class="descclassname">NM.</code><code class="descname">SettingTeam</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#NM.SettingTeam" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Bases:</th><td class="field-body"><a class="reference internal" href="Setting.html#NM.Setting" title="NM.Setting"><code class="xref py py-class docutils literal notranslate"><span class="pre">NM.Setting</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Abstract:</th><td class="field-body">No</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Structure:</th><td class="field-body"><a class="reference internal" href="SettingTeamClass.html#NM.SettingTeamClass" title="NM.SettingTeamClass"><code class="xref py py-class docutils literal notranslate"><span class="pre">NM.SettingTeamClass</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Teaming Settings</p>
+<dl class="classmethod">
+<dt id="NM.SettingTeam.new">
+<em class="property">classmethod </em><code class="descname">new</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NM.SettingTeam.new" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the new empty <a class="reference internal" href="#NM.SettingTeam" title="NM.SettingTeam"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.SettingTeam</span></code></a> object</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="Setting.html#NM.Setting" title="NM.Setting"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.Setting</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Creates a new <a class="reference internal" href="#NM.SettingTeam" title="NM.SettingTeam"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.SettingTeam</span></code></a> object with default values.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.SettingTeam.add_link_watcher">
+<code class="descname">add_link_watcher</code><span class="sig-paren">(</span><em>link_watcher</em><span class="sig-paren">)</span><a class="headerlink" href="#NM.SettingTeam.add_link_watcher" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>link_watcher</strong> (<a class="reference internal" href="TeamLinkWatcher.html#NM.TeamLinkWatcher" title="NM.TeamLinkWatcher"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.TeamLinkWatcher</span></code></a>) – the link watcher to add</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if the link watcher is added; <a class="reference external" href="http://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a> if an identical link
+watcher was already there.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Appends a new link watcher to the setting.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.12.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.SettingTeam.add_runner_tx_hash">
+<code class="descname">add_runner_tx_hash</code><span class="sig-paren">(</span><em>txhash</em><span class="sig-paren">)</span><a class="headerlink" href="#NM.SettingTeam.add_runner_tx_hash" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>txhash</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – the element to add to txhash</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if the txhash element was added; <a class="reference external" href="http://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a> if the element
+was already knnown.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Adds a new txhash element to the setting.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.12.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.SettingTeam.clear_link_watchers">
+<code class="descname">clear_link_watchers</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NM.SettingTeam.clear_link_watchers" title="Permalink to this definition">¶</a></dt>
+<dd><p>Removes all configured link watchers.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.12.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.SettingTeam.get_config">
+<code class="descname">get_config</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NM.SettingTeam.get_config" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the <a class="reference internal" href="#NM.SettingTeam" title="NM.SettingTeam"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.SettingTeam</span></code></a> <a class="reference internal" href="#NM.SettingTeam.props.config" title="NM.SettingTeam.props.config"><code class="xref py py-data docutils literal notranslate"><span class="pre">:config</span></code></a> property of the setting</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.SettingTeam.get_link_watcher">
+<code class="descname">get_link_watcher</code><span class="sig-paren">(</span><em>idx</em><span class="sig-paren">)</span><a class="headerlink" href="#NM.SettingTeam.get_link_watcher" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>idx</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – index number of the link watcher to return</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the link watcher at index <cite>idx</cite>.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="TeamLinkWatcher.html#NM.TeamLinkWatcher" title="NM.TeamLinkWatcher"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.TeamLinkWatcher</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.12.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.SettingTeam.get_mcast_rejoin_count">
+<code class="descname">get_mcast_rejoin_count</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NM.SettingTeam.get_mcast_rejoin_count" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the #:obj:<cite>NM.SettingTeam</cite> <a class="reference internal" href="#NM.SettingTeam.props.mcast_rejoin_count" title="NM.SettingTeam.props.mcast_rejoin_count"><code class="xref py py-data docutils literal notranslate"><span class="pre">:mcast-rejoin-count</span></code></a> property of the setting</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.12.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.SettingTeam.get_mcast_rejoin_interval">
+<code class="descname">get_mcast_rejoin_interval</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NM.SettingTeam.get_mcast_rejoin_interval" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the #:obj:<cite>NM.SettingTeam</cite> <a class="reference internal" href="#NM.SettingTeam.props.mcast_rejoin_interval" title="NM.SettingTeam.props.mcast_rejoin_interval"><code class="xref py py-data docutils literal notranslate"><span class="pre">:mcast-rejoin-interval</span></code></a> property of the setting</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.12.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.SettingTeam.get_notify_peers_count">
+<code class="descname">get_notify_peers_count</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NM.SettingTeam.get_notify_peers_count" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the #:obj:<cite>NM.SettingTeam</cite> <a class="reference internal" href="#NM.SettingTeam.props.notify_peers_count" title="NM.SettingTeam.props.notify_peers_count"><code class="xref py py-data docutils literal notranslate"><span class="pre">:notify-peers-count</span></code></a> property of the setting</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.12.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.SettingTeam.get_notify_peers_interval">
+<code class="descname">get_notify_peers_interval</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NM.SettingTeam.get_notify_peers_interval" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the #:obj:<cite>NM.SettingTeam</cite> <a class="reference internal" href="#NM.SettingTeam.props.notify_peers_interval" title="NM.SettingTeam.props.notify_peers_interval"><code class="xref py py-data docutils literal notranslate"><span class="pre">:notify-peers-interval</span></code></a> property of the setting</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.12.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.SettingTeam.get_num_link_watchers">
+<code class="descname">get_num_link_watchers</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NM.SettingTeam.get_num_link_watchers" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the number of configured link watchers</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.12.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.SettingTeam.get_num_runner_tx_hash">
+<code class="descname">get_num_runner_tx_hash</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NM.SettingTeam.get_num_runner_tx_hash" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the number of elements in txhash</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.12.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.SettingTeam.get_runner">
+<code class="descname">get_runner</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NM.SettingTeam.get_runner" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the #:obj:<cite>NM.SettingTeam</cite> <a class="reference internal" href="#NM.SettingTeam.props.runner" title="NM.SettingTeam.props.runner"><code class="xref py py-data docutils literal notranslate"><span class="pre">:runner</span></code></a> property of the setting</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.12.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.SettingTeam.get_runner_active">
+<code class="descname">get_runner_active</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NM.SettingTeam.get_runner_active" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the ##NMSettingTeam:runner_active property of the setting</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.12.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.SettingTeam.get_runner_agg_select_policy">
+<code class="descname">get_runner_agg_select_policy</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NM.SettingTeam.get_runner_agg_select_policy" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the #:obj:<cite>NM.SettingTeam</cite> <a class="reference internal" href="#NM.SettingTeam.props.runner_agg_select_policy" title="NM.SettingTeam.props.runner_agg_select_policy"><code class="xref py py-data docutils literal notranslate"><span class="pre">:runner-agg-select-policy</span></code></a> property of the setting</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.12.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.SettingTeam.get_runner_fast_rate">
+<code class="descname">get_runner_fast_rate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NM.SettingTeam.get_runner_fast_rate" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the #:obj:<cite>NM.SettingTeam</cite> <a class="reference internal" href="#NM.SettingTeam.props.runner_fast_rate" title="NM.SettingTeam.props.runner_fast_rate"><code class="xref py py-data docutils literal notranslate"><span class="pre">:runner-fast-rate</span></code></a> property of the setting</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.12.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.SettingTeam.get_runner_hwaddr_policy">
+<code class="descname">get_runner_hwaddr_policy</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NM.SettingTeam.get_runner_hwaddr_policy" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the #:obj:<cite>NM.SettingTeam</cite> <a class="reference internal" href="#NM.SettingTeam.props.runner_hwaddr_policy" title="NM.SettingTeam.props.runner_hwaddr_policy"><code class="xref py py-data docutils literal notranslate"><span class="pre">:runner-hwaddr-policy</span></code></a> property of the setting</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.12.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.SettingTeam.get_runner_min_ports">
+<code class="descname">get_runner_min_ports</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NM.SettingTeam.get_runner_min_ports" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the #:obj:<cite>NM.SettingTeam</cite> <a class="reference internal" href="#NM.SettingTeam.props.runner_min_ports" title="NM.SettingTeam.props.runner_min_ports"><code class="xref py py-data docutils literal notranslate"><span class="pre">:runner-min-ports</span></code></a> property of the setting</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.12.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.SettingTeam.get_runner_sys_prio">
+<code class="descname">get_runner_sys_prio</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NM.SettingTeam.get_runner_sys_prio" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the #:obj:<cite>NM.SettingTeam</cite> <a class="reference internal" href="#NM.SettingTeam.props.runner_sys_prio" title="NM.SettingTeam.props.runner_sys_prio"><code class="xref py py-data docutils literal notranslate"><span class="pre">:runner-sys-prio</span></code></a> property of the setting</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.12.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.SettingTeam.get_runner_tx_balancer">
+<code class="descname">get_runner_tx_balancer</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NM.SettingTeam.get_runner_tx_balancer" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the #:obj:<cite>NM.SettingTeam</cite> <a class="reference internal" href="#NM.SettingTeam.props.runner_tx_balancer" title="NM.SettingTeam.props.runner_tx_balancer"><code class="xref py py-data docutils literal notranslate"><span class="pre">:runner-tx-balancer</span></code></a> property of the setting</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.12.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.SettingTeam.get_runner_tx_balancer_interval">
+<code class="descname">get_runner_tx_balancer_interval</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NM.SettingTeam.get_runner_tx_balancer_interval" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the ##NMSettingTeam:runner-tx-balancer_interval property of the setting</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.12.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.SettingTeam.get_runner_tx_hash">
+<code class="descname">get_runner_tx_hash</code><span class="sig-paren">(</span><em>idx</em><span class="sig-paren">)</span><a class="headerlink" href="#NM.SettingTeam.get_runner_tx_hash" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>idx</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – index number of the txhash element to return</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the txhash element at index <cite>idx</cite></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.12.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.SettingTeam.remove_link_watcher">
+<code class="descname">remove_link_watcher</code><span class="sig-paren">(</span><em>idx</em><span class="sig-paren">)</span><a class="headerlink" href="#NM.SettingTeam.remove_link_watcher" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>idx</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – index number of the link watcher to remove</td>
+</tr>
+</tbody>
+</table>
+<p>Removes the link watcher at index #idx.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.12.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.SettingTeam.remove_link_watcher_by_value">
+<code class="descname">remove_link_watcher_by_value</code><span class="sig-paren">(</span><em>link_watcher</em><span class="sig-paren">)</span><a class="headerlink" href="#NM.SettingTeam.remove_link_watcher_by_value" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>link_watcher</strong> (<a class="reference internal" href="TeamLinkWatcher.html#NM.TeamLinkWatcher" title="NM.TeamLinkWatcher"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NM.TeamLinkWatcher</span></code></a>) – the link watcher to remove</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if the link watcher was found and removed, <a class="reference external" href="http://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a> otherwise.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Removes the link watcher entry matching link_watcher.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.12.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.SettingTeam.remove_runner_tx_hash">
+<code class="descname">remove_runner_tx_hash</code><span class="sig-paren">(</span><em>idx</em><span class="sig-paren">)</span><a class="headerlink" href="#NM.SettingTeam.remove_runner_tx_hash" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>idx</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – index number of the element to remove from txhash</td>
+</tr>
+</tbody>
+</table>
+<p>Removes the txhash element at index <cite>idx</cite>.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.12.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="NM.SettingTeam.remove_runner_tx_hash_by_value">
+<code class="descname">remove_runner_tx_hash_by_value</code><span class="sig-paren">(</span><em>txhash</em><span class="sig-paren">)</span><a class="headerlink" href="#NM.SettingTeam.remove_runner_tx_hash_by_value" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>txhash</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – the txhash element to remove</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if the txhash element was found and removed; <a class="reference external" href="http://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a> if it was not.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Removes the txhash element #txhash</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.12.</span></p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="property-details">
+<h2>Property Details<a class="headerlink" href="#property-details" title="Permalink to this headline">¶</a></h2>
+<dl class="data">
+<dt id="NM.SettingTeam.props.config">
+<code class="descclassname">NM.SettingTeam.props.</code><code class="descname">config</code><a class="headerlink" href="#NM.SettingTeam.props.config" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">config</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>The JSON configuration for the team network interface.  The property
+should contain raw JSON configuration data suitable for teamd, because
+the value is passed directly to teamd. If not specified, the default
+configuration is used.  See man teamd.conf for the format details.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="NM.SettingTeam.props.link_watchers">
+<code class="descclassname">NM.SettingTeam.props.</code><code class="descname">link_watchers</code><a class="headerlink" href="#NM.SettingTeam.props.link_watchers" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">link-watchers</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="../../GLib-2.0/classes/PtrArray.html#GLib.PtrArray" title="(in GLib 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GLib.PtrArray</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Link watchers configuration for the connection: each link watcher is
+defined by a dictionary, whose keys depend upon the selected link
+watcher. Available link watchers are ‘ethtool’, ‘nsna_ping’ and
+‘arp_ping’ and it is specified in the dictionary with the key ‘name’.
+Available keys are:   ethtool: ‘delay-up’, ‘delay-down’, ‘init-wait’;
+nsna_ping: ‘init-wait’, ‘interval’, ‘missed-max’, ‘target-host’;
+arp_ping: all the ones in nsna_ping and ‘source-host’, ‘validate-active’,
+‘validate-inactive’, ‘send-always’. See teamd.conf man for more details.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.12.</span></p>
+</div>
+</dd></dl>
+
+<dl class="data">
+<dt id="NM.SettingTeam.props.mcast_rejoin_count">
+<code class="descclassname">NM.SettingTeam.props.</code><code class="descname">mcast_rejoin_count</code><a class="headerlink" href="#NM.SettingTeam.props.mcast_rejoin_count" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">mcast-rejoin-count</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">-1</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Corresponds to the teamd mcast_rejoin.count.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.12.</span></p>
+</div>
+</dd></dl>
+
+<dl class="data">
+<dt id="NM.SettingTeam.props.mcast_rejoin_interval">
+<code class="descclassname">NM.SettingTeam.props.</code><code class="descname">mcast_rejoin_interval</code><a class="headerlink" href="#NM.SettingTeam.props.mcast_rejoin_interval" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">mcast-rejoin-interval</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">-1</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Corresponds to the teamd mcast_rejoin.interval.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.12.</span></p>
+</div>
+</dd></dl>
+
+<dl class="data">
+<dt id="NM.SettingTeam.props.notify_peers_count">
+<code class="descclassname">NM.SettingTeam.props.</code><code class="descname">notify_peers_count</code><a class="headerlink" href="#NM.SettingTeam.props.notify_peers_count" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">notify-peers-count</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">-1</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Corresponds to the teamd notify_peers.count.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.12.</span></p>
+</div>
+</dd></dl>
+
+<dl class="data">
+<dt id="NM.SettingTeam.props.notify_peers_interval">
+<code class="descclassname">NM.SettingTeam.props.</code><code class="descname">notify_peers_interval</code><a class="headerlink" href="#NM.SettingTeam.props.notify_peers_interval" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">notify-peers-interval</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">-1</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Corresponds to the teamd notify_peers.interval.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.12.</span></p>
+</div>
+</dd></dl>
+
+<dl class="data">
+<dt id="NM.SettingTeam.props.runner">
+<code class="descclassname">NM.SettingTeam.props.</code><code class="descname">runner</code><a class="headerlink" href="#NM.SettingTeam.props.runner" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">runner</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Corresponds to the teamd runner.name.
+Permitted values are: “roundrobin”, “broadcast”, “activebackup”,
+“loadbalance”, “lacp”, “random”.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.12.</span></p>
+</div>
+</dd></dl>
+
+<dl class="data">
+<dt id="NM.SettingTeam.props.runner_active">
+<code class="descclassname">NM.SettingTeam.props.</code><code class="descname">runner_active</code><a class="headerlink" href="#NM.SettingTeam.props.runner_active" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">runner-active</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Corresponds to the teamd runner.active.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.12.</span></p>
+</div>
+</dd></dl>
+
+<dl class="data">
+<dt id="NM.SettingTeam.props.runner_agg_select_policy">
+<code class="descclassname">NM.SettingTeam.props.</code><code class="descname">runner_agg_select_policy</code><a class="headerlink" href="#NM.SettingTeam.props.runner_agg_select_policy" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">runner-agg-select-policy</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Corresponds to the teamd runner.agg_select_policy.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.12.</span></p>
+</div>
+</dd></dl>
+
+<dl class="data">
+<dt id="NM.SettingTeam.props.runner_fast_rate">
+<code class="descclassname">NM.SettingTeam.props.</code><code class="descname">runner_fast_rate</code><a class="headerlink" href="#NM.SettingTeam.props.runner_fast_rate" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">runner-fast-rate</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Corresponds to the teamd runner.fast_rate.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.12.</span></p>
+</div>
+</dd></dl>
+
+<dl class="data">
+<dt id="NM.SettingTeam.props.runner_hwaddr_policy">
+<code class="descclassname">NM.SettingTeam.props.</code><code class="descname">runner_hwaddr_policy</code><a class="headerlink" href="#NM.SettingTeam.props.runner_hwaddr_policy" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">runner-hwaddr-policy</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Corresponds to the teamd runner.hwaddr_policy.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.12.</span></p>
+</div>
+</dd></dl>
+
+<dl class="data">
+<dt id="NM.SettingTeam.props.runner_min_ports">
+<code class="descclassname">NM.SettingTeam.props.</code><code class="descname">runner_min_ports</code><a class="headerlink" href="#NM.SettingTeam.props.runner_min_ports" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">runner-min-ports</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">-1</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Corresponds to the teamd runner.min_ports.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.12.</span></p>
+</div>
+</dd></dl>
+
+<dl class="data">
+<dt id="NM.SettingTeam.props.runner_sys_prio">
+<code class="descclassname">NM.SettingTeam.props.</code><code class="descname">runner_sys_prio</code><a class="headerlink" href="#NM.SettingTeam.props.runner_sys_prio" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">runner-sys-prio</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">-1</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Corresponds to the teamd runner.sys_prio.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.12.</span></p>
+</div>
+</dd></dl>
+
+<dl class="data">
+<dt id="NM.SettingTeam.props.runner_tx_balancer">
+<code class="descclassname">NM.SettingTeam.props.</code><code class="descname">runner_tx_balancer</code><a class="headerlink" href="#NM.SettingTeam.props.runner_tx_balancer" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">runner-tx-balancer</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Corresponds to the teamd runner.tx_balancer.name.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.12.</span></p>
+</div>
+</dd></dl>
+
+<dl class="data">
+<dt id="NM.SettingTeam.props.runner_tx_balancer_interval">
+<code class="descclassname">NM.SettingTeam.props.</code><code class="descname">runner_tx_balancer_interval</code><a class="headerlink" href="#NM.SettingTeam.props.runner_tx_balancer_interval" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">runner-tx-balancer-interval</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">-1</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Corresponds to the teamd runner.tx_balancer.interval.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.12.</span></p>
+</div>
+</dd></dl>
+
+<dl class="data">
+<dt id="NM.SettingTeam.props.runner_tx_hash">
+<code class="descclassname">NM.SettingTeam.props.</code><code class="descname">runner_tx_hash</code><a class="headerlink" href="#NM.SettingTeam.props.runner_tx_hash" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">runner-tx-hash</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body">[<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>]</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default Value:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">[]</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.READABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">READABLE</span></code></a>, <a class="reference external" href="../../GObject-2.0/flags.html#GObject.ParamFlags.WRITABLE" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WRITABLE</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Corresponds to the teamd runner.tx_hash.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.12.</span></p>
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div> 
+
+</body>
+</html>

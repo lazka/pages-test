@@ -1,0 +1,562 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    GMime.ApplicationPkcs7Mime -
+    
+      Classes -
+    
+    GMime 3.0
+  </title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/css/pgi.css" type="text/css" />
+  
+
+  
+  <script type="text/javascript">
+
+    function openSidebar(element) {
+        window.location.href = element.href + location.hash;
+        return false;
+    }
+
+    function inIframe() {
+        try {
+            return window.self !== window.top;
+        } catch (e) {
+            return true;
+        }
+    }
+
+    function onLoaded() {
+        if(!inIframe()) {
+            var icons = document.getElementsByClassName('open-sidebar');
+
+            for (var i = 0; i < icons.length; i ++) {
+                icons[i].style.display = 'table-cell';
+            }
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', onLoaded, false);
+
+  </script>
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="GMime 3.0 Python API Docs" href="../index.html"/>
+        <link rel="up" title="Classes" href="../classes.html"/>
+        <link rel="next" title="GMime.AutocryptHeader" href="AutocryptHeader.html"/>
+        <link rel="prev" title="Classes" href="../classes.html"/> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+<div class="non-fixed-bar">
+<table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#GMime-3.0/classes/ApplicationPkcs7Mime.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">GMime 3.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>GMime.ApplicationPkcs7Mime</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="../classes.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="AutocryptHeader.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">GMime.ApplicationPkcs7Mime</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+<div class="fixed-bar">
+  <table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#GMime-3.0/classes/ApplicationPkcs7Mime.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">GMime 3.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>GMime.ApplicationPkcs7Mime</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="../classes.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="AutocryptHeader.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">GMime.ApplicationPkcs7Mime</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+  <div class="wy-grid-for-nav">
+
+    
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="main">
+            
+  <div class="section" id="gmime-applicationpkcs7mime">
+<h1>GMime.ApplicationPkcs7Mime<a class="headerlink" href="#gmime-applicationpkcs7mime" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<svg width="152pt" height="188pt"
+ viewBox="0.00 0.00 152.00 188.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 184)">
+<title>g</title>
+<!-- GMime.ApplicationPkcs7Mime -->
+<g id="node1" class="node">
+<title>GMime.ApplicationPkcs7Mime</title>
+<g id="a_node1"><a xlink:href="#GMime.ApplicationPkcs7Mime" xlink:title="GMime.ApplicationPkcs7Mime">
+<path fill="none" stroke="#75507b" d="M138,-18C138,-18 6,-18 6,-18 3,-18 0,-15 0,-12 0,-12 0,-6 0,-6 0,-3 3,0 6,0 6,0 138,0 138,0 141,0 144,-3 144,-6 144,-6 144,-12 144,-12 144,-15 141,-18 138,-18"/>
+<text text-anchor="middle" x="72" y="-6.7" font-family="inherit" font-size="8.50">GMime.ApplicationPkcs7Mime</text>
+</a>
+</g>
+</g>
+<!-- GMime.Object -->
+<g id="node2" class="node">
+<title>GMime.Object</title>
+<g id="a_node2"><a xlink:href="Object.html#GMime.Object" xlink:title="GMime.Object">
+<path fill="none" stroke="#aaaaaa" d="M104.5,-126C104.5,-126 39.5,-126 39.5,-126 36.5,-126 33.5,-123 33.5,-120 33.5,-120 33.5,-114 33.5,-114 33.5,-111 36.5,-108 39.5,-108 39.5,-108 104.5,-108 104.5,-108 107.5,-108 110.5,-111 110.5,-114 110.5,-114 110.5,-120 110.5,-120 110.5,-123 107.5,-126 104.5,-126"/>
+<text text-anchor="middle" x="72" y="-114.7" font-family="inherit" font-size="8.50">GMime.Object</text>
+</a>
+</g>
+</g>
+<!-- GMime.Part -->
+<g id="node3" class="node">
+<title>GMime.Part</title>
+<g id="a_node3"><a xlink:href="Part.html#GMime.Part" xlink:title="GMime.Part">
+<path fill="none" stroke="#75507b" d="M99,-72C99,-72 45,-72 45,-72 42,-72 39,-69 39,-66 39,-66 39,-60 39,-60 39,-57 42,-54 45,-54 45,-54 99,-54 99,-54 102,-54 105,-57 105,-60 105,-60 105,-66 105,-66 105,-69 102,-72 99,-72"/>
+<text text-anchor="middle" x="72" y="-60.7" font-family="inherit" font-size="8.50">GMime.Part</text>
+</a>
+</g>
+</g>
+<!-- GMime.Object&#45;&gt;GMime.Part -->
+<g id="edge1" class="edge">
+<title>GMime.Object&#45;&gt;GMime.Part</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M72,-107.88C72,-99.76 72,-87.13 72,-77.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="73.75,-77.24 72,-72.24 70.25,-77.24 73.75,-77.24"/>
+</g>
+<!-- GMime.Part&#45;&gt;GMime.ApplicationPkcs7Mime -->
+<g id="edge2" class="edge">
+<title>GMime.Part&#45;&gt;GMime.ApplicationPkcs7Mime</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M72,-53.88C72,-45.76 72,-33.13 72,-23.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="73.75,-23.24 72,-18.24 70.25,-23.24 73.75,-23.24"/>
+</g>
+<!-- GObject.Object -->
+<g id="node4" class="node">
+<title>GObject.Object</title>
+<g id="a_node4"><a xlink:href="../../GObject-2.0/classes/Object.html#GObject.Object" xlink:title="GObject.Object">
+<path fill="none" stroke="#75507b" d="M106,-180C106,-180 38,-180 38,-180 35,-180 32,-177 32,-174 32,-174 32,-168 32,-168 32,-165 35,-162 38,-162 38,-162 106,-162 106,-162 109,-162 112,-165 112,-168 112,-168 112,-174 112,-174 112,-177 109,-180 106,-180"/>
+<text text-anchor="middle" x="72" y="-168.7" font-family="inherit" font-size="8.50">GObject.Object</text>
+</a>
+</g>
+</g>
+<!-- GObject.Object&#45;&gt;GMime.Object -->
+<g id="edge3" class="edge">
+<title>GObject.Object&#45;&gt;GMime.Object</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M72,-161.88C72,-153.76 72,-141.13 72,-131.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="73.75,-131.24 72,-126.24 70.25,-131.24 73.75,-131.24"/>
+</g>
+</g>
+</svg>
+</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Subclasses:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="methods">
+<span id="gmime-applicationpkcs7mime-methods"></span><h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Part.html#gmime-part-methods"><span class="std std-ref">GMime.Part (25)</span></a>,     <a class="reference internal" href="Object.html#gmime-object-methods"><span class="std std-ref">GMime.Object (27)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (37)</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Structs:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/ObjectClass.html#gobject-objectclass-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.ObjectClass (5)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="99%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><em>class</em></td>
+<td><a class="reference internal" href="#GMime.ApplicationPkcs7Mime.encrypt" title="GMime.ApplicationPkcs7Mime.encrypt"><code class="xref py py-func docutils literal notranslate"><span class="pre">encrypt</span></code></a> (entity, flags, recipients)</td>
+</tr>
+<tr class="row-even"><td><em>class</em></td>
+<td><a class="reference internal" href="#GMime.ApplicationPkcs7Mime.new" title="GMime.ApplicationPkcs7Mime.new"><code class="xref py py-func docutils literal notranslate"><span class="pre">new</span></code></a> (type)</td>
+</tr>
+<tr class="row-odd"><td><em>class</em></td>
+<td><a class="reference internal" href="#GMime.ApplicationPkcs7Mime.sign" title="GMime.ApplicationPkcs7Mime.sign"><code class="xref py py-func docutils literal notranslate"><span class="pre">sign</span></code></a> (entity, userid)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#GMime.ApplicationPkcs7Mime.decrypt" title="GMime.ApplicationPkcs7Mime.decrypt"><code class="xref py py-func docutils literal notranslate"><span class="pre">decrypt</span></code></a> (flags, session_key, result)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#GMime.ApplicationPkcs7Mime.get_smime_type" title="GMime.ApplicationPkcs7Mime.get_smime_type"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_smime_type</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#GMime.ApplicationPkcs7Mime.verify" title="GMime.ApplicationPkcs7Mime.verify"><code class="xref py py-func docutils literal notranslate"><span class="pre">verify</span></code></a> (flags)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="virtual-methods">
+<span id="gmime-applicationpkcs7mime-vfuncs"></span><h2>Virtual Methods<a class="headerlink" href="#virtual-methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference internal" href="Part.html#gmime-part-vfuncs"><span class="std std-ref">GMime.Part (1)</span></a>,     <a class="reference internal" href="Object.html#gmime-object-vfuncs"><span class="std std-ref">GMime.Object (8)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-vfuncs" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (7)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="gmime-applicationpkcs7mime-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<p>None</p>
+</div>
+<div class="section" id="signals">
+<span id="gmime-applicationpkcs7mime-signals"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-signals" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fields">
+<span id="gmime-applicationpkcs7mime-fields"></span><h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-fields" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="16%" />
+<col width="1%" />
+<col width="1%" />
+<col width="82%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Access</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>parent_object</td>
+<td><a class="reference internal" href="Part.html#GMime.Part" title="GMime.Part"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GMime.Part</span></code></a></td>
+<td>r</td>
+<td>parent <a class="reference internal" href="Part.html#GMime.Part" title="GMime.Part"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GMime.Part</span></code></a> object</td>
+</tr>
+<tr class="row-odd"><td>smime_type</td>
+<td><a class="reference internal" href="../enums.html#GMime.SecureMimeType" title="GMime.SecureMimeType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GMime.SecureMimeType</span></code></a></td>
+<td>r</td>
+<td>The smime-type Content-Type parameter.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="class-details">
+<h2>Class Details<a class="headerlink" href="#class-details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="GMime.ApplicationPkcs7Mime">
+<em class="property">class </em><code class="descclassname">GMime.</code><code class="descname">ApplicationPkcs7Mime</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#GMime.ApplicationPkcs7Mime" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Bases:</th><td class="field-body"><a class="reference internal" href="Part.html#GMime.Part" title="GMime.Part"><code class="xref py py-class docutils literal notranslate"><span class="pre">GMime.Part</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Abstract:</th><td class="field-body">No</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Structure:</th><td class="field-body"><a class="reference internal" href="ApplicationPkcs7MimeClass.html#GMime.ApplicationPkcs7MimeClass" title="GMime.ApplicationPkcs7MimeClass"><code class="xref py py-class docutils literal notranslate"><span class="pre">GMime.ApplicationPkcs7MimeClass</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>An application/pkcs7-mime MIME part.</p>
+<dl class="classmethod">
+<dt id="GMime.ApplicationPkcs7Mime.encrypt">
+<em class="property">classmethod </em><code class="descname">encrypt</code><span class="sig-paren">(</span><em>entity</em>, <em>flags</em>, <em>recipients</em><span class="sig-paren">)</span><a class="headerlink" href="#GMime.ApplicationPkcs7Mime.encrypt" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>entity</strong> (<a class="reference internal" href="Object.html#GMime.Object" title="GMime.Object"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GMime.Object</span></code></a>) – a <a class="reference internal" href="Object.html#GMime.Object" title="GMime.Object"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GMime.Object</span></code></a> to encrypt</li>
+<li><strong>flags</strong> (<a class="reference internal" href="../enums.html#GMime.EncryptFlags" title="GMime.EncryptFlags"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GMime.EncryptFlags</span></code></a>) – a <a class="reference internal" href="../enums.html#GMime.EncryptFlags" title="GMime.EncryptFlags"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GMime.EncryptFlags</span></code></a></li>
+<li><strong>recipients</strong> ([<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>]) – an array of recipients to encrypt to</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first"><a class="reference external" href="../../GLib-2.0/classes/Error.html#GLib.Error" title="(in GLib 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLib.Error</span></code></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">a new <a class="reference internal" href="#GMime.ApplicationPkcs7Mime" title="GMime.ApplicationPkcs7Mime"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GMime.ApplicationPkcs7Mime</span></code></a> object on success
+or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> on fail. If encrypting fails, an exception will be set on <cite>err</cite> to provide
+information as to why the failure occurred.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="#GMime.ApplicationPkcs7Mime" title="GMime.ApplicationPkcs7Mime"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GMime.ApplicationPkcs7Mime</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Attempts to encrypt the <cite>entity</cite> MIME part to the public keys of <cite>recipients</cite>
+using S/MIME. If successful, a new application/pkcs7-mime object is returned.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="GMime.ApplicationPkcs7Mime.new">
+<em class="property">classmethod </em><code class="descname">new</code><span class="sig-paren">(</span><em>type</em><span class="sig-paren">)</span><a class="headerlink" href="#GMime.ApplicationPkcs7Mime.new" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>type</strong> (<a class="reference internal" href="../enums.html#GMime.SecureMimeType" title="GMime.SecureMimeType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GMime.SecureMimeType</span></code></a>) – The type of S/MIME data contained within the part.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">an empty application/pkcs7-mime object.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#GMime.ApplicationPkcs7Mime" title="GMime.ApplicationPkcs7Mime"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GMime.ApplicationPkcs7Mime</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Creates a new application/pkcs7-mime object.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="GMime.ApplicationPkcs7Mime.sign">
+<em class="property">classmethod </em><code class="descname">sign</code><span class="sig-paren">(</span><em>entity</em>, <em>userid</em><span class="sig-paren">)</span><a class="headerlink" href="#GMime.ApplicationPkcs7Mime.sign" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>entity</strong> (<a class="reference internal" href="Object.html#GMime.Object" title="GMime.Object"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GMime.Object</span></code></a>) – a <a class="reference internal" href="Object.html#GMime.Object" title="GMime.Object"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GMime.Object</span></code></a></li>
+<li><strong>userid</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – the user id to sign with</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first"><a class="reference external" href="../../GLib-2.0/classes/Error.html#GLib.Error" title="(in GLib 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLib.Error</span></code></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">a new <a class="reference internal" href="#GMime.ApplicationPkcs7Mime" title="GMime.ApplicationPkcs7Mime"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GMime.ApplicationPkcs7Mime</span></code></a> object on success
+or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> on fail. If signing fails, an exception will be set on <cite>err</cite> to provide
+information as to why the failure occurred.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="#GMime.ApplicationPkcs7Mime" title="GMime.ApplicationPkcs7Mime"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GMime.ApplicationPkcs7Mime</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Attempts to sign the <cite>entity</cite> MIME part with <cite>userid</cite>’s private key using
+S/MIME. If successful, a new application/pkcs7-mime object is returned.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GMime.ApplicationPkcs7Mime.decrypt">
+<code class="descname">decrypt</code><span class="sig-paren">(</span><em>flags</em>, <em>session_key</em>, <em>result</em><span class="sig-paren">)</span><a class="headerlink" href="#GMime.ApplicationPkcs7Mime.decrypt" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>flags</strong> (<a class="reference internal" href="../flags.html#GMime.DecryptFlags" title="GMime.DecryptFlags"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GMime.DecryptFlags</span></code></a>) – a <a class="reference internal" href="../flags.html#GMime.DecryptFlags" title="GMime.DecryptFlags"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GMime.DecryptFlags</span></code></a></li>
+<li><strong>session_key</strong> (<a class="reference external" href="http://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – session key to use or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></li>
+<li><strong>result</strong> (<a class="reference internal" href="DecryptResult.html#GMime.DecryptResult" title="GMime.DecryptResult"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GMime.DecryptResult</span></code></a>) – the decryption result</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first"><a class="reference external" href="../../GLib-2.0/classes/Error.html#GLib.Error" title="(in GLib 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLib.Error</span></code></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">the decrypted MIME part on success or
+<a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> on fail. If the decryption fails, an exception will be set on
+<cite>err</cite> to provide information as to why the failure occurred.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="Object.html#GMime.Object" title="GMime.Object"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GMime.Object</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Attempts to decrypt the encrypted application/pkcs7-mime part.</p>
+<p>When non-<a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>, <cite>session_key</cite> should be a <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>-terminated string,
+such as the one returned by <a class="reference internal" href="DecryptResult.html#GMime.DecryptResult.get_session_key" title="GMime.DecryptResult.get_session_key"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GMime.DecryptResult.get_session_key</span></code></a>()
+from a previous decryption. If the <cite>session_key</cite> is not valid, decryption
+will fail.</p>
+<p>If <cite>result</cite> is non-<a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>, then on a successful decrypt operation, it will be
+updated to point to a newly-allocated <a class="reference internal" href="DecryptResult.html#GMime.DecryptResult" title="GMime.DecryptResult"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GMime.DecryptResult</span></code></a> with signature
+status information as well as a list of recipients that the part was
+encrypted to.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GMime.ApplicationPkcs7Mime.get_smime_type">
+<code class="descname">get_smime_type</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#GMime.ApplicationPkcs7Mime.get_smime_type" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the smime-type value.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#GMime.SecureMimeType" title="GMime.SecureMimeType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GMime.SecureMimeType</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the smime-type value of the Content-Type header.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GMime.ApplicationPkcs7Mime.verify">
+<code class="descname">verify</code><span class="sig-paren">(</span><em>flags</em><span class="sig-paren">)</span><a class="headerlink" href="#GMime.ApplicationPkcs7Mime.verify" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>flags</strong> (<a class="reference internal" href="../flags.html#GMime.VerifyFlags" title="GMime.VerifyFlags"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GMime.VerifyFlags</span></code></a>) – a <a class="reference internal" href="../flags.html#GMime.VerifyFlags" title="GMime.VerifyFlags"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GMime.VerifyFlags</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference external" href="../../GLib-2.0/classes/Error.html#GLib.Error" title="(in GLib 2.0 v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLib.Error</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a new <a class="reference internal" href="SignatureList.html#GMime.SignatureList" title="GMime.SignatureList"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GMime.SignatureList</span></code></a> object on
+success or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> on fail. If the verification fails, an exception
+will be set on <cite>err</cite> to provide information as to why the failure
+occurred.<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">entity:</th><td class="field-body">the extracted entity</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">(<a class="reference internal" href="SignatureList.html#GMime.SignatureList" title="GMime.SignatureList"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GMime.SignatureList</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>, <strong>entity</strong>: <a class="reference internal" href="Object.html#GMime.Object" title="GMime.Object"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GMime.Object</span></code></a>)</td>
+</tr>
+</tbody>
+</table>
+<p>Attempts to verify the signed <cite>self</cite> part and extract the original
+MIME entity.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div> 
+
+</body>
+</html>

@@ -1,0 +1,694 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    RB.DisplayPageModel -
+    
+      Classes -
+    
+    RB 3.0
+  </title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/css/pgi.css" type="text/css" />
+  
+
+  
+  <script type="text/javascript">
+
+    function openSidebar(element) {
+        window.location.href = element.href + location.hash;
+        return false;
+    }
+
+    function inIframe() {
+        try {
+            return window.self !== window.top;
+        } catch (e) {
+            return true;
+        }
+    }
+
+    function onLoaded() {
+        if(!inIframe()) {
+            var icons = document.getElementsByClassName('open-sidebar');
+
+            for (var i = 0; i < icons.length; i ++) {
+                icons[i].style.display = 'table-cell';
+            }
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', onLoaded, false);
+
+  </script>
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="RB 3.0 Python API Docs" href="../index.html"/>
+        <link rel="up" title="Classes" href="../classes.html"/>
+        <link rel="next" title="RB.DisplayPageTree" href="DisplayPageTree.html"/>
+        <link rel="prev" title="RB.DisplayPageGroup" href="DisplayPageGroup.html"/> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+<div class="non-fixed-bar">
+<table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#RB-3.0/classes/DisplayPageModel.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">RB 3.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>RB.DisplayPageModel</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="DisplayPageGroup.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="DisplayPageTree.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">RB.DisplayPageModel</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#signal-details">Signal Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+<div class="fixed-bar">
+  <table class="navigation" summary="Navigation header" cellpadding="2" cellspacing="10" width="100%"><tbody><tr valign="middle">
+
+<td class="open-sidebar" style="display:none"><a href="../../index.html#RB-3.0/classes/DisplayPageModel.html" onclick="return openSidebar(this);"><i class="fa fa-search"></i></a></td>
+
+<td class="shortcuts" align="left" width="100%">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">RB 3.0</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>RB.DisplayPageModel</li>
+  </ul>
+</td>
+<td><a accesskey="h" href="../index.html"><i class="fa fa-home"></i></a></td>
+
+
+<td><a accesskey="u" href="../classes.html"><i class="fa fa-chevron-up"></i></a></td>
+
+
+
+<td><a accesskey="p" href="DisplayPageGroup.html"><i class="fa fa-chevron-left"></i></a></td>
+
+
+
+<td><a accesskey="n" href="DisplayPageTree.html"><i class="fa fa-chevron-right"></i></a></td>
+
+
+</tr></tbody>
+</table>
+
+<div class="local-toc">
+    <ul>
+<li><a class="reference internal" href="#">RB.DisplayPageModel</a><ul>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#virtual-methods">Virtual Methods</a></li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#class-details">Class Details</a></li>
+<li><a class="reference internal" href="#signal-details">Signal Details</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+  <div class="wy-grid-for-nav">
+
+    
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="main">
+            
+  <div class="section" id="rb-displaypagemodel">
+<h1>RB.DisplayPageModel<a class="headerlink" href="#rb-displaypagemodel" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<svg width="303pt" height="188pt"
+ viewBox="0.00 0.00 302.50 188.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 184)">
+<title>g</title>
+<!-- GObject.GInterface -->
+<g id="node1" class="node">
+<title>GObject.GInterface</title>
+<g id="a_node1"><a xlink:href="../../GObject-2.0/classes/GInterface.html#GObject.GInterface" xlink:title="GObject.GInterface">
+<path fill="none" stroke="#3091d1" d="M146.5,-180C146.5,-180 60.5,-180 60.5,-180 57.5,-180 54.5,-177 54.5,-174 54.5,-174 54.5,-168 54.5,-168 54.5,-165 57.5,-162 60.5,-162 60.5,-162 146.5,-162 146.5,-162 149.5,-162 152.5,-165 152.5,-168 152.5,-168 152.5,-174 152.5,-174 152.5,-177 149.5,-180 146.5,-180"/>
+<text text-anchor="middle" x="103.5" y="-168.7" font-family="inherit" font-size="8.50">GObject.GInterface</text>
+</a>
+</g>
+</g>
+<!-- Gtk.TreeDragSource -->
+<g id="node3" class="node">
+<title>Gtk.TreeDragSource</title>
+<g id="a_node3"><a xlink:href="../../Gtk-3.0/classes/TreeDragSource.html#Gtk.TreeDragSource" xlink:title="Gtk.TreeDragSource">
+<path fill="none" stroke="#3091d1" d="M95,-126C95,-126 6,-126 6,-126 3,-126 0,-123 0,-120 0,-120 0,-114 0,-114 0,-111 3,-108 6,-108 6,-108 95,-108 95,-108 98,-108 101,-111 101,-114 101,-114 101,-120 101,-120 101,-123 98,-126 95,-126"/>
+<text text-anchor="middle" x="50.5" y="-114.7" font-family="inherit" font-size="8.50">Gtk.TreeDragSource</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Gtk.TreeDragSource -->
+<g id="edge1" class="edge">
+<title>GObject.GInterface&#45;&gt;Gtk.TreeDragSource</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M95.22,-161.88C86.48,-153.3 72.62,-139.7 62.64,-129.91"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="63.69,-128.49 58.9,-126.24 61.24,-130.99 63.69,-128.49"/>
+</g>
+<!-- Gtk.TreeModel -->
+<g id="node4" class="node">
+<title>Gtk.TreeModel</title>
+<g id="a_node4"><a xlink:href="../../Gtk-3.0/classes/TreeModel.html#Gtk.TreeModel" xlink:title="Gtk.TreeModel">
+<path fill="none" stroke="#3091d1" d="M190,-126C190,-126 125,-126 125,-126 122,-126 119,-123 119,-120 119,-120 119,-114 119,-114 119,-111 122,-108 125,-108 125,-108 190,-108 190,-108 193,-108 196,-111 196,-114 196,-114 196,-120 196,-120 196,-123 193,-126 190,-126"/>
+<text text-anchor="middle" x="157.5" y="-114.7" font-family="inherit" font-size="8.50">Gtk.TreeModel</text>
+</a>
+</g>
+</g>
+<!-- GObject.GInterface&#45;&gt;Gtk.TreeModel -->
+<g id="edge2" class="edge">
+<title>GObject.GInterface&#45;&gt;Gtk.TreeModel</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M111.94,-161.88C120.84,-153.3 134.96,-139.7 145.13,-129.91"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="146.56,-130.97 148.94,-126.24 144.13,-128.45 146.56,-130.97"/>
+</g>
+<!-- GObject.Object -->
+<g id="node2" class="node">
+<title>GObject.Object</title>
+<g id="a_node2"><a xlink:href="../../GObject-2.0/classes/Object.html#GObject.Object" xlink:title="GObject.Object">
+<path fill="none" stroke="#75507b" d="M288.5,-126C288.5,-126 220.5,-126 220.5,-126 217.5,-126 214.5,-123 214.5,-120 214.5,-120 214.5,-114 214.5,-114 214.5,-111 217.5,-108 220.5,-108 220.5,-108 288.5,-108 288.5,-108 291.5,-108 294.5,-111 294.5,-114 294.5,-114 294.5,-120 294.5,-120 294.5,-123 291.5,-126 288.5,-126"/>
+<text text-anchor="middle" x="254.5" y="-114.7" font-family="inherit" font-size="8.50">GObject.Object</text>
+</a>
+</g>
+</g>
+<!-- Gtk.TreeModelFilter -->
+<g id="node5" class="node">
+<title>Gtk.TreeModelFilter</title>
+<g id="a_node5"><a xlink:href="../../Gtk-3.0/classes/TreeModelFilter.html#Gtk.TreeModelFilter" xlink:title="Gtk.TreeModelFilter">
+<path fill="none" stroke="#75507b" d="M200.5,-72C200.5,-72 114.5,-72 114.5,-72 111.5,-72 108.5,-69 108.5,-66 108.5,-66 108.5,-60 108.5,-60 108.5,-57 111.5,-54 114.5,-54 114.5,-54 200.5,-54 200.5,-54 203.5,-54 206.5,-57 206.5,-60 206.5,-60 206.5,-66 206.5,-66 206.5,-69 203.5,-72 200.5,-72"/>
+<text text-anchor="middle" x="157.5" y="-60.7" font-family="inherit" font-size="8.50">Gtk.TreeModelFilter</text>
+</a>
+</g>
+</g>
+<!-- GObject.Object&#45;&gt;Gtk.TreeModelFilter -->
+<g id="edge3" class="edge">
+<title>GObject.Object&#45;&gt;Gtk.TreeModelFilter</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M239.34,-107.88C222.54,-98.87 195.4,-84.32 177.02,-74.47"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="177.78,-72.89 172.55,-72.07 176.13,-75.97 177.78,-72.89"/>
+</g>
+<!-- Gtk.TreeDragSource&#45;&gt;Gtk.TreeModelFilter -->
+<g id="edge4" class="edge">
+<title>Gtk.TreeDragSource&#45;&gt;Gtk.TreeModelFilter</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M67.22,-107.88C85.83,-98.83 115.95,-84.19 136.22,-74.34"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="137.17,-75.83 140.9,-72.07 135.64,-72.68 137.17,-75.83"/>
+</g>
+<!-- Gtk.TreeModel&#45;&gt;Gtk.TreeModelFilter -->
+<g id="edge5" class="edge">
+<title>Gtk.TreeModel&#45;&gt;Gtk.TreeModelFilter</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M157.5,-107.88C157.5,-99.76 157.5,-87.13 157.5,-77.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="159.25,-77.24 157.5,-72.24 155.75,-77.24 159.25,-77.24"/>
+</g>
+<!-- RB.DisplayPageModel -->
+<g id="node6" class="node">
+<title>RB.DisplayPageModel</title>
+<g id="a_node6"><a xlink:href="#RB.DisplayPageModel" xlink:title="RB.DisplayPageModel">
+<path fill="none" stroke="#75507b" d="M206,-18C206,-18 109,-18 109,-18 106,-18 103,-15 103,-12 103,-12 103,-6 103,-6 103,-3 106,0 109,0 109,0 206,0 206,0 209,0 212,-3 212,-6 212,-6 212,-12 212,-12 212,-15 209,-18 206,-18"/>
+<text text-anchor="middle" x="157.5" y="-6.7" font-family="inherit" font-size="8.50">RB.DisplayPageModel</text>
+</a>
+</g>
+</g>
+<!-- Gtk.TreeModelFilter&#45;&gt;RB.DisplayPageModel -->
+<g id="edge6" class="edge">
+<title>Gtk.TreeModelFilter&#45;&gt;RB.DisplayPageModel</title>
+<path fill="none" stroke="black" stroke-width="0.5" d="M157.5,-53.88C157.5,-45.76 157.5,-33.13 157.5,-23.5"/>
+<polygon fill="black" stroke="black" stroke-width="0.5" points="159.25,-23.24 157.5,-18.24 155.75,-23.24 159.25,-23.24"/>
+</g>
+</g>
+</svg>
+</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Subclasses:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="methods">
+<span id="rb-displaypagemodel-methods"></span><h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../Gtk-3.0/classes/TreeModelFilter.html#gtk-treemodelfilter-methods" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.TreeModelFilter (11)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (37)</span></a>,     <a class="reference external" href="../../Gtk-3.0/classes/TreeDragSource.html#gtk-treedragsource-methods" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.TreeDragSource (3)</span></a>,     <a class="reference external" href="../../Gtk-3.0/classes/TreeModel.html#gtk-treemodel-methods" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.TreeModel (27)</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Structs:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/ObjectClass.html#gobject-objectclass-methods" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.ObjectClass (5)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="99%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><em>class</em></td>
+<td><a class="reference internal" href="#RB.DisplayPageModel.new" title="RB.DisplayPageModel.new"><code class="xref py py-func docutils literal notranslate"><span class="pre">new</span></code></a> ()</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#RB.DisplayPageModel.add_page" title="RB.DisplayPageModel.add_page"><code class="xref py py-func docutils literal notranslate"><span class="pre">add_page</span></code></a> (page, parent)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#RB.DisplayPageModel.find_page" title="RB.DisplayPageModel.find_page"><code class="xref py py-func docutils literal notranslate"><span class="pre">find_page</span></code></a> (page, iter)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#RB.DisplayPageModel.find_page_full" title="RB.DisplayPageModel.find_page_full"><code class="xref py py-func docutils literal notranslate"><span class="pre">find_page_full</span></code></a> (page, iter)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#RB.DisplayPageModel.remove_page" title="RB.DisplayPageModel.remove_page"><code class="xref py py-func docutils literal notranslate"><span class="pre">remove_page</span></code></a> (page)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#RB.DisplayPageModel.set_dnd_targets" title="RB.DisplayPageModel.set_dnd_targets"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_dnd_targets</span></code></a> (treeview)</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#RB.DisplayPageModel.set_playing_source" title="RB.DisplayPageModel.set_playing_source"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_playing_source</span></code></a> (source)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="virtual-methods">
+<span id="rb-displaypagemodel-vfuncs"></span><h2>Virtual Methods<a class="headerlink" href="#virtual-methods" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../Gtk-3.0/classes/TreeModelFilter.html#gtk-treemodelfilter-vfuncs" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.TreeModelFilter (2)</span></a>,     <a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-vfuncs" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (7)</span></a>,     <a class="reference external" href="../../Gtk-3.0/classes/TreeDragSource.html#gtk-treedragsource-vfuncs" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.TreeDragSource (3)</span></a>,     <a class="reference external" href="../../Gtk-3.0/classes/TreeModel.html#gtk-treemodel-vfuncs" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.TreeModel (19)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="1%" />
+<col width="99%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#RB.DisplayPageModel.do_drop_received" title="RB.DisplayPageModel.do_drop_received"><code class="xref py py-func docutils literal notranslate"><span class="pre">do_drop_received</span></code></a> (target, pos, data)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#RB.DisplayPageModel.do_page_inserted" title="RB.DisplayPageModel.do_page_inserted"><code class="xref py py-func docutils literal notranslate"><span class="pre">do_page_inserted</span></code></a> (page, iter)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="rb-displaypagemodel-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../Gtk-3.0/classes/TreeModelFilter.html#gtk-treemodelfilter-props" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.TreeModelFilter (2)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="signals">
+<span id="rb-displaypagemodel-signals"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-signals" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a>,     <a class="reference external" href="../../Gtk-3.0/classes/TreeModel.html#gtk-treemodel-signals" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.TreeModel (5)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="30%" />
+<col width="70%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Short Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="#RB.DisplayPageModel.signals.drop_received" title="RB.DisplayPageModel.signals.drop_received"><code class="xref py py-func docutils literal notranslate"><span class="pre">drop-received</span></code></a></td>
+<td>Emitted when a drag and drop operation to the display page tree completes.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#RB.DisplayPageModel.signals.page_inserted" title="RB.DisplayPageModel.signals.page_inserted"><code class="xref py py-func docutils literal notranslate"><span class="pre">page-inserted</span></code></a></td>
+<td>Emitted when a new page is inserted into the model.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fields">
+<span id="rb-displaypagemodel-fields"></span><h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Inherited:</th><td class="field-body"><a class="reference external" href="../../GObject-2.0/classes/Object.html#gobject-object-fields" title="(in GObject 2.0 v2.0)"><span class="xref std std-ref">GObject.Object (1)</span></a>,     <a class="reference external" href="../../Gtk-3.0/classes/TreeModel.html#gtk-treemodel-fields" title="(in Gtk 3.0 v3.0)"><span class="xref std std-ref">Gtk.TreeModel (5)</span></a></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="16%" />
+<col width="1%" />
+<col width="1%" />
+<col width="82%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Access</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>parent</td>
+<td><a class="reference external" href="../../Gtk-3.0/classes/TreeModelFilter.html#Gtk.TreeModelFilter" title="(in Gtk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.TreeModelFilter</span></code></a></td>
+<td>r</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="class-details">
+<h2>Class Details<a class="headerlink" href="#class-details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="RB.DisplayPageModel">
+<em class="property">class </em><code class="descclassname">RB.</code><code class="descname">DisplayPageModel</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#RB.DisplayPageModel" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Bases:</th><td class="field-body"><a class="reference external" href="../../Gtk-3.0/classes/TreeModelFilter.html#Gtk.TreeModelFilter" title="(in Gtk 3.0 v3.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Gtk.TreeModelFilter</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Abstract:</th><td class="field-body">No</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Structure:</th><td class="field-body"><a class="reference internal" href="DisplayPageModelClass.html#RB.DisplayPageModelClass" title="RB.DisplayPageModelClass"><code class="xref py py-class docutils literal notranslate"><span class="pre">RB.DisplayPageModelClass</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<dl class="classmethod">
+<dt id="RB.DisplayPageModel.new">
+<em class="property">classmethod </em><code class="descname">new</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#RB.DisplayPageModel.new" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the <a class="reference internal" href="#RB.DisplayPageModel" title="RB.DisplayPageModel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.DisplayPageModel</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#RB.DisplayPageModel" title="RB.DisplayPageModel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.DisplayPageModel</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>This constructs both the <a class="reference external" href="../../Gtk-3.0/classes/TreeStore.html#Gtk.TreeStore" title="(in Gtk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.TreeStore</span></code></a> holding the display page
+data and the filter model that hides invisible pages.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RB.DisplayPageModel.add_page">
+<code class="descname">add_page</code><span class="sig-paren">(</span><em>page</em>, <em>parent</em><span class="sig-paren">)</span><a class="headerlink" href="#RB.DisplayPageModel.add_page" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>page</strong> (<a class="reference internal" href="DisplayPage.html#RB.DisplayPage" title="RB.DisplayPage"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.DisplayPage</span></code></a>) – the <a class="reference internal" href="DisplayPage.html#RB.DisplayPage" title="RB.DisplayPage"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.DisplayPage</span></code></a> to add</li>
+<li><strong>parent</strong> (<a class="reference internal" href="DisplayPage.html#RB.DisplayPage" title="RB.DisplayPage"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.DisplayPage</span></code></a>) – the parent under which to add <cite>page</cite></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Adds a page to the model, either below a specified page (if it’s a source or
+something else) or at the top level (if it’s a group)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RB.DisplayPageModel.find_page">
+<code class="descname">find_page</code><span class="sig-paren">(</span><em>page</em>, <em>iter</em><span class="sig-paren">)</span><a class="headerlink" href="#RB.DisplayPageModel.find_page" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>page</strong> (<a class="reference internal" href="DisplayPage.html#RB.DisplayPage" title="RB.DisplayPage"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.DisplayPage</span></code></a>) – the <a class="reference internal" href="DisplayPage.html#RB.DisplayPage" title="RB.DisplayPage"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.DisplayPage</span></code></a> to find</li>
+<li><strong>iter</strong> (<a class="reference external" href="../../Gtk-3.0/classes/TreeIter.html#Gtk.TreeIter" title="(in Gtk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.TreeIter</span></code></a>) – returns a <a class="reference external" href="../../Gtk-3.0/classes/TreeIter.html#Gtk.TreeIter" title="(in Gtk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.TreeIter</span></code></a> for the page</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if the page was found</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Finds a <a class="reference external" href="../../Gtk-3.0/classes/TreeIter.html#Gtk.TreeIter" title="(in Gtk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.TreeIter</span></code></a> for a specified page in the model.  This will only
+find pages that are currently visible.  The returned <a class="reference external" href="../../Gtk-3.0/classes/TreeIter.html#Gtk.TreeIter" title="(in Gtk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.TreeIter</span></code></a> can be used
+with the <a class="reference internal" href="#RB.DisplayPageModel" title="RB.DisplayPageModel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.DisplayPageModel</span></code></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RB.DisplayPageModel.find_page_full">
+<code class="descname">find_page_full</code><span class="sig-paren">(</span><em>page</em>, <em>iter</em><span class="sig-paren">)</span><a class="headerlink" href="#RB.DisplayPageModel.find_page_full" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>page</strong> (<a class="reference internal" href="DisplayPage.html#RB.DisplayPage" title="RB.DisplayPage"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.DisplayPage</span></code></a>) – the <a class="reference internal" href="DisplayPage.html#RB.DisplayPage" title="RB.DisplayPage"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.DisplayPage</span></code></a> to find</li>
+<li><strong>iter</strong> (<a class="reference external" href="../../Gtk-3.0/classes/TreeIter.html#Gtk.TreeIter" title="(in Gtk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.TreeIter</span></code></a>) – returns a <a class="reference external" href="../../Gtk-3.0/classes/TreeIter.html#Gtk.TreeIter" title="(in Gtk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.TreeIter</span></code></a> for the page</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if the page was found</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Finds a <a class="reference external" href="../../Gtk-3.0/classes/TreeIter.html#Gtk.TreeIter" title="(in Gtk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.TreeIter</span></code></a> for a specified page in the model.  This function
+searches the full page model, so it will find pages that are not currently
+visible, and the returned iterator can only be used with the child model
+(see <a class="reference external" href="../../Gtk-3.0/classes/TreeModelFilter.html#Gtk.TreeModelFilter.get_model" title="(in Gtk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.TreeModelFilter.get_model</span></code></a>).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RB.DisplayPageModel.remove_page">
+<code class="descname">remove_page</code><span class="sig-paren">(</span><em>page</em><span class="sig-paren">)</span><a class="headerlink" href="#RB.DisplayPageModel.remove_page" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>page</strong> (<a class="reference internal" href="DisplayPage.html#RB.DisplayPage" title="RB.DisplayPage"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.DisplayPage</span></code></a>) – the <a class="reference internal" href="DisplayPage.html#RB.DisplayPage" title="RB.DisplayPage"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.DisplayPage</span></code></a> to remove</td>
+</tr>
+</tbody>
+</table>
+<p>Removes a page from the model.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RB.DisplayPageModel.set_dnd_targets">
+<code class="descname">set_dnd_targets</code><span class="sig-paren">(</span><em>treeview</em><span class="sig-paren">)</span><a class="headerlink" href="#RB.DisplayPageModel.set_dnd_targets" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>treeview</strong> (<a class="reference external" href="../../Gtk-3.0/classes/TreeView.html#Gtk.TreeView" title="(in Gtk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.TreeView</span></code></a>) – the sourcel ist <a class="reference external" href="../../Gtk-3.0/classes/TreeView.html#Gtk.TreeView" title="(in Gtk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.TreeView</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Sets up the drag and drop targets for the display page tree.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RB.DisplayPageModel.set_playing_source">
+<code class="descname">set_playing_source</code><span class="sig-paren">(</span><em>source</em><span class="sig-paren">)</span><a class="headerlink" href="#RB.DisplayPageModel.set_playing_source" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>source</strong> (<a class="reference internal" href="DisplayPage.html#RB.DisplayPage" title="RB.DisplayPage"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.DisplayPage</span></code></a>) – the new playing <a class="reference internal" href="Source.html#RB.Source" title="RB.Source"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.Source</span></code></a> (as a <a class="reference internal" href="DisplayPage.html#RB.DisplayPage" title="RB.DisplayPage"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.DisplayPage</span></code></a>)</td>
+</tr>
+</tbody>
+</table>
+<p>Updates the model with the new playing source.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RB.DisplayPageModel.do_drop_received">
+<code class="descname">do_drop_received</code><span class="sig-paren">(</span><em>target</em>, <em>pos</em>, <em>data</em><span class="sig-paren">)</span><em class="property"> virtual</em><a class="headerlink" href="#RB.DisplayPageModel.do_drop_received" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>target</strong> (<a class="reference internal" href="DisplayPage.html#RB.DisplayPage" title="RB.DisplayPage"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.DisplayPage</span></code></a>) – </li>
+<li><strong>pos</strong> (<a class="reference external" href="../../Gtk-3.0/enums.html#Gtk.TreeViewDropPosition" title="(in Gtk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.TreeViewDropPosition</span></code></a>) – </li>
+<li><strong>data</strong> (<a class="reference external" href="../../Gtk-3.0/classes/SelectionData.html#Gtk.SelectionData" title="(in Gtk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.SelectionData</span></code></a>) – </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="RB.DisplayPageModel.do_page_inserted">
+<code class="descname">do_page_inserted</code><span class="sig-paren">(</span><em>page</em>, <em>iter</em><span class="sig-paren">)</span><em class="property"> virtual</em><a class="headerlink" href="#RB.DisplayPageModel.do_page_inserted" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>page</strong> (<a class="reference internal" href="DisplayPage.html#RB.DisplayPage" title="RB.DisplayPage"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.DisplayPage</span></code></a>) – </li>
+<li><strong>iter</strong> (<a class="reference external" href="../../Gtk-3.0/classes/TreeIter.html#Gtk.TreeIter" title="(in Gtk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.TreeIter</span></code></a>) – </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="signal-details">
+<h2>Signal Details<a class="headerlink" href="#signal-details" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="RB.DisplayPageModel.signals.drop_received">
+<code class="descclassname">RB.DisplayPageModel.signals.</code><code class="descname">drop_received</code><span class="sig-paren">(</span><em>display_page_model</em>, <em>target</em>, <em>pos</em>, <em>data</em><span class="sig-paren">)</span><a class="headerlink" href="#RB.DisplayPageModel.signals.drop_received" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Signal Name:</th><td class="field-body"><p class="first"><code class="docutils literal notranslate"><span class="pre">drop-received</span></code></p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><p class="first"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.SignalFlags.RUN_LAST" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RUN_LAST</span></code></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>display_page_model</strong> (<a class="reference internal" href="#RB.DisplayPageModel" title="RB.DisplayPageModel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.DisplayPageModel</span></code></a>) – The object which received the signal</li>
+<li><strong>target</strong> (<a class="reference internal" href="DisplayPage.html#RB.DisplayPage" title="RB.DisplayPage"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.DisplayPage</span></code></a>) – the <a class="reference internal" href="Source.html#RB.Source" title="RB.Source"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.Source</span></code></a> receiving the drop</li>
+<li><strong>pos</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – the drop position</li>
+<li><strong>data</strong> (<a class="reference external" href="http://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">object</span></code></a> or <a class="reference external" href="http://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>) – the drop data</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Emitted when a drag and drop operation to the display page tree completes.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="RB.DisplayPageModel.signals.page_inserted">
+<code class="descclassname">RB.DisplayPageModel.signals.</code><code class="descname">page_inserted</code><span class="sig-paren">(</span><em>display_page_model</em>, <em>page</em>, <em>iter</em><span class="sig-paren">)</span><a class="headerlink" href="#RB.DisplayPageModel.signals.page_inserted" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Signal Name:</th><td class="field-body"><p class="first"><code class="docutils literal notranslate"><span class="pre">page-inserted</span></code></p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Flags:</th><td class="field-body"><p class="first"><a class="reference external" href="../../GObject-2.0/flags.html#GObject.SignalFlags.RUN_LAST" title="(in GObject 2.0 v2.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RUN_LAST</span></code></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>display_page_model</strong> (<a class="reference internal" href="#RB.DisplayPageModel" title="RB.DisplayPageModel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.DisplayPageModel</span></code></a>) – The object which received the signal</li>
+<li><strong>page</strong> (<a class="reference internal" href="DisplayPage.html#RB.DisplayPage" title="RB.DisplayPage"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.DisplayPage</span></code></a>) – the <a class="reference internal" href="DisplayPage.html#RB.DisplayPage" title="RB.DisplayPage"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RB.DisplayPage</span></code></a> that was inserted</li>
+<li><strong>iter</strong> (<a class="reference external" href="../../Gtk-3.0/classes/TreeIter.html#Gtk.TreeIter" title="(in Gtk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.TreeIter</span></code></a>) – a <a class="reference external" href="../../Gtk-3.0/classes/TreeIter.html#Gtk.TreeIter" title="(in Gtk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.TreeIter</span></code></a> indicating the page position</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Emitted when a new page is inserted into the model.
+Use this instead of <a class="reference external" href="../../Gtk-3.0/classes/TreeModel.html#Gtk.TreeModel" title="(in Gtk 3.0 v3.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gtk.TreeModel</span></code></a> <a class="reference external" href="../../Gtk-3.0/classes/TreeModel.html#Gtk.TreeModel.signals.row_inserted" title="(in Gtk 3.0 v3.0)"><code class="xref py py-func docutils literal notranslate"><span class="pre">::row-inserted</span></code></a> as this
+doesn’t get complicated by visibility filtering.</p>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div> 
+
+</body>
+</html>
